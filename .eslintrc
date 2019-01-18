@@ -12,6 +12,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "standard",
-    "standard-react"
+    "standard-react",
+    "prettier-standard"
   ]
 }

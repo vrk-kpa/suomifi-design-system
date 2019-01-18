@@ -27,8 +27,10 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,md}\"",
-    "format": "prettier-eslint \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "lint:code": "eslint \"src/**/*.{js,jsx,ts,tsx,md}\"",
+    "format:code": "prettier-eslint \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
+    "format:style": "prettier-stylelint --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
@@ -52,6 +54,11 @@
     "gatsby-plugin-eslint": "^2.0.3",
     "prettier": "^1.15.2",
     "prettier-eslint-cli": "^4.7.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^9.10.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0",
     "typescript-eslint-parser": "^21.0.2"
   },
   "repository": {

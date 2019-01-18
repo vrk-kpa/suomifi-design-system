@@ -27,7 +27,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,md}\"",
     "format": "prettier-eslint \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },

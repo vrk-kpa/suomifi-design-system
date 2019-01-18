@@ -27,7 +27,8 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "start": "npm run develop",
-    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
+    "format": "prettier-eslint \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
@@ -50,6 +51,7 @@
     "eslint-plugin-typescript": "^0.14.0",
     "gatsby-plugin-eslint": "^2.0.3",
     "prettier": "^1.15.2",
+    "prettier-eslint-cli": "^4.7.1",
     "typescript-eslint-parser": "^21.0.2"
   },
   "repository": {

@@ -8,5 +8,10 @@
     "jsx": true
   },
   "plugins": ["typescript", "react"],
-  "extends": ["eslint:recommended", "plugin:react/recommended"]
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "standard",
+    "standard-react"
+  ]
 }

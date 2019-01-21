@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "suomifi-design-system",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Suomi.fi Design System",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jari Porola <jari.porola@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.91",
     "gatsby-image": "^2.0.20",
@@ -19,9 +19,6 @@
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -63,9 +60,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "github:vrk-kpa/suomifi-design-system"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/vrk-kpa/suomifi-design-system/issues"
   }
 }

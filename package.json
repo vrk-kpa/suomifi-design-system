@@ -49,6 +49,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-typescript": "^0.14.0",
     "gatsby-plugin-eslint": "^2.0.3",
+    "gatsby-plugin-stylelint": "^3.1.0",
     "prettier": "^1.15.2",
     "prettier-eslint-cli": "^4.7.1",
     "prettier-stylelint": "^0.4.2",
@@ -56,6 +57,7 @@
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-standard": "^18.2.0",
+    "stylelint-webpack-plugin": "^0.10.5",
     "typescript-eslint-parser": "^21.0.2"
   },
   "repository": {

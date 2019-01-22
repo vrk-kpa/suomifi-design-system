@@ -25,7 +25,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "lint:code": "eslint \"src/**/*.{js,jsx,ts,tsx,md}\"",
-    "format:code": "prettier-eslint \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format:code": "prettier-eslint --write \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "format:style": "prettier-stylelint --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""

@@ -692,6 +692,11 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
+"@csstools/normalize.css@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-9.0.1.tgz#c27b391d8457d1e893f1eddeaf5e5412d12ffbb5"
+  integrity sha512-6It2EVfGskxZCQhuykrfnALg7oVeiI6KclWSmGDqB0AiInVrTGB9Jp9i4/Ad21u9Jde/voVQz6eFX/eSg/UsPA==
+
 "@gerhobbelt/ast-types@0.10.1-15":
   version "0.10.1-15"
   resolved "https://registry.yarnpkg.com/@gerhobbelt/ast-types/-/ast-types-0.10.1-15.tgz#d190cb08d145905cc46a8daae463d15682cebda4"

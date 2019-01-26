@@ -1,14 +1,27 @@
 import React from 'react'
+import { graphql } from 'gatsby'
+import { I18n } from 'react-i18next'
+import { Link, withI18next } from 'gatsby-plugin-i18next'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const NotFoundPage = () => (
-  <Layout>
-    <SEO title='404: Not found' />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  <I18n>
+    {t => (
+      <Layout>
+        <SEO title={t('404.title')} />
+        <h1>{t('404.intro')}</h1>
+        <Link to='/'>{t('common.back.to.frontpage')}</Link>
+      </Layout>
+    )}
+  </I18n>
 )
 
-export default NotFoundPage
+export default withI18next()(NotFoundPage)
+
+export const query = graphql`
+  query($lng: String!) {
+    ...LocalesFragment
+  }
+`

@@ -9,5 +9,8 @@
   "home.intro": "Terve ihmiset",
   "home.to.page2": "Mene sivulle 2",
 
-  "page2.title": "Sivu kaksi"
+  "page2.title": "Sivu kaksi",
+
+  "404.title": "Sivua ei löydy",
+  "404.intro": "Sivua ei löydy"
 }

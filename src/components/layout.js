@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { I18n, translate } from 'react-i18next'
+import { I18n } from 'react-i18next'
 
 import Header from './header'
 import '@csstools/normalize.css'
@@ -30,4 +30,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export default translate()(Layout)
+export default Layout

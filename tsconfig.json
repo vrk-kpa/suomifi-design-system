@@ -3,7 +3,7 @@
     "outDir": "./dist/",
     "sourceMap": true,
     // uncomment the following lines if you are working with a mixed code base (both javascript and typescript. Useful when migrating a project)
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "allowJs": true,
     "esModuleInterop": true,
     "module": "commonjs",

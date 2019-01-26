@@ -1,16 +1,28 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import { I18n } from 'react-i18next'
+import { Link, withI18next } from 'gatsby-plugin-i18next'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const SecondPage = () => (
-  <Layout>
-    <SEO title='Page two' />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to='/'>Go back to the homepage</Link>
-  </Layout>
+  <I18n>
+    {t => (
+      <Layout>
+        <SEO title={t('page2.title')} />
+        <Link to='/'>{t('common.back.to.frontpage')}</Link>
+      </Layout>
+    )}
+  </I18n>
 )
 
-export default SecondPage
+export default withI18next()(SecondPage)
+
+export const query = graphql`
+  query($lng: String!) {
+    locales: allLocale(filter: { lng: { eq: $lng }, ns: { eq: "messages" } }) {
+      ...TranslationFragment
+    }
+  }
+`

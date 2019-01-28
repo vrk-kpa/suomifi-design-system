@@ -1,6 +1,8 @@
 import { Link } from '@wapps/gatsby-plugin-i18next'
 import React from 'react'
 
+import Switcher from './switcher'
+
 const Header = ({ siteTitle }: Props) => (
   <div
     style={{
@@ -23,6 +25,14 @@ const Header = ({ siteTitle }: Props) => (
           {siteTitle}
         </Link>
       </h1>
+    </div>
+    <div
+      style={{
+        position: 'absolute',
+        top: 0,
+        right: `1rem`
+      }}>
+      <Switcher />
     </div>
   </div>
 )

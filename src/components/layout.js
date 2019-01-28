@@ -10,7 +10,7 @@ const Layout = ({ children }) => (
   <I18n>
     {t => (
       <>
-        <Header siteTitle={t('site.title')} />
+        <Header siteTitle={t('site:title')} />
         <div
           style={{
             margin: `0 auto`,

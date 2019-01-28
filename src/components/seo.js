@@ -7,7 +7,7 @@ function SEO({ description, meta, keywords, title }) {
   return (
     <I18n>
       {(t, { i18n }) => {
-        const metaDescription = description || t('site.description')
+        const metaDescription = description || t('site:description')
         const lang = i18n.language
         return (
           <Helmet
@@ -15,7 +15,7 @@ function SEO({ description, meta, keywords, title }) {
               lang
             }}
             title={title}
-            titleTemplate={`%s | ${t('site.title')}`}
+            titleTemplate={`%s | ${t('site:title')}`}
             meta={[
               {
                 name: `description`,
@@ -39,7 +39,7 @@ function SEO({ description, meta, keywords, title }) {
               },
               {
                 name: `twitter:creator`,
-                content: t('site.author')
+                content: t('site:author')
               },
               {
                 name: `twitter:title`,

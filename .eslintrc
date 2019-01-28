@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "typescript-eslint-parser",
+  "parserOptions": {
+    "jsx": true
+  },
+  "plugins": ["typescript", "react", "jsx-a11y"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "standard",
+    "standard-react",
+    "prettier-standard"
+  ]
+}

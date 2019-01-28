@@ -1,0 +1,71 @@
+{
+  "name": "suomifi-design-system",
+  "private": true,
+  "description": "Suomi.fi Design System",
+  "version": "0.1.0",
+  "author": "Jari Porola <jari.porola@gmail.com>",
+  "dependencies": {
+    "@csstools/normalize.css": "^9.0.1",
+    "gatsby": "^2.0.91",
+    "gatsby-image": "^2.0.20",
+    "gatsby-plugin-manifest": "^2.0.9",
+    "gatsby-plugin-offline": "^2.0.16",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sharp": "^2.0.14",
+    "gatsby-plugin-ts-loader": "^0.1.0",
+    "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-sharp": "^2.1.8",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-helmet": "^5.2.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "lint:code": "eslint \"src/**/*.{js,jsx,ts,tsx,md}\"",
+    "format:code": "prettier-eslint --write \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
+    "format:style": "prettier-stylelint --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.19",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-helmet": "^5.0.8",
+    "eslint": "^5.12.0",
+    "eslint-config-prettier": "^3.5.0",
+    "eslint-config-prettier-standard": "^2.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "gatsby-plugin-eslint": "^2.0.3",
+    "gatsby-plugin-stylelint": "^3.1.0",
+    "prettier": "^1.15.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^9.10.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "typescript-eslint-parser": "^21.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github:vrk-kpa/suomifi-design-system"
+  },
+  "bugs": {
+    "url": "https://github.com/vrk-kpa/suomifi-design-system/issues"
+  }
+}

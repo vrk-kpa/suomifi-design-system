@@ -1,4 +1,4 @@
-import { Link } from 'gatsby-plugin-i18next'
+import { Link } from '@wapps/gatsby-plugin-i18next'
 import React from 'react'
 
 const Header = ({ siteTitle }: Props) => (

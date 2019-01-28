@@ -29,7 +29,7 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-i18next`,
+      resolve: `@wapps/gatsby-plugin-i18next`,
       options: {
         availableLngs: ['en', 'fi'],
         fallbackLng: 'en'

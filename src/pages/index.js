@@ -1,8 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { I18n } from 'react-i18next'
-import { Link, withI18next } from 'gatsby-plugin-i18next'
-
+import { Link, withI18next } from '@wapps/gatsby-plugin-i18next'
 import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
@@ -29,6 +28,6 @@ export default withI18next()(IndexPage)
 
 export const query = graphql`
   query($lng: String!) {
-    ...LocalesFragment
+    ...AllLocalesFragment
   }
 `

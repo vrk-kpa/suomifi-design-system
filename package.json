@@ -32,7 +32,8 @@
     "format:code": "prettier-eslint --write \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "format:style": "prettier-stylelint --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "devDependencies": {
     "@types/i18next": "^12.1.0",
@@ -56,6 +57,7 @@
     "eslint-plugin-typescript": "^0.14.0",
     "gatsby-plugin-eslint": "^2.0.3",
     "gatsby-plugin-stylelint": "^3.1.0",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.15.2",
     "prettier-eslint-cli": "^4.7.1",
     "prettier-stylelint": "^0.4.2",

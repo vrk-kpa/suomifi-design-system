@@ -2,47 +2,40 @@ import { Link } from '@wapps/gatsby-plugin-i18next'
 import React from 'react'
 
 import Switcher from './switcher'
+import { suomifiTheme } from './theme'
+import Logo from './suomifi-logo'
 
-const Header = ({ siteTitle }: Props) => (
+const Header = () => (
   <div
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`
+      padding: '1rem',
+      borderTop: `4px solid ${suomifiTheme.colors.brandColor}`,
+      boxSizing: `border-box`,
+      background: `${suomifiTheme.colors.white}`,
+      borderBottom: '1px solid #C9CDCF',
+      height: `80px`,
+      display: 'flex',
+      justifyContent: 'center'
     }}>
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`
+        width: '100%',
+        maxWidth: 1140,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexWrap: 'nowrap'
       }}>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to='/'
-          style={{
-            color: `white`,
-            textDecoration: `none`
-          }}>
-          {siteTitle}
+      <div style={{ height: '32px' }}>
+        <Link to='/'>
+          <Logo />
         </Link>
-      </h1>
-    </div>
-    <div
-      style={{
-        position: 'absolute',
-        top: 0,
-        right: `1rem`
-      }}>
-      <Switcher />
+      </div>
+      <div>
+        <Switcher />
+      </div>
     </div>
   </div>
 )
-
-interface Props {
-  siteTitle?: string
-}
-
-Header.defaultProps = {
-  siteTitle: ``
-}
 
 export default Header

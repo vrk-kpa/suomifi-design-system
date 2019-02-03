@@ -5,23 +5,25 @@ import { I18n } from 'react-i18next'
 import Header from './header'
 import '@csstools/normalize.css'
 import './layout.css'
+import { suomifiTheme } from './theme'
 
 const Layout = ({ children }) => (
   <I18n>
     {t => (
-      <>
-        <Header siteTitle={t('site:title')} />
+      <div
+        style={Object.assign({}, suomifiTheme.typography, {
+          color: `${suomifiTheme.colors.text}`
+        })}>
+        <Header />
         <div
           style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0
+            maxWidth: 1140,
+            padding: `0 1rem`
           }}>
           {children}
           <footer>© {new Date().getFullYear()}</footer>
         </div>
-      </>
+      </div>
     )}
   </I18n>
 )

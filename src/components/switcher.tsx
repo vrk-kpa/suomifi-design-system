@@ -2,16 +2,26 @@ import React from 'react'
 import { Language } from '@wapps/gatsby-plugin-i18next'
 
 const Switcher = ({ changeLng, lng, availableLngs }: Props) => (
-  <ul style={{ listStyle: 'none' }}>
+  <ul
+    style={{
+      margin: 0,
+      padding: 0,
+      listStyle: 'none',
+      whiteSpace: 'nowrap'
+    }}>
     {availableLngs.map(value => (
       <li key={value} style={{ display: 'inline' }}>
         <button
           style={{
-            background: 'rebeccapurple',
-            color: 'white',
-            border: 0,
-            cursor: 'pointer',
-            textDecoration: value === lng ? 'underline' : 'none'
+            width: '30px',
+            height: '30px',
+            margin: '.2rem',
+            padding: '.2rem',
+            background: value === lng ? '#2A6EBB' : 'white',
+            color: value === lng ? 'white' : '#282828',
+            border: '1px solid #C9CDCF',
+            textTransform: 'uppercase',
+            cursor: 'pointer'
           }}
           onClick={() => changeLng(value)}>
           {value}

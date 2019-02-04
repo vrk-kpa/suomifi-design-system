@@ -34,7 +34,9 @@ const Layout = ({ children }) => (
               description={t('alpharel:description')}
             />
             {children}
-            <footer>© {new Date().getFullYear()}</footer>
+            <footer style={{ marginTop: '1rem' }}>
+              © {new Date().getFullYear()}
+            </footer>
           </div>
         </div>
       </div>

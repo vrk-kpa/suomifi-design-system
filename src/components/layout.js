@@ -4,6 +4,7 @@ import { I18n } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import Header from './header'
+import Navigation from './Navigation'
 import Annotation from './annotation'
 
 import '@csstools/normalize.css'
@@ -17,6 +18,7 @@ const Layout = ({ children }) => (
           color: `${suomifiTheme.colors.text}`
         })}>
         <Header />
+        <Navigation />
         <div
           style={{
             display: 'flex',

@@ -35,6 +35,7 @@ module.exports = {
         availableLngs: ['en', 'fi'],
         fallbackLng: 'en'
       }
-    }
+    },
+    `gatsby-plugin-emotion`
   ]
 }

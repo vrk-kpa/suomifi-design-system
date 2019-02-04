@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { I18n } from 'react-i18next'
+import { suomifiTheme } from 'suomifi-ui-components'
 
 import Header from './header'
 import Annotation from './annotation'
+
 import '@csstools/normalize.css'
 import './layout.css'
-import './theme/fontFaces.css'
-import { suomifiTheme } from './theme'
 
 const Layout = ({ children }) => (
   <I18n>

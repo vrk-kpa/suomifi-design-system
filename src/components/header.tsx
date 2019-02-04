@@ -1,8 +1,8 @@
 import { Link } from '@wapps/gatsby-plugin-i18next'
 import React from 'react'
+import { suomifiTheme } from 'suomifi-ui-components'
 
 import Switcher from './switcher'
-import { suomifiTheme } from './theme'
 import Logo from './suomifi-logo'
 
 const Header = () => (

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { I18n } from 'react-i18next'
+import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import Header from './header'
@@ -11,7 +11,7 @@ import '@csstools/normalize.css'
 import './layout.css'
 
 const Layout = ({ children }) => (
-  <I18n>
+  <NamespacesConsumer>
     {t => (
       <div
         style={Object.assign({}, suomifiTheme.typography, {
@@ -43,7 +43,7 @@ const Layout = ({ children }) => (
         </div>
       </div>
     )}
-  </I18n>
+  </NamespacesConsumer>
 )
 
 Layout.propTypes = {

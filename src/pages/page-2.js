@@ -1,16 +1,26 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import { NamespacesConsumer } from 'react-i18next'
+import { Link, withI18next } from '@wapps/gatsby-plugin-i18next'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 const SecondPage = () => (
-  <Layout>
-    <SEO title='Page two' />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to='/'>Go back to the homepage</Link>
-  </Layout>
+  <NamespacesConsumer ns={['page2']}>
+    {t => (
+      <Layout>
+        <SEO title={t('title')} />
+        <Link to='/'>{t('common:back.to.frontpage')}</Link>
+      </Layout>
+    )}
+  </NamespacesConsumer>
 )
 
-export default SecondPage
+export default withI18next()(SecondPage)
+
+export const query = graphql`
+  query($lng: String!) {
+    ...AllLocalesFragment
+  }
+`

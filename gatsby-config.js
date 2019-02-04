@@ -20,6 +20,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-stylelint`,
       options: { files: ['src/**/*.{js,jsx,ts,tsx,css,scss}'] }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/locale`,
+        name: `locale`
+      }
+    },
+    {
+      resolve: `@wapps/gatsby-plugin-i18next`,
+      options: {
+        availableLngs: ['en', 'fi'],
+        fallbackLng: 'en'
+      }
     }
   ]
 }

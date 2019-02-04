@@ -1,22 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import { I18n } from 'react-i18next'
 
-function SEO({ description, lang, meta, keywords, title }) {
+function SEO({ description, meta, keywords, title }) {
   return (
-    <StaticQuery
-      query={detailsQuery}
-      render={data => {
-        const metaDescription =
-          description || data.site.siteMetadata.description
+    <I18n>
+      {(t, { i18n }) => {
+        const metaDescription = description || t('site:description')
+        const lang = i18n.language
         return (
           <Helmet
             htmlAttributes={{
               lang
             }}
             title={title}
-            titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+            titleTemplate={`%s | ${t('site:title')}`}
             meta={[
               {
                 name: `description`,
@@ -40,7 +39,7 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:creator`,
-                content: data.site.siteMetadata.author
+                content: t('site:author')
               },
               {
                 name: `twitter:title`,
@@ -63,34 +62,20 @@ function SEO({ description, lang, meta, keywords, title }) {
           />
         )
       }}
-    />
+    </I18n>
   )
 }
 
 SEO.defaultProps = {
-  lang: `en`,
   meta: [],
   keywords: []
 }
 
 SEO.propTypes = {
   description: PropTypes.string,
-  lang: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired
 }
 
 export default SEO
-
-const detailsQuery = graphql`
-  query DefaultSEOQuery {
-    site {
-      siteMetadata {
-        title
-        description
-        author
-      }
-    }
-  }
-`

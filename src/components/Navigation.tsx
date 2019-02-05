@@ -7,7 +7,7 @@ import NavItem from './NavItem'
 const Navigation = () => (
   <NamespacesConsumer>
     {t => (
-      <div
+      <nav
         style={{
           padding: 0,
           boxSizing: 'border-box',
@@ -16,24 +16,27 @@ const Navigation = () => (
           display: 'flex',
           justifyContent: 'center'
         }}>
-        <div
+        <ul
           style={{
+            margin: 0,
+            padding: 0,
             width: '100%',
             maxWidth: 1140,
             display: 'flex',
             alignItems: 'center',
-            flexWrap: 'wrap'
+            flexWrap: 'wrap',
+            listStyle: 'none'
           }}>
           {[
             { to: '/', label: t('home:title') },
             { to: '/components', label: t('components:title') }
           ].map(item => (
-            <div key={item.to} style={{ margin: '0 1.5rem' }}>
+            <li key={item.to} style={{ margin: '0 1.2rem' }}>
               <NavItem to={item.to}>{item.label}</NavItem>
-            </div>
+            </li>
           ))}
-        </div>
-      </div>
+        </ul>
+      </nav>
     )}
   </NamespacesConsumer>
 )

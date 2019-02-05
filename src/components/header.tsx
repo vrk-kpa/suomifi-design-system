@@ -9,7 +9,7 @@ import Logo from './suomifi-logo'
 const Header = () => (
   <NamespacesConsumer>
     {t => (
-      <div
+      <header
         style={{
           padding: '1rem',
           borderTop: `4px solid ${suomifiTheme.colors.brandColor}`,
@@ -69,7 +69,7 @@ const Header = () => (
             <Switcher />
           </div>
         </div>
-      </div>
+      </header>
     )}
   </NamespacesConsumer>
 )

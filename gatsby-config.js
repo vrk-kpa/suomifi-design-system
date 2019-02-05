@@ -36,6 +36,14 @@ module.exports = {
         fallbackLng: 'en'
       }
     },
-    `gatsby-plugin-emotion`
+    `gatsby-plugin-emotion`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Source Sans Pro:400,600']
+        }
+      }
+    }
   ]
 }

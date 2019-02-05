@@ -4,7 +4,7 @@ import { suomifiTheme } from 'suomifi-ui-components'
 
 import NavItem from './NavItem'
 
-const Navigation = () => (
+const Navigation = (): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <nav

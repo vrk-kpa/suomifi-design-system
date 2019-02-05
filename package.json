@@ -62,8 +62,10 @@
     "@types/react-dom": "^16.0.11",
     "@types/react-helmet": "^5.0.8",
     "@types/react-i18next": "^8.1.0",
+    "@typescript-eslint/eslint-plugin": "^1.2.0",
+    "@typescript-eslint/parser": "^1.2.0",
     "eslint": "^5.12.0",
-    "eslint-config-prettier": "^3.5.0",
+    "eslint-config-prettier": "^4.0.0",
     "eslint-config-prettier-standard": "^2.0.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-config-standard-react": "^7.0.2",
@@ -75,7 +77,6 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-typescript": "^0.14.0",
     "gatsby-plugin-eslint": "^2.0.3",
     "gatsby-plugin-stylelint": "^3.1.0",
     "gh-pages": "^2.0.1",
@@ -88,8 +89,7 @@
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
     "stylelint-config-standard": "^18.2.0",
-    "stylelint-webpack-plugin": "^0.10.5",
-    "typescript-eslint-parser": "^21.0.2"
+    "stylelint-webpack-plugin": "^0.10.5"
   },
   "repository": {
     "type": "git",

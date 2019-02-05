@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import jsxToString from 'jsx-to-string'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 
-const ComponentExample = ({ children }: Props) => (
+const ComponentExample = ({ children }: Props): JSX.Element => (
   <div>
     {children}
     <SyntaxHighlighter language='jsx'>

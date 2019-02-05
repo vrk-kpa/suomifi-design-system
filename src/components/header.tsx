@@ -6,7 +6,7 @@ import { suomifiTheme } from 'suomifi-ui-components'
 import Switcher from './switcher'
 import Logo from './suomifi-logo'
 
-const Header = () => (
+const Header = (): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <header

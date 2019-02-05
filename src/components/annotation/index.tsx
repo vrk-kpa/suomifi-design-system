@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Annotation = ({ title, description }: Props) => (
+const Annotation = ({ title, description }: Props): JSX.Element => (
   <div
     style={{
       margin: '2rem 0',

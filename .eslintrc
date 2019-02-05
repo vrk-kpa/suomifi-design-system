@@ -3,21 +3,22 @@
     "browser": true,
     "node": true
   },
-  "parser": "typescript-eslint-parser",
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "jsx": true
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json"
   },
-  "plugins": ["typescript", "react", "jsx-a11y"],
+  "plugins": ["@typescript-eslint", "react", "jsx-a11y"],
   "extends": [
     "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "standard",
     "standard-react",
-    "prettier-standard"
-  ],
-  "rules": {
-    "no-unused-vars": "warn",
-    "no-use-before-define": "warn"
-  }
+    "prettier-standard",
+    "prettier/@typescript-eslint"
+  ]
 }

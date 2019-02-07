@@ -1,10 +1,5 @@
 module.exports = {
   pathPrefix: '/suomifi-design-system',
-  siteMetadata: {
-    title: `Suomi.fi Design System`,
-    description: `Suomi.fi Design System`,
-    author: `Suomi.fi`
-  },
   plugins: [
     `gatsby-plugin-ts-loader`,
     `gatsby-plugin-react-helmet`,

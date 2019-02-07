@@ -6,7 +6,6 @@ module.exports = {
     author: `Suomi.fi`
   },
   plugins: [
-    `gatsby-plugin-eslint`,
     `gatsby-plugin-ts-loader`,
     `gatsby-plugin-react-helmet`,
     {
@@ -18,10 +17,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-stylelint`,
-      options: { files: ['src/**/*.{js,jsx,ts,tsx,css,scss}'] }
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

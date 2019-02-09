@@ -17,6 +17,7 @@
     "prettier-standard"
   ],
   "rules": {
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "no-use-before-define": "warn"
   }
 }

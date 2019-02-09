@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { I18n } from 'react-i18next'
+import { NamespacesConsumer } from 'react-i18next'
 
 function SEO({ description, meta, keywords, title }) {
   return (
-    <I18n>
+    <NamespacesConsumer>
       {(t, { i18n }) => {
         const metaDescription = description || t('site:description')
         const lang = i18n.language
@@ -62,7 +62,7 @@ function SEO({ description, meta, keywords, title }) {
           />
         )
       }}
-    </I18n>
+    </NamespacesConsumer>
   )
 }
 

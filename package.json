@@ -88,8 +88,7 @@
     "stylelint": "^9.10.0",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-webpack-plugin": "^0.10.5"
+    "stylelint-config-standard": "^18.2.0"
   },
   "repository": {
     "type": "git",

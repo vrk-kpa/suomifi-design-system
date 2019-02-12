@@ -1,16 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import Header from './header'
 import Navigation from './Navigation'
+import SideNav from './SideNav'
 import Annotation from './annotation'
 
 import '@csstools/normalize.css'
 import './layout.css'
 
-const Layout = ({ children }) => (
+const Layout = ({ sideNavData, children }: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <div
@@ -29,16 +29,24 @@ const Layout = ({ children }) => (
             style={{
               width: '100%',
               maxWidth: 1140,
-              padding: `0 1rem`
+              display: 'flex',
+              flexWrap: 'nowrap'
             }}>
-            <Annotation
-              title={t('alpharel:title')}
-              description={t('alpharel:description')}
-            />
-            <main>{children}</main>
-            <footer style={{ marginTop: '1rem' }}>
-              © {new Date().getFullYear()}
-            </footer>
+            {sideNavData && (
+              <div style={{ margin: '1rem' }}>
+                <SideNav sideNavData={sideNavData} />
+              </div>
+            )}
+            <div style={{ margin: '1rem' }}>
+              <Annotation
+                title={t('alpharel:title')}
+                description={t('alpharel:description')}
+              />
+              <main>{children}</main>
+              <footer style={{ marginTop: '1rem' }}>
+                © {new Date().getFullYear()}
+              </footer>
+            </div>
           </div>
         </div>
       </div>
@@ -46,8 +54,9 @@ const Layout = ({ children }) => (
   </NamespacesConsumer>
 )
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired
+interface Props {
+  sideNavData?: object
+  children: ReactNode
 }
 
 export default Layout

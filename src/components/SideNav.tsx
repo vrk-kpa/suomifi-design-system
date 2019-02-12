@@ -3,6 +3,7 @@ import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import SideNavItem from './SideNavItem'
+import { SideNavData } from './SideNavData'
 
 class SideNav extends Component<Props, State> {
   public constructor(props) {
@@ -62,7 +63,14 @@ class SideNav extends Component<Props, State> {
               background: `${suomifiTheme.colors.white}`,
               border: '1px solid #C9CDCF'
             }}>
-            {this.renderNavItems(sideNavData, 1)}
+            <div
+              style={{
+                padding: '1rem',
+                fontWeight: 600
+              }}>
+              {sideNavData.title}
+            </div>
+            {this.renderNavItems(sideNavData.items, 1)}
           </nav>
         )}
       </NamespacesConsumer>
@@ -71,7 +79,7 @@ class SideNav extends Component<Props, State> {
 }
 
 interface Props {
-  sideNavData: object
+  sideNavData: SideNavData
 }
 
 interface State {

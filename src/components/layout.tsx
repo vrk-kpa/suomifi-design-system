@@ -6,6 +6,7 @@ import Header from './header'
 import Navigation from './Navigation'
 import SideNav from './SideNav'
 import Annotation from './annotation'
+import { SideNavData } from './SideNavData'
 
 import '@csstools/normalize.css'
 import './layout.css'
@@ -55,7 +56,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
 )
 
 interface Props {
-  sideNavData?: object
+  sideNavData?: SideNavData
   children: ReactNode
 }
 

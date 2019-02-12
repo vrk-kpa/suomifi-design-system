@@ -43,7 +43,7 @@ class SideNav extends Component<Props, State> {
           </SideNavItem>
           {item.children &&
             this.state.isOpen[item.to] &&
-            this.renderNavItems(item.children, ++level)}
+            this.renderNavItems(item.children, level + 1)}
         </li>
       ))}
     </ul>

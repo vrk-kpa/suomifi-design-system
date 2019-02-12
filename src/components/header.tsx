@@ -4,7 +4,7 @@ import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import Switcher from './switcher'
-import Logo from './suomifi-logo'
+import { Icon } from './Icon'
 
 const Header = (): JSX.Element => (
   <NamespacesConsumer>
@@ -31,7 +31,7 @@ const Header = (): JSX.Element => (
           }}>
           <div style={{ height: '32px' }}>
             <Link to='/'>
-              <Logo />
+              <Icon.suomifi />
             </Link>
           </div>
           <div

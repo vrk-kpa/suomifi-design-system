@@ -9,25 +9,26 @@ const Switcher = ({ changeLng, lng, availableLngs }: Props): JSX.Element => (
       listStyle: 'none',
       whiteSpace: 'nowrap'
     }}>
-    {availableLngs.map(value => (
-      <li key={value} style={{ display: 'inline' }}>
-        <button
-          style={{
-            width: '30px',
-            height: '30px',
-            margin: '.2rem',
-            padding: '.2rem',
-            background: value === lng ? '#2A6EBB' : 'white',
-            color: value === lng ? 'white' : '#282828',
-            border: '1px solid #C9CDCF',
-            textTransform: 'uppercase',
-            cursor: 'pointer'
-          }}
-          onClick={() => changeLng(value)}>
-          {value}
-        </button>
-      </li>
-    ))}
+    {availableLngs &&
+      availableLngs.map(value => (
+        <li key={value} style={{ display: 'inline' }}>
+          <button
+            style={{
+              width: '30px',
+              height: '30px',
+              margin: '.2rem',
+              padding: '.2rem',
+              background: value === lng ? '#2A6EBB' : 'white',
+              color: value === lng ? 'white' : '#282828',
+              border: '1px solid #C9CDCF',
+              textTransform: 'uppercase',
+              cursor: 'pointer'
+            }}
+            onClick={() => changeLng(value)}>
+            {value}
+          </button>
+        </li>
+      ))}
   </ul>
 )
 

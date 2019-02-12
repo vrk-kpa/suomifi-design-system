@@ -4,6 +4,7 @@ import { suomifiTheme } from 'suomifi-ui-components'
 
 import SideNavItem from './SideNavItem'
 import { SideNavData } from './SideNavData'
+import { Icon } from './Icon'
 
 class SideNav extends Component<Props, State> {
   public constructor(props) {
@@ -65,10 +66,15 @@ class SideNav extends Component<Props, State> {
             }}>
             <div
               style={{
-                padding: '1rem',
-                fontWeight: 600
+                padding: '.5rem',
+                fontWeight: 600,
+                display: 'flex',
+                alignItems: 'center'
               }}>
-              {sideNavData.title}
+              <div style={{ height: '40px' }}>
+                <Icon.solution />
+              </div>
+              <div style={{ marginLeft: '.5rem' }}>{sideNavData.title}</div>
             </div>
             {this.renderNavItems(sideNavData.items, 1)}
           </nav>

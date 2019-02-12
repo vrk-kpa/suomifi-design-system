@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import { Link } from '@wapps/gatsby-plugin-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
+const isFrontPage = to => to && to === '/'
+
 const NavItem = ({ to, children }) => (
   <Link
     to={to}
@@ -16,8 +18,14 @@ const NavItem = ({ to, children }) => (
         borderBottom: `4px solid ${suomifiTheme.colors.secondaryColor}`
       }
     }}
-    activeStyle={{
-      borderBottom: `4px solid ${suomifiTheme.colors.secondaryColor}`
+    getProps={({ isCurrent, isPartiallyCurrent }) => {
+      if (isCurrent || (!isFrontPage(to) && isPartiallyCurrent)) {
+        return {
+          style: {
+            borderBottom: `4px solid ${suomifiTheme.colors.secondaryColor}`
+          }
+        }
+      }
     }}>
     {children}
   </Link>

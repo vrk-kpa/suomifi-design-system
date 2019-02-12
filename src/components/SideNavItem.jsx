@@ -30,13 +30,11 @@ class SideNavItem extends Component {
             padding: '1rem',
             paddingLeft: level + 'rem',
             borderBottom: '1px solid #EEF5FF',
-            borderLeft: '4px solid transparent',
             whiteSpace: 'nowrap',
             color: suomifiTheme.colors.secondaryColor,
             textDecoration: 'none',
             '&:hover': {
               background: '#EEF5FF',
-              borderLeft: '4px solid ' + suomifiTheme.colors.brandColor,
               color: suomifiTheme.colors.brandColor,
               fontWeight: 600
             }
@@ -45,7 +43,6 @@ class SideNavItem extends Component {
             if (!this.isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
               return {
                 style: {
-                  borderLeft: '4px solid ' + suomifiTheme.colors.brandColor,
                   fontWeight: 600
                 }
               }
@@ -55,7 +52,6 @@ class SideNavItem extends Component {
               return {
                 style: {
                   background: '#EEF5FF',
-                  borderLeft: '4px solid ' + suomifiTheme.colors.brandColor,
                   color: suomifiTheme.colors.brandColor,
                   fontWeight: 600
                 }

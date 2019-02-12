@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
+import { withPrefix } from 'gatsby'
 
 import SideNavItem from './SideNavItem'
 import { SideNavData } from './SideNavData'
@@ -15,7 +16,7 @@ class SideNav extends Component<Props, State> {
     }
   }
 
-  private toggleOpen = (to): void => {
+  private toggleOpen = (to: string): void => {
     this.setState(prevState => {
       prevState.isOpen[to] = !prevState.isOpen[to]
       return {
@@ -23,6 +24,9 @@ class SideNav extends Component<Props, State> {
       }
     })
   }
+
+  private iscurrent = (to: string): boolean =>
+    RegExp(withPrefix(`/../${to}`)).test(location.pathname)
 
   private renderNavItems = (items, level) => (
     <ul
@@ -33,7 +37,14 @@ class SideNav extends Component<Props, State> {
         listStyle: 'none'
       }}>
       {items.map(item => (
-        <li key={item.to}>
+        <li
+          key={item.to}
+          style={{
+            borderLeft:
+              level === 1 && this.iscurrent(item.to)
+                ? `4px solid ${suomifiTheme.colors.brandColor}`
+                : '4px solid transparent'
+          }}>
           <SideNavItem
             to={item.to}
             hasChildren={item.children ? item.children.length > 0 : false}

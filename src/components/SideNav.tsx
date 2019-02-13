@@ -44,6 +44,8 @@ class SideNav extends Component<Props, State> {
   private iscurrent = (to: string): boolean =>
     RegExp(withPrefix(`/../${to}`)).test(location.pathname)
 
+  private isOpen = (to: string): boolean => this.state.isOpen[to]
+
   private toggleOpen = (to: string): void => {
     this.setState(prevState => {
       prevState.isOpen[to] = !prevState.isOpen[to]
@@ -73,6 +75,7 @@ class SideNav extends Component<Props, State> {
           <SideNavItem
             to={item.to}
             hasChildren={item.children ? item.children.length > 0 : false}
+            isOpen={this.isOpen}
             handleToggle={this.toggleOpen}
             level={level}>
             {item.label}

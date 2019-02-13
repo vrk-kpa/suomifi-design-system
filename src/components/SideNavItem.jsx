@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { suomifiTheme } from 'suomifi-ui-components'
 import { Link } from '@wapps/gatsby-plugin-i18next'
+import { Icon } from './Icon'
 
 class SideNavItem extends Component {
   toggleOpen = event => {
@@ -13,7 +14,7 @@ class SideNavItem extends Component {
   isFrontPage = to => to && to === '/'
 
   render() {
-    const { to, children, hasChildren, level } = this.props
+    const { to, children, hasChildren, isOpen, level } = this.props
 
     return (
       <div
@@ -62,10 +63,15 @@ class SideNavItem extends Component {
           {hasChildren && (
             <button
               style={{
-                float: 'right'
+                float: 'right',
+                background: 'none',
+                padding: 0,
+                border: 0,
+                height: '24px',
+                fill: '#636769'
               }}
               onClick={this.toggleOpen}>
-              +
+              {isOpen(to) ? <Icon.caretUp /> : <Icon.caretDown />}
             </button>
           )}
         </Link>
@@ -78,6 +84,7 @@ SideNavItem.propTypes = {
   to: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   hasChildren: PropTypes.bool.isRequired,
+  isOpen: PropTypes.func.isRequired,
   handleToggle: PropTypes.func.isRequired,
   level: PropTypes.number.isRequired
 }

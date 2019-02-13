@@ -32,7 +32,8 @@ class SideNav extends Component<Props, State> {
 
   private getPathTree = (path: string, res = []): string[] => {
     if (path) {
-      const part = '/' + path.split('/').join('/')
+      let part = '/' + path.split('/').join('/')
+      part += part.endsWith('/') ? '' : '/'
       res.push(part)
 
       const rest = path

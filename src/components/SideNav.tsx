@@ -11,10 +11,38 @@ class SideNav extends Component<Props, State> {
   public constructor(props) {
     super(props)
 
+    const openStates = this.getPathTree(this.getCurrentPath())
+      .map(path => ({
+        [path]: true
+      }))
+      .reduce((obj, item) => ({ ...obj, ...item }), {})
+
     this.state = {
-      isOpen: {}
+      isOpen: openStates
     }
   }
+
+  private getPathTree = (path: string, res = []): string[] => {
+    if (path) {
+      const part = '/' + path.split('/').join('/')
+      res.push(part)
+
+      const rest = path
+        .split('/')
+        .slice(0, -1)
+        .join('/')
+      this.getPathTree(rest, res)
+    }
+    return res
+  }
+
+  private getCurrentPath = (): string => {
+    const match = location.pathname.match(RegExp(withPrefix('/../(.*)')))
+    return match && match[1]
+  }
+
+  private iscurrent = (to: string): boolean =>
+    RegExp(withPrefix(`/../${to}`)).test(location.pathname)
 
   private toggleOpen = (to: string): void => {
     this.setState(prevState => {
@@ -24,9 +52,6 @@ class SideNav extends Component<Props, State> {
       }
     })
   }
-
-  private iscurrent = (to: string): boolean =>
-    RegExp(withPrefix(`/../${to}`)).test(location.pathname)
 
   private renderNavItems = (items, level) => (
     <ul

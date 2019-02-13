@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
+import { Location } from '@reach/router'
 
 import Header from './header'
 import Navigation from './Navigation'
@@ -35,7 +36,11 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
             }}>
             {sideNavData && (
               <div style={{ margin: '1rem' }}>
-                <SideNav sideNavData={sideNavData} />
+                <Location>
+                  {({ location }) => (
+                    <SideNav location={location} sideNavData={sideNavData} />
+                  )}
+                </Location>
               </div>
             )}
             <div style={{ margin: '1rem' }}>

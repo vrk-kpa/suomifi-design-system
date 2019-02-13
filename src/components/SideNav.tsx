@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 import { withPrefix } from 'gatsby'
+import { WindowLocation } from '@reach/router'
 
 import SideNavItem from './SideNavItem'
 import { SideNavData } from './SideNavData'
@@ -11,15 +12,22 @@ class SideNav extends Component<Props, State> {
   public constructor(props) {
     super(props)
 
-    const openStates = this.getPathTree(this.getCurrentPath())
+    this.state = {
+      isOpen: {}
+    }
+  }
+
+  public componentDidMount = () => {
+    const currentPath = this.getCurrentPath()
+    const openStates = this.getPathTree(currentPath)
       .map(path => ({
         [path]: true
       }))
       .reduce((obj, item) => ({ ...obj, ...item }), {})
 
-    this.state = {
+    this.setState({
       isOpen: openStates
-    }
+    })
   }
 
   private getPathTree = (path: string, res = []): string[] => {
@@ -37,12 +45,15 @@ class SideNav extends Component<Props, State> {
   }
 
   private getCurrentPath = (): string => {
+    const { location } = this.props
     const match = location.pathname.match(RegExp(withPrefix('/../(.*)')))
     return match && match[1]
   }
 
-  private iscurrent = (to: string): boolean =>
-    RegExp(withPrefix(`/../${to}`)).test(location.pathname)
+  private iscurrent = (to: string): boolean => {
+    const currentPath = this.getCurrentPath()
+    return to && currentPath && currentPath.startsWith(to.substr(1))
+  }
 
   private isOpen = (to: string): boolean => this.state.isOpen[to]
 
@@ -124,6 +135,7 @@ class SideNav extends Component<Props, State> {
 }
 
 interface Props {
+  location: WindowLocation
   sideNavData: SideNavData
 }
 

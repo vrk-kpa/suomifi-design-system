@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: '/suomifi-design-system',
   plugins: [
-    `gatsby-plugin-ts-loader`,
+    `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

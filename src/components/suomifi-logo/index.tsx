@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Logo = () => (
+const Logo = (): JSX.Element => (
   <svg
     viewBox='0 0 220 55'
     preserveAspectRatio='xMidYMin meet'

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Language } from '@wapps/gatsby-plugin-i18next'
 
-const Switcher = ({ changeLng, lng, availableLngs }: Props) => (
+const Switcher = ({ changeLng, lng, availableLngs }: Props): JSX.Element => (
   <ul
     style={{
       margin: 0,
@@ -37,7 +37,7 @@ interface Props {
   availableLngs: string[]
 }
 
-const Wrapper = props => (
+const Wrapper = (props): JSX.Element => (
   <Language>{lngProps => <Switcher {...props} {...lngProps} />}</Language>
 )
 

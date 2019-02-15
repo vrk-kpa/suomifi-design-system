@@ -1,12 +1,6 @@
 module.exports = {
   pathPrefix: '/suomifi-design-system',
-  siteMetadata: {
-    title: `Suomi.fi Design System`,
-    description: `Suomi.fi Design System`,
-    author: `Suomi.fi`
-  },
   plugins: [
-    `gatsby-plugin-eslint`,
     `gatsby-plugin-ts-loader`,
     `gatsby-plugin-react-helmet`,
     {
@@ -18,10 +12,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-stylelint`,
-      options: { files: ['src/**/*.{js,jsx,ts,tsx,css,scss}'] }
-    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -36,6 +26,14 @@ module.exports = {
         fallbackLng: 'en'
       }
     },
-    `gatsby-plugin-emotion`
+    `gatsby-plugin-emotion`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Source Sans Pro:400,600']
+        }
+      }
+    }
   ]
 }

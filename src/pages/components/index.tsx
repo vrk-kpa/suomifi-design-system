@@ -6,7 +6,7 @@ import { Link, withI18next } from '@wapps/gatsby-plugin-i18next'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 
-const Page = () => (
+const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['components']}>
     {t => (
       <Layout>

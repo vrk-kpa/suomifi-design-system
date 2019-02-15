@@ -8,7 +8,7 @@ import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import ComponentExample from '../../components/ComponentExample'
 
-const Page = () => (
+const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['button']}>
     {t => (
       <Layout>

@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const rimraf = require('rimraf')
 
-// You can delete this file if you're not using it
+const cleanUp = () => {
+  ;[`${__dirname}/.cache`, `${__dirname}/public`].forEach(path => {
+    console.log(`Cleaning '${path}'`)
+    rimraf.sync(path)
+  })
+}
+
+exports.onPreInit = () => {
+  cleanUp()
+}

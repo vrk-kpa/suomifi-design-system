@@ -18,6 +18,7 @@ const Switcher = ({ changeLng, lng, availableLngs }: Props): JSX.Element => (
               height: '30px',
               margin: '.2rem',
               padding: '.2rem',
+              lineHeight: '1rem',
               background: value === lng ? '#2A6EBB' : 'white',
               color: value === lng ? 'white' : '#282828',
               border: '1px solid #C9CDCF',

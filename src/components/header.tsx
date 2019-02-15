@@ -29,7 +29,7 @@ const Header = (): JSX.Element => (
             justifyContent: 'space-between',
             flexWrap: 'wrap'
           }}>
-          <div style={{ height: '32px' }}>
+          <div style={{ width: '128px', height: '32px' }}>
             <Link to='/'>
               <Icon.suomifi />
             </Link>

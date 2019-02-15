@@ -122,7 +122,7 @@ class SideNav extends Component<Props, State> {
                 display: 'flex',
                 alignItems: 'center'
               }}>
-              <div style={{ height: '40px' }}>
+              <div style={{ width: '40px', height: '40px' }}>
                 <Icon.solution />
               </div>
               <div style={{ marginLeft: '.5rem' }}>{sideNavData.title}</div>

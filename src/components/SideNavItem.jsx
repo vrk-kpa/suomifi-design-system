@@ -67,6 +67,7 @@ class SideNavItem extends Component {
                 background: 'none',
                 padding: 0,
                 border: 0,
+                width: '24px',
                 height: '24px',
                 fill: '#636769'
               }}

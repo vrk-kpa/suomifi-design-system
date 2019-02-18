@@ -1,4 +1,16 @@
 {
   "title": "Button",
-  "click.me": "Click me"
+  "primary.title": "Primary",
+  "primary.description": "Instructions",
+  "secondary.title": "Secondary",
+  "secondary.description": "Instructions",
+  "tertiary.title": "Subtle",
+  "tertiary.description": "Instructions",
+  "secondaryNoborder.title": "Secondary without border",
+  "secondaryNoborder.description": "Instructions",
+  "negative.title": "Negative",
+  "negative.description": "Instructions",
+  "icon.title": "Icon left",
+  "iconRight.title": "Icon right",
+  "disabled.title": "Disabled"
 }

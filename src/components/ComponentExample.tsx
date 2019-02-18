@@ -4,7 +4,6 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 
 const ComponentExample = ({ children }: Props): JSX.Element => (
   <div style={{ margin: '1rem 0' }}>
-    {children}
     <SyntaxHighlighter language='jsx'>
       {reactElementToJSXString(children, {
         filterProps: ['style'],

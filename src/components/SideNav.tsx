@@ -5,7 +5,7 @@ import { withPrefix } from 'gatsby'
 import { WindowLocation } from '@reach/router'
 
 import SideNavItem from './SideNavItem'
-import { SideNavData } from './SideNavData'
+import { SideNavData, SideNavItemData } from './SideNavData'
 import { Icon } from './Icon'
 
 class SideNav extends Component<Props, State> {
@@ -90,7 +90,10 @@ class SideNav extends Component<Props, State> {
     })
   }
 
-  private renderNavItems = (items, level) => (
+  private hasChildren = (item: SideNavItemData): boolean =>
+    !!item.children && item.children.length > 0
+
+  private renderNavItems = (items: SideNavItemData[], level: number) => (
     <ul
       style={{
         margin: 0,
@@ -111,14 +114,14 @@ class SideNav extends Component<Props, State> {
           }}>
           <SideNavItem
             to={item.to}
-            hasChildren={item.children ? item.children.length > 0 : false}
+            hasChildren={this.hasChildren(item)}
             isOpen={this.isOpen}
             handleToggle={this.toggleOpen}
             level={level}>
             {item.label}
           </SideNavItem>
-          {item.children &&
-            this.state.isOpen[item.to] &&
+          {this.hasChildren(item) &&
+            !!this.state.isOpen[item.to] &&
             this.renderNavItems(item.children, level + 1)}
         </li>
       ))}

@@ -3,12 +3,12 @@ import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
 
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
-import sideNavData from '../../config/sidenav/components'
+import Layout from '../../../components/layout'
+import SEO from '../../../components/seo'
+import sideNavData from '../../../config/sidenav/instructions'
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['components']}>
+  <NamespacesConsumer ns={['instructions.suomifi-theme.accessibility']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} description='' />

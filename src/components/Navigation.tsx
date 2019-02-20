@@ -29,7 +29,8 @@ const Navigation = (): JSX.Element => (
           }}>
           {[
             { to: '/', label: t('home:title') },
-            { to: '/components', label: t('components:title') }
+            { to: '/components/', label: t('components:title') },
+            { to: '/instructions/', label: t('instructions:title') }
           ].map(item => (
             <li key={item.to} style={{ margin: '0 1.2rem' }}>
               <NavItem to={item.to}>{item.label}</NavItem>

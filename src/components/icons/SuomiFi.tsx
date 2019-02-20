@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Logo = (): JSX.Element => (
+const Icon = (): JSX.Element => (
   <svg
     viewBox='0 0 220 55'
     preserveAspectRatio='xMidYMin meet'
@@ -58,4 +58,4 @@ const Logo = (): JSX.Element => (
   </svg>
 )
 
-export default Logo
+export default Icon

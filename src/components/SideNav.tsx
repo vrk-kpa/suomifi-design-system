@@ -103,9 +103,11 @@ class SideNav extends Component<Props, State> {
           key={item.to}
           style={{
             borderLeft:
-              level === 1 && this.iscurrent(item.to)
-                ? `4px solid ${suomifiTheme.colors.brandColor}`
-                : '4px solid transparent'
+              level === 1
+                ? this.iscurrent(item.to)
+                  ? `4px solid ${suomifiTheme.colors.brandColor}`
+                  : '4px solid transparent'
+                : 'none'
           }}>
           <SideNavItem
             to={item.to}

@@ -10,7 +10,7 @@
   "secondaryNoborder.description": "Ohjeistus",
   "negative.title": "Negatiivinen",
   "negative.description": "Ohjeistus",
-  "icon.title": "Ikoni vasemmalla",
-  "iconRight.title": "Ikoni oikealla",
-  "disabled.title": "Estetty"
+  "withIcon.title": "Painike ikonilla",
+  "withIcon.description": "Ohjeistus",
+  "button.label": "Painike"
 }

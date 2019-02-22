@@ -14,7 +14,17 @@ const ComponentDescription = ({
           borderBottom: '1px solid #C9CDCF',
           marginBottom: '3rem'
         }}>
-        {children}
+        <h2>{title}</h2>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            padding: '1rem'
+          }}>
+          {children}
+        </div>
         <div style={{ marginTop: '1rem' }}>{description}</div>
         <ComponentExample>{children}</ComponentExample>
       </div>
@@ -23,7 +33,7 @@ const ComponentDescription = ({
 )
 
 interface Props {
-  title?: string
+  title: string
   description: string
   children: ReactNode
 }

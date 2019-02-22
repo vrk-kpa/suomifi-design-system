@@ -28,39 +28,55 @@ const Page = (): JSX.Element => (
           {
             id: 'negative',
             comp: Button.negative,
-            background: true
+            background: suomifiTheme.colors.secondaryColor
           }
         ].map(item => (
           <ComponentDescription
             key={item.id}
             title={t(`${item.id}.title`)}
             description={t(`${item.id}.description`)}>
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                flexWrap: 'wrap',
-                padding: '1rem',
-                background: item.background
-                  ? suomifiTheme.colors.secondaryColor
-                  : 'none'
-              }}>
+            <div style={{ background: item.background || 'none' }}>
               <item.comp style={{ margin: '.5rem' }}>
-                {t(`${item.id}.title`)}
-              </item.comp>
-              <item.comp style={{ margin: '.5rem' }} icon='login'>
-                {t('icon.title')}
-              </item.comp>
-              <item.comp style={{ margin: '.5rem' }} iconRight='login'>
-                {t('iconRight.title')}
+                {t('button.label')}
               </item.comp>
               <item.comp style={{ margin: '.5rem' }} disabled>
-                {t('disabled.title')}
+                {t('button.label')}
               </item.comp>
             </div>
           </ComponentDescription>
         ))}
+
+        <ComponentDescription
+          title={t('withIcon.title')}
+          description={t('withIcon.description')}>
+          <>
+            {[
+              { id: 'primary', comp: Button },
+              { id: 'secondary', comp: Button.secondary },
+              { id: 'tertiary', comp: Button.tertiary },
+              {
+                id: 'secondaryNoborder',
+                comp: Button.secondaryNoborder
+              },
+              {
+                id: 'negative',
+                comp: Button.negative,
+                background: suomifiTheme.colors.secondaryColor
+              }
+            ].map(item => (
+              <div
+                key={item.id}
+                style={{ background: item.background || 'none' }}>
+                <item.comp style={{ margin: '.5rem' }} icon='login'>
+                  {t('button.label')}
+                </item.comp>
+                <item.comp style={{ margin: '.5rem' }} iconRight='login'>
+                  {t('button.label')}
+                </item.comp>
+              </div>
+            ))}
+          </>
+        </ComponentDescription>
       </Layout>
     )}
   </NamespacesConsumer>

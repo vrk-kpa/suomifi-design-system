@@ -10,7 +10,7 @@
   "secondaryNoborder.description": "Instructions",
   "negative.title": "Negative",
   "negative.description": "Instructions",
-  "icon.title": "Icon left",
-  "iconRight.title": "Icon right",
-  "disabled.title": "Disabled"
+  "withIcon.title": "Button with icon",
+  "withIcon.description": "Instructions",
+  "button.label": "Button"
 }

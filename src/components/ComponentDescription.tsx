@@ -2,6 +2,11 @@ import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import ComponentExample from './ComponentExample'
 
+const getWithoutWrappers = (children: any): ReactNode[] =>
+  React.Children.map(children, child =>
+    child.type === 'div' ? getWithoutWrappers(child.props.children) : child
+  )
+
 const ComponentDescription = ({
   title,
   description,
@@ -12,7 +17,8 @@ const ComponentDescription = ({
       <div
         style={{
           borderBottom: '1px solid #C9CDCF',
-          marginBottom: '3rem'
+          marginBottom: '3rem',
+          paddingBottom: '1rem'
         }}>
         <h2>{title}</h2>
         <div
@@ -26,7 +32,9 @@ const ComponentDescription = ({
           {children}
         </div>
         <div style={{ marginTop: '1rem' }}>{description}</div>
-        <ComponentExample>{children}</ComponentExample>
+        {getWithoutWrappers(children).map((child, index) => (
+          <ComponentExample key={index}>{child}</ComponentExample>
+        ))}
       </div>
     )}
   </NamespacesConsumer>

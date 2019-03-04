@@ -49,7 +49,7 @@ const Page = (): JSX.Element => (
         <ComponentDescription
           title={t('withIcon.title')}
           description={t('withIcon.description')}>
-          <>
+          <div>
             {[
               { id: 'primary', comp: Button },
               { id: 'secondary', comp: Button.secondary },
@@ -75,7 +75,7 @@ const Page = (): JSX.Element => (
                 </item.comp>
               </div>
             ))}
-          </>
+          </div>
         </ComponentDescription>
       </Layout>
     )}

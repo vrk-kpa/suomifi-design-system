@@ -10,6 +10,18 @@ import { Button } from '../../components/ExampleComponents'
 import ComponentDescription from '../../components/ComponentDescription'
 import sideNavData from '../../config/sidenav/components'
 
+const components = [
+  { id: 'primary', comp: Button },
+  { id: 'secondary', comp: Button.secondary },
+  { id: 'tertiary', comp: Button.tertiary },
+  { id: 'secondaryNoborder', comp: Button.secondaryNoborder },
+  {
+    id: 'negative',
+    comp: Button.negative,
+    background: suomifiTheme.colors.secondaryColor
+  }
+]
+
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['button']}>
     {t => (
@@ -17,20 +29,7 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} description='' />
         <h1>{t('title')}</h1>
 
-        {[
-          { id: 'primary', comp: Button },
-          { id: 'secondary', comp: Button.secondary },
-          { id: 'tertiary', comp: Button.tertiary },
-          {
-            id: 'secondaryNoborder',
-            comp: Button.secondaryNoborder
-          },
-          {
-            id: 'negative',
-            comp: Button.negative,
-            background: suomifiTheme.colors.secondaryColor
-          }
-        ].map(item => (
+        {components.map(item => (
           <ComponentDescription
             key={item.id}
             title={t(`${item.id}.title`)}
@@ -50,20 +49,7 @@ const Page = (): JSX.Element => (
           title={t('withIcon.title')}
           description={t('withIcon.description')}>
           <div>
-            {[
-              { id: 'primary', comp: Button },
-              { id: 'secondary', comp: Button.secondary },
-              { id: 'tertiary', comp: Button.tertiary },
-              {
-                id: 'secondaryNoborder',
-                comp: Button.secondaryNoborder
-              },
-              {
-                id: 'negative',
-                comp: Button.negative,
-                background: suomifiTheme.colors.secondaryColor
-              }
-            ].map(item => (
+            {components.map(item => (
               <div
                 key={item.id}
                 style={{ background: item.background || 'none' }}>

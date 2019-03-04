@@ -48,20 +48,18 @@ const Page = (): JSX.Element => (
         <ComponentDescription
           title={t('withIcon.title')}
           description={t('withIcon.description')}>
-          <div>
-            {components.map(item => (
-              <div
-                key={item.id}
-                style={{ background: item.background || 'none' }}>
-                <item.comp style={{ margin: '.5rem' }} icon='login'>
-                  {t('button.label')}
-                </item.comp>
-                <item.comp style={{ margin: '.5rem' }} iconRight='login'>
-                  {t('button.label')}
-                </item.comp>
-              </div>
-            ))}
-          </div>
+          {components.map(item => (
+            <div
+              key={item.id}
+              style={{ background: item.background || 'none' }}>
+              <item.comp style={{ margin: '.5rem' }} icon='login'>
+                {t('button.label')}
+              </item.comp>
+              <item.comp style={{ margin: '.5rem' }} iconRight='login'>
+                {t('button.label')}
+              </item.comp>
+            </div>
+          ))}
         </ComponentDescription>
       </Layout>
     )}

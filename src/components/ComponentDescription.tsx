@@ -23,7 +23,8 @@ const ComponentDescription = ({
             justifyContent: 'flex-start',
             alignItems: 'center',
             flexWrap: 'wrap',
-            padding: '1rem'
+            padding: '1rem',
+            borderBottom: '1px solid #C9CDCF'
           }}>
           {children}
         </div>

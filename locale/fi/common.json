@@ -1,3 +1,5 @@
 {
-  "back.to.frontpage": "Takaisin etusivulle"
+  "back.to.frontpage": "Takaisin etusivulle",
+  "component.usage": "Komponentin käyttö",
+  "react": "React"
 }

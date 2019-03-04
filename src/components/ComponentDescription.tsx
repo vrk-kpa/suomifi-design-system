@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import ComponentExample from './ComponentExample'
+import Collapse from './Collapse'
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
   React.Children.map(children, child =>
@@ -14,12 +15,7 @@ const ComponentDescription = ({
 }: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
-      <div
-        style={{
-          borderBottom: '1px solid #C9CDCF',
-          marginBottom: '3rem',
-          paddingBottom: '1rem'
-        }}>
+      <div style={{ marginBottom: '3rem' }}>
         <h2>{title}</h2>
         <div
           style={{
@@ -31,10 +27,16 @@ const ComponentDescription = ({
           }}>
           {children}
         </div>
-        <div style={{ marginTop: '1rem' }}>{description}</div>
-        {getWithoutWrappers(children).map((child, index) => (
-          <ComponentExample key={index}>{child}</ComponentExample>
-        ))}
+        <div style={{ borderBottom: '1px solid #C9CDCF' }}>
+          <Collapse label={t('common:component.usage')}>{description}</Collapse>
+        </div>
+        <div style={{ borderBottom: '1px solid #C9CDCF' }}>
+          <Collapse label={t('common:react')}>
+            {getWithoutWrappers(children).map((child, index) => (
+              <ComponentExample key={index}>{child}</ComponentExample>
+            ))}
+          </Collapse>
+        </div>
       </div>
     )}
   </NamespacesConsumer>

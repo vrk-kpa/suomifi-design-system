@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { UnmountClosed as CollapseComp } from 'react-collapse'
+
 import { suomifiTheme } from 'suomifi-ui-components'
 import { Icon } from './Icon'
 
@@ -24,17 +26,13 @@ class Collapse extends Component {
     const { label, children } = this.props
 
     return (
-      <div
-        style={{
-          margin: '1.2rem 0'
-        }}>
+      <>
         <div>
           <button
             css={{
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
-              margin: '1.2rem 0',
               padding: '.2rem',
               border: 0,
               background: 'transparent',
@@ -66,8 +64,12 @@ class Collapse extends Component {
             {label}
           </button>
         </div>
-        {this.state.isOpen && <div>{children}</div>}
-      </div>
+        <CollapseComp
+          style={{ marginTop: '1.2rem' }}
+          isOpened={this.state.isOpen}>
+          {children}
+        </CollapseComp>
+      </>
     )
   }
 }

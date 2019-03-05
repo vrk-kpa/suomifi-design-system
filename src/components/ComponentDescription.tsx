@@ -28,10 +28,10 @@ const ComponentDescription = ({
           }}>
           {children}
         </div>
-        <div style={{ borderBottom: '1px solid #C9CDCF' }}>
+        <div style={{ padding: '1.2rem 0', borderBottom: '1px solid #C9CDCF' }}>
           <Collapse label={t('common:component.usage')}>{description}</Collapse>
         </div>
-        <div style={{ borderBottom: '1px solid #C9CDCF' }}>
+        <div style={{ padding: '1.2rem 0', borderBottom: '1px solid #C9CDCF' }}>
           <Collapse label={t('common:react')}>
             {getWithoutWrappers(children).map((child, index) => (
               <ComponentExample key={index}>{child}</ComponentExample>

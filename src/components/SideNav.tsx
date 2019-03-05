@@ -5,10 +5,12 @@ import { withPrefix } from 'gatsby'
 import { WindowLocation } from '@reach/router'
 
 import SideNavItem from './SideNavItem'
-import { SideNavData } from './SideNavData'
+import { SideNavData, SideNavItemData } from './SideNavData'
 import { Icon } from './Icon'
 
 class SideNav extends Component<Props, State> {
+  private SIDENAVSTATE_KEY: string = 'sideNavState'
+
   public constructor(props) {
     super(props)
 
@@ -17,16 +19,36 @@ class SideNav extends Component<Props, State> {
     }
   }
 
+  private getSessionState = (): State => {
+    return JSON.parse(sessionStorage.getItem(this.SIDENAVSTATE_KEY)) || {}
+  }
+
+  private setSessionState = (state: State): void => {
+    try {
+      sessionStorage.setItem(this.SIDENAVSTATE_KEY, JSON.stringify(state))
+    } catch (error) {
+      // ignore, just cannot store state
+    }
+  }
+
   public componentDidMount = () => {
+    const sessionState = this.getSessionState()
+
     const currentPath = this.getCurrentPath()
-    const openStates = this.getPathTree(currentPath)
+    const openStatesForPath = this.getPathTree(currentPath)
       .map(path => ({
         [path]: true
       }))
       .reduce((obj, item) => ({ ...obj, ...item }), {})
 
-    this.setState({
-      isOpen: openStates
+    sessionState.isOpen = {
+      ...sessionState.isOpen,
+      ...openStatesForPath
+    }
+
+    this.setState(() => {
+      this.setSessionState(sessionState)
+      return sessionState
     })
   }
 
@@ -61,13 +83,17 @@ class SideNav extends Component<Props, State> {
   private toggleOpen = (to: string): void => {
     this.setState(prevState => {
       prevState.isOpen[to] = !prevState.isOpen[to]
+      this.setSessionState(prevState)
       return {
         isOpen: prevState.isOpen
       }
     })
   }
 
-  private renderNavItems = (items, level) => (
+  private hasChildren = (item: SideNavItemData): boolean =>
+    !!item.children && item.children.length > 0
+
+  private renderNavItems = (items: SideNavItemData[], level: number) => (
     <ul
       style={{
         margin: 0,
@@ -80,20 +106,22 @@ class SideNav extends Component<Props, State> {
           key={item.to}
           style={{
             borderLeft:
-              level === 1 && this.iscurrent(item.to)
-                ? `4px solid ${suomifiTheme.colors.brandColor}`
-                : '4px solid transparent'
+              level === 1
+                ? this.iscurrent(item.to)
+                  ? `4px solid ${suomifiTheme.colors.brandColor}`
+                  : '4px solid transparent'
+                : 'none'
           }}>
           <SideNavItem
             to={item.to}
-            hasChildren={item.children ? item.children.length > 0 : false}
+            hasChildren={this.hasChildren(item)}
             isOpen={this.isOpen}
             handleToggle={this.toggleOpen}
             level={level}>
             {item.label}
           </SideNavItem>
-          {item.children &&
-            this.state.isOpen[item.to] &&
+          {this.hasChildren(item) &&
+            !!this.state.isOpen[item.to] &&
             this.renderNavItems(item.children, level + 1)}
         </li>
       ))}

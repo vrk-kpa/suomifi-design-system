@@ -3,7 +3,7 @@ export interface SideNavData {
   items: SideNavItemData[]
 }
 
-interface SideNavItemData {
+export interface SideNavItemData {
   to: string
   label: string
   children?: SideNavItemData[]

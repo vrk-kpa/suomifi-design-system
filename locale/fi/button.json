@@ -1,5 +1,12 @@
 {
   "title": "Painike",
+  "note.title": "Ota huomioon käytössä",
+  "note.items": [
+    "Kun halutaan ohjata käyttäjä sivulta toiselle käytä painikkeen sijaan linkkiä",
+    "Vähemmän tärkeät toiminnot kannattaa tyylitellä (muuttaa) linkeiksi",
+    "Käytä ensisijaista painiketta toiminnolle joka vie seuraavalle sivulle ja toissijaista painiketta toiminnolle joka tapahtuu samalla sivulla",
+    "Vältä käyttämästä liian monta painiketta sivua kohti"
+  ],
   "primary.title": "Ensisijainen",
   "primary.description": "Ohjeistus",
   "secondary.title": "Toissijainen",

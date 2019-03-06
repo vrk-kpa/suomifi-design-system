@@ -29,6 +29,7 @@ class Collapse extends Component {
       <>
         <div>
           <button
+            aria-expanded={this.state.isOpen}
             css={{
               display: 'flex',
               alignItems: 'center',

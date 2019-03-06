@@ -62,6 +62,7 @@ class SideNavItem extends Component {
           {children}
           {hasChildren && (
             <button
+              aria-expanded={isOpen(to)}
               style={{
                 float: 'right',
                 background: 'none',

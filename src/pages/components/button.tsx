@@ -10,6 +10,7 @@ import { Button } from '../../components/ExampleComponents'
 import ComponentDescription from '../../components/ComponentDescription'
 import sideNavData from '../../config/sidenav/components'
 import NoteBox from '../../components/NoteBox'
+import Section from '../../components/Section'
 
 const components = [
   { id: 'primary', comp: Button },
@@ -30,7 +31,17 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} description='' />
         <h1>{t('title')}</h1>
 
+        <p>{t('intro')}</p>
+
         <NoteBox title={t('note.title')} items={t('note.items')} />
+
+        {t('sections').map((section, index) => (
+          <Section
+            key={index}
+            title={section.title}
+            paragraphs={section.paragraphs}
+          />
+        ))}
 
         {components.map(item => (
           <ComponentDescription

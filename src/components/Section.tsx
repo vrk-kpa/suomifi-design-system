@@ -4,7 +4,7 @@ const Section = ({ title, paragraphs }: Props): JSX.Element => (
   <section>
     <h2>{title}</h2>
     {paragraphs.map((paragraph, index) => (
-      <p key={index}>{paragraph}</p>
+      <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
     ))}
   </section>
 )

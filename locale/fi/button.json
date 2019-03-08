@@ -19,7 +19,7 @@
       "title": "Estetty painike",
       "paragraphs": [
         "Painike joka ei ole klikattava eikä reagoi hover-toimintoon (hiireilyyn).",
-        "Painikkeet voivat olla estettyjä, jos niiden käyttö halutaan jostain syystä estää. Painike on esimerkiksi estetty, jos käyttäjä ei ole täyttänyt vaadittuja tietoja wizardissa. Estetty painike ei täytä WC3-kontrasti vaatimusta mutta koska painikkeeseen ei liity varsinaista toiminnallisuutta, painiketta on suositeltavaa käyttää jos sen käyttö parantaa käyttöliittymän ymmärrettävyyttä."
+        "Painikkeet voivat olla estettyjä, jos niiden käyttö halutaan jostain syystä estää. Painike on esimerkiksi estetty, jos käyttäjä ei ole täyttänyt vaadittuja tietoja wizardissa. Estetty painike ei täytä WC3-kontrasti vaatimusta mutta koska painikkeeseen ei liity varsinaista toiminnallisuutta, painiketta on suositeltavaa käyttää jos sen käyttö parantaa käyttöliittymän ymmärrettävyyttä. <a href='https://www.w3.org/TR/2018/REC-WCAG21-20180605/#contrast-minimum' rel='noopener noreferrer' target='_blank'>https://www.w3.org/TR/2018/REC-WCAG21-20180605/#contrast-minimum</a>"
       ]
     }
   ],

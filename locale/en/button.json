@@ -1,7 +1,40 @@
 {
   "title": "Button",
-  "note.items": [],
-  "sections": [],
+  "intro": "",
+  "note.title": "",
+  "note.items": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        "",
+        "",
+        ""
+      ]
+    }
+  ],
   "primary.title": "Primary",
   "primary.description": "Instructions",
   "secondary.title": "Secondary",
@@ -14,5 +47,6 @@
   "negative.description": "Instructions",
   "withIcon.title": "Button with icon",
   "withIcon.description": "Instructions",
-  "button.label": "Button"
+  "button.label": "Button",
+  "button.labelClicked": ""
 }

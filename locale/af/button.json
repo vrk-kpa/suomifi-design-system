@@ -1,0 +1,52 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item.1",
+    "note.item.2",
+    "note.item.3",
+    "note.item.4",
+    "note.item.5"
+  ],
+  "sections": [
+    {
+      "title": "section.1.title",
+      "paragraphs": [
+        "section.1.paragraph.1",
+        "section.1.paragraph.2",
+        "section.1.paragraph.3"
+      ]
+    },
+    {
+      "title": "section.2.title",
+      "paragraphs": [
+        "section.2.paragraph.1",
+        "section.2.paragraph.2",
+        "section.2.paragraph.3"
+      ]
+    },
+    {
+      "title": "section.3.title",
+      "paragraphs": [
+        "section.3.paragraph.1",
+        "section.3.paragraph.2",
+        "section.3.paragraph.3"
+      ]
+    }
+  ],
+  "primary.title": "primary.title",
+  "primary.description": "primary.description",
+  "secondary.title": "secondary.title",
+  "secondary.description": "secondary.description",
+  "tertiary.title": "tertiary.title",
+  "tertiary.description": "tertiary.description",
+  "secondaryNoborder.title": "secondaryNoborder.title",
+  "secondaryNoborder.description": "secondaryNoborder.description",
+  "negative.title": "negative.title",
+  "negative.description": "negative.description",
+  "withIcon.title": "withIcon.title",
+  "withIcon.description": "withIcon.description",
+  "button.label": "button.label",
+  "button.labelClicked": "button.labelClicked"
+}

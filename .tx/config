@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[suomifi-design-system.button-json]
+file_filter = locale/<lang>/button.json
+minimum_perc = 0
+source_file = locale/af/button.json
+source_lang = af
+type = KEYVALUEJSON

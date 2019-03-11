@@ -24,6 +24,20 @@ const components = [
   }
 ]
 
+const clickCount = {}
+const handleClick = (id: string, name: string, t: Function): void => {
+  if (!clickCount[id]) {
+    clickCount[id] = 0
+  }
+  document.getElementById(id).setAttribute(
+    'aria-label',
+    t('button.labelClicked', {
+      name: name,
+      count: ++clickCount[id]
+    })
+  )
+}
+
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['button']}>
     {t => (
@@ -49,10 +63,21 @@ const Page = (): JSX.Element => (
             title={t(`${item.id}.title`)}
             description={t(`${item.id}.description`)}>
             <div style={{ background: item.background || 'none' }}>
-              <item.comp style={{ margin: '.5rem' }}>
+              <item.comp
+                id={item.id}
+                aria-label={t(`${item.id}.title`)}
+                style={{ margin: '.5rem' }}
+                onClick={() => handleClick(item.id, t(`${item.id}.title`), t)}>
                 {t('button.label')}
               </item.comp>
-              <item.comp style={{ margin: '.5rem' }} disabled>
+              <item.comp
+                id={`${item.id}.disabled`}
+                aria-label={t(`${item.id}.title`)}
+                style={{ margin: '.5rem' }}
+                disabled
+                onClick={() =>
+                  handleClick(`${item.id}.disabled`, t(`${item.id}.title`), t)
+                }>
                 {t('button.label')}
               </item.comp>
             </div>
@@ -66,10 +91,24 @@ const Page = (): JSX.Element => (
             <div
               key={item.id}
               style={{ background: item.background || 'none' }}>
-              <item.comp style={{ margin: '.5rem' }} icon='login'>
+              <item.comp
+                id={`${item.id}.icon`}
+                aria-label={t(`${item.id}.title`)}
+                style={{ margin: '.5rem' }}
+                icon='login'
+                onClick={() =>
+                  handleClick(`${item.id}.icon`, t(`${item.id}.title`), t)
+                }>
                 {t('button.label')}
               </item.comp>
-              <item.comp style={{ margin: '.5rem' }} iconRight='login'>
+              <item.comp
+                id={`${item.id}.iconRight`}
+                aria-label={t(`${item.id}.title`)}
+                style={{ margin: '.5rem' }}
+                iconRight='login'
+                onClick={() =>
+                  handleClick(`${item.id}.iconRight`, t(`${item.id}.title`), t)
+                }>
                 {t('button.label')}
               </item.comp>
             </div>

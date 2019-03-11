@@ -35,5 +35,6 @@
   "negative.description": "Negatiivista painiketta käytetään erivärisillä taustoilla sekä kuvataustoissa.",
   "withIcon.title": "Painike ikonilla",
   "withIcon.description": "Painikkeessa käytetään ikonia selkeyttämään toimintoa tai erottamaan tärkeä toiminto muista painikkeista. Ikoni korostaa painikkeen roolia ja auttaa painikkeen tunnistamisessa. Kuvaava ikoni myös helpottaa ymmärtämään mitä painikkeesta tapahtuu.",
-  "button.label": "Painike"
+  "button.label": "Painike",
+  "button.labelClicked": "{{name}}, painettu {{count}} kertaa"
 }

@@ -7,7 +7,7 @@ const ComponentExample = ({ children }: Props): JSX.Element => (
     language='jsx'
     customStyle={{ margin: 0, fontSize: '1rem' }}>
     {reactElementToJSXString(children, {
-      filterProps: ['style'],
+      filterProps: ['id', 'style', 'aria-label'],
       showFunctions: true,
       functionValue: () => '...'
     })}

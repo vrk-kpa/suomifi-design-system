@@ -10,11 +10,14 @@ const NoteBox = ({ title, items }: Props): JSX.Element => (
     }}>
     <h2 style={{ marginTop: 0, fontSize: '22px', fontWeight: 600 }}>{title}</h2>
     <ul style={{ margin: 0, padding: '0 0 0 2rem' }}>
-      {items.map(item => (
-        <li key={item} style={{ marginTop: '1rem' }}>
-          {item}
-        </li>
-      ))}
+      {items.map(
+        (item, index) =>
+          !!item && (
+            <li key={index} style={{ marginTop: '1rem' }}>
+              {item}
+            </li>
+          )
+      )}
     </ul>
   </section>
 )

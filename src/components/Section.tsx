@@ -4,10 +4,7 @@ const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
   <section>
     {!!title && <h2>{title}</h2>}
     {paragraphs.map(
-      (paragraph, index) =>
-        !!paragraph && (
-          <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
-        )
+      (paragraph, index) => !!paragraph && <p key={index}>{paragraph}</p>
     )}
     <ul>
       {links.map(

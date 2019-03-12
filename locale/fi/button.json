@@ -16,14 +16,42 @@
         "Teksti kertoo painikkeen toiminnon. Pyritään ytimekkyyteen mahdollisimman lyhyellä, mutta kuvaavalla nimeämisellä. Toimintopainike kertoo vain olennaisen toiminnan jonka se toteuttaa, ei mitään muuta, esimerkiksi \"Valitse\" tai \"Seuraava\". Jos toimintopainikkeen nimi on yli kolme sanaa pitkä, niin mieti miten sitä voidaan lyhentää. Painikkeen teksti on hyvä aloittaa verbillä ja alkaa aina isolla alkukirjaimella.",
         "",
         ""
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
       ]
     },
     {
       "title": "Estetty painike",
       "paragraphs": [
         "Painike joka ei ole klikattava eikä reagoi hover-toimintoon (hiireilyyn).",
-        "Painikkeet voivat olla estettyjä, jos niiden käyttö halutaan jostain syystä estää. Painike on esimerkiksi estetty, jos käyttäjä ei ole täyttänyt vaadittuja tietoja wizardissa. Estetty painike ei täytä WC3-kontrasti vaatimusta mutta koska painikkeeseen ei liity varsinaista toiminnallisuutta, painiketta on suositeltavaa käyttää jos sen käyttö parantaa käyttöliittymän ymmärrettävyyttä. <a href='https://www.w3.org/TR/2018/REC-WCAG21-20180605/#contrast-minimum' rel='noopener noreferrer' target='_blank'>https://www.w3.org/TR/2018/REC-WCAG21-20180605/#contrast-minimum</a>",
+        "Painikkeet voivat olla estettyjä, jos niiden käyttö halutaan jostain syystä estää. Painike on esimerkiksi estetty, jos käyttäjä ei ole täyttänyt vaadittuja tietoja wizardissa. Estetty painike ei täytä WC3-kontrasti vaatimusta mutta koska painikkeeseen ei liity varsinaista toiminnallisuutta, painiketta on suositeltavaa käyttää jos sen käyttö parantaa käyttöliittymän ymmärrettävyyttä.",
         ""
+      ],
+      "links": [
+        {
+          "text": "https://www.w3.org/TR/2018/REC-WCAG21-20180605/#contrast-minimum",
+          "url": "https://www.w3.org/TR/2018/REC-WCAG21-20180605/#contrast-minimum"
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
       ]
     },
     {
@@ -32,6 +60,20 @@
         "",
         "",
         ""
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
       ]
     }
   ],

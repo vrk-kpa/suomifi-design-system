@@ -54,6 +54,7 @@ const Page = (): JSX.Element => (
             key={index}
             title={section.title}
             paragraphs={section.paragraphs}
+            links={section.links}
           />
         ))}
 

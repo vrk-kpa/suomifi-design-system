@@ -16,6 +16,20 @@
         "section.1.paragraph.1",
         "section.1.paragraph.2",
         "section.1.paragraph.3"
+      ],
+      "links": [
+        {
+          "text": "section.1.link.1.text",
+          "url": "section.1.link.1.url"
+        },
+        {
+          "text": "section.1.link.2.text",
+          "url": "section.1.link.2.url"
+        },
+        {
+          "text": "section.1.link.3.text",
+          "url": "section.1.link.3.url"
+        }
       ]
     },
     {
@@ -24,6 +38,20 @@
         "section.2.paragraph.1",
         "section.2.paragraph.2",
         "section.2.paragraph.3"
+      ],
+      "links": [
+        {
+          "text": "section.2.link.1.text",
+          "url": "section.2.link.1.url"
+        },
+        {
+          "text": "section.2.link.2.text",
+          "url": "section.2.link.2.url"
+        },
+        {
+          "text": "section.2.link.3.text",
+          "url": "section.2.link.3.url"
+        }
       ]
     },
     {
@@ -32,6 +60,20 @@
         "section.3.paragraph.1",
         "section.3.paragraph.2",
         "section.3.paragraph.3"
+      ],
+      "links": [
+        {
+          "text": "section.3.link.1.text",
+          "url": "section.3.link.1.url"
+        },
+        {
+          "text": "section.3.link.2.text",
+          "url": "section.3.link.2.url"
+        },
+        {
+          "text": "section.3.link.3.text",
+          "url": "section.3.link.3.url"
+        }
       ]
     }
   ],

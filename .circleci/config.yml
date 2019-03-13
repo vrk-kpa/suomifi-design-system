@@ -28,7 +28,7 @@ jobs:
     docker:
       - image: circleci/node:lts
     steps:
-      - run: echo TODO
+      - run: yarn deploy
 
   deploy-prod:
     docker:

@@ -1,0 +1,55 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:lts
+
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run: yarn install --frozen-lockfile
+      - save_cache:
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+
+      # run tests!
+      - run: yarn validate
+
+  deploy-test:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - run: echo TODO
+
+  deploy-prod:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - run: echo TODO
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy-test:
+          requires:
+            - build
+          filters:
+            branches:
+              only: develop
+      - deploy-prod:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master

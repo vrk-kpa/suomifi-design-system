@@ -2,17 +2,17 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-version: 2
-jobs:
-  build:
+version: 2.1
+
+executors:
+  build-executor:
     docker:
-      # specify the version you desire here
       - image: circleci/node:lts
 
+commands:
+  build:
     steps:
       - checkout
-      - attach_workspace:
-          at: /tmp/workspace
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -22,37 +22,31 @@ jobs:
           key: yarn-packages-{{ checksum "yarn.lock" }}
           paths:
             - ~/.cache/yarn
-
       # run tests!
       - run: yarn validate
 
-      - persist_to_workspace:
-          root: .
-          paths:
-            - .
+jobs:
+  build:
+    executor: build-executor
+    steps:
+      - build
 
   deploy-test:
-    docker:
-      - image: circleci/node:lts
+    executor: build-executor
     steps:
-      - attach_workspace:
-          at: /tmp/workspace
-
+      - build
       - run:
           name: Set user for commit
           command: |
             git config user.email "ci@example.com"
             git config user.name "ci"
-
       - add_ssh_keys:
           fingerprints:
             - "75:51:12:bc:d4:83:3b:7b:c0:1e:ac:61:14:bc:74:0d"
-
       - run: yarn deploy
 
   deploy-prod:
-    docker:
-      - image: circleci/node:lts
+    executor: build-executor
     steps:
       - run: echo TODO
 
@@ -62,14 +56,10 @@ workflows:
     jobs:
       - build
       - deploy-test:
-          requires:
-            - build
           filters:
             branches:
               only: develop
       - deploy-prod:
-          requires:
-            - build
           filters:
             branches:
               only: master

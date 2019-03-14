@@ -11,6 +11,8 @@ jobs:
 
     steps:
       - checkout
+      - attach_workspace:
+          at: /tmp/workspace
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -24,10 +26,28 @@ jobs:
       # run tests!
       - run: yarn validate
 
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
   deploy-test:
     docker:
       - image: circleci/node:lts
     steps:
+      - attach_workspace:
+          at: /tmp/workspace
+
+      - run:
+          name: Set user for commit
+          command: |
+            git config user.email "ci@example.com"
+            git config user.name "ci"
+
+      - add_ssh_keys:
+          fingerprints:
+            - "75:51:12:bc:d4:83:3b:7b:c0:1e:ac:61:14:bc:74:0d"
+
       - run: yarn deploy
 
   deploy-prod:
@@ -40,7 +60,12 @@ workflows:
   version: 2
   build-deploy:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only:
+                - develop
+                - master
       - deploy-test:
           requires:
             - build

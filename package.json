@@ -41,7 +41,7 @@
     "format:style": "prettier-stylelint --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "validate": "yarn run lint:code && yarn run lint:style && yarn run test",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -m \"[skip ci] Updates\""
   },
   "husky": {
     "hooks": {

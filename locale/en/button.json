@@ -1,5 +1,82 @@
 {
   "title": "Button",
+  "intro": "",
+  "note.title": "",
+  "note.items": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        "",
+        "",
+        ""
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        "",
+        "",
+        ""
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        "",
+        "",
+        ""
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
   "primary.title": "Primary",
   "primary.description": "Instructions",
   "secondary.title": "Secondary",
@@ -10,7 +87,8 @@
   "secondaryNoborder.description": "Instructions",
   "negative.title": "Negative",
   "negative.description": "Instructions",
-  "icon.title": "Icon left",
-  "iconRight.title": "Icon right",
-  "disabled.title": "Disabled"
+  "withIcon.title": "Button with icon",
+  "withIcon.description": "Instructions",
+  "button.label": "Button",
+  "button.labelClicked": ""
 }

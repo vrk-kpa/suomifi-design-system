@@ -3,15 +3,15 @@ import reactElementToJSXString from 'react-element-to-jsx-string'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 
 const ComponentExample = ({ children }: Props): JSX.Element => (
-  <div style={{ margin: '1rem 0' }}>
-    <SyntaxHighlighter language='jsx'>
-      {reactElementToJSXString(children, {
-        filterProps: ['style'],
-        showFunctions: true,
-        functionValue: () => '...'
-      })}
-    </SyntaxHighlighter>
-  </div>
+  <SyntaxHighlighter
+    language='jsx'
+    customStyle={{ margin: 0, fontSize: '1rem' }}>
+    {reactElementToJSXString(children, {
+      filterProps: ['id', 'style', 'aria-label'],
+      showFunctions: true,
+      functionValue: () => '...'
+    })}
+  </SyntaxHighlighter>
 )
 
 interface Props {

@@ -1,6 +1,12 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import ComponentExample from './ComponentExample'
+import Collapse from './Collapse'
+
+const getWithoutWrappers = (children: any): ReactNode[] =>
+  React.Children.map(children, child =>
+    child.type === 'div' ? getWithoutWrappers(child.props.children) : child
+  )
 
 const ComponentDescription = ({
   title,
@@ -9,21 +15,36 @@ const ComponentDescription = ({
 }: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
-      <div
-        style={{
-          borderBottom: '1px solid #C9CDCF',
-          marginBottom: '3rem'
-        }}>
-        {children}
-        <div style={{ marginTop: '1rem' }}>{description}</div>
-        <ComponentExample>{children}</ComponentExample>
+      <div style={{ marginBottom: '3rem' }}>
+        <h2>{title}</h2>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'flex-start',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            padding: '1rem',
+            borderBottom: '1px solid #C9CDCF'
+          }}>
+          {children}
+        </div>
+        <div style={{ padding: '1.2rem 0', borderBottom: '1px solid #C9CDCF' }}>
+          <Collapse label={t('common:component.usage')}>{description}</Collapse>
+        </div>
+        <div style={{ padding: '1.2rem 0', borderBottom: '1px solid #C9CDCF' }}>
+          <Collapse label={t('common:react')}>
+            {getWithoutWrappers(children).map((child, index) => (
+              <ComponentExample key={index}>{child}</ComponentExample>
+            ))}
+          </Collapse>
+        </div>
       </div>
     )}
   </NamespacesConsumer>
 )
 
 interface Props {
-  title?: string
+  title: string
   description: string
   children: ReactNode
 }

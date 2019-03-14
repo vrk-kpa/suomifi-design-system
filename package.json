@@ -19,16 +19,21 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.0.8",
     "gatsby-transformer-sharp": "^2.1.8",
-    "i18next": "^14.0.1",
+    "i18next": "^15.0.6",
     "polished": "^2.3.3",
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
+    "react-collapse": "^4.0.3",
     "react-dom": "^16.6.3",
     "react-element-to-jsx-string": "^14.0.2",
     "react-helmet": "^5.2.0",
     "react-i18next": "8",
+    "react-motion": "^0.5.2",
     "react-syntax-highlighter": "^10.1.2",
     "suomifi-ui-components": "^0.0.4"
+  },
+  "resolutions": {
+    "@wapps/gatsby-plugin-i18next/i18next": "^15.0.6"
   },
   "license": "MIT",
   "scripts": {

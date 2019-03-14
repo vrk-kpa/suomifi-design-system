@@ -1,3 +1,5 @@
 {
-  "back.to.frontpage": "Go back to the homepage"
+  "back.to.frontpage": "Go back to the homepage",
+  "component.usage": "Component usage",
+  "react": "React"
 }

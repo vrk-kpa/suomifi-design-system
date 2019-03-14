@@ -23,7 +23,10 @@ module.exports = {
       resolve: `@wapps/gatsby-plugin-i18next`,
       options: {
         availableLngs: ['en', 'fi'],
-        fallbackLng: 'en'
+        fallbackLng: 'fi',
+        i18nextOptions: {
+          returnObjects: true
+        }
       }
     },
     `gatsby-plugin-emotion`,

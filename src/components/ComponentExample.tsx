@@ -1,21 +1,25 @@
 import React, { ReactNode } from 'react'
-import reactElementToJSXString from 'react-element-to-jsx-string'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 
-const ComponentExample = ({ children }: Props): JSX.Element => (
-  <SyntaxHighlighter
-    language='jsx'
-    customStyle={{ margin: 0, fontSize: '1rem' }}>
-    {reactElementToJSXString(children, {
-      filterProps: ['id', 'style', 'aria-label'],
-      showFunctions: true,
-      functionValue: () => '...'
-    })}
-  </SyntaxHighlighter>
+const ComponentExample = ({ style, children }: Props): JSX.Element => (
+  <div
+    style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexWrap: 'wrap',
+      padding: '.8rem',
+      marginBottom: '1rem',
+      ...style
+    }}>
+    {children}
+  </div>
 )
 
 interface Props {
+  style?: object
   children: ReactNode
 }
+
+ComponentExample.displayName = 'div'
 
 export default ComponentExample

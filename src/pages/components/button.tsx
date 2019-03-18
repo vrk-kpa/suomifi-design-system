@@ -11,12 +11,18 @@ import ComponentDescription from '../../components/ComponentDescription'
 import sideNavData from '../../config/sidenav/components'
 import NoteBox from '../../components/NoteBox'
 import Section from '../../components/Section'
+import ComponentExample from '../../components/ComponentExample'
 
 const components = [
   { id: 'primary', comp: Button },
   { id: 'secondary', comp: Button.secondary },
   { id: 'tertiary', comp: Button.tertiary },
-  { id: 'secondaryNoborder', comp: Button.secondaryNoborder },
+  {
+    id: 'secondaryNoborder',
+    comp: Button.secondaryNoborder,
+    background: suomifiTheme.colors.white,
+    border: '1px solid #C9CDCF'
+  },
   {
     id: 'negative',
     comp: Button.negative,
@@ -63,7 +69,11 @@ const Page = (): JSX.Element => (
             key={item.id}
             title={t(`${item.id}.title`)}
             description={t(`${item.id}.description`)}>
-            <div style={{ background: item.background || 'none' }}>
+            <ComponentExample
+              style={{
+                background: item.background || 'rgba(165, 172, 176, 0.1)',
+                border: item.border || 0
+              }}>
               <item.comp
                 id={item.id}
                 aria-label={t(`${item.id}.title`)}
@@ -81,7 +91,7 @@ const Page = (): JSX.Element => (
                 }>
                 {t('button.label')}
               </item.comp>
-            </div>
+            </ComponentExample>
           </ComponentDescription>
         ))}
 
@@ -89,9 +99,12 @@ const Page = (): JSX.Element => (
           title={t('withIcon.title')}
           description={t('withIcon.description')}>
           {components.map(item => (
-            <div
+            <ComponentExample
               key={item.id}
-              style={{ background: item.background || 'none' }}>
+              style={{
+                background: item.background || 'rgba(165, 172, 176, 0.1)',
+                border: item.border || 0
+              }}>
               <item.comp
                 id={`${item.id}.icon`}
                 aria-label={t(`${item.id}.title`)}
@@ -106,13 +119,13 @@ const Page = (): JSX.Element => (
                 id={`${item.id}.iconRight`}
                 aria-label={t(`${item.id}.title`)}
                 style={{ margin: '.5rem' }}
-                iconRight='login'
+                iconRight='logout'
                 onClick={() =>
                   handleClick(`${item.id}.iconRight`, t(`${item.id}.title`), t)
                 }>
                 {t('button.label')}
               </item.comp>
-            </div>
+            </ComponentExample>
           ))}
         </ComponentDescription>
       </Layout>

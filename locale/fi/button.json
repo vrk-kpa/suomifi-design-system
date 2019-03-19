@@ -56,11 +56,7 @@
     },
     {
       "title": "",
-      "paragraphs": [
-        "",
-        "",
-        ""
-      ],
+      "paragraphs": ["", "", ""],
       "links": [
         {
           "text": "",
@@ -79,16 +75,27 @@
   ],
   "primary.title": "Ensisijainen",
   "primary.description": "Ensisijaista painiketta käytetään kun toiminto on pakollinen tai olennainen prosessin tai muun toiminnan kannalta. Ensisijainen painike on yleisimmin käytetty painike. Painiketta käytetään erityisesti korostamaan pakollisia tai huomionarvoisia toimintoja. Ensisijaisen painikkeen käyttöä monta kertaa yhdessä näkymässä tulisi välttää.",
+  "primary.label": "Ensisijainen",
+  "primary.labelDisabled": "Estetty ensisijainen",
   "secondary.title": "Toissijainen",
   "secondary.description": "Toissijaista painiketta käytetään, jos painike ei ole olennainen esimerkiksi prosessin läpäisemisen kannalta. Jos toiminto ei ole pakollinen, kuten \"paluu edelliselle sivulle\" wizardissa, valitaan käyttöön toissijainen painike.",
+  "secondary.label": "Toissijainen",
+  "secondary.labelDisabled": "Estetty toissijainen",
   "tertiary.title": "Hienovarainen",
   "tertiary.description": "Painiketta käytetään vastaavasti kuin ensisijaista painiketta, eli kun kyseessä on pakollinen tai huomionarvoinen toiminto, jota ei kuitenkaan haluta korostaa liikaa. Painiketta voidaan käyttää esimerkiksi taulukossa, joissa sama painike toistuu riveittäin.",
+  "tertiary.label": "Hienovarainen",
+  "tertiary.labelDisabled": "Estetty hienovarainen",
   "secondaryNoborder.title": "Toissijainen ilman reunusta",
   "secondaryNoborder.description": "Jos toiminnon (yleensä toissijainen painike) huomioarvoa halutaan alentaa muihin nähden, voidaan käyttää painiketta ilman reunaviivaa, kuten esimerkiksi \"keskeytä\"-painike dialogissa. Silloin olennaiset toiminnot korostuvat, mutta säilytetään edelleen mahdollisuus keskeyttää prosessi.",
+  "secondaryNoborder.label": "Tekstipainike",
+  "secondaryNoborder.labelDisabled": "Estetty tekstipainike",
   "negative.title": "Negatiivinen",
   "negative.description": "Negatiivista painiketta käytetään erivärisillä taustoilla sekä kuvataustoissa.",
+  "negative.label": "Negatiivinen",
+  "negative.labelDisabled": "Estetty negatiivinen",
   "withIcon.title": "Painike ikonilla",
   "withIcon.description": "Painikkeessa käytetään ikonia selkeyttämään toimintoa tai erottamaan tärkeä toiminto muista painikkeista. Ikoni korostaa painikkeen roolia ja auttaa painikkeen tunnistamisessa. Kuvaava ikoni myös helpottaa ymmärtämään mitä painikkeesta tapahtuu.",
-  "button.label": "Painike",
+  "button.labelIcon": "{{name}} ikoni vasen",
+  "button.labelIconRight": "{{name}} ikoni oikea",
   "button.labelClicked": "{{name}}, painettu {{count}} kertaa"
 }

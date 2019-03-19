@@ -44,6 +44,24 @@ const handleClick = (id: string, name: string, t: Function): void => {
   )
 }
 
+const getExampleComp = (
+  Comp: Function,
+  id: string,
+  label: string,
+  props: object,
+  t: Function
+): JSX.Element => (
+  <Comp
+    key={id}
+    id={id}
+    aria-label={label}
+    style={{ margin: '.5rem' }}
+    {...props}
+    onClick={() => handleClick(id, label, t)}>
+    {label}
+  </Comp>
+)
+
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['button']}>
     {t => (
@@ -74,23 +92,22 @@ const Page = (): JSX.Element => (
                 background: item.background || 'rgba(165, 172, 176, 0.1)',
                 border: item.border || 0
               }}>
-              <item.comp
-                id={item.id}
-                aria-label={t(`${item.id}.title`)}
-                style={{ margin: '.5rem' }}
-                onClick={() => handleClick(item.id, t(`${item.id}.title`), t)}>
-                {t('button.label')}
-              </item.comp>
-              <item.comp
-                id={`${item.id}.disabled`}
-                aria-label={t(`${item.id}.title`)}
-                style={{ margin: '.5rem' }}
-                disabled
-                onClick={() =>
-                  handleClick(`${item.id}.disabled`, t(`${item.id}.title`), t)
-                }>
-                {t('button.label')}
-              </item.comp>
+              {[
+                { id: item.id, label: t(`${item.id}.label`) },
+                {
+                  id: `${item.id}.disabled`,
+                  label: t(`${item.id}.labelDisabled`),
+                  props: { disabled: true }
+                }
+              ].map(example =>
+                getExampleComp(
+                  item.comp,
+                  example.id,
+                  example.label,
+                  example.props,
+                  t
+                )
+              )}
             </ComponentExample>
           </ComponentDescription>
         ))}
@@ -105,26 +122,30 @@ const Page = (): JSX.Element => (
                 background: item.background || 'rgba(165, 172, 176, 0.1)',
                 border: item.border || 0
               }}>
-              <item.comp
-                id={`${item.id}.icon`}
-                aria-label={t(`${item.id}.title`)}
-                style={{ margin: '.5rem' }}
-                icon='login'
-                onClick={() =>
-                  handleClick(`${item.id}.icon`, t(`${item.id}.title`), t)
-                }>
-                {t('button.label')}
-              </item.comp>
-              <item.comp
-                id={`${item.id}.iconRight`}
-                aria-label={t(`${item.id}.title`)}
-                style={{ margin: '.5rem' }}
-                iconRight='logout'
-                onClick={() =>
-                  handleClick(`${item.id}.iconRight`, t(`${item.id}.title`), t)
-                }>
-                {t('button.label')}
-              </item.comp>
+              {[
+                {
+                  id: `${item.id}.icon`,
+                  label: t('button.labelIcon', {
+                    name: t(`${item.id}.label`)
+                  }),
+                  props: { icon: 'login' }
+                },
+                {
+                  id: `${item.id}.iconRight`,
+                  label: t('button.labelIconRight', {
+                    name: t(`${item.id}.label`)
+                  }),
+                  props: { iconRight: 'logout' }
+                }
+              ].map(example =>
+                getExampleComp(
+                  item.comp,
+                  example.id,
+                  example.label,
+                  example.props,
+                  t
+                )
+              )}
             </ComponentExample>
           ))}
         </ComponentDescription>

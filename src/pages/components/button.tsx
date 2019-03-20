@@ -15,18 +15,33 @@ import ComponentExample from '../../components/ComponentExample'
 
 const components = [
   { id: 'primary', comp: Button },
-  { id: 'secondary', comp: Button.secondary },
   { id: 'tertiary', comp: Button.tertiary },
+  {
+    id: 'negative',
+    comp: Button.negative,
+    background: suomifiTheme.colors.secondaryColor
+  },
+  { id: 'secondary', comp: Button.secondary },
   {
     id: 'secondaryNoborder',
     comp: Button.secondaryNoborder,
     background: suomifiTheme.colors.white,
     border: '1px solid #C9CDCF'
-  },
+  }
+]
+
+const disabledComponents = [
+  { id: 'primary', comp: Button },
+  { id: 'tertiary', comp: Button.tertiary },
   {
     id: 'negative',
     comp: Button.negative,
     background: suomifiTheme.colors.secondaryColor
+  },
+  { id: 'secondary', comp: Button.secondary },
+  {
+    id: 'secondaryNoborder',
+    comp: Button.secondaryNoborder
   }
 ]
 
@@ -71,6 +86,8 @@ const Page = (): JSX.Element => (
 
         <p>{t('intro')}</p>
 
+        <h2>{t('common:component.usage')}</h2>
+
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
         {t('sections').map((section, index) => (
@@ -81,6 +98,8 @@ const Page = (): JSX.Element => (
             links={section.links}
           />
         ))}
+
+        <h2>{t('common:component.versions')}</h2>
 
         {components.map(item => (
           <ComponentDescription
@@ -148,6 +167,32 @@ const Page = (): JSX.Element => (
               )}
             </ComponentExample>
           ))}
+        </ComponentDescription>
+
+        <ComponentDescription
+          title={t('disabled.title')}
+          description={t('disabled.description')}>
+          <ComponentExample
+            style={{
+              background: 'rgba(165, 172, 176, 0.1)'
+            }}>
+            {disabledComponents.map(item => (
+              <div
+                key={item.id}
+                style={{
+                  margin: '.5rem',
+                  background: item.background || 'none'
+                }}>
+                {getExampleComp(
+                  item.comp,
+                  `${item.id}.disabled.another`,
+                  t(`${item.id}.labelDisabled`),
+                  { disabled: true },
+                  t
+                )}
+              </div>
+            ))}
+          </ComponentExample>
         </ComponentDescription>
       </Layout>
     )}

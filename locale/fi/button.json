@@ -33,16 +33,12 @@
       ]
     },
     {
-      "title": "Estetty painike",
-      "paragraphs": [
-        "Painike joka ei ole klikattava eikä reagoi hover-toimintoon (hiireilyyn).",
-        "Painikkeet voivat olla estettyjä, jos niiden käyttö halutaan jostain syystä estää. Painike on esimerkiksi estetty, jos käyttäjä ei ole täyttänyt vaadittuja tietoja wizardissa. Estetty painike ei täytä WC3-kontrasti vaatimusta mutta koska painikkeeseen ei liity varsinaista toiminnallisuutta, painiketta on suositeltavaa käyttää jos sen käyttö parantaa käyttöliittymän ymmärrettävyyttä.",
-        ""
-      ],
+      "title": "",
+      "paragraphs": ["", "", ""],
       "links": [
         {
-          "text": "https://www.w3.org/TR/2018/REC-WCAG21-20180605/#contrast-minimum",
-          "url": "https://www.w3.org/TR/2018/REC-WCAG21-20180605/#contrast-minimum"
+          "text": "",
+          "url": ""
         },
         {
           "text": "",
@@ -95,6 +91,8 @@
   "negative.labelDisabled": "Estetty negatiivinen",
   "withIcon.title": "Painike ikonilla",
   "withIcon.description": "Painikkeessa käytetään ikonia selkeyttämään toimintoa tai erottamaan tärkeä toiminto muista painikkeista. Ikoni korostaa painikkeen roolia ja auttaa painikkeen tunnistamisessa. Kuvaava ikoni myös helpottaa ymmärtämään mitä painikkeesta tapahtuu.",
+  "disabled.title": "Estetty painike",
+  "disabled.description": "Estettyä painiketta käytetään silloin, kun toiminto ei ole jostain syystä klikattava. Painike voi olla estettynä esimerkiksi silloin, jos käyttäjä ei ole täyttänyt tarvittavia tietoja edetäkseen toiminnossa tai prosessissa eteenpäin. Estetty painike ei reagoi hover-toimintoon (hiireilyyn). Vaikka estetty painike ei täytä WCAG-kontrastivaatimusta, sitä on suositeltavaa käyttää, jos sen avulla voidaan parantaa käyttöliittymän ymmärrettävyyttä. Näin voidaan toimia, koska painikkeeseen ei kuitenkaan liity varsinaista toiminnallisuutta.",
   "button.labelIcon": "{{name}} ikoni vasen",
   "button.labelIconRight": "{{name}} ikoni oikea",
   "button.labelClicked": "{{name}}, painettu {{count}} kertaa"

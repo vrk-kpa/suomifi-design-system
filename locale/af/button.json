@@ -99,6 +99,8 @@
   "negative.labelDisabled": "negative.labelDisabled",
   "withIcon.title": "withIcon.title",
   "withIcon.description": "withIcon.description",
+  "disabled.title": "disabled.title",
+  "disabled.description": "disabled.description",
   "button.labelIcon": "button.labelIcon",
   "button.labelIconRight": "button.labelIconRight",
   "button.labelClicked": "button.labelClicked"

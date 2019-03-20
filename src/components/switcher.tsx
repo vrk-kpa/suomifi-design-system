@@ -1,36 +1,24 @@
 import React from 'react'
 import { Language } from '@wapps/gatsby-plugin-i18next'
+import { NamespacesConsumer } from 'react-i18next'
+import { Menu, MenuItem } from 'suomifi-ui-components'
 
 const Switcher = ({ changeLng, lng, availableLngs }: Props): JSX.Element => (
-  <ul
-    style={{
-      margin: 0,
-      padding: 0,
-      listStyle: 'none',
-      whiteSpace: 'nowrap'
-    }}>
-    {availableLngs &&
-      availableLngs.map(value => (
-        <li key={value} style={{ display: 'inline' }}>
-          <button
-            style={{
-              width: '30px',
-              height: '30px',
-              margin: '.2rem',
-              padding: '.2rem',
-              lineHeight: '1rem',
-              background: value === lng ? '#2A6EBB' : 'white',
-              color: value === lng ? 'white' : '#282828',
-              border: '1px solid #C9CDCF',
-              textTransform: 'uppercase',
-              cursor: 'pointer'
-            }}
-            onClick={() => changeLng(value)}>
-            {value}
-          </button>
-        </li>
-      ))}
-  </ul>
+  <NamespacesConsumer ns={['language']}>
+    {t => (
+      <Menu.language name={t(`${lng}.short`)}>
+        {availableLngs &&
+          availableLngs.map(value => (
+            <MenuItem.language
+              key={value}
+              onSelect={() => changeLng(value)}
+              selected={value === lng}>
+              {t(`${value}.long`)}
+            </MenuItem.language>
+          ))}
+      </Menu.language>
+    )}
+  </NamespacesConsumer>
 )
 
 interface Props {

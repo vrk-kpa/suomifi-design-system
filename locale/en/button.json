@@ -99,6 +99,8 @@
   "negative.labelDisabled": "",
   "withIcon.title": "Button with icon",
   "withIcon.description": "Instructions",
+  "disabled.title": "",
+  "disabled.description": "",
   "button.labelIcon": "",
   "button.labelIconRight": "",
   "button.labelClicked": ""

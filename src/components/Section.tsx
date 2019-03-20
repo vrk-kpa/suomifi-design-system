@@ -2,7 +2,7 @@ import React from 'react'
 
 const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
   <section>
-    {!!title && <h2>{title}</h2>}
+    {!!title && <h3>{title}</h3>}
     {paragraphs.map(
       (paragraph, index) => !!paragraph && <p key={index}>{paragraph}</p>
     )}

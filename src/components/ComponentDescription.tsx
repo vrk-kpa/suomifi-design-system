@@ -18,7 +18,7 @@ const ComponentDescription = ({
   <NamespacesConsumer>
     {t => (
       <div style={{ marginBottom: '3rem' }}>
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <div>{children}</div>
         <div style={{ padding: '1rem 0 0 0' }}>{description}</div>
         <div style={{ padding: '1.2rem 0', borderBottom: '1px solid #C9CDCF' }}>

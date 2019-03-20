@@ -108,7 +108,7 @@ const Page = (): JSX.Element => (
             description={t(`${item.id}.description`)}>
             <ComponentExample
               style={{
-                background: item.background || 'rgba(165, 172, 176, 0.1)',
+                background: item.background,
                 border: item.border || 0
               }}>
               {[
@@ -138,7 +138,7 @@ const Page = (): JSX.Element => (
             <ComponentExample
               key={item.id}
               style={{
-                background: item.background || 'rgba(165, 172, 176, 0.1)',
+                background: item.background,
                 border: item.border || 0
               }}>
               {[
@@ -172,10 +172,7 @@ const Page = (): JSX.Element => (
         <ComponentDescription
           title={t('disabled.title')}
           description={t('disabled.description')}>
-          <ComponentExample
-            style={{
-              background: 'rgba(165, 172, 176, 0.1)'
-            }}>
+          <ComponentExample>
             {disabledComponents.map(item => (
               <div
                 key={item.id}

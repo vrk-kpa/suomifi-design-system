@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode, CSSProperties } from 'react'
 
 const ComponentExample = ({ style, children }: Props): JSX.Element => (
   <div
@@ -9,14 +9,19 @@ const ComponentExample = ({ style, children }: Props): JSX.Element => (
       flexWrap: 'wrap',
       padding: '.8rem',
       marginBottom: '1rem',
-      ...style
+      ...style,
+
+      background:
+        style && style.background
+          ? style.background
+          : 'rgba(165, 172, 176, 0.1)'
     }}>
     {children}
   </div>
 )
 
 interface Props {
-  style?: object
+  style?: CSSProperties
   children: ReactNode
 }
 

@@ -3,7 +3,7 @@ import React from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import Switcher from './switcher'
+import Switcher from './Switcher'
 import { Icon } from './Icon'
 
 const Header = (): JSX.Element => (

@@ -11,10 +11,7 @@ const ComponentExample = ({ style, children }: Props): JSX.Element => (
       marginBottom: '1rem',
       ...style,
 
-      background:
-        style && style.background
-          ? style.background
-          : 'rgba(165, 172, 176, 0.1)'
+      background: style && style.background ? style.background : '#F6F6F7'
     }}>
     {children}
   </div>

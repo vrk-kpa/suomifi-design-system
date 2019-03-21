@@ -26,7 +26,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
             display: 'flex',
             justifyContent: 'center',
             flexWrap: 'nowrap',
-            background: 'rgba(165, 172, 176, 0.1)'
+            background: '#F6F6F7'
           }}>
           <div
             style={{

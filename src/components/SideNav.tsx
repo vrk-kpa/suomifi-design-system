@@ -6,7 +6,6 @@ import { WindowLocation } from '@reach/router'
 
 import SideNavItem from './SideNavItem'
 import { SideNavData, SideNavItemData } from './SideNavData'
-import { Icon } from './Icon'
 
 class SideNav extends Component<Props, State> {
   private SIDENAVSTATE_KEY: string = 'sideNavState'
@@ -151,7 +150,7 @@ class SideNav extends Component<Props, State> {
                 borderBottom: '1px solid #EEF5FF'
               }}>
               <div style={{ width: '40px', height: '40px' }}>
-                <Icon.solution />
+                {sideNavData.icon}
               </div>
               <div style={{ marginLeft: '.5rem' }}>{sideNavData.title}</div>
             </div>

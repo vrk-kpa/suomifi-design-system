@@ -13,9 +13,55 @@
     {
       "title": "Mistä painike koostuu",
       "paragraphs": [
-        "Teksti kertoo painikkeen toiminnon. Pyritään ytimekkyyteen mahdollisimman lyhyellä, mutta kuvaavalla nimeämisellä. Toimintopainike kertoo vain olennaisen toiminnan jonka se toteuttaa, ei mitään muuta, esimerkiksi \"Valitse\" tai \"Seuraava\". Jos toimintopainikkeen nimi on yli kolme sanaa pitkä, niin mieti miten sitä voidaan lyhentää. Painikkeen teksti on hyvä aloittaa verbillä ja alkaa aina isolla alkukirjaimella.",
-        "",
-        ""
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Teksti kertoo painikkeen toiminnon. Pyritään ytimekkyyteen mahdollisimman lyhyellä, mutta kuvaavalla nimeämisellä. Toimintopainike kertoo vain olennaisen toiminnan jonka se toteuttaa, ei mitään muuta, esimerkiksi \"Valitse\" tai \"Seuraava\". Jos toimintopainikkeen nimi on yli kolme sanaa pitkä, niin mieti miten sitä voidaan lyhentää. Painikkeen teksti on hyvä aloittaa verbillä ja alkaa aina isolla alkukirjaimella."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö  (Keskitetty painike)",
+      "paragraphs": [
+        {
+          "image.key": "ButtonsMobileFI",
+          "image.alt": "",
+          "text": "Mobiilikoossa käytetään leveää ‘keskitetty’ painiketta, joka skaalautuu näytön leveyden mukaan. Desktop-koossa käytetään kapeaa painiketta, joka skaalautuu painikkeen sisällön mukaan."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
       ],
       "links": [
         {
@@ -34,25 +80,23 @@
     },
     {
       "title": "",
-      "paragraphs": ["", "", ""],
-      "links": [
+      "paragraphs": [
         {
-          "text": "",
-          "url": ""
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
         },
         {
-          "text": "",
-          "url": ""
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
         },
         {
-          "text": "",
-          "url": ""
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
         }
-      ]
-    },
-    {
-      "title": "",
-      "paragraphs": ["", "", ""],
+      ],
       "links": [
         {
           "text": "",

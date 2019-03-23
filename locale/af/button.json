@@ -13,9 +13,21 @@
     {
       "title": "section.1.title",
       "paragraphs": [
-        "section.1.paragraph.1",
-        "section.1.paragraph.2",
-        "section.1.paragraph.3"
+        {
+          "image.key": "section.1.paragraph.1.image.key",
+          "image.alt": "section.1.paragraph.1.image.alt",
+          "text": "section.1.paragraph.1.text"
+        },
+        {
+          "image.key": "section.1.paragraph.2.image.key",
+          "image.alt": "section.1.paragraph.2.image.alt",
+          "text": "section.1.paragraph.2.text"
+        },
+        {
+          "image.key": "section.1.paragraph.3.image.key",
+          "image.alt": "section.1.paragraph.3.image.alt",
+          "text": "section.1.paragraph.3.text"
+        }
       ],
       "links": [
         {
@@ -35,9 +47,21 @@
     {
       "title": "section.2.title",
       "paragraphs": [
-        "section.2.paragraph.1",
-        "section.2.paragraph.2",
-        "section.2.paragraph.3"
+        {
+          "image.key": "section.2.paragraph.1.image.key",
+          "image.alt": "section.2.paragraph.1.image.alt",
+          "text": "section.2.paragraph.1.text"
+        },
+        {
+          "image.key": "section.2.paragraph.2.image.key",
+          "image.alt": "section.2.paragraph.2.image.alt",
+          "text": "section.2.paragraph.2.text"
+        },
+        {
+          "image.key": "section.2.paragraph.3.image.key",
+          "image.alt": "section.2.paragraph.3.image.alt",
+          "text": "section.2.paragraph.3.text"
+        }
       ],
       "links": [
         {
@@ -57,9 +81,21 @@
     {
       "title": "section.3.title",
       "paragraphs": [
-        "section.3.paragraph.1",
-        "section.3.paragraph.2",
-        "section.3.paragraph.3"
+        {
+          "image.key": "section.3.paragraph.1.image.key",
+          "image.alt": "section.3.paragraph.1.image.alt",
+          "text": "section.3.paragraph.1.text"
+        },
+        {
+          "image.key": "section.3.paragraph.2.image.key",
+          "image.alt": "section.3.paragraph.2.image.alt",
+          "text": "section.3.paragraph.2.text"
+        },
+        {
+          "image.key": "section.3.paragraph.3.image.key",
+          "image.alt": "section.3.paragraph.3.image.alt",
+          "text": "section.3.paragraph.3.text"
+        }
       ],
       "links": [
         {

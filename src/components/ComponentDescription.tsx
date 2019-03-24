@@ -14,26 +14,31 @@ const getWithoutWrappers = (children: any): ReactNode[] =>
 const ComponentDescription = ({
   title,
   description,
+  exampleFirst,
+  noCode,
   children
 }: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
-      <div style={{ marginBottom: '3rem' }}>
+      <div style={{ marginBottom: '2rem', borderBottom: '1px solid #C9CDCF' }}>
         <h3>{title}</h3>
-        <div>{children}</div>
-        <div style={{ padding: '1rem 0 0 0' }}>{description}</div>
-        <div style={{ padding: '2rem 0', borderBottom: '1px solid #C9CDCF' }}>
-          <Panel.expansion
-            css={css({ background: '#F6F6F7' })}
-            title={t('common:react')}
-            titleProps={{
-              style: { textAlign: 'left', textTransform: 'uppercase' }
-            }}>
-            {getWithoutWrappers(children).map((child, index) => (
-              <ComponentCode key={index}>{child}</ComponentCode>
-            ))}
-          </Panel.expansion>
-        </div>
+        {!!exampleFirst && <div>{children}</div>}
+        <div style={{ padding: '1rem 0' }}>{description}</div>
+        {!exampleFirst && <div>{children}</div>}
+        {!noCode && (
+          <div style={{ padding: '1rem 0 2rem 0' }}>
+            <Panel.expansion
+              css={css({ background: '#F6F6F7' })}
+              title={t('common:react')}
+              titleProps={{
+                style: { textAlign: 'left', textTransform: 'uppercase' }
+              }}>
+              {getWithoutWrappers(children).map((child, index) => (
+                <ComponentCode key={index}>{child}</ComponentCode>
+              ))}
+            </Panel.expansion>
+          </div>
+        )}
       </div>
     )}
   </NamespacesConsumer>
@@ -42,6 +47,8 @@ const ComponentDescription = ({
 interface Props {
   title: string
   description: string
+  exampleFirst: boolean
+  noCode?: boolean
   children: ReactNode
 }
 

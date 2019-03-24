@@ -105,7 +105,8 @@ const Page = (): JSX.Element => (
           <ComponentDescription
             key={item.id}
             title={t(`${item.id}.title`)}
-            description={t(`${item.id}.description`)}>
+            description={t(`${item.id}.description`)}
+            exampleFirst>
             <ComponentExample
               style={{
                 background: item.background,
@@ -133,7 +134,8 @@ const Page = (): JSX.Element => (
 
         <ComponentDescription
           title={t('withIcon.title')}
-          description={t('withIcon.description')}>
+          description={t('withIcon.description')}
+          exampleFirst>
           {components.map(item => (
             <ComponentExample
               key={item.id}
@@ -171,7 +173,8 @@ const Page = (): JSX.Element => (
 
         <ComponentDescription
           title={t('disabled.title')}
-          description={t('disabled.description')}>
+          description={t('disabled.description')}
+          exampleFirst>
           <ComponentExample>
             {disabledComponents.map(item => (
               <div

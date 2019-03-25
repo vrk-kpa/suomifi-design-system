@@ -1,0 +1,124 @@
+{
+  "title": "Värit (Colors)",
+  "intro": "Pääväreihin kuuluu sininen (brand-base), valkoinen (white-base) ja harmaa (depth-base). Tekstien värinä käytetään mustaa (black-l20). Korosteväreinä käytetään oranssia (accent-base) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
+  "usage": "Värien käyttö",
+  "note.title": "Saavutettavuus",
+  "note.items": [
+    "Käyttäessäsi komponenttien tarjoamaa valmista suomi.fi-väritemaa, WCAG:n kontrastivaatimukset täyttyvät ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
+    "Jos haluat modifioida värit sopimaan erilaiseen visuaaliseen ilmeeseen, sinun tulee varmistaa, että valitsemiesi väriyhdistelmien kontrastit täyttävät WCAG:n asettamat vaatimukset.",
+    "",
+    "",
+    ""
+  ],
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "primaryColors.title": "Ensisijaisen värit",
+  "textColors.title": "Tekstit",
+  "textColors.description": "Tekstien väri on musta (värinimi / värikoodi).",
+  "brandColors.title": "Brändiväri",
+  "brandColors.description": "Brändiväriä (värinimi / värikoodi) käytetään suomi.fi palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa.",
+  "backgroundColors.title": "Taustat ja reunukset",
+  "backgroundColors.description": "Sivun taustaväri on Harmaa 10% (värinimi / värikoodi) ja sisältöalueen tausta on valkea (värinimi / värikoodi). Muita vaaleita harmaan sävyjä (värinimi / värikoodi) käytetään mm. taulukoissa. Reunuksien väri on Harmaa 60% (värinimi / värikoodi)."
+}

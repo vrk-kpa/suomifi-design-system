@@ -1,0 +1,124 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "usage": "usage",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item.1",
+    "note.item.2",
+    "note.item.3",
+    "note.item.4",
+    "note.item.5"
+  ],
+  "sections": [
+    {
+      "title": "section.1.title",
+      "paragraphs": [
+        {
+          "image.key": "section.1.paragraph.1.image.key",
+          "image.alt": "section.1.paragraph.1.image.alt",
+          "text": "section.1.paragraph.1.text"
+        },
+        {
+          "image.key": "section.1.paragraph.2.image.key",
+          "image.alt": "section.1.paragraph.2.image.alt",
+          "text": "section.1.paragraph.2.text"
+        },
+        {
+          "image.key": "section.1.paragraph.3.image.key",
+          "image.alt": "section.1.paragraph.3.image.alt",
+          "text": "section.1.paragraph.3.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.1.link.1.text",
+          "url": "section.1.link.1.url"
+        },
+        {
+          "text": "section.1.link.2.text",
+          "url": "section.1.link.2.url"
+        },
+        {
+          "text": "section.1.link.3.text",
+          "url": "section.1.link.3.url"
+        }
+      ]
+    },
+    {
+      "title": "section.2.title",
+      "paragraphs": [
+        {
+          "image.key": "section.2.paragraph.1.image.key",
+          "image.alt": "section.2.paragraph.1.image.alt",
+          "text": "section.2.paragraph.1.text"
+        },
+        {
+          "image.key": "section.2.paragraph.2.image.key",
+          "image.alt": "section.2.paragraph.2.image.alt",
+          "text": "section.2.paragraph.2.text"
+        },
+        {
+          "image.key": "section.2.paragraph.3.image.key",
+          "image.alt": "section.2.paragraph.3.image.alt",
+          "text": "section.2.paragraph.3.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.2.link.1.text",
+          "url": "section.2.link.1.url"
+        },
+        {
+          "text": "section.2.link.2.text",
+          "url": "section.2.link.2.url"
+        },
+        {
+          "text": "section.2.link.3.text",
+          "url": "section.2.link.3.url"
+        }
+      ]
+    },
+    {
+      "title": "section.3.title",
+      "paragraphs": [
+        {
+          "image.key": "section.3.paragraph.1.image.key",
+          "image.alt": "section.3.paragraph.1.image.alt",
+          "text": "section.3.paragraph.1.text"
+        },
+        {
+          "image.key": "section.3.paragraph.2.image.key",
+          "image.alt": "section.3.paragraph.2.image.alt",
+          "text": "section.3.paragraph.2.text"
+        },
+        {
+          "image.key": "section.3.paragraph.3.image.key",
+          "image.alt": "section.3.paragraph.3.image.alt",
+          "text": "section.3.paragraph.3.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.3.link.1.text",
+          "url": "section.3.link.1.url"
+        },
+        {
+          "text": "section.3.link.2.text",
+          "url": "section.3.link.2.url"
+        },
+        {
+          "text": "section.3.link.3.text",
+          "url": "section.3.link.3.url"
+        }
+      ]
+    }
+  ],
+  "primaryColors.title": "primaryColors.title",
+  "textColors.title": "textColors.title",
+  "textColors.description": "textColors.description",
+  "brandColors.title": "brandColors.title",
+  "brandColors.description": "brandColors.description",
+  "backgroundColors.title": "backgroundColors.title",
+  "backgroundColors.description": "backgroundColors.description"
+}

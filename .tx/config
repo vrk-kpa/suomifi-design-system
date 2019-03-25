@@ -7,3 +7,11 @@ minimum_perc = 0
 source_file = locale/af/button.json
 source_lang = af
 type = KEYVALUEJSON
+
+[suomifi-design-system.colors-json]
+file_filter = locale/<lang>/colors.json
+minimum_perc = 0
+source_file = locale/af/colors.json
+source_lang = af
+type = KEYVALUEJSON
+

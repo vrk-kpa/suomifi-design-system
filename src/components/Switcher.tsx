@@ -6,7 +6,7 @@ import { Menu, MenuItem } from 'suomifi-ui-components'
 const Switcher = ({ changeLng, lng, availableLngs }: Props): JSX.Element => (
   <NamespacesConsumer ns={['language']}>
     {t => (
-      <Menu.language name={t(`${lng}.short`)}>
+      <Menu.language name={t(`${lng}.short`)} aria-label={t('menu.label')}>
         {availableLngs &&
           availableLngs.map(value => (
             <MenuItem.language

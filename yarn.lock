@@ -12413,10 +12413,10 @@ suomifi-icons@0.0.2:
     react "16.7.0"
     react-dom "16.7.0"
 
-suomifi-ui-components@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.0.5.tgz#550cc6b6456151f345c9738928efdecafd4bcc46"
-  integrity sha512-EuhDI1RKKcetxIHB60KhYn8LaObOOdfeKPgGao3xsu7b8ZnmP8kytBu/1i7VSNh/7pXDJBRR1/1nj8mJ02Vajw==
+suomifi-ui-components@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.0.6.tgz#fe5d8fe5398ca2831376f92c4c7d6a54e7b9bf08"
+  integrity sha512-CG9js5c9xaqmGbc85q8dCJrX/ClN54+y2rjoU1InudGP1JEjpydeJ7ptOJ+JCdpvV9lDLCH1dqNJWzRdczp3Yw==
   dependencies:
     "@emotion/core" "10.0.0"
     "@emotion/styled" "10.0.0"

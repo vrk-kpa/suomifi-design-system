@@ -47,7 +47,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
                 </Location>
               </div>
             )}
-            <div style={{ margin: '0 1rem 0 2rem' }}>
+            <div style={{ margin: '0 1rem 0 2rem', flex: 1 }}>
               <Annotation
                 title={t('alpharel:title')}
                 description={t('alpharel:description')}

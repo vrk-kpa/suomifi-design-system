@@ -1,5 +1,8 @@
+import { ReactNode } from 'react'
+
 export interface SideNavData {
   title: string
+  icon: ReactNode
   items: SideNavItemData[]
 }
 

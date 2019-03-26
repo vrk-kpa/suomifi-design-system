@@ -13,9 +13,21 @@
     {
       "title": "",
       "paragraphs": [
-        "",
-        "",
-        ""
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
       ],
       "links": [
         {
@@ -35,9 +47,21 @@
     {
       "title": "",
       "paragraphs": [
-        "",
-        "",
-        ""
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
       ],
       "links": [
         {
@@ -57,9 +81,21 @@
     {
       "title": "",
       "paragraphs": [
-        "",
-        "",
-        ""
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
       ],
       "links": [
         {
@@ -79,16 +115,29 @@
   ],
   "primary.title": "Primary",
   "primary.description": "Instructions",
+  "primary.label": "",
+  "primary.labelDisabled": "",
   "secondary.title": "Secondary",
   "secondary.description": "Instructions",
+  "secondary.label": "",
+  "secondary.labelDisabled": "",
   "tertiary.title": "Subtle",
   "tertiary.description": "Instructions",
+  "tertiary.label": "",
+  "tertiary.labelDisabled": "",
   "secondaryNoborder.title": "Secondary without border",
   "secondaryNoborder.description": "Instructions",
+  "secondaryNoborder.label": "",
+  "secondaryNoborder.labelDisabled": "",
   "negative.title": "Negative",
   "negative.description": "Instructions",
+  "negative.label": "",
+  "negative.labelDisabled": "",
   "withIcon.title": "Button with icon",
   "withIcon.description": "Instructions",
-  "button.label": "Button",
+  "disabled.title": "",
+  "disabled.description": "",
+  "button.labelIcon": "",
+  "button.labelIconRight": "",
   "button.labelClicked": ""
 }

@@ -6,7 +6,6 @@ import { WindowLocation } from '@reach/router'
 
 import SideNavItem from './SideNavItem'
 import { SideNavData, SideNavItemData } from './SideNavData'
-import { Icon } from './Icon'
 
 class SideNav extends Component<Props, State> {
   private SIDENAVSTATE_KEY: string = 'sideNavState'
@@ -140,18 +139,18 @@ class SideNav extends Component<Props, State> {
               margin: 0,
               padding: 0,
               boxSizing: 'border-box',
-              background: `${suomifiTheme.colors.white}`,
-              border: '1px solid #C9CDCF'
+              background: `${suomifiTheme.colors.white}`
             }}>
             <div
               style={{
                 padding: '.5rem',
                 fontWeight: 600,
                 display: 'flex',
-                alignItems: 'center'
+                alignItems: 'center',
+                borderBottom: '1px solid #EEF5FF'
               }}>
               <div style={{ width: '40px', height: '40px' }}>
-                <Icon.solution />
+                {sideNavData.icon}
               </div>
               <div style={{ marginLeft: '.5rem' }}>{sideNavData.title}</div>
             </div>

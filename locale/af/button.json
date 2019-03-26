@@ -13,9 +13,21 @@
     {
       "title": "section.1.title",
       "paragraphs": [
-        "section.1.paragraph.1",
-        "section.1.paragraph.2",
-        "section.1.paragraph.3"
+        {
+          "image.key": "section.1.paragraph.1.image.key",
+          "image.alt": "section.1.paragraph.1.image.alt",
+          "text": "section.1.paragraph.1.text"
+        },
+        {
+          "image.key": "section.1.paragraph.2.image.key",
+          "image.alt": "section.1.paragraph.2.image.alt",
+          "text": "section.1.paragraph.2.text"
+        },
+        {
+          "image.key": "section.1.paragraph.3.image.key",
+          "image.alt": "section.1.paragraph.3.image.alt",
+          "text": "section.1.paragraph.3.text"
+        }
       ],
       "links": [
         {
@@ -35,9 +47,21 @@
     {
       "title": "section.2.title",
       "paragraphs": [
-        "section.2.paragraph.1",
-        "section.2.paragraph.2",
-        "section.2.paragraph.3"
+        {
+          "image.key": "section.2.paragraph.1.image.key",
+          "image.alt": "section.2.paragraph.1.image.alt",
+          "text": "section.2.paragraph.1.text"
+        },
+        {
+          "image.key": "section.2.paragraph.2.image.key",
+          "image.alt": "section.2.paragraph.2.image.alt",
+          "text": "section.2.paragraph.2.text"
+        },
+        {
+          "image.key": "section.2.paragraph.3.image.key",
+          "image.alt": "section.2.paragraph.3.image.alt",
+          "text": "section.2.paragraph.3.text"
+        }
       ],
       "links": [
         {
@@ -57,9 +81,21 @@
     {
       "title": "section.3.title",
       "paragraphs": [
-        "section.3.paragraph.1",
-        "section.3.paragraph.2",
-        "section.3.paragraph.3"
+        {
+          "image.key": "section.3.paragraph.1.image.key",
+          "image.alt": "section.3.paragraph.1.image.alt",
+          "text": "section.3.paragraph.1.text"
+        },
+        {
+          "image.key": "section.3.paragraph.2.image.key",
+          "image.alt": "section.3.paragraph.2.image.alt",
+          "text": "section.3.paragraph.2.text"
+        },
+        {
+          "image.key": "section.3.paragraph.3.image.key",
+          "image.alt": "section.3.paragraph.3.image.alt",
+          "text": "section.3.paragraph.3.text"
+        }
       ],
       "links": [
         {
@@ -79,16 +115,29 @@
   ],
   "primary.title": "primary.title",
   "primary.description": "primary.description",
+  "primary.label": "primary.label",
+  "primary.labelDisabled": "primary.labelDisabled",
   "secondary.title": "secondary.title",
   "secondary.description": "secondary.description",
+  "secondary.label": "secondary.label",
+  "secondary.labelDisabled": "secondary.labelDisabled",
   "tertiary.title": "tertiary.title",
   "tertiary.description": "tertiary.description",
+  "tertiary.label": "tertiary.label",
+  "tertiary.labelDisabled": "tertiary.labelDisabled",
   "secondaryNoborder.title": "secondaryNoborder.title",
   "secondaryNoborder.description": "secondaryNoborder.description",
+  "secondaryNoborder.label": "secondaryNoborder.label",
+  "secondaryNoborder.labelDisabled": "secondaryNoborder.labelDisabled",
   "negative.title": "negative.title",
   "negative.description": "negative.description",
+  "negative.label": "negative.label",
+  "negative.labelDisabled": "negative.labelDisabled",
   "withIcon.title": "withIcon.title",
   "withIcon.description": "withIcon.description",
-  "button.label": "button.label",
+  "disabled.title": "disabled.title",
+  "disabled.description": "disabled.description",
+  "button.labelIcon": "button.labelIcon",
+  "button.labelIconRight": "button.labelIconRight",
   "button.labelClicked": "button.labelClicked"
 }

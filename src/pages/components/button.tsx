@@ -11,16 +11,37 @@ import ComponentDescription from '../../components/ComponentDescription'
 import sideNavData from '../../config/sidenav/components'
 import NoteBox from '../../components/NoteBox'
 import Section from '../../components/Section'
+import ComponentExample from '../../components/ComponentExample'
 
 const components = [
   { id: 'primary', comp: Button },
-  { id: 'secondary', comp: Button.secondary },
   { id: 'tertiary', comp: Button.tertiary },
-  { id: 'secondaryNoborder', comp: Button.secondaryNoborder },
   {
     id: 'negative',
     comp: Button.negative,
     background: suomifiTheme.colors.secondaryColor
+  },
+  { id: 'secondary', comp: Button.secondary },
+  {
+    id: 'secondaryNoborder',
+    comp: Button.secondaryNoborder,
+    background: suomifiTheme.colors.white,
+    border: '1px solid #C9CDCF'
+  }
+]
+
+const disabledComponents = [
+  { id: 'primary', comp: Button },
+  { id: 'tertiary', comp: Button.tertiary },
+  {
+    id: 'negative',
+    comp: Button.negative,
+    background: suomifiTheme.colors.secondaryColor
+  },
+  { id: 'secondary', comp: Button.secondary },
+  {
+    id: 'secondaryNoborder',
+    comp: Button.secondaryNoborder
   }
 ]
 
@@ -38,6 +59,24 @@ const handleClick = (id: string, name: string, t: Function): void => {
   )
 }
 
+const getExampleComp = (
+  Comp: Function,
+  id: string,
+  label: string,
+  props: object,
+  t: Function
+): JSX.Element => (
+  <Comp
+    key={id}
+    id={id}
+    aria-label={label}
+    style={{ margin: '.5rem' }}
+    {...props}
+    onClick={() => handleClick(id, label, t)}>
+    {label}
+  </Comp>
+)
+
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['button']}>
     {t => (
@@ -46,6 +85,8 @@ const Page = (): JSX.Element => (
         <h1>{t('title')}</h1>
 
         <p>{t('intro')}</p>
+
+        <h2>{t('common:component.usage')}</h2>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
@@ -58,30 +99,35 @@ const Page = (): JSX.Element => (
           />
         ))}
 
+        <h2>{t('common:component.versions')}</h2>
+
         {components.map(item => (
           <ComponentDescription
             key={item.id}
             title={t(`${item.id}.title`)}
             description={t(`${item.id}.description`)}>
-            <div style={{ background: item.background || 'none' }}>
-              <item.comp
-                id={item.id}
-                aria-label={t(`${item.id}.title`)}
-                style={{ margin: '.5rem' }}
-                onClick={() => handleClick(item.id, t(`${item.id}.title`), t)}>
-                {t('button.label')}
-              </item.comp>
-              <item.comp
-                id={`${item.id}.disabled`}
-                aria-label={t(`${item.id}.title`)}
-                style={{ margin: '.5rem' }}
-                disabled
-                onClick={() =>
-                  handleClick(`${item.id}.disabled`, t(`${item.id}.title`), t)
-                }>
-                {t('button.label')}
-              </item.comp>
-            </div>
+            <ComponentExample
+              style={{
+                background: item.background,
+                border: item.border || 0
+              }}>
+              {[
+                { id: item.id, label: t(`${item.id}.label`) },
+                {
+                  id: `${item.id}.disabled`,
+                  label: t(`${item.id}.labelDisabled`),
+                  props: { disabled: true }
+                }
+              ].map(example =>
+                getExampleComp(
+                  item.comp,
+                  example.id,
+                  example.label,
+                  example.props,
+                  t
+                )
+              )}
+            </ComponentExample>
           </ComponentDescription>
         ))}
 
@@ -89,31 +135,61 @@ const Page = (): JSX.Element => (
           title={t('withIcon.title')}
           description={t('withIcon.description')}>
           {components.map(item => (
-            <div
+            <ComponentExample
               key={item.id}
-              style={{ background: item.background || 'none' }}>
-              <item.comp
-                id={`${item.id}.icon`}
-                aria-label={t(`${item.id}.title`)}
-                style={{ margin: '.5rem' }}
-                icon='login'
-                onClick={() =>
-                  handleClick(`${item.id}.icon`, t(`${item.id}.title`), t)
-                }>
-                {t('button.label')}
-              </item.comp>
-              <item.comp
-                id={`${item.id}.iconRight`}
-                aria-label={t(`${item.id}.title`)}
-                style={{ margin: '.5rem' }}
-                iconRight='login'
-                onClick={() =>
-                  handleClick(`${item.id}.iconRight`, t(`${item.id}.title`), t)
-                }>
-                {t('button.label')}
-              </item.comp>
-            </div>
+              style={{
+                background: item.background,
+                border: item.border || 0
+              }}>
+              {[
+                {
+                  id: `${item.id}.icon`,
+                  label: t('button.labelIcon', {
+                    name: t(`${item.id}.label`)
+                  }),
+                  props: { icon: 'login' }
+                },
+                {
+                  id: `${item.id}.iconRight`,
+                  label: t('button.labelIconRight', {
+                    name: t(`${item.id}.label`)
+                  }),
+                  props: { iconRight: 'logout' }
+                }
+              ].map(example =>
+                getExampleComp(
+                  item.comp,
+                  example.id,
+                  example.label,
+                  example.props,
+                  t
+                )
+              )}
+            </ComponentExample>
           ))}
+        </ComponentDescription>
+
+        <ComponentDescription
+          title={t('disabled.title')}
+          description={t('disabled.description')}>
+          <ComponentExample>
+            {disabledComponents.map(item => (
+              <div
+                key={item.id}
+                style={{
+                  margin: '.5rem',
+                  background: item.background || 'none'
+                }}>
+                {getExampleComp(
+                  item.comp,
+                  `${item.id}.disabled.another`,
+                  t(`${item.id}.labelDisabled`),
+                  { disabled: true },
+                  t
+                )}
+              </div>
+            ))}
+          </ComponentExample>
         </ComponentDescription>
       </Layout>
     )}

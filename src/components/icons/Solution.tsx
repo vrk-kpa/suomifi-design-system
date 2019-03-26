@@ -6,9 +6,6 @@ const Icon = (): JSX.Element => (
     viewBox='0 0 80 80'
     version='1.1'
     xmlns='http://www.w3.org/2000/svg'>
-    <title>Ikonit / Kuvitukset / Ratkaisu</title>
-    <desc>Created with Sketch.</desc>
-    <defs />
     <g
       id='Ikonit-/-Kuvitukset-/-Ratkaisu'
       stroke='none'

@@ -1,5 +1,9 @@
+import React from 'react'
+import { Icon } from '../../components/Icon'
+
 export default t => ({
   title: t('instructions:title'),
+  icon: <Icon.book />,
   items: [
     {
       to: '/instructions/get-started/',

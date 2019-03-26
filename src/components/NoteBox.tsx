@@ -8,7 +8,7 @@ const NoteBox = ({ title, items }: Props): JSX.Element => (
       padding: '20px',
       border: '1px solid #C5CBD2'
     }}>
-    <h2 style={{ marginTop: 0, fontSize: '22px', fontWeight: 600 }}>{title}</h2>
+    <h3 style={{ marginTop: 0, fontSize: '22px', fontWeight: 600 }}>{title}</h3>
     <ul style={{ margin: 0, padding: '0 0 0 2rem' }}>
       {items.map(
         (item, index) =>

@@ -1,11 +1,17 @@
 import React from 'react'
+import { Image } from './Image'
 
 const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
   <section>
-    {!!title && <h2>{title}</h2>}
-    {paragraphs.map(
-      (paragraph, index) => !!paragraph && <p key={index}>{paragraph}</p>
-    )}
+    {!!title && <h3>{title}</h3>}
+    {paragraphs.map((paragraph, index) => (
+      <div key={index}>
+        {!!paragraph['image.key'] && (
+          <Image imgKey={paragraph['image.key']} alt={paragraph['image.alt']} />
+        )}
+        {!!paragraph.text && <p>{paragraph.text}</p>}
+      </div>
+    ))}
     <ul>
       {links.map(
         (link, index) =>
@@ -25,13 +31,19 @@ const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
 
 interface Props {
   title: string
-  paragraphs: string[]
+  paragraphs: Paragraph[]
   links: Link[]
 }
 
 interface Link {
   text: string
   url: string
+}
+
+interface Paragraph {
+  'image.key': string
+  'image.alt': string
+  text: string
 }
 
 export default Section

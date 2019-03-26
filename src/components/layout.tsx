@@ -25,17 +25,21 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
           style={{
             display: 'flex',
             justifyContent: 'center',
-            flexWrap: 'nowrap'
+            flexWrap: 'nowrap',
+            background: '#F6F6F7'
           }}>
           <div
             style={{
+              margin: '2rem',
               width: '100%',
               maxWidth: 1140,
               display: 'flex',
-              flexWrap: 'nowrap'
+              flexWrap: 'nowrap',
+              background: suomifiTheme.colors.white,
+              border: '1px solid #C9CDCF'
             }}>
             {sideNavData && (
-              <div style={{ margin: '1rem' }}>
+              <div>
                 <Location>
                   {({ location }) => (
                     <SideNav location={location} sideNavData={sideNavData} />
@@ -43,13 +47,13 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
                 </Location>
               </div>
             )}
-            <div style={{ margin: '1rem' }}>
+            <div style={{ margin: '0 1rem 0 2rem', flex: 1 }}>
               <Annotation
                 title={t('alpharel:title')}
                 description={t('alpharel:description')}
               />
               <main>{children}</main>
-              <footer style={{ marginTop: '1rem' }}>
+              <footer style={{ margin: '1rem 0' }}>
                 © {new Date().getFullYear()}
               </footer>
             </div>

@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
+import { Panel } from 'suomifi-ui-components'
+import { css } from '@emotion/core'
 import ComponentCode from './ComponentCode'
-import Collapse from './Collapse'
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
   React.Children.map(children, child =>
@@ -21,12 +22,17 @@ const ComponentDescription = ({
         <h3>{title}</h3>
         <div>{children}</div>
         <div style={{ padding: '1rem 0 0 0' }}>{description}</div>
-        <div style={{ padding: '1.2rem 0', borderBottom: '1px solid #C9CDCF' }}>
-          <Collapse label={t('common:react')}>
+        <div style={{ padding: '2rem 0', borderBottom: '1px solid #C9CDCF' }}>
+          <Panel.expansion
+            css={css({ background: '#F6F6F7' })}
+            title={t('common:react')}
+            titleProps={{
+              style: { textAlign: 'left', textTransform: 'uppercase' }
+            }}>
             {getWithoutWrappers(children).map((child, index) => (
               <ComponentCode key={index}>{child}</ComponentCode>
             ))}
-          </Collapse>
+          </Panel.expansion>
         </div>
       </div>
     )}

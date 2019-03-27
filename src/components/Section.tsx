@@ -7,7 +7,12 @@ const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
     {paragraphs.map((paragraph, index) => (
       <div key={index}>
         {!!paragraph['image.key'] && (
-          <Image imgKey={paragraph['image.key']} alt={paragraph['image.alt']} />
+          <div aria-hidden>
+            <Image
+              imgKey={paragraph['image.key']}
+              alt={paragraph['image.alt']}
+            />
+          </div>
         )}
         {!!paragraph.text && <p>{paragraph.text}</p>}
       </div>

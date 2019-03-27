@@ -1,19 +1,18 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component, ReactNode, MouseEvent } from 'react'
 import { suomifiTheme } from 'suomifi-ui-components'
 import { Link } from '@wapps/gatsby-plugin-i18next'
 import { Icon } from './Icon'
 
-class SideNavItem extends Component {
-  toggleOpen = event => {
+class SideNavItem extends Component<Props> {
+  private toggleOpen = (event: MouseEvent) => {
     event.preventDefault()
     const { to, handleToggle } = this.props
     handleToggle(to)
   }
 
-  isFrontPage = to => to && to === '/'
+  private isFrontPage = (to: string): boolean => to && to === '/'
 
-  render() {
+  public render(): JSX.Element {
     const { to, children, hasChildren, isOpen, level } = this.props
 
     return (
@@ -82,13 +81,13 @@ class SideNavItem extends Component {
   }
 }
 
-SideNavItem.propTypes = {
-  to: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-  hasChildren: PropTypes.bool.isRequired,
-  isOpen: PropTypes.func.isRequired,
-  handleToggle: PropTypes.func.isRequired,
-  level: PropTypes.number.isRequired
+interface Props {
+  to: string
+  children: ReactNode
+  hasChildren: boolean
+  isOpen: Function
+  handleToggle: Function
+  level: number
 }
 
 export default SideNavItem

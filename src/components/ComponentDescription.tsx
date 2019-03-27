@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { Panel } from 'suomifi-ui-components'
-import { css } from '@emotion/core'
 import ComponentCode from './ComponentCode'
+import styled from '@emotion/styled'
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
   React.Children.map(children, child =>
@@ -10,6 +10,8 @@ const getWithoutWrappers = (children: any): ReactNode[] =>
       ? getWithoutWrappers(child.props.children)
       : child
   )
+
+const StyledPanel = styled(Panel.expansion)({ background: '#F6F6F7' })
 
 const ComponentDescription = ({
   title,
@@ -27,8 +29,7 @@ const ComponentDescription = ({
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
           <div style={{ padding: '1rem 0 2rem 0' }}>
-            <Panel.expansion
-              css={css({ background: '#F6F6F7' })}
+            <StyledPanel
               title={t('common:react')}
               titleProps={{
                 style: { textAlign: 'left', textTransform: 'uppercase' }
@@ -36,7 +37,7 @@ const ComponentDescription = ({
               {getWithoutWrappers(children).map((child, index) => (
                 <ComponentCode key={index}>{child}</ComponentCode>
               ))}
-            </Panel.expansion>
+            </StyledPanel>
           </div>
         )}
       </div>

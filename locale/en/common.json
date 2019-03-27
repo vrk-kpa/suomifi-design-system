@@ -1,4 +1,5 @@
 {
+  "navigation.main": "Main navigation",
   "back.to.frontpage": "Go back to the homepage",
   "component.versions": "Component versions",
   "component.usage": "Component usage",

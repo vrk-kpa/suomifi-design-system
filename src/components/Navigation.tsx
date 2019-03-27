@@ -8,6 +8,7 @@ const Navigation = (): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <nav
+        aria-label={t('common:navigation.main')}
         style={{
           padding: 0,
           boxSizing: 'border-box',

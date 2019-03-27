@@ -37,16 +37,17 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "yarn run develop",
+    "clean": "rimraf .cache public",
+    "build": "yarn clean && gatsby build",
+    "develop": "yarn clean && gatsby develop",
+    "start": "yarn develop",
     "lint:code": "eslint \"src/**/*.{js,jsx,ts,tsx,md}\"",
     "format:code": "prettier-eslint --write \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "format:style": "prettier-stylelint --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "validate": "yarn run lint:code && yarn run lint:style && yarn run test",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -m \"[skip ci] Updates\""
+    "deploy": "yarn build --prefix-paths && gh-pages -d public -m \"[skip ci] Updates\""
   },
   "husky": {
     "hooks": {

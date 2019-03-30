@@ -45,12 +45,12 @@
       ]
     },
     {
-      "title": "Koko ja käyttö  (Keskitetty painike)",
+      "title": "",
       "paragraphs": [
         {
-          "image.key": "ButtonsMobileFI",
+          "image.key": "",
           "image.alt": "",
-          "text": "Mobiilikoossa käytetään leveää ‘keskitetty’ painiketta, joka skaalautuu näytön leveyden mukaan. Desktop-koossa käytetään kapeaa painiketta, joka skaalautuu painikkeen sisällön mukaan."
+          "text": ""
         },
         {
           "image.key": "",
@@ -113,6 +113,8 @@
       ]
     }
   ],
+  "fullWidth.title": "Koko ja käyttö",
+  "fullWidth.description": "Mobiilikoossa käytetään leveää ‘keskitetty’ painiketta, joka skaalautuu näytön leveyden mukaan. Desktop-koossa käytetään kapeaa painiketta, joka skaalautuu painikkeen sisällön mukaan.",
   "primary.title": "Ensisijainen",
   "primary.description": "Ensisijaista painiketta käytetään kun toiminto on pakollinen tai olennainen prosessin tai muun toiminnan kannalta. Ensisijainen painike on yleisimmin käytetty painike. Painiketta käytetään erityisesti korostamaan pakollisia tai huomionarvoisia toimintoja. Ensisijaisen painikkeen käyttöä monta kertaa yhdessä näkymässä tulisi välttää.",
   "primary.label": "Ensisijainen",

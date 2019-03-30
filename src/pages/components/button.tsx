@@ -12,6 +12,7 @@ import sideNavData from '../../config/sidenav/components'
 import NoteBox from '../../components/NoteBox'
 import Section from '../../components/Section'
 import ComponentExample from '../../components/ComponentExample'
+import MobileDevice from '../../components/MobileDevice'
 
 const components = [
   { id: 'primary', comp: Button },
@@ -28,6 +29,12 @@ const components = [
     background: suomifiTheme.colors.white,
     border: '1px solid #C9CDCF'
   }
+]
+
+const mobileComponents = [
+  { id: 'primary', comp: Button },
+  { id: 'tertiary', comp: Button.tertiary },
+  { id: 'secondary', comp: Button.secondary }
 ]
 
 const disabledComponents = [
@@ -98,6 +105,25 @@ const Page = (): JSX.Element => (
             links={section.links}
           />
         ))}
+
+        <ComponentDescription
+          title={t('fullWidth.title')}
+          description={t('fullWidth.description')}
+          exampleFirst>
+          <MobileDevice>
+            {mobileComponents.map(item => (
+              <div key={item.id} style={{ padding: '1rem .5rem' }}>
+                {getExampleComp(
+                  item.comp,
+                  `${item.id}.fullWidth`,
+                  t(`${item.id}.label`),
+                  { fullWidth: true, style: {} },
+                  t
+                )}
+              </div>
+            ))}
+          </MobileDevice>
+        </ComponentDescription>
 
         <h2>{t('common:component.versions')}</h2>
 
@@ -180,7 +206,7 @@ const Page = (): JSX.Element => (
               <div
                 key={item.id}
                 style={{
-                  margin: '.5rem',
+                  padding: item.background ? '.8rem' : 0,
                   background: item.background || 'none'
                 }}>
                 {getExampleComp(

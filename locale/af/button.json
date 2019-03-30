@@ -113,6 +113,8 @@
       ]
     }
   ],
+  "fullWidth.title": "fullWidth.title",
+  "fullWidth.description": "fullWidth.description",
   "primary.title": "primary.title",
   "primary.description": "primary.description",
   "primary.label": "primary.label",

@@ -12,6 +12,7 @@ import sideNavData from '../../config/sidenav/components'
 import NoteBox from '../../components/NoteBox'
 import Section from '../../components/Section'
 import ComponentExample from '../../components/ComponentExample'
+import MobileDevice from '../../components/MobileDevice'
 
 const components = [
   { id: 'primary', comp: Button },
@@ -28,6 +29,12 @@ const components = [
     background: suomifiTheme.colors.white,
     border: '1px solid #C9CDCF'
   }
+]
+
+const mobileComponents = [
+  { id: 'primary', comp: Button },
+  { id: 'tertiary', comp: Button.tertiary },
+  { id: 'secondary', comp: Button.secondary }
 ]
 
 const disabledComponents = [
@@ -99,13 +106,33 @@ const Page = (): JSX.Element => (
           />
         ))}
 
+        <ComponentDescription
+          title={t('fullWidth.title')}
+          description={t('fullWidth.description')}
+          exampleFirst>
+          <MobileDevice>
+            {mobileComponents.map(item => (
+              <div key={item.id} style={{ padding: '1rem .5rem' }}>
+                {getExampleComp(
+                  item.comp,
+                  `${item.id}.fullWidth`,
+                  t(`${item.id}.label`),
+                  { fullWidth: true, style: {} },
+                  t
+                )}
+              </div>
+            ))}
+          </MobileDevice>
+        </ComponentDescription>
+
         <h2>{t('common:component.versions')}</h2>
 
         {components.map(item => (
           <ComponentDescription
             key={item.id}
             title={t(`${item.id}.title`)}
-            description={t(`${item.id}.description`)}>
+            description={t(`${item.id}.description`)}
+            exampleFirst>
             <ComponentExample
               style={{
                 background: item.background,
@@ -133,7 +160,8 @@ const Page = (): JSX.Element => (
 
         <ComponentDescription
           title={t('withIcon.title')}
-          description={t('withIcon.description')}>
+          description={t('withIcon.description')}
+          exampleFirst>
           {components.map(item => (
             <ComponentExample
               key={item.id}
@@ -171,13 +199,14 @@ const Page = (): JSX.Element => (
 
         <ComponentDescription
           title={t('disabled.title')}
-          description={t('disabled.description')}>
+          description={t('disabled.description')}
+          exampleFirst>
           <ComponentExample>
             {disabledComponents.map(item => (
               <div
                 key={item.id}
                 style={{
-                  margin: '.5rem',
+                  padding: item.background ? '.8rem' : 0,
                   background: item.background || 'none'
                 }}>
                 {getExampleComp(

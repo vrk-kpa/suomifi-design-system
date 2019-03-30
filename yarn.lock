@@ -10532,13 +10532,6 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-collapse@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/react-collapse/-/react-collapse-4.0.3.tgz#b96de959ed0092a43534630b599a4753dd76d543"
-  integrity sha512-OO4NhtEqFtz+1ma31J1B7+ezdRnzHCZiTGSSd/Pxoks9hxrZYhzFEddeYt05A/1477xTtdrwo7xEa2FLJyWGCQ==
-  dependencies:
-    prop-types "^15.5.8"
-
 react-dev-utils@^4.2.1:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
@@ -12403,20 +12396,20 @@ sugarss@^2.0.0:
   dependencies:
     postcss "^7.0.2"
 
-suomifi-icons@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-0.0.2.tgz#6cabebcce78cbc311496f7b4bb1fd278847c45c8"
-  integrity sha512-AumRVP/4BbIRhirBzaTHILvSYZwHuhBidCrQxY2HIaRoV5AzMU2ySs/vWXHi7+Hmh5rC37Lph21sd8X2TbzXCw==
+suomifi-icons@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-0.0.3.tgz#e05fdcab149bc808b46e65af37882546e72f9d12"
+  integrity sha512-C/w2hYS85/5+JOQXjg1YSPSimfQcRdVF2uGFIJpiBR2mroDmEiA74LEEN9m3iBMwOOGuvcATzZIZVImsMgMlxw==
   dependencies:
     "@types/react" "16.7.20"
     "@types/react-dom" "16.0.11"
     react "16.7.0"
     react-dom "16.7.0"
 
-suomifi-ui-components@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.0.5.tgz#550cc6b6456151f345c9738928efdecafd4bcc46"
-  integrity sha512-EuhDI1RKKcetxIHB60KhYn8LaObOOdfeKPgGao3xsu7b8ZnmP8kytBu/1i7VSNh/7pXDJBRR1/1nj8mJ02Vajw==
+suomifi-ui-components@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.0.8.tgz#f8ed9d4f53fdde78c760bafbd2a963af1da7d374"
+  integrity sha512-BWeSqd5ujlAKdblcj6R8rVOOi5hSJiDMZvpQAI1AMs+qb/So1+gbFFHLMaHxEp5LG9Svsi7DFBvy1XRjFTNm3A==
   dependencies:
     "@emotion/core" "10.0.0"
     "@emotion/styled" "10.0.0"
@@ -12425,7 +12418,7 @@ suomifi-ui-components@^0.0.5:
     normalize.cssinjs "1.0.5"
     polished "2.3.1"
     react-svg "7.2.2"
-    suomifi-icons "0.0.2"
+    suomifi-icons "0.0.3"
 
 supports-color@^2.0.0:
   version "2.0.0"

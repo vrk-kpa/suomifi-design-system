@@ -2,13 +2,7 @@
   "title": "Button",
   "intro": "",
   "note.title": "",
-  "note.items": [
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
+  "note.items": ["", "", "", "", ""],
   "sections": [
     {
       "title": "",
@@ -113,6 +107,8 @@
       ]
     }
   ],
+  "fullWidth.title": "",
+  "fullWidth.description": "",
   "primary.title": "Primary",
   "primary.description": "Instructions",
   "primary.label": "",

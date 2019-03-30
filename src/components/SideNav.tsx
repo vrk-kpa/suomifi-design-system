@@ -134,6 +134,7 @@ class SideNav extends Component<Props, State> {
       <NamespacesConsumer>
         {t => (
           <nav
+            aria-label={sideNavData.title}
             style={{
               width: '22rem',
               margin: 0,

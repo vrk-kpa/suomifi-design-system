@@ -1,7 +1,6 @@
 import React, { Component, ReactNode, MouseEvent } from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
+import { suomifiTheme, Icon } from 'suomifi-ui-components'
 import { Link } from '@wapps/gatsby-plugin-i18next'
-import { Icon } from './Icon'
 
 class SideNavItem extends Component<Props> {
   private toggleOpen = (event: MouseEvent) => {
@@ -69,10 +68,12 @@ class SideNavItem extends Component<Props> {
                 border: 0,
                 width: '24px',
                 height: '24px',
-                fill: '#636769'
+                fontSize: '16px',
+                /* stylelint-disable-next-line function-name-case */
+                transform: isOpen(to) ? 'rotate(.5turn)' : 'none'
               }}
               onClick={this.toggleOpen}>
-              {isOpen(to) ? <Icon.caretUp /> : <Icon.caretDown />}
+              <Icon icon='chevronDown' color='#636769' />
             </button>
           )}
         </Link>

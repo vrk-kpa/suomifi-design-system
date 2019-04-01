@@ -3,24 +3,32 @@ import React, { ReactNode, CSSProperties } from 'react'
 const MobileDevice = ({ style, children }: Props): JSX.Element => (
   <div
     style={{
-      maxWidth: '20rem',
-      border: '3px solid #84898C',
+      width: '13rem',
+      border: '.1rem solid #636769',
       borderBottom: 0,
-      borderRadius: '2rem 2rem 0 0',
-      padding: '3rem 1rem 0 1rem',
-      margin: '1rem',
+      borderRadius: '1.5rem 1.5rem 0 0',
+      boxShadow: '0 0 .2rem #636769',
+      padding: '2.5rem 1rem 0 1rem',
+      margin: 0,
       background: '#C9CDCF'
     }}>
     <div
       style={{
+        position: 'relative',
+        top: '-1.25rem',
+        margin: '0 auto',
+        width: '3.5rem',
+        height: '.25rem',
+        background: '#636769',
+        borderRadius: '.125rem'
+      }}
+    />
+    <div
+      style={{
         overflow: 'hidden',
         height: '100%',
-        border: '2px solid #A5ACB0',
-        borderBottom: 0,
-        borderRadius: '.2rem',
-        ...style,
-
-        background: style && style.background ? style.background : '#F6F6F7'
+        background: 'white',
+        ...style
       }}>
       {children}
     </div>

@@ -110,19 +110,29 @@ const Page = (): JSX.Element => (
           title={t('fullWidth.title')}
           description={t('fullWidth.description')}
           exampleFirst>
-          <MobileDevice>
-            {mobileComponents.map(item => (
-              <div key={item.id} style={{ padding: '1rem .5rem' }}>
-                {getExampleComp(
-                  item.comp,
-                  `${item.id}.fullWidth`,
-                  t(`${item.id}.label`),
-                  { fullWidth: true, style: {} },
-                  t
-                )}
-              </div>
-            ))}
-          </MobileDevice>
+          <div
+            style={{
+              overflow: 'hidden',
+              marginBottom: '1rem',
+              padding: '2rem .8rem 0 .8rem',
+              background: '#F6F6F7',
+              display: 'flex',
+              justifyContent: 'center'
+            }}>
+            <MobileDevice>
+              {mobileComponents.map(item => (
+                <div key={item.id} style={{ padding: '1rem .5rem' }}>
+                  {getExampleComp(
+                    item.comp,
+                    `${item.id}.fullWidth`,
+                    t(`${item.id}.label`),
+                    { fullWidth: true, style: {} },
+                    t
+                  )}
+                </div>
+              ))}
+            </MobileDevice>
+          </div>
         </ComponentDescription>
 
         <h2>{t('common:component.versions')}</h2>

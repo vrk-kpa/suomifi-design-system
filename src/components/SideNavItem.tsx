@@ -34,8 +34,7 @@ class SideNavItem extends Component<Props> {
             textDecoration: 'none',
             '&:hover': {
               background: '#EEF5FF',
-              color: suomifiTheme.colors.brandColor,
-              fontWeight: 600
+              color: suomifiTheme.colors.brandColor
             }
           }}
           getProps={({ isCurrent, isPartiallyCurrent }) => {

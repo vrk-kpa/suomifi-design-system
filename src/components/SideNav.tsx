@@ -113,7 +113,7 @@ class SideNav extends Component<Props, State> {
           ...suomifiTheme.typography,
 
           color: suomifiTheme.colors.text,
-          padding: '.5rem 1rem .5rem .5rem',
+          padding: '.5rem',
           fontWeight: 600,
           display: 'flex',
           alignItems: 'center',
@@ -130,15 +130,13 @@ class SideNav extends Component<Props, State> {
         <MobileOrTablet>
           <div
             style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
               float: 'right',
               background: 'none',
+              marginRight: '.8rem',
               padding: 0,
               border: 0,
-              width: '24px',
-              height: '24px',
+              width: '16px',
+              height: '16px',
               fontSize: '16px',
               /* stylelint-disable-next-line function-name-case */
               transform: this.isNavOpen() ? 'rotate(.5turn)' : 'none'

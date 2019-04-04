@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { suomifiTheme, Icon } from 'suomifi-ui-components'
+import { suomifiTheme, Icon, Button } from 'suomifi-ui-components'
 import { withPrefix } from 'gatsby'
 import { WindowLocation } from '@reach/router'
 
@@ -118,7 +118,8 @@ class SideNav extends Component<Props, State> {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          borderBottom: '1px solid #EEF5FF'
+          borderBottom: '1px solid #EEF5FF',
+          textShadow: 'none'
         }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div style={{ width: '40px', height: '40px' }}>
@@ -129,6 +130,9 @@ class SideNav extends Component<Props, State> {
         <MobileOrTablet>
           <div
             style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
               float: 'right',
               background: 'none',
               padding: 0,
@@ -198,18 +202,17 @@ class SideNav extends Component<Props, State> {
           {this.renderNavItems(sideNavData.items, 1)}
         </Desktop>
         <MobileOrTablet>
-          <button
+          <Button
             aria-expanded={this.isNavOpen()}
             onClick={this.toggleNavOpen}
+            fullWidth
             style={{
-              width: '100%',
               background: 'none',
               padding: 0,
-              border: 0,
-              cursor: 'pointer'
+              border: 0
             }}>
             <this.Title />
-          </button>
+          </Button>
           {this.isNavOpen() && this.renderNavItems(sideNavData.items, 1)}
         </MobileOrTablet>
       </nav>

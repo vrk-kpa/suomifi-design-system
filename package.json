@@ -28,6 +28,7 @@
     "react-helmet": "^5.2.0",
     "react-i18next": "8",
     "react-motion": "^0.5.2",
+    "react-responsive": "^6.1.1",
     "react-syntax-highlighter": "^10.1.2",
     "suomifi-ui-components": "^0.0.8"
   },
@@ -68,6 +69,7 @@
     "@types/react-dom": "^16.0.11",
     "@types/react-helmet": "^5.0.8",
     "@types/react-i18next": "^8.1.0",
+    "@types/react-responsive": "^3.0.3",
     "@typescript-eslint/eslint-plugin": "^1.2.0",
     "@typescript-eslint/parser": "^1.2.0",
     "eslint": "^5.12.0",

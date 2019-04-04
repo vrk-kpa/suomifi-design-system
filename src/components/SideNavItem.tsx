@@ -1,5 +1,5 @@
 import React, { Component, ReactNode, MouseEvent } from 'react'
-import { suomifiTheme, Icon } from 'suomifi-ui-components'
+import { suomifiTheme, Icon, Button } from 'suomifi-ui-components'
 import { Link } from '@wapps/gatsby-plugin-i18next'
 
 class SideNavItem extends Component<Props> {
@@ -23,21 +23,23 @@ class SideNavItem extends Component<Props> {
         }}>
         <Link
           to={to}
-          css={{
-            width: '100%',
-            display: 'inline-block',
-            padding: '1rem',
-            paddingLeft: level + 'rem',
-            borderBottom: '1px solid #EEF5FF',
-            whiteSpace: 'nowrap',
-            color: suomifiTheme.colors.secondaryColor,
-            textDecoration: 'none',
-            '&:hover': {
-              background: '#EEF5FF',
-              color: suomifiTheme.colors.brandColor,
-              fontWeight: 600
-            }
-          }}
+          css={[
+            {
+              width: '100%',
+              display: 'inline-block',
+              padding: '1rem',
+              paddingLeft: level + 'rem',
+              borderBottom: '1px solid #EEF5FF',
+              whiteSpace: 'nowrap',
+              color: suomifiTheme.colors.secondaryColor,
+              textDecoration: 'none',
+              '&:hover': {
+                background: '#EEF5FF',
+                color: suomifiTheme.colors.brandColor
+              }
+            },
+            `&:focus { ${suomifiTheme.outlines.basic} }`
+          ]}
           getProps={({ isCurrent, isPartiallyCurrent }) => {
             if (!this.isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
               return {
@@ -59,7 +61,7 @@ class SideNavItem extends Component<Props> {
           }}>
           {children}
           {hasChildren && (
-            <button
+            <Button
               aria-expanded={isOpen(to)}
               style={{
                 float: 'right',
@@ -68,13 +70,15 @@ class SideNavItem extends Component<Props> {
                 border: 0,
                 width: '24px',
                 height: '24px',
+                minWidth: '24px',
+                minHeight: '24px',
                 fontSize: '16px',
                 /* stylelint-disable-next-line function-name-case */
                 transform: isOpen(to) ? 'rotate(.5turn)' : 'none'
               }}
               onClick={this.toggleOpen}>
               <Icon icon='chevronDown' color='#636769' />
-            </button>
+            </Button>
           )}
         </Link>
       </div>

@@ -29,11 +29,14 @@ const Header = (): JSX.Element => (
             justifyContent: 'space-between',
             flexWrap: 'wrap'
           }}>
-          <div style={{ width: '128px', height: '32px' }}>
-            <Link to='/'>
-              <Icon.suomifi />
-            </Link>
-          </div>
+          <Link
+            to='/'
+            css={[
+              { display: 'inline-block', width: '128px', height: '32px' },
+              `&:focus { ${suomifiTheme.outlines.basic} }`
+            ]}>
+            <Icon.suomifi />
+          </Link>
           <div
             style={{
               flex: 1,

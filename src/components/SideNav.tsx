@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { NamespacesConsumer } from 'react-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import { suomifiTheme, Icon, Button } from 'suomifi-ui-components'
 import { withPrefix } from 'gatsby'
 import { WindowLocation } from '@reach/router'
 
 import SideNavItem from './SideNavItem'
 import { SideNavData, SideNavItemData } from './SideNavData'
+import { Desktop, MobileOrTablet } from './Responsive'
 
 class SideNav extends Component<Props, State> {
   private SIDENAVSTATE_KEY: string = 'sideNavState'
@@ -14,6 +14,7 @@ class SideNav extends Component<Props, State> {
     super(props)
 
     this.state = {
+      isNavOpen: false,
       isOpen: {}
     }
   }
@@ -77,6 +78,17 @@ class SideNav extends Component<Props, State> {
     return to && currentPath && currentPath.startsWith(to.substr(1))
   }
 
+  private isNavOpen = (): boolean => this.state.isNavOpen
+
+  private toggleNavOpen = () => {
+    this.setState(prevState => {
+      this.setSessionState({ ...prevState, isNavOpen: !prevState.isNavOpen })
+      return {
+        isNavOpen: !prevState.isNavOpen
+      }
+    })
+  }
+
   private isOpen = (to: string): boolean => this.state.isOpen[to]
 
   private toggleOpen = (to: string): void => {
@@ -91,6 +103,52 @@ class SideNav extends Component<Props, State> {
 
   private hasChildren = (item: SideNavItemData): boolean =>
     !!item.children && item.children.length > 0
+
+  private Title = () => {
+    const { sideNavData } = this.props
+
+    return (
+      <div
+        style={{
+          ...suomifiTheme.typography,
+
+          color: suomifiTheme.colors.text,
+          padding: '.5rem 1rem .5rem .5rem',
+          fontWeight: 600,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          borderBottom: '1px solid #EEF5FF',
+          textShadow: 'none'
+        }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{ width: '40px', height: '40px' }}>
+            {sideNavData.icon}
+          </div>
+          <div style={{ marginLeft: '.5rem' }}>{sideNavData.title}</div>
+        </div>
+        <MobileOrTablet>
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              float: 'right',
+              background: 'none',
+              padding: 0,
+              border: 0,
+              width: '24px',
+              height: '24px',
+              fontSize: '16px',
+              /* stylelint-disable-next-line function-name-case */
+              transform: this.isNavOpen() ? 'rotate(.5turn)' : 'none'
+            }}>
+            <Icon icon='chevronDown' color='#636769' />
+          </div>
+        </MobileOrTablet>
+      </div>
+    )
+  }
 
   private renderNavItems = (items: SideNavItemData[], level: number) => (
     <ul
@@ -131,34 +189,33 @@ class SideNav extends Component<Props, State> {
     const { sideNavData } = this.props
 
     return (
-      <NamespacesConsumer>
-        {t => (
-          <nav
-            aria-label={sideNavData.title}
+      <nav
+        aria-label={sideNavData.title}
+        style={{
+          margin: 0,
+          padding: 0,
+          boxSizing: 'border-box',
+          background: `${suomifiTheme.colors.white}`
+        }}>
+        <Desktop>
+          <this.Title />
+          {this.renderNavItems(sideNavData.items, 1)}
+        </Desktop>
+        <MobileOrTablet>
+          <Button
+            aria-expanded={this.isNavOpen()}
+            onClick={this.toggleNavOpen}
+            fullWidth
             style={{
-              width: '22rem',
-              margin: 0,
+              background: 'none',
               padding: 0,
-              boxSizing: 'border-box',
-              background: `${suomifiTheme.colors.white}`
+              border: 0
             }}>
-            <div
-              style={{
-                padding: '.5rem',
-                fontWeight: 600,
-                display: 'flex',
-                alignItems: 'center',
-                borderBottom: '1px solid #EEF5FF'
-              }}>
-              <div style={{ width: '40px', height: '40px' }}>
-                {sideNavData.icon}
-              </div>
-              <div style={{ marginLeft: '.5rem' }}>{sideNavData.title}</div>
-            </div>
-            {this.renderNavItems(sideNavData.items, 1)}
-          </nav>
-        )}
-      </NamespacesConsumer>
+            <this.Title />
+          </Button>
+          {this.isNavOpen() && this.renderNavItems(sideNavData.items, 1)}
+        </MobileOrTablet>
+      </nav>
     )
   }
 }
@@ -169,6 +226,7 @@ interface Props {
 }
 
 interface State {
+  isNavOpen: boolean
   isOpen: object
 }
 

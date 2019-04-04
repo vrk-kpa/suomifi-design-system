@@ -25,12 +25,14 @@ class SideNavItem extends Component<Props> {
           to={to}
           css={[
             {
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
               width: '100%',
-              display: 'inline-block',
-              padding: '1rem',
+              height: '3.2rem',
               paddingLeft: level + 'rem',
+              paddingRight: '.5rem',
               borderBottom: '1px solid #EEF5FF',
-              whiteSpace: 'nowrap',
               color: suomifiTheme.colors.secondaryColor,
               textDecoration: 'none',
               '&:hover': {
@@ -68,10 +70,10 @@ class SideNavItem extends Component<Props> {
                 background: 'none',
                 padding: 0,
                 border: 0,
-                width: '24px',
-                height: '24px',
-                minWidth: '24px',
-                minHeight: '24px',
+                width: '40px',
+                height: '40px',
+                minWidth: '40px',
+                minHeight: '40px',
                 fontSize: '16px',
                 /* stylelint-disable-next-line function-name-case */
                 transform: isOpen(to) ? 'rotate(.5turn)' : 'none'

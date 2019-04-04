@@ -23,20 +23,23 @@ class SideNavItem extends Component<Props> {
         }}>
         <Link
           to={to}
-          css={{
-            width: '100%',
-            display: 'inline-block',
-            padding: '1rem',
-            paddingLeft: level + 'rem',
-            borderBottom: '1px solid #EEF5FF',
-            whiteSpace: 'nowrap',
-            color: suomifiTheme.colors.secondaryColor,
-            textDecoration: 'none',
-            '&:hover': {
-              background: '#EEF5FF',
-              color: suomifiTheme.colors.brandColor
-            }
-          }}
+          css={[
+            {
+              width: '100%',
+              display: 'inline-block',
+              padding: '1rem',
+              paddingLeft: level + 'rem',
+              borderBottom: '1px solid #EEF5FF',
+              whiteSpace: 'nowrap',
+              color: suomifiTheme.colors.secondaryColor,
+              textDecoration: 'none',
+              '&:hover': {
+                background: '#EEF5FF',
+                color: suomifiTheme.colors.brandColor
+              }
+            },
+            `&:focus { ${suomifiTheme.outlines.basic} }`
+          ]}
           getProps={({ isCurrent, isPartiallyCurrent }) => {
             if (!this.isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
               return {

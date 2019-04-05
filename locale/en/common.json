@@ -1,4 +1,7 @@
 {
+  "to.main.content": "Skip to main content",
+  "to.homepage": "Go to home page",
+  "to.sidenav": "Go to side navigation",
   "navigation.main": "Main navigation",
   "back.to.frontpage": "Go back to the homepage",
   "component.versions": "Component versions",

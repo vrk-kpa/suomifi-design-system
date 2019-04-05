@@ -30,6 +30,7 @@ const Header = (): JSX.Element => (
             flexWrap: 'wrap'
           }}>
           <Link
+            title={t('common:to.homepage')}
             to='/'
             css={[
               { display: 'inline-block', width: '128px', height: '32px' },

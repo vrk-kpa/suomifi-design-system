@@ -14,12 +14,14 @@ import BypassLink from './BypassLink'
 import '@csstools/normalize.css'
 import './layout.css'
 
-const BypassLinks = (): JSX.Element => (
+const BypassLinks = ({ hasSideNav }: { hasSideNav: boolean }): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <>
         <BypassLink to='#main'>{t('common:to.main.content')}</BypassLink>
-        <BypassLink to='#sidenav'>{t('common:to.sidenav')}</BypassLink>
+        {hasSideNav && (
+          <BypassLink to='#sidenav'>{t('common:to.sidenav')}</BypassLink>
+        )}
       </>
     )}
   </NamespacesConsumer>
@@ -71,7 +73,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
     style={Object.assign({}, suomifiTheme.typography, {
       color: `${suomifiTheme.colors.text}`
     })}>
-    <BypassLinks />
+    <BypassLinks hasSideNav={!!sideNavData} />
     <Header />
     <Navigation />
     <div style={{ background: '#F6F6F7', paddingTop: '1rem' }}>

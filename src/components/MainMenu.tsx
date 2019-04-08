@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { Icon, suomifiTheme, Button } from 'suomifi-ui-components'
-
 import { NamespacesConsumer } from 'react-i18next'
-import MainMenuItem from './MainMenuItem'
 
-class MainMenu extends Component<{}, State> {
-  public constructor(props) {
+import MainMenuItem from './MainMenuItem'
+import { MainNavData } from './MainNavData'
+
+class MainMenu extends Component<Props, State> {
+  public constructor(props: Props) {
     super(props)
 
     this.state = {
@@ -24,6 +25,8 @@ class MainMenu extends Component<{}, State> {
   }
 
   public render(): JSX.Element {
+    const { mainNavData } = this.props
+
     return (
       <NamespacesConsumer>
         {t => (
@@ -60,11 +63,7 @@ class MainMenu extends Component<{}, State> {
                   boxShadow: suomifiTheme.shadows.menuShadow
                 }}>
                 <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
-                  {[
-                    { to: '/', label: t('home:title') },
-                    { to: '/components/', label: t('components:title') },
-                    { to: '/instructions/', label: t('instructions:title') }
-                  ].map(item => (
+                  {mainNavData.items.map(item => (
                     <li key={item.to}>
                       <MainMenuItem to={item.to}>{item.label}</MainMenuItem>
                     </li>
@@ -77,6 +76,10 @@ class MainMenu extends Component<{}, State> {
       </NamespacesConsumer>
     )
   }
+}
+
+interface Props {
+  mainNavData: MainNavData
 }
 
 interface State {

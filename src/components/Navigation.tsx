@@ -3,8 +3,9 @@ import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import NavItem from './NavItem'
+import { MainNavData } from './MainNavData'
 
-const Navigation = (): JSX.Element => (
+const Navigation = ({ mainNavData }: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <nav
@@ -28,11 +29,7 @@ const Navigation = (): JSX.Element => (
             flexWrap: 'wrap',
             listStyle: 'none'
           }}>
-          {[
-            { to: '/', label: t('home:title') },
-            { to: '/components/', label: t('components:title') },
-            { to: '/instructions/', label: t('instructions:title') }
-          ].map(item => (
+          {mainNavData.items.map(item => (
             <li key={item.to} style={{ margin: '0 1.2rem' }}>
               <NavItem to={item.to}>{item.label}</NavItem>
             </li>
@@ -42,5 +39,9 @@ const Navigation = (): JSX.Element => (
     )}
   </NamespacesConsumer>
 )
+
+interface Props {
+  mainNavData: MainNavData
+}
 
 export default Navigation

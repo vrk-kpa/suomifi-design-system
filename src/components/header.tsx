@@ -7,6 +7,7 @@ import Switcher from './Switcher'
 import { Icon } from './Icon'
 import MainMenu from './MainMenu'
 import { Desktop, MobileOrTablet } from './Responsive'
+import mainNavData from '../config/mainnav'
 
 const Header = (): JSX.Element => (
   <NamespacesConsumer>
@@ -75,7 +76,7 @@ const Header = (): JSX.Element => (
             <Switcher />
           </Desktop>
           <MobileOrTablet>
-            <MainMenu />
+            <MainMenu mainNavData={mainNavData(t)} />
           </MobileOrTablet>
         </div>
       </header>

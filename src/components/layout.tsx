@@ -9,9 +9,23 @@ import SideNavComp from './SideNav'
 import Annotation from './annotation'
 import { SideNavData } from './SideNavData'
 import { Desktop, Mobile, Tablet } from './Responsive'
+import BypassLink from './BypassLink'
 
 import '@csstools/normalize.css'
 import './layout.css'
+
+const BypassLinks = ({ hasSideNav }: { hasSideNav: boolean }): JSX.Element => (
+  <NamespacesConsumer>
+    {t => (
+      <>
+        <BypassLink to='#main'>{t('common:to.main.content')}</BypassLink>
+        {hasSideNav && (
+          <BypassLink to='#sidenav'>{t('common:to.sidenav')}</BypassLink>
+        )}
+      </>
+    )}
+  </NamespacesConsumer>
+)
 
 const SideNav = ({
   sideNavData,
@@ -23,7 +37,7 @@ const SideNav = ({
   return sideNavData ? (
     <Location>
       {({ location }) => (
-        <div style={style}>
+        <div id='sidenav' style={style}>
           <SideNavComp location={location} sideNavData={sideNavData} />
         </div>
       )}
@@ -45,7 +59,7 @@ const MainContent = ({
           title={t('alpharel:title')}
           description={t('alpharel:description')}
         />
-        <main>{children}</main>
+        <main id='main'>{children}</main>
         <footer style={{ margin: '1rem 0' }}>
           © {new Date().getFullYear()}
         </footer>
@@ -59,6 +73,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
     style={Object.assign({}, suomifiTheme.typography, {
       color: `${suomifiTheme.colors.text}`
     })}>
+    <BypassLinks hasSideNav={!!sideNavData} />
     <Header />
     <Navigation />
     <div style={{ background: '#F6F6F7', paddingTop: '1rem' }}>

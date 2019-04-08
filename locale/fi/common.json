@@ -1,4 +1,7 @@
 {
+  "to.main.content": "Siirry pääsisältöön",
+  "to.homepage": "Siirry etusivulle",
+  "to.sidenav": "Siirry sivunavigaatioon",
   "navigation.main": "Päänavigaatio",
   "back.to.frontpage": "Takaisin etusivulle",
   "component.versions": "Komponentin versiot",

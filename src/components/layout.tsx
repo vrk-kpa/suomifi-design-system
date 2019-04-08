@@ -75,7 +75,9 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
     })}>
     <BypassLinks hasSideNav={!!sideNavData} />
     <Header />
-    <Navigation />
+    <Desktop>
+      <Navigation />
+    </Desktop>
     <div style={{ background: '#F6F6F7', paddingTop: '1rem' }}>
       <Desktop>
         <div

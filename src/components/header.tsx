@@ -5,6 +5,8 @@ import { suomifiTheme } from 'suomifi-ui-components'
 
 import Switcher from './Switcher'
 import { Icon } from './Icon'
+import MainMenu from './MainMenu'
+import { Desktop, MobileOrTablet } from './Responsive'
 
 const Header = (): JSX.Element => (
   <NamespacesConsumer>
@@ -69,9 +71,12 @@ const Header = (): JSX.Element => (
               {t('alpharel:title')}
             </div>
           </div>
-          <div>
+          <Desktop>
             <Switcher />
-          </div>
+          </Desktop>
+          <MobileOrTablet>
+            <MainMenu />
+          </MobileOrTablet>
         </div>
       </header>
     )}

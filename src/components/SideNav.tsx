@@ -10,7 +10,7 @@ import { Desktop, MobileOrTablet } from './Responsive'
 class SideNav extends Component<Props, State> {
   private SIDENAVSTATE_KEY: string = 'sideNavState'
 
-  public constructor(props) {
+  public constructor(props: Props) {
     super(props)
 
     this.state = {

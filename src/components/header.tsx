@@ -29,8 +29,7 @@ const Header = (): JSX.Element => (
             maxWidth: 1140,
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap'
+            justifyContent: 'space-between'
           }}>
           <Link
             title={t('common:to.homepage')}
@@ -45,7 +44,7 @@ const Header = (): JSX.Element => (
             style={{
               flex: 1,
               display: 'flex',
-              flexWrap: 'nowrap',
+              flexWrap: 'wrap',
               marginLeft: '.5rem'
             }}>
             <div

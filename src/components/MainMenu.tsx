@@ -59,6 +59,7 @@ class MainMenu extends Component<Props, State> {
                   top: '50px',
                   right: 0,
                   zIndex: 1000,
+                  width: '20rem',
                   background: suomifiTheme.colors.white,
                   border: '1px solid #C9CDCF',
                   boxShadow: suomifiTheme.shadows.menuShadow

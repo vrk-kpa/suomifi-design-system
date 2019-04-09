@@ -48,6 +48,7 @@ const ListSwitcher = ({
               <Button.secondaryNoborder
                 onClick={() => changeLng(value)}
                 disabled={value === lng}
+                lang={value}
                 style={{ textTransform: 'uppercase' }}>
                 {t(`${value}.medium`)}
               </Button.secondaryNoborder>

@@ -56,7 +56,7 @@ class MainMenu extends Component<Props, State> {
               <div
                 style={{
                   position: 'absolute',
-                  top: '3rem',
+                  top: '50px',
                   right: 0,
                   zIndex: 1000,
                   background: suomifiTheme.colors.white,

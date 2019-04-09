@@ -4,7 +4,7 @@ import { NamespacesConsumer } from 'react-i18next'
 
 import MainMenuItem from './MainMenuItem'
 import { MainNavData } from './MainNavData'
-import Switcher from './Switcher'
+import LanguageSwitcher from './LanguageSwitcher'
 
 class MainMenu extends Component<Props, State> {
   public constructor(props: Props) {
@@ -73,7 +73,7 @@ class MainMenu extends Component<Props, State> {
                     ))}
                   </ul>
                 </nav>
-                <Switcher.list />
+                <LanguageSwitcher.list />
               </div>
             )}
           </div>

@@ -3,7 +3,7 @@ import React from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import Switcher from './Switcher'
+import LanguageSwitcher from './LanguageSwitcher'
 import { Icon } from './Icon'
 import MainMenu from './MainMenu'
 import { Desktop, MobileOrTablet } from './Responsive'
@@ -72,7 +72,7 @@ const Header = (): JSX.Element => (
             </div>
           </div>
           <Desktop>
-            <Switcher.menu />
+            <LanguageSwitcher.menu />
           </Desktop>
           <MobileOrTablet>
             <MainMenu mainNavData={mainNavData(t)} />

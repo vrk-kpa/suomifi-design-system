@@ -73,7 +73,7 @@ const Header = (): JSX.Element => (
             </div>
           </div>
           <Desktop>
-            <Switcher />
+            <Switcher.menu />
           </Desktop>
           <MobileOrTablet>
             <MainMenu mainNavData={mainNavData(t)} />

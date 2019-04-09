@@ -4,6 +4,7 @@ import { NamespacesConsumer } from 'react-i18next'
 
 import MainMenuItem from './MainMenuItem'
 import { MainNavData } from './MainNavData'
+import Switcher from './Switcher'
 
 class MainMenu extends Component<Props, State> {
   public constructor(props: Props) {
@@ -32,6 +33,7 @@ class MainMenu extends Component<Props, State> {
         {t => (
           <div style={{ position: 'relative' }}>
             <Button
+              aria-label={t('common:open.navigation.main')}
               aria-expanded={this.isOpen()}
               style={{
                 background: 'none',
@@ -51,8 +53,7 @@ class MainMenu extends Component<Props, State> {
               )}
             </Button>
             {this.isOpen() && (
-              <nav
-                aria-label={t('common:navigation.main')}
+              <div
                 style={{
                   position: 'absolute',
                   top: '3rem',
@@ -62,14 +63,17 @@ class MainMenu extends Component<Props, State> {
                   border: '1px solid #C9CDCF',
                   boxShadow: suomifiTheme.shadows.menuShadow
                 }}>
-                <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
-                  {mainNavData.items.map(item => (
-                    <li key={item.to}>
-                      <MainMenuItem to={item.to}>{item.label}</MainMenuItem>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
+                <nav aria-label={t('common:navigation.main')}>
+                  <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
+                    {mainNavData.items.map(item => (
+                      <li key={item.to}>
+                        <MainMenuItem to={item.to}>{item.label}</MainMenuItem>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+                <Switcher.list />
+              </div>
             )}
           </div>
         )}

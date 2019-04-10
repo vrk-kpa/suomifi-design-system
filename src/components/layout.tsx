@@ -10,6 +10,7 @@ import Annotation from './annotation'
 import { SideNavData } from './SideNavData'
 import { Desktop, Mobile, Tablet } from './Responsive'
 import BypassLink from './BypassLink'
+import mainNavData from '../config/mainnav'
 
 import '@csstools/normalize.css'
 import './layout.css'
@@ -69,69 +70,75 @@ const MainContent = ({
 )
 
 const Layout = ({ sideNavData, children }: Props): JSX.Element => (
-  <div
-    style={Object.assign({}, suomifiTheme.typography, {
-      color: `${suomifiTheme.colors.text}`
-    })}>
-    <BypassLinks hasSideNav={!!sideNavData} />
-    <Header />
-    <Navigation />
-    <div style={{ background: '#F6F6F7', paddingTop: '1rem' }}>
-      <Desktop>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            flexWrap: 'nowrap'
-          }}>
-          <div
-            style={{
-              margin: '1rem 2rem 2rem 2rem',
-              width: '100%',
-              maxWidth: 1140,
-              display: 'flex',
-              flexWrap: 'nowrap',
-              background: suomifiTheme.colors.white,
-              border: '1px solid #C9CDCF'
-            }}>
+  <NamespacesConsumer>
+    {t => (
+      <div
+        style={Object.assign({}, suomifiTheme.typography, {
+          color: `${suomifiTheme.colors.text}`
+        })}>
+        <BypassLinks hasSideNav={!!sideNavData} />
+        <Header />
+        <Desktop>
+          <Navigation mainNavData={mainNavData(t)} />
+        </Desktop>
+        <div style={{ background: '#F6F6F7', paddingTop: '1rem' }}>
+          <Desktop>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                flexWrap: 'nowrap'
+              }}>
+              <div
+                style={{
+                  margin: '1rem 2rem 2rem 2rem',
+                  width: '100%',
+                  maxWidth: 1140,
+                  display: 'flex',
+                  flexWrap: 'nowrap',
+                  background: suomifiTheme.colors.white,
+                  border: '1px solid #C9CDCF'
+                }}>
+                <SideNav
+                  sideNavData={sideNavData}
+                  style={{ width: '22rem', marginRight: '1rem' }}
+                />
+                <MainContent style={{ flex: 1 }}>{children}</MainContent>
+              </div>
+            </div>
+          </Desktop>
+          <Tablet>
             <SideNav
               sideNavData={sideNavData}
-              style={{ width: '22rem', marginRight: '1rem' }}
+              style={{ margin: '0 2rem', border: '1px solid #C9CDCF' }}
             />
-            <MainContent style={{ flex: 1 }}>{children}</MainContent>
-          </div>
+            <div
+              style={{
+                margin: '1rem 2rem 1rem 2rem',
+                background: suomifiTheme.colors.white,
+                border: '1px solid #C9CDCF'
+              }}>
+              <MainContent>{children}</MainContent>
+            </div>
+          </Tablet>
+          <Mobile>
+            <SideNav
+              sideNavData={sideNavData}
+              style={{ margin: '0 1rem', border: '1px solid #C9CDCF' }}
+            />
+            <div
+              style={{
+                margin: '1rem 0 0 0',
+                background: suomifiTheme.colors.white,
+                border: '1px solid #C9CDCF'
+              }}>
+              <MainContent>{children}</MainContent>
+            </div>
+          </Mobile>
         </div>
-      </Desktop>
-      <Tablet>
-        <SideNav
-          sideNavData={sideNavData}
-          style={{ margin: '0 2rem', border: '1px solid #C9CDCF' }}
-        />
-        <div
-          style={{
-            margin: '1rem 2rem 1rem 2rem',
-            background: suomifiTheme.colors.white,
-            border: '1px solid #C9CDCF'
-          }}>
-          <MainContent>{children}</MainContent>
-        </div>
-      </Tablet>
-      <Mobile>
-        <SideNav
-          sideNavData={sideNavData}
-          style={{ margin: '0 1rem', border: '1px solid #C9CDCF' }}
-        />
-        <div
-          style={{
-            margin: '1rem 0 0 0',
-            background: suomifiTheme.colors.white,
-            border: '1px solid #C9CDCF'
-          }}>
-          <MainContent>{children}</MainContent>
-        </div>
-      </Mobile>
-    </div>
-  </div>
+      </div>
+    )}
+  </NamespacesConsumer>
 )
 
 interface Props {

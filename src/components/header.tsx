@@ -3,8 +3,11 @@ import React from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import Switcher from './Switcher'
+import LanguageSwitcher from './LanguageSwitcher'
 import { Icon } from './Icon'
+import MainMenu from './MainMenu'
+import { Desktop, MobileOrTablet } from './Responsive'
+import mainNavData from '../config/mainnav'
 
 const Header = (): JSX.Element => (
   <NamespacesConsumer>
@@ -26,8 +29,7 @@ const Header = (): JSX.Element => (
             maxWidth: 1140,
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between',
-            flexWrap: 'wrap'
+            justifyContent: 'space-between'
           }}>
           <Link
             title={t('common:to.homepage')}
@@ -42,7 +44,7 @@ const Header = (): JSX.Element => (
             style={{
               flex: 1,
               display: 'flex',
-              flexWrap: 'nowrap',
+              flexWrap: 'wrap',
               marginLeft: '.5rem'
             }}>
             <div
@@ -69,9 +71,12 @@ const Header = (): JSX.Element => (
               {t('alpharel:title')}
             </div>
           </div>
-          <div>
-            <Switcher />
-          </div>
+          <Desktop>
+            <LanguageSwitcher.menu />
+          </Desktop>
+          <MobileOrTablet>
+            <MainMenu mainNavData={mainNavData(t)} />
+          </MobileOrTablet>
         </div>
       </header>
     )}

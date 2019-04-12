@@ -12,44 +12,51 @@ import NoteBox from '../../components/NoteBox'
 import Section from '../../components/Section'
 import ComponentExample from '../../components/ComponentExample'
 
-const colorNames = Object.keys(suomifiTheme.colors)
-  .map(key => ({ [key]: key }))
+const addTemporaryColorsNotYetInLibrary = colors => {
+  ;[
+    { name: 'blackBase', value: colors.text.value },
+    { name: 'depthBase', value: '#a5acb0' },
+    { name: 'depthSecondaryBase', value: '#eef5ff' },
+    { name: 'brandBase', value: colors.brandColor.value },
+    { name: 'highlightBase', value: '#2A6EBB' },
+    { name: 'accentBase', value: '#ea7125' },
+    { name: 'accentSecondaryBase', value: '#34b6e4' },
+    { name: 'successBase', value: '#09AA85' },
+    { name: 'warningBase', value: '#f4aa00' },
+    { name: 'alertBase', value: '#c13832' },
+    { name: 'whiteBase', value: colors.white.value }
+  ].forEach(color => {
+    colors[color.name] = color
+  })
+}
+
+const colors = Object.keys(suomifiTheme.colors)
+  .map(key => ({
+    [key]: { name: key, value: suomifiTheme.colors[key], border: 'none' }
+  }))
   .reduce((obj, item) => ({ ...obj, ...item }), {})
 
+addTemporaryColorsNotYetInLibrary(colors)
+
+colors.whiteBase = { ...colors.whiteBase, border: '1px solid #C9CDCF' }
+
 const colorCategories = [
+  { id: 'textColors', colors: [colors.blackBase, colors.depthBase] },
+  { id: 'brandColors', colors: [colors.brandBase] },
   {
-    id: 'textColors',
-    colors: [{ id: colorNames.text }]
+    id: 'controlColors',
+    colors: [colors.highlightBase, colors.depthBase, colors.depthSecondaryBase]
   },
-  {
-    id: 'brandColors',
-    colors: [
-      {
-        id: colorNames.brandColor
-      }
-    ]
-  },
+  { id: 'iconColors', colors: [colors.accentBase, colors.depthBase] },
   {
     id: 'backgroundColors',
-    colors: [
-      {
-        id: colorNames.white,
-        border: '1px solid #C9CDCF'
-      },
-      {
-        id: colorNames.activeBgr
-      },
-      {
-        id: colorNames.disabledColor
-      },
-      {
-        id: colorNames.disabledBgr
-      },
-      {
-        id: colorNames.elementBorder
-      }
-    ]
-  }
+    colors: [colors.whiteBase, colors.depthBase, colors.depthSecondaryBase]
+  },
+  {
+    id: 'trafficColors',
+    colors: [colors.successBase, colors.warningBase, colors.alertBase]
+  },
+  { id: 'accentColors', colors: [colors.accentSecondaryBase] }
 ]
 
 const getExampleColor = (
@@ -115,9 +122,9 @@ const Page = (): JSX.Element => (
               {item.colors.map((color, index) =>
                 getExampleColor(
                   `${item.id}.${index}`,
-                  color.id,
-                  suomifiTheme.colors[color.id],
-                  t(`${color.id}.label`),
+                  color.name,
+                  color.value,
+                  t(`${color.name}.label`),
                   { border: color.border }
                 )
               )}

@@ -18,6 +18,7 @@
     "gatsby-plugin-typescript": "^2.0.8",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.0.8",
+    "gatsby-transformer-code": "^0.1.0",
     "gatsby-transformer-sharp": "^2.1.8",
     "i18next": "^15.0.6",
     "prop-types": "^15.6.2",

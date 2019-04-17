@@ -6,13 +6,32 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next'
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
 import sideNavData from '../../config/sidenav/styles'
+import ComponentDescription from '../../components/ComponentDescription'
+import ComponentExample from '../../components/ComponentExample'
+import { Example } from '../../examples/styles'
 
-const Page = (): JSX.Element => (
+const getExample = (data: any, name: string): string => {
+  const { node } = data.examples.edges.find(({ node }) => node.name === name)
+  return node.content
+}
+
+const Page = ({ data }: { data: any }): JSX.Element => (
   <NamespacesConsumer ns={['styles']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} description='' />
         <h1>{t('title')}</h1>
+
+        <ComponentDescription
+          title={t('usage.title')}
+          description={t('usage.description')}
+          exampleFirst
+          showOnlyCodeString
+          codeString={getExample(data, 'styles')}>
+          <ComponentExample>
+            <Example />
+          </ComponentExample>
+        </ComponentDescription>
       </Layout>
     )}
   </NamespacesConsumer>
@@ -23,5 +42,6 @@ export default withI18next()(Page)
 export const query = graphql`
   query($lng: String!) {
     ...AllLocalesFragment
+    ...ExamplesFragment
   }
 `

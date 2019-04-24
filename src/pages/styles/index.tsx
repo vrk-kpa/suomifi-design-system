@@ -9,13 +9,9 @@ import sideNavData from '../../config/sidenav/styles'
 import ComponentDescription from '../../components/ComponentDescription'
 import ComponentExample from '../../components/ComponentExample'
 import { Example } from '../../examples/styles'
+import { getExample, CodeExampleData } from '../../components/CodeExampleUtil'
 
-const getExample = (data: any, name: string): string => {
-  const { node } = data.examples.edges.find(({ node }) => node.name === name)
-  return node.content
-}
-
-const Page = ({ data }: { data: any }): JSX.Element => (
+const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
   <NamespacesConsumer ns={['styles']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>

@@ -15,3 +15,17 @@ source_file = locale/af/colors.json
 source_lang = af
 type = KEYVALUEJSON
 
+[suomifi-design-system.styles-json]
+file_filter = locale/<lang>/styles.json
+minimum_perc = 0
+source_file = locale/af/styles.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.components-json]
+file_filter = locale/<lang>/components.json
+minimum_perc = 0
+source_file = locale/af/components.json
+source_lang = af
+type = KEYVALUEJSON
+

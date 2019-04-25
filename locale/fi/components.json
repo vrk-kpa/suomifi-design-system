@@ -1,3 +1,5 @@
 {
-  "title": "UI Komponentit"
+  "title": "UI Komponentit",
+  "usage.title": "Komponenttien käyttö",
+  "usage.description": "Komponenttikirjasto tarjoaa kaikki komponentit samasta npm-moduulista. Jos komponentin tyylejä tarvitsee täydentää tai muokata se onnistuu parhaiten esimerkiksi käyttämällä jotakin \"styled components\"-mallin kirjastoa."
 }

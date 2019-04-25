@@ -20,6 +20,19 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/examples`,
+        name: `examples`
+      }
+    },
+    {
+      resolve: `gatsby-transformer-code`,
+      options: {
+        name: `examples`
+      }
+    },
+    {
       resolve: `@wapps/gatsby-plugin-i18next`,
       options: {
         availableLngs: ['fi', 'en'],

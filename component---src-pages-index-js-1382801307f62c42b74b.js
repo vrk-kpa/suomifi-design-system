@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{393:function(t,e,n){"use strict";n.r(e),n.d(e,"query",function(){return o});var a=n(32),c=(n(1),n(406)),r=n(407),u=n(413),i=n(412);e.default=Object(r.withI18next)()(function(){return Object(a.a)(c.NamespacesConsumer,{ns:["home"]},function(t){return Object(a.a)(u.a,null,Object(a.a)(i.a,{title:t("title"),keywords:["gatsby","application","react"]}),Object(a.a)("h1",null,t("title")))})});var o="2520468691"}}]);
-//# sourceMappingURL=component---src-pages-index-js-1382801307f62c42b74b.js.map

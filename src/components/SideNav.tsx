@@ -111,7 +111,6 @@ class SideNav extends Component<Props, State> {
       <div
         style={{
           ...suomifiTheme.typography,
-
           color: suomifiTheme.colors.text,
           padding: '.5rem',
           fontWeight: 600,

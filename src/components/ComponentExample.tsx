@@ -10,7 +10,6 @@ const ComponentExample = ({ style, children }: Props): JSX.Element => (
       padding: '.8rem',
       marginBottom: '1rem',
       ...style,
-
       background: style && style.background ? style.background : '#F6F6F7'
     }}>
     {children}

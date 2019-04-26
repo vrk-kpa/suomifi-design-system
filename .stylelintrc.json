@@ -3,5 +3,8 @@
     "stylelint-config-recommended",
     "stylelint-config-standard",
     "stylelint-config-prettier"
-  ]
+  ],
+  "rules": {
+    "declaration-empty-line-before": "never"
+  }
 }

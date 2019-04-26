@@ -88,7 +88,7 @@ const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['button']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} description='' />
+        <SEO title={t('title')} />
         <h1>{t('title')}</h1>
 
         <p>{t('intro')}</p>

@@ -10,7 +10,7 @@ const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['home']}>
     {t => (
       <Layout>
-        <SEO title={t('title')} keywords={[`gatsby`, `application`, `react`]} />
+        <SEO title={t('title')} />
         <h1>{t('title')}</h1>
       </Layout>
     )}

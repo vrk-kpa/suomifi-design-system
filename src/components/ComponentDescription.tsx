@@ -17,6 +17,7 @@ const ComponentDescription = ({
   noCode,
   codeString,
   showOnlyCodeString,
+  filterProps,
   children
 }: Props): JSX.Element => (
   <NamespacesConsumer>
@@ -39,6 +40,7 @@ const ComponentDescription = ({
                 getWithoutWrappers(children).map((child, index) => (
                   <ComponentCode
                     key={index}
+                    filterProps={filterProps}
                     style={{
                       paddingTop: index === 0 && !codeString ? '1rem' : 0
                     }}>
@@ -60,6 +62,7 @@ interface Props {
   noCode?: boolean
   codeString?: string
   showOnlyCodeString?: boolean
+  filterProps?: string[]
   children: ReactNode
 }
 

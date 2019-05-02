@@ -113,6 +113,8 @@
       ]
     }
   ],
+  "nopadding.title": "",
+  "nopadding.description": "Laajennuspaneelin sisällössä on oletusarvoisesti täytettä (padding). Tämä voidaan poistaa \"noPadding\"-attribuutilla mikäli oma tyylitys sen vaatii.",
   "single.title": "Yksittäinen laajennuspaneeli",
   "single.description": "Erillistä laajennuspaneelia käytetään kun on tarvetta on ainoastaan yhdelle paneelille, esimerkiksi sisältökokonaisuudessa toistuvalle spesifille informaatiolle.",
   "group.title": "Laajennuspaneeli ryhmä",

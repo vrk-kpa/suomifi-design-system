@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
+import { suomifiTheme } from 'suomifi-ui-components'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
@@ -33,6 +34,26 @@ const Page = (): JSX.Element => (
             links={section.links}
           />
         ))}
+
+        <ComponentDescription
+          title={t('nopadding.title')}
+          description={t('nopadding.description')}
+          exampleFirst={false}
+          filterProps={[]}>
+          <ComponentExample style={{ padding: '1.3rem' }}>
+            <Panel.expansion title={t('panel.title')} noPadding>
+              <p
+                style={{
+                  margin: 0,
+                  padding: '1rem',
+                  background: suomifiTheme.colors.brandColor,
+                  color: suomifiTheme.colors.white
+                }}>
+                {t('panel.content')}
+              </p>
+            </Panel.expansion>
+          </ComponentExample>
+        </ComponentDescription>
 
         <h2>{t('common:component.versions')}</h2>
 

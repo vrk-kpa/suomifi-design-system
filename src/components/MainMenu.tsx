@@ -58,7 +58,7 @@ class MainMenu extends Component<Props, State> {
                   position: 'absolute',
                   top: '50px',
                   right: 0,
-                  zIndex: 1000,
+                  zIndex: suomifiTheme.zindexes.focus + 1,
                   width: '20rem',
                   background: suomifiTheme.colors.white,
                   border: '1px solid #C9CDCF',

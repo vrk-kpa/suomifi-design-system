@@ -47,9 +47,9 @@ class MainMenu extends Component<Props, State> {
               }}
               onClick={this.toggleOpen}>
               {this.isOpen() ? (
-                <Icon icon='close' color='#636769' />
+                <Icon icon='close' color={suomifiTheme.colors.depthDark27} />
               ) : (
-                <Icon icon='menu' color='#636769' />
+                <Icon icon='menu' color={suomifiTheme.colors.depthDark27} />
               )}
             </Button>
             {this.isOpen() && (
@@ -60,8 +60,8 @@ class MainMenu extends Component<Props, State> {
                   right: 0,
                   zIndex: suomifiTheme.zindexes.focus + 1,
                   width: '20rem',
-                  background: suomifiTheme.colors.white,
-                  border: '1px solid #C9CDCF',
+                  background: suomifiTheme.colors.whiteBase,
+                  border: '1px solid #C9CDCF', // TODO depthLight13
                   boxShadow: suomifiTheme.shadows.menuShadow
                 }}>
                 <nav aria-label={t('common:navigation.main')}>

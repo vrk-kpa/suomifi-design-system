@@ -46,8 +46,8 @@ const Page = (): JSX.Element => (
                 style={{
                   margin: 0,
                   padding: '1rem',
-                  background: suomifiTheme.colors.brandColor,
-                  color: suomifiTheme.colors.white
+                  background: suomifiTheme.colors.brandBase,
+                  color: suomifiTheme.colors.whiteBase
                 }}>
                 {t('panel.content')}
               </p>

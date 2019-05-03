@@ -74,7 +74,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
     {t => (
       <div
         style={Object.assign({}, suomifiTheme.typography, {
-          color: `${suomifiTheme.colors.text}`
+          color: `${suomifiTheme.colors.blackBase}`
         })}>
         <BypassLinks hasSideNav={!!sideNavData} />
         <Header />
@@ -96,7 +96,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
                   maxWidth: 1140,
                   display: 'flex',
                   flexWrap: 'nowrap',
-                  background: suomifiTheme.colors.white,
+                  background: suomifiTheme.colors.whiteBase,
                   border: '1px solid #C9CDCF'
                 }}>
                 <SideNav
@@ -115,7 +115,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
             <div
               style={{
                 margin: '1rem 2rem 1rem 2rem',
-                background: suomifiTheme.colors.white,
+                background: suomifiTheme.colors.whiteBase,
                 border: '1px solid #C9CDCF'
               }}>
               <MainContent>{children}</MainContent>
@@ -129,7 +129,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
             <div
               style={{
                 margin: '1rem 0 0 0',
-                background: suomifiTheme.colors.white,
+                background: suomifiTheme.colors.whiteBase,
                 border: '1px solid #C9CDCF'
               }}>
               <MainContent>{children}</MainContent>

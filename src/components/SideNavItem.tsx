@@ -26,11 +26,11 @@ class SideNavItem extends Component<Props> {
             paddingLeft: level + 'rem',
             paddingRight: '.5rem',
             borderBottom: '1px solid #EEF5FF',
-            color: suomifiTheme.colors.secondaryColor,
+            color: suomifiTheme.colors.highlightBase,
             textDecoration: 'none',
             '&:hover': {
               background: '#EEF5FF',
-              color: suomifiTheme.colors.brandColor
+              color: suomifiTheme.colors.brandBase
             }
           },
           `&:focus { ${suomifiTheme.outlines.basic} }`
@@ -48,7 +48,7 @@ class SideNavItem extends Component<Props> {
             return {
               style: {
                 background: '#EEF5FF',
-                color: suomifiTheme.colors.brandColor,
+                color: suomifiTheme.colors.brandBase,
                 fontWeight: 600
               }
             }
@@ -72,7 +72,7 @@ class SideNavItem extends Component<Props> {
               transform: isOpen(to) ? 'rotate(.5turn)' : 'none'
             }}
             onClick={this.toggleOpen}>
-            <Icon icon='chevronDown' color='#636769' />
+            <Icon icon='chevronDown' color={suomifiTheme.colors.depthDark27} />
           </Button>
         )}
       </Link>

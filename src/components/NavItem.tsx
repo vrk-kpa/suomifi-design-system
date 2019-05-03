@@ -12,10 +12,10 @@ const NavItem = ({ to, children }: Props): JSX.Element => (
         padding: '.5rem',
         lineHeight: '2.8rem',
         whiteSpace: 'nowrap',
-        color: suomifiTheme.colors.text,
+        color: suomifiTheme.colors.blackBase,
         textDecoration: 'none',
         '&:hover': {
-          borderBottom: `4px solid ${suomifiTheme.colors.secondaryColor}`
+          borderBottom: `4px solid ${suomifiTheme.colors.highlightBase}`
         }
       },
       `&:focus { ${suomifiTheme.outlines.basic} }`
@@ -24,7 +24,7 @@ const NavItem = ({ to, children }: Props): JSX.Element => (
       if (isCurrent || (!isFrontPage(to) && isPartiallyCurrent)) {
         return {
           style: {
-            borderBottom: `4px solid ${suomifiTheme.colors.secondaryColor}`
+            borderBottom: `4px solid ${suomifiTheme.colors.highlightBase}`
           }
         }
       }

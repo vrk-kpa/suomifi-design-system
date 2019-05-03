@@ -12,31 +12,11 @@ import NoteBox from '../../components/NoteBox'
 import Section from '../../components/Section'
 import ComponentExample from '../../components/ComponentExample'
 
-const addTemporaryColorsNotYetInLibrary = colors => {
-  ;[
-    { name: 'blackBase', value: colors.text.value },
-    { name: 'depthBase', value: '#a5acb0' },
-    { name: 'depthSecondaryBase', value: '#eef5ff' },
-    { name: 'brandBase', value: colors.brandColor.value },
-    { name: 'highlightBase', value: '#2A6EBB' },
-    { name: 'accentBase', value: '#ea7125' },
-    { name: 'accentSecondaryBase', value: '#34b6e4' },
-    { name: 'successBase', value: '#09AA85' },
-    { name: 'warningBase', value: '#f4aa00' },
-    { name: 'alertBase', value: '#c13832' },
-    { name: 'whiteBase', value: colors.white.value }
-  ].forEach(color => {
-    colors[color.name] = color
-  })
-}
-
 const colors = Object.keys(suomifiTheme.colors)
   .map(key => ({
     [key]: { name: key, value: suomifiTheme.colors[key], border: 'none' }
   }))
   .reduce((obj, item) => ({ ...obj, ...item }), {})
-
-addTemporaryColorsNotYetInLibrary(colors)
 
 colors.whiteBase = { ...colors.whiteBase, border: '1px solid #C9CDCF' }
 
@@ -45,18 +25,18 @@ const colorCategories = [
   { id: 'brandColors', colors: [colors.brandBase] },
   {
     id: 'controlColors',
-    colors: [colors.highlightBase, colors.depthBase, colors.depthSecondaryBase]
+    colors: [colors.highlightBase, colors.depthBase, colors.depthSecondary]
   },
   { id: 'iconColors', colors: [colors.accentBase, colors.depthBase] },
   {
     id: 'backgroundColors',
-    colors: [colors.whiteBase, colors.depthBase, colors.depthSecondaryBase]
+    colors: [colors.whiteBase, colors.depthBase, colors.depthSecondary]
   },
   {
     id: 'trafficColors',
     colors: [colors.successBase, colors.warningBase, colors.alertBase]
   },
-  { id: 'accentColors', colors: [colors.accentSecondaryBase] }
+  { id: 'accentColors', colors: [colors.accentSecondary] }
 ]
 
 const getExampleColor = (

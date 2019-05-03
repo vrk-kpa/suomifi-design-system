@@ -111,7 +111,7 @@ class SideNav extends Component<Props, State> {
       <div
         style={{
           ...suomifiTheme.typography,
-          color: suomifiTheme.colors.text,
+          color: suomifiTheme.colors.blackBase,
           padding: '.5rem',
           fontWeight: 600,
           display: 'flex',
@@ -140,7 +140,7 @@ class SideNav extends Component<Props, State> {
               /* stylelint-disable-next-line function-name-case */
               transform: this.isNavOpen() ? 'rotate(.5turn)' : 'none'
             }}>
-            <Icon icon='chevronDown' color='#636769' />
+            <Icon icon='chevronDown' color={suomifiTheme.colors.depthDark27} />
           </div>
         </MobileOrTablet>
       </div>
@@ -162,7 +162,7 @@ class SideNav extends Component<Props, State> {
             borderLeft:
               level === 1
                 ? this.iscurrent(item.to)
-                  ? `4px solid ${suomifiTheme.colors.brandColor}`
+                  ? `4px solid ${suomifiTheme.colors.brandBase}`
                   : '4px solid transparent'
                 : 'none'
           }}>
@@ -192,7 +192,7 @@ class SideNav extends Component<Props, State> {
           margin: 0,
           padding: 0,
           boxSizing: 'border-box',
-          background: `${suomifiTheme.colors.white}`
+          background: `${suomifiTheme.colors.whiteBase}`
         }}>
         <Desktop>
           <this.Title />

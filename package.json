@@ -30,7 +30,7 @@
     "react-motion": "^0.5.2",
     "react-responsive": "^6.1.1",
     "react-syntax-highlighter": "^10.1.2",
-    "suomifi-ui-components": "^0.0.12"
+    "suomifi-ui-components": "^0.0.15"
   },
   "resolutions": {
     "@wapps/gatsby-plugin-i18next/i18next": "^15.0.6"

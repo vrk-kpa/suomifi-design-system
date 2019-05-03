@@ -12,7 +12,7 @@ const BypassLink = ({ to, children }: Props): JSX.Element => (
         padding: '.5rem',
         background: '#F6F6F7',
         border: '1px solid #C9CDCF',
-        color: suomifiTheme.colors.text,
+        color: suomifiTheme.colors.blackBase,
         textDecoration: 'none'
       },
       `&:focus { ${suomifiTheme.outlines.basic} }`,

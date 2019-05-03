@@ -20,13 +20,13 @@ const components = [
   {
     id: 'negative',
     comp: Button.negative,
-    background: suomifiTheme.colors.secondaryColor
+    background: suomifiTheme.colors.highlightBase
   },
   { id: 'secondary', comp: Button.secondary },
   {
     id: 'secondaryNoborder',
     comp: Button.secondaryNoborder,
-    background: suomifiTheme.colors.white,
+    background: suomifiTheme.colors.whiteBase,
     border: '1px solid #C9CDCF'
   }
 ]
@@ -43,7 +43,7 @@ const disabledComponents = [
   {
     id: 'negative',
     comp: Button.negative,
-    background: suomifiTheme.colors.secondaryColor
+    background: suomifiTheme.colors.highlightBase
   },
   { id: 'secondary', comp: Button.secondary },
   {

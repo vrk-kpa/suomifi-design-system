@@ -15,9 +15,9 @@ const Header = (): JSX.Element => (
       <header
         style={{
           padding: '1rem',
-          borderTop: `4px solid ${suomifiTheme.colors.brandColor}`,
+          borderTop: `4px solid ${suomifiTheme.colors.brandBase}`,
           boxSizing: `border-box`,
-          background: suomifiTheme.colors.white,
+          background: suomifiTheme.colors.whiteBase,
           borderBottom: '1px solid #C9CDCF',
           display: 'flex',
           justifyContent: 'center',
@@ -51,7 +51,7 @@ const Header = (): JSX.Element => (
               style={{
                 fontSize: '28px',
                 fontWeight: 600,
-                color: suomifiTheme.colors.brandColor
+                color: suomifiTheme.colors.brandBase
               }}>
               {t('header:title')}
             </div>
@@ -62,11 +62,11 @@ const Header = (): JSX.Element => (
                 alignSelf: 'start',
                 margin: '.5rem',
                 padding: '.2rem .5rem',
-                background: suomifiTheme.colors.secondaryColor,
+                background: suomifiTheme.colors.highlightBase,
                 fontSize: '14px',
                 fontWeight: 600,
                 textTransform: 'uppercase',
-                color: suomifiTheme.colors.invertText
+                color: suomifiTheme.colors.whiteBase
               }}>
               {t('alpharel:title')}
             </div>

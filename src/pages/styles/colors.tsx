@@ -18,25 +18,60 @@ const colors = Object.keys(suomifiTheme.colors)
   }))
   .reduce((obj, item) => ({ ...obj, ...item }), {})
 
-colors.whiteBase = { ...colors.whiteBase, border: '1px solid #C9CDCF' }
+colors.whiteBase = { ...colors.whiteBase, border: '1px solid #C8CDD0' } // TODO depthLight13
+colors.highlightLight53 = {
+  ...colors.highlightLight53,
+  border: '1px solid #C8CDD0' // TODO depthLight13
+}
 
 const colorCategories = [
-  { id: 'textColors', colors: [colors.blackBase, colors.depthBase] },
+  {
+    id: 'textColors',
+    colors: [colors.blackBase, colors.depthBase, colors.depthDark27]
+  },
   { id: 'brandColors', colors: [colors.brandBase] },
   {
     id: 'controlColors',
-    colors: [colors.highlightBase, colors.depthBase, colors.depthSecondary]
+    colors: [
+      colors.highlightBase,
+      colors.highlightLight4,
+      colors.highlightLight45,
+      colors.highlightLight50,
+      colors.highlightLight53,
+      colors.highlightDark9,
+      colors.depthBase,
+      colors.depthDark27,
+      colors.accentBase,
+      colors.depthSecondary
+    ]
   },
-  { id: 'iconColors', colors: [colors.accentBase, colors.depthBase] },
+  {
+    id: 'iconColors',
+    colors: [colors.accentBase, colors.depthBase, colors.depthDark27]
+  },
   {
     id: 'backgroundColors',
-    colors: [colors.whiteBase, colors.depthBase, colors.depthSecondary]
+    colors: [
+      colors.whiteBase,
+      colors.highlightLight45,
+      colors.highlightLight50,
+      colors.highlightLight53,
+      colors.depthSecondary
+    ]
   },
   {
     id: 'trafficColors',
-    colors: [colors.successBase, colors.warningBase, colors.alertBase]
+    colors: [
+      colors.successBase,
+      colors.warningBase,
+      colors.alertBase,
+      colors.warningLight47
+    ]
   },
-  { id: 'accentColors', colors: [colors.accentSecondary] }
+  {
+    id: 'accentColors',
+    colors: [colors.accentSecondary, colors.accentSecondaryLight40]
+  }
 ]
 
 const getExampleColor = (

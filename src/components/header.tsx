@@ -40,13 +40,7 @@ const Header = (): JSX.Element => (
             ]}>
             <Icon.suomifi />
           </Link>
-          <div
-            style={{
-              flex: 1,
-              display: 'flex',
-              flexWrap: 'wrap',
-              marginLeft: '.5rem'
-            }}>
+          <div style={{ flex: 1, position: 'relative', marginLeft: '.5rem' }}>
             <div
               style={{
                 fontSize: '28px',
@@ -57,16 +51,15 @@ const Header = (): JSX.Element => (
             </div>
             <div
               style={{
+                position: 'absolute',
+                top: '-.2rem',
+                left: '9.5rem',
                 whiteSpace: 'nowrap',
-                lineHeight: '14px',
-                alignSelf: 'start',
-                margin: '.5rem',
-                padding: '.2rem .5rem',
-                background: suomifiTheme.colors.highlightBase,
-                fontSize: '14px',
+                lineHeight: '16px',
+                fontSize: '16px',
                 fontWeight: 600,
                 textTransform: 'uppercase',
-                color: suomifiTheme.colors.whiteBase
+                color: suomifiTheme.colors.highlightBase
               }}>
               {t('common:header.stamp')}
             </div>

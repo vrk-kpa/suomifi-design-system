@@ -12,6 +12,7 @@ const getWithoutWrappers = (children: any): ReactNode[] =>
 
 const ComponentDescription = ({
   title,
+  titleLevel,
   description,
   exampleFirst,
   noCode,
@@ -23,7 +24,7 @@ const ComponentDescription = ({
   <NamespacesConsumer>
     {t => (
       <div style={{ marginBottom: '2rem', borderBottom: '1px solid #C9CDCF' }}>
-        <h3>{title}</h3>
+        {titleLevel === 2 ? <h2>{title}</h2> : <h3>{title}</h3>}
         {!!exampleFirst && <div>{children}</div>}
         <div style={{ padding: '1rem 0' }}>{description}</div>
         {!exampleFirst && <div>{children}</div>}
@@ -57,6 +58,7 @@ const ComponentDescription = ({
 
 interface Props {
   title: string
+  titleLevel?: number
   description: string
   exampleFirst: boolean
   noCode?: boolean

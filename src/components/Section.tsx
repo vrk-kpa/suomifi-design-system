@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from '@wapps/gatsby-plugin-i18next'
 import { Image } from './Image'
 
 const Section = ({
@@ -30,9 +31,13 @@ const Section = ({
           !!link.text &&
           !!link.url && (
             <li key={index}>
-              <a href={link.url} rel='noopener noreferrer' target='_blank'>
-                {link.text}
-              </a>
+              {link.url.startsWith('/') ? (
+                <Link to={link.url}>{link.text}</Link>
+              ) : (
+                <a href={link.url} rel='noopener noreferrer' target='_blank'>
+                  {link.text}
+                </a>
+              )}
             </li>
           )
       )}

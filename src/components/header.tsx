@@ -35,10 +35,15 @@ const Header = (): JSX.Element => (
             title={t('common:to.homepage')}
             to='/'
             css={[
-              { display: 'inline-block', width: '128px', height: '32px' },
+              { display: 'inline-block', height: '32px' },
               `&:focus { ${suomifiTheme.outlines.basic} }`
             ]}>
-            <Icon.suomifi />
+            <Desktop>
+              <Icon.suomiFiWithText />
+            </Desktop>
+            <MobileOrTablet>
+              <Icon.suomiFi />
+            </MobileOrTablet>
           </Link>
           <div style={{ flex: 1, position: 'relative', marginLeft: '.5rem' }}>
             <div

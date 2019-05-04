@@ -1,3 +1,364 @@
 {
-  "title": "Etusivu"
+  "title": "Etusivu",
+  "intro": "",
+  "note.title": "",
+  "note.items": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "sections": [
+    {
+      "mainTitle": "Mistä Suomi.fi Design System -kirjasto koostuu",
+      "title": "UI Komponentti kirjasto",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Tästä Beta versiossa löydät yleisimpiä saavutettavuudeltaan testattuja ja Reactilla toteutettuja komponentteja. Niitä voi hyödyntää joko sellaisenaan tai muokata vastaamaan oman palvelusi visuaalista ilmettä."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "mainTitle": "",
+      "title": "Suunnitteluaineistot",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Design Systemin sivuston kautta on tulevaisuudessa tulossa jakoon Sketch-suunnitteluaineisto, tyyliopas, joka sisältää kaikki olennaiset elementit, komponentit ja moduulit jotka ovat saavutettavuudeltaan ja käytettävyydeltään testattu suomi.fi-palveluissa. Jos haluat hyödyntää tyyliopasta suunnittelutyön pohjana, se on jo nyt mahdollista versionhallintatyökalun kautta. Ota yhteyttä suomidigin kehittäjät slack kanavan kautta."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "Slack kanava",
+          "url": "todo"
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "mainTitle": "",
+      "title": "Design System sivusto",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Tältä sivustolta löydät UI-komponenttien esikatselumallit ja koodiesimerkit sekä käyttöohjeistukset ja dokumentaation. Sivuston sisältö luo yhteisen alustan tukemaan sekä suunnittelu- että kehitystyötä. Tämä on Betaversio palvelusta. Sivustoa ylläpitää Väestörekisterikeskus."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Onko sinulla ehdotuksia tai muuta palautetta?"
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "mainTitle": "Miksi Suomi.fi Design System ja miksi sitä kannattaa käyttää",
+      "title": "Nopeus",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Hyödyntämällä valmiiksi suunniteltuja, koodattuja ja testattuja komponentteja, mahdollistaa että palvelusi suunnittelu- ja kehittämistyö on nopeampaa ja kustannustehokkaampaa."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "mainTitle": "",
+      "title": "Yhteiskehittäminen ja saavutettavuus",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Suomi.fi-palveluissa on pitkään tehty työtä käytettävyyden ja saavutettavuuden eteen. Suomi.fi Design System -kirjaston tavoite on luoda kehys, jotta kaikki pääsevät hyödyntämään tehtyä työtä sekä osallistumaan yhteiskehittämiseen. Yhdessä saadaan aikaan enemmän, pienemmilläkin resursseilla."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "mainTitle": "",
+      "title": "Johdonmukainen käyttäjäkokemus julkishallinnon verkko ja asiointipalveluille",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Yhdenmukaisuus niin käytettävyyden, kuin ulkonäön puolesta auttaa luomaan jatkumoa eri palveluiden käyttöliittymien välillä loppukäyttäjälle. Tämän mahdollistaa Design System -kirjaston keskitetty kehittäminen ja käyttäminen."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "mainTitle": "",
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "mainTitle": "",
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "mainTitle": "",
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "mainTitle": "",
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ]
 }

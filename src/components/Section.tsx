@@ -1,8 +1,14 @@
 import React from 'react'
 import { Image } from './Image'
 
-const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
+const Section = ({
+  mainTitle,
+  title,
+  paragraphs,
+  links
+}: Props): JSX.Element => (
   <section>
+    {!!mainTitle && <h2>{mainTitle}</h2>}
     {!!title && <h3>{title}</h3>}
     {paragraphs.map((paragraph, index) => (
       <div key={index}>
@@ -35,7 +41,8 @@ const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
 )
 
 interface Props {
-  title: string
+  mainTitle?: string
+  title?: string
   paragraphs: Paragraph[]
   links: Link[]
 }

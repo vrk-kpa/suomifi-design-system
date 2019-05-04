@@ -36,3 +36,10 @@ source_file = locale/af/panel.json
 source_lang = af
 type = KEYVALUEJSON
 
+[suomifi-design-system.home-json]
+file_filter = locale/<lang>/home.json
+minimum_perc = 0
+source_file = locale/af/home.json
+source_lang = af
+type = KEYVALUEJSON
+

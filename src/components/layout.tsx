@@ -81,7 +81,11 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
         <Desktop>
           <Navigation mainNavData={mainNavData(t)} />
         </Desktop>
-        <div style={{ background: '#F6F6F7', paddingTop: '1rem' }}>
+        <div
+          style={{
+            background: '#F6F6F7', // TODO depthLight30
+            paddingTop: '1rem'
+          }}>
           <Desktop>
             <div
               style={{

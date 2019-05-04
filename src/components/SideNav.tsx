@@ -117,7 +117,7 @@ class SideNav extends Component<Props, State> {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          borderBottom: '1px solid #EEF5FF',
+          borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
           textShadow: 'none'
         }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>

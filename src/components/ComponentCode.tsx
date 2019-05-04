@@ -31,7 +31,7 @@ const ComponentCode = ({
   filterProps,
   children
 }: Props): JSX.Element => (
-  <div style={{ padding: '1rem', background: '#F6F6F7', ...style }}>
+  <div style={{ padding: '1rem', ...style }}>
     {!!javascript && (
       <Highlighter style={{ marginBottom: !children ? 0 : '1rem' }}>
         {javascript}

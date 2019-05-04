@@ -53,7 +53,7 @@ const Header = (): JSX.Element => (
                 fontWeight: 600,
                 color: suomifiTheme.colors.brandBase
               }}>
-              {t('header:title')}
+              {t('common:header.title')}
             </div>
             <div
               style={{
@@ -68,7 +68,7 @@ const Header = (): JSX.Element => (
                 textTransform: 'uppercase',
                 color: suomifiTheme.colors.whiteBase
               }}>
-              {t('alpharel:title')}
+              {t('common:header.stamp')}
             </div>
           </div>
           <Desktop>

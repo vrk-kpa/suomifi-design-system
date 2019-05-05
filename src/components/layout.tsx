@@ -69,7 +69,11 @@ const MainContent = ({
   </NamespacesConsumer>
 )
 
-const Layout = ({ sideNavData, children }: Props): JSX.Element => (
+const Layout = ({
+  sideNavData,
+  hasFrame = true,
+  children
+}: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <div
@@ -100,8 +104,8 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
                   maxWidth: 1140,
                   display: 'flex',
                   flexWrap: 'nowrap',
-                  background: suomifiTheme.colors.whiteBase,
-                  border: '1px solid #C9CDCF'
+                  background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
+                  border: hasFrame ? `1px solid #C9CDCF` : 0
                 }}>
                 <SideNav
                   sideNavData={sideNavData}
@@ -119,8 +123,8 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
             <div
               style={{
                 margin: '1rem 2rem 1rem 2rem',
-                background: suomifiTheme.colors.whiteBase,
-                border: '1px solid #C9CDCF'
+                background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
+                border: hasFrame ? `1px solid #C9CDCF` : 0
               }}>
               <MainContent>{children}</MainContent>
             </div>
@@ -133,8 +137,8 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
             <div
               style={{
                 margin: '1rem 0 0 0',
-                background: suomifiTheme.colors.whiteBase,
-                border: '1px solid #C9CDCF'
+                background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
+                border: hasFrame ? `1px solid #C9CDCF` : 0
               }}>
               <MainContent>{children}</MainContent>
             </div>
@@ -147,6 +151,7 @@ const Layout = ({ sideNavData, children }: Props): JSX.Element => (
 
 interface Props {
   sideNavData?: SideNavData
+  hasFrame?: boolean
   children: ReactNode
 }
 

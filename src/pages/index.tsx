@@ -10,7 +10,7 @@ import ContentBoxes from '../components/ContentBoxes'
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['home']}>
     {t => (
-      <Layout>
+      <Layout hasFrame={false}>
         <SEO title={t('title')} />
         <h1>{t('title')}</h1>
 

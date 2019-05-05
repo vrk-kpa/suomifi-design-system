@@ -12,9 +12,6 @@ const Page = (): JSX.Element => (
     {t => (
       <Layout hasFrame={false}>
         <SEO title={t('title')} />
-        <h1>{t('title')}</h1>
-
-        <p>{t('intro')}</p>
 
         {t('sections').map((section, index) => (
           <ContentBoxes

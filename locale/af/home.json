@@ -11,352 +11,98 @@
   ],
   "sections": [
     {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
+      "mainTitle": "mainTitle",
+      "blocks": [
         {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
+          "icon": "icon",
+          "title": "title",
+          "paragraphs": [
+            { "text": "text" },
+            { "text": "text" },
+            { "text": "text" }
+          ],
+          "links": [
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" }
+          ]
         },
         {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
+          "icon": "icon",
+          "title": "title",
+          "paragraphs": [
+            { "text": "text" },
+            { "text": "text" },
+            { "text": "text" }
+          ],
+          "links": [
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" }
+          ]
         },
         {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        }
-      ]
-    },
-    {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
+          "icon": "icon",
+          "title": "title",
+          "paragraphs": [
+            { "text": "text" },
+            { "text": "text" },
+            { "text": "text" }
+          ],
+          "links": [
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" }
+          ]
         }
       ]
-    },
+    }
+  ],
+  "framedSections": [
     {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
+      "mainTitle": "mainTitle",
+      "blocks": [
         {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
+          "icon": "icon",
+          "title": "title",
+          "paragraphs": [
+            { "text": "text" },
+            { "text": "text" },
+            { "text": "text" }
+          ],
+          "links": [
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" }
+          ]
         },
         {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
+          "icon": "icon",
+          "title": "title",
+          "paragraphs": [
+            { "text": "text" },
+            { "text": "text" },
+            { "text": "text" }
+          ],
+          "links": [
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" }
+          ]
         },
         {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        }
-      ]
-    },
-    {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        }
-      ]
-    },
-    {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        }
-      ]
-    },
-    {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        }
-      ]
-    },
-    {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        }
-      ]
-    },
-    {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        }
-      ]
-    },
-    {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        }
-      ]
-    },
-    {
-      "mainTitle": "section.mainTitle",
-      "title": "section.title",
-      "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
+          "icon": "icon",
+          "title": "title",
+          "paragraphs": [
+            { "text": "text" },
+            { "text": "text" },
+            { "text": "text" }
+          ],
+          "links": [
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" }
+          ]
         }
       ]
     }

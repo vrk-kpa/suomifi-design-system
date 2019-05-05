@@ -5,7 +5,7 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Section from '../components/Section'
+import ContentBoxes from '../components/ContentBoxes'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['home']}>
@@ -17,12 +17,19 @@ const Page = (): JSX.Element => (
         <p>{t('intro')}</p>
 
         {t('sections').map((section, index) => (
-          <Section
+          <ContentBoxes
             key={index}
             mainTitle={section.mainTitle}
-            title={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
+            blocks={section.blocks}
+          />
+        ))}
+
+        {t('framedSections').map((section, index) => (
+          <ContentBoxes
+            key={index}
+            hasFrame
+            mainTitle={section.mainTitle}
+            blocks={section.blocks}
           />
         ))}
       </Layout>

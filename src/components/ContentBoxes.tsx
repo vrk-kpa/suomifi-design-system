@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from '@wapps/gatsby-plugin-i18next'
-import { Icon, suomifiTheme } from 'suomifi-ui-components'
+import { suomifiTheme } from 'suomifi-ui-components'
 import { IconKeys } from 'suomifi-icons'
+import { Icon } from '../components/Icon' // TODO use icons from lib when available
 
 const Block = ({ block }: { block: Block }): JSX.Element => (
   <>
@@ -17,8 +18,8 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
             border: `1px solid #C9CDCF`,
             borderRadius: '50%'
           }}>
-          <div aria-hidden style={{ width: '40px', height: '40px' }}>
-            <Icon icon={block.icon} />
+          <div aria-hidden style={{ width: '50px', height: '50px' }}>
+            <Icon.solution />
           </div>
         </div>
       </div>
@@ -57,7 +58,8 @@ const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
         flexWrap: 'wrap',
         justifyContent: 'space-evenly',
         background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
-        border: hasFrame ? `1px solid #C9CDCF` : 0
+        border: hasFrame ? `1px solid #C9CDCF` : 0,
+        padding: hasFrame ? '1rem' : 0
       }}>
       {blocks.map((block, index) => (
         <article

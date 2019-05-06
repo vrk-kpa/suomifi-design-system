@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from '@wapps/gatsby-plugin-i18next'
+import { Link as SuomifiLink, suomifiTheme } from 'suomifi-ui-components'
 import { Image } from './Image'
 
 const Section = ({
@@ -32,11 +33,18 @@ const Section = ({
           !!link.url && (
             <li key={index}>
               {link.url.startsWith('/') ? (
-                <Link to={link.url}>{link.text}</Link>
-              ) : (
-                <a href={link.url} rel='noopener noreferrer' target='_blank'>
+                <Link
+                  to={link.url}
+                  style={{ color: suomifiTheme.colors.highlightBase }}>
                   {link.text}
-                </a>
+                </Link>
+              ) : (
+                <SuomifiLink
+                  href={link.url}
+                  rel='noopener noreferrer'
+                  target='_blank'>
+                  {link.text}
+                </SuomifiLink>
               )}
             </li>
           )

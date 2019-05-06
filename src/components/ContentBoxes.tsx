@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import { Link as SuomifiLink, suomifiTheme } from 'suomifi-ui-components'
 import { IconKeys } from 'suomifi-icons'
 import { Icon } from '../components/Icon' // TODO use icons from lib when available
 
@@ -36,11 +36,18 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           !!link.url && (
             <li key={index}>
               {link.url.startsWith('/') ? (
-                <Link to={link.url}>{link.text}</Link>
-              ) : (
-                <a href={link.url} rel='noopener noreferrer' target='_blank'>
+                <Link
+                  to={link.url}
+                  style={{ color: suomifiTheme.colors.highlightBase }}>
                   {link.text}
-                </a>
+                </Link>
+              ) : (
+                <SuomifiLink
+                  href={link.url}
+                  rel='noopener noreferrer'
+                  target='_blank'>
+                  {link.text}
+                </SuomifiLink>
               )}
             </li>
           )

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { suomifiTheme, Icon, Button } from 'suomifi-ui-components'
+import { suomifiTheme, Icon, Button, Text } from 'suomifi-ui-components'
 import { withPrefix } from 'gatsby'
 import { WindowLocation } from '@reach/router'
 
@@ -110,8 +110,6 @@ class SideNav extends Component<Props, State> {
     return (
       <div
         style={{
-          ...suomifiTheme.typography,
-          color: suomifiTheme.colors.blackBase,
           padding: '.5rem',
           fontWeight: 600,
           display: 'flex',
@@ -124,7 +122,7 @@ class SideNav extends Component<Props, State> {
           <div style={{ width: '40px', height: '40px' }}>
             {sideNavData.icon}
           </div>
-          <div style={{ marginLeft: '.5rem' }}>{sideNavData.title}</div>
+          <Text style={{ marginLeft: '.5rem' }}>{sideNavData.title}</Text>
         </div>
         <MobileOrTablet>
           <div

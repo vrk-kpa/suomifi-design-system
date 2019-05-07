@@ -14,7 +14,7 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
           padding: 0,
           boxSizing: 'border-box',
           background: `${suomifiTheme.colors.whiteBase}`,
-          borderBottom: '1px solid #C9CDCF',
+          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
           display: 'flex',
           justifyContent: 'center'
         }}>

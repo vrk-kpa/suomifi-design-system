@@ -18,10 +18,12 @@ const colors = Object.keys(suomifiTheme.colors)
   }))
   .reduce((obj, item) => ({ ...obj, ...item }), {})
 
-colors.whiteBase = { ...colors.whiteBase, border: '1px solid #C8CDD0' } // TODO depthLight13
+const borderForLightColor = `1px solid ${suomifiTheme.colors.depthLight13}`
+
+colors.whiteBase = { ...colors.whiteBase, border: borderForLightColor }
 colors.highlightLight53 = {
   ...colors.highlightLight53,
-  border: '1px solid #C8CDD0' // TODO depthLight13
+  border: borderForLightColor
 }
 
 const colorCategories = [

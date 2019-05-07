@@ -11,7 +11,7 @@ const BypassLink = ({ to, children }: Props): JSX.Element => (
         margin: '1rem',
         padding: '.5rem',
         background: suomifiTheme.colors.highlightLight53,
-        border: '1px solid #C9CDCF',
+        border: `1px solid ${suomifiTheme.colors.depthLight13}`,
         color: suomifiTheme.colors.blackBase,
         textDecoration: 'none'
       },

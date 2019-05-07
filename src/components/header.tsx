@@ -18,7 +18,7 @@ const Header = (): JSX.Element => (
           borderTop: `4px solid ${suomifiTheme.colors.brandBase}`,
           boxSizing: `border-box`,
           background: suomifiTheme.colors.whiteBase,
-          borderBottom: '1px solid #C9CDCF',
+          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
           display: 'flex',
           justifyContent: 'center',
           lineHeight: '40px'

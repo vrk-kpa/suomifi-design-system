@@ -77,9 +77,11 @@ const Layout = ({
   <NamespacesConsumer>
     {t => (
       <div
-        style={Object.assign({}, suomifiTheme.typography, {
-          color: `${suomifiTheme.colors.blackBase}`
-        })}>
+        style={{
+          fontFamily: `${suomifiTheme.typography.fontFamily}, sans-serif`,
+          fontSize: suomifiTheme.typography.fontSize.body,
+          color: suomifiTheme.colors.blackBase
+        }}>
         <BypassLinks hasSideNav={!!sideNavData} />
         <Header />
         <Desktop>
@@ -87,7 +89,7 @@ const Layout = ({
         </Desktop>
         <div
           style={{
-            background: '#F6F6F7', // TODO depthLight30
+            background: suomifiTheme.colors.depthLight30,
             paddingTop: '1rem'
           }}>
           <Desktop>
@@ -105,7 +107,9 @@ const Layout = ({
                   display: 'flex',
                   flexWrap: 'nowrap',
                   background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
-                  border: hasFrame ? `1px solid #C9CDCF` : 0
+                  border: hasFrame
+                    ? `1px solid ${suomifiTheme.colors.depthLight13}`
+                    : 0
                 }}>
                 <SideNav
                   sideNavData={sideNavData}
@@ -118,13 +122,18 @@ const Layout = ({
           <Tablet>
             <SideNav
               sideNavData={sideNavData}
-              style={{ margin: '0 2rem', border: '1px solid #C9CDCF' }}
+              style={{
+                margin: '0 2rem',
+                border: `1px solid ${suomifiTheme.colors.depthLight13}`
+              }}
             />
             <div
               style={{
                 margin: '1rem 2rem 1rem 2rem',
                 background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
-                border: hasFrame ? `1px solid #C9CDCF` : 0
+                border: hasFrame
+                  ? `1px solid ${suomifiTheme.colors.depthLight13}`
+                  : 0
               }}>
               <MainContent>{children}</MainContent>
             </div>
@@ -132,13 +141,18 @@ const Layout = ({
           <Mobile>
             <SideNav
               sideNavData={sideNavData}
-              style={{ margin: '0 1rem', border: '1px solid #C9CDCF' }}
+              style={{
+                margin: '0 1rem',
+                border: `1px solid ${suomifiTheme.colors.depthLight13}`
+              }}
             />
             <div
               style={{
                 margin: '1rem 0 0 0',
                 background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
-                border: hasFrame ? `1px solid #C9CDCF` : 0
+                border: hasFrame
+                  ? `1px solid ${suomifiTheme.colors.depthLight13}`
+                  : 0
               }}>
               <MainContent>{children}</MainContent>
             </div>

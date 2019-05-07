@@ -27,7 +27,7 @@ const components = [
     id: 'secondaryNoborder',
     comp: Button.secondaryNoborder,
     background: suomifiTheme.colors.whiteBase,
-    border: '1px solid #C9CDCF'
+    border: `1px solid ${suomifiTheme.colors.depthLight13}`
   }
 ]
 
@@ -115,7 +115,7 @@ const Page = (): JSX.Element => (
               overflow: 'hidden',
               marginBottom: '1rem',
               padding: '2rem .8rem 0 .8rem',
-              background: '#F6F6F7', // TODO depthLight30
+              background: suomifiTheme.colors.depthLight30,
               display: 'flex',
               justifyContent: 'center'
             }}>

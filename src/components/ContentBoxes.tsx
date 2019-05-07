@@ -15,7 +15,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
             justifyContent: 'center',
             width: '70px',
             height: '70px',
-            border: `1px solid #C9CDCF`,
+            border: `1px solid ${suomifiTheme.colors.depthLight13}`,
             borderRadius: '50%'
           }}>
           <div aria-hidden style={{ width: '50px', height: '50px' }}>
@@ -65,7 +65,7 @@ const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
         flexWrap: 'wrap',
         justifyContent: 'space-evenly',
         background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
-        border: hasFrame ? `1px solid #C9CDCF` : 0,
+        border: hasFrame ? `1px solid ${suomifiTheme.colors.depthLight13}` : 0,
         padding: hasFrame ? '1rem' : 0
       }}>
       {blocks.map((block, index) => (

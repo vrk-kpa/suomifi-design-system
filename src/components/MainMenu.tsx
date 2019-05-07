@@ -61,7 +61,7 @@ class MainMenu extends Component<Props, State> {
                   zIndex: suomifiTheme.zindexes.focus + 1,
                   width: '20rem',
                   background: suomifiTheme.colors.whiteBase,
-                  border: '1px solid #C9CDCF', // TODO depthLight13
+                  border: `1px solid ${suomifiTheme.colors.depthLight13}`,
                   boxShadow: suomifiTheme.shadows.menuShadow
                 }}>
                 <nav aria-label={t('common:navigation.main')}>

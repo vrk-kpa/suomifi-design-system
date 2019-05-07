@@ -7,7 +7,7 @@ const NoteBox = ({ title, items }: Props): JSX.Element => (
       background: suomifiTheme.colors.highlightLight50,
       margin: '2rem 0',
       padding: '20px',
-      border: '1px solid #C5CBD2' // TODO depthLight13
+      border: `1px solid ${suomifiTheme.colors.depthLight13}`
     }}>
     <h3 style={{ marginTop: 0, fontSize: '22px', fontWeight: 600 }}>{title}</h3>
     <ul style={{ margin: 0, padding: '0 0 0 2rem' }}>

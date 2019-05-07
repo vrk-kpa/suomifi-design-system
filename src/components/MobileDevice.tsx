@@ -11,7 +11,7 @@ const MobileDevice = ({ style, children }: Props): JSX.Element => (
       boxShadow: suomifiTheme.shadows.panelShadow,
       padding: '2.5rem 1rem 0 1rem',
       margin: 0,
-      background: '#C9CDCF'
+      background: suomifiTheme.colors.depthLight13
     }}>
     <div
       style={{

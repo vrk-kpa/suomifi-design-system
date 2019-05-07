@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
-import { Panel } from 'suomifi-ui-components'
+import { Panel, suomifiTheme } from 'suomifi-ui-components'
 import ComponentCode from './ComponentCode'
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
@@ -23,7 +23,11 @@ const ComponentDescription = ({
 }: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
-      <div style={{ marginBottom: '2rem', borderBottom: '1px solid #C9CDCF' }}>
+      <div
+        style={{
+          marginBottom: '2rem',
+          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`
+        }}>
         {titleLevel === 2 ? <h2>{title}</h2> : <h3>{title}</h3>}
         {!!exampleFirst && <div>{children}</div>}
         <div style={{ padding: '1rem 0' }}>{description}</div>

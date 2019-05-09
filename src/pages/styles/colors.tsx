@@ -55,6 +55,8 @@ const colorCategories = [
     id: 'backgroundColors',
     colors: [
       colors.whiteBase,
+      colors.depthLight30,
+      colors.depthLight13,
       colors.highlightLight45,
       colors.highlightLight50,
       colors.highlightLight53,

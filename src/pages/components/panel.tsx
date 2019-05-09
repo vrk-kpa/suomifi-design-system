@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import { suomifiTheme, Heading, Text } from 'suomifi-ui-components'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
@@ -18,11 +18,13 @@ const Page = (): JSX.Element => (
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <h1>{t('title')}</h1>
+        <Heading.h1>{t('title')}</Heading.h1>
 
-        <p>{t('intro')}</p>
+        <p>
+          <Text>{t('intro')}</Text>
+        </p>
 
-        <h2>{t('common:component.usage')}</h2>
+        <Heading.h2>{t('common:component.usage')}</Heading.h2>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
@@ -55,7 +57,7 @@ const Page = (): JSX.Element => (
           </ComponentExample>
         </ComponentDescription>
 
-        <h2>{t('common:component.versions')}</h2>
+        <Heading.h2>{t('common:component.versions')}</Heading.h2>
 
         <ComponentDescription
           title={t('single.title')}

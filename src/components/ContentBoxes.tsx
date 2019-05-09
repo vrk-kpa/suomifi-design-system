@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link } from '@wapps/gatsby-plugin-i18next'
-import { Link as SuomifiLink, suomifiTheme } from 'suomifi-ui-components'
+import {
+  Link as SuomifiLink,
+  suomifiTheme,
+  Heading,
+  Text
+} from 'suomifi-ui-components'
 import { IconKeys } from 'suomifi-icons'
 import { Icon } from '../components/Icon' // TODO use icons from lib when available
 
@@ -15,6 +20,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
             justifyContent: 'center',
             width: '70px',
             height: '70px',
+            marginBottom: '1rem',
             border: `1px solid ${suomifiTheme.colors.depthLight13}`,
             borderRadius: '50%'
           }}>
@@ -24,9 +30,17 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
         </div>
       </div>
     )}
-    {!!block.title && <h3>{block.title}</h3>}
+    {!!block.title && (
+      <Heading.h2 style={{ textAlign: 'center' }}>{block.title}</Heading.h2>
+    )}
     {block.paragraphs.map((paragraph, index) => (
-      <div key={index}>{!!paragraph.text && <p>{paragraph.text}</p>}</div>
+      <div key={index}>
+        {!!paragraph.text && (
+          <p>
+            <Text>{paragraph.text}</Text>
+          </p>
+        )}
+      </div>
     ))}
     <ul style={{ margin: 0, padding: 0, width: '100%', listStyle: 'none' }}>
       {block.links.map(
@@ -58,7 +72,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
 
 const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
   <section>
-    <h2 style={{ textAlign: 'center' }}>{mainTitle}</h2>
+    <Heading.h1 style={{ textAlign: 'center' }}>{mainTitle}</Heading.h1>
     <div
       style={{
         display: 'flex',
@@ -66,6 +80,7 @@ const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
         justifyContent: 'space-evenly',
         background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
         border: hasFrame ? `1px solid ${suomifiTheme.colors.depthLight13}` : 0,
+        margin: '1rem 0',
         padding: hasFrame ? '1rem' : 0
       }}>
       {blocks.map((block, index) => (

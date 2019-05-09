@@ -1,5 +1,5 @@
 import React from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
+import { suomifiTheme, Heading, Text } from 'suomifi-ui-components'
 
 const NoteBox = ({ title, items }: Props): JSX.Element => (
   <section
@@ -9,13 +9,13 @@ const NoteBox = ({ title, items }: Props): JSX.Element => (
       padding: '20px',
       border: `1px solid ${suomifiTheme.colors.depthLight13}`
     }}>
-    <h3 style={{ marginTop: 0, fontSize: '22px', fontWeight: 600 }}>{title}</h3>
+    <Heading.h3>{title}</Heading.h3>
     <ul style={{ margin: 0, padding: '0 0 0 2rem' }}>
       {items.map(
         (item, index) =>
           !!item && (
             <li key={index} style={{ marginTop: '1rem' }}>
-              {item}
+              <Text>{item}</Text>
             </li>
           )
       )}

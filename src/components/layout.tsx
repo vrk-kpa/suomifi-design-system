@@ -80,6 +80,7 @@ const Layout = ({
         style={{
           fontFamily: `${suomifiTheme.typography.fontFamily}, sans-serif`,
           fontSize: suomifiTheme.typography.fontSize.body,
+          lineHeight: '1.5em',
           color: suomifiTheme.colors.blackBase
         }}>
         <BypassLinks hasSideNav={!!sideNavData} />

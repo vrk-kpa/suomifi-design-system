@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link } from '@wapps/gatsby-plugin-i18next'
-import { Link as SuomifiLink, suomifiTheme } from 'suomifi-ui-components'
+import {
+  Link as SuomifiLink,
+  suomifiTheme,
+  Heading,
+  Text
+} from 'suomifi-ui-components'
 import { Image } from './Image'
 
 const Section = ({
@@ -10,8 +15,8 @@ const Section = ({
   links
 }: Props): JSX.Element => (
   <section>
-    {!!mainTitle && <h2>{mainTitle}</h2>}
-    {!!title && <h3>{title}</h3>}
+    {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
+    {!!title && <Heading.h3>{title}</Heading.h3>}
     {paragraphs.map((paragraph, index) => (
       <div key={index}>
         {!!paragraph['image.key'] && (
@@ -22,7 +27,11 @@ const Section = ({
             />
           </div>
         )}
-        {!!paragraph.text && <p>{paragraph.text}</p>}
+        {!!paragraph.text && (
+          <p>
+            <Text>{paragraph.text}</Text>
+          </p>
+        )}
       </div>
     ))}
     <ul>

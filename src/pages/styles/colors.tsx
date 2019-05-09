@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react'
 import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import { suomifiTheme, Heading, Text } from 'suomifi-ui-components'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
@@ -85,7 +85,7 @@ const getExampleColor = (
   label: string,
   style?: CSSProperties
 ): JSX.Element => (
-  <div key={id} style={{ margin: '.5rem 2rem .5rem 0' }}>
+  <div key={id} style={{ margin: '.5rem 2rem 1.5rem 0', lineHeight: '1rem' }}>
     <div
       style={{
         width: '10rem',
@@ -106,11 +106,13 @@ const Page = (): JSX.Element => (
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <h1>{t('title')}</h1>
+        <Heading.h1>{t('title')}</Heading.h1>
 
-        <p>{t('intro')}</p>
+        <p>
+          <Text>{t('intro')}</Text>
+        </p>
 
-        <h2>{t('usage')}</h2>
+        <Heading.h2>{t('usage')}</Heading.h2>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
@@ -123,7 +125,7 @@ const Page = (): JSX.Element => (
           />
         ))}
 
-        <h2>{t('primaryColors.title')}</h2>
+        <Heading.h2>{t('primaryColors.title')}</Heading.h2>
 
         {colorCategories.map(item => (
           <ComponentDescription

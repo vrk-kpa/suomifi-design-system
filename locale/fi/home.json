@@ -36,7 +36,7 @@
             { "text": "" }
           ],
           "links": [
-            { "text": "Slack kanava", "url": "todo" },
+            { "text": "Slack kanava", "url": "https://suomidigi-kehittajat.slack.com" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]

@@ -7,6 +7,7 @@ const BypassLink = ({ to, children }: Props): JSX.Element => (
     css={[
       {
         position: 'absolute',
+        zIndex: suomifiTheme.zindexes.focus + 1,
         left: '-100rem',
         margin: '1rem',
         padding: '.5rem',

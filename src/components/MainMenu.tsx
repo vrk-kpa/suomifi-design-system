@@ -35,6 +35,7 @@ class MainMenu extends Component<Props, State> {
             <Button
               aria-label={t('common:open.navigation.main')}
               aria-expanded={this.isOpen()}
+              aria-haspopup
               style={{
                 background: 'none',
                 padding: 0,

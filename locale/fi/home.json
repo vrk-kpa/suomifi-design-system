@@ -17,7 +17,7 @@
           "icon": "",
           "title": "UI Komponentti kirjasto",
           "paragraphs": [
-            { "text": "Tästä Beta versiossa löydät yleisimpiä saavutettavuudeltaan testattuja ja Reactilla toteutettuja komponentteja. Niitä voi hyödyntää joko sellaisenaan tai muokata vastaamaan oman palvelusi visuaalista ilmettä." },
+            { "text": "Kirjastosta löydät yleisimpiä saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasuja siten, että ne vastaavat oman palvelusi visuaalista ilmettä." },
             { "text": "" },
             { "text": "" }
           ],
@@ -31,12 +31,12 @@
           "icon": "",
           "title": "Suunnitteluaineistot",
           "paragraphs": [
-            { "text": "Design Systemin sivuston kautta on tulevaisuudessa tulossa jakoon Sketch-suunnitteluaineisto, tyyliopas, joka sisältää kaikki olennaiset elementit, komponentit ja moduulit jotka ovat saavutettavuudeltaan ja käytettävyydeltään testattu suomi.fi-palveluissa. Jos haluat hyödyntää tyyliopasta suunnittelutyön pohjana, se on jo nyt mahdollista versionhallintatyökalun kautta. Ota yhteyttä suomidigin kehittäjät slack kanavan kautta." },
+            { "text": "Tulemme jatkossa julkaisemaan Design System -sivustolla myös käyttöliittymien suunnitteluaineiston Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit." },
             { "text": "" },
             { "text": "" }
           ],
           "links": [
-            { "text": "Slack kanava", "url": "https://suomidigi-kehittajat.slack.com" },
+            { "text": "#DesignSystem Slack -kanava", "url": "https://suomidigi-kehittajat.slack.com/" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]
@@ -45,12 +45,12 @@
           "icon": "",
           "title": "Design System sivusto",
           "paragraphs": [
-            { "text": "Tältä sivustolta löydät UI-komponenttien esikatselumallit ja koodiesimerkit sekä käyttöohjeistukset ja dokumentaation. Sivuston sisältö luo yhteisen alustan tukemaan sekä suunnittelu- että kehitystyötä. Tämä on Betaversio palvelusta. Sivustoa ylläpitää Väestörekisterikeskus." },
+            { "text": "Sivustolta löydät käyttöliittymäkomponenttien esikatselumallit, koodiesimerkit, käyttöohjeistukset ja dokumentaation. Julkaistut sisällöt luovat yhteisen alustan tukemaan sekä palveluiden suunnittelu-, että kehitystyötä. Design System -sivustoa kehittää ja ylläpitää Väestörekisterikeskus." },
             { "text": "Onko sinulla ehdotuksia tai muuta palautetta?" },
             { "text": "" }
           ],
           "links": [
-            { "text": "Ota yhteyttä!", "url": "/instructions" },
+            { "text": "Yhteystiedot", "url": "/instructions" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]
@@ -60,18 +60,18 @@
   ],
   "framedSections": [
     {
-      "mainTitle": "Miksi Suomi.fi Design System ja miksi sitä kannattaa käyttää",
+      "mainTitle": "Miksi kannattaa hyödyntää Suomi.fi Design Systemiä?",
       "blocks": [
         {
           "icon": "icon",
           "title": "Nopeus",
           "paragraphs": [
-            { "text": "Hyödyntämällä valmiiksi suunniteltuja, koodattuja ja testattuja komponentteja, mahdollistaa että palvelusi suunnittelu- ja kehittämistyö on nopeampaa ja kustannustehokkaampaa." },
+            { "text": "Valmiilla käyttöliittymäkomponenteilla palvelusi suunnittelu- ja kehittämistyö on nopeaa ja kustannustehokasta. Voit hyödyntää jo olemassa olevia komponentteja ja tarvittaessa muokata niitä vain ulkoasullisesti vastaamaan omien palveluidesi visuaalista ulkoasua." },
             { "text": "" },
             { "text": "" }
           ],
           "links": [
-            { "text": "Aloita komponenttien hyödyntäminen", "url": "/components" },
+            { "text": "Näin pääset alkuun", "url": "/components" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]
@@ -80,7 +80,7 @@
           "icon": "icon",
           "title": "Yhteiskehittäminen ja saavutettavuus",
           "paragraphs": [
-            { "text": "Suomi.fi-palveluissa on pitkään tehty työtä käytettävyyden ja saavutettavuuden eteen. Suomi.fi Design System -kirjaston tavoite on luoda kehys, jotta kaikki pääsevät hyödyntämään tehtyä työtä sekä osallistumaan yhteiskehittämiseen. Yhdessä saadaan aikaan enemmän, pienemmilläkin resursseilla." },
+            { "text": "Suomi.fi-palveluiden kehittämisessä on panostettu käytettävyyteen sekä kaikkia käyttäjäryhmiä palvelevaan saavutettavuuteen. Suomi.fi Design Systemin avulla kaikki pääsevät hyödyntämään jo tehtyä työtä sekä osallistumaan yhteiskehittämiseen. Yhdessä saadaan aikaan enemmän, pienemmilläkin resursseilla." },
             { "text": "" },
             { "text": "" }
           ],
@@ -94,7 +94,7 @@
           "icon": "icon",
           "title": "Johdonmukainen käyttäjäkokemus",
           "paragraphs": [
-            { "text": "Yhdenmukaisuus niin käytettävyyden, kuin ulkonäön puolesta auttaa luomaan jatkumoa eri palveluiden käyttöliittymien välillä loppukäyttäjälle. Tämän mahdollistaa Design System -kirjaston keskitetty kehittäminen ja käyttäminen." },
+            { "text": "Suomi.fi Design Systemin käyttäminen mahdollistaa organisaatio- ja palvelurajojen ylittävän yhdenmukaisen käyttäjäkokemuksen tarjoamisen julkishallinnon verkkopalveluiden käyttäjille. Käytettävyyden, saavutettavuuden ja visuaalisuuden tuoma yhtenäisyys tuottaa käyttäjille intuitiivisen sekä luotettavan kuvan organisaatioden digitaalisista palveluista." },
             { "text": "" },
             { "text": "" }
           ],

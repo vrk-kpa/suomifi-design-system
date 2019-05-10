@@ -4,7 +4,8 @@ import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import LanguageSwitcher from './LanguageSwitcher'
-import { Icon } from './Icon'
+import { ReactComponent as SuomiFi } from '../icons/SuomiFi.svg'
+import { ReactComponent as SuomiFiWithText } from '../icons/SuomiFiWithText.svg'
 import MainMenu from './MainMenu'
 import { Desktop, MobileOrTablet } from './Responsive'
 import mainNavData from '../config/mainnav'
@@ -39,10 +40,10 @@ const Header = (): JSX.Element => (
               `&:focus { ${suomifiTheme.outlines.basic} }`
             ]}>
             <Desktop>
-              <Icon.suomiFiWithText />
+              <SuomiFiWithText style={{ height: '32px' }} />
             </Desktop>
             <MobileOrTablet>
-              <Icon.suomiFi />
+              <SuomiFi style={{ height: '32px' }} />
             </MobileOrTablet>
           </Link>
           <div style={{ flex: 1, position: 'relative', marginLeft: '.5rem' }}>

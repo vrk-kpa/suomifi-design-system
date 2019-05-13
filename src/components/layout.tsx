@@ -47,15 +47,17 @@ const SideNav = ({
 }
 
 const MainContent = ({
+  hasFrame = true,
   children,
   style
 }: {
+  hasFrame?: boolean
   children: ReactNode
   style?: CSSProperties
 }): JSX.Element => (
   <NamespacesConsumer>
     {t => (
-      <div style={{ margin: '0 1rem', ...style }}>
+      <div style={{ margin: hasFrame ? '0 1rem' : 0, ...style }}>
         <Annotation
           title={t('alpharel:title')}
           description={t('alpharel:description')}
@@ -91,7 +93,7 @@ const Layout = ({
         <div
           style={{
             background: suomifiTheme.colors.depthLight30,
-            paddingTop: '1rem'
+            paddingTop: hasFrame ? '1rem' : 0
           }}>
           <Desktop>
             <div
@@ -102,9 +104,9 @@ const Layout = ({
               }}>
               <div
                 style={{
-                  margin: '1rem 2rem 2rem 2rem',
+                  margin: hasFrame ? '1rem 2rem 2rem 2rem' : 0,
                   width: '100%',
-                  maxWidth: 1140,
+                  maxWidth: hasFrame ? 1140 : 'initial',
                   display: 'flex',
                   flexWrap: 'nowrap',
                   background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
@@ -116,7 +118,9 @@ const Layout = ({
                   sideNavData={sideNavData}
                   style={{ width: '22rem', marginRight: '1rem' }}
                 />
-                <MainContent style={{ flex: 1 }}>{children}</MainContent>
+                <MainContent hasFrame={hasFrame} style={{ flex: 1 }}>
+                  {children}
+                </MainContent>
               </div>
             </div>
           </Desktop>
@@ -130,13 +134,13 @@ const Layout = ({
             />
             <div
               style={{
-                margin: '1rem 2rem 1rem 2rem',
+                margin: hasFrame ? '1rem 2rem 1rem 2rem' : 0,
                 background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
                 border: hasFrame
                   ? `1px solid ${suomifiTheme.colors.depthLight13}`
                   : 0
               }}>
-              <MainContent>{children}</MainContent>
+              <MainContent hasFrame={hasFrame}>{children}</MainContent>
             </div>
           </Tablet>
           <Mobile>
@@ -155,7 +159,7 @@ const Layout = ({
                   ? `1px solid ${suomifiTheme.colors.depthLight13}`
                   : 0
               }}>
-              <MainContent>{children}</MainContent>
+              <MainContent hasFrame={hasFrame}>{children}</MainContent>
             </div>
           </Mobile>
         </div>

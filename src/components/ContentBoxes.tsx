@@ -8,27 +8,23 @@ import { Heading, Text } from './ResponsiveComponents'
 const Block = ({ block }: { block: Block }): JSX.Element => (
   <>
     {!!block.icon && (
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '70px',
-            height: '70px',
-            marginBottom: '1rem',
-            border: `1px solid ${suomifiTheme.colors.depthLight13}`,
-            borderRadius: '50%'
-          }}>
-          <div aria-hidden style={{ width: '50px', height: '50px' }}>
-            <Icon.solution />
-          </div>
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          width: '70px',
+          height: '70px',
+          marginBottom: '1rem',
+          border: `1px solid ${suomifiTheme.colors.depthLight13}`,
+          borderRadius: '50%'
+        }}>
+        <div aria-hidden style={{ width: '50px', height: '50px' }}>
+          <Icon.solution />
         </div>
       </div>
     )}
-    {!!block.title && (
-      <Heading.h2 style={{ textAlign: 'center' }}>{block.title}</Heading.h2>
-    )}
+    {!!block.title && <Heading.h2>{block.title}</Heading.h2>}
     {block.paragraphs.map((paragraph, index) => (
       <div key={index}>
         {!!paragraph.text && (
@@ -67,30 +63,34 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
 )
 
 const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
-  <section>
-    <Heading.h1 style={{ textAlign: 'center' }}>{mainTitle}</Heading.h1>
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-evenly',
-        background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
-        border: hasFrame ? `1px solid ${suomifiTheme.colors.depthLight13}` : 0,
-        margin: '1rem 0',
-        padding: hasFrame ? '1rem' : 0
-      }}>
-      {blocks.map((block, index) => (
-        <article
-          key={index}
-          style={{
-            flex: '1 1 30%',
-            minWidth: '20rem',
-            margin: '1rem',
-            textAlign: hasFrame ? 'center' : 'initial'
-          }}>
-          <Block block={block} />
-        </article>
-      ))}
+  <section
+    style={{
+      background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
+      padding: '2rem 1rem',
+      display: 'flex',
+      justifyContent: 'center'
+    }}>
+    <div style={{ maxWidth: 1140 }}>
+      <Heading.h1 style={{ textAlign: 'center' }}>{mainTitle}</Heading.h1>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'space-evenly',
+          margin: '1rem 0'
+        }}>
+        {blocks.map((block, index) => (
+          <article
+            key={index}
+            style={{
+              flex: '1 1 30%',
+              minWidth: '20rem',
+              margin: '1rem'
+            }}>
+            <Block block={block} />
+          </article>
+        ))}
+      </div>
     </div>
   </section>
 )

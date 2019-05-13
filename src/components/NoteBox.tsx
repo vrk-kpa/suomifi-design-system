@@ -1,5 +1,7 @@
 import React from 'react'
-import { suomifiTheme, Heading, Text } from 'suomifi-ui-components'
+import { suomifiTheme } from 'suomifi-ui-components'
+
+import { Heading, Text } from './ResponsiveComponents'
 
 const NoteBox = ({ title, items }: Props): JSX.Element => (
   <section

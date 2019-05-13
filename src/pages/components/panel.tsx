@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme, Heading, Text } from 'suomifi-ui-components'
+import { suomifiTheme } from 'suomifi-ui-components'
 
 import Layout from '../../components/layout'
 import SEO from '../../components/seo'
@@ -12,6 +12,7 @@ import sideNavData from '../../config/sidenav/components'
 import NoteBox from '../../components/NoteBox'
 import Section from '../../components/Section'
 import ComponentExample from '../../components/ComponentExample'
+import { Heading, Text } from '../../components/ResponsiveComponents'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['panel']}>

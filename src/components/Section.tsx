@@ -1,12 +1,8 @@
 import React from 'react'
 import { Link } from '@wapps/gatsby-plugin-i18next'
-import {
-  Link as SuomifiLink,
-  suomifiTheme,
-  Heading,
-  Text
-} from 'suomifi-ui-components'
+import { Link as SuomifiLink, suomifiTheme } from 'suomifi-ui-components'
 import { Image } from './Image'
+import { Heading, Text } from './ResponsiveComponents'
 
 const Section = ({
   mainTitle,

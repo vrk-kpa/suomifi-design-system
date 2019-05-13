@@ -1,13 +1,9 @@
 import React from 'react'
 import { Link } from '@wapps/gatsby-plugin-i18next'
-import {
-  Link as SuomifiLink,
-  suomifiTheme,
-  Heading,
-  Text
-} from 'suomifi-ui-components'
+import { Link as SuomifiLink, suomifiTheme } from 'suomifi-ui-components'
 import { IconKeys } from 'suomifi-icons'
 import { Icon } from '../components/Icon' // TODO use icons from lib when available
+import { Heading, Text } from './ResponsiveComponents'
 
 const Block = ({ block }: { block: Block }): JSX.Element => (
   <>

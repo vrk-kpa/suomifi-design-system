@@ -6,7 +6,6 @@ import { Location } from '@reach/router'
 import Header from './header'
 import Navigation from './Navigation'
 import SideNavComp from './SideNav'
-import Annotation from './Annotation'
 import { SideNavData } from './SideNavData'
 import { Desktop, Mobile, Tablet } from './Responsive'
 import BypassLink from './BypassLink'
@@ -55,20 +54,12 @@ const MainContent = ({
   children: ReactNode
   style?: CSSProperties
 }): JSX.Element => (
-  <NamespacesConsumer>
-    {t => (
-      <div style={{ margin: hasFrame ? '0 1rem' : 0, ...style }}>
-        <Annotation
-          title={t('alpharel:title')}
-          description={t('alpharel:description')}
-        />
-        <main id='main'>{children}</main>
-        <footer style={{ margin: '1rem 0' }}>
-          © {new Date().getFullYear()}
-        </footer>
-      </div>
-    )}
-  </NamespacesConsumer>
+  <div style={{ margin: hasFrame ? '2rem 1rem' : 0, ...style }}>
+    <main id='main'>{children}</main>
+    <footer style={{ margin: '1rem 0 0 0' }}>
+      © {new Date().getFullYear()}
+    </footer>
+  </div>
 )
 
 const Layout = ({

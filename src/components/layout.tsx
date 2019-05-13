@@ -125,7 +125,7 @@ const Layout = ({
             />
             <div
               style={{
-                margin: hasFrame ? '1rem 2rem 1rem 2rem' : 0,
+                margin: hasFrame ? '1rem 2rem' : 0,
                 background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
                 border: hasFrame
                   ? `1px solid ${suomifiTheme.colors.depthLight13}`
@@ -144,7 +144,7 @@ const Layout = ({
             />
             <div
               style={{
-                margin: '1rem 0 0 0',
+                margin: hasFrame ? '1rem 0 0 0' : 0,
                 background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
                 border: hasFrame
                   ? `1px solid ${suomifiTheme.colors.depthLight13}`

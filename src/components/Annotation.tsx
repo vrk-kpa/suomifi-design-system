@@ -1,19 +1,19 @@
 import React from 'react'
-import { Link } from '@wapps/gatsby-plugin-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import { Heading, Text } from './ResponsiveComponents'
+import Link from './Link'
 
-const linkStyle = [
-  {
-    padding: '.5rem 1rem',
-    border: `1px solid ${suomifiTheme.colors.whiteBase}`,
-    borderRadius: '2px',
-    color: suomifiTheme.colors.whiteBase,
+const linkStyle = {
+  padding: '.5rem 1rem',
+  border: `1px solid ${suomifiTheme.colors.whiteBase}`,
+  borderRadius: '2px',
+  color: suomifiTheme.colors.whiteBase,
+  fontSize: '16px',
+  '&:hover': {
     textDecoration: 'none'
-  },
-  `&:focus { ${suomifiTheme.outlines.basic} }`
-]
+  }
+}
 
 const Annotation = ({ title, description, link }: Props): JSX.Element => (
   <div
@@ -43,21 +43,7 @@ const Annotation = ({ title, description, link }: Props): JSX.Element => (
       </div>
       {link && !!link.text && !!link.url && (
         <div style={{ margin: '1.5rem 0 1rem 0' }}>
-          <Text smallScreen>
-            {link.url.startsWith('/') ? (
-              <Link to={link.url} css={linkStyle}>
-                {link.text}
-              </Link>
-            ) : (
-              <a
-                href={link.url}
-                css={linkStyle}
-                rel='noopener noreferrer'
-                target='_blank'>
-                {link.text}
-              </a>
-            )}
-          </Text>
+          <Link text={link.text} url={link.url} style={linkStyle} />
         </div>
       )}
     </div>

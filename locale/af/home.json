@@ -1,14 +1,9 @@
 {
   "title": "title",
-  "intro": "intro",
   "note.title": "note.title",
-  "note.items": [
-    "note.item",
-    "note.item",
-    "note.item",
-    "note.item",
-    "note.item"
-  ],
+  "note.description": "note.description",
+  "note.link.text": "note.link.text",
+  "note.link.url": "note.link.url",
   "sections": [
     {
       "mainTitle": "mainTitle",

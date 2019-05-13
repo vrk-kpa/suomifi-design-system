@@ -1,14 +1,9 @@
 {
   "title": "Etusivu",
-  "intro": "",
-  "note.title": "",
-  "note.items": [
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
+  "note.title": "Tämä on Alphaversio",
+  "note.description": "Osallitu uuden palvelun kehittämiseen! Anna palautetta ja liity keskusteluun Suomidigin kehittäjät #DesignSystem Slack- kanavalla.",
+  "note.link.text": "Liity Slack -kanavalle",
+  "note.link.url": "https://suomidigi-kehittajat.slack.com/",
   "sections": [
     {
       "mainTitle": "Mistä Suomi.fi Design System -kirjasto koostuu",

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ComponentClass } from 'react'
 
 const getComponentWithDisplayName = (
   Comp: Function,
@@ -9,8 +9,8 @@ const getComponentWithDisplayName = (
   return Wrapper
 }
 
-export const getVariants = (
-  Comp: ReactNode,
+const getVariants = (
+  Comp: ComponentClass,
   displayName: string
 ): Record<string, Function> =>
   Object.keys(Comp)
@@ -18,3 +18,14 @@ export const getVariants = (
       [key]: getComponentWithDisplayName(Comp[key], `${displayName}.${key}`)
     }))
     .reduce((obj, item) => ({ ...obj, ...item }), {})
+
+export const addDisplayNames = (
+  DestComp: ComponentClass,
+  SourceComp: ComponentClass,
+  displayName: string
+): void => {
+  Object.assign(DestComp, {
+    displayName,
+    ...getVariants(SourceComp, displayName)
+  })
+}

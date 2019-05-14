@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { suomifiTheme, Icon, Button } from 'suomifi-ui-components'
+import { suomifiTheme, Icon, Button, Text } from 'suomifi-ui-components'
 import { withPrefix } from 'gatsby'
 import { WindowLocation } from '@reach/router'
 
@@ -110,21 +110,18 @@ class SideNav extends Component<Props, State> {
     return (
       <div
         style={{
-          ...suomifiTheme.typography,
-          color: suomifiTheme.colors.text,
           padding: '.5rem',
-          fontWeight: 600,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          borderBottom: '1px solid #EEF5FF',
+          borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
           textShadow: 'none'
         }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ width: '40px', height: '40px' }}>
-            {sideNavData.icon}
-          </div>
-          <div style={{ marginLeft: '.5rem' }}>{sideNavData.title}</div>
+          <div style={{ fontSize: '40px' }}>{sideNavData.icon}</div>
+          <Text.bold style={{ marginLeft: '.5rem' }}>
+            {sideNavData.title}
+          </Text.bold>
         </div>
         <MobileOrTablet>
           <div
@@ -140,7 +137,7 @@ class SideNav extends Component<Props, State> {
               /* stylelint-disable-next-line function-name-case */
               transform: this.isNavOpen() ? 'rotate(.5turn)' : 'none'
             }}>
-            <Icon icon='chevronDown' color='#636769' />
+            <Icon icon='chevronDown' color={suomifiTheme.colors.depthDark27} />
           </div>
         </MobileOrTablet>
       </div>
@@ -162,7 +159,7 @@ class SideNav extends Component<Props, State> {
             borderLeft:
               level === 1
                 ? this.iscurrent(item.to)
-                  ? `4px solid ${suomifiTheme.colors.brandColor}`
+                  ? `4px solid ${suomifiTheme.colors.brandBase}`
                   : '4px solid transparent'
                 : 'none'
           }}>
@@ -192,7 +189,7 @@ class SideNav extends Component<Props, State> {
           margin: 0,
           padding: 0,
           boxSizing: 'border-box',
-          background: `${suomifiTheme.colors.white}`
+          background: `${suomifiTheme.colors.whiteBase}`
         }}>
         <Desktop>
           <this.Title />

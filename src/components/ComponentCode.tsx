@@ -25,8 +25,13 @@ const Highlighter = ({
   </SyntaxHighlighter>
 )
 
-const ComponentCode = ({ javascript, style, children }: Props): JSX.Element => (
-  <div style={{ padding: '1rem', background: '#F6F6F7', ...style }}>
+const ComponentCode = ({
+  javascript,
+  style,
+  filterProps,
+  children
+}: Props): JSX.Element => (
+  <div style={{ padding: '1rem', ...style }}>
     {!!javascript && (
       <Highlighter style={{ marginBottom: !children ? 0 : '1rem' }}>
         {javascript}
@@ -35,7 +40,7 @@ const ComponentCode = ({ javascript, style, children }: Props): JSX.Element => (
     {!!children && (
       <Highlighter>
         {reactElementToJSXString(children, {
-          filterProps: ['id', 'style', 'aria-label'],
+          filterProps: filterProps || ['id', 'style', 'aria-label'],
           showFunctions: true,
           functionValue: () => '...'
         })}
@@ -47,6 +52,7 @@ const ComponentCode = ({ javascript, style, children }: Props): JSX.Element => (
 interface Props {
   javascript?: string
   style?: CSSProperties
+  filterProps?: string[]
   children?: ReactNode
 }
 

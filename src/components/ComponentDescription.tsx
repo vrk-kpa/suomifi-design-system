@@ -1,7 +1,8 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
-import { Panel } from 'suomifi-ui-components'
+import { Panel, suomifiTheme } from 'suomifi-ui-components'
 import ComponentCode from './ComponentCode'
+import { Heading, Text } from './ResponsiveComponents'
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
   React.Children.map(children, child =>
@@ -12,22 +13,36 @@ const getWithoutWrappers = (children: any): ReactNode[] =>
 
 const ComponentDescription = ({
   title,
+  titleLevel,
   description,
   exampleFirst,
   noCode,
   codeString,
   showOnlyCodeString,
+  filterProps,
   children
 }: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
-      <div style={{ marginBottom: '2rem', borderBottom: '1px solid #C9CDCF' }}>
-        <h3>{title}</h3>
+      <div
+        style={{
+          marginBottom: '2rem',
+          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`
+        }}>
+        <div style={{ margin: '1.5rem 0' }}>
+          {titleLevel === 2 ? (
+            <Heading.h2>{title}</Heading.h2>
+          ) : (
+            <Heading.h3>{title}</Heading.h3>
+          )}
+        </div>
         {!!exampleFirst && <div>{children}</div>}
-        <div style={{ padding: '1rem 0' }}>{description}</div>
+        <div>
+          <Text>{description}</Text>
+        </div>
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
-          <div style={{ padding: '1rem 0 2rem 0' }}>
+          <div style={{ padding: '1.5rem 0 2rem 0' }}>
             <Panel.expansion
               title={t('common:react')}
               titleProps={{
@@ -39,6 +54,7 @@ const ComponentDescription = ({
                 getWithoutWrappers(children).map((child, index) => (
                   <ComponentCode
                     key={index}
+                    filterProps={filterProps}
                     style={{
                       paddingTop: index === 0 && !codeString ? '1rem' : 0
                     }}>
@@ -55,11 +71,13 @@ const ComponentDescription = ({
 
 interface Props {
   title: string
+  titleLevel?: number
   description: string
   exampleFirst: boolean
   noCode?: boolean
   codeString?: string
   showOnlyCodeString?: boolean
+  filterProps?: string[]
   children: ReactNode
 }
 

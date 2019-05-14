@@ -11,24 +11,7 @@ import sideNavData from '../../config/sidenav/styles'
 import NoteBox from '../../components/NoteBox'
 import Section from '../../components/Section'
 import ComponentExample from '../../components/ComponentExample'
-
-const addTemporaryColorsNotYetInLibrary = colors => {
-  ;[
-    { name: 'blackBase', value: colors.text.value },
-    { name: 'depthBase', value: '#a5acb0' },
-    { name: 'depthSecondaryBase', value: '#eef5ff' },
-    { name: 'brandBase', value: colors.brandColor.value },
-    { name: 'highlightBase', value: '#2A6EBB' },
-    { name: 'accentBase', value: '#ea7125' },
-    { name: 'accentSecondaryBase', value: '#34b6e4' },
-    { name: 'successBase', value: '#09AA85' },
-    { name: 'warningBase', value: '#f4aa00' },
-    { name: 'alertBase', value: '#c13832' },
-    { name: 'whiteBase', value: colors.white.value }
-  ].forEach(color => {
-    colors[color.name] = color
-  })
-}
+import { Heading, Text } from '../../components/ResponsiveComponents'
 
 const colors = Object.keys(suomifiTheme.colors)
   .map(key => ({
@@ -36,27 +19,64 @@ const colors = Object.keys(suomifiTheme.colors)
   }))
   .reduce((obj, item) => ({ ...obj, ...item }), {})
 
-addTemporaryColorsNotYetInLibrary(colors)
+const borderForLightColor = `1px solid ${suomifiTheme.colors.depthLight13}`
 
-colors.whiteBase = { ...colors.whiteBase, border: '1px solid #C9CDCF' }
+colors.whiteBase = { ...colors.whiteBase, border: borderForLightColor }
+colors.highlightLight53 = {
+  ...colors.highlightLight53,
+  border: borderForLightColor
+}
 
 const colorCategories = [
-  { id: 'textColors', colors: [colors.blackBase, colors.depthBase] },
+  {
+    id: 'textColors',
+    colors: [colors.blackBase, colors.depthBase, colors.depthDark27]
+  },
   { id: 'brandColors', colors: [colors.brandBase] },
   {
     id: 'controlColors',
-    colors: [colors.highlightBase, colors.depthBase, colors.depthSecondaryBase]
+    colors: [
+      colors.highlightBase,
+      colors.highlightLight4,
+      colors.highlightLight45,
+      colors.highlightLight50,
+      colors.highlightLight53,
+      colors.highlightDark9,
+      colors.depthBase,
+      colors.depthDark27,
+      colors.accentBase,
+      colors.depthSecondary
+    ]
   },
-  { id: 'iconColors', colors: [colors.accentBase, colors.depthBase] },
+  {
+    id: 'iconColors',
+    colors: [colors.accentBase, colors.depthBase, colors.depthDark27]
+  },
   {
     id: 'backgroundColors',
-    colors: [colors.whiteBase, colors.depthBase, colors.depthSecondaryBase]
+    colors: [
+      colors.whiteBase,
+      colors.depthLight30,
+      colors.depthLight13,
+      colors.highlightLight45,
+      colors.highlightLight50,
+      colors.highlightLight53,
+      colors.depthSecondary
+    ]
   },
   {
     id: 'trafficColors',
-    colors: [colors.successBase, colors.warningBase, colors.alertBase]
+    colors: [
+      colors.successBase,
+      colors.warningBase,
+      colors.alertBase,
+      colors.warningLight47
+    ]
   },
-  { id: 'accentColors', colors: [colors.accentSecondaryBase] }
+  {
+    id: 'accentColors',
+    colors: [colors.accentSecondary, colors.accentSecondaryLight40]
+  }
 ]
 
 const getExampleColor = (
@@ -66,7 +86,7 @@ const getExampleColor = (
   label: string,
   style?: CSSProperties
 ): JSX.Element => (
-  <div key={id} style={{ margin: '.5rem 2rem .5rem 0' }}>
+  <div key={id} style={{ margin: '.5rem 2rem 1.5rem 0', lineHeight: '1rem' }}>
     <div
       style={{
         width: '10rem',
@@ -87,11 +107,13 @@ const Page = (): JSX.Element => (
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <h1>{t('title')}</h1>
+        <Heading.h1>{t('title')}</Heading.h1>
 
-        <p>{t('intro')}</p>
+        <p>
+          <Text>{t('intro')}</Text>
+        </p>
 
-        <h2>{t('usage')}</h2>
+        <Heading.h2>{t('usage')}</Heading.h2>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
@@ -104,7 +126,7 @@ const Page = (): JSX.Element => (
           />
         ))}
 
-        <h2>{t('primaryColors.title')}</h2>
+        <Heading.h2>{t('primaryColors.title')}</Heading.h2>
 
         {colorCategories.map(item => (
           <ComponentDescription

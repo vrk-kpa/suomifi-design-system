@@ -6,7 +6,7 @@ export const Example = () => (
     style={{
       width: '10rem',
       height: '3rem',
-      background: suomifiTheme.colors.secondaryColor,
+      background: suomifiTheme.colors.highlightBase,
       boxShadow: suomifiTheme.shadows.panelShadow
     }}
   />

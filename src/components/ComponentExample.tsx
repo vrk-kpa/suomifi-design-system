@@ -1,4 +1,5 @@
 import React, { ReactNode, CSSProperties } from 'react'
+import { suomifiTheme } from 'suomifi-ui-components'
 
 const ComponentExample = ({ style, children }: Props): JSX.Element => (
   <div
@@ -8,9 +9,12 @@ const ComponentExample = ({ style, children }: Props): JSX.Element => (
       alignItems: 'center',
       flexWrap: 'wrap',
       padding: '.8rem',
-      marginBottom: '1rem',
+      margin: '1.5rem 0',
       ...style,
-      background: style && style.background ? style.background : '#F6F6F7'
+      background:
+        style && style.background
+          ? style.background
+          : suomifiTheme.colors.depthLight30
     }}>
     {children}
   </div>

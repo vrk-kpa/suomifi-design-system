@@ -13,8 +13,8 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
         style={{
           padding: 0,
           boxSizing: 'border-box',
-          background: `${suomifiTheme.colors.white}`,
-          borderBottom: '1px solid #C9CDCF',
+          background: `${suomifiTheme.colors.whiteBase}`,
+          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
           display: 'flex',
           justifyContent: 'center'
         }}>

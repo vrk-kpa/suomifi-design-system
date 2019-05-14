@@ -13,6 +13,7 @@ import NoteBox from '../../components/NoteBox'
 import Section from '../../components/Section'
 import ComponentExample from '../../components/ComponentExample'
 import MobileDevice from '../../components/MobileDevice'
+import { Heading, Text } from '../../components/ResponsiveComponents'
 
 const components = [
   { id: 'primary', comp: Button },
@@ -20,14 +21,14 @@ const components = [
   {
     id: 'negative',
     comp: Button.negative,
-    background: suomifiTheme.colors.secondaryColor
+    background: suomifiTheme.colors.highlightBase
   },
   { id: 'secondary', comp: Button.secondary },
   {
     id: 'secondaryNoborder',
     comp: Button.secondaryNoborder,
-    background: suomifiTheme.colors.white,
-    border: '1px solid #C9CDCF'
+    background: suomifiTheme.colors.whiteBase,
+    border: `1px solid ${suomifiTheme.colors.depthLight13}`
   }
 ]
 
@@ -43,7 +44,7 @@ const disabledComponents = [
   {
     id: 'negative',
     comp: Button.negative,
-    background: suomifiTheme.colors.secondaryColor
+    background: suomifiTheme.colors.highlightBase
   },
   { id: 'secondary', comp: Button.secondary },
   {
@@ -89,11 +90,13 @@ const Page = (): JSX.Element => (
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <h1>{t('title')}</h1>
+        <Heading.h1>{t('title')}</Heading.h1>
 
-        <p>{t('intro')}</p>
+        <p>
+          <Text>{t('intro')}</Text>
+        </p>
 
-        <h2>{t('common:component.usage')}</h2>
+        <Heading.h2>{t('common:component.usage')}</Heading.h2>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
@@ -115,7 +118,7 @@ const Page = (): JSX.Element => (
               overflow: 'hidden',
               marginBottom: '1rem',
               padding: '2rem .8rem 0 .8rem',
-              background: '#F6F6F7',
+              background: suomifiTheme.colors.depthLight30,
               display: 'flex',
               justifyContent: 'center'
             }}>
@@ -135,7 +138,7 @@ const Page = (): JSX.Element => (
           </div>
         </ComponentDescription>
 
-        <h2>{t('common:component.versions')}</h2>
+        <Heading.h2>{t('common:component.versions')}</Heading.h2>
 
         {components.map(item => (
           <ComponentDescription

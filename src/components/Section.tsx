@@ -1,9 +1,18 @@
 import React from 'react'
-import { Image } from './Image'
 
-const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
+import { Image } from './Image'
+import { Heading, Text } from './ResponsiveComponents'
+import Link from './Link'
+
+const Section = ({
+  mainTitle,
+  title,
+  paragraphs,
+  links
+}: Props): JSX.Element => (
   <section>
-    {!!title && <h3>{title}</h3>}
+    {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
+    {!!title && <Heading.h3>{title}</Heading.h3>}
     {paragraphs.map((paragraph, index) => (
       <div key={index}>
         {!!paragraph['image.key'] && (
@@ -14,7 +23,11 @@ const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
             />
           </div>
         )}
-        {!!paragraph.text && <p>{paragraph.text}</p>}
+        {!!paragraph.text && (
+          <p>
+            <Text>{paragraph.text}</Text>
+          </p>
+        )}
       </div>
     ))}
     <ul>
@@ -24,9 +37,7 @@ const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
           !!link.text &&
           !!link.url && (
             <li key={index}>
-              <a href={link.url} rel='noopener noreferrer' target='_blank'>
-                {link.text}
-              </a>
+              <Link text={link.text} url={link.url} />
             </li>
           )
       )}
@@ -35,7 +46,8 @@ const Section = ({ title, paragraphs, links }: Props): JSX.Element => (
 )
 
 interface Props {
-  title: string
+  mainTitle?: string
+  title?: string
   paragraphs: Paragraph[]
   links: Link[]
 }

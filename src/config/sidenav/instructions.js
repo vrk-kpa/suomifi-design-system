@@ -1,9 +1,9 @@
 import React from 'react'
-import { Icon } from '../../components/Icon'
+import { Icon } from 'suomifi-ui-components'
 
 export default t => ({
   title: t('instructions:title'),
-  icon: <Icon.book />,
+  icon: <Icon icon='staticIllustrationBook' />,
   items: [
     {
       to: '/instructions/get-started/',

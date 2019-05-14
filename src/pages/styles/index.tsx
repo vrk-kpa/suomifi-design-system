@@ -10,16 +10,18 @@ import ComponentDescription from '../../components/ComponentDescription'
 import ComponentExample from '../../components/ComponentExample'
 import { Example } from '../../examples/styles'
 import { getExample, CodeExampleData } from '../../components/CodeExampleUtil'
+import { Heading } from '../../components/ResponsiveComponents'
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
   <NamespacesConsumer ns={['styles']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <h1>{t('title')}</h1>
+        <Heading.h1>{t('title')}</Heading.h1>
 
         <ComponentDescription
           title={t('usage.title')}
+          titleLevel={2}
           description={t('usage.description')}
           exampleFirst
           showOnlyCodeString

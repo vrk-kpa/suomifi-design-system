@@ -19,13 +19,13 @@ class MainMenuItem extends Component<Props> {
             height: '3.2rem',
             paddingLeft: '1rem',
             paddingRight: '1rem',
-            borderBottom: '1px solid #EEF5FF',
-            color: suomifiTheme.colors.secondaryColor,
+            borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
+            color: suomifiTheme.colors.highlightBase,
             textDecoration: 'none',
             whiteSpace: 'nowrap',
             '&:hover': {
-              background: '#EEF5FF',
-              color: suomifiTheme.colors.brandColor
+              background: suomifiTheme.colors.depthSecondary,
+              color: suomifiTheme.colors.brandBase
             }
           },
           `&:focus { ${suomifiTheme.outlines.basic} }`
@@ -42,8 +42,8 @@ class MainMenuItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: '#EEF5FF',
-                color: suomifiTheme.colors.brandColor,
+                background: suomifiTheme.colors.depthSecondary,
+                color: suomifiTheme.colors.brandBase,
                 fontWeight: 600
               }
             }

@@ -2,17 +2,23 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { Link, withI18next } from '@wapps/gatsby-plugin-i18next'
+import { suomifiTheme } from 'suomifi-ui-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { Heading } from '../components/ResponsiveComponents'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['404']}>
     {t => (
       <Layout>
         <SEO title={t('title')} />
-        <h1>{t('intro')}</h1>
-        <Link to='/'>{t('common:back.to.frontpage')}</Link>
+        <Heading.h1>{t('intro')}</Heading.h1>
+        <p>
+          <Link style={{ color: suomifiTheme.colors.highlightBase }} to='/'>
+            {t('common:back.to.frontpage')}
+          </Link>
+        </p>
       </Layout>
     )}
   </NamespacesConsumer>

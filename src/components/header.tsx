@@ -40,10 +40,10 @@ const Header = (): JSX.Element => (
               `&:focus { ${suomifiTheme.outlines.basic} }`
             ]}>
             <Desktop>
-              <SuomiFiWithText style={{ height: '32px' }} />
+              <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
             </Desktop>
             <MobileOrTablet>
-              <SuomiFi style={{ height: '32px' }} />
+              <SuomiFi style={{ width: '32px', height: '32px' }} />
             </MobileOrTablet>
           </Link>
           <div style={{ flex: 1, position: 'relative', marginLeft: '.5rem' }}>

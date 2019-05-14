@@ -66,13 +66,7 @@ const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
           margin: '2rem 0'
         }}>
         {blocks.map((block, index) => (
-          <article
-            key={index}
-            style={{
-              flex: '1 1 30%',
-              minWidth: '20rem',
-              margin: '1rem'
-            }}>
+          <article key={index} style={{ flex: '1 1 30%', margin: '1rem' }}>
             <Block block={block} />
           </article>
         ))}

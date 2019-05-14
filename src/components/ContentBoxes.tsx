@@ -15,7 +15,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           justifyContent: 'center',
           width: '70px',
           height: '70px',
-          marginBottom: '1rem',
+          marginBottom: '2rem',
           border: `1px solid ${suomifiTheme.colors.depthLight13}`,
           borderRadius: '50%',
           fontSize: '50px'
@@ -52,7 +52,7 @@ const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
   <section
     style={{
       background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
-      padding: '2rem 1rem',
+      padding: '2rem 1rem 0',
       display: 'flex',
       justifyContent: 'center'
     }}>
@@ -63,7 +63,7 @@ const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'space-evenly',
-          margin: '1rem 0'
+          margin: '2rem 0'
         }}>
         {blocks.map((block, index) => (
           <article

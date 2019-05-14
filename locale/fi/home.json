@@ -58,7 +58,7 @@
       "mainTitle": "Miksi kannattaa hyödyntää Suomi.fi Design Systemiä?",
       "blocks": [
         {
-          "icon": "icon",
+          "icon": "staticIllustrationRocket",
           "title": "Nopeus",
           "paragraphs": [
             { "text": "Valmiilla käyttöliittymäkomponenteilla palvelusi suunnittelu- ja kehittämistyö on nopeaa ja kustannustehokasta. Voit hyödyntää jo olemassa olevia komponentteja ja tarvittaessa muokata niitä vain ulkoasullisesti vastaamaan omien palveluidesi visuaalista ulkoasua." },
@@ -72,7 +72,7 @@
           ]
         },
         {
-          "icon": "icon",
+          "icon": "staticIllustrationHands",
           "title": "Yhteiskehittäminen ja saavutettavuus",
           "paragraphs": [
             { "text": "Suomi.fi-palveluiden kehittämisessä on panostettu käytettävyyteen sekä kaikkia käyttäjäryhmiä palvelevaan saavutettavuuteen. Suomi.fi Design Systemin avulla kaikki pääsevät hyödyntämään jo tehtyä työtä sekä osallistumaan yhteiskehittämiseen. Yhdessä saadaan aikaan enemmän, pienemmilläkin resursseilla." },
@@ -86,7 +86,7 @@
           ]
         },
         {
-          "icon": "icon",
+          "icon": "staticIllustrationOrganisation",
           "title": "Johdonmukainen käyttäjäkokemus",
           "paragraphs": [
             { "text": "Suomi.fi Design Systemin käyttäminen mahdollistaa organisaatio- ja palvelurajojen ylittävän yhdenmukaisen käyttäjäkokemuksen tarjoamisen julkishallinnon verkkopalveluiden käyttäjille. Käytettävyyden, saavutettavuuden ja visuaalisuuden tuoma yhtenäisyys tuottaa käyttäjille intuitiivisen sekä luotettavan kuvan organisaatioden digitaalisista palveluista." },

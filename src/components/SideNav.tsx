@@ -111,7 +111,6 @@ class SideNav extends Component<Props, State> {
       <div
         style={{
           padding: '.5rem',
-          fontWeight: 600,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -119,10 +118,10 @@ class SideNav extends Component<Props, State> {
           textShadow: 'none'
         }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ width: '40px', height: '40px' }}>
-            {sideNavData.icon}
-          </div>
-          <Text style={{ marginLeft: '.5rem' }}>{sideNavData.title}</Text>
+          <div style={{ fontSize: '40px' }}>{sideNavData.icon}</div>
+          <Text.bold style={{ marginLeft: '.5rem' }}>
+            {sideNavData.title}
+          </Text.bold>
         </div>
         <MobileOrTablet>
           <div

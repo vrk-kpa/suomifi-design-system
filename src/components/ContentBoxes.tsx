@@ -1,8 +1,7 @@
 import React from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
-import { IconKeys } from 'suomifi-icons'
+import { suomifiTheme, Icon } from 'suomifi-ui-components'
+import { StaticIconKeys } from 'suomifi-icons'
 
-import { Icon } from '../components/Icon' // TODO use icons from lib when available
 import { Heading, Text } from './ResponsiveComponents'
 import Link from './Link'
 
@@ -18,11 +17,10 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           height: '70px',
           marginBottom: '1rem',
           border: `1px solid ${suomifiTheme.colors.depthLight13}`,
-          borderRadius: '50%'
+          borderRadius: '50%',
+          fontSize: '50px'
         }}>
-        <div aria-hidden style={{ width: '50px', height: '50px' }}>
-          <Icon.solution />
-        </div>
+        <Icon icon={block.icon} />
       </div>
     )}
     {!!block.title && <Heading.h2>{block.title}</Heading.h2>}
@@ -90,7 +88,7 @@ interface Props {
 }
 
 interface Block {
-  icon?: IconKeys
+  icon?: StaticIconKeys
   title: string
   paragraphs: Paragraph[]
   links: Link[]

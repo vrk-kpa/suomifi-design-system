@@ -54,12 +54,9 @@ const MainContent = ({
   children: ReactNode
   style?: CSSProperties
 }): JSX.Element => (
-  <div style={{ margin: hasFrame ? '2rem 1rem' : 0, ...style }}>
-    <main id='main'>{children}</main>
-    <footer style={{ margin: '1rem 0 0 0' }}>
-      © {new Date().getFullYear()}
-    </footer>
-  </div>
+  <main id='main' style={{ margin: hasFrame ? '2rem 1rem' : 0, ...style }}>
+    {children}
+  </main>
 )
 
 const Layout = ({
@@ -84,7 +81,8 @@ const Layout = ({
         <div
           style={{
             background: suomifiTheme.colors.depthLight30,
-            paddingTop: hasFrame ? '1rem' : 0
+            paddingTop: hasFrame ? '1rem' : 0,
+            paddingBottom: '3rem'
           }}>
           <Desktop>
             <div
@@ -95,7 +93,7 @@ const Layout = ({
               }}>
               <div
                 style={{
-                  margin: hasFrame ? '1rem 2rem 2rem 2rem' : 0,
+                  margin: hasFrame ? '1rem 2rem 0 2rem' : 0,
                   width: '100%',
                   maxWidth: hasFrame ? 1140 : 'initial',
                   display: 'flex',
@@ -125,7 +123,7 @@ const Layout = ({
             />
             <div
               style={{
-                margin: hasFrame ? '1rem 2rem' : 0,
+                margin: hasFrame ? '1rem 2rem 0 2rem' : 0,
                 background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
                 border: hasFrame
                   ? `1px solid ${suomifiTheme.colors.depthLight13}`

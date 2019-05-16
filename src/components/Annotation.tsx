@@ -33,20 +33,24 @@ const Content = ({
     }}>
     <div
       style={{
-        flex: center ? '1 1 auto' : '1 1 70%',
+        flex: center ? '1 1 100%' : '1 1 70%',
         textAlign: center ? 'center' : 'initial'
       }}>
       <Heading.h2 color='whiteBase' style={{ textAlign: 'inherit' }}>
         {title}
       </Heading.h2>
       {description && (
-        <p style={{ margin: '1rem 2rem 0 0' }}>
+        <p style={{ margin: '1rem 0 0 0' }}>
           <Text color='whiteBase'>{description}</Text>
         </p>
       )}
     </div>
     {link && !!link.text && !!link.url && (
-      <div style={{ margin: '1.5rem 0 1rem 0' }}>
+      <div
+        style={{
+          margin: '1.5rem 0 1rem 0',
+          marginLeft: center ? 0 : '2rem'
+        }}>
         <Link text={link.text} url={link.url} style={linkStyle} />
       </div>
     )}

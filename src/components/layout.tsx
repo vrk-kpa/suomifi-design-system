@@ -8,6 +8,7 @@ import { SideNavData } from './SideNavData'
 import { Desktop } from './Responsive'
 import BypassLink from './BypassLink'
 import MainContent from './MainContent'
+import Footer from './Footer'
 import mainNavData from '../config/mainnav'
 
 import '@csstools/normalize.css'
@@ -48,6 +49,7 @@ const Layout = ({
         <MainContent sideNavData={sideNavData} hasFrame={hasFrame}>
           {children}
         </MainContent>
+        <Footer />
       </div>
     )}
   </NamespacesConsumer>

@@ -50,7 +50,6 @@ module.exports = {
           families: ['Source Sans Pro:400,600']
         }
       }
-    },
-    `gatsby-plugin-svgr`
+    }
   ]
 }

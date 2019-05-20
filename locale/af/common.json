@@ -1,0 +1,28 @@
+{
+  "site.title": "site.title",
+  "site.description": "site.description",
+  "site.author": "site.author",
+  "header.title": "header.title",
+  "header.stamp": "header.stamp",
+  "to.main.content": "to.main.content",
+  "to.homepage": "to.homepage",
+  "to.sidenav": "to.sidenav",
+  "open.navigation.main": "open.navigation.main",
+  "navigation.main": "navigation.main",
+  "back.to.frontpage": "back.to.frontpage",
+  "component.versions": "component.versions",
+  "component.usage": "component.usage",
+  "react": "react",
+  "footer.description": "footer.description",
+  "footer.links": [
+    { "text": "link.text", "url": "link.url" },
+    { "text": "link.text", "url": "link.url" },
+    { "text": "link.text", "url": "link.url" }
+  ],
+  "footer.social.title": "footer.social.title",
+  "footer.social.description": "footer.social.description",
+  "slack.link.text": "slack.link.text",
+  "slack.link.url": "slack.link.url",
+  "github.link.text": "github.link.text",
+  "github.link.url": "github.link.url"
+}

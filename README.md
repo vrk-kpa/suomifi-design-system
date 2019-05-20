@@ -63,6 +63,10 @@ TBD
     - `onlytranslated` so that those will contain empty value instead of source placeholder value
     - or `onlyreviewed` if review practice is in use.
 
+- Notes
+
+  - With `pull` and `push` commands it might be useful to use `-r <resources>` to avoid accidental changes for any other resources.
+
 ### Deployment updates
 
 - Transifex configuration `.tx/config` and all resources `locale/<lang>/` are stored in version control

@@ -1,5 +1,5 @@
 import { Button as OrigButton, Panel as OrigPanel } from 'suomifi-ui-components'
-import { addDisplayNames } from './ExampleComponentUtil'
+import { addDisplayNames } from 'components/ExampleComponentUtil'
 
 export class Button extends OrigButton {}
 addDisplayNames(Button, OrigButton, 'Button')

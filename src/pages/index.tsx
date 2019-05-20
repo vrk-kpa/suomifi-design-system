@@ -3,10 +3,10 @@ import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import ContentBoxes from '../components/ContentBoxes'
-import Annotation from '../components/Annotation'
+import Layout from 'components/layout'
+import SEO from 'components/seo'
+import ContentBoxes from 'components/ContentBoxes'
+import Annotation from 'components/Annotation'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['home']}>

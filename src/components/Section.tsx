@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { Image } from './Image'
-import { Heading, Text } from './ResponsiveComponents'
-import Link from './Link'
+import { Image } from 'components/Image'
+import { Heading, Text } from 'components/ResponsiveComponents'
+import Link from 'components/Link'
 
 const Section = ({
   mainTitle,

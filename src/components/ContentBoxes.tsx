@@ -2,8 +2,8 @@ import React from 'react'
 import { suomifiTheme, Icon } from 'suomifi-ui-components'
 import { StaticIconKeys } from 'suomifi-icons'
 
-import { Heading, Text } from './ResponsiveComponents'
-import Link from './Link'
+import { Heading, Text } from 'components/ResponsiveComponents'
+import Link from 'components/Link'
 
 const Block = ({ block }: { block: Block }): JSX.Element => (
   <>

@@ -3,12 +3,12 @@ import React from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import LanguageSwitcher from './LanguageSwitcher'
-import { ReactComponent as SuomiFi } from '../staticIcons/SuomiFi.svg'
-import { ReactComponent as SuomiFiWithText } from '../staticIcons/SuomiFiWithText.svg'
-import MainMenu from './MainMenu'
-import { Desktop, MobileOrTablet } from './Responsive'
-import mainNavData from '../config/mainnav'
+import LanguageSwitcher from 'components/LanguageSwitcher'
+import { ReactComponent as SuomiFi } from 'staticIcons/SuomiFi.svg'
+import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg'
+import MainMenu from 'components/MainMenu'
+import { Desktop, MobileOrTablet } from 'components/Responsive'
+import mainNavData from 'config/mainnav'
 
 const Header = (): JSX.Element => (
   <NamespacesConsumer>

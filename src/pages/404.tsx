@@ -3,10 +3,10 @@ import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import { Heading, Text } from '../components/ResponsiveComponents'
-import Link from '../components/Link'
+import Layout from 'components/layout'
+import SEO from 'components/seo'
+import { Heading, Text } from 'components/ResponsiveComponents'
+import Link from 'components/Link'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['404']}>

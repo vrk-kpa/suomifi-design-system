@@ -50,6 +50,19 @@ module.exports = {
           families: ['Source Sans Pro:400,600']
         }
       }
+    },
+    {
+      resolve: 'gatsby-plugin-module-resolver',
+      options: {
+        root: './src',
+        aliases: {
+          components: './components',
+          icons: './icons',
+          staticIcons: './staticIcons',
+          config: './config',
+          examples: './examples'
+        }
+      }
     }
   ]
 }

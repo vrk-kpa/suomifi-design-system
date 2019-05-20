@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { Icon, suomifiTheme, Button } from 'suomifi-ui-components'
 import { NamespacesConsumer } from 'react-i18next'
 
-import MainMenuItem from './MainMenuItem'
-import { MainNavData } from './MainNavData'
-import LanguageSwitcher from './LanguageSwitcher'
+import MainMenuItem from 'components/MainMenuItem'
+import { MainNavData } from 'components/MainNavData'
+import LanguageSwitcher from 'components/LanguageSwitcher'
 
 class MainMenu extends Component<Props, State> {
   public constructor(props: Props) {

@@ -3,9 +3,9 @@ import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
 
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
-import sideNavData from '../../config/sidenav/instructions'
+import Layout from 'components/layout'
+import SEO from 'components/seo'
+import sideNavData from 'config/sidenav/instructions'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['instructions']}>

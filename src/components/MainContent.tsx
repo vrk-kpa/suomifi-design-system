@@ -2,9 +2,9 @@ import React, { ReactNode, CSSProperties } from 'react'
 import { suomifiTheme } from 'suomifi-ui-components'
 import { Location } from '@reach/router'
 
-import SideNavComp from './SideNav'
-import { SideNavData } from './SideNavData'
-import { Desktop, Mobile, Tablet } from './Responsive'
+import SideNavComp from 'components/SideNav'
+import { SideNavData } from 'components/SideNavData'
+import { Desktop, Mobile, Tablet } from 'components/Responsive'
 
 const SideNav = ({
   sideNavData,

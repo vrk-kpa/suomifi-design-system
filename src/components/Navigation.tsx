@@ -2,8 +2,8 @@ import React from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import NavItem from './NavItem'
-import { MainNavData } from './MainNavData'
+import NavItem from 'components/NavItem'
+import { MainNavData } from 'components/MainNavData'
 
 const Navigation = ({ mainNavData }: Props): JSX.Element => (
   <NamespacesConsumer>

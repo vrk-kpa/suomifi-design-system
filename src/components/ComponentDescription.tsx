@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { Panel, suomifiTheme } from 'suomifi-ui-components'
-import ComponentCode from './ComponentCode'
-import { Heading, Text } from './ResponsiveComponents'
+import ComponentCode from 'components/ComponentCode'
+import { Heading, Text } from 'components/ResponsiveComponents'
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
   React.Children.map(children, child =>

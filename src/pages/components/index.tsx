@@ -3,14 +3,14 @@ import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
 
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
-import sideNavData from '../../config/sidenav/components'
-import ComponentDescription from '../../components/ComponentDescription'
-import ComponentExample from '../../components/ComponentExample'
-import { Example } from '../../examples/components'
-import { getExample, CodeExampleData } from '../../components/CodeExampleUtil'
-import { Heading } from '../../components/ResponsiveComponents'
+import Layout from 'components/layout'
+import SEO from 'components/seo'
+import sideNavData from 'config/sidenav/components'
+import ComponentDescription from 'components/ComponentDescription'
+import ComponentExample from 'components/ComponentExample'
+import { Example } from 'examples/components'
+import { getExample, CodeExampleData } from 'components/CodeExampleUtil'
+import { Heading } from 'components/ResponsiveComponents'
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
   <NamespacesConsumer ns={['components']}>

@@ -3,9 +3,9 @@ import { suomifiTheme, Icon, Button, Text } from 'suomifi-ui-components'
 import { withPrefix } from 'gatsby'
 import { WindowLocation } from '@reach/router'
 
-import SideNavItem from './SideNavItem'
-import { SideNavData, SideNavItemData } from './SideNavData'
-import { Desktop, MobileOrTablet } from './Responsive'
+import SideNavItem from 'components/SideNavItem'
+import { SideNavData, SideNavItemData } from 'components/SideNavData'
+import { Desktop, MobileOrTablet } from 'components/Responsive'
 
 class SideNav extends Component<Props, State> {
   private SIDENAVSTATE_KEY: string = 'sideNavState'

@@ -3,12 +3,12 @@ import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next'
 
-import { Text } from './ResponsiveComponents'
-import Link from './Link'
-import { Desktop, Mobile, Tablet } from './Responsive'
-import { ReactComponent as SuomiFiWithText } from '../staticIcons/SuomiFiWithText.svg'
-import { ReactComponent as Slack } from '../icons/slack.svg'
-import { ReactComponent as Github } from '../icons/github.svg'
+import { Text } from 'components/ResponsiveComponents'
+import Link from 'components/Link'
+import { Desktop, Mobile, Tablet } from 'components/Responsive'
+import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg'
+import { ReactComponent as Slack } from 'icons/slack.svg'
+import { ReactComponent as Github } from 'icons/github.svg'
 
 const Content = ({
   header,

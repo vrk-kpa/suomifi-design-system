@@ -1,7 +1,7 @@
 import React, { ComponentClass } from 'react'
 import { Heading as OrigHeading, Text as OrigText } from 'suomifi-ui-components'
 
-import { Desktop, MobileOrTablet } from './Responsive'
+import { Desktop, MobileOrTablet } from 'components/Responsive'
 
 const getResponsiveComponent = (Comp: Function): Function => {
   const Wrapper = (props): JSX.Element => (

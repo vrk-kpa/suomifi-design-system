@@ -4,14 +4,14 @@ import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import Layout from '../../components/layout'
-import SEO from '../../components/seo'
-import ComponentDescription from '../../components/ComponentDescription'
-import sideNavData from '../../config/sidenav/styles'
-import NoteBox from '../../components/NoteBox'
-import Section from '../../components/Section'
-import ComponentExample from '../../components/ComponentExample'
-import { Heading, Text } from '../../components/ResponsiveComponents'
+import Layout from 'components/layout'
+import SEO from 'components/seo'
+import ComponentDescription from 'components/ComponentDescription'
+import sideNavData from 'config/sidenav/styles'
+import NoteBox from 'components/NoteBox'
+import Section from 'components/Section'
+import ComponentExample from 'components/ComponentExample'
+import { Heading, Text } from 'components/ResponsiveComponents'
 
 const colors = Object.keys(suomifiTheme.colors)
   .map(key => ({

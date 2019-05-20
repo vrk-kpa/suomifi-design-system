@@ -1,9 +1,9 @@
 import React from 'react'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import { Heading, Text } from './ResponsiveComponents'
-import Link from './Link'
-import { Desktop, Mobile, Tablet } from './Responsive'
+import { Heading, Text } from 'components/ResponsiveComponents'
+import Link from 'components/Link'
+import { Desktop, Mobile, Tablet } from 'components/Responsive'
 
 const linkStyle = {
   padding: '.5rem 1rem',

@@ -2,7 +2,7 @@ import React, { CSSProperties, ReactNode } from 'react'
 import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import { Text } from './ResponsiveComponents'
+import { Text } from 'components/ResponsiveComponents'
 
 // TODO: use suomifi-link when it supports passing components, so can be used with gatsby-link
 const linkStyle = [

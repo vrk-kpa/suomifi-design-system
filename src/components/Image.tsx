@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { GatsbyImageProps } from 'gatsby-image'
 
-import ButtonsMobileFI from './images/ButtonsMobileFI'
+import ButtonsMobileFI from 'components/images/ButtonsMobileFI'
 
 interface Props extends GatsbyImageProps {
   imgKey: string

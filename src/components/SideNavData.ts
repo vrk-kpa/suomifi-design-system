@@ -8,6 +8,7 @@ export interface SideNavData {
 
 export interface SideNavItemData {
   to: string
+  showAsTo?: string
   label: string
   children?: SideNavItemData[]
 }

@@ -12,7 +12,15 @@ class SideNavItem extends Component<Props> {
   private isFrontPage = (to: string): boolean => to && to === '/'
 
   public render(): JSX.Element {
-    const { to, children, hasChildren, isOpen, level } = this.props
+    const {
+      to,
+      showAsTo,
+      isPartialMatch,
+      children,
+      hasChildren,
+      isOpen,
+      level
+    } = this.props
 
     return (
       <Link
@@ -36,7 +44,11 @@ class SideNavItem extends Component<Props> {
           `&:focus { ${suomifiTheme.outlines.basic} }`
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
-          if (!this.isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
+          const isPartiallyCurrentPage = showAsTo
+            ? isPartialMatch(showAsTo)
+            : isPartiallyCurrent
+
+          if (!this.isFrontPage(to) && isPartiallyCurrentPage && !isCurrent) {
             return {
               style: {
                 fontWeight: 600
@@ -68,7 +80,6 @@ class SideNavItem extends Component<Props> {
               minWidth: '40px',
               minHeight: '40px',
               fontSize: '16px',
-              /* stylelint-disable-next-line function-name-case */
               transform: isOpen(to) ? 'rotate(.5turn)' : 'none'
             }}
             onClick={this.toggleOpen}>
@@ -82,6 +93,9 @@ class SideNavItem extends Component<Props> {
 
 interface Props {
   to: string
+  // use only when partially current match need to differ from actual path
+  showAsTo?: string
+  isPartialMatch?: Function
   children: ReactNode
   hasChildren: boolean
   isOpen: Function

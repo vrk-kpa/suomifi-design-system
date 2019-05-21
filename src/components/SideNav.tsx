@@ -73,9 +73,14 @@ class SideNav extends Component<Props, State> {
     return match && match[1]
   }
 
-  private iscurrent = (to: string): boolean => {
+  private isPartiallyCurrent = (to: string): boolean => {
     const currentPath = this.getCurrentPath()
     return to && currentPath && currentPath.startsWith(to.substr(1))
+  }
+
+  private isCurrent = (to: string): boolean => {
+    const currentPath = this.getCurrentPath()
+    return to && currentPath && currentPath === to.substr(1)
   }
 
   private isNavOpen = (): boolean => this.state.isNavOpen
@@ -134,7 +139,6 @@ class SideNav extends Component<Props, State> {
               width: '16px',
               height: '16px',
               fontSize: '16px',
-              /* stylelint-disable-next-line function-name-case */
               transform: this.isNavOpen() ? 'rotate(.5turn)' : 'none'
             }}>
             <Icon icon='chevronDown' color={suomifiTheme.colors.depthDark27} />
@@ -158,13 +162,18 @@ class SideNav extends Component<Props, State> {
           style={{
             borderLeft:
               level === 1
-                ? this.iscurrent(item.to)
+                ? (item.showAsTo
+                  ? this.isCurrent(item.to) ||
+                    this.isPartiallyCurrent(item.showAsTo)
+                  : this.isPartiallyCurrent(item.to))
                   ? `4px solid ${suomifiTheme.colors.brandBase}`
                   : '4px solid transparent'
                 : 'none'
           }}>
           <SideNavItem
             to={item.to}
+            showAsTo={item.showAsTo}
+            isPartialMatch={this.isPartiallyCurrent}
             hasChildren={this.hasChildren(item)}
             isOpen={this.isOpen}
             handleToggle={this.toggleOpen}

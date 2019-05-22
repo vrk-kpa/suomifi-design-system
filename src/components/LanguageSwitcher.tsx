@@ -3,9 +3,6 @@ import { Language } from '@wapps/gatsby-plugin-i18next'
 import { NamespacesConsumer } from 'react-i18next'
 import { Menu, MenuItem, Button } from 'suomifi-ui-components'
 
-// cleanup detected language at least for now when availableLngs evolves
-typeof window !== 'undefined' && window.localStorage.removeItem('@wappsLng')
-
 const hasMultipleLanguages = ({ availableLngs }: Props): boolean =>
   !!availableLngs && availableLngs.length > 1
 

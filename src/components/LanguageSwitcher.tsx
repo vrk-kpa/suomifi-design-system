@@ -3,6 +3,12 @@ import { Language } from '@wapps/gatsby-plugin-i18next'
 import { NamespacesConsumer } from 'react-i18next'
 import { Menu, MenuItem, Button } from 'suomifi-ui-components'
 
+// cleanup detected language at least for now when availableLngs evolves
+typeof window !== 'undefined' && window.localStorage.removeItem('@wappsLng')
+
+const hasMultipleLanguages = ({ availableLngs }: Props): boolean =>
+  !!availableLngs && availableLngs.length > 1
+
 const MenuSwitcher = ({
   changeLng,
   lng,
@@ -11,15 +17,14 @@ const MenuSwitcher = ({
   <NamespacesConsumer ns={['language']}>
     {t => (
       <Menu.language name={t(`${lng}.short`)} aria-label={t('menu.label')}>
-        {availableLngs &&
-          availableLngs.map(value => (
-            <MenuItem.language
-              key={value}
-              onSelect={() => changeLng(value)}
-              selected={value === lng}>
-              {t(`${value}.long`)}
-            </MenuItem.language>
-          ))}
+        {availableLngs.map(value => (
+          <MenuItem.language
+            key={value}
+            onSelect={() => changeLng(value)}
+            selected={value === lng}>
+            {t(`${value}.long`)}
+          </MenuItem.language>
+        ))}
       </Menu.language>
     )}
   </NamespacesConsumer>
@@ -42,18 +47,17 @@ const ListSwitcher = ({
           alignItems: 'center',
           justifyContent: 'center'
         }}>
-        {availableLngs &&
-          availableLngs.map(value => (
-            <li key={value}>
-              <Button.secondaryNoborder
-                onClick={() => changeLng(value)}
-                disabled={value === lng}
-                lang={value}
-                style={{ textTransform: 'uppercase' }}>
-                {t(`${value}.medium`)}
-              </Button.secondaryNoborder>
-            </li>
-          ))}
+        {availableLngs.map(value => (
+          <li key={value}>
+            <Button.secondaryNoborder
+              onClick={() => changeLng(value)}
+              disabled={value === lng}
+              lang={value}
+              style={{ textTransform: 'uppercase' }}>
+              {t(`${value}.medium`)}
+            </Button.secondaryNoborder>
+          </li>
+        ))}
       </ul>
     )}
   </NamespacesConsumer>
@@ -73,11 +77,12 @@ const LanguageSwitcher = (
 ): JSX.Element => (
   <Language>
     {(lngProps: Props) =>
-      variant === 'menu' ? (
+      hasMultipleLanguages({ ...lngProps }) &&
+      (variant === 'menu' ? (
         <MenuSwitcher {...props} {...lngProps} />
       ) : variant === 'list' ? (
         <ListSwitcher {...props} {...lngProps} />
-      ) : null
+      ) : null)
     }
   </Language>
 )

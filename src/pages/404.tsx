@@ -17,9 +17,9 @@ const Page = (): JSX.Element => (
         <p>
           <Text>{t('intro')}</Text>
         </p>
-        <p>
+        <div>
           <Link text={t('common:to.homepage')} url='/' />
-        </p>
+        </div>
       </Layout>
     )}
   </NamespacesConsumer>

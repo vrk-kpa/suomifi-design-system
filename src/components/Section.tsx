@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Image } from 'components/Image'
 import { Heading, Text } from 'components/ResponsiveComponents'
-import Link from 'components/Link'
+import LinkList from 'components/LinkList'
 
 const Section = ({
   mainTitle,
@@ -30,18 +30,9 @@ const Section = ({
         )}
       </div>
     ))}
-    <ul>
-      {links.map(
-        (link, index) =>
-          link &&
-          !!link.text &&
-          !!link.url && (
-            <li key={index}>
-              <Link text={link.text} url={link.url} />
-            </li>
-          )
-      )}
-    </ul>
+    <p>
+      <LinkList links={links} />
+    </p>
   </section>
 )
 

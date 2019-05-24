@@ -34,9 +34,9 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
         )}
       </div>
     ))}
-    <p>
+    <div style={{ margin: '1rem 0' }}>
       <LinkList links={block.links} />
-    </p>
+    </div>
   </>
 )
 

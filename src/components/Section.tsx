@@ -32,14 +32,14 @@ const Section = ({
             <Text>{paragraph.text}</Text>
           </p>
         )}
-        <p>
+        <div style={{ margin: '1rem 0' }}>
           <BulletedList items={paragraph.listItems} />
-        </p>
+        </div>
       </div>
     ))}
-    <p>
+    <div style={{ margin: '1rem 0' }}>
       <LinkList links={links} />
-    </p>
+    </div>
   </section>
 )
 

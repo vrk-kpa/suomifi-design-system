@@ -4,6 +4,7 @@ import { StaticIconKeys } from 'suomifi-icons'
 
 import { Heading, Text } from 'components/ResponsiveComponents'
 import LinkList from 'components/LinkList'
+import { Props as LinkProps } from 'components/Link'
 
 const Block = ({ block }: { block: Block }): JSX.Element => (
   <>
@@ -76,12 +77,7 @@ interface Block {
   icon?: StaticIconKeys
   title: string
   paragraphs: Paragraph[]
-  links: Link[]
-}
-
-interface Link {
-  text: string
-  url: string
+  links: LinkProps[]
 }
 
 interface Paragraph {

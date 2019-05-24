@@ -3,6 +3,7 @@ import React from 'react'
 import { Image } from 'components/Image'
 import { Heading, Text } from 'components/ResponsiveComponents'
 import LinkList from 'components/LinkList'
+import { Props as LinkProps } from 'components/Link'
 import BulletedList, {
   ListItem as BulletedListItem
 } from 'components/BulletedList'
@@ -46,12 +47,7 @@ interface Props {
   mainTitle?: string
   title?: string
   paragraphs: Paragraph[]
-  links: Link[]
-}
-
-interface Link {
-  text: string
-  url: string
+  links: LinkProps[]
 }
 
 interface Paragraph {

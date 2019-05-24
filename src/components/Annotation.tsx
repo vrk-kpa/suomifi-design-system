@@ -2,7 +2,7 @@ import React from 'react'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import { Heading, Text } from 'components/ResponsiveComponents'
-import Link from 'components/Link'
+import Link, { Props as LinkProps } from 'components/Link'
 import { Desktop, Mobile, Tablet } from 'components/Responsive'
 
 const linkStyle = {
@@ -81,12 +81,7 @@ const Annotation = ({ title, description, link }: Props): JSX.Element => (
 interface Props {
   title: string
   description: string
-  link?: Link
-}
-
-interface Link {
-  text: string
-  url: string
+  link?: LinkProps
 }
 
 export default Annotation

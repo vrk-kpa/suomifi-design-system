@@ -4,7 +4,8 @@ import { suomifiTheme } from 'suomifi-ui-components'
 import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next'
 
 import { Text } from 'components/ResponsiveComponents'
-import Link from 'components/Link'
+import Link, { Props as LinkProps } from 'components/Link'
+
 import { Desktop, Mobile, Tablet } from 'components/Responsive'
 import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg'
 import { ReactComponent as Slack } from 'icons/slack.svg'
@@ -179,18 +180,12 @@ interface Props {
   header?: ReactNode
   title?: string
   description: string
-  links?: Link[]
+  links?: LinkProps[]
   background?: string
   textColor?: keyof typeof suomifiTheme.colors
   linkColor?: keyof typeof suomifiTheme.colors
   center?: boolean
   wrapAll?: boolean
-}
-
-interface Link {
-  icon?: ReactNode
-  text: string
-  url: string
 }
 
 export default Footer

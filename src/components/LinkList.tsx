@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Link from 'components/Link'
+import Link, { Props as LinkProps } from 'components/Link'
 
-const isValid = (link: Link): boolean => link && !!link.text && !!link.url
+const isValid = (link: LinkProps): boolean => link && !!link.text && !!link.url
 
-const getValidOnly = (links: Link[]): Link[] => links.filter(isValid)
+const getValidOnly = (links: LinkProps[]): LinkProps[] => links.filter(isValid)
 
 const LinkList = ({ links = [] }: Props): JSX.Element => {
   links = getValidOnly(links)
@@ -30,12 +30,7 @@ const LinkList = ({ links = [] }: Props): JSX.Element => {
 }
 
 interface Props {
-  links: Link[]
-}
-
-interface Link {
-  text: string
-  url: string
+  links: LinkProps[]
 }
 
 export default LinkList

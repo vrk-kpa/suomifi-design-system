@@ -37,7 +37,7 @@ const Section = ({
         </div>
       </div>
     ))}
-    <div style={{ margin: '1rem 0' }}>
+    <div style={{ margin: '1rem 0 2rem' }}>
       <LinkList links={links} />
     </div>
   </section>

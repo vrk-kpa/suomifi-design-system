@@ -18,7 +18,7 @@ const LinkList = ({ links = [] }: Props): JSX.Element => {
     return (
       <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
         {links.map((link, index) => (
-          <li key={index}>
+          <li key={index} style={{ margin: '1rem 0' }}>
             <Link text={link.text} url={link.url} />
           </li>
         ))}

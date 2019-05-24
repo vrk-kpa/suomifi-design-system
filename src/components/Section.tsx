@@ -3,6 +3,9 @@ import React from 'react'
 import { Image } from 'components/Image'
 import { Heading, Text } from 'components/ResponsiveComponents'
 import LinkList from 'components/LinkList'
+import BulletedList, {
+  ListItem as BulletedListItem
+} from 'components/BulletedList'
 
 const Section = ({
   mainTitle,
@@ -28,6 +31,9 @@ const Section = ({
             <Text>{paragraph.text}</Text>
           </p>
         )}
+        <p>
+          <BulletedList items={paragraph.listItems} />
+        </p>
       </div>
     ))}
     <p>
@@ -52,6 +58,7 @@ interface Paragraph {
   'image.key': string
   'image.alt': string
   text: string
+  listItems: BulletedListItem[]
 }
 
 export default Section

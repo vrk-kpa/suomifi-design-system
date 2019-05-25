@@ -26,6 +26,7 @@ const Page = (): JSX.Element => (
         {t('sections').map((section, index) => (
           <ContentBoxes
             key={index}
+            wrapAll
             mainTitle={section.mainTitle}
             blocks={section.blocks}
           />

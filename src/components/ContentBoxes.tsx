@@ -40,7 +40,12 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
   </>
 )
 
-const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
+const ContentBoxes = ({
+  wrapAll,
+  hasFrame,
+  mainTitle,
+  blocks
+}: Props): JSX.Element => (
   <section
     style={{
       background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
@@ -54,20 +59,32 @@ const ContentBoxes = ({ hasFrame, mainTitle, blocks }: Props): JSX.Element => (
         style={{
           display: 'flex',
           flexWrap: 'wrap',
-          justifyContent: 'space-evenly',
+          justifyContent: 'center',
           margin: '2rem 0'
         }}>
-        {blocks.map((block, index) => (
-          <article key={index} style={{ flex: '1 1 30%', margin: '1rem' }}>
-            <Block block={block} />
-          </article>
-        ))}
+        <div
+          style={{
+            width: '100%',
+            maxWidth: wrapAll ? 800 : 1140,
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: wrapAll ? 'center' : 'space-evenly'
+          }}>
+          {blocks.map((block, index) => (
+            <article
+              key={index}
+              style={{ flex: wrapAll ? '100%' : '30%', margin: '1rem' }}>
+              <Block block={block} />
+            </article>
+          ))}
+        </div>
       </div>
     </div>
   </section>
 )
 
 interface Props {
+  wrapAll?: boolean
   hasFrame?: boolean
   mainTitle: string
   blocks: Block[]

@@ -64,6 +64,7 @@ const ContentBoxes = ({
         }}>
         <div
           style={{
+            width: '100%',
             maxWidth: wrapAll ? 800 : 1140,
             display: 'flex',
             flexWrap: 'wrap',

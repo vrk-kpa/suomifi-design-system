@@ -1,5 +1,7 @@
 {
   "title": "Etusivu",
+  "intro.title": "Suomi.fi Design System",
+  "intro.description": "Suomi.fi Design System -kirjaston avulla Väestörekisterikeskus tukee ja edistää saavutettavien julkisten verkkopalvelujen rakentamista.",
   "note.title": "Tämä on Alphaversio",
   "note.description": "Osallistu uuden palvelun kehittämiseen! Anna palautetta ja liity keskusteluun Suomidigin kehittäjät #designsystem Slack- kanavalla.",
   "note.link.text": "Liity Slack -kanavalle",

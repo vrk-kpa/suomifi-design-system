@@ -7,12 +7,15 @@ import Layout from 'components/layout'
 import SEO from 'components/seo'
 import ContentBoxes from 'components/ContentBoxes'
 import Annotation from 'components/Annotation'
+import Hero from 'components/Hero'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['home']}>
     {t => (
       <Layout hasFrame={false}>
         <SEO title={t('title')} />
+
+        <Hero title={t('intro.title')} description={t('intro.description')} />
 
         <Annotation
           title={t('note.title')}

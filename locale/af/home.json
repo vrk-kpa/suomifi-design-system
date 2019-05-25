@@ -1,5 +1,7 @@
 {
   "title": "title",
+  "intro.title": "intro.title",
+  "intro.description": "intro.description",
   "note.title": "note.title",
   "note.description": "note.description",
   "note.link.text": "note.link.text",

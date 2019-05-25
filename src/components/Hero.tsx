@@ -3,6 +3,7 @@ import { suomifiTheme } from 'suomifi-ui-components'
 
 import { Heading, Text } from 'components/ResponsiveComponents'
 import { Desktop, Mobile, Tablet } from 'components/Responsive'
+import { ReactComponent as SuomiFi } from 'icons/suomifi.svg'
 
 const Content = ({
   title,
@@ -24,9 +25,17 @@ const Content = ({
         maxWidth: 900,
         display: 'flex',
         flexWrap: 'wrap',
-        alignItems: 'center',
         justifyContent: center ? 'center' : 'space-between'
       }}>
+      <div>
+        <SuomiFi
+          style={{
+            fill: suomifiTheme.colors.whiteBase,
+            fontSize: compact ? '30px' : '63px',
+            margin: center ? '0 0 1rem' : '0 2rem 1rem 0'
+          }}
+        />
+      </div>
       <div
         style={{
           flex: center ? '1 1 100%' : '1 1 70%',

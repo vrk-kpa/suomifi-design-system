@@ -64,3 +64,24 @@ source_file = locale/af/language.json
 source_lang = af
 type = KEYVALUEJSON
 
+[suomifi-design-system.info-json]
+file_filter = locale/<lang>/info.json
+minimum_perc = 0
+source_file = locale/af/info.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.accessibility-json]
+file_filter = locale/<lang>/accessibility.json
+minimum_perc = 0
+source_file = locale/af/accessibility.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.designers-json]
+file_filter = locale/<lang>/designers.json
+minimum_perc = 0
+source_file = locale/af/designers.json
+source_lang = af
+type = KEYVALUEJSON
+

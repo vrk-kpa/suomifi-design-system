@@ -4,6 +4,7 @@ import { suomifiTheme } from 'suomifi-ui-components'
 import { Heading, Text } from 'components/ResponsiveComponents'
 import { Desktop, Mobile, Tablet } from 'components/Responsive'
 import { ReactComponent as SuomiFi } from 'icons/suomifi.svg'
+import Background from './Hero_bg.png'
 
 const Content = ({
   title,
@@ -15,7 +16,10 @@ const Content = ({
     style={{
       margin: 0,
       padding: compact ? '2rem 1rem 5rem 1rem' : '6rem 1rem 8rem 1rem',
-      background: suomifiTheme.colors.brandBase,
+      background: `no-repeat center url(${Background}) ${
+        suomifiTheme.colors.brandBase
+      }`,
+      backgroundSize: compact ? 'auto' : 'cover',
       display: 'flex',
       justifyContent: 'center'
     }}>

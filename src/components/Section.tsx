@@ -2,7 +2,11 @@ import React from 'react'
 
 import { Image } from 'components/Image'
 import { Heading, Text } from 'components/ResponsiveComponents'
-import Link from 'components/Link'
+import LinkList from 'components/LinkList'
+import { Props as LinkProps } from 'components/Link'
+import BulletedList, {
+  ListItem as BulletedListItem
+} from 'components/BulletedList'
 
 const Section = ({
   mainTitle,
@@ -28,20 +32,14 @@ const Section = ({
             <Text>{paragraph.text}</Text>
           </p>
         )}
+        <div style={{ margin: '1rem 0' }}>
+          <BulletedList items={paragraph.listItems} />
+        </div>
       </div>
     ))}
-    <ul>
-      {links.map(
-        (link, index) =>
-          link &&
-          !!link.text &&
-          !!link.url && (
-            <li key={index}>
-              <Link text={link.text} url={link.url} />
-            </li>
-          )
-      )}
-    </ul>
+    <div style={{ margin: '1rem 0 2rem' }}>
+      <LinkList links={links} />
+    </div>
   </section>
 )
 
@@ -49,18 +47,14 @@ interface Props {
   mainTitle?: string
   title?: string
   paragraphs: Paragraph[]
-  links: Link[]
-}
-
-interface Link {
-  text: string
-  url: string
+  links: LinkProps[]
 }
 
 interface Paragraph {
   'image.key': string
   'image.alt': string
   text: string
+  listItems: BulletedListItem[]
 }
 
 export default Section

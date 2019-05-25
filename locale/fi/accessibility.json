@@ -1,0 +1,235 @@
+{
+  "title": "Saavutettavuus",
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Saavutettavuuden huomioiminen digitaalisissa palveluissa tarkoittaa sitä, että palvelut, verkkosivustot ja mobiilisovellukset sekä niiden sisällöt ovat ymmärrettäviä ja kenen tahansa käytettävissä. Verkkopalvelujen saavutettavuus koskee EU:n saavutettavuusdirektiivin ja sitä toteuttavan lain (Laki digitaalisten palvelujen tarjoamisesta) myötä koko julkista sektoria sekä osaa järjestöistä ja yrityksistä.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "", "url": "" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Suomi.fi Design Systemin käyttämien saavutettavuusvaatimusten pohjana toimii World Wide Web Consortiumin laatima Verkkosisällön saavutettavuusohjeistus WCAG 2.1 (tasot A ja AA). Käyttöliittymäkomponenttien saavutettavuuden varmistetaan sekä Suomi.fi-palvelukehityksen yhteydessä, että saavutettavuusasiantuntijoiden tekemien validointien avulla.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "WCAG 2.1", "url": "https://www.w3.org/TR/WCAG21/" },
+        { "text": "Laki digitaalisten palvelujen tarjoamisesta", "url": "https://www.finlex.fi/fi/laki/alkup/2019/20190306" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Onko sinulla huomautettavaa tai kysyttävää tietyn komponentin saavutettavuudesta?",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "Anna palautetta suomidigi.fi kehittäjät slack-kanavalla", "url": "https://suomidigi-kehittajat.slack.com" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "Kehitys- ja suunnittelutyön saavutettavuutta tukevia asioita",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "Saavutettavuus on laaja käsite ja vaatii myös paljon muuta kuin teknisesti saavutettavia käyttöliittymäkomponentteja. Vaikka komponentit itsessään olisivat saavutettavia, se ei kuitenkaan takaa sitä, että lopullinen palvelusi tai tuotteesi on saavutettava. Suomi.fi Design Systemin komponenttikohtainen käyttöohjeistus auttaa sinua käyttämään käyttöliittymäkomponentteja oikein. Muista kuitenkin, että verkkopalvelun lopullinen kokonaisvaltainen saavutettavuus vaatii aina erillistä työtä, harkintaa ja testausta." },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Teknisen saavutettavuuden lisäksi tulee muistaa sisältöjen saavutettavuus (kognitiivinen saavutettavuus). Kognitiivinen saavutettavuus käsittää yhteisesti palvelussa esitettävän tiedon ja tavat, miten tieto esitetään käyttäjälle ymmärrettävästi. Sisältöjen ymmärrettävyys ja selkeys helpottavat jokaisen asiointia palvelussa. Koska kognitiivisia ominaisuuksia on vaikeampi mitata kuin teknisiä ominaisuuksia, on mahdollista, että digitaalinen palvelu ei ole helppokäyttöinen, vaikka palvelu täyttäisikin saavutettavuusvaatimukset.",
+          "listItems": [
+            { "text": "Ymmärrettävyys tarkoittaa sitä, että palvelun sisällöt ja toiminta on esitetty käyttäjän ymmärtämällä tavalla. Käyttäjä siis käsittää, mitä hän on palvelussa tekemässä." },
+            { "text": "Palvelun sisältöjen osalta ymmärrettävyys tarkoittaa kielelliseen ilmaisuun liittyviä keinoja, joilla palvelun sisältö on käyttäjälle yksiselitteistä. Ymmärrettävyys tarkoittaa myös käyttöliittymässä käytettävien tekstien, erilaisten toimintojen ja palvelun logiikan kokonaisuutta. Tekstimuotoisen sisällön osalta ymmärrettävyys tarkoittaa lähtökohtaisesti selkeän ja hyvän yleiskielen käyttämistä." },
+            { "text": "Visuaalinen saavutettavuus tarkoittaa sitä, että palvelun käyttökokemus on johdonmukainen, käyttöliittymä on selkeä ja visuaalinen hierarkia tukee palvelun käytettävyyttä." },
+            { "text": "Digitaalisen palvelun toiminnan ja logiikan osalta ymmärrettävyys tarkoittaa erilaisia varmistuskeinoja, joilla käyttäjälle kerrotaan missä vaiheessa palvelua hän on ja miten hän pääsee liikkumaan palvelussa. Käyttäjälle myös kerrotaan eri toimintojen vaikutuksista ja hän ymmärtää eri toimintojen seuraukset ja yhtymäkohdat." },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Lisää tietoa saavutettavuuden toteuttamisesta",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "Verkkopalvelujen saavutettavuus (Aluehallintovirasto)", "url": "https://www.avi.fi/web/avi/saavutettavuus" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "", "url": "" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    }
+  ]
+}

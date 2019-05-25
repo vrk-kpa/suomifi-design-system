@@ -42,7 +42,7 @@ const Link = ({ icon, text, url, style }: Props): JSX.Element => (
   </div>
 )
 
-interface Props {
+export interface Props {
   icon?: ReactNode
   text: string
   url: string

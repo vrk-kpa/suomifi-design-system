@@ -5,14 +5,25 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next'
 
 import Layout from 'components/layout'
 import SEO from 'components/seo'
-import sideNavData from 'config/sidenav/instructions'
+import sideNavData from 'config/sidenav/info'
+import { Heading } from 'components/ResponsiveComponents'
+import Section from 'components/Section'
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['instructions.suomifi-theme.accessibility']}>
+  <NamespacesConsumer ns={['accessibility']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <h1>{t('title')}</h1>
+        <Heading.h1>{t('title')}</Heading.h1>
+
+        {t('sections').map((section, index) => (
+          <Section
+            key={index}
+            mainTitle={section.title}
+            paragraphs={section.paragraphs}
+            links={section.links}
+          />
+        ))}
       </Layout>
     )}
   </NamespacesConsumer>

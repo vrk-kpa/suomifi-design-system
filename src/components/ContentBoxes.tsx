@@ -3,7 +3,8 @@ import { suomifiTheme, Icon } from 'suomifi-ui-components'
 import { StaticIconKeys } from 'suomifi-icons'
 
 import { Heading, Text } from 'components/ResponsiveComponents'
-import Link from 'components/Link'
+import LinkList from 'components/LinkList'
+import { Props as LinkProps } from 'components/Link'
 
 const Block = ({ block }: { block: Block }): JSX.Element => (
   <>
@@ -33,18 +34,9 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
         )}
       </div>
     ))}
-    <ul style={{ margin: 0, padding: 0, width: '100%', listStyle: 'none' }}>
-      {block.links.map(
-        (link, index) =>
-          link &&
-          !!link.text &&
-          !!link.url && (
-            <li key={index}>
-              <Link text={link.text} url={link.url} />
-            </li>
-          )
-      )}
-    </ul>
+    <div style={{ margin: '1rem 0' }}>
+      <LinkList links={block.links} />
+    </div>
   </>
 )
 
@@ -85,12 +77,7 @@ interface Block {
   icon?: StaticIconKeys
   title: string
   paragraphs: Paragraph[]
-  links: Link[]
-}
-
-interface Link {
-  text: string
-  url: string
+  links: LinkProps[]
 }
 
 interface Paragraph {

@@ -47,7 +47,7 @@
             { "text": "" }
           ],
           "links": [
-            { "text": "Yhteystiedot", "url": "/instructions" },
+            { "text": "Yhteystiedot", "url": "/info" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]
@@ -82,7 +82,7 @@
             { "text": "" }
           ],
           "links": [
-            { "text": "Lue lisää yhteiskehittämisestä", "url": "/instructions" },
+            { "text": "Lue lisää yhteiskehittämisestä", "url": "/info" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]

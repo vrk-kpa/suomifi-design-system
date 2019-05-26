@@ -48,7 +48,8 @@ jobs:
   deploy-prod:
     executor: build-executor
     steps:
-      - run: echo TODO
+      - build
+      - run: yarn deploy:prod
 
 workflows:
   version: 2

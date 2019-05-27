@@ -1,0 +1,236 @@
+{
+  "title": "Taustatietoa",
+  "info.title": "Yleistä Design Systemistä",
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Kirjastosta löydät saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasua vastaamaan oman palvelusi visuaalista ilmettä.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "", "url": "" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "Versiointi ja päivitys",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelukehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti. Komponenttikirjasto noudattaa Semanttisen versioinnin (Semantic Versioning) säännöstöä. Julkaisutiedot (Release Notes) käyttöliittymäkomponenttikirjaston muutoksista ja julkaistavista versioista löytyy git repositorystä.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "Release Notes Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components/releases" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "Yhteiskehittäminen",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Suomi.fi Design Systemin tarkempi yhteiskehittämisen malli ja sen dokumentointi on parhaillaan työn alla, mutta voit jo nyt osallistua kehitystyöhön Gihubin kautta. Design Systemin käyttäjänä voit myös kontribuoida Open Source -hengen mukaisesti Githubin työkaluja käyttämällä. Käyttöliittymäkomponenttien kirjasto on MIT-lisenssin alainen, eli kuka tahansa saa käyttää, hyödyntää ja jakaa sisältöä mihin tahansa käyttötarkoitukseen. Käyttäjien on mahdollista toivoa uusia ominaisuuksia, raportoida bugeista sekä tuottaa uutta sisältöä. Muutokset ja lisäykset kannattaa tehdä oman projektin sijaan yhteisesti käytettyyn kirjastoon, jolloin tehdystä työsä hyötyvät kaikki käyttäjät.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "Ota yhteyttä",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Onko sinulla ehdotuksia, palautetta tai ideoita? Puuttuuko jokin tarvitsemasi komponentti? Suomi.fi Design Systemiä koskeva keskustelu käydään ensisijaisesti suomidigin Slack-kehittäjäyhteisössä #designsystem kanavalla. Kehittäjäyhteisö, UI kirjaston käyttäjät löytyvät Githubista.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "Suomidigi.fi kehittäjät Slack-kanava", "url": "https://suomidigi-kehittajat.slack.com" },
+        { "text": "Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "", "url": "" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    }
+  ]
+}

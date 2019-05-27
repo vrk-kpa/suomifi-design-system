@@ -1,0 +1,27 @@
+{
+  "site.title": "Suomi.fi Design System",
+  "site.description": "Suomi.fi Design System",
+  "site.author": "Suomi.fi",
+  "header.title": "Design System",
+  "header.stamp": "Alpha",
+  "to.main.content": "Siirry pääsisältöön",
+  "to.homepage": "Siirry etusivulle",
+  "to.sidenav": "Siirry sivunavigaatioon",
+  "open.navigation.main": "Avaa tai sulje päävalikko",
+  "navigation.main": "Päänavigaatio",
+  "component.versions": "Komponentin versiot",
+  "component.usage": "Komponentin käyttö",
+  "react": "React",
+  "footer.description": "Suomi.fi Design System -kirjaston kehityksestä vastaa Väestorekisterikeskus.",
+  "footer.links": [
+    { "text": "", "url": "" },
+    { "text": "Suomidigi.fi", "url": "https://suomidigi.fi/" },
+    { "text": "", "url": "" }
+  ],
+  "footer.social.title": "Osallistu keskusteluun ja kehitystyöhön",
+  "footer.social.description": "Onko sinulla kysymyksiä, ehdotuksia ideoita? Jaetaan parhaita käytäntöjä ja ratkaistaan haasteita yhdessä!",
+  "slack.link.text": "suomidigi-kehittajat",
+  "slack.link.url": "https://suomidigi-kehittajat.slack.com",
+  "github.link.text": "suomifi-ui-components",
+  "github.link.url": "https://github.com/vrk-kpa/suomifi-ui-components"
+}

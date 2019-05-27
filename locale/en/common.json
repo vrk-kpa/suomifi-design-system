@@ -1,0 +1,27 @@
+{
+  "site.title": "Suomi.fi Design System",
+  "site.description": "Suomi.fi Design System",
+  "site.author": "Suomi.fi",
+  "header.title": "Design System",
+  "header.stamp": "Alpha",
+  "to.main.content": "Skip to main content",
+  "to.homepage": "Go to home page",
+  "to.sidenav": "Go to side navigation",
+  "open.navigation.main": "Open or close main menu",
+  "navigation.main": "Main navigation",
+  "component.versions": "Component versions",
+  "component.usage": "Component usage",
+  "react": "React",
+  "footer.description": "",
+  "footer.links": [
+    { "text": "", "url": "" },
+    { "text": "", "url": "" },
+    { "text": "", "url": "" }
+  ],
+  "footer.social.title": "",
+  "footer.social.description": "",
+  "slack.link.text": "",
+  "slack.link.url": "",
+  "github.link.text": "",
+  "github.link.url": ""
+}

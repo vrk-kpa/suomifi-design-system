@@ -1,0 +1,107 @@
+{
+  "title": "Etusivu",
+  "intro.title": "Suomi.fi Design System",
+  "intro.description": "Suomi.fi Design System -kirjaston avulla Väestörekisterikeskus tukee ja edistää saavutettavien julkisten verkkopalvelujen rakentamista.",
+  "note.title": "Tämä on Alphaversio",
+  "note.description": "Osallistu uuden palvelun kehittämiseen! Anna palautetta ja liity keskusteluun Suomidigin kehittäjät #designsystem Slack- kanavalla.",
+  "note.link.text": "Liity Slack -kanavalle",
+  "note.link.url": "https://suomidigi-kehittajat.slack.com/",
+  "sections": [
+    {
+      "mainTitle": "Mistä Suomi.fi Design System -kirjasto koostuu",
+      "blocks": [
+        {
+          "icon": "",
+          "title": "UI Komponentti kirjasto",
+          "paragraphs": [
+            { "text": "Kirjastosta löydät yleisimpiä saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasuja siten, että ne vastaavat oman palvelusi visuaalista ilmettä." },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "Tutustu UI komponentteihin", "url": "/components" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        },
+        {
+          "icon": "",
+          "title": "Suunnitteluaineistot",
+          "paragraphs": [
+            { "text": "Tulemme jatkossa julkaisemaan Design System -sivustolla myös käyttöliittymien suunnitteluaineiston Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit." },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "", "url": "" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        },
+        {
+          "icon": "",
+          "title": "Design System sivusto",
+          "paragraphs": [
+            { "text": "Sivustolta löydät käyttöliittymäkomponenttien esikatselumallit, koodiesimerkit, käyttöohjeistukset ja dokumentaation. Julkaistut sisällöt luovat yhteisen alustan tukemaan sekä palveluiden suunnittelu-, että kehitystyötä. Design System -sivustoa kehittää ja ylläpitää Väestörekisterikeskus." },
+            { "text": "Onko sinulla ehdotuksia tai muuta palautetta?" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "Yhteystiedot", "url": "/info" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        }
+      ]
+    }
+  ],
+  "framedSections": [
+    {
+      "mainTitle": "Miksi kannattaa hyödyntää Suomi.fi Design Systemiä?",
+      "blocks": [
+        {
+          "icon": "staticIllustrationRocket",
+          "title": "Nopeus",
+          "paragraphs": [
+            { "text": "Valmiilla käyttöliittymäkomponenteilla palvelusi suunnittelu- ja kehittämistyö on nopeaa ja kustannustehokasta. Voit hyödyntää jo olemassa olevia komponentteja ja tarvittaessa muokata niitä vain ulkoasullisesti vastaamaan omien palveluidesi visuaalista ulkoasua." },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "Näin pääset alkuun", "url": "/components" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        },
+        {
+          "icon": "staticIllustrationHands",
+          "title": "Yhteiskehittäminen ja saavutettavuus",
+          "paragraphs": [
+            { "text": "Suomi.fi-palveluiden kehittämisessä on panostettu käytettävyyteen sekä kaikkia käyttäjäryhmiä palvelevaan saavutettavuuteen. Suomi.fi Design Systemin avulla kaikki pääsevät hyödyntämään jo tehtyä työtä sekä osallistumaan yhteiskehittämiseen. Yhdessä saadaan aikaan enemmän, pienemmilläkin resursseilla." },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "Lue lisää yhteiskehittämisestä", "url": "/info" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        },
+        {
+          "icon": "staticIllustrationOrganisation",
+          "title": "Johdonmukainen käyttäjäkokemus",
+          "paragraphs": [
+            { "text": "Suomi.fi Design Systemin käyttäminen mahdollistaa organisaatio- ja palvelurajojen ylittävän yhdenmukaisen käyttäjäkokemuksen tarjoamisen julkishallinnon verkkopalveluiden käyttäjille. Käytettävyyden, saavutettavuuden ja visuaalisuuden tuoma yhtenäisyys tuottaa käyttäjille intuitiivisen sekä luotettavan kuvan organisaatioden digitaalisista palveluista." },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "", "url": "" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        }
+      ]
+    }
+  ]
+}

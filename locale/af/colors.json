@@ -1,0 +1,153 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "usage": "usage",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item"
+  ],
+  "sections": [
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    }
+  ],
+  "primaryColors.title": "primaryColors.title",
+  "textColors.title": "textColors.title",
+  "textColors.description": "textColors.description",
+  "brandColors.title": "brandColors.title",
+  "brandColors.description": "brandColors.description",
+  "controlColors.title": "controlColors.title",
+  "controlColors.description": "controlColors.description",
+  "iconColors.title": "iconColors.title",
+  "iconColors.description": "iconColors.description",
+  "backgroundColors.title": "backgroundColors.title",
+  "backgroundColors.description": "backgroundColors.description",
+  "trafficColors.title": "trafficColors.title",
+  "trafficColors.description": "trafficColors.description",
+  "accentColors.title": "accentColors.title",
+  "accentColors.description": "accentColors.description",
+  "blackBase.label": "blackBase.label",
+  "depthBase.label": "depthBase.label",
+  "depthLight30.label": "depthLight30.label",
+  "depthLight13.label": "depthLight13.label",
+  "depthDark27.label": "depthDark27.label",
+  "depthSecondary.label": "depthSecondary.label",
+  "brandBase.label": "brandBase.label",
+  "highlightBase.label": "highlightBase.label",
+  "highlightLight4.label": "highlightLight4.label",
+  "highlightLight45.label": "highlightLight45.label",
+  "highlightLight50.label": "highlightLight50.label",
+  "highlightLight53.label": "highlightLight53.label",
+  "highlightDark9.label": "highlightDark9.label",
+  "accentBase.label": "accentBase.label",
+  "accentSecondary.label": "accentSecondary.label",
+  "accentSecondaryLight40.label": "accentSecondaryLight40.label",
+  "successBase.label": "successBase.label",
+  "warningBase.label": "warningBase.label",
+  "warningLight47.label": "warningLight47.label",
+  "alertBase.label": "alertBase.label",
+  "whiteBase.label": "whiteBase.label"
+}

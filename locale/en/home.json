@@ -1,0 +1,107 @@
+{
+  "title": "Home",
+  "intro.title": "",
+  "intro.description": "",
+  "note.title": "",
+  "note.description": "",
+  "note.link.text": "",
+  "note.link.url": "",
+  "sections": [
+    {
+      "mainTitle": "",
+      "blocks": [
+        {
+          "icon": "",
+          "title": "",
+          "paragraphs": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "", "url": "" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        },
+        {
+          "icon": "",
+          "title": "",
+          "paragraphs": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "", "url": "" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        },
+        {
+          "icon": "",
+          "title": "",
+          "paragraphs": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "", "url": "" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        }
+      ]
+    }
+  ],
+  "framedSections": [
+    {
+      "mainTitle": "",
+      "blocks": [
+        {
+          "icon": "",
+          "title": "",
+          "paragraphs": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "", "url": "" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        },
+        {
+          "icon": "",
+          "title": "",
+          "paragraphs": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "", "url": "" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        },
+        {
+          "icon": "",
+          "title": "",
+          "paragraphs": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ],
+          "links": [
+            { "text": "", "url": "" },
+            { "text": "", "url": "" },
+            { "text": "", "url": "" }
+          ]
+        }
+      ]
+    }
+  ]
+}

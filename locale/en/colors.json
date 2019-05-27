@@ -1,0 +1,153 @@
+{
+  "title": "",
+  "intro": "",
+  "usage": "",
+  "note.title": "",
+  "note.items": [
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "primaryColors.title": "",
+  "textColors.title": "",
+  "textColors.description": "",
+  "brandColors.title": "",
+  "brandColors.description": "",
+  "controlColors.title": "",
+  "controlColors.description": "",
+  "iconColors.title": "",
+  "iconColors.description": "",
+  "backgroundColors.title": "",
+  "backgroundColors.description": "",
+  "trafficColors.title": "",
+  "trafficColors.description": "",
+  "accentColors.title": "",
+  "accentColors.description": "",
+  "blackBase.label": "",
+  "depthBase.label": "",
+  "depthLight30.label": "",
+  "depthLight13.label": "",
+  "depthDark27.label": "",
+  "depthSecondary.label": "",
+  "brandBase.label": "",
+  "highlightBase.label": "",
+  "highlightLight4.label": "",
+  "highlightLight45.label": "",
+  "highlightLight50.label": "",
+  "highlightLight53.label": "",
+  "highlightDark9.label": "",
+  "accentBase.label": "",
+  "accentSecondary.label": "",
+  "accentSecondaryLight40.label": "",
+  "successBase.label": "",
+  "warningBase.label": "",
+  "warningLight47.label": "",
+  "alertBase.label": "",
+  "whiteBase.label": ""
+}

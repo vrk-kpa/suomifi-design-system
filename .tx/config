@@ -1,0 +1,87 @@
+[main]
+host = https://www.transifex.com
+
+[suomifi-design-system.button-json]
+file_filter = locale/<lang>/button.json
+minimum_perc = 0
+source_file = locale/af/button.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.colors-json]
+file_filter = locale/<lang>/colors.json
+minimum_perc = 0
+source_file = locale/af/colors.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.styles-json]
+file_filter = locale/<lang>/styles.json
+minimum_perc = 0
+source_file = locale/af/styles.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.components-json]
+file_filter = locale/<lang>/components.json
+minimum_perc = 0
+source_file = locale/af/components.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.panel-json]
+file_filter = locale/<lang>/panel.json
+minimum_perc = 0
+source_file = locale/af/panel.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.home-json]
+file_filter = locale/<lang>/home.json
+minimum_perc = 0
+source_file = locale/af/home.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.common-json]
+file_filter = locale/<lang>/common.json
+minimum_perc = 0
+source_file = locale/af/common.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.404-json]
+file_filter = locale/<lang>/404.json
+minimum_perc = 0
+source_file = locale/af/404.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.language-json]
+file_filter = locale/<lang>/language.json
+minimum_perc = 0
+source_file = locale/af/language.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.info-json]
+file_filter = locale/<lang>/info.json
+minimum_perc = 0
+source_file = locale/af/info.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.accessibility-json]
+file_filter = locale/<lang>/accessibility.json
+minimum_perc = 0
+source_file = locale/af/accessibility.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.designers-json]
+file_filter = locale/<lang>/designers.json
+minimum_perc = 0
+source_file = locale/af/designers.json
+source_lang = af
+type = KEYVALUEJSON
+

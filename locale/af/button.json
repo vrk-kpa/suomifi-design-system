@@ -1,0 +1,145 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item"
+  ],
+  "sections": [
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        },
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    }
+  ],
+  "fullWidth.title": "fullWidth.title",
+  "fullWidth.description": "fullWidth.description",
+  "primary.title": "primary.title",
+  "primary.description": "primary.description",
+  "primary.label": "primary.label",
+  "primary.labelDisabled": "primary.labelDisabled",
+  "secondary.title": "secondary.title",
+  "secondary.description": "secondary.description",
+  "secondary.label": "secondary.label",
+  "secondary.labelDisabled": "secondary.labelDisabled",
+  "tertiary.title": "tertiary.title",
+  "tertiary.description": "tertiary.description",
+  "tertiary.label": "tertiary.label",
+  "tertiary.labelDisabled": "tertiary.labelDisabled",
+  "secondaryNoborder.title": "secondaryNoborder.title",
+  "secondaryNoborder.description": "secondaryNoborder.description",
+  "secondaryNoborder.label": "secondaryNoborder.label",
+  "secondaryNoborder.labelDisabled": "secondaryNoborder.labelDisabled",
+  "negative.title": "negative.title",
+  "negative.description": "negative.description",
+  "negative.label": "negative.label",
+  "negative.labelDisabled": "negative.labelDisabled",
+  "withIcon.title": "withIcon.title",
+  "withIcon.description": "withIcon.description",
+  "disabled.title": "disabled.title",
+  "disabled.description": "disabled.description",
+  "button.labelIcon": "button.labelIcon",
+  "button.labelIconRight": "button.labelIconRight",
+  "button.labelClicked": "button.labelClicked"
+}

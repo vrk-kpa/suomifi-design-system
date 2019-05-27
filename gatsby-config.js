@@ -63,6 +63,14 @@ module.exports = {
           examples: './examples'
         }
       }
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'designsystem.suomi.fi',
+        protocol: 'https',
+        hostname: 'designsystem.suomi.fi'
+      }
     }
   ]
 }

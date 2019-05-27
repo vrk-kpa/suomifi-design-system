@@ -49,7 +49,8 @@
     "format:style": "prettier-stylelint --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "validate": "yarn run lint:code && yarn run lint:style && yarn run test",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "deploy": "yarn build --prefix-paths && gh-pages -d public -m \"[skip ci] Updates\""
+    "deploy": "yarn build --prefix-paths && gh-pages -d public -m \"[skip ci] Updates\"",
+    "deploy:prod": "yarn build && gatsby-plugin-s3 deploy --yes"
   },
   "husky": {
     "hooks": {
@@ -87,6 +88,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-standard": "^4.0.0",
+    "gatsby-plugin-s3": "^0.2.5",
     "gh-pages": "^2.0.1",
     "husky": "^2.1.0",
     "lint-staged": "^8.1.1",

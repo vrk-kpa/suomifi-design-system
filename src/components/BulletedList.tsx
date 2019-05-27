@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Text } from 'components/ResponsiveComponents'
+
 const isValid = (item: ListItem): boolean => item && !!item.text
 
 const getValidOnly = (items: ListItem[]): ListItem[] => items.filter(isValid)
@@ -11,7 +13,9 @@ const BulletedList = ({ items = [] }: Props): JSX.Element => {
     return (
       <ul>
         {items.map((item, index) => (
-          <li key={index}>{item.text}</li>
+          <li key={index}>
+            <Text>{item.text}</Text>
+          </li>
         ))}
       </ul>
     )

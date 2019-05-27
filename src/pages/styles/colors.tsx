@@ -110,7 +110,7 @@ const Page = (): JSX.Element => (
         <Heading.h1>{t('title')}</Heading.h1>
 
         <p>
-          <Text>{t('intro')}</Text>
+          <Text.lead>{t('intro')}</Text.lead>
         </p>
 
         <Heading.h2>{t('usage')}</Heading.h2>

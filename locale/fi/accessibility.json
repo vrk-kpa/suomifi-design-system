@@ -1,5 +1,6 @@
 {
   "title": "Saavutettavuus",
+  "intro": "Saavutettavuuden huomioiminen digitaalisissa palveluissa tarkoittaa sitä, että palvelut, verkkosivustot ja mobiilisovellukset sekä niiden sisällöt ovat ymmärrettäviä ja kenen tahansa käytettävissä. Verkkopalvelujen saavutettavuus koskee EU:n saavutettavuusdirektiivin ja sitä toteuttavan lain (Laki digitaalisten palvelujen tarjoamisesta) myötä koko julkista sektoria sekä osaa järjestöistä ja yrityksistä.",
   "sections": [
     {
       "title": "",
@@ -7,7 +8,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Saavutettavuuden huomioiminen digitaalisissa palveluissa tarkoittaa sitä, että palvelut, verkkosivustot ja mobiilisovellukset sekä niiden sisällöt ovat ymmärrettäviä ja kenen tahansa käytettävissä. Verkkopalvelujen saavutettavuus koskee EU:n saavutettavuusdirektiivin ja sitä toteuttavan lain (Laki digitaalisten palvelujen tarjoamisesta) myötä koko julkista sektoria sekä osaa järjestöistä ja yrityksistä.",
+          "text": "",
           "listItems": [
             { "text": "" },
             { "text": "" },

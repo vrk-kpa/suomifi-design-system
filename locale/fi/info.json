@@ -1,6 +1,7 @@
 {
   "title": "Taustatietoa",
   "info.title": "Yleistä Design Systemistä",
+  "intro": "Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Kirjastosta löydät saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasua vastaamaan oman palvelusi visuaalista ilmettä.",
   "sections": [
     {
       "title": "",
@@ -8,7 +9,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Kirjastosta löydät saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasua vastaamaan oman palvelusi visuaalista ilmettä.",
+          "text": "",
           "listItems": [
             { "text": "" },
             { "text": "" },

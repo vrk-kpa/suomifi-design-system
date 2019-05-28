@@ -1,7 +1,6 @@
 {
   "title": "title",
   "intro": "intro",
-  "usage": "usage",
   "note.title": "note.title",
   "note.items": [
     "note.item",
@@ -114,7 +113,6 @@
       ]
     }
   ],
-  "primaryColors.title": "primaryColors.title",
   "textColors.title": "textColors.title",
   "textColors.description": "textColors.description",
   "brandColors.title": "brandColors.title",

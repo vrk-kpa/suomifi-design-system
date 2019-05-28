@@ -12,8 +12,8 @@ const getWithoutWrappers = (children: any): ReactNode[] =>
   )
 
 const ComponentDescription = ({
+  mainTitle,
   title,
-  titleLevel,
   description,
   exampleFirst,
   noCode,
@@ -30,11 +30,8 @@ const ComponentDescription = ({
           borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`
         }}>
         <div style={{ margin: '1.5rem 0' }}>
-          {titleLevel === 2 ? (
-            <Heading.h2>{title}</Heading.h2>
-          ) : (
-            <Heading.h3>{title}</Heading.h3>
-          )}
+          {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
+          {!!title && <Heading.h3>{title}</Heading.h3>}
         </div>
         {!!exampleFirst && <div>{children}</div>}
         <div>
@@ -70,8 +67,8 @@ const ComponentDescription = ({
 )
 
 interface Props {
-  title: string
-  titleLevel?: number
+  mainTitle?: string
+  title?: string
   description: string
   exampleFirst: boolean
   noCode?: boolean

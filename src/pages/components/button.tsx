@@ -96,21 +96,19 @@ const Page = (): JSX.Element => (
           <Text.lead>{t('intro')}</Text.lead>
         </p>
 
-        <Heading.h2>{t('common:component.usage')}</Heading.h2>
-
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
         {t('sections').map((section, index) => (
           <Section
             key={index}
-            title={section.title}
+            mainTitle={section.title}
             paragraphs={section.paragraphs}
             links={section.links}
           />
         ))}
 
         <ComponentDescription
-          title={t('fullWidth.title')}
+          mainTitle={t('fullWidth.title')}
           description={t('fullWidth.description')}
           exampleFirst>
           <div
@@ -138,12 +136,10 @@ const Page = (): JSX.Element => (
           </div>
         </ComponentDescription>
 
-        <Heading.h2>{t('common:component.versions')}</Heading.h2>
-
         {components.map(item => (
           <ComponentDescription
             key={item.id}
-            title={t(`${item.id}.title`)}
+            mainTitle={t(`${item.id}.title`)}
             description={t(`${item.id}.description`)}
             exampleFirst>
             <ComponentExample
@@ -172,7 +168,7 @@ const Page = (): JSX.Element => (
         ))}
 
         <ComponentDescription
-          title={t('withIcon.title')}
+          mainTitle={t('withIcon.title')}
           description={t('withIcon.description')}
           exampleFirst>
           {components.map(item => (
@@ -211,7 +207,7 @@ const Page = (): JSX.Element => (
         </ComponentDescription>
 
         <ComponentDescription
-          title={t('disabled.title')}
+          mainTitle={t('disabled.title')}
           description={t('disabled.description')}
           exampleFirst>
           <ComponentExample>

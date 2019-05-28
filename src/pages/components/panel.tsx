@@ -25,21 +25,19 @@ const Page = (): JSX.Element => (
           <Text.lead>{t('intro')}</Text.lead>
         </p>
 
-        <Heading.h2>{t('common:component.usage')}</Heading.h2>
-
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
         {t('sections').map((section, index) => (
           <Section
             key={index}
-            title={section.title}
+            mainTitle={section.title}
             paragraphs={section.paragraphs}
             links={section.links}
           />
         ))}
 
         <ComponentDescription
-          title={t('nopadding.title')}
+          mainTitle={t('nopadding.title')}
           description={t('nopadding.description')}
           exampleFirst={false}
           filterProps={[]}>
@@ -58,10 +56,8 @@ const Page = (): JSX.Element => (
           </ComponentExample>
         </ComponentDescription>
 
-        <Heading.h2>{t('common:component.versions')}</Heading.h2>
-
         <ComponentDescription
-          title={t('single.title')}
+          mainTitle={t('single.title')}
           description={t('single.description')}
           exampleFirst>
           <ComponentExample style={{ padding: '1.3rem' }}>
@@ -72,7 +68,7 @@ const Page = (): JSX.Element => (
         </ComponentDescription>
 
         <ComponentDescription
-          title={t('group.title')}
+          mainTitle={t('group.title')}
           description={t('group.description')}
           exampleFirst>
           <ComponentExample style={{ padding: '1.3rem' }}>

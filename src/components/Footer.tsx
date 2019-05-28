@@ -43,9 +43,9 @@ const Content = ({
       )}
       <div style={{ flex: '40%', textAlign: center ? 'center' : 'initial' }}>
         <p style={{ margin: '1rem 0' }}>
-          <Text.lead color={textColor} style={{ textAlign: 'inherit' }}>
+          <Text.bold color={textColor} style={{ textAlign: 'inherit' }}>
             {title}
-          </Text.lead>
+          </Text.bold>
         </p>
         <p style={{ margin: '1rem 0' }}>
           <Text color={textColor}>{description}</Text>

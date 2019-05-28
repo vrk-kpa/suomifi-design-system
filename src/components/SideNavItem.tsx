@@ -31,11 +31,12 @@ class SideNavItem extends Component<Props> {
             alignItems: 'center',
             justifyContent: 'space-between',
             height: '3.2rem',
-            paddingLeft: level + 'rem',
+            paddingLeft: level + '.2rem',
             paddingRight: '.5rem',
             borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
             color: suomifiTheme.colors.highlightBase,
             textDecoration: 'none',
+            textTransform: level === 1 ? 'uppercase' : 'none',
             '&:hover': {
               background: suomifiTheme.colors.depthSecondary,
               color: suomifiTheme.colors.brandBase

@@ -159,16 +159,24 @@ class SideNav extends Component<Props, State> {
       {items.map(item => (
         <li
           key={item.to}
-          style={{
-            borderLeft:
-              level === 1
-                ? (item.showAsTo
-                  ? this.isCurrent(item.to) ||
-                    this.isPartiallyCurrent(item.showAsTo)
-                  : this.isPartiallyCurrent(item.to))
-                  ? `4px solid ${suomifiTheme.colors.brandBase}`
-                  : '4px solid transparent'
-                : 'none'
+          css={{
+            position: 'relative',
+            '&::after': {
+              content: '""',
+              position: 'absolute',
+              top: '-1px',
+              left: 0,
+              bottom: 0,
+              borderLeft:
+                level === 1
+                  ? (item.showAsTo
+                    ? this.isCurrent(item.to) ||
+                      this.isPartiallyCurrent(item.showAsTo)
+                    : this.isPartiallyCurrent(item.to))
+                    ? `4px solid ${suomifiTheme.colors.brandBase}`
+                    : 0
+                  : 0
+            }
           }}>
           <SideNavItem
             to={item.to}

@@ -9,8 +9,6 @@
   "to.sidenav": "Siirry sivunavigaatioon",
   "open.navigation.main": "Avaa tai sulje päävalikko",
   "navigation.main": "Päänavigaatio",
-  "component.versions": "Komponentin versiot",
-  "component.usage": "Komponentin käyttö",
   "react": "React",
   "footer.description": "Suomi.fi Design System -kirjaston kehityksestä vastaa Väestorekisterikeskus.",
   "footer.links": [

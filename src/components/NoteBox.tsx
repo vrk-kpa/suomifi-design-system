@@ -11,7 +11,7 @@ const NoteBox = ({ title, items }: Props): JSX.Element => (
       padding: '20px',
       border: `1px solid ${suomifiTheme.colors.depthLight13}`
     }}>
-    <Heading.h3>{title}</Heading.h3>
+    <Heading.h3 as='h2'>{title}</Heading.h3>
     <ul style={{ margin: 0, padding: '0 0 0 2rem' }}>
       {items.map(
         (item, index) =>

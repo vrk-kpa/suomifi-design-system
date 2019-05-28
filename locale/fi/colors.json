@@ -1,7 +1,6 @@
 {
   "title": "Värit",
   "intro": "Pääväreihin kuuluu sininen (brand-base), valkoinen (white-base) ja harmaa (depth-base). Tekstien värinä käytetään mustaa (black-l20). Korosteväreinä käytetään oranssia (accent-base) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
-  "usage": "Värien käyttö",
   "note.title": "Saavutettavuus",
   "note.items": [
     "Käyttäessäsi komponenttien tarjoamaa valmista suomi.fi-väritemaa, WCAG:n kontrastivaatimukset täyttyvät ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
@@ -114,7 +113,6 @@
       ]
     }
   ],
-  "primaryColors.title": "Suomi.fi värit (Ensisijaiset värit)",
   "textColors.title": "Tekstit",
   "textColors.description": "Tekstien pääväri on musta (Text Black). Tekstin korostevärinä käytetään tummaa harmaata (Arctic Hill Dark).",
   "brandColors.title": "Brändiväri",

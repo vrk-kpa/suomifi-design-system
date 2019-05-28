@@ -20,8 +20,7 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
         <Heading.h1>{t('info.title')}</Heading.h1>
 
         <ComponentDescription
-          title={t('usage.title')}
-          titleLevel={2}
+          mainTitle={t('usage.title')}
           description={t('usage.description')}
           exampleFirst
           showOnlyCodeString

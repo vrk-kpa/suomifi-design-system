@@ -59,7 +59,7 @@ const Header = (): JSX.Element => (
               style={{
                 position: 'absolute',
                 top: '-.2rem',
-                left: '9.5rem',
+                left: '9.6rem',
                 whiteSpace: 'nowrap',
                 lineHeight: '16px',
                 fontSize: '16px',

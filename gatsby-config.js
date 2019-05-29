@@ -71,6 +71,12 @@ module.exports = {
         protocol: 'https',
         hostname: 'designsystem.suomi.fi'
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/staticIcons/SuomiFi.svg`
+      }
     }
   ]
 }

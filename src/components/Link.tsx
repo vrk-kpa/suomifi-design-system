@@ -3,6 +3,7 @@ import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
 import { Text } from 'components/ResponsiveComponents'
+import { ensureTrailingSlash } from 'components/LinkUtil'
 
 // TODO: use suomifi-link when it supports passing components, so can be used with gatsby-link
 const linkStyle = [
@@ -26,7 +27,7 @@ const Link = ({ icon, text, url, style }: Props): JSX.Element => (
     )}
     <Text>
       {url.startsWith('/') ? (
-        <GatsbyLink to={url} css={linkStyle.concat(style)}>
+        <GatsbyLink to={ensureTrailingSlash(url)} css={linkStyle.concat(style)}>
           {text}
         </GatsbyLink>
       ) : (

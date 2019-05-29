@@ -42,7 +42,7 @@
     "clean": "rimraf .cache public",
     "build": "yarn clean && gatsby build",
     "develop": "yarn clean && gatsby develop",
-    "start": "yarn develop",
+    "start": "gatsby serve",
     "lint:code": "eslint \"src/**/*.{js,jsx,ts,tsx,md}\"",
     "format:code": "prettier-eslint --write \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",

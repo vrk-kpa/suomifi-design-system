@@ -2,14 +2,14 @@ import React, { Component, ReactNode, MouseEvent } from 'react'
 import { suomifiTheme, Icon, Button } from 'suomifi-ui-components'
 import { Link } from '@wapps/gatsby-plugin-i18next'
 
+import { isFrontPage } from 'components/LinkUtil'
+
 class SideNavItem extends Component<Props> {
   private toggleOpen = (event: MouseEvent) => {
     event.preventDefault()
     const { to, handleToggle } = this.props
     handleToggle(to)
   }
-
-  private isFrontPage = (to: string): boolean => to && to === '/'
 
   public render(): JSX.Element {
     const {
@@ -49,7 +49,7 @@ class SideNavItem extends Component<Props> {
             ? isPartialMatch(showAsTo)
             : isPartiallyCurrent
 
-          if (!this.isFrontPage(to) && isPartiallyCurrentPage && !isCurrent) {
+          if (!isFrontPage(to) && isPartiallyCurrentPage && !isCurrent) {
             return {
               style: {
                 fontWeight: 600

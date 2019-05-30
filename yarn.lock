@@ -14238,20 +14238,20 @@ sugarss@^2.0.0:
   dependencies:
     postcss "^7.0.2"
 
-suomifi-icons@0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-0.0.5.tgz#ca86d8a38c0f8c0264144022c6111ed97be09768"
-  integrity sha512-6eCOoKPLekuQlqSqn8Lp4+qpyvO5ifQPYdlW/CxK0V5zAbC8SKN8mDzwxNcbt3J1HzFRvXGfOYlS1lnAt0ylZQ==
+suomifi-icons@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-0.0.6.tgz#7adb394c75922a1b9fe0e0c7f6f833848aa8b657"
+  integrity sha512-0KMl4guo1oMAnju4gOR+2fIGW3QTOGwof1/ZkAGtbASkUsOqkQr8nCP8mdOS9l1RM1jws4daHCAxWluTrtNkow==
   dependencies:
     "@types/react" "16.7.20"
     "@types/react-dom" "16.0.11"
     react "16.7.0"
     react-dom "16.7.0"
 
-suomifi-ui-components@^0.0.17:
-  version "0.0.17"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.0.17.tgz#b513fd5ed99580de8534ca20118b7cf3303c25da"
-  integrity sha512-XLdjnlK6J8TIunh0Ez1db9zzQapGkh/PkEgmiYKy6Wyu6D9GYiDLPJ2tyxDRUQqXPZ/XY6PYlmNlOYIWsGQsrg==
+suomifi-ui-components@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.1.1.tgz#9044a78d97a94691d95051c28b9e1ed95325fa03"
+  integrity sha512-jGh7yYFdQ26bHlWqWjGZdISg4iNVoRq6LR+BI+S3u298bdHOHT7WO+4DJjiEgG8O1AscBScfpX4F9M3E9xrFvw==
   dependencies:
     "@emotion/core" "10.0.0"
     "@emotion/styled" "10.0.0"
@@ -14261,7 +14261,7 @@ suomifi-ui-components@^0.0.17:
     normalize.cssinjs "1.0.5"
     polished "2.3.1"
     react-svg "7.2.2"
-    suomifi-icons "0.0.5"
+    suomifi-icons "0.0.6"
 
 supports-color@^2.0.0:
   version "2.0.0"

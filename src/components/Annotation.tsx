@@ -9,9 +9,9 @@ const linkStyle = {
   padding: '.5rem 1rem',
   border: `1px solid ${suomifiTheme.colors.whiteBase}`,
   borderRadius: '2px',
-  color: suomifiTheme.colors.whiteBase,
-  fontSize: '16px',
-  '&:hover': {
+  '&:link,:visited,:focus,:hover,:active': {
+    fontSize: '16px',
+    color: suomifiTheme.colors.whiteBase,
     textDecoration: 'none'
   }
 }

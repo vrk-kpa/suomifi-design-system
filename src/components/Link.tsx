@@ -1,53 +1,55 @@
-import React, { CSSProperties, ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import { Link as SuomifiLink } from 'suomifi-ui-components'
+import styled from '@emotion/styled'
 
-import { Text } from 'components/ResponsiveComponents'
 import { ensureTrailingSlash } from 'components/LinkUtil'
 
-// TODO: use suomifi-link when it supports passing components, so can be used with gatsby-link
-const linkStyle = [
-  {
-    color: suomifiTheme.colors.highlightBase,
-    fontSize: '16px',
-    textDecoration: 'none',
-    '&:hover': {
-      textDecoration: 'underline'
-    }
-  },
-  `&:focus { ${suomifiTheme.outlines.basic} }`
-]
+const InternalLink = ({
+  children,
+  ...passProps
+}: {
+  children: ReactNode
+}): JSX.Element => <GatsbyLink {...passProps}>{children}</GatsbyLink>
 
-const Link = ({ icon, text, url, style }: Props): JSX.Element => (
-  <div style={{ display: 'inline-flex', alignItems: 'center' }}>
-    {icon && (
-      <span style={{ display: 'inline-flex', marginRight: '.5rem' }}>
-        {icon}
-      </span>
-    )}
-    <Text>
-      {url.startsWith('/') ? (
-        <GatsbyLink to={ensureTrailingSlash(url)} css={linkStyle.concat(style)}>
-          {text}
-        </GatsbyLink>
-      ) : (
-        <a
-          href={url}
-          css={linkStyle.concat(style)}
-          rel='noopener noreferrer'
-          target='_blank'>
-          {text}
-        </a>
+const Link = ({ icon, text, url, style }: Props): JSX.Element => {
+  const CustomLink = styled(SuomifiLink)({
+    display: 'inline-flex',
+    lineHeight: '1.5em',
+    ...style
+  })
+
+  const content = (
+    <span style={{ display: 'inline-flex', alignItems: 'center' }}>
+      {icon && (
+        <span style={{ display: 'inline-flex', marginRight: '.5rem' }}>
+          {icon}
+        </span>
       )}
-    </Text>
-  </div>
-)
+      {text}
+    </span>
+  )
+
+  return (
+    <>
+      {url.startsWith('/') ? (
+        <CustomLink to={ensureTrailingSlash(url)} as={InternalLink}>
+          {content}
+        </CustomLink>
+      ) : (
+        <CustomLink href={url} rel='noopener noreferrer' target='_blank'>
+          {content}
+        </CustomLink>
+      )}
+    </>
+  )
+}
 
 export interface Props {
   icon?: ReactNode
   text: string
   url: string
-  style?: CSSProperties
+  style?: object
 }
 
 export default Link

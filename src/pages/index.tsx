@@ -2,12 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
+import { suomifiTheme } from 'suomifi-ui-components'
 
 import Layout from 'components/layout'
 import SEO from 'components/seo'
 import ContentBoxes from 'components/ContentBoxes'
 import Annotation from 'components/Annotation'
 import Hero from 'components/Hero'
+import { ReactComponent as Slack } from 'icons/slack.svg'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['home']}>
@@ -20,7 +22,18 @@ const Page = (): JSX.Element => (
         <Annotation
           title={t('note.title')}
           description={t('note.description')}
-          link={{ text: t('note.link.text'), url: t('note.link.url') }}
+          link={{
+            icon: (
+              <Slack
+                style={{
+                  fill: suomifiTheme.colors.whiteBase,
+                  fontSize: '25px'
+                }}
+              />
+            ),
+            text: t('note.link.text'),
+            url: t('note.link.url')
+          }}
         />
 
         {t('sections').map((section, index) => (

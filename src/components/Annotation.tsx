@@ -51,7 +51,12 @@ const Content = ({
           margin: '1.5rem 0 1rem 0',
           marginLeft: center ? 0 : '2rem'
         }}>
-        <Link text={link.text} url={link.url} style={linkStyle} />
+        <Link
+          icon={link.icon}
+          text={link.text}
+          url={link.url}
+          style={linkStyle}
+        />
       </div>
     )}
   </div>

@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
-import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next'
 
 import { Text } from 'components/ResponsiveComponents'
 import Link, { Props as LinkProps } from 'components/Link'
@@ -125,15 +124,13 @@ const AllContent = ({
       <>
         <Content
           header={
-            <GatsbyLink
+            <Link
+              icon={
+                <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
+              }
               title={t('common:to.homepage')}
-              to='/'
-              css={[
-                { display: 'inline-block', height: '32px' },
-                `&:focus { ${suomifiTheme.outlines.basic} }`
-              ]}>
-              <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
-            </GatsbyLink>
+              url='/'
+            />
           }
           description={t('common:footer.description')}
           links={t('common:footer.links')}

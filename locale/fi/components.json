@@ -1,6 +1,241 @@
 {
   "title": "UI Komponentit",
   "info.title": "Komponenttien käyttöohje",
+  "intro": "Komponenttikirjasto sisältää Suomi.fi-brändin mukaisia React-komponentteja. Komponenteista on saatavilla myös saavutettavia versioita ilman Suomi.fi-brandiä tai omalla teemalla.",
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Komponenttikirjasto tarjoaa kaikki komponentit samasta npm-moduulista. Kirjaston tekninen ohjeistus ja käyttöönotto löytyy Github dokumentaatiosta.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "", "url": "" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "", "url": "" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "", "url": "" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "", "url": "" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    }
+  ],
   "usage.title": "Komponenttien käyttö",
-  "usage.description": "Komponenttikirjasto tarjoaa kaikki komponentit samasta npm-moduulista. Jos komponentin tyylejä tarvitsee täydentää tai muokata se onnistuu parhaiten esimerkiksi käyttämällä jotakin \"styled components\"-mallin kirjastoa."
+  "usage.description": "Kirjastosta voi valita käyttöön haluamiaan komponentteja. Komponentit ovat avointa lähdekoodia.",
+  "advancedUsage.title": "Komponenttien vaativampi muokkaaminen",
+  "advancedUsage.description": "Jos komponentin tyylejä tarvitsee täydentää tai muokata se onnistuu usealla eri tavalla."
 }

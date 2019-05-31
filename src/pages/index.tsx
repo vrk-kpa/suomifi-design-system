@@ -27,7 +27,7 @@ const Page = (): JSX.Element => (
               <Slack
                 style={{
                   fill: suomifiTheme.colors.whiteBase,
-                  fontSize: '25px'
+                  fontSize: '16px'
                 }}
               />
             ),

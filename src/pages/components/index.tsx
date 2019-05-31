@@ -9,6 +9,7 @@ import sideNavData from 'config/sidenav/components'
 import ComponentDescription from 'components/ComponentDescription'
 import ComponentExample from 'components/ComponentExample'
 import { Example } from 'examples/components'
+import { Example as ExampleAdvanced } from 'examples/componentsAdvanced'
 import { getExample, CodeExampleData } from 'components/CodeExampleUtil'
 import { Heading, Text } from 'components/ResponsiveComponents'
 import Section from 'components/Section'
@@ -41,6 +42,17 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
           codeString={getExample(data, 'components')}>
           <ComponentExample>
             <Example />
+          </ComponentExample>
+        </ComponentDescription>
+
+        <ComponentDescription
+          mainTitle={t('advancedUsage.title')}
+          description={t('advancedUsage.description')}
+          exampleFirst
+          showOnlyCodeString
+          codeString={getExample(data, 'componentsAdvanced')}>
+          <ComponentExample>
+            <ExampleAdvanced />
           </ComponentExample>
         </ComponentDescription>
       </Layout>

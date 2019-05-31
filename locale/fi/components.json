@@ -54,5 +54,7 @@
     }
   ],
   "usage.title": "Komponenttien käyttö",
-  "usage.description": "Kirjastosta voi valita käyttöön haluamiaan komponentteja. Komponentit ovat avointa lähdekoodia."
+  "usage.description": "Kirjastosta voi valita käyttöön haluamiaan komponentteja. Komponentit ovat avointa lähdekoodia.",
+  "advancedUsage.title": "Komponenttien vaativampi muokkaaminen",
+  "advancedUsage.description": "Jos komponentin tyylejä tarvitsee täydentää tai muokata se onnistuu usealla eri tavalla."
 }

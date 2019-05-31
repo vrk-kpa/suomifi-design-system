@@ -235,5 +235,7 @@
     }
   ],
   "usage.title": "usage.title",
-  "usage.description": "usage.description"
+  "usage.description": "usage.description",
+  "advancedUsage.title": "advancedUsage.title",
+  "advancedUsage.description": "advancedUsage.description"
 }

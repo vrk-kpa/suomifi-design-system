@@ -1,0 +1,9 @@
+.fi-button.button--custom {
+  background: #09ae88;
+}
+.fi-button.button--custom:hover {
+  background: #e97025;
+}
+.fi-button.button--custom:active {
+  background: #faaf00;
+}

@@ -1,6 +1,58 @@
 {
   "title": "Tyylit",
   "info.title": "Tyylien käyttöohje",
+  "intro": "Komponenttikirjasto sisältää Suomi.fi-brändin mukaisia design tokeneita. Kaikki komponenttien tyylit pohjautuvat näihin design tokeneihin.",
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Komponenttikirjasto tarjoaa kaikki design tokenit samasta npm-moduulista. Kirjaston tekninen ohjeistus ja käyttöönotto löytyy Github dokumentaatiosta.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "text": "Github",
+          "url": "https://github.com/vrk-kpa/suomifi-ui-components"
+        },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    }
+  ],
   "usage.title": "Tyylien käyttö",
-  "usage.description": "Komponenttikirjasto tarjoaa käyttöön myös teeman tyyleineen. Teemaa hyödyntämällä voi oman sivustonsa tyylit pitää linjassa Suomi.fi-teeman kanssa."
+  "usage.description": "Teemasta löytyviä tokeneita hyödyntämällä voi oman sivustonsa tyylit pitää linjassa Suomi.fi-teeman kanssa."
 }

@@ -43,7 +43,11 @@ addResponsiveness(Heading, OrigHeading)
 
 export class Text extends OrigText {
   public render(): JSX.Element {
-    return getResponsiveComponent(OrigText)(this.props)
+    // TODO put back when smallScreen style updated in component: return getResponsiveComponent(OrigText)(this.props)
+    return <OrigText {...this.props} />
   }
 }
 addResponsiveness(Text, OrigText)
+
+// TODO remove when smallScreen style updated in component
+Text.bold = OrigText.bold

@@ -12,7 +12,7 @@ const InternalLink = ({
   children: ReactNode
 }): JSX.Element => <GatsbyLink {...passProps}>{children}</GatsbyLink>
 
-const Link = ({ icon, text, url, style }: Props): JSX.Element => {
+const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
   const CustomLink = styled(SuomifiLink)({
     display: 'inline-flex',
     lineHeight: '1.5em',
@@ -22,7 +22,8 @@ const Link = ({ icon, text, url, style }: Props): JSX.Element => {
   const content = (
     <span style={{ display: 'inline-flex', alignItems: 'center' }}>
       {icon && (
-        <span style={{ display: 'inline-flex', marginRight: '.5rem' }}>
+        <span
+          style={{ display: 'inline-flex', marginRight: text ? '.5rem' : 0 }}>
           {icon}
         </span>
       )}
@@ -33,11 +34,18 @@ const Link = ({ icon, text, url, style }: Props): JSX.Element => {
   return (
     <>
       {url.startsWith('/') ? (
-        <CustomLink to={ensureTrailingSlash(url)} as={InternalLink}>
+        <CustomLink
+          to={ensureTrailingSlash(url)}
+          as={InternalLink}
+          title={title}>
           {content}
         </CustomLink>
       ) : (
-        <CustomLink href={url} rel='noopener noreferrer' target='_blank'>
+        <CustomLink
+          href={url}
+          rel='noopener noreferrer'
+          target='_blank'
+          title={title}>
           {content}
         </CustomLink>
       )}
@@ -47,7 +55,8 @@ const Link = ({ icon, text, url, style }: Props): JSX.Element => {
 
 export interface Props {
   icon?: ReactNode
-  text: string
+  text?: string
+  title?: string
   url: string
   style?: object
 }

@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
-import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next'
 
 import { Text } from 'components/ResponsiveComponents'
 import Link, { Props as LinkProps } from 'components/Link'
@@ -18,7 +17,8 @@ const Content = ({
   links,
   background = suomifiTheme.colors.whiteBase,
   textColor = 'blackBase',
-  linkColor = 'highlightBase',
+  linkColor,
+  textDecoration,
   center = false,
   wrapAll = false
 }: Props): JSX.Element => (
@@ -64,10 +64,14 @@ const Content = ({
             padding: 0,
             width: '100%',
             listStyle: 'none',
-            display: wrapAll ? 'initial' : 'flex',
+            display: 'flex',
             flexWrap: 'wrap',
             alignItems: 'center',
-            justifyContent: 'flex-end'
+            justifyContent: wrapAll
+              ? center
+                ? 'center'
+                : 'initial'
+              : 'flex-end'
           }}>
           {links &&
             links.map(
@@ -78,14 +82,26 @@ const Content = ({
                   <li
                     key={index}
                     style={{
-                      display: wrapAll ? 'list-item' : 'inline-flex',
+                      display: 'inline-flex',
+                      justifyContent: wrapAll
+                        ? center
+                          ? 'center'
+                          : 'initial'
+                        : 'flex-end',
+                      flex: wrapAll ? '100%' : 'unset',
                       margin: wrapAll ? '.5rem 0' : '0 1.5rem 1rem 1.5rem'
                     }}>
                     <Link
                       icon={link.icon}
                       text={link.text}
                       url={link.url}
-                      style={{ color: suomifiTheme.colors[linkColor] }}
+                      style={{
+                        '&:link,:visited,:focus,:hover,:active': {
+                          fontSize: '16px',
+                          color: suomifiTheme.colors[linkColor],
+                          textDecoration: textDecoration
+                        }
+                      }}
                     />
                   </li>
                 )
@@ -108,15 +124,13 @@ const AllContent = ({
       <>
         <Content
           header={
-            <GatsbyLink
+            <Link
+              icon={
+                <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
+              }
               title={t('common:to.homepage')}
-              to='/'
-              css={[
-                { display: 'inline-block', height: '32px' },
-                `&:focus { ${suomifiTheme.outlines.basic} }`
-              ]}>
-              <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
-            </GatsbyLink>
+              url='/'
+            />
           }
           description={t('common:footer.description')}
           links={t('common:footer.links')}
@@ -154,6 +168,7 @@ const AllContent = ({
           background={suomifiTheme.colors.brandBase}
           textColor='whiteBase'
           linkColor='whiteBase'
+          textDecoration='underline'
           center={center}
           wrapAll={wrapAll}
         />
@@ -184,6 +199,7 @@ interface Props {
   background?: string
   textColor?: keyof typeof suomifiTheme.colors
   linkColor?: keyof typeof suomifiTheme.colors
+  textDecoration?: string
   center?: boolean
   wrapAll?: boolean
 }

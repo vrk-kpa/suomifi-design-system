@@ -10,7 +10,8 @@ import ComponentDescription from 'components/ComponentDescription'
 import ComponentExample from 'components/ComponentExample'
 import { Example } from 'examples/components'
 import { getExample, CodeExampleData } from 'components/CodeExampleUtil'
-import { Heading } from 'components/ResponsiveComponents'
+import { Heading, Text } from 'components/ResponsiveComponents'
+import Section from 'components/Section'
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
   <NamespacesConsumer ns={['components']}>
@@ -18,6 +19,19 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('info.title')} />
         <Heading.h1>{t('info.title')}</Heading.h1>
+
+        <p>
+          <Text.lead>{t('intro')}</Text.lead>
+        </p>
+
+        {t('sections').map((section, index) => (
+          <Section
+            key={index}
+            mainTitle={section.title}
+            paragraphs={section.paragraphs}
+            links={section.links}
+          />
+        ))}
 
         <ComponentDescription
           mainTitle={t('usage.title')}

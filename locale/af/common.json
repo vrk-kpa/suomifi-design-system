@@ -21,5 +21,6 @@
   "slack.link.text": "slack.link.text",
   "slack.link.url": "slack.link.url",
   "github.link.text": "github.link.text",
-  "github.link.url": "github.link.url"
+  "github.link.url": "github.link.url",
+  "opens.new.window": "opens.new.window"
 }

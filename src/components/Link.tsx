@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import { NamespacesConsumer } from 'react-i18next'
 import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next'
 import { Link as SuomifiLink } from 'suomifi-ui-components'
 import styled from '@emotion/styled'
@@ -16,6 +17,7 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
   const CustomLink = styled(SuomifiLink)({
     display: 'inline-flex',
     lineHeight: '1.5em',
+    alignItems: 'center',
     ...style
   })
 
@@ -32,24 +34,28 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
   )
 
   return (
-    <>
-      {url.startsWith('/') ? (
-        <CustomLink
-          to={ensureTrailingSlash(url)}
-          as={InternalLink}
-          title={title}>
-          {content}
-        </CustomLink>
-      ) : (
-        <CustomLink
-          href={url}
-          rel='noopener noreferrer'
-          target='_blank'
-          title={title}>
-          {content}
-        </CustomLink>
-      )}
-    </>
+    <NamespacesConsumer>
+      {t =>
+        url.startsWith('/') ? (
+          <CustomLink
+            to={ensureTrailingSlash(url)}
+            as={InternalLink}
+            title={title}>
+            {content}
+          </CustomLink>
+        ) : (
+          <CustomLink
+            variant='external'
+            // hide external icon when there is already icon to indicate link target
+            hideIcon={!!icon}
+            href={url}
+            title={title}
+            aria-label={t('common:opens.new.window')}>
+            {content}
+          </CustomLink>
+        )
+      }
+    </NamespacesConsumer>
   )
 }
 

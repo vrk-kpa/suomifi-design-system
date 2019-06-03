@@ -1,10 +1,10 @@
 {
   "title": "Värit",
-  "intro": "Pääväreihin kuuluu sininen (brand-base), valkoinen (white-base) ja harmaa (depth-base). Tekstien värinä käytetään mustaa (black-l20). Korosteväreinä käytetään oranssia (accent-base) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
+  "intro": "Pääväreihin kuuluu sininen (brandBase) sekä (highlightBase), valkoinen (whiteBase) ja harmaa (depthBase). Tekstien värinä käytetään mustaa (blackBase). Korosteväreinä käytetään oranssia (accentBase) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
   "note.title": "Saavutettavuus",
   "note.items": [
-    "Käyttäessäsi komponenttien tarjoamaa valmista suomi.fi-väritemaa, WCAG:n kontrastivaatimukset täyttyvät ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
-    "Jos haluat modifioida värit sopimaan erilaiseen visuaaliseen ilmeeseen, sinun tulee varmistaa, että valitsemiesi väriyhdistelmien kontrastit täyttävät WCAG:n asettamat vaatimukset.",
+    "Käyttäessäsi komponenttien tarjoamaa valmista suomi.fi-väritemaa käyttöohjeistuksien mukaisesti, WCAG:n kontrastivaatimukset täyttyvät ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
+    "Jos haluat modifioida värit sopimaan erilaiseen visuaaliseen ilmeeseen, sinun tulee varmistaa, että valitsemasi väriyhdistelmien kontrastit täyttävät WCAG:n asettamat vaatimukset.",
     "",
     "",
     ""
@@ -31,8 +31,8 @@
       ],
       "links": [
         {
-          "text": "",
-          "url": ""
+          "text": "WCAG kontrasti vaatimukset",
+          "url": "https://www.w3.org/TR/WCAG21/"
         },
         {
           "text": "",
@@ -114,25 +114,27 @@
     }
   ],
   "textColors.title": "Tekstit",
-  "textColors.description": "Tekstien pääväri on musta (Text Black). Tekstin korostevärinä käytetään tummaa harmaata (Arctic Hill Dark).",
+  "textColors.description": "Tekstien pääväri on musta (blackBase). Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Tekstin korostevärinä käytetään tummaa harmaata (depthBaseDark27).",
   "brandColors.title": "Brändiväri",
-  "brandColors.description": "Brändiväriä (Suomi.fi) käytetään suomi.fi palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa.",
+  "brandColors.description": "Brändiväriä (brandBase) käytetään suomi.fi palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa.",
   "controlColors.title": "Linkit, painikkeet ja valinnat",
-  "controlColors.description": "Sinistä (Lake) sekä siitä johdettuja vaalempia sävyä (Lake Lighter 10 ja Lake Light) käytetään interaktiivisissa elementeissä ja valittujen elementtien korostamisessa. Estetyissä tiloissa käytetään harmaata (Arctic Hill) Sinisestä johdettua tummempaa sävyä (Värinimi) käytetään esim. painikkeiden hovertilassa. Oranssia (Cloudberry) väriä käytetään kaikkien komponenttien focustilassa.",
+  "controlColors.description": "Sinistä (highlightBase) sekä siitä johdettuja vaalempia sävyä (highlightLight) käytetään interaktiivisissa elementeissä ja valittujen elementtien korostamisessa. Violettia (accentTertiaryDark9) käytetään linkkien vierailun jälkeisessä tilassa (visited state). Estetyissä tiloissa käytetään harmaata (depthBase) Sinisestä johdettua tummempaa sävyä (highlightDark9) käytetään esim. painikkeiden hovertilassa. Myös vaalean sinistä (depthSecondary) sekä siitä astetta tummempaa (depthSecondaryDark3) käytetään hoover tilojen korostamisessa. Oranssia (accentBase) väriä käytetään kaikkien komponenttien focustilassa. ",
   "iconColors.title": "Ikonit",
-  "iconColors.description": "Kuvitusikoneissa käytetään harmaata (Arctic Hill) sekä oranssia (Cloudberry) korostevärinä. Toiminnallisissa ikoneissa käytetään toiminnallisten elementtien sinistä (Lake) väriä sekä tummaa harmaata (Arctic Hill Dark).",
+  "iconColors.description": "Kuvitusikoneissa käytetään harmaata (depthBase) sekä oranssia (accentBase) korostevärinä. Toiminnallisissa ikoneissa käytetään toiminnallisten elementtien sinistä (highlightBase) väriä sekä tummaa harmaata (depthDark27).",
   "backgroundColors.title": "Taustat ja reunukset",
-  "backgroundColors.description": "Sivun taustaväri on vaalean harmaa (Arctic Hill Light) ja sisältöalueen tausta on valkea (Snow). Muita vaaleita harmaan sävyjä (Arctic Hill Light käytetään mm. taulukoissa. Reunuksien väri on Harmaa (Arctic Hill Light). Lisäksi käytössä on sinisestä (Lake) väristä johdettuja sävyjä sekä kirkkaan vaaleansininen (Blueberry Milk).",
+  "backgroundColors.description": "Sivun taustaväri on vaalean harmaa (depthLight30) ja sisältöalueen tausta on valkea (whiteBase). Muita vaaleita harmaan sävyjä (depthLight13) käytetään mm. taulukoissa. Reunuksien väri on harmaa (depthLight30). Lisäksi käytössä on sinisestä (highlightBase) väristä johdettuja sävyjä (highlightLight53, highlightLight50 ja highlightLight45) sekä kirkkaan vaaleansininen (depthSecondary).",
   "trafficColors.title": "Liikennevalovärit",
-  "trafficColors.description": "Liikennevalovärit kuvaavat komponenttien, elementtien tai toimintojen tilatietoa. Vihreä (traffic green) kuvaa onnistumista tai positiivista toimintoa. Keltainen (traffic yellow) kuvaa esim. tehtävää tai muuta asiaa, johon käyttäjän tulee reagoida. Punainen (traffic red) kuvaa virhetilaa tai häiriötä. Pelkkä väri ei riitä tiedon tai toiminnallisuuksien esittämiseen vaan tieto pitää esittää myös sanallisesti.",
+  "trafficColors.description": "Liikennevalovärit kuvaavat komponenttien, elementtien tai toimintojen tilatietoa. Vihreä (successBase) kuvaa onnistumista tai positiivista toimintoa. Keltainen (warningBase) kuvaa esim. tehtävää tai muuta asiaa, johon käyttäjän tulee reagoida. Punainen (alertBase) kuvaa virhetilaa tai häiriötä. Pelkkä väri ei riitä tiedon tai toiminnallisuuksien esittämiseen vaan tieto pitää esittää myös sanallisesti.",
   "accentColors.title": "Korostevärit",
   "accentColors.description": "Korostevärejä käytetään tilanteissa, joissa väriä tarvitaan luomaan eroavaisuutta.",
   "blackBase.label": "Text Dark",
   "depthBase.label": "Arctic Hill",
   "depthLight30.label": "Arctic Hill Light",
   "depthLight13.label": "Arctic Hill Light",
+  "depthLight26.label": "Arctic Hill Light",
   "depthDark27.label": "Artic Hill Dark",
   "depthSecondary.label": "Blueberry Milk",
+  "depthSecondaryDark3.label": "Blueberry Milk Dark",
   "brandBase.label": "Suomi.fi",
   "highlightBase.label": "Lake",
   "highlightLight4.label": "Lake Light",
@@ -143,6 +145,8 @@
   "accentBase.label": "Cloudberry",
   "accentSecondary.label": "Sky",
   "accentSecondaryLight40.label": "Sky Light",
+  "accentTertiary.label": "Heather",
+  "accentTertiaryDark9.label": "Heather Dark",
   "successBase.label": "Traffic Green",
   "warningBase.label": "Traffic Yellow",
   "warningLight47.label": "Traffic Red Light",

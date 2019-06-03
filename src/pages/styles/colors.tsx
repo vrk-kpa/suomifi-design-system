@@ -43,9 +43,12 @@ const colorCategories = [
       colors.highlightLight53,
       colors.highlightDark9,
       colors.depthBase,
+      colors.depthLight26,
       colors.depthDark27,
       colors.accentBase,
-      colors.depthSecondary
+      colors.depthSecondary,
+      colors.depthSecondaryDark3,
+      colors.accentTertiaryDark9
     ]
   },
   {
@@ -75,7 +78,12 @@ const colorCategories = [
   },
   {
     id: 'accentColors',
-    colors: [colors.accentSecondary, colors.accentSecondaryLight40]
+    colors: [
+      colors.accentBase,
+      colors.accentSecondary,
+      colors.accentSecondaryLight40,
+      colors.accentTertiary
+    ]
   }
 ]
 

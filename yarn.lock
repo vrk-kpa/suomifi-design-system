@@ -741,7 +741,7 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-transform-typescript" "^7.3.2"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.4.2", "@babel/runtime@^7.4.4":
   version "7.4.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.4.5.tgz#582bb531f5f9dc67d2fcb682979894f75e253f12"
   integrity sha512-TuI4qpWZP6lGOGIuGWtp9sPluqYICmbk8T/1vpSysqJxRPkudh/ofFWyqdcMsDf2s7KvDL4/YHgKyvcS3g9CJQ==
@@ -11211,12 +11211,12 @@ pnp-webpack-plugin@^1.4.1:
   dependencies:
     ts-pnp "^1.1.2"
 
-polished@2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/polished/-/polished-2.3.1.tgz#557ea07e5bcb1b9c7d71935a01d0315831234d48"
-  integrity sha512-0mGyvVrHVRN92wfohriBWmMF4JLEnGgpZbpwPrNDhpB8NrX6lYI8GGWXEfrmrF+ZXg52Jkwd+D0rxViOvXM9RQ==
+polished@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-3.4.0.tgz#29b2a028ee0408df5dded55a2a25e913bc6749a9"
+  integrity sha512-GiuavmunMIKMOEoSPkXoqBYM2ZcI4YIwCaiwmTOQ55Zq4HG2kD0YZt3WlLZ2l3U9XhJ1LM/fgjCFHHffiZP0YQ==
   dependencies:
-    "@babel/runtime" "^7.0.0"
+    "@babel/runtime" "^7.4.4"
 
 portfinder@^1.0.20:
   version "1.0.20"
@@ -14248,10 +14248,10 @@ suomifi-icons@0.0.6:
     react "16.7.0"
     react-dom "16.7.0"
 
-suomifi-ui-components@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.1.1.tgz#9044a78d97a94691d95051c28b9e1ed95325fa03"
-  integrity sha512-jGh7yYFdQ26bHlWqWjGZdISg4iNVoRq6LR+BI+S3u298bdHOHT7WO+4DJjiEgG8O1AscBScfpX4F9M3E9xrFvw==
+suomifi-ui-components@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.2.1.tgz#025dee80cbd35cfdd276fe272d2fd7ba14a3481f"
+  integrity sha512-xIjPqjhtArbCKwIgc0ebsaMP8WR66JaljVCkwHSSerhEJIUSfx7qw2VrKp4T85UeEo5nVg2Q3qgQXuN00nYr0g==
   dependencies:
     "@emotion/core" "10.0.0"
     "@emotion/styled" "10.0.0"
@@ -14259,7 +14259,7 @@ suomifi-ui-components@^0.1.1:
     "@reach/menu-button" "0.1.7"
     classnames "2.2.6"
     normalize.cssinjs "1.0.5"
-    polished "2.3.1"
+    polished "3.4.0"
     react-svg "7.2.2"
     suomifi-icons "0.0.6"
 

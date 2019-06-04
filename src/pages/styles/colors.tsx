@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
+import { getLuminance } from 'polished'
 
 import Layout from 'components/layout'
 import SEO from 'components/seo'
@@ -13,19 +14,20 @@ import Section from 'components/Section'
 import ComponentExample from 'components/ComponentExample'
 import { Heading, Text } from 'components/ResponsiveComponents'
 
-const colors = Object.keys(suomifiTheme.colors)
-  .map(key => ({
-    [key]: { name: key, value: suomifiTheme.colors[key], border: 'none' }
-  }))
-  .reduce((obj, item) => ({ ...obj, ...item }), {})
-
 const borderForLightColor = `1px solid ${suomifiTheme.colors.depthLight13}`
 
-colors.whiteBase = { ...colors.whiteBase, border: borderForLightColor }
-colors.highlightLight53 = {
-  ...colors.highlightLight53,
-  border: borderForLightColor
-}
+const colors = Object.keys(suomifiTheme.colors)
+  .map(key => ({
+    [key]: {
+      name: key,
+      value: suomifiTheme.colors[key],
+      border:
+        getLuminance(suomifiTheme.colors[key]) > getLuminance('#ccc')
+          ? borderForLightColor
+          : 0
+    }
+  }))
+  .reduce((obj, item) => ({ ...obj, ...item }), {})
 
 const colorCategories = [
   {

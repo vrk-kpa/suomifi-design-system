@@ -36,7 +36,7 @@ const Layout = ({
     {t => (
       <div
         style={{
-          fontFamily: `${suomifiTheme.typography.fontFamily}, sans-serif`,
+          fontFamily: suomifiTheme.typography.fontFamily,
           fontSize: suomifiTheme.typography.fontSize.body,
           lineHeight: '1.5em',
           color: suomifiTheme.colors.blackBase

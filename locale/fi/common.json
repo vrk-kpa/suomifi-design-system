@@ -9,7 +9,7 @@
   "to.sidenav": "Siirry sivunavigaatioon",
   "open.navigation.main": "Avaa tai sulje päävalikko",
   "navigation.main": "Päänavigaatio",
-  "react": "React",
+  "react": "Koodiesimerkki (React)",
   "footer.description": "Suomi.fi Design System -kirjaston kehityksestä vastaa Väestorekisterikeskus.",
   "footer.links": [
     { "text": "", "url": "" },

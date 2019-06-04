@@ -28,14 +28,15 @@
     "react-dom": "^16.6.3",
     "react-element-to-jsx-string": "^14.0.2",
     "react-helmet": "^5.2.0",
-    "react-i18next": "8",
+    "react-i18next": "^8.4.0",
     "react-motion": "^0.5.2",
     "react-responsive": "^6.1.1",
     "react-syntax-highlighter": "^10.1.2",
     "suomifi-ui-components": "^0.2.1"
   },
   "resolutions": {
-    "@wapps/gatsby-plugin-i18next/i18next": "^15.0.6"
+    "@wapps/gatsby-plugin-i18next/i18next": "^15.0.6",
+    "@wapps/gatsby-plugin-i18next/react-i18next": "^8.4.0"
   },
   "license": "MIT",
   "scripts": {

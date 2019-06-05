@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import { Text } from 'components/ResponsiveComponents'
+import { Text, Paragraph } from 'components/ResponsiveComponents'
 import Link, { Props as LinkProps } from 'components/Link'
 
 import { Desktop, Mobile, Tablet } from 'components/Responsive'
@@ -42,14 +42,12 @@ const Content = ({
         <div style={{ flex: '100%', marginTop: '1rem' }}>{header}</div>
       )}
       <div style={{ flex: '40%', textAlign: center ? 'center' : 'initial' }}>
-        <p style={{ margin: '1rem 0' }}>
-          <Text.bold color={textColor} style={{ textAlign: 'inherit' }}>
-            {title}
-          </Text.bold>
-        </p>
-        <p style={{ margin: '1rem 0' }}>
+        <Paragraph.secondary style={{ textAlign: 'inherit' }}>
+          <Text.bold color={textColor}>{title}</Text.bold>
+        </Paragraph.secondary>
+        <Paragraph.secondary style={{ textAlign: 'inherit' }}>
           <Text color={textColor}>{description}</Text>
-        </p>
+        </Paragraph.secondary>
       </div>
       <div
         style={{

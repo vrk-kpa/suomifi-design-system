@@ -2,7 +2,7 @@ import React from 'react'
 import { suomifiTheme, Icon } from 'suomifi-ui-components'
 import { StaticIconKeys } from 'suomifi-icons'
 
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import LinkList from 'components/LinkList'
 import { Props as LinkProps } from 'components/Link'
 
@@ -28,9 +28,9 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
     {block.paragraphs.map((paragraph, index) => (
       <div key={index}>
         {!!paragraph.text && (
-          <p>
+          <Paragraph>
             <Text>{paragraph.text}</Text>
-          </p>
+          </Paragraph>
         )}
       </div>
     ))}
@@ -93,11 +93,11 @@ interface Props {
 interface Block {
   icon?: StaticIconKeys
   title: string
-  paragraphs: Paragraph[]
+  paragraphs: ParagraphProps[]
   links: LinkProps[]
 }
 
-interface Paragraph {
+interface ParagraphProps {
   text: string
 }
 

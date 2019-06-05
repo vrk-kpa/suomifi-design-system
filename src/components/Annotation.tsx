@@ -1,7 +1,7 @@
 import React from 'react'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import Link, { Props as LinkProps } from 'components/Link'
 import { Desktop, Mobile, Tablet } from 'components/Responsive'
 
@@ -40,9 +40,13 @@ const Content = ({
         {title}
       </Heading.h2>
       {description && (
-        <p style={{ margin: '1rem 0 0 0' }}>
+        <Paragraph
+          style={{
+            margin: `${suomifiTheme.spacing.m} 0 0 0`,
+            textAlign: 'inherit'
+          }}>
           <Text color='whiteBase'>{description}</Text>
-        </p>
+        </Paragraph>
       )}
     </div>
     {link && !!link.text && !!link.url && (

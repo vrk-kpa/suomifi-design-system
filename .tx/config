@@ -85,3 +85,10 @@ source_file = locale/af/designers.json
 source_lang = af
 type = KEYVALUEJSON
 
+[suomifi-design-system.typography-json]
+file_filter = locale/<lang>/typography.json
+minimum_perc = 0
+source_file = locale/af/typography.json
+source_lang = af
+type = KEYVALUEJSON
+

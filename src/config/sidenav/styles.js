@@ -10,6 +10,7 @@ export default t => ({
       showAsTo: '/styles/info/',
       label: t('styles:info.title')
     },
-    { to: '/styles/colors/', label: t('colors:title') }
+    { to: '/styles/colors/', label: t('colors:title') },
+    { to: '/styles/typography/', label: t('typography:title') }
   ]
 })

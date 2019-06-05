@@ -12,7 +12,7 @@ import sideNavData from 'config/sidenav/components'
 import NoteBox from 'components/NoteBox'
 import Section from 'components/Section'
 import ComponentExample from 'components/ComponentExample'
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['panel']}>
@@ -21,9 +21,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
 
-        <p>
+        <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
-        </p>
+        </Paragraph.lead>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 

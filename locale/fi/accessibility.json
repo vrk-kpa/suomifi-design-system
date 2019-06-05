@@ -146,9 +146,9 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Saavutettavuus on laaja käsite ja vaatii myös paljon muuta kuin teknisesti saavutettavia käyttöliittymäkomponentteja. Vaikka komponentit itsessään olisivat saavutettavia, se ei kuitenkaan takaa sitä, että lopullinen palvelusi tai tuotteesi on saavutettava. Suomi.fi Design Systemin komponenttikohtainen käyttöohjeistus auttaa sinua käyttämään käyttöliittymäkomponentteja oikein. Muista kuitenkin, että verkkopalvelun lopullinen kokonaisvaltainen saavutettavuus vaatii aina erillistä työtä, harkintaa ja testausta.",
           "listItems": [
-            { "text": "Saavutettavuus on laaja käsite ja vaatii myös paljon muuta kuin teknisesti saavutettavia käyttöliittymäkomponentteja. Vaikka komponentit itsessään olisivat saavutettavia, se ei kuitenkaan takaa sitä, että lopullinen palvelusi tai tuotteesi on saavutettava. Suomi.fi Design Systemin komponenttikohtainen käyttöohjeistus auttaa sinua käyttämään käyttöliittymäkomponentteja oikein. Muista kuitenkin, että verkkopalvelun lopullinen kokonaisvaltainen saavutettavuus vaatii aina erillistä työtä, harkintaa ja testausta." },
+            { "text": "" },
             { "text": "" },
             { "text": "" },
             { "text": "" },
@@ -170,7 +170,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Lisää tietoa saavutettavuuden toteuttamisesta",
+          "text": "",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -181,7 +181,7 @@
         }
       ],
       "links": [
-        { "text": "Verkkopalvelujen saavutettavuus (Aluehallintovirasto)", "url": "https://www.avi.fi/web/avi/saavutettavuus" },
+        { "text": "Lisää tietoa saavutettavuuden vaatimuksista", "url": "https://www.saavutettavuusvaatimukset.fi" },
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]

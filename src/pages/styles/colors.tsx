@@ -22,7 +22,7 @@ const colors = Object.keys(suomifiTheme.colors)
       name: key,
       value: suomifiTheme.colors[key],
       border:
-        getLuminance(suomifiTheme.colors[key]) > getLuminance('#ccc')
+        getLuminance(suomifiTheme.colors[key]) > getLuminance('#f8f8f8')
           ? borderForLightColor
           : 0
     }

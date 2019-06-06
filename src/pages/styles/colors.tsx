@@ -96,12 +96,19 @@ const getExampleColor = (
   label: string,
   style?: CSSProperties
 ): JSX.Element => (
-  <div key={id} style={{ margin: '.5rem 2rem 1.5rem 0', lineHeight: '1rem' }}>
+  <div
+    key={id}
+    style={{
+      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
+        suomifiTheme.spacing.l
+      } 0`,
+      lineHeight: '1rem'
+    }}>
     <div
       style={{
         width: '10rem',
         height: '3rem',
-        marginBottom: '1rem',
+        marginBottom: suomifiTheme.spacing.m,
         background: value,
         ...style
       }}

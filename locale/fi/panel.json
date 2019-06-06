@@ -1,5 +1,5 @@
 {
-  "title": "Laajennuspaneeli (Panel Expansion)",
+  "title": "Laajennuspaneeli (Expansion Panel)",
   "intro": "Komponentti piilottaa näkyvistä otsikon alle määriteltyä informaatiota tai sisältöä. Laajennuspaneeli helpottaa käyttäjää hahmottamaan sellaisia näkymiä, jossa on laajasti sisältöä. Komponenttia käytetään kun tilaa on vertikaalisesti rajoitetusti. Panel Expansion -komponentin avulla sivun pituutta voidaan lyhentää.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
@@ -118,9 +118,9 @@
   ],
   "nopadding.title": "",
   "nopadding.description": "Laajennuspaneelin sisällössä on oletusarvoisesti täytettä (padding). Tämä voidaan poistaa 'noPadding' attribuutilla mikäli oma tyylitys sen vaatii.",
-  "single.title": "Yksittäinen laajennuspaneeli (Single Panel Expansion)",
+  "single.title": "Yksittäinen laajennuspaneeli (Single Expansion Panel)",
   "single.description": "Erillistä laajennuspaneelia käytetään kun on tarvetta on ainoastaan yhdelle paneelille, esimerkiksi sisältökokonaisuudessa toistuvalle spesifille informaatiolle. ",
-  "group.title": "Laajennuspaneeli ryhmä (Panel Expansion Group)",
+  "group.title": "Laajennuspaneeli ryhmä (Expansion Panel Group)",
   "group.description": "Laajennuspaneeliryhmä koostuu useasta (kaksi tai useampi) päällekkäisestä yksittäisestä laajennuspanelista. Laajennuspaneeliryhmä liittyy yhteen sisältökokonaisuuteen. Sivunäkymässä voi olla monta erillistä laajennuspaneliryhmää jotka on selkeästi eritelty toisistaan alaotsikoita hyödyntäen. Yksittäisen laajennuspaneeliryhmän yläkulmassa on ‘Avaa kaikki’ toiminto, jonka avulla kaikki ryhmän paneelit saa halutessaan auki. Auki ollessa toiminto muuttuu muotoon \"Sulje kaikki\", jonka avulla kaikki ryhmän paneelit saa kiinni. Toiminto helpottaa käyttäjää pääsemään käsiksi heti koko sisältöön ja se myös parantaa paneelien sisällä olevasta sisällöstä etsimistä.",
   "group.open": "Avaa kaikki",
   "group.close": "Sulje kaikki",

@@ -54,7 +54,7 @@ const MainContent = ({
     style={{
       background: suomifiTheme.colors.depthLight30,
       paddingTop: hasFrame ? suomifiTheme.spacing.m : 0,
-      paddingBottom: '3rem'
+      paddingBottom: suomifiTheme.spacing.xl
     }}>
     <Desktop>
       <div

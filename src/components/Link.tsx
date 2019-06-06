@@ -15,8 +15,7 @@ const InternalLink = ({
 
 const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
   const CustomLink = styled(SuomifiLink)({
-    display: 'inline-flex',
-    lineHeight: '1.5em',
+    display: icon ? 'inline-flex' : 'initial',
     alignItems: 'center',
     ...style
   })

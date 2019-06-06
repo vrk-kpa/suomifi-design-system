@@ -123,7 +123,9 @@ class SideNav extends Component<Props, State> {
           textShadow: 'none'
         }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ fontSize: '40px' }}>{sideNavData.icon}</div>
+          <div style={{ fontSize: '40px', lineHeight: '1em' }}>
+            {sideNavData.icon}
+          </div>
           <Text.bold style={{ marginLeft: suomifiTheme.spacing.s }}>
             {sideNavData.title}
           </Text.bold>
@@ -220,7 +222,8 @@ class SideNav extends Component<Props, State> {
             style={{
               background: 'none',
               padding: 0,
-              border: 0
+              border: 0,
+              lineHeight: '1em'
             }}>
             <this.Title />
           </Button>

@@ -1,7 +1,8 @@
 import React from 'react'
+import { suomifiTheme } from 'suomifi-ui-components'
 
 import { Image } from 'components/Image'
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import LinkList from 'components/LinkList'
 import { Props as LinkProps } from 'components/Link'
 import BulletedList, {
@@ -28,16 +29,16 @@ const Section = ({
           </div>
         )}
         {!!paragraph.text && (
-          <p>
+          <Paragraph>
             <Text>{paragraph.text}</Text>
-          </p>
+          </Paragraph>
         )}
-        <div style={{ margin: '1rem 0' }}>
+        <div style={{ margin: `${suomifiTheme.spacing.l} 0` }}>
           <BulletedList items={paragraph.listItems} />
         </div>
       </div>
     ))}
-    <div style={{ margin: '1rem 0 2rem' }}>
+    <div style={{ margin: `${suomifiTheme.spacing.l} 0` }}>
       <LinkList links={links} />
     </div>
   </section>
@@ -46,11 +47,11 @@ const Section = ({
 interface Props {
   mainTitle?: string
   title?: string
-  paragraphs: Paragraph[]
+  paragraphs: ParagraphProps[]
   links: LinkProps[]
 }
 
-interface Paragraph {
+interface ParagraphProps {
   'image.key': string
   'image.alt': string
   text: string

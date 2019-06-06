@@ -10,7 +10,7 @@ import ComponentDescription from 'components/ComponentDescription'
 import ComponentExample from 'components/ComponentExample'
 import { Example } from 'examples/styles'
 import { getExample, CodeExampleData } from 'components/CodeExampleUtil'
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import Section from 'components/Section'
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
@@ -20,9 +20,9 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
         <SEO title={t('info.title')} />
         <Heading.h1>{t('info.title')}</Heading.h1>
 
-        <p>
+        <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
-        </p>
+        </Paragraph.lead>
 
         {t('sections').map((section, index) => (
           <Section

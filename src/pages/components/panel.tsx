@@ -12,7 +12,7 @@ import sideNavData from 'config/sidenav/components'
 import NoteBox from 'components/NoteBox'
 import Section from 'components/Section'
 import ComponentExample from 'components/ComponentExample'
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['panel']}>
@@ -21,9 +21,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
 
-        <p>
+        <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
-        </p>
+        </Paragraph.lead>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
@@ -41,12 +41,12 @@ const Page = (): JSX.Element => (
           description={t('nopadding.description')}
           exampleFirst={false}
           filterProps={[]}>
-          <ComponentExample style={{ padding: '1.3rem' }}>
+          <ComponentExample>
             <Panel.expansion title={t('panel.title')} noPadding>
               <p
                 style={{
                   margin: 0,
-                  padding: '1rem',
+                  padding: suomifiTheme.spacing.m,
                   background: suomifiTheme.colors.brandBase,
                   color: suomifiTheme.colors.whiteBase
                 }}>
@@ -60,7 +60,7 @@ const Page = (): JSX.Element => (
           mainTitle={t('single.title')}
           description={t('single.description')}
           exampleFirst>
-          <ComponentExample style={{ padding: '1.3rem' }}>
+          <ComponentExample>
             <Panel.expansion title={t('panel.title')}>
               {t('panel.content')}
             </Panel.expansion>
@@ -71,7 +71,7 @@ const Page = (): JSX.Element => (
           mainTitle={t('group.title')}
           description={t('group.description')}
           exampleFirst>
-          <ComponentExample style={{ padding: '1.3rem' }}>
+          <ComponentExample>
             <Panel.expansionGroup
               OpenAll={t('group.open')}
               CloseAll={t('group.close')}>

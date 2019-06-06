@@ -1,7 +1,7 @@
 import React from 'react'
 import { Language } from '@wapps/gatsby-plugin-i18next'
 import { NamespacesConsumer } from 'react-i18next'
-import { Menu, MenuItem, Button } from 'suomifi-ui-components'
+import { Menu, MenuItem, Button, suomifiTheme } from 'suomifi-ui-components'
 
 const hasMultipleLanguages = ({ availableLngs }: Props): boolean =>
   !!availableLngs && availableLngs.length > 1
@@ -37,7 +37,7 @@ const ListSwitcher = ({
       <ul
         aria-label={t('menu.label')}
         style={{
-          margin: '1rem',
+          margin: suomifiTheme.spacing.m,
           padding: 0,
           listStyle: 'none',
           display: 'flex',

@@ -6,7 +6,7 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next'
 import Layout from 'components/layout'
 import SEO from 'components/seo'
 import sideNavData from 'config/sidenav/info'
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import Section from 'components/Section'
 
 const Page = (): JSX.Element => (
@@ -16,9 +16,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('info.title')} />
         <Heading.h1>{t('info.title')}</Heading.h1>
 
-        <p>
+        <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
-        </p>
+        </Paragraph.lead>
 
         {t('sections').map((section, index) => (
           <Section

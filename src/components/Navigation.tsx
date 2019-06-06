@@ -30,7 +30,13 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
             listStyle: 'none'
           }}>
           {mainNavData.items.map(item => (
-            <li key={item.to} style={{ margin: '0 1.2rem' }}>
+            <li
+              key={item.to}
+              style={{
+                margin: `0 ${suomifiTheme.spacing.l} 0 ${
+                  suomifiTheme.spacing.s
+                }`
+              }}>
               <NavItem to={item.to}>{item.label}</NavItem>
             </li>
           ))}

@@ -15,7 +15,7 @@ const Header = (): JSX.Element => (
     {t => (
       <header
         style={{
-          padding: '1rem',
+          padding: suomifiTheme.spacing.m,
           borderTop: `4px solid ${suomifiTheme.colors.brandBase}`,
           boxSizing: `border-box`,
           background: suomifiTheme.colors.whiteBase,
@@ -46,7 +46,12 @@ const Header = (): JSX.Element => (
             title={t('common:to.homepage')}
             url='/'
           />
-          <div style={{ flex: 1, position: 'relative', marginLeft: '.5rem' }}>
+          <div
+            style={{
+              flex: 1,
+              position: 'relative',
+              marginLeft: suomifiTheme.spacing.s
+            }}>
             <div
               style={{
                 fontSize: '28px',

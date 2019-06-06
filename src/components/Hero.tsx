@@ -1,7 +1,7 @@
 import React from 'react'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import { Desktop, Mobile, Tablet } from 'components/Responsive'
 import { ReactComponent as SuomiFi } from 'icons/suomifi.svg'
 import Background from './Hero_bg.png'
@@ -49,9 +49,13 @@ const Content = ({
           {title}
         </Heading.h1hero>
         {description && (
-          <p style={{ margin: compact ? '1.5rem 0 0 0' : '3rem 0 0 0' }}>
+          <Paragraph.lead
+            style={{
+              margin: compact ? '1.5rem 0 0 0' : '3rem 0 0 0',
+              textAlign: 'inherit'
+            }}>
             <Text.lead color='whiteBase'>{description}</Text.lead>
-          </p>
+          </Paragraph.lead>
         )}
       </div>
     </div>

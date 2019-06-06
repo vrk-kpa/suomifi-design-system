@@ -33,7 +33,14 @@ const Content = ({
   children: ReactNode
   style?: CSSProperties
 }): JSX.Element => (
-  <main id='main' style={{ margin: hasFrame ? '2rem 1rem' : 0, ...style }}>
+  <main
+    id='main'
+    style={{
+      margin: hasFrame
+        ? `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m}`
+        : 0,
+      ...style
+    }}>
     {children}
   </main>
 )
@@ -46,8 +53,8 @@ const MainContent = ({
   <div
     style={{
       background: suomifiTheme.colors.depthLight30,
-      paddingTop: hasFrame ? '1rem' : 0,
-      paddingBottom: '3rem'
+      paddingTop: hasFrame ? suomifiTheme.spacing.m : 0,
+      paddingBottom: suomifiTheme.spacing.xl
     }}>
     <Desktop>
       <div
@@ -58,7 +65,11 @@ const MainContent = ({
         }}>
         <div
           style={{
-            margin: hasFrame ? '1rem 2rem 0 2rem' : 0,
+            margin: hasFrame
+              ? `${suomifiTheme.spacing.m} ${suomifiTheme.spacing.l} 0 ${
+                  suomifiTheme.spacing.l
+                }`
+              : 0,
             width: '100%',
             maxWidth: hasFrame ? 1140 : 'initial',
             display: 'flex',
@@ -70,7 +81,7 @@ const MainContent = ({
           }}>
           <SideNav
             sideNavData={sideNavData}
-            style={{ width: '22rem', marginRight: '1rem' }}
+            style={{ width: '22rem', marginRight: suomifiTheme.spacing.m }}
           />
           <Content hasFrame={hasFrame} style={{ flex: 1 }}>
             {children}
@@ -82,13 +93,17 @@ const MainContent = ({
       <SideNav
         sideNavData={sideNavData}
         style={{
-          margin: '0 2rem',
+          margin: `0 ${suomifiTheme.spacing.l}`,
           border: `1px solid ${suomifiTheme.colors.depthLight13}`
         }}
       />
       <div
         style={{
-          margin: hasFrame ? '1rem 2rem 0 2rem' : 0,
+          margin: hasFrame
+            ? `${suomifiTheme.spacing.m} ${suomifiTheme.spacing.l} 0 ${
+                suomifiTheme.spacing.l
+              }`
+            : 0,
           background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
           border: hasFrame ? `1px solid ${suomifiTheme.colors.depthLight13}` : 0
         }}>
@@ -99,13 +114,14 @@ const MainContent = ({
       <SideNav
         sideNavData={sideNavData}
         style={{
-          margin: '0 1rem',
+          margin: `0 ${suomifiTheme.spacing.m}`,
           border: `1px solid ${suomifiTheme.colors.depthLight13}`
         }}
       />
       <div
         style={{
-          margin: hasFrame ? '1rem 0 0 0' : 0,
+          margin: 0,
+          marginTop: hasFrame ? suomifiTheme.spacing.m : 0,
           background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
           border: hasFrame ? `1px solid ${suomifiTheme.colors.depthLight13}` : 0
         }}>

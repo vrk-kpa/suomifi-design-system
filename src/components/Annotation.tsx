@@ -1,14 +1,14 @@
 import React from 'react'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import Link, { Props as LinkProps } from 'components/Link'
 import { Desktop, Mobile, Tablet } from 'components/Responsive'
 
 const linkStyle = {
-  padding: '.5rem 1rem',
+  padding: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.m}`,
   border: `1px solid ${suomifiTheme.colors.whiteBase}`,
-  borderRadius: '2px',
+  borderRadius: suomifiTheme.radius.basic,
   '&:link,:visited,:focus,:hover,:active': {
     fontSize: '16px',
     color: suomifiTheme.colors.whiteBase,
@@ -40,16 +40,20 @@ const Content = ({
         {title}
       </Heading.h2>
       {description && (
-        <p style={{ margin: '1rem 0 0 0' }}>
+        <Paragraph
+          style={{
+            margin: `${suomifiTheme.spacing.m} 0 0 0`,
+            textAlign: 'inherit'
+          }}>
           <Text color='whiteBase'>{description}</Text>
-        </p>
+        </Paragraph>
       )}
     </div>
     {link && !!link.text && !!link.url && (
       <div
         style={{
-          margin: '1.5rem 0 1rem 0',
-          marginLeft: center ? 0 : '2rem'
+          margin: `${suomifiTheme.spacing.m} 0`,
+          marginLeft: center ? 0 : suomifiTheme.spacing.l
         }}>
         <Link
           icon={link.icon}
@@ -66,7 +70,7 @@ const Annotation = ({ title, description, link }: Props): JSX.Element => (
   <div
     style={{
       margin: 0,
-      padding: '1rem',
+      padding: suomifiTheme.spacing.m,
       background: suomifiTheme.colors.highlightBase,
       display: 'flex',
       justifyContent: 'center'

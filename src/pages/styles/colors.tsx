@@ -12,7 +12,7 @@ import sideNavData from 'config/sidenav/styles'
 import NoteBox from 'components/NoteBox'
 import Section from 'components/Section'
 import ComponentExample from 'components/ComponentExample'
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 
 const borderForLightColor = `1px solid ${suomifiTheme.colors.depthLight13}`
 
@@ -96,12 +96,19 @@ const getExampleColor = (
   label: string,
   style?: CSSProperties
 ): JSX.Element => (
-  <div key={id} style={{ margin: '.5rem 2rem 1.5rem 0', lineHeight: '1rem' }}>
+  <div
+    key={id}
+    style={{
+      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
+        suomifiTheme.spacing.l
+      } 0`,
+      lineHeight: '1rem'
+    }}>
     <div
       style={{
         width: '10rem',
         height: '3rem',
-        marginBottom: '1rem',
+        marginBottom: suomifiTheme.spacing.m,
         background: value,
         ...style
       }}
@@ -119,9 +126,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
 
-        <p>
+        <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
-        </p>
+        </Paragraph.lead>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 

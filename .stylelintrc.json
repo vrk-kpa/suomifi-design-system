@@ -7,6 +7,7 @@
   "rules": {
     "declaration-empty-line-before": "never",
     "function-name-case": null,
-    "font-family-no-missing-generic-family-keyword": null
+    "font-family-no-missing-generic-family-keyword": null,
+    "unit-no-unknown": null
   }
 }

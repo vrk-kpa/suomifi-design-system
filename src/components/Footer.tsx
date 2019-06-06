@@ -25,7 +25,7 @@ const Content = ({
   <div
     style={{
       margin: 0,
-      padding: '1rem',
+      padding: suomifiTheme.spacing.m,
       background: background,
       display: 'flex',
       justifyContent: 'center'
@@ -39,7 +39,9 @@ const Content = ({
         justifyContent: center ? 'center' : 'space-between'
       }}>
       {header && (
-        <div style={{ flex: '100%', marginTop: '1rem' }}>{header}</div>
+        <div style={{ flex: '100%', marginTop: suomifiTheme.spacing.m }}>
+          {header}
+        </div>
       )}
       <div style={{ flex: '40%', textAlign: center ? 'center' : 'initial' }}>
         <Paragraph.secondary style={{ textAlign: 'inherit' }}>
@@ -51,8 +53,8 @@ const Content = ({
       </div>
       <div
         style={{
-          margin: '1rem 0',
-          marginLeft: wrapAll ? 0 : '3rem',
+          margin: `${suomifiTheme.spacing.m} 0`,
+          marginLeft: wrapAll ? 0 : suomifiTheme.spacing.xl,
           flex: '50%',
           textAlign: center ? 'center' : 'initial'
         }}>
@@ -87,7 +89,11 @@ const Content = ({
                           : 'initial'
                         : 'flex-end',
                       flex: wrapAll ? '100%' : 'unset',
-                      margin: wrapAll ? '.5rem 0' : '0 1.5rem 1rem 1.5rem'
+                      margin: wrapAll
+                        ? `${suomifiTheme.spacing.s} 0`
+                        : `0 ${suomifiTheme.spacing.m} ${
+                            suomifiTheme.spacing.m
+                          }`
                     }}>
                     <Link
                       icon={link.icon}

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { Panel, suomifiTheme } from 'suomifi-ui-components'
 import ComponentCode from 'components/ComponentCode'
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
   React.Children.map(children, child =>
@@ -26,20 +26,20 @@ const ComponentDescription = ({
     {t => (
       <div
         style={{
-          marginBottom: '2rem',
+          marginBottom: suomifiTheme.spacing.l,
           borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`
         }}>
-        <div style={{ margin: '1.5rem 0' }}>
+        <div style={{ margin: `${suomifiTheme.spacing.l} 0` }}>
           {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
           {!!title && <Heading.h3>{title}</Heading.h3>}
         </div>
         {!!exampleFirst && <div>{children}</div>}
-        <div>
+        <Paragraph>
           <Text>{description}</Text>
-        </div>
+        </Paragraph>
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
-          <div style={{ padding: '1.5rem 0 2rem 0' }}>
+          <div style={{ margin: `${suomifiTheme.spacing.l} 0` }}>
             <Panel.expansion title={t('common:react')} noPadding>
               {codeString && <ComponentCode javascript={codeString} />}
               {!showOnlyCodeString &&

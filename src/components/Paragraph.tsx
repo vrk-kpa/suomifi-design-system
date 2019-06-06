@@ -22,7 +22,7 @@ class CustomParagraph extends Component<Props> {
   }
 
   public static secondary = (props: Props) => {
-    const { style, ...passProps } = props
+    const { smallScreen, style, ...passProps } = props
     return (
       <OrigParagraph
         style={{
@@ -36,7 +36,7 @@ class CustomParagraph extends Component<Props> {
   }
 
   public render(): JSX.Element {
-    const { style, ...passProps } = this.props
+    const { smallScreen, style, ...passProps } = this.props
     return (
       <OrigParagraph
         style={{

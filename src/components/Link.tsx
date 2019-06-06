@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next'
-import { Link as SuomifiLink } from 'suomifi-ui-components'
+import { Link as SuomifiLink, suomifiTheme } from 'suomifi-ui-components'
 import styled from '@emotion/styled'
 
 import { ensureTrailingSlash } from 'components/LinkUtil'
@@ -25,7 +25,10 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
     <span style={{ display: 'inline-flex', alignItems: 'center' }}>
       {icon && (
         <span
-          style={{ display: 'inline-flex', marginRight: text ? '.5rem' : 0 }}>
+          style={{
+            display: 'inline-flex',
+            marginRight: text ? suomifiTheme.spacing.s : 0
+          }}>
           {icon}
         </span>
       )}

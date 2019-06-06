@@ -225,7 +225,7 @@ const Page = (): JSX.Element => (
               <div
                 key={item.id}
                 style={{
-                  padding: item.background ? '.8rem' : 0,
+                  padding: item.background ? suomifiTheme.spacing.s : 0,
                   background: item.background || 'none'
                 }}>
                 {getExampleComp(

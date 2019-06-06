@@ -78,7 +78,7 @@ const getExampleComp = (
     key={id}
     id={id}
     aria-label={label}
-    style={{ margin: '.5rem' }}
+    style={{ margin: suomifiTheme.spacing.s }}
     {...props}
     onClick={() => handleClick(id, label, t)}>
     {label}
@@ -114,15 +114,23 @@ const Page = (): JSX.Element => (
           <div
             style={{
               overflow: 'hidden',
-              marginBottom: '1rem',
-              padding: '2rem .8rem 0 .8rem',
+              marginBottom: suomifiTheme.spacing.m,
+              padding: `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m} 0 ${
+                suomifiTheme.spacing.m
+              }`,
               background: suomifiTheme.colors.depthLight30,
               display: 'flex',
               justifyContent: 'center'
             }}>
             <MobileDevice>
               {mobileComponents.map(item => (
-                <div key={item.id} style={{ padding: '1rem .5rem' }}>
+                <div
+                  key={item.id}
+                  style={{
+                    padding: `${suomifiTheme.spacing.m} ${
+                      suomifiTheme.spacing.s
+                    }`
+                  }}>
                   {getExampleComp(
                     item.comp,
                     `${item.id}.fullWidth`,
@@ -144,6 +152,7 @@ const Page = (): JSX.Element => (
             exampleFirst>
             <ComponentExample
               style={{
+                padding: suomifiTheme.spacing.s,
                 background: item.background,
                 border: item.border || 0
               }}>
@@ -175,6 +184,7 @@ const Page = (): JSX.Element => (
             <ComponentExample
               key={item.id}
               style={{
+                padding: suomifiTheme.spacing.s,
                 background: item.background,
                 border: item.border || 0
               }}>
@@ -210,7 +220,7 @@ const Page = (): JSX.Element => (
           mainTitle={t('disabled.title')}
           description={t('disabled.description')}
           exampleFirst>
-          <ComponentExample>
+          <ComponentExample style={{ padding: suomifiTheme.spacing.s }}>
             {disabledComponents.map(item => (
               <div
                 key={item.id}

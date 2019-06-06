@@ -16,7 +16,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           justifyContent: 'center',
           width: '70px',
           height: '70px',
-          marginBottom: '2rem',
+          marginBottom: suomifiTheme.spacing.l,
           border: `1px solid ${suomifiTheme.colors.depthLight13}`,
           borderRadius: '50%',
           fontSize: '50px'
@@ -34,7 +34,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
         )}
       </div>
     ))}
-    <div style={{ margin: '1rem 0' }}>
+    <div style={{ margin: `${suomifiTheme.spacing.m} 0` }}>
       <LinkList links={block.links} />
     </div>
   </>
@@ -49,7 +49,7 @@ const ContentBoxes = ({
   <section
     style={{
       background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
-      padding: '2rem 1rem 0',
+      padding: `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m} 0`,
       display: 'flex',
       justifyContent: 'center'
     }}>
@@ -60,7 +60,7 @@ const ContentBoxes = ({
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          margin: '2rem 0'
+          margin: `${suomifiTheme.spacing.l} 0`
         }}>
         <div
           style={{
@@ -73,7 +73,10 @@ const ContentBoxes = ({
           {blocks.map((block, index) => (
             <article
               key={index}
-              style={{ flex: wrapAll ? '100%' : '30%', margin: '1rem' }}>
+              style={{
+                flex: wrapAll ? '100%' : '30%',
+                margin: suomifiTheme.spacing.m
+              }}>
               <Block block={block} />
             </article>
           ))}

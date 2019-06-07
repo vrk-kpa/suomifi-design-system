@@ -13,7 +13,7 @@ import NoteBox from 'components/NoteBox'
 import Section from 'components/Section'
 import ComponentExample from 'components/ComponentExample'
 import MobileDevice from 'components/MobileDevice'
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 
 const components = [
   { id: 'primary', comp: Button },
@@ -78,7 +78,7 @@ const getExampleComp = (
     key={id}
     id={id}
     aria-label={label}
-    style={{ margin: '.5rem' }}
+    style={{ margin: suomifiTheme.spacing.s }}
     {...props}
     onClick={() => handleClick(id, label, t)}>
     {label}
@@ -92,39 +92,45 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
 
-        <p>
-          <Text>{t('intro')}</Text>
-        </p>
-
-        <Heading.h2>{t('common:component.usage')}</Heading.h2>
+        <Paragraph.lead>
+          <Text.lead>{t('intro')}</Text.lead>
+        </Paragraph.lead>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
         {t('sections').map((section, index) => (
           <Section
             key={index}
-            title={section.title}
+            mainTitle={section.title}
             paragraphs={section.paragraphs}
             links={section.links}
           />
         ))}
 
         <ComponentDescription
-          title={t('fullWidth.title')}
+          mainTitle={t('fullWidth.title')}
           description={t('fullWidth.description')}
           exampleFirst>
           <div
             style={{
               overflow: 'hidden',
-              marginBottom: '1rem',
-              padding: '2rem .8rem 0 .8rem',
+              marginBottom: suomifiTheme.spacing.m,
+              padding: `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m} 0 ${
+                suomifiTheme.spacing.m
+              }`,
               background: suomifiTheme.colors.depthLight30,
               display: 'flex',
               justifyContent: 'center'
             }}>
             <MobileDevice>
               {mobileComponents.map(item => (
-                <div key={item.id} style={{ padding: '1rem .5rem' }}>
+                <div
+                  key={item.id}
+                  style={{
+                    padding: `${suomifiTheme.spacing.m} ${
+                      suomifiTheme.spacing.s
+                    }`
+                  }}>
                   {getExampleComp(
                     item.comp,
                     `${item.id}.fullWidth`,
@@ -138,16 +144,15 @@ const Page = (): JSX.Element => (
           </div>
         </ComponentDescription>
 
-        <Heading.h2>{t('common:component.versions')}</Heading.h2>
-
         {components.map(item => (
           <ComponentDescription
             key={item.id}
-            title={t(`${item.id}.title`)}
+            mainTitle={t(`${item.id}.title`)}
             description={t(`${item.id}.description`)}
             exampleFirst>
             <ComponentExample
               style={{
+                padding: suomifiTheme.spacing.s,
                 background: item.background,
                 border: item.border || 0
               }}>
@@ -172,13 +177,14 @@ const Page = (): JSX.Element => (
         ))}
 
         <ComponentDescription
-          title={t('withIcon.title')}
+          mainTitle={t('withIcon.title')}
           description={t('withIcon.description')}
           exampleFirst>
           {components.map(item => (
             <ComponentExample
               key={item.id}
               style={{
+                padding: suomifiTheme.spacing.s,
                 background: item.background,
                 border: item.border || 0
               }}>
@@ -211,15 +217,15 @@ const Page = (): JSX.Element => (
         </ComponentDescription>
 
         <ComponentDescription
-          title={t('disabled.title')}
+          mainTitle={t('disabled.title')}
           description={t('disabled.description')}
           exampleFirst>
-          <ComponentExample>
+          <ComponentExample style={{ padding: suomifiTheme.spacing.s }}>
             {disabledComponents.map(item => (
               <div
                 key={item.id}
                 style={{
-                  padding: item.background ? '.8rem' : 0,
+                  padding: item.background ? suomifiTheme.spacing.s : 0,
                   background: item.background || 'none'
                 }}>
                 {getExampleComp(

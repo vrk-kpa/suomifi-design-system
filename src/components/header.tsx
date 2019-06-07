@@ -1,4 +1,3 @@
-import { Link } from '@wapps/gatsby-plugin-i18next'
 import React from 'react'
 import { NamespacesConsumer } from 'react-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
@@ -9,13 +8,14 @@ import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.s
 import MainMenu from 'components/MainMenu'
 import { Desktop, MobileOrTablet } from 'components/Responsive'
 import mainNavData from 'config/mainnav'
+import Link from 'components/Link'
 
 const Header = (): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <header
         style={{
-          padding: '1rem',
+          padding: suomifiTheme.spacing.m,
           borderTop: `4px solid ${suomifiTheme.colors.brandBase}`,
           boxSizing: `border-box`,
           background: suomifiTheme.colors.whiteBase,
@@ -33,20 +33,25 @@ const Header = (): JSX.Element => (
             justifyContent: 'space-between'
           }}>
           <Link
+            icon={
+              <>
+                <Desktop>
+                  <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
+                </Desktop>
+                <MobileOrTablet>
+                  <SuomiFi style={{ width: '32px', height: '32px' }} />
+                </MobileOrTablet>
+              </>
+            }
             title={t('common:to.homepage')}
-            to='/'
-            css={[
-              { display: 'inline-block', height: '32px' },
-              `&:focus { ${suomifiTheme.outlines.basic} }`
-            ]}>
-            <Desktop>
-              <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
-            </Desktop>
-            <MobileOrTablet>
-              <SuomiFi style={{ width: '32px', height: '32px' }} />
-            </MobileOrTablet>
-          </Link>
-          <div style={{ flex: 1, position: 'relative', marginLeft: '.5rem' }}>
+            url='/'
+          />
+          <div
+            style={{
+              flex: 1,
+              position: 'relative',
+              marginLeft: suomifiTheme.spacing.s
+            }}>
             <div
               style={{
                 fontSize: '28px',
@@ -59,7 +64,7 @@ const Header = (): JSX.Element => (
               style={{
                 position: 'absolute',
                 top: '-.2rem',
-                left: '9.5rem',
+                left: '9.6rem',
                 whiteSpace: 'nowrap',
                 lineHeight: '16px',
                 fontSize: '16px',

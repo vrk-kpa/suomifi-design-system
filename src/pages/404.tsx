@@ -5,7 +5,7 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next'
 
 import Layout from 'components/layout'
 import SEO from 'components/seo'
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import Link from 'components/Link'
 
 const Page = (): JSX.Element => (
@@ -14,9 +14,9 @@ const Page = (): JSX.Element => (
       <Layout>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
-        <p>
+        <Paragraph>
           <Text>{t('intro')}</Text>
-        </p>
+        </Paragraph>
         <div>
           <Link text={t('common:to.homepage')} url='/' />
         </div>

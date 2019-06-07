@@ -7,16 +7,16 @@ const NoteBox = ({ title, items }: Props): JSX.Element => (
   <section
     style={{
       background: suomifiTheme.colors.highlightLight50,
-      margin: '2rem 0',
-      padding: '20px',
+      margin: `${suomifiTheme.spacing.l} 0`,
+      padding: suomifiTheme.spacing.m,
       border: `1px solid ${suomifiTheme.colors.depthLight13}`
     }}>
-    <Heading.h3>{title}</Heading.h3>
-    <ul style={{ margin: 0, padding: '0 0 0 2rem' }}>
+    <Heading.h3 as='h2'>{title}</Heading.h3>
+    <ul style={{ margin: 0, padding: `0 0 0 ${suomifiTheme.spacing.m}` }}>
       {items.map(
         (item, index) =>
           !!item && (
-            <li key={index} style={{ marginTop: '1rem' }}>
+            <li key={index} style={{ margin: suomifiTheme.spacing.m }}>
               <Text>{item}</Text>
             </li>
           )

@@ -1,7 +1,17 @@
 {
   "title": "title",
-  "info.title": "info.title",
   "intro": "intro",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item"
+  ],
   "sections": [
     {
       "title": "section.title",
@@ -233,9 +243,5 @@
         { "text": "section.link.text", "url": "section.link.url" }
       ]
     }
-  ],
-  "usage.title": "usage.title",
-  "usage.description": "usage.description",
-  "advancedUsage.title": "advancedUsage.title",
-  "advancedUsage.description": "advancedUsage.description"
+  ]
 }

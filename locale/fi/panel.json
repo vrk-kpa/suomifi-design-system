@@ -1,12 +1,15 @@
 {
-  "title": "Laajennuspaneeli",
+  "title": "Laajennuspaneeli (Expansion Panel)",
   "intro": "Komponentti piilottaa näkyvistä otsikon alle määriteltyä informaatiota tai sisältöä. Laajennuspaneeli helpottaa käyttäjää hahmottamaan sellaisia näkymiä, jossa on laajasti sisältöä. Komponenttia käytetään kun tilaa on vertikaalisesti rajoitetusti. Panel Expansion -komponentin avulla sivun pituutta voidaan lyhentää.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Laajennuspaneelien käytössä tulee erityisesti huomioida myös kognitiivinen saavutettavuus, koska laajennuspaneeli piilottaa osan sisällöstä. Käyttäjät eivät välttämättä huomaa paneelikomponentin olemassa oloa tai he eivät ymmärrä miten komponenttia tulisi käyttää. Laajennuspaneelia ei tule käyttää sellaisissa tapauksissa, joissa sisällön informaatio on erityisen oleellinen kaikille käyttäjille.",
-    "Laajennuspanelin käyttöä tulee arvioida sisällön käyttötarkoituksen mukaisesti. Paneelia tulee käyttää vain jos sisältöä on erityisen paljon ja käytettävyyden kannalta on perusteltua lyhentää sivun pituutta erillisiin paneeliosioihin.",
-    "Komponenttia käyttämällä voidaan parantaa laajan kokonaisuuden hahmottamista, muta liian pitkien laajennuspanelien kokonaisuuksia tulisi välttää (kognitiivinen rasitus).",
+    "Laajennuspaneelien käytössä tulee erityisesti huomioida kognitiivinen saavutettavuus, koska laajennuspaneeli piilottaa osan sisällöstä. Käyttäjät eivät välttämättä huomaa paneelikomponentin olemassa oloa tai he eivät ymmärrä miten komponenttia tulisi käyttää. ",
     "Ensisijaisesti tulee miettiä voidaanko sisältöä ryhmitellä, lyhentää tai jakaa siten, että sisältö on hallittavissa ilman paneelilla tehtävää sisällön piilottamista.",
+    "Paneelia tulee käyttää vain jos sisältöä on erityisen paljon ja käytettävyyden kannalta on perusteltua lyhentää sivun pituutta erillisiin paneeliosioihin.",
+    "Laajennuspaneelia ei tule mielellään käyttää sellaisissa tapauksissa, joissa sisältö on olennaista käyttäjille.",
+    "Liian pitkien laajennuspaneelien kokonaisuuksia tulisi välttää.",
+    "Suomifissa laajennuspaneelia on käytetty kun sisältö-osuus on erityisen pitkä, jolloin tuetaan kokonaisuuden hahmottamista.",
+    "",
     ""
   ],
   "sections": [
@@ -50,7 +53,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Käytä laajennuspanelia ainoastaan sisällölle jonka ei ole välttämätöntä olla käyttäjälle näkyvissä koko ajan. Laajennuspanelia voidaan myös käyttää vähäisemmän prioriteetin sisällölle."
+          "text": "Käytä laajennuspanelia ainoastaan sisällölle jonka ei ole välttämätöntä olla käyttäjälle näkyvissä koko ajan. Laajennuspanelia voidaan myös käyttää vähäisemmän prioriteetin sisällölle.\n"
         },
         {
           "image.key": "",
@@ -114,11 +117,11 @@
     }
   ],
   "nopadding.title": "",
-  "nopadding.description": "Laajennuspaneelin sisällössä on oletusarvoisesti täytettä (padding). Tämä voidaan poistaa \"noPadding\"-attribuutilla mikäli oma tyylitys sen vaatii.",
-  "single.title": "Yksittäinen laajennuspaneeli",
-  "single.description": "Erillistä laajennuspaneelia käytetään kun on tarvetta on ainoastaan yhdelle paneelille, esimerkiksi sisältökokonaisuudessa toistuvalle spesifille informaatiolle.",
-  "group.title": "Laajennuspaneeli ryhmä",
-  "group.description": "Laajennuspaneeliryhmä koostuu useasta (kaksi tai useampi) päällekkäisestä yksittäisestä laajennuspanelista. Laajennuspaneeliryhmä liittyy yhteen sisältökokonaisuuteen. Sivunäkymässä voi olla monta erillistä laajennuspaneliryhmää jotka on selkeästi eritelty toisistaan alaotsikoita hyödyntäen. Yksittäisen laajennuspaneeliryhmän yläkulmassa on \"Avaa kaikki\" toiminto, jonka avulla kaikki ryhmän paneelit saa halutessaan auki. Auki ollessa toiminto muuttuu muotoon \"Sulje kaikki\", jonka avulla kaikki ryhmän paneelit saa kiinni. Toiminto helpottaa käyttäjää pääsemään käsiksi heti koko sisältöön ja se myös parantaa paneelien sisällä olevasta sisällöstä etsimistä.",
+  "nopadding.description": "Laajennuspaneelin sisällössä on oletusarvoisesti täytettä (padding). Tämä voidaan poistaa 'noPadding' attribuutilla mikäli oma tyylitys sen vaatii.",
+  "single.title": "Yksittäinen laajennuspaneeli (Single Expansion Panel)",
+  "single.description": "Erillistä laajennuspaneelia käytetään kun on tarvetta on ainoastaan yhdelle paneelille, esimerkiksi sisältökokonaisuudessa toistuvalle spesifille informaatiolle. ",
+  "group.title": "Laajennuspaneeli ryhmä (Expansion Panel Group)",
+  "group.description": "Laajennuspaneeliryhmä koostuu useasta (kaksi tai useampi) päällekkäisestä yksittäisestä laajennuspanelista. Laajennuspaneeliryhmä liittyy yhteen sisältökokonaisuuteen. Sivunäkymässä voi olla monta erillistä laajennuspaneliryhmää jotka on selkeästi eritelty toisistaan alaotsikoita hyödyntäen. Yksittäisen laajennuspaneeliryhmän yläkulmassa on ‘Avaa kaikki’ toiminto, jonka avulla kaikki ryhmän paneelit saa halutessaan auki. Auki ollessa toiminto muuttuu muotoon \"Sulje kaikki\", jonka avulla kaikki ryhmän paneelit saa kiinni. Toiminto helpottaa käyttäjää pääsemään käsiksi heti koko sisältöön ja se myös parantaa paneelien sisällä olevasta sisällöstä etsimistä.",
   "group.open": "Avaa kaikki",
   "group.close": "Sulje kaikki",
   "panel.title": "Paneeli",

@@ -1,5 +1,6 @@
 {
   "title": "Suunnittelijoille",
+  "intro": "Tulemme jatkossa julkaisemaan Design System -sivustolla myös käyttöliittymien suunnitteluaineiston Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit.",
   "sections": [
     {
       "title": "",
@@ -7,7 +8,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Tulemme jatkossa julkaisemaan Design System -sivustolla myös käyttöliittymien suunnitteluaineiston Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit.",
+          "text": "",
           "listItems": [
             { "text": "" },
             { "text": "" },

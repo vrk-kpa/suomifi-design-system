@@ -2,14 +2,14 @@ import React, { ReactNode } from 'react'
 import { Link } from '@wapps/gatsby-plugin-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
 
-const isFrontPage = (to: string): boolean => to && to === '/'
+import { isFrontPage } from 'components/LinkUtil'
 
 const NavItem = ({ to, children }: Props): JSX.Element => (
   <Link
     to={to}
     css={[
       {
-        padding: '.5rem',
+        padding: suomifiTheme.spacing.s,
         lineHeight: '2.8rem',
         whiteSpace: 'nowrap',
         color: suomifiTheme.colors.blackBase,

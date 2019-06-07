@@ -8,8 +8,8 @@ const ComponentExample = ({ style, children }: Props): JSX.Element => (
       justifyContent: 'center',
       alignItems: 'center',
       flexWrap: 'wrap',
-      padding: '.8rem',
-      margin: '1.5rem 0',
+      padding: suomifiTheme.spacing.m,
+      margin: `${suomifiTheme.spacing.m} 0`,
       ...style,
       background:
         style && style.background

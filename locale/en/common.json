@@ -9,9 +9,7 @@
   "to.sidenav": "Go to side navigation",
   "open.navigation.main": "Open or close main menu",
   "navigation.main": "Main navigation",
-  "component.versions": "Component versions",
-  "component.usage": "Component usage",
-  "react": "React",
+  "react": "Koodiesimerkki (React)",
   "footer.description": "",
   "footer.links": [
     { "text": "", "url": "" },
@@ -23,5 +21,6 @@
   "slack.link.text": "",
   "slack.link.url": "",
   "github.link.text": "",
-  "github.link.url": ""
+  "github.link.url": "",
+  "opens.new.window": ""
 }

@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import { NamespacesConsumer } from 'react-i18next'
 import { withI18next } from '@wapps/gatsby-plugin-i18next'
 import { suomifiTheme } from 'suomifi-ui-components'
+import { getLuminance } from 'polished'
 
 import Layout from 'components/layout'
 import SEO from 'components/seo'
@@ -11,21 +12,22 @@ import sideNavData from 'config/sidenav/styles'
 import NoteBox from 'components/NoteBox'
 import Section from 'components/Section'
 import ComponentExample from 'components/ComponentExample'
-import { Heading, Text } from 'components/ResponsiveComponents'
-
-const colors = Object.keys(suomifiTheme.colors)
-  .map(key => ({
-    [key]: { name: key, value: suomifiTheme.colors[key], border: 'none' }
-  }))
-  .reduce((obj, item) => ({ ...obj, ...item }), {})
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 
 const borderForLightColor = `1px solid ${suomifiTheme.colors.depthLight13}`
 
-colors.whiteBase = { ...colors.whiteBase, border: borderForLightColor }
-colors.highlightLight53 = {
-  ...colors.highlightLight53,
-  border: borderForLightColor
-}
+const colors = Object.keys(suomifiTheme.colors)
+  .map(key => ({
+    [key]: {
+      name: key,
+      value: suomifiTheme.colors[key],
+      border:
+        getLuminance(suomifiTheme.colors[key]) > getLuminance('#f8f8f8')
+          ? borderForLightColor
+          : 0
+    }
+  }))
+  .reduce((obj, item) => ({ ...obj, ...item }), {})
 
 const colorCategories = [
   {
@@ -43,9 +45,12 @@ const colorCategories = [
       colors.highlightLight53,
       colors.highlightDark9,
       colors.depthBase,
+      colors.depthLight26,
       colors.depthDark27,
       colors.accentBase,
-      colors.depthSecondary
+      colors.depthSecondary,
+      colors.depthSecondaryDark3,
+      colors.accentTertiaryDark9
     ]
   },
   {
@@ -75,7 +80,12 @@ const colorCategories = [
   },
   {
     id: 'accentColors',
-    colors: [colors.accentSecondary, colors.accentSecondaryLight40]
+    colors: [
+      colors.accentBase,
+      colors.accentSecondary,
+      colors.accentSecondaryLight40,
+      colors.accentTertiary
+    ]
   }
 ]
 
@@ -86,12 +96,19 @@ const getExampleColor = (
   label: string,
   style?: CSSProperties
 ): JSX.Element => (
-  <div key={id} style={{ margin: '.5rem 2rem 1.5rem 0', lineHeight: '1rem' }}>
+  <div
+    key={id}
+    style={{
+      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
+        suomifiTheme.spacing.l
+      } 0`,
+      lineHeight: '1rem'
+    }}>
     <div
       style={{
         width: '10rem',
         height: '3rem',
-        marginBottom: '1rem',
+        marginBottom: suomifiTheme.spacing.m,
         background: value,
         ...style
       }}
@@ -109,29 +126,25 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
 
-        <p>
-          <Text>{t('intro')}</Text>
-        </p>
-
-        <Heading.h2>{t('usage')}</Heading.h2>
+        <Paragraph.lead>
+          <Text.lead>{t('intro')}</Text.lead>
+        </Paragraph.lead>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
         {t('sections').map((section, index) => (
           <Section
             key={index}
-            title={section.title}
+            mainTitle={section.title}
             paragraphs={section.paragraphs}
             links={section.links}
           />
         ))}
 
-        <Heading.h2>{t('primaryColors.title')}</Heading.h2>
-
         {colorCategories.map(item => (
           <ComponentDescription
             key={item.id}
-            title={t(`${item.id}.title`)}
+            mainTitle={t(`${item.id}.title`)}
             description={t(`${item.id}.description`)}
             exampleFirst={false}
             noCode>

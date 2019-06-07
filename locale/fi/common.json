@@ -9,9 +9,7 @@
   "to.sidenav": "Siirry sivunavigaatioon",
   "open.navigation.main": "Avaa tai sulje päävalikko",
   "navigation.main": "Päänavigaatio",
-  "component.versions": "Komponentin versiot",
-  "component.usage": "Komponentin käyttö",
-  "react": "React",
+  "react": "Koodiesimerkki (React)",
   "footer.description": "Suomi.fi Design System -kirjaston kehityksestä vastaa Väestorekisterikeskus.",
   "footer.links": [
     { "text": "", "url": "" },
@@ -23,5 +21,6 @@
   "slack.link.text": "suomidigi-kehittajat",
   "slack.link.url": "https://suomidigi-kehittajat.slack.com",
   "github.link.text": "suomifi-ui-components",
-  "github.link.url": "https://github.com/vrk-kpa/suomifi-ui-components"
+  "github.link.url": "https://github.com/vrk-kpa/suomifi-ui-components",
+  "opens.new.window": "Avautuu uuteen ikkunaan"
 }

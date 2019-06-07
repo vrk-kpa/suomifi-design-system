@@ -2,9 +2,9 @@ import React, { Component, ReactNode } from 'react'
 import { suomifiTheme } from 'suomifi-ui-components'
 import { Link } from '@wapps/gatsby-plugin-i18next'
 
-class MainMenuItem extends Component<Props> {
-  private isFrontPage = (to: string): boolean => to && to === '/'
+import { isFrontPage } from 'components/LinkUtil'
 
+class MainMenuItem extends Component<Props> {
   public render(): JSX.Element {
     const { to, children } = this.props
 
@@ -17,8 +17,8 @@ class MainMenuItem extends Component<Props> {
             alignItems: 'center',
             justifyContent: 'space-between',
             height: '3.2rem',
-            paddingLeft: '1rem',
-            paddingRight: '1rem',
+            paddingLeft: suomifiTheme.spacing.m,
+            paddingRight: suomifiTheme.spacing.m,
             borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
             color: suomifiTheme.colors.highlightBase,
             textDecoration: 'none',
@@ -31,7 +31,7 @@ class MainMenuItem extends Component<Props> {
           `&:focus { ${suomifiTheme.outlines.basic} }`
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
-          if (!this.isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
+          if (!isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
             return {
               style: {
                 fontWeight: 600

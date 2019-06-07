@@ -1,6 +1,7 @@
 import React, { ReactNode, CSSProperties } from 'react'
 import reactElementToJSXString from 'react-element-to-jsx-string'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { suomifiTheme } from 'suomifi-ui-components'
 
 const Highlighter = ({
   style,
@@ -20,6 +21,7 @@ const Highlighter = ({
       overflow: 'hidden',
       ...style
     }}
+    // clear default styles to allow e.g. wrap
     codeTagProps={{ style: {} }}>
     {children}
   </SyntaxHighlighter>
@@ -31,7 +33,7 @@ const ComponentCode = ({
   filterProps,
   children
 }: Props): JSX.Element => (
-  <div style={{ padding: '1rem', ...style }}>
+  <div style={{ padding: suomifiTheme.spacing.m, ...style }}>
     {!!javascript && (
       <Highlighter style={{ marginBottom: !children ? 0 : '1rem' }}>
         {javascript}

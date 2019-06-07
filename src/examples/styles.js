@@ -4,10 +4,14 @@ import { suomifiTheme } from 'suomifi-ui-components'
 export const Example = () => (
   <div
     style={{
-      width: '10rem',
-      height: '3rem',
+      margin: suomifiTheme.spacing.l,
+      padding: suomifiTheme.spacing.m,
+      borderRadius: suomifiTheme.radius.basic,
       background: suomifiTheme.colors.highlightBase,
-      boxShadow: suomifiTheme.shadows.panelShadow
-    }}
-  />
+      boxShadow: suomifiTheme.shadows.panelShadow,
+      fontSize: suomifiTheme.typography.fontSize.body,
+      color: suomifiTheme.colors.whiteBase
+    }}>
+    Example
+  </div>
 )

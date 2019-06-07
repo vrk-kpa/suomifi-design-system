@@ -10,7 +10,8 @@ import ComponentDescription from 'components/ComponentDescription'
 import ComponentExample from 'components/ComponentExample'
 import { Example } from 'examples/styles'
 import { getExample, CodeExampleData } from 'components/CodeExampleUtil'
-import { Heading } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
+import Section from 'components/Section'
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
   <NamespacesConsumer ns={['styles']}>
@@ -19,9 +20,21 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
         <SEO title={t('info.title')} />
         <Heading.h1>{t('info.title')}</Heading.h1>
 
+        <Paragraph.lead>
+          <Text.lead>{t('intro')}</Text.lead>
+        </Paragraph.lead>
+
+        {t('sections').map((section, index) => (
+          <Section
+            key={index}
+            mainTitle={section.title}
+            paragraphs={section.paragraphs}
+            links={section.links}
+          />
+        ))}
+
         <ComponentDescription
-          title={t('usage.title')}
-          titleLevel={2}
+          mainTitle={t('usage.title')}
           description={t('usage.description')}
           exampleFirst
           showOnlyCodeString

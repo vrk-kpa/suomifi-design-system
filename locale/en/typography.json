@@ -1,7 +1,17 @@
 {
-  "title": "Components",
-  "info.title": "",
+  "title": "",
   "intro": "",
+  "note.title": "",
+  "note.items": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
   "sections": [
     {
       "title": "",
@@ -233,9 +243,5 @@
         { "text": "", "url": "" }
       ]
     }
-  ],
-  "usage.title": "",
-  "usage.description": "",
-  "advancedUsage.title": "",
-  "advancedUsage.description": ""
+  ]
 }

@@ -115,7 +115,7 @@ class SideNav extends Component<Props, State> {
     return (
       <div
         style={{
-          padding: '.5rem',
+          padding: suomifiTheme.spacing.s,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -123,8 +123,10 @@ class SideNav extends Component<Props, State> {
           textShadow: 'none'
         }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <div style={{ fontSize: '40px' }}>{sideNavData.icon}</div>
-          <Text.bold style={{ marginLeft: '.5rem' }}>
+          <div style={{ fontSize: '40px', lineHeight: '1em' }}>
+            {sideNavData.icon}
+          </div>
+          <Text.bold style={{ marginLeft: suomifiTheme.spacing.s }}>
             {sideNavData.title}
           </Text.bold>
         </div>
@@ -133,7 +135,7 @@ class SideNav extends Component<Props, State> {
             style={{
               float: 'right',
               background: 'none',
-              marginRight: '.8rem',
+              marginRight: suomifiTheme.spacing.m,
               padding: 0,
               border: 0,
               width: '16px',
@@ -159,16 +161,24 @@ class SideNav extends Component<Props, State> {
       {items.map(item => (
         <li
           key={item.to}
-          style={{
-            borderLeft:
-              level === 1
-                ? (item.showAsTo
-                  ? this.isCurrent(item.to) ||
-                    this.isPartiallyCurrent(item.showAsTo)
-                  : this.isPartiallyCurrent(item.to))
-                  ? `4px solid ${suomifiTheme.colors.brandBase}`
-                  : '4px solid transparent'
-                : 'none'
+          css={{
+            position: 'relative',
+            '&::after': {
+              content: '""',
+              position: 'absolute',
+              top: '-1px',
+              left: 0,
+              bottom: 0,
+              borderLeft:
+                level === 1
+                  ? (item.showAsTo
+                    ? this.isCurrent(item.to) ||
+                      this.isPartiallyCurrent(item.showAsTo)
+                    : this.isPartiallyCurrent(item.to))
+                    ? `4px solid ${suomifiTheme.colors.brandBase}`
+                    : 0
+                  : 0
+            }
           }}>
           <SideNavItem
             to={item.to}
@@ -212,7 +222,8 @@ class SideNav extends Component<Props, State> {
             style={{
               background: 'none',
               padding: 0,
-              border: 0
+              border: 0,
+              lineHeight: '1em'
             }}>
             <this.Title />
           </Button>

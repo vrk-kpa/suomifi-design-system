@@ -1,4 +1,7 @@
 import React from 'react'
+import { suomifiTheme } from 'suomifi-ui-components'
+
+import { Text } from 'components/ResponsiveComponents'
 
 const isValid = (item: ListItem): boolean => item && !!item.text
 
@@ -9,9 +12,11 @@ const BulletedList = ({ items = [] }: Props): JSX.Element => {
 
   if (items.length > 0) {
     return (
-      <ul>
+      <ul style={{ margin: 0, padding: `0 0 0 ${suomifiTheme.spacing.l}` }}>
         {items.map((item, index) => (
-          <li key={index}>{item.text}</li>
+          <li key={index}>
+            <Text>{item.text}</Text>
+          </li>
         ))}
       </ul>
     )

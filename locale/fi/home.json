@@ -2,7 +2,7 @@
   "title": "Etusivu",
   "intro.title": "Suomi.fi Design System",
   "intro.description": "Suomi.fi Design System -kirjaston avulla Väestörekisterikeskus tukee ja edistää saavutettavien julkisten verkkopalvelujen rakentamista.",
-  "note.title": "Tämä on Alphaversio",
+  "note.title": "Tämä on ensimmäinen kehitysversio (alpha)",
   "note.description": "Osallistu uuden palvelun kehittämiseen! Anna palautetta ja liity keskusteluun Suomidigin kehittäjät #designsystem Slack- kanavalla.",
   "note.link.text": "Liity Slack -kanavalle",
   "note.link.url": "https://suomidigi-kehittajat.slack.com/",
@@ -12,14 +12,14 @@
       "blocks": [
         {
           "icon": "",
-          "title": "UI Komponentti kirjasto",
+          "title": "Käyttöliittymäkomponentti kirjasto",
           "paragraphs": [
             { "text": "Kirjastosta löydät yleisimpiä saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasuja siten, että ne vastaavat oman palvelusi visuaalista ilmettä." },
             { "text": "" },
             { "text": "" }
           ],
           "links": [
-            { "text": "Tutustu UI komponentteihin", "url": "/components" },
+            { "text": "Tutustu käyttöliittymäkomponentteihin", "url": "/components" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]

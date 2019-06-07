@@ -1,7 +1,17 @@
 {
-  "title": "Components",
-  "info.title": "",
+  "title": "Typografia",
   "intro": "",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
+    "Otsikointihierarkia on yhtenäinen (h1, h2, h3, h4, h5, h6), eikä välistä saa puuttua otsikkotasoja. Oikea heading-tasojen hierarkia tukee rakenteen hahmottamista.",
+    "Otsikkotasojen puuttuminen välistä tai otsikkotasojen epäjärjestys vaikeuttaa sisällön hahmottamista ruudunlukijaa käytettäessä. Ruudunlukija tulkitsee vain heading-merkityt komponentit otsikoiksi.",
+    "Huomioi tekstiä koskevia WCGA 2.1 ohjeistuksia: 1.4.3 Contrast (Minimum), 1.4.4 Resize text, 1.4.12 Text Spacing.",
+    "",
+    "",
+    "",
+    ""
+  ],
   "sections": [
     {
       "title": "",
@@ -44,18 +54,64 @@
         }
       ],
       "links": [
-        { "text": "", "url": "" },
+        { "text": "WCAG 2.1 vaatimukset", "url": "https://www.w3.org/TR/WCAG21/" },
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]
     },
     {
-      "title": "",
+      "title": "Kirjasintyyppi",
       "paragraphs": [
         {
           "image.key": "",
           "image.alt": "",
+          "text": "Suomi.fi-tyyleissä sekä käyttöliittymäkomponenteissa käytetty kirjaisin Source Sans Pro on Googlen välittämä open source fontti, kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Kirjaisimen voi ladata omalle työasemalle Google Fontsista.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
           "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "Source Sans Pro", "url": "https://fonts.google.com/specimen/Source+Sans+Pro" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "Otsikkotyylit (Heading)",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Otsikoiden koot on määritelty erikseen sekä desktop-, että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Regular) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5 ja h6-otsikolle. Pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -96,58 +152,12 @@
       ]
     },
     {
-      "title": "",
+      "title": "Tekstityylit ",
       "paragraphs": [
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
+          "text": "Lähtökohtaisesti käytetään 18px fonttia. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Leipäteksteissä (body text) käytetään Source Sans Pro Regular -fonttia, mutta joskus jotain tekstiosuutta halutaan korostaa ja käytetään Source Sans Pro Semibold -fonttia. Nämä korostukset on pääasiallisesti määritelty komponenteittain tai esimerkiksi otsikkotyyleissä. Joissain harvoissa tapauksissa käytetään Source Sans Pro Italic fonttia, kuten placeholder -tekstinä komponenteissa.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -233,9 +243,5 @@
         { "text": "", "url": "" }
       ]
     }
-  ],
-  "usage.title": "",
-  "usage.description": "",
-  "advancedUsage.title": "",
-  "advancedUsage.description": ""
+  ]
 }

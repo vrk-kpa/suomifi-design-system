@@ -2,7 +2,7 @@ import React from 'react'
 import { suomifiTheme, Icon } from 'suomifi-ui-components'
 import { StaticIconKeys } from 'suomifi-icons'
 
-import { Heading, Text } from 'components/ResponsiveComponents'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import LinkList from 'components/LinkList'
 import { Props as LinkProps } from 'components/Link'
 
@@ -16,7 +16,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           justifyContent: 'center',
           width: '70px',
           height: '70px',
-          marginBottom: '2rem',
+          marginBottom: suomifiTheme.spacing.l,
           border: `1px solid ${suomifiTheme.colors.depthLight13}`,
           borderRadius: '50%',
           fontSize: '50px'
@@ -28,13 +28,13 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
     {block.paragraphs.map((paragraph, index) => (
       <div key={index}>
         {!!paragraph.text && (
-          <p>
+          <Paragraph>
             <Text>{paragraph.text}</Text>
-          </p>
+          </Paragraph>
         )}
       </div>
     ))}
-    <div style={{ margin: '1rem 0' }}>
+    <div style={{ margin: `${suomifiTheme.spacing.m} 0` }}>
       <LinkList links={block.links} />
     </div>
   </>
@@ -49,7 +49,7 @@ const ContentBoxes = ({
   <section
     style={{
       background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
-      padding: '2rem 1rem 0',
+      padding: `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m} 0`,
       display: 'flex',
       justifyContent: 'center'
     }}>
@@ -60,7 +60,7 @@ const ContentBoxes = ({
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          margin: '2rem 0'
+          margin: `${suomifiTheme.spacing.l} 0`
         }}>
         <div
           style={{
@@ -73,7 +73,10 @@ const ContentBoxes = ({
           {blocks.map((block, index) => (
             <article
               key={index}
-              style={{ flex: wrapAll ? '100%' : '30%', margin: '1rem' }}>
+              style={{
+                flex: wrapAll ? '100%' : '30%',
+                margin: suomifiTheme.spacing.m
+              }}>
               <Block block={block} />
             </article>
           ))}
@@ -93,11 +96,11 @@ interface Props {
 interface Block {
   icon?: StaticIconKeys
   title: string
-  paragraphs: Paragraph[]
+  paragraphs: ParagraphProps[]
   links: LinkProps[]
 }
 
-interface Paragraph {
+interface ParagraphProps {
   text: string
 }
 

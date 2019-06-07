@@ -8,9 +8,9 @@ const BypassLink = ({ to, children }: Props): JSX.Element => (
       {
         position: 'absolute',
         zIndex: suomifiTheme.zindexes.focus + 1,
-        left: '-100rem',
-        margin: '1rem',
-        padding: '.5rem',
+        left: '-1000px',
+        margin: suomifiTheme.spacing.m,
+        padding: suomifiTheme.spacing.s,
         background: suomifiTheme.colors.highlightLight53,
         border: `1px solid ${suomifiTheme.colors.depthLight13}`,
         color: suomifiTheme.colors.blackBase,

@@ -1,6 +1,6 @@
 {
   "title": "Typografia",
-  "intro": "Suomifin typografia teema ",
+  "intro": "",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
@@ -54,7 +54,7 @@
         }
       ],
       "links": [
-        { "text": "WCAG vaatimukset", "url": "https://www.w3.org/TR/WCAG21/" },
+        { "text": "WCAG 2.1 vaatimukset", "url": "https://www.w3.org/TR/WCAG21/" },
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]

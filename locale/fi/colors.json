@@ -5,7 +5,7 @@
   "note.items": [
     "Käyttäessäsi komponenttien tarjoamaa valmista suomi.fi-väritemaa käyttöohjeistuksien mukaisesti, WCAG:n kontrastivaatimukset täyttyvät ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
     "Jos haluat modifioida värit sopimaan erilaiseen visuaaliseen ilmeeseen, sinun tulee varmistaa, että valitsemasi väriyhdistelmien kontrastit täyttävät WCAG:n asettamat vaatimukset.",
-    "WCGA kontrastivaatimukset eivät koske inaktiivisia komponentteja. On kuitenkin tärkeää varmistaa, että estetty sävy eroaa kontrastiltaan tarpeeksi aktiivisen tilan väristä. Suomifi -komponenttien inaktiivinen tila on suunniteltu kontrastiltaan oikeanlaiseksi.",
+    "Huomioi että WCGA kontrastivaatimukset eivät koske komponentteja joiden käyttö on estetty. On kuitenkin tärkeää varmistaa että estetty sävy eroaa kontrastiltaan tarpeeksi aktiivisen tilan väristä. Suomi.fi-komponentteihin on toteutettu valmiiksi estetty-tila oikeaoppisesti.",
     "Tutustu näihin kohtiin WCAG 2.1. ohjeistuksesta: 1.4.1 Use of Color, 1.4.3 Contrast (Minimum)",
     ""
   ],
@@ -118,7 +118,7 @@
   "brandColors.title": "Brändiväri",
   "brandColors.description": "Brändiväriä (brandBase) käytetään suomi.fi palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa.",
   "controlColors.title": "Linkit, painikkeet ja valinnat",
-  "controlColors.description": "Sinistä (highlightBase) sekä siitä johdettuja vaalempia sävyä (highlightLight) käytetään interaktiivisissa elementeissä ja valittujen elementtien korostamisessa. Violettia (accentTertiaryDark9) käytetään linkkien vierailun jälkeisessä tilassa (visited state). Estetyissä tiloissa (disabled state) käytetään harmaata (depthBase) Sinisestä johdettua tummempaa sävyä (highlightDark9) käytetään esim. painikkeiden hovertilassa (hover state). Myös vaalean sinistä (depthSecondary) sekä siitä astetta tummempaa (depthSecondaryDark3) käytetään hovertilojen korostamisessa. Oranssia (accentBase) väriä käytetään kaikkien komponenttien fokustilassa (focus state). ",
+  "controlColors.description": "Sinistä (highlightBase) sekä siitä johdettuja vaalempia sävyä (highlightLight) käytetään interaktiivisissa elementeissä ja valittujen elementtien korostamisessa. Violettia (accentTertiaryDark9) käytetään linkkien vierailun jälkeisessä tilassa (visited state). Estetyissä tiloissa käytetään harmaata (depthBase) Sinisestä johdettua tummempaa sävyä (highlightDark9) käytetään esim. painikkeiden hovertilassa (hover state). Myös vaaleansinistä (depthSecondary) sekä siitä astetta tummempaa (depthSecondaryDark3) käytetään hovertilojen korostamisessa. Oranssia (accentBase) väriä käytetään kaikkien komponenttien fokustilassa (focus state). ",
   "iconColors.title": "Ikonit",
   "iconColors.description": "Kuvitusikoneissa käytetään harmaata (depthBase) sekä oranssia (accentBase) korostevärinä. Toiminnallisissa ikoneissa käytetään toiminnallisten elementtien sinistä (highlightBase) väriä sekä tummaa harmaata (depthDark27).",
   "backgroundColors.title": "Taustat ja reunukset",

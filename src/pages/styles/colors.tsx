@@ -14,17 +14,20 @@ import Section from 'components/Section'
 import ComponentExample from 'components/ComponentExample'
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 
-const borderForLightColor = `1px solid ${suomifiTheme.colors.depthLight13}`
+const colorTokens =
+  !!suomifiTheme && !!suomifiTheme.colors
+    ? suomifiTheme.colors
+    : { depthLight13: undefined }
 
-const colors = Object.keys(suomifiTheme.colors)
-  .map(key => ({
+const borderForLightColor = `1px solid ${colorTokens.depthLight13}`
+
+const colors = Object.entries(colorTokens)
+  .map(([key, value]) => ({
     [key]: {
       name: key,
-      value: suomifiTheme.colors[key],
+      value,
       border:
-        getLuminance(suomifiTheme.colors[key]) > getLuminance('#f8f8f8')
-          ? borderForLightColor
-          : 0
+        getLuminance(value) > getLuminance('#f8f8f8') ? borderForLightColor : 0
     }
   }))
   .reduce((obj, item) => ({ ...obj, ...item }), {})

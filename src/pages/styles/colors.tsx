@@ -23,6 +23,13 @@ const borderForLightColor = `1px solid ${colorTokens.depthLight13}`
 
 const colors = Object.entries(colorTokens)
   .map(([key, value]) => ({
+type ColorKeys = keyof typeof suomifiTheme.colors
+interface colorItem {
+  name: string
+  value: string
+  border: string
+}
+type colorTypes = { [key in ColorKeys]?: colorItem }
     [key]: {
       name: key,
       value,

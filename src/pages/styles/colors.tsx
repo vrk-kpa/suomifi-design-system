@@ -21,23 +21,27 @@ const colorTokens =
 
 const borderForLightColor = `1px solid ${colorTokens.depthLight13}`
 
-const colors = Object.entries(colorTokens)
-  .map(([key, value]) => ({
 type ColorKeys = keyof typeof suomifiTheme.colors
-interface colorItem {
+interface ColorItem {
   name: string
   value: string
   border: string
 }
-type colorTypes = { [key in ColorKeys]?: colorItem }
+type colorTypes = { [key in ColorKeys]?: ColorItem }
+const colors: colorTypes = Object.entries(colorTokens).reduce(
+  (obj, [key, value]: [ColorKeys, string]) => ({
+    ...obj,
     [key]: {
       name: key,
       value,
       border:
-        getLuminance(value) > getLuminance('#f8f8f8') ? borderForLightColor : 0
+        getLuminance(value) > getLuminance('#f8f8f8')
+          ? borderForLightColor
+          : '0'
     }
-  }))
-  .reduce((obj, item) => ({ ...obj, ...item }), {})
+  }),
+  {}
+)
 
 const colorCategories = [
   {
@@ -59,7 +63,7 @@ const colorCategories = [
       colors.depthDark27,
       colors.accentBase,
       colors.depthSecondary,
-      colors.depthSecondaryDark3,
+      colors.depthSecondaryDark6,
       colors.accentTertiaryDark9
     ]
   },
@@ -85,7 +89,7 @@ const colorCategories = [
       colors.successBase,
       colors.warningBase,
       colors.alertBase,
-      colors.warningLight47
+      colors.alertLight47
     ]
   },
   {

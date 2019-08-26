@@ -54,18 +54,24 @@ const ContentBoxes = ({
       justifyContent: 'center'
     }}>
     <div style={{ maxWidth: 1140 }}>
-      <Heading.h1 style={{ textAlign: 'center' }}>{mainTitle}</Heading.h1>
+      <Heading.h1
+        style={{
+          textAlign: 'left',
+          margin: `0 0 0 ${suomifiTheme.spacing.m}`
+        }}>
+        {mainTitle}
+      </Heading.h1>
       <div
         style={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          margin: `${suomifiTheme.spacing.l} 0`
+          margin: `${suomifiTheme.spacing.l} 0 0 0`
         }}>
         <div
           style={{
             width: '100%',
-            maxWidth: wrapAll ? 800 : 1140,
+            maxWidth: wrapAll ? 900 : 1140,
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: wrapAll ? 'center' : 'space-evenly'

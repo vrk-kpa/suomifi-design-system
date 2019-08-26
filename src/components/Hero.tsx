@@ -26,7 +26,7 @@ const Content = ({
     <div
       style={{
         width: '100%',
-        maxWidth: 900,
+        maxWidth: 1058,
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: center ? 'center' : 'space-between'
@@ -35,7 +35,7 @@ const Content = ({
         <SuomiFi
           style={{
             fill: suomifiTheme.colors.whiteBase,
-            fontSize: compact ? '30px' : '63px',
+            fontSize: compact ? '30px' : '64px',
             margin: center ? '0 0 1rem' : '0 2rem 1rem 0'
           }}
         />

@@ -14248,10 +14248,10 @@ suomifi-icons@0.0.7:
     react "16.7.0"
     react-dom "16.7.0"
 
-suomifi-ui-components@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.2.2.tgz#7ab7e4fbc2875d0bc75c8b8f867a0cc10a812b48"
-  integrity sha512-SAbt1B0bcMUFs0GjgiJ4R8wPIwk3YnZgiPvJbAypxp4hRyY74yr3x++QxGtPeTjSdUp8T0h5BZOLtupTzl2Vhg==
+suomifi-ui-components@0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.2.4.tgz#d7a9f1cf1cb0d71fa04e4728cf30581de4aeafb4"
+  integrity sha512-ISwSnYCNeKTuaXGzh4aFEV2/yxpbpXGH+BF/RiRKCAHA9CRuTgvDW5mLETi7ocPGkDoxu2maikl6zE3doT4k6g==
   dependencies:
     "@emotion/core" "10.0.0"
     "@emotion/styled" "10.0.0"
@@ -14262,6 +14262,7 @@ suomifi-ui-components@^0.2.2:
     polished "3.4.0"
     react-svg "7.2.2"
     suomifi-icons "0.0.7"
+    uuid "3.3.2"
 
 supports-color@^2.0.0:
   version "2.0.0"

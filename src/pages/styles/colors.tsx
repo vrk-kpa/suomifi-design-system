@@ -14,20 +14,34 @@ import Section from 'components/Section'
 import ComponentExample from 'components/ComponentExample'
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 
-const borderForLightColor = `1px solid ${suomifiTheme.colors.depthLight13}`
+const colorTokens =
+  !!suomifiTheme && !!suomifiTheme.colors
+    ? suomifiTheme.colors
+    : { depthLight13: undefined }
 
-const colors = Object.keys(suomifiTheme.colors)
-  .map(key => ({
+const borderForLightColor = `1px solid ${colorTokens.depthLight13}`
+
+type ColorKeys = keyof typeof suomifiTheme.colors
+interface ColorItem {
+  name: string
+  value: string
+  border: string
+}
+type colorTypes = { [key in ColorKeys]?: ColorItem }
+const colors: colorTypes = Object.entries(colorTokens).reduce(
+  (obj, [key, value]: [ColorKeys, string]) => ({
+    ...obj,
     [key]: {
       name: key,
-      value: suomifiTheme.colors[key],
+      value,
       border:
-        getLuminance(suomifiTheme.colors[key]) > getLuminance('#f8f8f8')
+        getLuminance(value) > getLuminance('#f8f8f8')
           ? borderForLightColor
-          : 0
+          : '0'
     }
-  }))
-  .reduce((obj, item) => ({ ...obj, ...item }), {})
+  }),
+  {}
+)
 
 const colorCategories = [
   {
@@ -49,7 +63,7 @@ const colorCategories = [
       colors.depthDark27,
       colors.accentBase,
       colors.depthSecondary,
-      colors.depthSecondaryDark3,
+      colors.depthSecondaryDark6,
       colors.accentTertiaryDark9
     ]
   },
@@ -75,7 +89,7 @@ const colorCategories = [
       colors.successBase,
       colors.warningBase,
       colors.alertBase,
-      colors.warningLight47
+      colors.alertLight47
     ]
   },
   {

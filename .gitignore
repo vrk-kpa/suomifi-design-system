@@ -69,3 +69,6 @@ yarn-error.log
 .yarn-integrity
 # Use Yarn only
 package-lock.json
+
+# Vscode
+.vscode

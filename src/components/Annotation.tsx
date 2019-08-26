@@ -36,13 +36,18 @@ const Content = ({
         flex: center ? '1 1 100%' : '1 1 70%',
         textAlign: center ? 'center' : 'initial'
       }}>
-      <Heading.h2 color='whiteBase' style={{ textAlign: 'inherit' }}>
+      <Heading.h2
+        color='whiteBase'
+        style={{
+          textAlign: 'inherit',
+          margin: `0 0 0 ${suomifiTheme.spacing.m}`
+        }}>
         {title}
       </Heading.h2>
       {description && (
         <Paragraph
           style={{
-            margin: `${suomifiTheme.spacing.m} 0 0 0`,
+            margin: `${suomifiTheme.spacing.m} 0 0 ${suomifiTheme.spacing.m}`,
             textAlign: 'inherit'
           }}>
           <Text color='whiteBase'>{description}</Text>

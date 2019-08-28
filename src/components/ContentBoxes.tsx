@@ -6,6 +6,9 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
 import LinkList from 'components/LinkList'
 import { Props as LinkProps } from 'components/Link'
 
+const iconBubbleSize = 70 // in pixels
+const iconsize = iconBubbleSize / Math.sqrt(2)
+
 const Block = ({ block }: { block: Block }): JSX.Element => (
   <>
     {!!block.icon && (
@@ -14,14 +17,16 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          width: '70px',
-          height: '70px',
+          width: iconBubbleSize + 'px',
+          height: iconBubbleSize + 'px',
           marginBottom: suomifiTheme.spacing.l,
           border: `1px solid ${suomifiTheme.colors.depthLight13}`,
           borderRadius: '50%',
-          fontSize: '50px'
+          fontSize: iconsize + 'px'
         }}>
-        <Icon icon={block.icon} />
+        <div style={{ marginBottom: '-0.1em' }}>
+          <Icon icon={block.icon} />
+        </div>
       </div>
     )}
     {!!block.title && <Heading.h2>{block.title}</Heading.h2>}

@@ -24,7 +24,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           borderRadius: '50%',
           fontSize: iconsize + 'px'
         }}>
-        <div style={{ marginBottom: '-0.1em' }}>
+        <div style={{ transform: 'none' }}>
           <Icon icon={block.icon} />
         </div>
       </div>

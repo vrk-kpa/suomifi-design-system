@@ -61,10 +61,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,md}": [
-      "eslint"
-    ],
-    "src/**/*.{js,jsx,ts,tsx,css,scss}": [
-      "stylelint"
+      "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,md}\""
     ]
   },
   "devDependencies": {

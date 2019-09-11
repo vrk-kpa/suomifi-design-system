@@ -1,10 +1,12 @@
 # Development
 
+## Prerequisites for development
+
+You need to have [Yarn](https://yarnpkg.com/lang/en/) and [Node.js](https://nodejs.org) installed.
+
 ## Installing and building
 
 To get started working with this site, clone the repository and install dependencies by running ```yarn``` or ```yarn install```
-
-
 
 This project uses Gatsby, so to start a development server, run:
 
@@ -28,17 +30,17 @@ When you're done, simply open the site on the specified localhost port and you'r
 
 ### Other commands
 
-1. `yarn format:code` write code style fixes to all files in src.
+* `yarn format:code` write code style fixes to all files in src.
 
-2. `yarn lint:code` checks the code style using eslint.
+* `yarn lint:code` checks the code style using eslint.
 
-3. `yarn format:style` write the code style fixes to all src-files.
+* `yarn format:style` write the code style fixes to all src-files.
 
-4. `yarn lint:style` check styling for formatting errors.
+* `yarn lint:style` check styling for formatting errors.
 
-5. `yarn validate` runs the complete test suite.
+* `yarn validate` runs the complete test suite.
 
-6. `yarn build` clears `.cache` and `public` folder, compiles the code and outputs it to the `public` folder
+* `yarn build` clears `.cache` and `public` folder, compiles the code and outputs it to the `public` folder
 
 ## Built using
 

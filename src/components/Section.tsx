@@ -1,19 +1,19 @@
-import React from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import { Image } from 'components/Image'
-import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
-import LinkList from 'components/LinkList'
-import { Props as LinkProps } from 'components/Link'
+import { Image } from 'components/Image';
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+import LinkList from 'components/LinkList';
+import { Props as LinkProps } from 'components/Link';
 import BulletedList, {
-  ListItem as BulletedListItem
-} from 'components/BulletedList'
+  ListItem as BulletedListItem,
+} from 'components/BulletedList';
 
 const Section = ({
   mainTitle,
   title,
   paragraphs,
-  links
+  links,
 }: Props): JSX.Element => (
   <section>
     {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
@@ -42,20 +42,20 @@ const Section = ({
       <LinkList links={links} />
     </div>
   </section>
-)
+);
 
 interface Props {
-  mainTitle?: string
-  title?: string
-  paragraphs: ParagraphProps[]
-  links: LinkProps[]
+  mainTitle?: string;
+  title?: string;
+  paragraphs: ParagraphProps[];
+  links: LinkProps[];
 }
 
 interface ParagraphProps {
-  'image.key': string
-  'image.alt': string
-  text: string
-  listItems: BulletedListItem[]
+  'image.key': string;
+  'image.alt': string;
+  text: string;
+  listItems: BulletedListItem[];
 }
 
-export default Section
+export default Section;

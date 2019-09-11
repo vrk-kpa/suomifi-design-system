@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react'
-import { Link } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React, { ReactNode } from 'react';
+import { Link } from '@wapps/gatsby-plugin-i18next';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import { isFrontPage } from 'components/LinkUtil'
+import { isFrontPage } from 'components/LinkUtil';
 
 const NavItem = ({ to, children }: Props): JSX.Element => (
   <Link
@@ -15,27 +15,28 @@ const NavItem = ({ to, children }: Props): JSX.Element => (
         color: suomifiTheme.colors.blackBase,
         textDecoration: 'none',
         '&:hover': {
-          borderBottom: `4px solid ${suomifiTheme.colors.highlightBase}`
-        }
+          borderBottom: `4px solid ${suomifiTheme.colors.highlightBase}`,
+        },
       },
-      `&:focus { ${suomifiTheme.outlines.basic} }`
+      `&:focus { ${suomifiTheme.outlines.basic} }`,
     ]}
     getProps={({ isCurrent, isPartiallyCurrent }) => {
       if (isCurrent || (!isFrontPage(to) && isPartiallyCurrent)) {
         return {
           style: {
-            borderBottom: `4px solid ${suomifiTheme.colors.highlightBase}`
-          }
-        }
+            borderBottom: `4px solid ${suomifiTheme.colors.highlightBase}`,
+          },
+        };
       }
-    }}>
+    }}
+  >
     {children}
   </Link>
-)
+);
 
 interface Props {
-  to: string
-  children: ReactNode
+  to: string;
+  children: ReactNode;
 }
 
-export default NavItem
+export default NavItem;

@@ -1,10 +1,10 @@
-import React from 'react'
-import { suomifiTheme, Icon } from 'suomifi-ui-components'
-import { StaticIconKeys } from 'suomifi-icons'
+import React from 'react';
+import { suomifiTheme, Icon } from 'suomifi-ui-components';
+import { StaticIconKeys } from 'suomifi-icons';
 
-import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
-import LinkList from 'components/LinkList'
-import { Props as LinkProps } from 'components/Link'
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+import LinkList from 'components/LinkList';
+import { Props as LinkProps } from 'components/Link';
 
 const Block = ({ block }: { block: Block }): JSX.Element => (
   <>
@@ -19,8 +19,9 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           marginBottom: suomifiTheme.spacing.l,
           border: `1px solid ${suomifiTheme.colors.depthLight13}`,
           borderRadius: '50%',
-          fontSize: '50px'
-        }}>
+          fontSize: '50px',
+        }}
+      >
         <Icon icon={block.icon} />
       </div>
     )}
@@ -38,27 +39,29 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
       <LinkList links={block.links} />
     </div>
   </>
-)
+);
 
 const ContentBoxes = ({
   wrapAll,
   hasFrame,
   mainTitle,
-  blocks
+  blocks,
 }: Props): JSX.Element => (
   <section
     style={{
       background: hasFrame ? suomifiTheme.colors.whiteBase : 'none',
       padding: `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m} 0`,
       display: 'flex',
-      justifyContent: 'center'
-    }}>
+      justifyContent: 'center',
+    }}
+  >
     <div style={{ maxWidth: 1140 }}>
       <Heading.h1
         style={{
           textAlign: 'left',
-          margin: `0 0 0 ${suomifiTheme.spacing.m}`
-        }}>
+          margin: `0 0 0 ${suomifiTheme.spacing.m}`,
+        }}
+      >
         {mainTitle}
       </Heading.h1>
       <div
@@ -66,23 +69,26 @@ const ContentBoxes = ({
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          margin: `${suomifiTheme.spacing.l} 0 0 0`
-        }}>
+          margin: `${suomifiTheme.spacing.l} 0 0 0`,
+        }}
+      >
         <div
           style={{
             width: '100%',
             maxWidth: wrapAll ? 900 : 1140,
             display: 'flex',
             flexWrap: 'wrap',
-            justifyContent: wrapAll ? 'center' : 'space-evenly'
-          }}>
+            justifyContent: wrapAll ? 'center' : 'space-evenly',
+          }}
+        >
           {blocks.map((block, index) => (
             <article
               key={index}
               style={{
                 flex: wrapAll ? '100%' : '30%',
-                margin: suomifiTheme.spacing.m
-              }}>
+                margin: suomifiTheme.spacing.m,
+              }}
+            >
               <Block block={block} />
             </article>
           ))}
@@ -90,24 +96,24 @@ const ContentBoxes = ({
       </div>
     </div>
   </section>
-)
+);
 
 interface Props {
-  wrapAll?: boolean
-  hasFrame?: boolean
-  mainTitle: string
-  blocks: Block[]
+  wrapAll?: boolean;
+  hasFrame?: boolean;
+  mainTitle: string;
+  blocks: Block[];
 }
 
 interface Block {
-  icon?: StaticIconKeys
-  title: string
-  paragraphs: ParagraphProps[]
-  links: LinkProps[]
+  icon?: StaticIconKeys;
+  title: string;
+  paragraphs: ParagraphProps[];
+  links: LinkProps[];
 }
 
 interface ParagraphProps {
-  text: string
+  text: string;
 }
 
-export default ContentBoxes
+export default ContentBoxes;

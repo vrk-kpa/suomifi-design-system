@@ -1,15 +1,15 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import { NamespacesConsumer } from 'react-i18next'
-import { withI18next } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { graphql } from 'gatsby';
+import { NamespacesConsumer } from 'react-i18next';
+import { withI18next } from '@wapps/gatsby-plugin-i18next';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import Layout from 'components/layout'
-import SEO from 'components/seo'
-import ContentBoxes from 'components/ContentBoxes'
-import Annotation from 'components/Annotation'
-import Hero from 'components/Hero'
-import { ReactComponent as Slack } from 'icons/slack.svg'
+import Layout from 'components/layout';
+import SEO from 'components/seo';
+import ContentBoxes from 'components/ContentBoxes';
+import Annotation from 'components/Annotation';
+import Hero from 'components/Hero';
+import { ReactComponent as Slack } from 'icons/slack.svg';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['home']}>
@@ -27,12 +27,12 @@ const Page = (): JSX.Element => (
               <Slack
                 style={{
                   fill: suomifiTheme.colors.whiteBase,
-                  fontSize: '16px'
+                  fontSize: '16px',
                 }}
               />
             ),
             text: t('note.link.text'),
-            url: t('note.link.url')
+            url: t('note.link.url'),
           }}
         />
 
@@ -56,12 +56,12 @@ const Page = (): JSX.Element => (
       </Layout>
     )}
   </NamespacesConsumer>
-)
+);
 
-export default withI18next()(Page)
+export default withI18next()(Page);
 
 export const query = graphql`
   query($lng: String!) {
     ...AllLocalesFragment
   }
-`
+`;

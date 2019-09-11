@@ -1,14 +1,14 @@
-import React from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import { Text } from 'components/ResponsiveComponents'
+import { Text } from 'components/ResponsiveComponents';
 
-const isValid = (item: ListItem): boolean => item && !!item.text
+const isValid = (item: ListItem): boolean => item && !!item.text;
 
-const getValidOnly = (items: ListItem[]): ListItem[] => items.filter(isValid)
+const getValidOnly = (items: ListItem[]): ListItem[] => items.filter(isValid);
 
 const BulletedList = ({ items = [] }: Props): JSX.Element => {
-  items = getValidOnly(items)
+  items = getValidOnly(items);
 
   if (items.length > 0) {
     return (
@@ -19,18 +19,18 @@ const BulletedList = ({ items = [] }: Props): JSX.Element => {
           </li>
         ))}
       </ul>
-    )
+    );
   }
 
-  return null
-}
+  return null;
+};
 
 export interface Props {
-  items: ListItem[]
+  items: ListItem[];
 }
 
 export interface ListItem {
-  text: string
+  text: string;
 }
 
-export default BulletedList
+export default BulletedList;

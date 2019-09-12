@@ -1,18 +1,65 @@
 # Development
 
-## Localizations
+## Prerequisites for development
 
-### Implementation
+You need to have [Yarn](https://yarnpkg.com/lang/en/) and [Node.js](https://nodejs.org) installed.
+
+## Installing and building
+
+To get started working with this site, clone the repository and install dependencies by running ```yarn``` or ```yarn install```
+
+This project uses Gatsby, so to start a development server, run:
+
+```
+yarn develop
+```
+
+Alternatively you can run the built version by first running
+
+```
+yarn build
+```
+
+and then serving it by running
+
+```
+yarn start
+```
+
+When you're done, simply open the site on the specified localhost port and you're good to go!
+
+### Other commands
+
+* `yarn format:code` write code style fixes to all files in src.
+
+* `yarn lint:code` checks the code style using eslint.
+
+* `yarn format:style` write the code style fixes to all src-files.
+
+* `yarn lint:style` check styling for formatting errors.
+
+* `yarn validate` runs the complete test suite.
+
+* `yarn build` clears `.cache` and `public` folder, compiles the code and outputs it to the `public` folder
+
+## Built using
+
+* [React](https://reactjs.org/)
+* [Gatsby](https://www.gatsbyjs.org/)
+* [i18Next](https://www.i18next.com/)
+* [Suomi.fi UI-components](https://github.com/vrk-kpa/suomifi-ui-components)
+
+## Implementation
 
 - `gatsby-plugin-i18next` handles page creation for each locale and provides components for handling localized urls
 
-### Resources
+## Resources
 
 - JSON resources for `i18next` are under `locale/<lang>/`
 - Separate resources logically for page/context so that one file doesn't grow too big
 - Role of resource is just to provide translation, no HTML or styling allowed
 
-### Transifex
+## Transifex
 
 - [Transifex](https://www.transifex.com/) is used to provide possibility to update translations by other parties
 - Source language is something dummy and not visible to user because:

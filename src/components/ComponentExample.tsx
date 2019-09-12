@@ -1,5 +1,5 @@
-import React, { ReactNode, CSSProperties } from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React, { ReactNode, CSSProperties } from 'react';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 const ComponentExample = ({ style, children }: Props): JSX.Element => (
   <div
@@ -14,17 +14,18 @@ const ComponentExample = ({ style, children }: Props): JSX.Element => (
       background:
         style && style.background
           ? style.background
-          : suomifiTheme.colors.depthLight30
-    }}>
+          : suomifiTheme.colors.depthLight30,
+    }}
+  >
     {children}
   </div>
-)
+);
 
 interface Props {
-  style?: CSSProperties
-  children: ReactNode
+  style?: CSSProperties;
+  children: ReactNode;
 }
 
-ComponentExample.displayName = 'div'
+ComponentExample.displayName = 'div';
 
-export default ComponentExample
+export default ComponentExample;

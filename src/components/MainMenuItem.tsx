@@ -1,12 +1,12 @@
-import React, { Component, ReactNode } from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
-import { Link } from '@wapps/gatsby-plugin-i18next'
+import React, { Component, ReactNode } from 'react';
+import { suomifiTheme } from 'suomifi-ui-components';
+import { Link } from '@wapps/gatsby-plugin-i18next';
 
-import { isFrontPage } from 'components/LinkUtil'
+import { isFrontPage } from 'components/LinkUtil';
 
 class MainMenuItem extends Component<Props> {
   public render(): JSX.Element {
-    const { to, children } = this.props
+    const { to, children } = this.props;
 
     return (
       <Link
@@ -25,18 +25,18 @@ class MainMenuItem extends Component<Props> {
             whiteSpace: 'nowrap',
             '&:hover': {
               background: suomifiTheme.colors.depthSecondary,
-              color: suomifiTheme.colors.brandBase
-            }
+              color: suomifiTheme.colors.brandBase,
+            },
           },
-          `&:focus { ${suomifiTheme.outlines.basic} }`
+          `&:focus { ${suomifiTheme.outlines.basic} }`,
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           if (!isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
             return {
               style: {
-                fontWeight: 600
-              }
-            }
+                fontWeight: 600,
+              },
+            };
           }
 
           if (isCurrent) {
@@ -44,20 +44,21 @@ class MainMenuItem extends Component<Props> {
               style: {
                 background: suomifiTheme.colors.depthSecondary,
                 color: suomifiTheme.colors.brandBase,
-                fontWeight: 600
-              }
-            }
+                fontWeight: 600,
+              },
+            };
           }
-        }}>
+        }}
+      >
         {children}
       </Link>
-    )
+    );
   }
 }
 
 interface Props {
-  to: string
-  children: ReactNode
+  to: string;
+  children: ReactNode;
 }
 
-export default MainMenuItem
+export default MainMenuItem;

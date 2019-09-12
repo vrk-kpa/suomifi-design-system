@@ -1,6 +1,6 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
-import Img, { GatsbyImageProps } from 'gatsby-image'
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img, { GatsbyImageProps } from 'gatsby-image';
 
 const Image = (props: GatsbyImageProps): JSX.Element => (
   <StaticQuery
@@ -17,6 +17,6 @@ const Image = (props: GatsbyImageProps): JSX.Element => (
     `}
     render={data => <Img fluid={data.image.childImageSharp.fluid} {...props} />}
   />
-)
+);
 
-export default Image
+export default Image;

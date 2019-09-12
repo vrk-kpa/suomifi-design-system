@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React, { ReactNode } from 'react';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 const BypassLink = ({ to, children }: Props): JSX.Element => (
   <a
@@ -14,18 +14,19 @@ const BypassLink = ({ to, children }: Props): JSX.Element => (
         background: suomifiTheme.colors.highlightLight53,
         border: `1px solid ${suomifiTheme.colors.depthLight13}`,
         color: suomifiTheme.colors.blackBase,
-        textDecoration: 'none'
+        textDecoration: 'none',
       },
       `&:focus { ${suomifiTheme.outlines.basic} }`,
-      { '&:focus': { position: 'absolute', left: 'auto' } }
-    ]}>
+      { '&:focus': { position: 'absolute', left: 'auto' } },
+    ]}
+  >
     {children}
   </a>
-)
+);
 
 interface Props {
-  to: string
-  children: ReactNode
+  to: string;
+  children: ReactNode;
 }
 
-export default BypassLink
+export default BypassLink;

@@ -11,14 +11,15 @@
   },
   "plugins": ["@typescript-eslint", "react", "jsx-a11y"],
   "extends": [
-    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "standard",
     "standard-react",
-    "prettier-standard",
-    "prettier/@typescript-eslint"
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react",
+    "prettier/standard"
   ],
   "rules": {
     "@typescript-eslint/explicit-function-return-type": [

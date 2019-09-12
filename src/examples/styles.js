@@ -1,5 +1,5 @@
-import React from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 export const Example = () => (
   <div
@@ -10,8 +10,9 @@ export const Example = () => (
       background: suomifiTheme.colors.highlightBase,
       boxShadow: suomifiTheme.shadows.panelShadow,
       fontSize: suomifiTheme.typography.fontSize.body,
-      color: suomifiTheme.colors.whiteBase
-    }}>
+      color: suomifiTheme.colors.whiteBase,
+    }}
+  >
     Example
   </div>
-)
+);

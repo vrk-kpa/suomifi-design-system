@@ -1,6 +1,6 @@
-import React, { ComponentClass } from 'react'
+import React, { ComponentClass } from 'react';
 
-import { Desktop, MobileOrTablet } from 'components/Responsive'
+import { Desktop, MobileOrTablet } from 'components/Responsive';
 
 export const getResponsiveComponent = (Comp: Function): Function => {
   const Wrapper = (props): JSX.Element => (
@@ -12,23 +12,23 @@ export const getResponsiveComponent = (Comp: Function): Function => {
         <Comp smallScreen {...props} />
       </MobileOrTablet>
     </>
-  )
+  );
 
-  return Wrapper
-}
+  return Wrapper;
+};
 
 const getVariants = (Comp: ComponentClass): Record<string, Function> =>
   Object.keys(Comp)
     .map(key => ({
-      [key]: getResponsiveComponent(Comp[key])
+      [key]: getResponsiveComponent(Comp[key]),
     }))
-    .reduce((obj, item) => ({ ...obj, ...item }), {})
+    .reduce((obj, item) => ({ ...obj, ...item }), {});
 
 export const addResponsiveness = (
   DestComp: ComponentClass,
-  SourceComp: ComponentClass
+  SourceComp: ComponentClass,
 ): void => {
   Object.assign(DestComp, {
-    ...getVariants(SourceComp)
-  })
-}
+    ...getVariants(SourceComp),
+  });
+};

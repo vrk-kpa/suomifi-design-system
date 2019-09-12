@@ -1,21 +1,21 @@
 export interface CodeExampleData {
-  examples: Examples
+  examples: Examples;
 }
 
 interface Examples {
-  edges: Edge[]
+  edges: Edge[];
 }
 
 interface Edge {
-  node: Node
+  node: Node;
 }
 
 interface Node {
-  name: string
-  content: string
+  name: string;
+  content: string;
 }
 
 export const getExample = (data: CodeExampleData, name: string): string => {
-  const { node } = data.examples.edges.find(({ node }) => node.name === name)
-  return node.content
-}
+  const { node } = data.examples.edges.find(({ node }) => node.name === name);
+  return node.content;
+};

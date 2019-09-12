@@ -1,15 +1,15 @@
-import React, { Component, ReactNode, MouseEvent } from 'react'
-import { suomifiTheme, Icon, Button } from 'suomifi-ui-components'
-import { Link } from '@wapps/gatsby-plugin-i18next'
+import React, { Component, ReactNode, MouseEvent } from 'react';
+import { suomifiTheme, Icon, Button } from 'suomifi-ui-components';
+import { Link } from '@wapps/gatsby-plugin-i18next';
 
-import { isFrontPage } from 'components/LinkUtil'
+import { isFrontPage } from 'components/LinkUtil';
 
 class SideNavItem extends Component<Props> {
   private toggleOpen = (event: MouseEvent) => {
-    event.preventDefault()
-    const { to, handleToggle } = this.props
-    handleToggle(to)
-  }
+    event.preventDefault();
+    const { to, handleToggle } = this.props;
+    handleToggle(to);
+  };
 
   public render(): JSX.Element {
     const {
@@ -19,8 +19,8 @@ class SideNavItem extends Component<Props> {
       children,
       hasChildren,
       isOpen,
-      level
-    } = this.props
+      level,
+    } = this.props;
 
     return (
       <Link
@@ -39,22 +39,22 @@ class SideNavItem extends Component<Props> {
             textTransform: level === 1 ? 'uppercase' : 'none',
             '&:hover': {
               background: suomifiTheme.colors.depthSecondary,
-              color: suomifiTheme.colors.brandBase
-            }
+              color: suomifiTheme.colors.brandBase,
+            },
           },
-          `&:focus { ${suomifiTheme.outlines.basic} }`
+          `&:focus { ${suomifiTheme.outlines.basic} }`,
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           const isPartiallyCurrentPage = showAsTo
             ? isPartialMatch(showAsTo)
-            : isPartiallyCurrent
+            : isPartiallyCurrent;
 
           if (!isFrontPage(to) && isPartiallyCurrentPage && !isCurrent) {
             return {
               style: {
-                fontWeight: 600
-              }
-            }
+                fontWeight: 600,
+              },
+            };
           }
 
           if (isCurrent) {
@@ -62,11 +62,12 @@ class SideNavItem extends Component<Props> {
               style: {
                 background: suomifiTheme.colors.depthSecondary,
                 color: suomifiTheme.colors.brandBase,
-                fontWeight: 600
-              }
-            }
+                fontWeight: 600,
+              },
+            };
           }
-        }}>
+        }}
+      >
         {children}
         {hasChildren && (
           <Button
@@ -81,27 +82,28 @@ class SideNavItem extends Component<Props> {
               minWidth: '40px',
               minHeight: '40px',
               fontSize: '16px',
-              transform: isOpen(to) ? 'rotate(.5turn)' : 'none'
+              transform: isOpen(to) ? 'rotate(.5turn)' : 'none',
             }}
-            onClick={this.toggleOpen}>
-            <Icon icon='chevronDown' color={suomifiTheme.colors.depthDark27} />
+            onClick={this.toggleOpen}
+          >
+            <Icon icon="chevronDown" color={suomifiTheme.colors.depthDark27} />
           </Button>
         )}
       </Link>
-    )
+    );
   }
 }
 
 interface Props {
-  to: string
+  to: string;
   // use only when partially current match need to differ from actual path
-  showAsTo?: string
-  isPartialMatch?: Function
-  children: ReactNode
-  hasChildren: boolean
-  isOpen: Function
-  handleToggle: Function
-  level: number
+  showAsTo?: string;
+  isPartialMatch?: Function;
+  children: ReactNode;
+  hasChildren: boolean;
+  isOpen: Function;
+  handleToggle: Function;
+  level: number;
 }
 
-export default SideNavItem
+export default SideNavItem;

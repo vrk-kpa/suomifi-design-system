@@ -1,18 +1,18 @@
-import React from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import Link, { Props as LinkProps } from 'components/Link'
+import Link, { Props as LinkProps } from 'components/Link';
 
-const isValid = (link: LinkProps): boolean => link && !!link.text && !!link.url
+const isValid = (link: LinkProps): boolean => link && !!link.text && !!link.url;
 
-const getValidOnly = (links: LinkProps[]): LinkProps[] => links.filter(isValid)
+const getValidOnly = (links: LinkProps[]): LinkProps[] => links.filter(isValid);
 
 const LinkList = ({ links = [] }: Props): JSX.Element => {
-  links = getValidOnly(links)
+  links = getValidOnly(links);
 
   if (links.length === 1) {
-    const link = links[0]
-    return <Link text={link.text} url={link.url} />
+    const link = links[0];
+    return <Link text={link.text} url={link.url} />;
   }
 
   if (links.length > 1) {
@@ -24,14 +24,14 @@ const LinkList = ({ links = [] }: Props): JSX.Element => {
           </li>
         ))}
       </ul>
-    )
+    );
   }
 
-  return null
-}
+  return null;
+};
 
 interface Props {
-  links: LinkProps[]
+  links: LinkProps[];
 }
 
-export default LinkList
+export default LinkList;

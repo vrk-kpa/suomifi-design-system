@@ -1,17 +1,17 @@
-import React, { ReactNode, CSSProperties } from 'react'
-import reactElementToJSXString from 'react-element-to-jsx-string'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React, { ReactNode, CSSProperties } from 'react';
+import reactElementToJSXString from 'react-element-to-jsx-string';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 const Highlighter = ({
   style,
-  children
+  children,
 }: {
-  style?: CSSProperties
-  children: ReactNode
+  style?: CSSProperties;
+  children: ReactNode;
 }): JSX.Element => (
   <SyntaxHighlighter
-    language='jsx'
+    language="jsx"
     customStyle={{
       margin: 0,
       padding: 0,
@@ -19,19 +19,20 @@ const Highlighter = ({
       fontSize: '1rem',
       whiteSpace: 'pre-wrap',
       overflow: 'hidden',
-      ...style
+      ...style,
     }}
     // clear default styles to allow e.g. wrap
-    codeTagProps={{ style: {} }}>
+    codeTagProps={{ style: {} }}
+  >
     {children}
   </SyntaxHighlighter>
-)
+);
 
 const ComponentCode = ({
   javascript,
   style,
   filterProps,
-  children
+  children,
 }: Props): JSX.Element => (
   <div style={{ padding: suomifiTheme.spacing.m, ...style }}>
     {!!javascript && (
@@ -44,18 +45,18 @@ const ComponentCode = ({
         {reactElementToJSXString(children, {
           filterProps: filterProps || ['id', 'style', 'aria-label'],
           showFunctions: true,
-          functionValue: () => '...'
+          functionValue: () => '...',
         })}
       </Highlighter>
     )}
   </div>
-)
+);
 
 interface Props {
-  javascript?: string
-  style?: CSSProperties
-  filterProps?: string[]
-  children?: ReactNode
+  javascript?: string;
+  style?: CSSProperties;
+  filterProps?: string[];
+  children?: ReactNode;
 }
 
-export default ComponentCode
+export default ComponentCode;

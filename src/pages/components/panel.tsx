@@ -1,18 +1,18 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import { NamespacesConsumer } from 'react-i18next'
-import { withI18next } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { graphql } from 'gatsby';
+import { NamespacesConsumer } from 'react-i18next';
+import { withI18next } from '@wapps/gatsby-plugin-i18next';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import Layout from 'components/layout'
-import SEO from 'components/seo'
-import { Panel } from 'components/ExampleComponents'
-import ComponentDescription from 'components/ComponentDescription'
-import sideNavData from 'config/sidenav/components'
-import NoteBox from 'components/NoteBox'
-import Section from 'components/Section'
-import ComponentExample from 'components/ComponentExample'
-import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
+import Layout from 'components/layout';
+import SEO from 'components/seo';
+import { Panel } from 'components/ExampleComponents';
+import ComponentDescription from 'components/ComponentDescription';
+import sideNavData from 'config/sidenav/components';
+import NoteBox from 'components/NoteBox';
+import Section from 'components/Section';
+import ComponentExample from 'components/ComponentExample';
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['panel']}>
@@ -40,7 +40,8 @@ const Page = (): JSX.Element => (
           mainTitle={t('nopadding.title')}
           description={t('nopadding.description')}
           exampleFirst={false}
-          filterProps={[]}>
+          filterProps={[]}
+        >
           <ComponentExample>
             <Panel.expansion title={t('panel.title')} noPadding>
               <p
@@ -48,8 +49,9 @@ const Page = (): JSX.Element => (
                   margin: 0,
                   padding: suomifiTheme.spacing.m,
                   background: suomifiTheme.colors.brandBase,
-                  color: suomifiTheme.colors.whiteBase
-                }}>
+                  color: suomifiTheme.colors.whiteBase,
+                }}
+              >
                 {t('panel.content')}
               </p>
             </Panel.expansion>
@@ -59,7 +61,8 @@ const Page = (): JSX.Element => (
         <ComponentDescription
           mainTitle={t('single.title')}
           description={t('single.description')}
-          exampleFirst>
+          exampleFirst
+        >
           <ComponentExample>
             <Panel.expansion title={t('panel.title')}>
               {t('panel.content')}
@@ -70,11 +73,13 @@ const Page = (): JSX.Element => (
         <ComponentDescription
           mainTitle={t('group.title')}
           description={t('group.description')}
-          exampleFirst>
+          exampleFirst
+        >
           <ComponentExample>
             <Panel.expansionGroup
               OpenAll={t('group.open')}
-              CloseAll={t('group.close')}>
+              CloseAll={t('group.close')}
+            >
               <Panel.expansion title={t('panel.title')}>
                 {t('panel.content')}
               </Panel.expansion>
@@ -90,12 +95,12 @@ const Page = (): JSX.Element => (
       </Layout>
     )}
   </NamespacesConsumer>
-)
+);
 
-export default withI18next()(Page)
+export default withI18next()(Page);
 
 export const query = graphql`
   query($lng: String!) {
     ...AllLocalesFragment
   }
-`
+`;

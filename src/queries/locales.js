@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 
 export const fragment = graphql`
   fragment AllLocalesFragment on Query {
@@ -6,4 +6,4 @@ export const fragment = graphql`
       ...LocaleFragment
     }
   }
-`
+`;

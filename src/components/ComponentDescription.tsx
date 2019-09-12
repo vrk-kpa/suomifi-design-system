@@ -1,15 +1,15 @@
-import React, { ReactNode } from 'react'
-import { NamespacesConsumer } from 'react-i18next'
-import { Panel, suomifiTheme } from 'suomifi-ui-components'
-import ComponentCode from 'components/ComponentCode'
-import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
+import React, { ReactNode } from 'react';
+import { NamespacesConsumer } from 'react-i18next';
+import { Panel, suomifiTheme } from 'suomifi-ui-components';
+import ComponentCode from 'components/ComponentCode';
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
   React.Children.map(children, child =>
     !!child.type && (child.type === 'div' || child.type.displayName === 'div')
       ? getWithoutWrappers(child.props.children)
-      : child
-  )
+      : child,
+  );
 
 const ComponentDescription = ({
   mainTitle,
@@ -20,15 +20,16 @@ const ComponentDescription = ({
   codeString,
   showOnlyCodeString,
   filterProps,
-  children
+  children,
 }: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <div
         style={{
           marginBottom: suomifiTheme.spacing.l,
-          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`
-        }}>
+          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
+        }}
+      >
         <div style={{ margin: `${suomifiTheme.spacing.l} 0` }}>
           {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
           {!!title && <Heading.h3>{title}</Heading.h3>}
@@ -48,8 +49,9 @@ const ComponentDescription = ({
                     key={index}
                     filterProps={filterProps}
                     style={{
-                      paddingTop: index === 0 && !codeString ? '1rem' : 0
-                    }}>
+                      paddingTop: index === 0 && !codeString ? '1rem' : 0,
+                    }}
+                  >
                     {child}
                   </ComponentCode>
                 ))}
@@ -59,18 +61,18 @@ const ComponentDescription = ({
       </div>
     )}
   </NamespacesConsumer>
-)
+);
 
 interface Props {
-  mainTitle?: string
-  title?: string
-  description: string
-  exampleFirst: boolean
-  noCode?: boolean
-  codeString?: string
-  showOnlyCodeString?: boolean
-  filterProps?: string[]
-  children: ReactNode
+  mainTitle?: string;
+  title?: string;
+  description: string;
+  exampleFirst: boolean;
+  noCode?: boolean;
+  codeString?: string;
+  showOnlyCodeString?: boolean;
+  filterProps?: string[];
+  children: ReactNode;
 }
 
-export default ComponentDescription
+export default ComponentDescription;

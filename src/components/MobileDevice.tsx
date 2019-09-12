@@ -1,5 +1,5 @@
-import React, { ReactNode, CSSProperties } from 'react'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React, { ReactNode, CSSProperties } from 'react';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 const MobileDevice = ({ style, children }: Props): JSX.Element => (
   <div
@@ -11,8 +11,9 @@ const MobileDevice = ({ style, children }: Props): JSX.Element => (
       boxShadow: suomifiTheme.shadows.panelShadow,
       padding: '2.5rem 1rem 0 1rem',
       margin: 0,
-      background: suomifiTheme.colors.depthLight13
-    }}>
+      background: suomifiTheme.colors.depthLight13,
+    }}
+  >
     <div
       style={{
         position: 'relative',
@@ -21,7 +22,7 @@ const MobileDevice = ({ style, children }: Props): JSX.Element => (
         width: '3.5rem',
         height: '.25rem',
         background: suomifiTheme.colors.depthDark27,
-        borderRadius: '.125rem'
+        borderRadius: '.125rem',
       }}
     />
     <div
@@ -29,18 +30,19 @@ const MobileDevice = ({ style, children }: Props): JSX.Element => (
         overflow: 'hidden',
         height: '100%',
         background: 'white',
-        ...style
-      }}>
+        ...style,
+      }}
+    >
       {children}
     </div>
   </div>
-)
+);
 
 interface Props {
-  style?: CSSProperties
-  children: ReactNode
+  style?: CSSProperties;
+  children: ReactNode;
 }
 
-MobileDevice.displayName = 'div'
+MobileDevice.displayName = 'div';
 
-export default MobileDevice
+export default MobileDevice;

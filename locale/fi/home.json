@@ -12,9 +12,9 @@
       "blocks": [
         {
           "icon": "",
-          "title": "Käyttöliittymäkomponentti kirjasto",
+          "title": "Käyttöliittymäkomponenttikirjasto",
           "paragraphs": [
-            { "text": "Kirjastosta löydät yleisimpiä saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasuja siten, että ne vastaavat oman palvelusi visuaalista ilmettä." },
+            { "text": "Kirjastosta löydät yleisimpiä saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasuja siten, että ne vastaavat oman palvelusi visuaalista ilmettä." },
             { "text": "" },
             { "text": "" }
           ],

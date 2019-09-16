@@ -46,7 +46,12 @@ const colors: colorTypes = Object.entries(colorTokens).reduce(
 const colorCategories = [
   {
     id: 'textColors',
-    colors: [colors.blackBase, colors.depthBase, colors.depthDark27],
+    colors: [
+      colors.blackBase,
+      colors.blackLighten42,
+      colors.depthBase,
+      colors.depthDark27,
+    ],
   },
   { id: 'brandColors', colors: [colors.brandBase] },
   {
@@ -56,14 +61,11 @@ const colorCategories = [
       colors.highlightLight4,
       colors.highlightLight45,
       colors.highlightLight50,
-      colors.highlightLight53,
       colors.highlightDark9,
       colors.depthBase,
       colors.depthLight26,
       colors.depthDark27,
       colors.accentBase,
-      colors.depthSecondary,
-      colors.depthSecondaryDark6,
       colors.accentTertiaryDark9,
     ],
   },
@@ -81,12 +83,14 @@ const colorCategories = [
       colors.highlightLight50,
       colors.highlightLight53,
       colors.depthSecondary,
+      colors.depthSecondaryDark6,
     ],
   },
   {
     id: 'trafficColors',
     colors: [
       colors.successBase,
+      colors.successSecondary,
       colors.warningBase,
       colors.alertBase,
       colors.alertLight47,
@@ -113,9 +117,7 @@ const getExampleColor = (
   <div
     key={id}
     style={{
-      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
-        suomifiTheme.spacing.l
-      } 0`,
+      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${suomifiTheme.spacing.l} 0`,
       lineHeight: '1rem',
     }}
   >

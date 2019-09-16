@@ -3,7 +3,7 @@
   "intro": "Komponentti piilottaa näkyvistä otsikon alle määriteltyä informaatiota tai sisältöä. Laajennuspaneeli helpottaa käyttäjää hahmottamaan sellaisia näkymiä, jossa on laajasti sisältöä. Komponenttia käytetään kun tilaa on vertikaalisesti rajoitetusti. Panel Expansion -komponentin avulla sivun pituutta voidaan lyhentää.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Laajennuspaneelien käytössä tulee erityisesti huomioida kognitiivinen saavutettavuus, koska laajennuspaneeli piilottaa osan sisällöstä. Käyttäjät eivät välttämättä huomaa paneelikomponentin olemassa oloa tai he eivät ymmärrä miten komponenttia tulisi käyttää. ",
+    "Laajennuspaneelien käytössä tulee erityisesti huomioida kognitiivinen saavutettavuus, koska laajennuspaneeli piilottaa osan sisällöstä. Käyttäjät eivät välttämättä huomaa paneelikomponentin olemassa oloa tai he eivät ymmärrä miten komponenttia tulisi käyttää.",
     "Ensisijaisesti tulee miettiä voidaanko sisältöä ryhmitellä, lyhentää tai jakaa siten, että sisältö on hallittavissa ilman paneelilla tehtävää sisällön piilottamista.",
     "Paneelia tulee käyttää vain jos sisältöä on erityisen paljon ja käytettävyyden kannalta on perusteltua lyhentää sivun pituutta erillisiin paneeliosioihin.",
     "Laajennuspaneelia ei tule mielellään käyttää sellaisissa tapauksissa, joissa sisältö on olennaista käyttäjille.",
@@ -53,7 +53,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Käytä laajennuspanelia ainoastaan sisällölle jonka ei ole välttämätöntä olla käyttäjälle näkyvissä koko ajan. Laajennuspanelia voidaan myös käyttää vähäisemmän prioriteetin sisällölle.\n"
+          "text": "Käytä laajennuspanelia ainoastaan sisällölle jonka ei ole välttämätöntä olla käyttäjälle näkyvissä koko ajan. Laajennuspanelia voidaan myös käyttää vähäisemmän prioriteetin sisällölle."
         },
         {
           "image.key": "",

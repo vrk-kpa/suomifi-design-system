@@ -1,15 +1,15 @@
-import React from 'react'
-import { Language } from '@wapps/gatsby-plugin-i18next'
-import { NamespacesConsumer } from 'react-i18next'
-import { Menu, MenuItem, Button, suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { Language } from '@wapps/gatsby-plugin-i18next';
+import { NamespacesConsumer } from 'react-i18next';
+import { Menu, MenuItem, Button, suomifiTheme } from 'suomifi-ui-components';
 
 const hasMultipleLanguages = ({ availableLngs }: Props): boolean =>
-  !!availableLngs && availableLngs.length > 1
+  !!availableLngs && availableLngs.length > 1;
 
 const MenuSwitcher = ({
   changeLng,
   lng,
-  availableLngs
+  availableLngs,
 }: Props): JSX.Element => (
   <NamespacesConsumer ns={['language']}>
     {t => (
@@ -18,19 +18,20 @@ const MenuSwitcher = ({
           <MenuItem.language
             key={value}
             onSelect={() => changeLng(value)}
-            selected={value === lng}>
+            selected={value === lng}
+          >
             {t(`${value}.long`)}
           </MenuItem.language>
         ))}
       </Menu.language>
     )}
   </NamespacesConsumer>
-)
+);
 
 const ListSwitcher = ({
   changeLng,
   lng,
-  availableLngs
+  availableLngs,
 }: Props): JSX.Element => (
   <NamespacesConsumer ns={['language']}>
     {t => (
@@ -42,15 +43,17 @@ const ListSwitcher = ({
           listStyle: 'none',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center'
-        }}>
+          justifyContent: 'center',
+        }}
+      >
         {availableLngs.map(value => (
           <li key={value}>
             <Button.secondaryNoborder
               onClick={() => changeLng(value)}
               disabled={value === lng}
               lang={value}
-              style={{ textTransform: 'uppercase' }}>
+              style={{ textTransform: 'uppercase' }}
+            >
               {t(`${value}.medium`)}
             </Button.secondaryNoborder>
           </li>
@@ -58,19 +61,19 @@ const ListSwitcher = ({
       </ul>
     )}
   </NamespacesConsumer>
-)
+);
 
 interface Props {
-  changeLng: Function
-  lng: string
-  availableLngs: string[]
+  changeLng: Function;
+  lng: string;
+  availableLngs: string[];
 }
 
-type Variant = 'menu' | 'list'
+type Variant = 'menu' | 'list';
 
 const LanguageSwitcher = (
   { variant }: { variant: Variant },
-  props
+  props,
 ): JSX.Element => (
   <Language>
     {(lngProps: Props) =>
@@ -82,15 +85,15 @@ const LanguageSwitcher = (
       ) : null)
     }
   </Language>
-)
+);
 
 const menu = (props): JSX.Element => (
-  <LanguageSwitcher variant='menu' {...props} />
-)
+  <LanguageSwitcher variant="menu" {...props} />
+);
 const list = (props): JSX.Element => (
-  <LanguageSwitcher variant='list' {...props} />
-)
+  <LanguageSwitcher variant="list" {...props} />
+);
 
-const Wrapper = { menu, list }
+const Wrapper = { menu, list };
 
-export default Wrapper
+export default Wrapper;

@@ -1,8 +1,8 @@
-import React from 'react'
-import { Button } from 'suomifi-ui-components'
-import styled from '@emotion/styled'
+import React from 'react';
+import { Button } from 'suomifi-ui-components';
+import styled from '@emotion/styled';
 
-import { customTheme } from './customTheme'
+import { customTheme } from './customTheme';
 
 /**
 .fi-button.button--custom {
@@ -15,18 +15,18 @@ import { customTheme } from './customTheme'
   background: #faaf00;
 }
  */
-import './customButton.css'
+import './customButton.css';
 
 const CustomButton = styled(Button)({
   background: '#09ae88',
   '&:hover': { background: '#e97025' },
-  '&:active': { background: '#faaf00' }
-})
+  '&:active': { background: '#faaf00' },
+});
 
 export const Example = () => (
   <>
     <Button theme={customTheme}>Theme</Button>
     <CustomButton>Styled</CustomButton>
-    <Button className='button--custom'>Classname</Button>
+    <Button className="button--custom">Classname</Button>
   </>
-)
+);

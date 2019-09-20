@@ -1,19 +1,19 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import { NamespacesConsumer } from 'react-i18next'
-import { withI18next } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { graphql } from 'gatsby';
+import { NamespacesConsumer } from 'react-i18next';
+import { withI18next } from '@wapps/gatsby-plugin-i18next';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import Layout from 'components/layout'
-import SEO from 'components/seo'
-import { Button } from 'components/ExampleComponents'
-import ComponentDescription from 'components/ComponentDescription'
-import sideNavData from 'config/sidenav/components'
-import NoteBox from 'components/NoteBox'
-import Section from 'components/Section'
-import ComponentExample from 'components/ComponentExample'
-import MobileDevice from 'components/MobileDevice'
-import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
+import Layout from 'components/layout';
+import SEO from 'components/seo';
+import { Button } from 'components/ExampleComponents';
+import ComponentDescription from 'components/ComponentDescription';
+import sideNavData from 'config/sidenav/components';
+import NoteBox from 'components/NoteBox';
+import Section from 'components/Section';
+import ComponentExample from 'components/ComponentExample';
+import MobileDevice from 'components/MobileDevice';
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const components = [
   { id: 'primary', comp: Button },
@@ -21,22 +21,22 @@ const components = [
   {
     id: 'negative',
     comp: Button.negative,
-    background: suomifiTheme.colors.highlightBase
+    background: suomifiTheme.colors.highlightBase,
   },
   { id: 'secondary', comp: Button.secondary },
   {
     id: 'secondaryNoborder',
     comp: Button.secondaryNoborder,
     background: suomifiTheme.colors.whiteBase,
-    border: `1px solid ${suomifiTheme.colors.depthLight13}`
-  }
-]
+    border: `1px solid ${suomifiTheme.colors.depthLight13}`,
+  },
+];
 
 const mobileComponents = [
   { id: 'primary', comp: Button },
   { id: 'tertiary', comp: Button.tertiary },
-  { id: 'secondary', comp: Button.secondary }
-]
+  { id: 'secondary', comp: Button.secondary },
+];
 
 const disabledComponents = [
   { id: 'primary', comp: Button },
@@ -44,35 +44,35 @@ const disabledComponents = [
   {
     id: 'negative',
     comp: Button.negative,
-    background: suomifiTheme.colors.highlightBase
+    background: suomifiTheme.colors.highlightBase,
   },
   { id: 'secondary', comp: Button.secondary },
   {
     id: 'secondaryNoborder',
-    comp: Button.secondaryNoborder
-  }
-]
+    comp: Button.secondaryNoborder,
+  },
+];
 
-const clickCount = {}
+const clickCount = {};
 const handleClick = (id: string, name: string, t: Function): void => {
   if (!clickCount[id]) {
-    clickCount[id] = 0
+    clickCount[id] = 0;
   }
   document.getElementById(id).setAttribute(
     'aria-label',
     t('button.labelClicked', {
       name: name,
-      count: ++clickCount[id]
-    })
-  )
-}
+      count: ++clickCount[id],
+    }),
+  );
+};
 
 const getExampleComp = (
   Comp: Function,
   id: string,
   label: string,
   props: object,
-  t: Function
+  t: Function,
 ): JSX.Element => (
   <Comp
     key={id}
@@ -80,10 +80,11 @@ const getExampleComp = (
     aria-label={label}
     style={{ margin: suomifiTheme.spacing.s }}
     {...props}
-    onClick={() => handleClick(id, label, t)}>
+    onClick={() => handleClick(id, label, t)}
+  >
     {label}
   </Comp>
-)
+);
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['button']}>
@@ -110,7 +111,8 @@ const Page = (): JSX.Element => (
         <ComponentDescription
           mainTitle={t('fullWidth.title')}
           description={t('fullWidth.description')}
-          exampleFirst>
+          exampleFirst
+        >
           <div
             style={{
               overflow: 'hidden',
@@ -120,8 +122,9 @@ const Page = (): JSX.Element => (
               }`,
               background: suomifiTheme.colors.depthLight30,
               display: 'flex',
-              justifyContent: 'center'
-            }}>
+              justifyContent: 'center',
+            }}
+          >
             <MobileDevice>
               {mobileComponents.map(item => (
                 <div
@@ -129,14 +132,15 @@ const Page = (): JSX.Element => (
                   style={{
                     padding: `${suomifiTheme.spacing.m} ${
                       suomifiTheme.spacing.s
-                    }`
-                  }}>
+                    }`,
+                  }}
+                >
                   {getExampleComp(
                     item.comp,
                     `${item.id}.fullWidth`,
                     t(`${item.id}.label`),
                     { fullWidth: true, style: {} },
-                    t
+                    t,
                   )}
                 </div>
               ))}
@@ -149,28 +153,30 @@ const Page = (): JSX.Element => (
             key={item.id}
             mainTitle={t(`${item.id}.title`)}
             description={t(`${item.id}.description`)}
-            exampleFirst>
+            exampleFirst
+          >
             <ComponentExample
               style={{
                 padding: suomifiTheme.spacing.s,
                 background: item.background,
-                border: item.border || 0
-              }}>
+                border: item.border || 0,
+              }}
+            >
               {[
                 { id: item.id, label: t(`${item.id}.label`) },
                 {
                   id: `${item.id}.disabled`,
                   label: t(`${item.id}.labelDisabled`),
-                  props: { disabled: true }
-                }
+                  props: { disabled: true },
+                },
               ].map(example =>
                 getExampleComp(
                   item.comp,
                   example.id,
                   example.label,
                   example.props,
-                  t
-                )
+                  t,
+                ),
               )}
             </ComponentExample>
           </ComponentDescription>
@@ -179,38 +185,40 @@ const Page = (): JSX.Element => (
         <ComponentDescription
           mainTitle={t('withIcon.title')}
           description={t('withIcon.description')}
-          exampleFirst>
+          exampleFirst
+        >
           {components.map(item => (
             <ComponentExample
               key={item.id}
               style={{
                 padding: suomifiTheme.spacing.s,
                 background: item.background,
-                border: item.border || 0
-              }}>
+                border: item.border || 0,
+              }}
+            >
               {[
                 {
                   id: `${item.id}.icon`,
                   label: t('button.labelIcon', {
-                    name: t(`${item.id}.label`)
+                    name: t(`${item.id}.label`),
                   }),
-                  props: { icon: 'login' }
+                  props: { icon: 'login' },
                 },
                 {
                   id: `${item.id}.iconRight`,
                   label: t('button.labelIconRight', {
-                    name: t(`${item.id}.label`)
+                    name: t(`${item.id}.label`),
                   }),
-                  props: { iconRight: 'logout' }
-                }
+                  props: { iconRight: 'logout' },
+                },
               ].map(example =>
                 getExampleComp(
                   item.comp,
                   example.id,
                   example.label,
                   example.props,
-                  t
-                )
+                  t,
+                ),
               )}
             </ComponentExample>
           ))}
@@ -219,21 +227,23 @@ const Page = (): JSX.Element => (
         <ComponentDescription
           mainTitle={t('disabled.title')}
           description={t('disabled.description')}
-          exampleFirst>
+          exampleFirst
+        >
           <ComponentExample style={{ padding: suomifiTheme.spacing.s }}>
             {disabledComponents.map(item => (
               <div
                 key={item.id}
                 style={{
                   padding: item.background ? suomifiTheme.spacing.s : 0,
-                  background: item.background || 'none'
-                }}>
+                  background: item.background || 'none',
+                }}
+              >
                 {getExampleComp(
                   item.comp,
                   `${item.id}.disabled.another`,
                   t(`${item.id}.labelDisabled`),
                   { disabled: true },
-                  t
+                  t,
                 )}
               </div>
             ))}
@@ -242,12 +252,12 @@ const Page = (): JSX.Element => (
       </Layout>
     )}
   </NamespacesConsumer>
-)
+);
 
-export default withI18next()(Page)
+export default withI18next()(Page);
 
 export const query = graphql`
   query($lng: String!) {
     ...AllLocalesFragment
   }
-`
+`;

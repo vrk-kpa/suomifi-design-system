@@ -1,17 +1,17 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { NamespacesConsumer } from 'react-i18next'
+import React from 'react';
+import Helmet from 'react-helmet';
+import { NamespacesConsumer } from 'react-i18next';
 
 const SEO = ({
   title,
   description,
   meta = [],
-  keywords = []
+  keywords = [],
 }: Props): JSX.Element => (
   <NamespacesConsumer>
     {(t, { i18n }) => {
-      const metaDescription = description || t('common:site.description')
-      const lang = i18n.language
+      const metaDescription = description || t('common:site.description');
+      const lang = i18n.language;
       return (
         <Helmet
           htmlAttributes={{ lang }}
@@ -25,25 +25,25 @@ const SEO = ({
             { name: `twitter:card`, content: `summary` },
             { name: `twitter:creator`, content: t('common:site.author') },
             { name: `twitter:title`, content: title },
-            { name: `twitter:description`, content: metaDescription }
+            { name: `twitter:description`, content: metaDescription },
           ]
             .concat(
               keywords.length > 0
                 ? { name: `keywords`, content: keywords.join(`, `) }
-                : []
+                : [],
             )
             .concat(meta)}
         />
-      )
+      );
     }}
   </NamespacesConsumer>
-)
+);
 
 interface Props {
-  title: string
-  description?: string
-  meta?: any[]
-  keywords?: string[]
+  title: string;
+  description?: string;
+  meta?: any[];
+  keywords?: string[];
 }
 
-export default SEO
+export default SEO;

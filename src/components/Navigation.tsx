@@ -1,9 +1,9 @@
-import React from 'react'
-import { NamespacesConsumer } from 'react-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { NamespacesConsumer } from 'react-i18next';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import NavItem from 'components/NavItem'
-import { MainNavData } from 'components/MainNavData'
+import NavItem from 'components/NavItem';
+import { MainNavData } from 'components/MainNavData';
 
 const Navigation = ({ mainNavData }: Props): JSX.Element => (
   <NamespacesConsumer>
@@ -16,8 +16,9 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
           background: `${suomifiTheme.colors.whiteBase}`,
           borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
           display: 'flex',
-          justifyContent: 'center'
-        }}>
+          justifyContent: 'center',
+        }}
+      >
         <ul
           style={{
             margin: 0,
@@ -27,16 +28,18 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
             display: 'flex',
             alignItems: 'center',
             flexWrap: 'wrap',
-            listStyle: 'none'
-          }}>
+            listStyle: 'none',
+          }}
+        >
           {mainNavData.items.map(item => (
             <li
               key={item.to}
               style={{
                 margin: `0 ${suomifiTheme.spacing.l} 0 ${
                   suomifiTheme.spacing.s
-                }`
-              }}>
+                }`,
+              }}
+            >
               <NavItem to={item.to}>{item.label}</NavItem>
             </li>
           ))}
@@ -44,10 +47,10 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
       </nav>
     )}
   </NamespacesConsumer>
-)
+);
 
 interface Props {
-  mainNavData: MainNavData
+  mainNavData: MainNavData;
 }
 
-export default Navigation
+export default Navigation;

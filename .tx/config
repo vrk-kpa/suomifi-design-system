@@ -92,3 +92,10 @@ source_file = locale/af/typography.json
 source_lang = af
 type = KEYVALUEJSON
 
+[suomifi-design-system.accessibility-statement-json]
+file_filter = locale/<lang>/accessibility-statement.json
+minimum_perc = 0
+source_file = locale/af/accessibility-statement.json
+source_lang = af
+type = KEYVALUEJSON
+

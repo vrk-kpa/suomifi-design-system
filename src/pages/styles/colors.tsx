@@ -1,38 +1,52 @@
-import React, { CSSProperties } from 'react'
-import { graphql } from 'gatsby'
-import { NamespacesConsumer } from 'react-i18next'
-import { withI18next } from '@wapps/gatsby-plugin-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
-import { getLuminance } from 'polished'
+import React, { CSSProperties } from 'react';
+import { graphql } from 'gatsby';
+import { NamespacesConsumer } from 'react-i18next';
+import { withI18next } from '@wapps/gatsby-plugin-i18next';
+import { suomifiTheme } from 'suomifi-ui-components';
+import { getLuminance } from 'polished';
 
-import Layout from 'components/layout'
-import SEO from 'components/seo'
-import ComponentDescription from 'components/ComponentDescription'
-import sideNavData from 'config/sidenav/styles'
-import NoteBox from 'components/NoteBox'
-import Section from 'components/Section'
-import ComponentExample from 'components/ComponentExample'
-import { Heading, Text, Paragraph } from 'components/ResponsiveComponents'
+import Layout from 'components/layout';
+import SEO from 'components/seo';
+import ComponentDescription from 'components/ComponentDescription';
+import sideNavData from 'config/sidenav/styles';
+import NoteBox from 'components/NoteBox';
+import Section from 'components/Section';
+import ComponentExample from 'components/ComponentExample';
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
-const borderForLightColor = `1px solid ${suomifiTheme.colors.depthLight13}`
+const colorTokens =
+  !!suomifiTheme && !!suomifiTheme.colors
+    ? suomifiTheme.colors
+    : { depthLight13: undefined };
 
-const colors = Object.keys(suomifiTheme.colors)
-  .map(key => ({
+const borderForLightColor = `1px solid ${colorTokens.depthLight13}`;
+
+type ColorKeys = keyof typeof suomifiTheme.colors;
+interface ColorItem {
+  name: string;
+  value: string;
+  border: string;
+}
+type colorTypes = { [key in ColorKeys]?: ColorItem };
+const colors: colorTypes = Object.entries(colorTokens).reduce(
+  (obj, [key, value]: [ColorKeys, string]) => ({
+    ...obj,
     [key]: {
       name: key,
-      value: suomifiTheme.colors[key],
+      value,
       border:
-        getLuminance(suomifiTheme.colors[key]) > getLuminance('#f8f8f8')
+        getLuminance(value) > getLuminance('#f8f8f8')
           ? borderForLightColor
-          : 0
-    }
-  }))
-  .reduce((obj, item) => ({ ...obj, ...item }), {})
+          : '0',
+    },
+  }),
+  {},
+);
 
 const colorCategories = [
   {
     id: 'textColors',
-    colors: [colors.blackBase, colors.depthBase, colors.depthDark27]
+    colors: [colors.blackBase, colors.depthBase, colors.depthDark27],
   },
   { id: 'brandColors', colors: [colors.brandBase] },
   {
@@ -49,13 +63,13 @@ const colorCategories = [
       colors.depthDark27,
       colors.accentBase,
       colors.depthSecondary,
-      colors.depthSecondaryDark3,
-      colors.accentTertiaryDark9
-    ]
+      colors.depthSecondaryDark6,
+      colors.accentTertiaryDark9,
+    ],
   },
   {
     id: 'iconColors',
-    colors: [colors.accentBase, colors.depthBase, colors.depthDark27]
+    colors: [colors.accentBase, colors.depthBase, colors.depthDark27],
   },
   {
     id: 'backgroundColors',
@@ -66,8 +80,8 @@ const colorCategories = [
       colors.highlightLight45,
       colors.highlightLight50,
       colors.highlightLight53,
-      colors.depthSecondary
-    ]
+      colors.depthSecondary,
+    ],
   },
   {
     id: 'trafficColors',
@@ -75,8 +89,8 @@ const colorCategories = [
       colors.successBase,
       colors.warningBase,
       colors.alertBase,
-      colors.warningLight47
-    ]
+      colors.alertLight47,
+    ],
   },
   {
     id: 'accentColors',
@@ -84,17 +98,17 @@ const colorCategories = [
       colors.accentBase,
       colors.accentSecondary,
       colors.accentSecondaryLight40,
-      colors.accentTertiary
-    ]
-  }
-]
+      colors.accentTertiary,
+    ],
+  },
+];
 
 const getExampleColor = (
   id: string,
   name: string,
   value: string,
   label: string,
-  style?: CSSProperties
+  style?: CSSProperties,
 ): JSX.Element => (
   <div
     key={id}
@@ -102,22 +116,23 @@ const getExampleColor = (
       margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
         suomifiTheme.spacing.l
       } 0`,
-      lineHeight: '1rem'
-    }}>
+      lineHeight: '1rem',
+    }}
+  >
     <div
       style={{
         width: '10rem',
         height: '3rem',
         marginBottom: suomifiTheme.spacing.m,
         background: value,
-        ...style
+        ...style,
       }}
     />
     <div style={{ fontSize: '.8rem' }}>{label}</div>
     <div style={{ fontSize: '.8rem' }}>{value}</div>
     <div style={{ fontSize: '.8rem' }}>{name}</div>
   </div>
-)
+);
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['colors']}>
@@ -147,21 +162,23 @@ const Page = (): JSX.Element => (
             mainTitle={t(`${item.id}.title`)}
             description={t(`${item.id}.description`)}
             exampleFirst={false}
-            noCode>
+            noCode
+          >
             <ComponentExample
               style={{
                 padding: 0,
                 justifyContent: 'flex-start',
-                background: 'none'
-              }}>
+                background: 'none',
+              }}
+            >
               {item.colors.map((color, index) =>
                 getExampleColor(
                   `${item.id}.${index}`,
                   color.name,
                   color.value,
                   t(`${color.name}.label`),
-                  { border: color.border }
-                )
+                  { border: color.border },
+                ),
               )}
             </ComponentExample>
           </ComponentDescription>
@@ -169,12 +186,12 @@ const Page = (): JSX.Element => (
       </Layout>
     )}
   </NamespacesConsumer>
-)
+);
 
-export default withI18next()(Page)
+export default withI18next()(Page);
 
 export const query = graphql`
   query($lng: String!) {
     ...AllLocalesFragment
   }
-`
+`;

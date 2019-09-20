@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 
 export const fragment = graphql`
   fragment ExamplesFragment on Query {
@@ -11,4 +11,4 @@ export const fragment = graphql`
       }
     }
   }
-`
+`;

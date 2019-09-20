@@ -1,14 +1,14 @@
-import React, { ReactNode } from 'react'
-import { NamespacesConsumer } from 'react-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React, { ReactNode } from 'react';
+import { NamespacesConsumer } from 'react-i18next';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import { Text, Paragraph } from 'components/ResponsiveComponents'
-import Link, { Props as LinkProps } from 'components/Link'
+import { Text, Paragraph } from 'components/ResponsiveComponents';
+import Link, { Props as LinkProps } from 'components/Link';
 
-import { Desktop, Mobile, Tablet } from 'components/Responsive'
-import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg'
-import { ReactComponent as Slack } from 'icons/slack.svg'
-import { ReactComponent as Github } from 'icons/github.svg'
+import { Desktop, Mobile, Tablet } from 'components/Responsive';
+import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg';
+import { ReactComponent as Slack } from 'icons/slack.svg';
+import { ReactComponent as Github } from 'icons/github.svg';
 
 const Content = ({
   header,
@@ -20,7 +20,7 @@ const Content = ({
   linkColor,
   textDecoration,
   center = false,
-  wrapAll = false
+  wrapAll = false,
 }: Props): JSX.Element => (
   <div
     style={{
@@ -28,16 +28,18 @@ const Content = ({
       padding: suomifiTheme.spacing.m,
       background: background,
       display: 'flex',
-      justifyContent: 'center'
-    }}>
+      justifyContent: 'center',
+    }}
+  >
     <div
       style={{
         width: '100%',
         maxWidth: 1140,
         display: wrapAll ? 'initial' : 'flex',
         flexWrap: 'wrap',
-        justifyContent: center ? 'center' : 'space-between'
-      }}>
+        justifyContent: center ? 'center' : 'space-between',
+      }}
+    >
       {header && (
         <div style={{ flex: '100%', marginTop: suomifiTheme.spacing.m }}>
           {header}
@@ -56,8 +58,9 @@ const Content = ({
           margin: `${suomifiTheme.spacing.m} 0`,
           marginLeft: wrapAll ? 0 : suomifiTheme.spacing.xl,
           flex: '50%',
-          textAlign: center ? 'center' : 'initial'
-        }}>
+          textAlign: center ? 'center' : 'initial',
+        }}
+      >
         <ul
           style={{
             margin: 0,
@@ -71,8 +74,9 @@ const Content = ({
               ? center
                 ? 'center'
                 : 'initial'
-              : 'flex-end'
-          }}>
+              : 'flex-end',
+          }}
+        >
           {links &&
             links.map(
               (link, index) =>
@@ -93,8 +97,9 @@ const Content = ({
                         ? `${suomifiTheme.spacing.s} 0`
                         : `0 ${suomifiTheme.spacing.m} ${
                             suomifiTheme.spacing.m
-                          }`
-                    }}>
+                          }`,
+                    }}
+                  >
                     <Link
                       icon={link.icon}
                       text={link.text}
@@ -103,25 +108,25 @@ const Content = ({
                         '&:link,:visited,:focus,:hover,:active': {
                           fontSize: '16px',
                           color: suomifiTheme.colors[linkColor],
-                          textDecoration: textDecoration
-                        }
+                          textDecoration: textDecoration,
+                        },
                       }}
                     />
                   </li>
-                )
+                ),
             )}
         </ul>
       </div>
     </div>
   </div>
-)
+);
 
 const AllContent = ({
   center = false,
-  wrapAll = false
+  wrapAll = false,
 }: {
-  center?: boolean
-  wrapAll?: boolean
+  center?: boolean;
+  wrapAll?: boolean;
 }): JSX.Element => (
   <NamespacesConsumer>
     {t => (
@@ -133,7 +138,7 @@ const AllContent = ({
                 <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
               }
               title={t('common:to.homepage')}
-              url='/'
+              url="/"
             />
           }
           description={t('common:footer.description')}
@@ -149,40 +154,40 @@ const AllContent = ({
                 <Slack
                   style={{
                     fill: suomifiTheme.colors.whiteBase,
-                    fontSize: '25px'
+                    fontSize: '25px',
                   }}
                 />
               ),
               text: t('common:slack.link.text'),
-              url: t('common:slack.link.url')
+              url: t('common:slack.link.url'),
             },
             {
               icon: (
                 <Github
                   style={{
                     fill: suomifiTheme.colors.whiteBase,
-                    fontSize: '25px'
+                    fontSize: '25px',
                   }}
                 />
               ),
               text: t('common:github.link.text'),
-              url: t('common:github.link.url')
-            }
+              url: t('common:github.link.url'),
+            },
           ]}
           background={suomifiTheme.colors.brandBase}
-          textColor='whiteBase'
-          linkColor='whiteBase'
-          textDecoration='underline'
+          textColor="whiteBase"
+          linkColor="whiteBase"
+          textDecoration="underline"
           center={center}
           wrapAll={wrapAll}
         />
       </>
     )}
   </NamespacesConsumer>
-)
+);
 
 const Footer = (): JSX.Element => (
-  <footer id='footer'>
+  <footer id="footer">
     <Desktop>
       <AllContent />
     </Desktop>
@@ -193,19 +198,19 @@ const Footer = (): JSX.Element => (
       <AllContent center wrapAll />
     </Mobile>
   </footer>
-)
+);
 
 interface Props {
-  header?: ReactNode
-  title?: string
-  description: string
-  links?: LinkProps[]
-  background?: string
-  textColor?: keyof typeof suomifiTheme.colors
-  linkColor?: keyof typeof suomifiTheme.colors
-  textDecoration?: string
-  center?: boolean
-  wrapAll?: boolean
+  header?: ReactNode;
+  title?: string;
+  description: string;
+  links?: LinkProps[];
+  background?: string;
+  textColor?: keyof typeof suomifiTheme.colors;
+  linkColor?: keyof typeof suomifiTheme.colors;
+  textDecoration?: string;
+  center?: boolean;
+  wrapAll?: boolean;
 }
 
-export default Footer
+export default Footer;

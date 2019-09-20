@@ -1,14 +1,14 @@
-import React from 'react'
-import { NamespacesConsumer } from 'react-i18next'
-import { suomifiTheme } from 'suomifi-ui-components'
+import React from 'react';
+import { NamespacesConsumer } from 'react-i18next';
+import { suomifiTheme } from 'suomifi-ui-components';
 
-import LanguageSwitcher from 'components/LanguageSwitcher'
-import { ReactComponent as SuomiFi } from 'staticIcons/SuomiFi.svg'
-import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg'
-import MainMenu from 'components/MainMenu'
-import { Desktop, MobileOrTablet } from 'components/Responsive'
-import mainNavData from 'config/mainnav'
-import Link from 'components/Link'
+import LanguageSwitcher from 'components/LanguageSwitcher';
+import { ReactComponent as SuomiFi } from 'staticIcons/SuomiFi.svg';
+import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg';
+import MainMenu from 'components/MainMenu';
+import { Desktop, MobileOrTablet } from 'components/Responsive';
+import mainNavData from 'config/mainnav';
+import Link from 'components/Link';
 
 const Header = (): JSX.Element => (
   <NamespacesConsumer>
@@ -22,16 +22,18 @@ const Header = (): JSX.Element => (
           borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
           display: 'flex',
           justifyContent: 'center',
-          lineHeight: '40px'
-        }}>
+          lineHeight: '40px',
+        }}
+      >
         <div
           style={{
             width: '100%',
             maxWidth: 1140,
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'space-between'
-          }}>
+            justifyContent: 'space-between',
+          }}
+        >
           <Link
             icon={
               <>
@@ -44,20 +46,22 @@ const Header = (): JSX.Element => (
               </>
             }
             title={t('common:to.homepage')}
-            url='/'
+            url="/"
           />
           <div
             style={{
               flex: 1,
               position: 'relative',
-              marginLeft: suomifiTheme.spacing.s
-            }}>
+              marginLeft: suomifiTheme.spacing.s,
+            }}
+          >
             <div
               style={{
                 fontSize: '28px',
                 fontWeight: 600,
-                color: suomifiTheme.colors.brandBase
-              }}>
+                color: suomifiTheme.colors.brandBase,
+              }}
+            >
               {t('common:header.title')}
             </div>
             <div
@@ -70,8 +74,9 @@ const Header = (): JSX.Element => (
                 fontSize: '16px',
                 fontWeight: 600,
                 textTransform: 'uppercase',
-                color: suomifiTheme.colors.highlightBase
-              }}>
+                color: suomifiTheme.colors.highlightBase,
+              }}
+            >
               {t('common:header.stamp')}
             </div>
           </div>
@@ -85,6 +90,6 @@ const Header = (): JSX.Element => (
       </header>
     )}
   </NamespacesConsumer>
-)
+);
 
-export default Header
+export default Header;

@@ -1,116 +1,116 @@
-import React, { Component } from 'react'
-import { suomifiTheme, Icon, Button, Text } from 'suomifi-ui-components'
-import { withPrefix } from 'gatsby'
-import { WindowLocation } from '@reach/router'
+import React, { Component } from 'react';
+import { suomifiTheme, Icon, Button, Text } from 'suomifi-ui-components';
+import { withPrefix } from 'gatsby';
+import { WindowLocation } from '@reach/router';
 
-import SideNavItem from 'components/SideNavItem'
-import { SideNavData, SideNavItemData } from 'components/SideNavData'
-import { Desktop, MobileOrTablet } from 'components/Responsive'
+import SideNavItem from 'components/SideNavItem';
+import { SideNavData, SideNavItemData } from 'components/SideNavData';
+import { Desktop, MobileOrTablet } from 'components/Responsive';
 
 class SideNav extends Component<Props, State> {
-  private SIDENAVSTATE_KEY: string = 'sideNavState'
+  private SIDENAVSTATE_KEY: string = 'sideNavState';
 
   public constructor(props: Props) {
-    super(props)
+    super(props);
 
     this.state = {
       isNavOpen: false,
-      isOpen: {}
-    }
+      isOpen: {},
+    };
   }
 
   private getSessionState = (): State => {
-    return JSON.parse(sessionStorage.getItem(this.SIDENAVSTATE_KEY)) || {}
-  }
+    return JSON.parse(sessionStorage.getItem(this.SIDENAVSTATE_KEY)) || {};
+  };
 
   private setSessionState = (state: State): void => {
     try {
-      sessionStorage.setItem(this.SIDENAVSTATE_KEY, JSON.stringify(state))
+      sessionStorage.setItem(this.SIDENAVSTATE_KEY, JSON.stringify(state));
     } catch (error) {
       // ignore, just cannot store state
     }
-  }
+  };
 
   public componentDidMount = () => {
-    const sessionState = this.getSessionState()
+    const sessionState = this.getSessionState();
 
-    const currentPath = this.getCurrentPath()
+    const currentPath = this.getCurrentPath();
     const openStatesForPath = this.getPathTree(currentPath)
       .map(path => ({
-        [path]: true
+        [path]: true,
       }))
-      .reduce((obj, item) => ({ ...obj, ...item }), {})
+      .reduce((obj, item) => ({ ...obj, ...item }), {});
 
     sessionState.isOpen = {
       ...sessionState.isOpen,
-      ...openStatesForPath
-    }
+      ...openStatesForPath,
+    };
 
     this.setState(() => {
-      this.setSessionState(sessionState)
-      return sessionState
-    })
-  }
+      this.setSessionState(sessionState);
+      return sessionState;
+    });
+  };
 
   private getPathTree = (path: string, res = []): string[] => {
     if (path) {
-      let part = '/' + path.split('/').join('/')
-      part += part.endsWith('/') ? '' : '/'
-      res.push(part)
+      let part = '/' + path.split('/').join('/');
+      part += part.endsWith('/') ? '' : '/';
+      res.push(part);
 
       const rest = path
         .split('/')
         .slice(0, -1)
-        .join('/')
-      this.getPathTree(rest, res)
+        .join('/');
+      this.getPathTree(rest, res);
     }
-    return res
-  }
+    return res;
+  };
 
   private getCurrentPath = (): string => {
-    const { location } = this.props
-    const match = location.pathname.match(RegExp(withPrefix('/../(.*)')))
-    return match && match[1]
-  }
+    const { location } = this.props;
+    const match = location.pathname.match(RegExp(withPrefix('/../(.*)')));
+    return match && match[1];
+  };
 
   private isPartiallyCurrent = (to: string): boolean => {
-    const currentPath = this.getCurrentPath()
-    return to && currentPath && currentPath.startsWith(to.substr(1))
-  }
+    const currentPath = this.getCurrentPath();
+    return to && currentPath && currentPath.startsWith(to.substr(1));
+  };
 
   private isCurrent = (to: string): boolean => {
-    const currentPath = this.getCurrentPath()
-    return to && currentPath && currentPath === to.substr(1)
-  }
+    const currentPath = this.getCurrentPath();
+    return to && currentPath && currentPath === to.substr(1);
+  };
 
-  private isNavOpen = (): boolean => this.state.isNavOpen
+  private isNavOpen = (): boolean => this.state.isNavOpen;
 
   private toggleNavOpen = () => {
     this.setState(prevState => {
-      this.setSessionState({ ...prevState, isNavOpen: !prevState.isNavOpen })
+      this.setSessionState({ ...prevState, isNavOpen: !prevState.isNavOpen });
       return {
-        isNavOpen: !prevState.isNavOpen
-      }
-    })
-  }
+        isNavOpen: !prevState.isNavOpen,
+      };
+    });
+  };
 
-  private isOpen = (to: string): boolean => this.state.isOpen[to]
+  private isOpen = (to: string): boolean => this.state.isOpen[to];
 
   private toggleOpen = (to: string): void => {
     this.setState(prevState => {
-      prevState.isOpen[to] = !prevState.isOpen[to]
-      this.setSessionState(prevState)
+      prevState.isOpen[to] = !prevState.isOpen[to];
+      this.setSessionState(prevState);
       return {
-        isOpen: prevState.isOpen
-      }
-    })
-  }
+        isOpen: prevState.isOpen,
+      };
+    });
+  };
 
   private hasChildren = (item: SideNavItemData): boolean =>
-    !!item.children && item.children.length > 0
+    !!item.children && item.children.length > 0;
 
   private Title = () => {
-    const { sideNavData } = this.props
+    const { sideNavData } = this.props;
 
     return (
       <div
@@ -120,8 +120,9 @@ class SideNav extends Component<Props, State> {
           alignItems: 'center',
           justifyContent: 'space-between',
           borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
-          textShadow: 'none'
-        }}>
+          textShadow: 'none',
+        }}
+      >
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <div style={{ fontSize: '40px', lineHeight: '1em' }}>
             {sideNavData.icon}
@@ -141,14 +142,15 @@ class SideNav extends Component<Props, State> {
               width: '16px',
               height: '16px',
               fontSize: '16px',
-              transform: this.isNavOpen() ? 'rotate(.5turn)' : 'none'
-            }}>
-            <Icon icon='chevronDown' color={suomifiTheme.colors.depthDark27} />
+              transform: this.isNavOpen() ? 'rotate(.5turn)' : 'none',
+            }}
+          >
+            <Icon icon="chevronDown" color={suomifiTheme.colors.depthDark27} />
           </div>
         </MobileOrTablet>
       </div>
-    )
-  }
+    );
+  };
 
   private renderNavItems = (items: SideNavItemData[], level: number) => (
     <ul
@@ -156,8 +158,9 @@ class SideNav extends Component<Props, State> {
         margin: 0,
         padding: 0,
         width: '100%',
-        listStyle: 'none'
-      }}>
+        listStyle: 'none',
+      }}
+    >
       {items.map(item => (
         <li
           key={item.to}
@@ -177,9 +180,10 @@ class SideNav extends Component<Props, State> {
                     : this.isPartiallyCurrent(item.to))
                     ? `4px solid ${suomifiTheme.colors.brandBase}`
                     : 0
-                  : 0
-            }
-          }}>
+                  : 0,
+            },
+          }}
+        >
           <SideNavItem
             to={item.to}
             showAsTo={item.showAsTo}
@@ -187,7 +191,8 @@ class SideNav extends Component<Props, State> {
             hasChildren={this.hasChildren(item)}
             isOpen={this.isOpen}
             handleToggle={this.toggleOpen}
-            level={level}>
+            level={level}
+          >
             {item.label}
           </SideNavItem>
           {this.hasChildren(item) &&
@@ -196,10 +201,10 @@ class SideNav extends Component<Props, State> {
         </li>
       ))}
     </ul>
-  )
+  );
 
   public render(): JSX.Element {
-    const { sideNavData } = this.props
+    const { sideNavData } = this.props;
 
     return (
       <nav
@@ -208,8 +213,9 @@ class SideNav extends Component<Props, State> {
           margin: 0,
           padding: 0,
           boxSizing: 'border-box',
-          background: `${suomifiTheme.colors.whiteBase}`
-        }}>
+          background: `${suomifiTheme.colors.whiteBase}`,
+        }}
+      >
         <Desktop>
           <this.Title />
           {this.renderNavItems(sideNavData.items, 1)}
@@ -223,25 +229,26 @@ class SideNav extends Component<Props, State> {
               background: 'none',
               padding: 0,
               border: 0,
-              lineHeight: '1em'
-            }}>
+              lineHeight: '1em',
+            }}
+          >
             <this.Title />
           </Button>
           {this.isNavOpen() && this.renderNavItems(sideNavData.items, 1)}
         </MobileOrTablet>
       </nav>
-    )
+    );
   }
 }
 
 interface Props {
-  location: WindowLocation
-  sideNavData: SideNavData
+  location: WindowLocation;
+  sideNavData: SideNavData;
 }
 
 interface State {
-  isNavOpen: boolean
-  isOpen: object
+  isNavOpen: boolean;
+  isOpen: object;
 }
 
-export default SideNav
+export default SideNav;

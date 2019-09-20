@@ -1,8 +1,8 @@
 export interface MainNavData {
-  items: MainNavItemData[]
+  items: MainNavItemData[];
 }
 
 export interface MainNavItemData {
-  to: string
-  label: string
+  to: string;
+  label: string;
 }

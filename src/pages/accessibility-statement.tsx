@@ -8,7 +8,6 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import Section from 'components/Section';
 import { Heading } from 'components/ResponsiveComponents';
-import Link from 'components/Link';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['accessibility-statement']}>

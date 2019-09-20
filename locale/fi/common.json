@@ -13,8 +13,8 @@
   "footer.description": "Suomi.fi Design System -kirjaston kehityksestä vastaa Väestorekisterikeskus.",
   "footer.links": [
     { "text": "", "url": "" },
-    { "text": "Suomidigi.fi", "url": "https://suomidigi.fi/" },
-    { "text": "", "url": "" }
+    { "text": "Saavutettavuusseloste", "url": "/accessibility-statement" },
+    { "text": "Suomidigi.fi", "url": "https://suomidigi.fi/" }
   ],
   "footer.social.title": "Osallistu keskusteluun ja kehitystyöhön",
   "footer.social.description": "Onko sinulla kysymyksiä, ehdotuksia ideoita? Jaetaan parhaita käytäntöjä ja ratkaistaan haasteita yhdessä!",

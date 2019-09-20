@@ -1,0 +1,85 @@
+{
+  "title": "Suomi.fi Design Systemin saavutettavuusseloste",
+  "intro": "",
+  "sections": [
+    {
+      "paragraphs": [
+        {
+          "text": "Tämä saavutettavuusseloste koskee Väestörekisterikeskuksen toteuttamaa Suomi.fi Design System -sivustoa. Seloste on laadittu 19.9.2019."
+        },
+        {
+          "text": "Suomi.fi Design System -sivuston saavutettavuutta on arvioinut Väestörekisterikeskuksen hankkima saavutettavuusasiantuntija säännöllisesti osana suunnittelu- ja kehitysprosessia."
+        }
+      ]
+    },
+    {
+      "title": "Digipalvelun saavutettavuuden tila",
+      "paragraphs": [
+        {
+          "text": "Verkkopalvelu täyttää suurelta osin saavutettavuusvaatimukset, eikä sivustolla ole kriittisiä saavutettavuuspuutteita (täyttää WCAG-ohjeistuksen A- ja AA-tason kriittiset vaatimukset). "
+        }
+      ]
+    },
+    {
+      "title": "Huomasitko saavutettavuuspuutteen sivustollamme? Kerro se meille ja teemme parhaamme puutteen korjaamiseksi",
+      "paragraphs": [
+        {
+          "text": "Ota yhteyttä sähköpostitse osoitteella: suomifi(at)suomi.fi"
+        }
+      ]
+    },
+    {
+      "title": "Valvontaviranomainen",
+      "paragraphs": [
+        {
+          "text": "Jos huomaat sivustolla saavutettavuusongelmia, anna ensin palautetta sivuston ylläpitäjälle. Vastauksessa voi mennä 14 päivää. Jos et ole tyytyväinen saamaasi vastaukseen tai et saa vastausta lainkaan kahden viikon aikana, voit antaa palautteen Etelä-Suomen aluehallintovirastoon. Etelä-Suomen aluehallintoviraston sivulla kerrotaan tarkasti, miten valituksen voi tehdä ja miten asia käsitellään."
+        }
+      ]
+    },
+    {
+      "title": "Valvontaviranomaisen yhteystiedot",
+      "paragraphs": [
+        {
+          "text": "Etelä-Suomen aluehallintovirasto"
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "text": "Saavutettavuuden valvonnan yksikkö"
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "text": ""
+        }
+      ],
+      "links": [{ "text": "www.saavutettavuusvaatimukset.fi", "url": "https://www.saavutettavuusvaatimukset.fi/" }]
+    },
+    {
+      "paragraphs": [
+        {
+          "text": "saavutettavuus(at)avi.fi"
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "text": "puhelinnumero vaihde 0295 016 000"
+        }
+      ]
+    },
+    {
+      "title": "Teemme jatkuvasti työtä saavutettavuuden parantamiseksi",
+      "paragraphs": [
+        {
+          "text": "Saavutettavuus on huomioitu Väestörekisterikeskuksen digitaalisten palvelujen kehityksessä suunnittelusta toteutukseen kokonaisketterän mallin mukaisesti. Väestörekisterikeskuksen hankkima saavutettavuusasiantuntija arvioi palvelujen saavutettavuutta säännöllisesti osana suunnittelu- ja kehitystyötä."
+        }
+      ]
+    }
+  ]
+}

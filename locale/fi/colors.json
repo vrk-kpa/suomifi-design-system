@@ -1,6 +1,6 @@
 {
   "title": "Värit",
-  "intro": "Pääväreihin kuuluu sininen (brandBase) sekä (highlightBase), valkoinen (whiteBase) ja harmaa (depthBase). Tekstien päävärinä käytetään mustaa (blackBase). Korosteväreinä käytetään oranssia (accentBase) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
+  "intro": "Pääväreihin kuuluvat sininen (brandBase) sekä (highlightBase), valkoinen (whiteBase) ja harmaa (depthBase). Tekstien päävärinä käytetään mustaa (blackBase). Korosteväreinä käytetään oranssia (accentBase) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Käyttäessäsi komponenttien tarjoamaa valmista suomi.fi-väritemaa käyttöohjeistuksien mukaisesti, WCAG:n kontrastivaatimukset täyttyvät ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",

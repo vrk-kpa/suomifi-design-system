@@ -158,30 +158,6 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Suomifi-projektissa on pyritty siihen, että tehdään saavutettavuuden osalta mahdollisimman laadukasta työtä. Tähän on pyritty kouluttamalla tekijöitä monella osa-alueella ja hyödyntämällä saavutettavuusasiantuntijan osaamista suunnittelun ja toteutuksen alkuvaiheessa. Saavutettavuusasiantuntija on pitänyt koulutuksia toteuttajille, suunnittelijoille ja sisällöntuottajille. Koulutuksilla on pyritty tiedon ja ymmärryksen kartuttamiseen, mutta varsinainen saavutettavuusosaaminen karttuu tekijöille projektityössä ja saavutettavuusasiantuntijan kanssa yhdessä toimimalla.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Saavutettavuuden eteen tehtyä työtä pyritään ylläpitämään huolehtimalla että uudet henkilöt projektissa omaavat riittävät tiedot ja perustaidot saavutettavuuden osalta. Nykyisten ja tulevien toteutusten laatu pidetään korkealla saavutettavuuden osalta huolehtimalla, että käyttöliittymät pysyvät mahdollisimman yhtenäisinä sekä käyttökokemukseltaan, että toteutukseltaan. Tämä on mahdollista käyttämällä samoja työkaluja ja tiedostoja suunnittelussa ja toteutuksen osalta yhtenäisyydestä huolehditaan komponenttikirjaston avulla.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
           "text": "Teknisen saavutettavuuden lisäksi tulee muistaa sisältöjen saavutettavuus (kognitiivinen saavutettavuus). Kognitiivinen saavutettavuus käsittää yhteisesti palvelussa esitettävän tiedon ja tavat, miten tieto esitetään käyttäjälle ymmärrettävästi. Sisältöjen ymmärrettävyys ja selkeys helpottavat jokaisen asiointia palvelussa. Koska kognitiivisia ominaisuuksia on vaikeampi mitata kuin teknisiä ominaisuuksia, on mahdollista, että digitaalinen palvelu ei ole helppokäyttöinen, vaikka palvelu täyttäisikin saavutettavuusvaatimukset.",
           "listItems": [
             { "text": "Ymmärrettävyys tarkoittaa sitä, että palvelun sisällöt ja toiminta on esitetty käyttäjän ymmärtämällä tavalla. Käyttäjä siis käsittää, mitä hän on palvelussa tekemässä." },

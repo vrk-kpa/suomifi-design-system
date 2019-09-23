@@ -117,7 +117,9 @@ const getExampleColor = (
   <div
     key={id}
     style={{
-      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${suomifiTheme.spacing.l} 0`,
+      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
+        suomifiTheme.spacing.l
+      } 0`,
       lineHeight: '1rem',
     }}
   >

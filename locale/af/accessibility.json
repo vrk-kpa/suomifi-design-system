@@ -178,6 +178,30 @@
             { "text": "section.listItem.text" },
             { "text": "section.listItem.text" }
           ]
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
         }
       ],
       "links": [

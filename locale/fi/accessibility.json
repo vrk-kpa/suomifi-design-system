@@ -66,7 +66,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Suomifi-projektissa on pyritty siihen, että tehdään saavutettavuuden osalta mahdollisimman laadukasta työtä. Tähän on pyritty kouluttamalla tekijöitä monella osa-alueella ja hyödyntämällä saavutettavuusasiantuntijan osaamista suunnittelun ja toteutuksen alkuvaiheessa. Saavutettavuusasiantuntija on pitänyt koulutuksia toteuttajille, suunnittelijoille ja sisällöntuottajille. Koulutuksilla on pyritty tiedon ja ymmärryksen kartuttamiseen, mutta varsinainen saavutettavuusosaaminen karttuu tekijöille projektityössä ja saavutettavuusasiantuntijan kanssa yhdessä toimimalla.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -78,7 +78,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Saavutettavuuden eteen tehtyä työtä pyritään ylläpitämään huolehtimalla että uudet henkilöt projektissa omaavat riittävät tiedot ja perustaidot saavutettavuuden osalta. Nykyisten ja tulevien toteutusten laatu pidetään korkealla saavutettavuuden osalta huolehtimalla, että käyttöliittymät pysyvät mahdollisimman yhtenäisinä sekä käyttökokemukseltaan, että toteutukseltaan. Tämä on mahdollista käyttämällä samoja työkaluja ja tiedostoja suunnittelussa ja toteutuksen osalta yhtenäisyydestä huolehditaan komponenttikirjaston avulla.",
           "listItems": [
             { "text": "" },
             { "text": "" },

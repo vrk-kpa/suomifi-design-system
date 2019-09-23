@@ -1,83 +1,83 @@
 {
-  "title": "title",
-  "intro": "intro",
+  "title": "",
+  "intro": "",
   "sections": [
     {
       "paragraphs": [
         {
-          "text": "section.paragraph.text"
+          "text": ""
         },
         {
-          "text": "section.paragraph.text"
+          "text": ""
         }
       ]
     },
     {
-      "title": "section.title",
+      "title": "",
       "paragraphs": [
         {
-          "text": "section.paragraph.text"
+          "text": ""
         }
       ]
     },
     {
-      "title": "section.title",
+      "title": "",
       "paragraphs": [
         {
-          "text": "section.paragraph.text"
+          "text": ""
         }
       ]
     },
     {
-      "title": "section.title",
+      "title": "",
       "paragraphs": [
         {
-          "text": "section.paragraph.text"
+          "text": ""
         }
       ]
     },
     {
-      "title": "section.title",
+      "title": "",
       "paragraphs": [
         {
-          "text": "section.paragraph.text"
-        }
-      ]
-    },
-    {
-      "paragraphs": [
-        {
-          "text": "section.paragraph.text"
+          "text": ""
         }
       ]
     },
     {
       "paragraphs": [
         {
-          "text": "section.paragraph.text"
+          "text": ""
+        }
+      ]
+    },
+    {
+      "paragraphs": [
+        {
+          "text": ""
         }
       ],
-      "links": [{ "text": "section.link.text", "url": "section.link.url" }]
+      "links": [{ "text": "", "url": "" }]
     },
     {
       "paragraphs": [
         {
-          "text": "section.paragraph.text"
+          "text": ""
         }
       ]
     },
     {
       "paragraphs": [
         {
-          "text": "section.paragraph.text"
+          "text": ""
         }
       ]
     },
     {
-      "title": "section.title",
+      "title": "",
       "paragraphs": [
         {
-          "text": "section.paragraph.text"
+          "text": ""
         }
       ]
     }

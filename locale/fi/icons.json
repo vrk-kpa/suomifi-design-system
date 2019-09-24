@@ -1,0 +1,112 @@
+{
+  "title": "Ikonit (Icons)",
+  "intro": "Tältä sivulla löydät kaikki ikonit jotka ovat käytössä suomi.fi palveluissa. Ikonien käyttöohjeistukset löydät ikonien komponentti sivulta.",
+  "sections": [
+    {
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Perusikonit (Base icons)"
+    },
+    {
+      "title": "Kuvitusikonit (Illustrative icons)"
+    },
+    {
+      "title": "Liitetiedosto-ikonit (Doctype icons)"
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "note.title": "Kysymyksiä ikonien käytöstä?",
+  "note.description": "Liity keskusteluun Suomidigin kehittäjät #DesignSystem Slack -kanavalla.",
+  "note.link.text": "Liity Slack -kanavalle",
+  "note.link.url": "https://suomidigi-kehittajat.slack.com/",
+  "arrowDown.label": "arrowDown",
+  "arrowUp.label": "arrowUp",
+  "attachment.label": "attachment",
+  "authorise.label": "authorise",
+  "calendar.label": "calendar",
+  "chatHeart.label": "chatHeart",
+  "chatQuestion.label": "chatQuestion",
+  "checkFilled.label": "checkFilled",
+  "check.label": "check",
+  "chevronUp.label": "chevronUp",
+  "chevronRight.label": "chevronRight",
+  "chevronDown.label": "chevronDown",
+  "chevronLeft.label": "chevronLeft",
+  "close.label": "close",
+  "copy.label": "copy",
+  "done.label": "done",
+  "errorFilled.label": "errorFilled",
+  "error.label": "error",
+  "heartFilled.label": "heartFilled",
+  "heart.label": "heart",
+  "helpFilled.label": "helpFilled",
+  "help.label": "help",
+  "infoFilled.label": "infoFilled",
+  "info.label": "info",
+  "internet.label": "internet",
+  "linkBreadcrumb.label": "linkBreadcrumb",
+  "linkExternal.label": "linkExternal",
+  "linkList.label": "linkList",
+  "login.label": "login",
+  "logout.label": "logout",
+  "mailSend.label": "mailSend",
+  "mapLayers.label": "mapLayers",
+  "mapLocationFilled.label": "mapLocationFilled",
+  "mapLocation.label": "mapLocation",
+  "mapMyLocation.label": "mapMyLocation",
+  "mapRoute.label": "mapRoute",
+  "map.label": "map",
+  "menu.label": "menu",
+  "message.label": "message",
+  "minus.label": "minus",
+  "phone.label": "phone",
+  "plus.label": "plus",
+  "print.label": "print",
+  "radioButtonOn.label": "radioButtonOn",
+  "registers.label": "registers",
+  "remove.label": "remove",
+  "save.label": "save",
+  "search.label": "search",
+  "settings.label": "settings",
+  "swapRounded.label": "swapRounded",
+  "swapVertical.label": "swapVertical"
+}

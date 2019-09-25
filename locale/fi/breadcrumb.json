@@ -118,8 +118,8 @@
       ]
     }
   ],
-  "default.title": "Esimerkki",
-  "default.description": "Murupolku näyttää käyttäjän sijainnin sivun hierarkiassa",
+  "default.title": "",
+  "default.description": "",
   "default.link1": "Etusivu",
   "default.link2": "Alasivu",
   "default.link3": "Alasivun alasivu"

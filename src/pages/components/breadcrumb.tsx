@@ -24,17 +24,6 @@ const Page = (): JSX.Element => (
           <Text.lead>{t('intro')}</Text.lead>
         </Paragraph.lead>
 
-        <NoteBox title={t('note.title')} items={t('note.items')} />
-
-        {t('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
-
         <ComponentDescription
           mainTitle={t('default.title')}
           description={t('default.description')}
@@ -49,6 +38,17 @@ const Page = (): JSX.Element => (
             </Breadcrumb>
           </ComponentExample>
         </ComponentDescription>
+
+        <NoteBox title={t('note.title')} items={t('note.items')} />
+
+        {t('sections').map((section, index) => (
+          <Section
+            key={index}
+            mainTitle={section.title}
+            paragraphs={section.paragraphs}
+            links={section.links}
+          />
+        ))}
       </Layout>
     )}
   </NamespacesConsumer>

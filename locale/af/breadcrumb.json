@@ -115,6 +115,11 @@
             }
           ]
         }
-      ]
+      ],
+      "default.title": "default.title",
+      "default.description": "default.description",
+      "default.link1": "default.link1",
+      "default.link2": "default.link2",
+      "default.link3": "default.link3"
 
 }

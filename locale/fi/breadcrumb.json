@@ -55,7 +55,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Murupolkukomponenttia käytetään silloin kun halutaan auttaa käyttäjää ymmärtämään missä kyseinen sivu sijaitsee verkkopalvelun rakenteessa sekä missä kohtaa rakenteessa käyttäjä parhaillaan on. Murupolku myös auttaa käyttäjää siirtymään tasolta toiselle verkkopalvelun sisältöhierarkiassa. Murupolut ovat hyödyllisiä erityisesti silloin kun käyttäjä saapuu näkymään etusivun ohittavalla suoralla linkillä tai esimerkiksi hakukoneen kautta."
+          "text": "Murupolkukomponenttia käytetään silloin kun halutaan auttaa käyttäjää ymmärtämään missä kyseinen sivu sijaitsee verkkopalvelun rakenteessa sekä missä kohtaa rakennetta käyttäjä parhaillaan on. Murupolku myös auttaa käyttäjää siirtymään tasolta toiselle verkkopalvelun sisältöhierarkiassa. Murupolut ovat hyödyllisiä erityisesti silloin kun käyttäjä saapuu näkymään etusivun ohittavalla suoralla linkillä tai esimerkiksi hakukoneen kautta."
         },
         {
           "image.key": "",
@@ -119,7 +119,7 @@
     }
   ],
   "default.title": "Esimerkki",
-  "default.description": "Perusmuodossaan murupolku näyttää käyttäjän sijainnin sivun hierarkiassa",
+  "default.description": "Murupolku näyttää käyttäjän sijainnin sivun hierarkiassa",
   "default.link1": "Etusivu",
   "default.link2": "Alasivu",
   "default.link3": "Alasivun alasivu"

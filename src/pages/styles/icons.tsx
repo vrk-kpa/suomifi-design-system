@@ -11,7 +11,6 @@ import SEO from 'components/seo';
 import Annotation from 'components/Annotation';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/styles';
-import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import { ReactComponent as Slack } from 'icons/slack.svg';

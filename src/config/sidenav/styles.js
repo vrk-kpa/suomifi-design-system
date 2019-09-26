@@ -12,5 +12,6 @@ export default t => ({
     },
     { to: '/styles/colors/', label: t('colors:title') },
     { to: '/styles/typography/', label: t('typography:title') },
+    { to: '/styles/icons/', label: t('icons:title') },
   ],
 });

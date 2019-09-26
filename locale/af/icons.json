@@ -3,6 +3,7 @@
   "intro": "intro",
   "sections": [
     {
+      "paragraphs": [],
       "links": [
         {
           "text": "section.link.text",
@@ -11,13 +12,16 @@
       ]
     },
     {
-      "title": "section.title"
+      "title": "section.title",
+      "paragraphs": []
     },
     {
-      "title": "section.title"
+      "title": "section.title",
+      "paragraphs": []
     },
     {
-      "title": "section.title"
+      "title": "section.title",
+      "paragraphs": []
     },
     {
       "title": "section.title",

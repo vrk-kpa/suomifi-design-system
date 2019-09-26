@@ -34,7 +34,7 @@ const Content = ({
   >
     <div
       style={{
-        flex: center ? '1 1 100%' : '1 1 70%',
+        flex: center ? '1 1 100%' : '1 1 60%',
         textAlign: center ? 'center' : 'initial',
       }}
     >
@@ -61,8 +61,9 @@ const Content = ({
     {link && !!link.text && !!link.url && (
       <div
         style={{
-          margin: `${suomifiTheme.spacing.m} 0`,
+          margin: `${suomifiTheme.spacing.m}`,
           marginLeft: center ? 0 : suomifiTheme.spacing.l,
+          marginRight: center ? 0 : suomifiTheme.spacing.m,
         }}
       >
         <Link

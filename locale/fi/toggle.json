@@ -6,6 +6,7 @@
     "Kognitiivisen saavutettavuuden kannalta on suositeltavaa esittää selkeä ohjeistusteksti komponentin yhteydessä, koska valintakytkin muuttaa, piilottaa tai muokkaa sisältöä valinnan mukaisesti.",
     "Käytä valintakytkintä harkiten, Suomi.fissa valintakytkin-komponenttia käytetään vain tilan muutokseen, kuten viittomakielisten sisältöjen hakuun hakusivulla.",
     "",
+    "",
     ""
   ],
   "sections": [

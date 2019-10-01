@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -16,42 +15,15 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 let checked = false;
 
-const getAriaLabelText = (
-  state: boolean,
-  label: string,
-  t: Function,
-): string => {
-  return t(`toggle.state.${state ? 'on' : 'off'}`, {
-    name: label,
+const getAriaLabelText = (t: Function): string => {
+  return t(`toggle.state.${checked ? 'on' : 'off'}`, {
+    name: t('toggle.label'),
   });
 };
 
-const handleClick = (id: string, label: string, t: Function): void => {
+const handleClick = (id: string, t: Function): void => {
   checked = !checked;
-  document
-    .getElementById(id)
-    .setAttribute('aria-label', getAriaLabelText(checked, label, t));
-};
-
-const getExampleComp = (
-  Comp: Function,
-  id: string,
-  label: string,
-  props: object,
-  t: Function,
-): JSX.Element => {
-  return (
-    <Comp
-      key={id}
-      id={id}
-      aria-label={getAriaLabelText(checked, label, t)}
-      style={{ margin: suomifiTheme.spacing.s }}
-      {...props}
-      onClick={() => handleClick(id, label, t)}
-    >
-      {label}
-    </Comp>
-  );
+  document.getElementById(id).setAttribute('aria-label', getAriaLabelText(t));
 };
 
 const Page = (): JSX.Element => (
@@ -70,13 +42,13 @@ const Page = (): JSX.Element => (
           description={t('default.description')}
         >
           <ComponentExample>
-            {getExampleComp(
-              Toggle,
-              'toggle',
-              t('toggle.label'),
-              { checked: checked },
-              t,
-            )}
+            <Toggle
+              id="toggle"
+              aria-label={getAriaLabelText(t)}
+              onClick={() => handleClick('toggle', t)}
+            >
+              {t('toggle.label')}
+            </Toggle>
           </ComponentExample>
         </ComponentDescription>
         <NoteBox title={t('note.title')} items={t('note.items')} />

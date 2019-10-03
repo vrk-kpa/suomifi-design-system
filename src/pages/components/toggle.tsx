@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
@@ -13,60 +13,72 @@ import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
-let checked = false;
+class TogglePage extends Component<{}, State> {
+  public constructor() {
+    super({});
 
-const getAriaLabelText = (t: Function): string => {
-  return t(`toggle.state.${checked ? 'on' : 'off'}`, {
-    name: t('toggle.label'),
-  });
-};
+    this.state = {
+      isChecked: false,
+    };
+  }
 
-const handleClick = (id: string, t: Function): void => {
-  checked = !checked;
-  document.getElementById(id).setAttribute('aria-label', getAriaLabelText(t));
-};
+  private getAriaLabelText = (t: Function): string =>
+    t(`toggle.state.${this.state.isChecked ? 'on' : 'off'}`, {
+      name: t('toggle.label'),
+    });
 
-const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['toggle']}>
-    {t => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading.h1>{t('title')}</Heading.h1>
+  private handleClick = (newState: boolean): void => {
+    this.setState({
+      isChecked: newState,
+    });
+  };
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+  public render = (): JSX.Element => (
+    <NamespacesConsumer ns={['toggle']}>
+      {t => (
+        <Layout sideNavData={sideNavData(t)}>
+          <SEO title={t('title')} />
+          <Heading.h1>{t('title')}</Heading.h1>
 
-        <ComponentDescription
-          mainTitle={t('default.title')}
-          description={t('default.description')}
-        >
-          <ComponentExample>
-            <Toggle
-              id="toggle"
-              aria-label={getAriaLabelText(t)}
-              onClick={() => handleClick('toggle', t)}
-            >
-              {t('toggle.label')}
-            </Toggle>
-          </ComponentExample>
-        </ComponentDescription>
-        <NoteBox title={t('note.title')} items={t('note.items')} />
+          <Paragraph.lead>
+            <Text.lead>{t('intro')}</Text.lead>
+          </Paragraph.lead>
 
-        {t('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
-      </Layout>
-    )}
-  </NamespacesConsumer>
-);
+          <ComponentDescription
+            mainTitle={t('default.title')}
+            description={t('default.description')}
+          >
+            <ComponentExample>
+              <Toggle
+                aria-label={this.getAriaLabelText(t)}
+                onClick={({ toggleState }) => this.handleClick(toggleState)}
+                checked={this.state.isChecked}
+              >
+                {t('toggle.label')}
+              </Toggle>
+            </ComponentExample>
+          </ComponentDescription>
+          <NoteBox title={t('note.title')} items={t('note.items')} />
 
-export default withI18next()(Page);
+          {t('sections').map((section, index) => (
+            <Section
+              key={index}
+              mainTitle={section.title}
+              paragraphs={section.paragraphs}
+              links={section.links}
+            />
+          ))}
+        </Layout>
+      )}
+    </NamespacesConsumer>
+  );
+}
+
+interface State {
+  isChecked: boolean;
+}
+
+export default withI18next()(TogglePage);
 
 export const query = graphql`
   query($lng: String!) {

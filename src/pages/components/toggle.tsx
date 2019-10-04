@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
@@ -13,27 +13,19 @@ import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
-class TogglePage extends Component<{}, State> {
-  public constructor() {
-    super({});
+const Page: React.FC = (): React.ReactElement => {
+  const [isChecked, setChecked] = useState(false);
 
-    this.state = {
-      isChecked: false,
-    };
-  }
-
-  private getAriaLabelText = (t: Function): string =>
-    t(`toggle.state.${this.state.isChecked ? 'on' : 'off'}`, {
+  const getAriaLabelText = (t: Function): string =>
+    t(`toggle.state.${isChecked ? 'on' : 'off'}`, {
       name: t('toggle.label'),
     });
 
-  private handleClick = (newState: boolean): void => {
-    this.setState({
-      isChecked: newState,
-    });
+  const handleClick = (newState: boolean): void => {
+    setChecked(newState);
   };
 
-  public render = (): JSX.Element => (
+  return (
     <NamespacesConsumer ns={['toggle']}>
       {t => (
         <Layout sideNavData={sideNavData(t)}>
@@ -50,9 +42,9 @@ class TogglePage extends Component<{}, State> {
           >
             <ComponentExample>
               <Toggle
-                aria-label={this.getAriaLabelText(t)}
-                onClick={({ toggleState }) => this.handleClick(toggleState)}
-                checked={this.state.isChecked}
+                aria-label={getAriaLabelText(t)}
+                onClick={({ toggleState }) => handleClick(toggleState)}
+                checked={isChecked}
               >
                 {t('toggle.label')}
               </Toggle>
@@ -72,13 +64,9 @@ class TogglePage extends Component<{}, State> {
       )}
     </NamespacesConsumer>
   );
-}
+};
 
-interface State {
-  isChecked: boolean;
-}
-
-export default withI18next()(TogglePage);
+export default withI18next()(Page);
 
 export const query = graphql`
   query($lng: String!) {

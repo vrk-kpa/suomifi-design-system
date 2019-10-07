@@ -1,17 +1,17 @@
 import React, { ReactNode, CSSProperties } from 'react';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { defaultTokens } from 'suomifi-ui-components';
 
 const MobileDevice = ({ style, children }: Props): JSX.Element => (
   <div
     style={{
       width: '13rem',
-      border: `.1rem solid ${suomifiTheme.colors.depthDark27}`,
+      border: `.1rem solid ${defaultTokens.colors.depthDark27}`,
       borderBottom: 0,
       borderRadius: '1.5rem 1.5rem 0 0',
-      boxShadow: suomifiTheme.shadows.panelShadow,
+      boxShadow: defaultTokens.shadows.panelShadow,
       padding: '2.5rem 1rem 0 1rem',
       margin: 0,
-      background: suomifiTheme.colors.depthLight13,
+      background: defaultTokens.colors.depthLight13,
     }}
   >
     <div
@@ -21,7 +21,7 @@ const MobileDevice = ({ style, children }: Props): JSX.Element => (
         margin: '0 auto',
         width: '3.5rem',
         height: '.25rem',
-        background: suomifiTheme.colors.depthDark27,
+        background: defaultTokens.colors.depthDark27,
         borderRadius: '.125rem',
       }}
     />

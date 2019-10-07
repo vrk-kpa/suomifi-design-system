@@ -1,17 +1,17 @@
 import React from 'react';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { defaultTokens } from 'suomifi-ui-components';
 
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import Link, { Props as LinkProps } from 'components/Link';
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
 
 const linkStyle = {
-  padding: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.m}`,
-  border: `1px solid ${suomifiTheme.colors.whiteBase}`,
-  borderRadius: suomifiTheme.radius.basic,
+  padding: `${defaultTokens.spacing.s} ${defaultTokens.spacing.m}`,
+  border: `1px solid ${defaultTokens.colors.whiteBase}`,
+  borderRadius: defaultTokens.radius.basic,
   '&:link,:visited,:focus,:hover,:active': {
     fontSize: '16px',
-    color: suomifiTheme.colors.whiteBase,
+    color: defaultTokens.colors.whiteBase,
     textDecoration: 'none',
   },
 };
@@ -42,7 +42,7 @@ const Content = ({
         color="whiteBase"
         style={{
           textAlign: 'inherit',
-          margin: `0 0 0 ${suomifiTheme.spacing.m}`,
+          margin: `0 0 0 ${defaultTokens.spacing.m}`,
         }}
       >
         {title}
@@ -50,7 +50,7 @@ const Content = ({
       {description && (
         <Paragraph
           style={{
-            margin: `${suomifiTheme.spacing.m} 0 0 ${suomifiTheme.spacing.m}`,
+            margin: `${defaultTokens.spacing.m} 0 0 ${defaultTokens.spacing.m}`,
             textAlign: 'inherit',
           }}
         >
@@ -61,8 +61,8 @@ const Content = ({
     {link && !!link.text && !!link.url && (
       <div
         style={{
-          margin: `${suomifiTheme.spacing.m} 0`,
-          marginLeft: center ? 0 : suomifiTheme.spacing.l,
+          margin: `${defaultTokens.spacing.m} 0`,
+          marginLeft: center ? 0 : defaultTokens.spacing.l,
         }}
       >
         <Link
@@ -80,8 +80,8 @@ const Annotation = ({ title, description, link }: Props): JSX.Element => (
   <div
     style={{
       margin: 0,
-      padding: suomifiTheme.spacing.m,
-      background: suomifiTheme.colors.highlightBase,
+      padding: defaultTokens.spacing.m,
+      background: defaultTokens.colors.highlightBase,
       display: 'flex',
       justifyContent: 'center',
     }}

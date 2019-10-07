@@ -9,7 +9,7 @@ export const Example = () => (
       borderRadius: defaultTokens.radius.basic,
       background: defaultTokens.colors.highlightBase,
       boxShadow: defaultTokens.shadows.panelShadow,
-      fontSize: defaultTokens.typography.fontSize.body,
+      fontSize: defaultTokens.typography.bodyText.fontSize,
       color: defaultTokens.colors.whiteBase,
     }}
   >

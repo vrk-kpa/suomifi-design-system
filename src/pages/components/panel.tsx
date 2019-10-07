@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { defaultTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -47,9 +47,9 @@ const Page = (): JSX.Element => (
               <p
                 style={{
                   margin: 0,
-                  padding: suomifiTheme.spacing.m,
-                  background: suomifiTheme.colors.brandBase,
-                  color: suomifiTheme.colors.whiteBase,
+                  padding: defaultTokens.spacing.m,
+                  background: defaultTokens.colors.brandBase,
+                  color: defaultTokens.colors.whiteBase,
                 }}
               >
                 {t('panel.content')}

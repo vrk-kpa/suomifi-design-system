@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { defaultTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -13,7 +13,7 @@ const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['accessibility-statement']}>
     {t => (
       <Layout>
-        <div style={{ padding: `0 ${suomifiTheme.spacing.l}` }}>
+        <div style={{ padding: `0 ${defaultTokens.spacing.l}` }}>
           <SEO title={t('title')} />
           <Heading variant="h1">{t('title')}</Heading>
           {t('sections').map((section, index) => (

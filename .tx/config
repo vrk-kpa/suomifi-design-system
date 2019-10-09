@@ -105,3 +105,10 @@ minimum_perc = 0
 source_file = locale/af/breadcrumb.json
 source_lang = af
 type = KEYVALUEJSON
+
+[suomifi-design-system.toggle-json]
+file_filter = locale/<lang>/toggle.json
+minimum_perc = 0
+source_file = locale/af/toggle.json
+source_lang = af
+type = KEYVALUEJSON

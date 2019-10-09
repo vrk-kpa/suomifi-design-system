@@ -1,0 +1,76 @@
+{
+  "title": "Valintakytkin (Toggle Switch)",
+  "intro": "Valintakytkintä käytetään kahden toisensa poissulkevan toimintavaihtoehdon vaihtamisessa.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Kognitiivisen saavutettavuuden kannalta on suositeltavaa esittää selkeä ohjeistusteksti komponentin yhteydessä, koska valintakytkin muuttaa, piilottaa tai muokkaa sisältöä valinnan mukaisesti.",
+    "Käytä valintakytkintä harkiten, Suomi.fissa valintakytkin-komponenttia käytetään vain tilan muutokseen, kuten viittomakielisten sisältöjen hakuun hakusivulla.",
+    "",
+    "",
+    ""
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Oheisteksti (Label) kertoo mitä ollaan kytkemässä päälle tai pois. Kytkin suorittaa vaakasuuntaisen edestakaisen toiminnon."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Valintakytkin piilottaa, vaihtaa, muuttaa sisällön tai näkymän valinnan mukaisesti. Toiminta tapahtuu välittömästi eikä vaadi käyttäjältä muuta erillistä vahvistusta. Valintakytkimessä on aina yksi oletustila valmiiksi valittuna. Valintakytkintä tulisi käyttää ainoastaan sellasissa tilanteissa, joissa käyttäjän täytyy valita kahdesta vastakkaisesta tilasta, esimerkiksi asettaa jokin toiminto päälle tai pois päältä. Muita vaihtoehtoja valintakytkimelle käyttöliittymässä on esimerkiksi valintapainike."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Valintakytkimen vaiheiden vastakohtaiset värit tulisi tukea komponentin käytettävyyttä ja auttaa käyttäjää hahmottamaan missä tilassa kytkin on (päällä/pois päältä). Jos muokkaat väriä, muista huomioida WCGA 2.1 vaatimukset ja eri tilojen riittävä eroavuus toisistaan."
+        }
+      ],
+      "links": [
+        {
+          "text": "WCAG 2.1 - 1.4.1 Use of Color",
+          "url": "https://www.w3.org/TR/WCAG21/#use-of-color"
+        },
+        {
+          "text": "WCAG 2.1 - 1.4.3 Contrast (Minimum)",
+          "url": "https://www.w3.org/TR/WCAG21/#contrast-minimum"
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "default.title": "",
+  "default.description": "",
+  "toggle.label": "Oheisteksti",
+  "toggle.state.on": "{{name}} on kytketty päälle.",
+  "toggle.state.off": "{{name}} on kytketty pois päältä."
+}

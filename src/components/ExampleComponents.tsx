@@ -3,6 +3,7 @@ import {
   Panel as OrigPanel,
   Breadcrumb as OrigBreadcrumb,
   Toggle as OrigToggle,
+  Dropdown as OrigDropdown,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -17,3 +18,6 @@ addDisplayNames(Breadcrumb, OrigBreadcrumb, 'Breadcrumb');
 
 export class Toggle extends OrigToggle {}
 addDisplayNames(Toggle, OrigToggle, 'Toggle');
+
+export class Dropdown extends OrigDropdown {}
+addDisplayNames(Dropdown, OrigDropdown, 'Dropdown');

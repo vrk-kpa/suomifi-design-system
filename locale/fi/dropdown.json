@@ -1,5 +1,5 @@
 {
-  "title": "Dropdown (Pudotusvalikko)",
+  "title": "Pudotusvalikko (Dropdown)",
   "intro": "Pudotusvalikko kokoaa sisältölistan monesta valittavista vaihtoehdoista joista käyttäjä voi valita yhden.  ",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
@@ -64,9 +64,9 @@
       ]
     }
   ],
-  "default.title": "",
-  "default.description": "",
-  "default.link1": "Etusivu",
-  "default.link2": "Alasivu",
-  "default.link3": "Alasivun alasivu"
+  "example.title": "",
+  "example.description": "",
+  "example.option1": "Vaihtoehto 1",
+  "example.option2": "Vaihtoehto 2",
+  "example.option3": "Vaihtoehto 3"
 }

@@ -14,5 +14,6 @@ export default t => ({
     { to: '/components/panel/', label: t('panel:title') },
     { to: '/components/breadcrumb/', label: t('breadcrumb:title') },
     { to: '/components/toggle/', label: t('toggle:title') },
+    { to: '/components/dropdown/', label: t('dropdown:title') },
   ],
 });

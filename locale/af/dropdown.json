@@ -62,9 +62,9 @@
       ]
     }
   ],
-  "example.title": "example.title",
-  "example.description": "example.description",
-  "example.option1": "example.option1",
-  "example.option2": "example.option2",
-  "example.option3": "example.option3"
+  "default.title": "default.title",
+  "default.description": "default.description",
+  "default.link1": "default.link1",
+  "default.link2": "default.link2",
+  "default.link3": "default.link3"
 }

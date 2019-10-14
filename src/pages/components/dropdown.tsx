@@ -5,7 +5,7 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import { Dropdown } from 'components/ExampleComponents';
+import { Breadcrumb } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
@@ -25,22 +25,10 @@ const Page = (): JSX.Element => (
         </Paragraph.lead>
 
         <ComponentDescription
-          mainTitle={t('example.title')}
-          description={t('example.description')}
+          mainTitle={t('default.title')}
+          description={t('default.description')}
         >
-          <ComponentExample>
-            <Dropdown name="Dropdown">
-              <Dropdown.item onSelect={() => console.log(t('example.option1'))}>
-                {t('example.option1')}
-              </Dropdown.item>
-              <Dropdown.item onSelect={() => console.log(t('example.option2'))}>
-                {t('example.option2')}
-              </Dropdown.item>
-              <Dropdown.item onSelect={() => console.log(t('example.option3'))}>
-                {t('example.option3')}
-              </Dropdown.item>
-            </Dropdown>
-          </ComponentExample>
+          <ComponentExample />
         </ComponentDescription>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />

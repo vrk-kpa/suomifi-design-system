@@ -50,7 +50,9 @@ const Content = ({
       {description && (
         <Paragraph
           style={{
-            margin: `${suomifiTheme.spacing.m} 0 0 ${suomifiTheme.spacing.m}`,
+            margin: `${suomifiTheme.spacing.m} ${suomifiTheme.spacing.m} 0 ${
+              suomifiTheme.spacing.m
+            }`,
             textAlign: 'inherit',
           }}
         >
@@ -62,7 +64,7 @@ const Content = ({
       <div
         style={{
           margin: `${suomifiTheme.spacing.m}`,
-          marginLeft: center ? 0 : suomifiTheme.spacing.l,
+          marginLeft: center ? 0 : suomifiTheme.spacing.m,
           marginRight: center ? 0 : suomifiTheme.spacing.m,
         }}
       >

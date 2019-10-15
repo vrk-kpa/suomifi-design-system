@@ -37,14 +37,14 @@ const StyleIcon = styled(SuomifiIcon)`
 `;
 
 const getExampleIcon = (
-  id: IconKeys | StaticIconKeys,
+  id: string,
   label: string,
   style?: CSSProperties,
 ): JSX.Element => (
   <div
     key={id}
     style={{
-      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
+      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.xl} ${
         suomifiTheme.spacing.l
       } 0`,
       lineHeight: '1rem',
@@ -52,12 +52,12 @@ const getExampleIcon = (
       flexDirection: 'column',
       justifyContent: 'space-around',
       alignItems: 'center',
-      width: '8rem',
+      width: '6rem',
       height: '6rem',
       ...style,
     }}
   >
-    <StyleIcon icon={id} />
+    <StyleIcon icon={(id as any) as IconKeys | StaticIconKeys} />
     <div>{label}</div>
   </div>
 );
@@ -89,7 +89,11 @@ const Page = (): JSX.Element => (
               }}
             >
               {item.icons.map(icon => {
-                return getExampleIcon(icon, t(`${icon}.label`));
+                return item.id === 'baseIcons'
+                  ? getExampleIcon(icon, t(`${icon}.label`))
+                  : getExampleIcon(icon, t(`${icon}.label`), {
+                      width: '256px',
+                    });
               })}
             </ComponentExample>
           </ComponentDescription>

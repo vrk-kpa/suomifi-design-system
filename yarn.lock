@@ -14330,6 +14330,11 @@ suomifi-icons@0.0.8:
   resolved "https://registry.npmjs.org/suomifi-icons/-/suomifi-icons-0.0.8.tgz#2a25de59b9e945321d504c0c393f8371d8213bbb"
   integrity sha512-C/qsOpERN73eyAMjpOMtGPw2NkS1R57VVk/cjsxM7mmlDMiBYjCdXM8XYa3HPsGxlznEHxNmCxWqMf4z/QF1WA==
 
+suomifi-icons@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-0.0.10.tgz#d2e32f7e03c53b86d1efeeada037a0f420a01804"
+  integrity sha512-tPh7CFBOGyyK0qaBU7dlOsHn9c8hLi0qpNHXz2xhHbVOkPD6bGLDlrtkQVdvni5nRi9zYJ2xeiaSZ7azADTeLQ==
+
 suomifi-ui-components@0.2.5:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.2.5.tgz#c6c0acd02ee1af499141f4bf708f053955c4443f"

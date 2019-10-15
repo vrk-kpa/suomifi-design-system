@@ -34,9 +34,9 @@
     "react-motion": "^0.5.2",
     "react-responsive": "^6.1.1",
     "react-syntax-highlighter": "^10.1.2",
-    "suomifi-icons": "0.0.8",
-    "suomifi-ui-components": "0.2.5",
-    "styled-components": "^4.4.0"
+    "styled-components": "^4.4.0",
+    "suomifi-icons": "^0.0.10",
+    "suomifi-ui-components": "0.2.5"
   },
   "resolutions": {
     "@wapps/gatsby-plugin-i18next/i18next": "^15.0.6",

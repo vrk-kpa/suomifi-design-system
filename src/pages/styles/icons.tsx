@@ -3,13 +3,12 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiTheme, Icon } from 'suomifi-ui-components';
 import {
   allIcons,
   IconKeys,
   allStaticIcons,
   StaticIconKeys,
-  SuomifiIcon,
 } from 'suomifi-icons';
 
 import Layout from 'components/layout';
@@ -31,7 +30,7 @@ const iconCategories = [
     icons: allStaticIcons.filter(icon => icon !== 'toggle'),
   },
 ];
-const StyleIcon = styled(SuomifiIcon)`
+const StyleIcon = styled(Icon)`
   height: 1.5em;
   width: 1.5em;
 `;

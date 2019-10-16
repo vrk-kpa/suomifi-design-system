@@ -34,7 +34,7 @@ const Content = ({
   >
     <div
       style={{
-        flex: center ? '1 1 100%' : '1 1 70%',
+        flex: center ? '1 1 100%' : '1 1 60%',
         textAlign: center ? 'center' : 'initial',
       }}
     >
@@ -50,7 +50,9 @@ const Content = ({
       {description && (
         <Paragraph
           style={{
-            margin: `${suomifiTheme.spacing.m} 0 0 ${suomifiTheme.spacing.m}`,
+            margin: `${suomifiTheme.spacing.m} ${suomifiTheme.spacing.m} 0 ${
+              suomifiTheme.spacing.m
+            }`,
             textAlign: 'inherit',
           }}
         >
@@ -61,8 +63,9 @@ const Content = ({
     {link && !!link.text && !!link.url && (
       <div
         style={{
-          margin: `${suomifiTheme.spacing.m} 0`,
-          marginLeft: center ? 0 : suomifiTheme.spacing.l,
+          margin: `${suomifiTheme.spacing.m}`,
+          marginLeft: center ? 0 : suomifiTheme.spacing.m,
+          marginRight: center ? 0 : suomifiTheme.spacing.m,
         }}
       >
         <Link

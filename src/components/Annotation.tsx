@@ -50,8 +50,8 @@ const Content = ({
       {description && (
         <Paragraph
           style={{
-            margin: `${suomifiTheme.spacing.m} ${suomifiTheme.spacing.m} 0 ${
-              suomifiTheme.spacing.m
+            margin: `${defaultTokens.spacing.m} ${defaultTokens.spacing.m} 0 ${
+              defaultTokens.spacing.m
             }`,
             textAlign: 'inherit',
           }}
@@ -63,9 +63,9 @@ const Content = ({
     {link && !!link.text && !!link.url && (
       <div
         style={{
-          margin: `${suomifiTheme.spacing.m}`,
-          marginLeft: center ? 0 : suomifiTheme.spacing.m,
-          marginRight: center ? 0 : suomifiTheme.spacing.m,
+          margin: `${defaultTokens.spacing.m}`,
+          marginLeft: center ? 0 : defaultTokens.spacing.m,
+          marginRight: center ? 0 : defaultTokens.spacing.m,
         }}
       >
         <Link

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { defaultTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -26,7 +26,7 @@ const Page = (): JSX.Element => (
             icon: (
               <Slack
                 style={{
-                  fill: suomifiTheme.colors.whiteBase,
+                  fill: defaultTokens.colors.whiteBase,
                   fontSize: '16px',
                 }}
               />

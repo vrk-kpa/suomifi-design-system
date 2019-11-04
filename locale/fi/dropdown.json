@@ -1,10 +1,10 @@
 {
   "title": "Pudotusvalikko (Dropdown)",
-  "intro": "Pudotusvalikko kokoaa sisältölistan monesta valittavista vaihtoehdoista joista käyttäjä voi valita yhden.  ",
+  "intro": "Pudotusvalikko kokoaa sisältölistan monista valittavista vaihtoehdoista joista käyttäjä voi valita yhden.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Huomioi pudotusvalikon asettamat mahdolliset kognitiiviset saavutettavuushaasteet. Käytä komponenttia harkiten ja mieti tarkoin pudotusvalikon sisältö.",
-    "Yhdellä silmäyksellä hahmotettava valintalista tukee kognitiivista saavutettavuutta. Mieti olisiko pudotusvalikon yhteydessä mahdollista tarjota edeltävä rajaus, joka vähentäisi pudotusvalikon valintavaihtoehtoja. ",
+    "Yhdellä silmäyksellä hahmotettava valintalista tukee kognitiivista saavutettavuutta. Mieti olisiko pudotusvalikon yhteydessä mahdollista tarjota edeltävä rajaus, joka vähentäisi pudotusvalikon valintavaihtoehtoja.",
     "Pyri välttämään kaiken ylimääräisen lisäinformaation esittämistä pudotusvalikon yhteydessä.",
     "Jos valintavaihtoehtoja on vain muutama, hyvä vaihtoehto pudotusvalikolle voi olla valintaruutu- tai valintanappikomponentti.",
     "Järjestä pudotusvalikon sisältö aakkosjärjestykseen tai relevanssin mukaan järjestäen.",
@@ -37,7 +37,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Pudotusvalikkon avulla käyttäjä valitsee listasta yhden vahihtoehdon. Pudotusvalikko säästää tilaa käyttöliittymässä ja vähentää valinta/tekstinsyöttövirheitä tarjoamalla käyttäjälle listan valmiiksi valituista vaihtoehdoista."
+          "text": "Pudotusvalikkon avulla käyttäjä valitsee listasta yhden vahihtoehdon. Pudotusvalikko säästää tilaa käyttöliittymässä ja vähentää valinta/tekstinsyöttövirheitä tarjoamalla käyttäjälle valmiin listan vaihtoehdoista."
         }
       ],
       "links": [

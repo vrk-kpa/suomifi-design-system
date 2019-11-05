@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { NamespacesConsumer } from 'react-i18next';
-import { defaultTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 import { Text, Paragraph } from 'components/ResponsiveComponents';
 import Link, { Props as LinkProps } from 'components/Link';
@@ -15,7 +15,7 @@ const Content = ({
   title,
   description,
   links,
-  background = defaultTokens.colors.whiteBase,
+  background = suomifiTheme.colors.whiteBase,
   textColor = 'blackBase',
   linkColor,
   textDecoration,
@@ -25,7 +25,7 @@ const Content = ({
   <div
     style={{
       margin: 0,
-      padding: defaultTokens.spacing.m,
+      padding: suomifiTheme.spacing.m,
       background: background,
       display: 'flex',
       justifyContent: 'center',
@@ -41,7 +41,7 @@ const Content = ({
       }}
     >
       {header && (
-        <div style={{ flex: '100%', marginTop: defaultTokens.spacing.m }}>
+        <div style={{ flex: '100%', marginTop: suomifiTheme.spacing.m }}>
           {header}
         </div>
       )}
@@ -55,8 +55,8 @@ const Content = ({
       </div>
       <div
         style={{
-          margin: `${defaultTokens.spacing.m} 0`,
-          marginLeft: wrapAll ? 0 : defaultTokens.spacing.xl,
+          margin: `${suomifiTheme.spacing.m} 0`,
+          marginLeft: wrapAll ? 0 : suomifiTheme.spacing.xl,
           flex: '50%',
           textAlign: center ? 'center' : 'initial',
         }}
@@ -94,9 +94,9 @@ const Content = ({
                         : 'flex-end',
                       flex: wrapAll ? '100%' : 'unset',
                       margin: wrapAll
-                        ? `${defaultTokens.spacing.s} 0`
-                        : `0 ${defaultTokens.spacing.m} ${
-                            defaultTokens.spacing.m
+                        ? `${suomifiTheme.spacing.s} 0`
+                        : `0 ${suomifiTheme.spacing.m} ${
+                            suomifiTheme.spacing.m
                           }`,
                     }}
                   >
@@ -107,7 +107,7 @@ const Content = ({
                       style={{
                         '&:link,:visited,:focus,:hover,:active': {
                           fontSize: '16px',
-                          color: defaultTokens.colors[linkColor],
+                          color: suomifiTheme.colors[linkColor],
                           textDecoration: textDecoration,
                         },
                       }}
@@ -153,7 +153,7 @@ const AllContent = ({
               icon: (
                 <Slack
                   style={{
-                    fill: defaultTokens.colors.whiteBase,
+                    fill: suomifiTheme.colors.whiteBase,
                     fontSize: '25px',
                   }}
                 />
@@ -165,7 +165,7 @@ const AllContent = ({
               icon: (
                 <Github
                   style={{
-                    fill: defaultTokens.colors.whiteBase,
+                    fill: suomifiTheme.colors.whiteBase,
                     fontSize: '25px',
                   }}
                 />
@@ -174,7 +174,7 @@ const AllContent = ({
               url: t('common:github.link.url'),
             },
           ]}
-          background={defaultTokens.colors.brandBase}
+          background={suomifiTheme.colors.brandBase}
           textColor="whiteBase"
           linkColor="whiteBase"
           textDecoration="underline"
@@ -206,8 +206,8 @@ interface Props {
   description: string;
   links?: LinkProps[];
   background?: string;
-  textColor?: keyof typeof defaultTokens.colors;
-  linkColor?: keyof typeof defaultTokens.colors;
+  textColor?: keyof typeof suomifiTheme.colors;
+  linkColor?: keyof typeof suomifiTheme.colors;
   textDecoration?: string;
   center?: boolean;
   wrapAll?: boolean;

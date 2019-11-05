@@ -1,5 +1,5 @@
 import React, { Component, ReactNode, MouseEvent } from 'react';
-import { defaultTokens, Icon, Button } from 'suomifi-ui-components';
+import { suomifiTheme, Icon, Button } from 'suomifi-ui-components';
 import { Link } from '@wapps/gatsby-plugin-i18next';
 
 import { isFrontPage } from 'components/LinkUtil';
@@ -32,17 +32,17 @@ class SideNavItem extends Component<Props> {
             justifyContent: 'space-between',
             height: '3.2rem',
             paddingLeft: level + '.2rem',
-            paddingRight: defaultTokens.spacing.s,
-            borderBottom: `1px solid ${defaultTokens.colors.depthSecondary}`,
-            color: defaultTokens.colors.highlightBase,
+            paddingRight: suomifiTheme.spacing.s,
+            borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
+            color: suomifiTheme.colors.highlightBase,
             textDecoration: 'none',
             textTransform: level === 1 ? 'uppercase' : 'none',
             '&:hover': {
-              background: defaultTokens.colors.depthSecondary,
-              color: defaultTokens.colors.brandBase,
+              background: suomifiTheme.colors.depthSecondary,
+              color: suomifiTheme.colors.brandBase,
             },
           },
-          `&:focus { ${defaultTokens.outlines.basic} }`,
+          `&:focus { ${suomifiTheme.outlines.basic} }`,
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           const isPartiallyCurrentPage = showAsTo
@@ -60,8 +60,8 @@ class SideNavItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: defaultTokens.colors.depthSecondary,
-                color: defaultTokens.colors.brandBase,
+                background: suomifiTheme.colors.depthSecondary,
+                color: suomifiTheme.colors.brandBase,
                 fontWeight: 600,
               },
             };
@@ -86,7 +86,7 @@ class SideNavItem extends Component<Props> {
             }}
             onClick={this.toggleOpen}
           >
-            <Icon icon="chevronDown" color={defaultTokens.colors.depthDark27} />
+            <Icon icon="chevronDown" color={suomifiTheme.colors.depthDark27} />
           </Button>
         )}
       </Link>

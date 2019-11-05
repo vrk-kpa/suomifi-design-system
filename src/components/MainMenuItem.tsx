@@ -1,5 +1,5 @@
 import React, { Component, ReactNode } from 'react';
-import { defaultTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 import { Link } from '@wapps/gatsby-plugin-i18next';
 
 import { isFrontPage } from 'components/LinkUtil';
@@ -17,18 +17,18 @@ class MainMenuItem extends Component<Props> {
             alignItems: 'center',
             justifyContent: 'space-between',
             height: '3.2rem',
-            paddingLeft: defaultTokens.spacing.m,
-            paddingRight: defaultTokens.spacing.m,
-            borderBottom: `1px solid ${defaultTokens.colors.depthSecondary}`,
-            color: defaultTokens.colors.highlightBase,
+            paddingLeft: suomifiTheme.spacing.m,
+            paddingRight: suomifiTheme.spacing.m,
+            borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
+            color: suomifiTheme.colors.highlightBase,
             textDecoration: 'none',
             whiteSpace: 'nowrap',
             '&:hover': {
-              background: defaultTokens.colors.depthSecondary,
-              color: defaultTokens.colors.brandBase,
+              background: suomifiTheme.colors.depthSecondary,
+              color: suomifiTheme.colors.brandBase,
             },
           },
-          `&:focus { ${defaultTokens.outlines.basic} }`,
+          `&:focus { ${suomifiTheme.outlines.basic} }`,
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           if (!isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
@@ -42,8 +42,8 @@ class MainMenuItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: defaultTokens.colors.depthSecondary,
-                color: defaultTokens.colors.brandBase,
+                background: suomifiTheme.colors.depthSecondary,
+                color: suomifiTheme.colors.brandBase,
                 fontWeight: 600,
               },
             };

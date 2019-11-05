@@ -1,5 +1,5 @@
 import React, { ReactNode, CSSProperties } from 'react';
-import { defaultTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 const ComponentExample = ({ style, children }: Props): JSX.Element => (
   <div
@@ -8,13 +8,13 @@ const ComponentExample = ({ style, children }: Props): JSX.Element => (
       justifyContent: 'center',
       alignItems: 'center',
       flexWrap: 'wrap',
-      padding: defaultTokens.spacing.m,
-      margin: `${defaultTokens.spacing.m} 0`,
+      padding: suomifiTheme.spacing.m,
+      margin: `${suomifiTheme.spacing.m} 0`,
       ...style,
       background:
         style && style.background
           ? style.background
-          : defaultTokens.colors.depthLight30,
+          : suomifiTheme.colors.depthLight30,
     }}
   >
     {children}

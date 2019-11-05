@@ -113,7 +113,6 @@ source_file = locale/af/toggle.json
 source_lang = af
 type = KEYVALUEJSON
 
-<<<<<<< HEAD
 [suomifi-design-system.icons-json]
 file_filter = locale/<lang>/icons.json
 minimum_perc = 0
@@ -121,8 +120,6 @@ source_file = locale/af/icons.json
 source_lang = af
 type = KEYVALUEJSON
 
-=======
->>>>>>> c5c20ff9a157ed4024e666b68a3bfd70e7cbc04d
 [suomifi-design-system.dropdown-json]
 file_filter = locale/<lang>/dropdown.json
 minimum_perc = 0

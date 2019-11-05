@@ -112,3 +112,10 @@ minimum_perc = 0
 source_file = locale/af/toggle.json
 source_lang = af
 type = KEYVALUEJSON
+
+[suomifi-design-system.dropdown-json]
+file_filter = locale/<lang>/dropdown.json
+minimum_perc = 0
+source_file = locale/af/dropdown.json
+source_lang = af
+type = KEYVALUEJSON

@@ -1,16 +1,16 @@
 import React from 'react';
-import { defaultTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 export const Example = () => (
   <div
     style={{
-      margin: defaultTokens.spacing.l,
-      padding: defaultTokens.spacing.m,
-      borderRadius: defaultTokens.radius.basic,
-      background: defaultTokens.colors.highlightBase,
-      boxShadow: defaultTokens.shadows.panelShadow,
-      fontSize: defaultTokens.typography.bodyText.fontSize,
-      color: defaultTokens.colors.whiteBase,
+      margin: suomifiTheme.spacing.l,
+      padding: suomifiTheme.spacing.m,
+      borderRadius: suomifiTheme.radius.basic,
+      background: suomifiTheme.colors.highlightBase,
+      boxShadow: suomifiTheme.shadows.panelShadow,
+      fontSize: suomifiTheme.typography.fontSize.body,
+      color: suomifiTheme.colors.whiteBase,
     }}
   >
     Example

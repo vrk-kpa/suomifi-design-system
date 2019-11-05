@@ -1,5 +1,5 @@
 import React from 'react';
-import { defaultTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
@@ -17,7 +17,7 @@ const Content = ({
       margin: 0,
       padding: compact ? '2rem 1rem 5rem 1rem' : '6rem 1rem 8rem 1rem',
       background: `no-repeat center url(${Background}) ${
-        defaultTokens.colors.brandBase
+        suomifiTheme.colors.brandBase
       }`,
       backgroundSize: compact ? 'auto' : 'cover',
       display: 'flex',
@@ -36,7 +36,7 @@ const Content = ({
       <div>
         <SuomiFi
           style={{
-            fill: defaultTokens.colors.whiteBase,
+            fill: suomifiTheme.colors.whiteBase,
             fontSize: compact ? '30px' : '64px',
             margin: center ? '0 0 1rem' : '0 2rem 1rem 0',
           }}

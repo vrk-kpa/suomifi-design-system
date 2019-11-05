@@ -1,7 +1,7 @@
 import React, { Component, CSSProperties } from 'react';
 import {
   Paragraph as OrigParagraph,
-  defaultTokens,
+  suomifiTheme,
 } from 'suomifi-ui-components';
 
 import {
@@ -15,7 +15,7 @@ class CustomParagraph extends Component<Props> {
     return (
       <OrigParagraph
         style={{
-          margin: `${defaultTokens.spacing.l} 0`,
+          margin: `${suomifiTheme.spacing.l} 0`,
           lineHeight: smallScreen ? '28px' : '30px',
           ...style,
         }}
@@ -29,7 +29,7 @@ class CustomParagraph extends Component<Props> {
     return (
       <OrigParagraph
         style={{
-          margin: `${defaultTokens.spacing.m} 0`,
+          margin: `${suomifiTheme.spacing.m} 0`,
           lineHeight: '24px',
           ...style,
         }}
@@ -43,7 +43,7 @@ class CustomParagraph extends Component<Props> {
     return (
       <OrigParagraph
         style={{
-          margin: `${defaultTokens.spacing.l} 0`,
+          margin: `${suomifiTheme.spacing.l} 0`,
           lineHeight: '27px',
           ...style,
         }}

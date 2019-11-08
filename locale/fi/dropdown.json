@@ -21,7 +21,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Pudostusvalikon tekstiohjeistus (label) ilmaisee selkeästi ja lyhyesti mitä pudotusvalikko sisältää. Valintatoiminto sulkee pudotusvalikon ja korvaa pudotusvalikon valitulla vaihtoehdolla."
+          "text": "Pudotusvalikon tekstiohjeistus (label) ilmaisee selkeästi ja lyhyesti mitä pudotusvalikko sisältää. Valintatoiminto sulkee pudotusvalikon ja korvaa pudotusvalikon valitulla vaihtoehdolla."
         }
       ],
       "links": [
@@ -37,7 +37,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Pudotusvalikkon avulla käyttäjä valitsee listasta yhden vahihtoehdon. Pudotusvalikko säästää tilaa käyttöliittymässä ja vähentää valinta/tekstinsyöttövirheitä tarjoamalla käyttäjälle valmiin listan vaihtoehdoista."
+          "text": "Pudotusvalikon avulla käyttäjä valitsee listasta yhden vahihtoehdon. Pudotusvalikko säästää tilaa käyttöliittymässä ja vähentää valinta/tekstinsyöttövirheitä tarjoamalla käyttäjälle valmiin listan vaihtoehdoista."
         }
       ],
       "links": [

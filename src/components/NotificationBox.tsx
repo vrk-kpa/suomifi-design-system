@@ -5,9 +5,10 @@ import { NamespacesConsumer } from 'react-i18next';
 
 interface Props {
   style?: CSSProperties;
+  notificationText?: string;
 }
 
-const NotificationBox = ({ style }: Props): JSX.Element => (
+const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
   <NamespacesConsumer>
     {t => (
       <div
@@ -31,8 +32,9 @@ const NotificationBox = ({ style }: Props): JSX.Element => (
             fontSize: suomifiTheme.typography.fontSize.body,
           }}
         >
-          {' '}
-          {t('common:workInProgressWarning')}
+          {!!notificationText
+            ? notificationText
+            : t('common:workInProgressWarning')}
         </Text.bold>
       </div>
     )}

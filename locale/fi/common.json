@@ -22,5 +22,6 @@
   "slack.link.url": "https://suomidigi-kehittajat.slack.com",
   "github.link.text": "suomifi-ui-components",
   "github.link.url": "https://github.com/vrk-kpa/suomifi-ui-components",
-  "opens.new.window": "Avautuu uuteen ikkunaan"
+  "opens.new.window": "Avautuu uuteen ikkunaan",
+  "workInProgressWarning": "Tämän sivun esittelemä toiminnallisuus on vielä työn alla ja saattaa muuttua."
 }

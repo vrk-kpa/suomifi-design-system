@@ -22,5 +22,6 @@
   "slack.link.url": "",
   "github.link.text": "",
   "github.link.url": "",
-  "opens.new.window": ""
+  "opens.new.window": "",
+  "workInProgressWarning": ""
 }

@@ -32,9 +32,7 @@ const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
             fontSize: suomifiTheme.typography.fontSize.body,
           }}
         >
-          {notificationText
-            ? notificationText
-            : t('common:workInProgressWarning')}
+          {notificationText || t('common:workInProgressWarning')}
         </Text.bold>
       </div>
     )}

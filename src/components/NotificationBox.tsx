@@ -1,7 +1,6 @@
 import React, { CSSProperties } from 'react';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiTheme, Icon } from 'suomifi-ui-components';
 import { Text } from 'components/ResponsiveComponents';
-import { Icon } from 'suomifi-ui-components';
 import { NamespacesConsumer } from 'react-i18next';
 
 interface Props {

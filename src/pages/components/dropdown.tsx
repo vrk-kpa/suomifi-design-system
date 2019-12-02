@@ -25,7 +25,6 @@ const Page = (): JSX.Element => (
         </Paragraph.lead>
 
         <ComponentDescription
-          exampleFirst={true}
           mainTitle={t('example.title')}
           description={t('example.description')}
         >

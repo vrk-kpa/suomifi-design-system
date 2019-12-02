@@ -8,7 +8,7 @@ import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section from 'components/Section';
-import { Link as SuomifiLink, LinkExternal } from 'suomifi-ui-components';
+import { Link as ExampleLink } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
@@ -40,12 +40,9 @@ const Page = (): JSX.Element => (
           exampleFirst={false}
         >
           <ComponentExample>
-            <SuomifiLink
-              className="test-classname"
-              href="www.esimerkkiosoite.com"
-            >
+            <ExampleLink className="test-classname" href="#">
               {t('exampleRegular.linkText')}
-            </SuomifiLink>
+            </ExampleLink>
           </ComponentExample>
         </ComponentDescription>
 
@@ -55,13 +52,13 @@ const Page = (): JSX.Element => (
           exampleFirst={false}
         >
           <ComponentExample>
-            <LinkExternal
+            <ExampleLink.external
               className="test-classname"
-              href="www.esimerkkiosoite.com"
+              href="http://www.esimerkkiosoite.com"
               labelNewWindow={t('exampleExternal.label')}
             >
               {t('exampleExternal.linkText')}
-            </LinkExternal>
+            </ExampleLink.external>
           </ComponentExample>
         </ComponentDescription>
       </Layout>

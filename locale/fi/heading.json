@@ -1,0 +1,117 @@
+{
+    "title": "Otsikko (Heading)",
+    "intro": "Otsikot auttavat luomaan sivun sisällölle selkeän rakenteen, jonka avulla käyttäjä muodostaa kokonaiskäsityksen sivun sisällöstä.",
+    "note.title": "Saavutettavuus",
+    "note.items": [
+      "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
+      "Otsikointihierarkian tulee olla yhtenäinen (h1, h2, h3, h4, h5), eikä välistä saa puuttua otsikkotasoja. Oikea otsikkotasojen hierarkia tukee rakenteen hahmottamista.",
+      "Otsikkotasojen puuttuminen välistä tai otsikkotasojen epäjärjestys vaikeuttaa sisällön hahmottamista ruudunlukijaa käytettäessä. Ruudunlukija tulkitsee vain heading-merkityt komponentit otsikoiksi.",
+      "Huomioi tekstiä koskevia WCGA 2.1 ohjeistuksia: 1.4.3 Contrast (Minimum), 4.4 Resize text, 1.4.12 Text Spacing.",
+      ""
+    ],
+    "sections": [
+      {
+        "title": "Koko ja käyttö",
+        "paragraphs": [
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": "Otsikoiden koot on määritelty erikseen sekä desktop-, että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Normal) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5-otsikolle. Pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista. Enemmän Suomifi teeman typografiamäärittelyistä löytyy Tyylien alta."
+          },
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": ""
+          },
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": ""
+          }
+        ],
+        "links": [
+          {
+            "text": "",
+            "url": ""
+          },
+          {
+            "text": "",
+            "url": ""
+          },
+          {
+            "text": "",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "title": "",
+        "paragraphs": [
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": ""
+          },
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": ""
+          },
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": ""
+          }
+        ],
+        "links": [
+          {
+            "text": "",
+            "url": ""
+          },
+          {
+            "text": "",
+            "url": ""
+          },
+          {
+            "text": "",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "title": "",
+        "paragraphs": [
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": ""
+          },
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": ""
+          },
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": ""
+          }
+        ],
+        "links": [
+          {
+            "text": "",
+            "url": ""
+          },
+          {
+            "text": "",
+            "url": ""
+          },
+          {
+            "text": "",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  }
+  

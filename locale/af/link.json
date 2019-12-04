@@ -1,74 +1,77 @@
 {
-    "title": "title",
-    "intro": "intro",
-    "note.title": "note.title",
-    "note.items": [
-      "note.item",
-      "note.item",
-      "note.item",
-      "note.item",
-      "note.item",
-      "note.item",
-      "note.item",
-      "note.item"
-    ],
-    "sections": [
-      {
-        "title": "section.title",
-        "paragraphs": [
-          {
-            "image.key": "",
-            "image.alt": "",
-            "text": "section.paragraph.text"
-          }
-        ],
-        "links": [
-          {
-            "text": "section.link.text",
-            "url": "section.link.url"
-          }
-        ]
-      },
-      {
-        "title": "section.title",
-        "paragraphs": [
-          {
-            "image.key": "",
-            "image.alt": "",
-            "text": "section.paragraph.text"
-          }
-        ],
-        "links": [
-          {
-            "text": "section.link.text",
-            "url": "section.link.url"
-          }
-        ]
-      },
-      {
-        "title": "section.title",
-        "paragraphs": [
-          {
-            "image.key": "",
-            "image.alt": "",
-            "text": "section.paragraph.text"
-          }
-        ],
-        "links": [
-          {
-            "text": "section.link.text",
-            "url": "section.link.url"
-          }
-        ]
-      }
-    ],
-    "exampleRegular.title": "exampleRegular.title",
-    "exampleRegular.description": "exampleRegular.description",
-    "exampleRegular.linkText": "exampleRegular.linkText",
-    "exampleExternal.title": "exampleExternal.title",
-    "exampleExternal.description": "exampleExternal.description",
-    "exampleExternal.linkText": "exampleExternal.linkText",
-    "exampleExternal.label": "exampleExternal.label"
-    
-  }
-  
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item"
+  ],
+  "sections": [
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    }
+  ],
+  "exampleRegular.title": "exampleRegular.title",
+  "exampleRegular.description": "exampleRegular.description",
+  "exampleRegular.linkText": "exampleRegular.linkText",
+  "exampleExternal.title": "exampleExternal.title",
+  "exampleExternal.description": "exampleExternal.description",
+  "exampleExternal.linkText": "exampleExternal.linkText",
+  "exampleExternal.label": "exampleExternal.label"
+}

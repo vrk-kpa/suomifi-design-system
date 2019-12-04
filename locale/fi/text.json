@@ -1,0 +1,121 @@
+{
+  "title": "Teksti (Text)",
+  "intro": "",
+  "note.title": "",
+  "note.items": ["", "", ""],
+  "sections": [
+    {
+      "title": "Kirjasintyyppi (Font)",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Suomi.fi-tyyleissä sekä käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on Googlen välittämä open source fontti, kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Kirjasimen voi ladata omalle työasemalle Google Fontsista."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "Lataa kirjasin (Google Fonts) Source Sans Pro",
+          "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwik2qOSkJ3iAhVDmYsKHfIiCX8QFjAAegQICBAC&url=https%3A%2F%2Ffonts.google.com%2Fspecimen%2FSource%2BSans%2BPro&usg=AOvVaw1C5bQ5gIVNkjiNqeXsAcB-"
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Leipäteksti (Body)",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Suomifi teemassa leipätekstin oletuskoko on 18px sekä mobiili- ja desktop näkymissä. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Suomifi teemassa leipäteksti on oletuksena sävyltään musta (blackBase) ja variaatiota luomassa käytetään tumman harmaata (depthDark27)."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Lihavoitua leikkausta käytetään leipätekstissä kun halutaan korostaa käyttäjälle erityisen huomioitavaa tietoa jonka he mahdollisesti ohittaisivat. Lihavoitua tekstiä tulee käyttää harkiten, ylikäyttö hankaloittaa käyttäjää ymmärtämään mihin hänen tulisi erityisimmin sisällössä kiinnittää huomiota."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "default.title": "",
+  "default.description": "",
+  "body.title": "",
+  "body.description": "Suomifi teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold  -fonttia.",
+  "lead.title": "Ingressi (Lead)",
+  "lead.description": "Ingressi on sivun alussa esiintyvä tiivistelmä sivun sisällöstä. Ingressiä käytetään vain kerran yhdessä näkymässä. Suomifi teemassa Ingressin koko on 22 px ja pienellä näytöllä 20 px."
+}

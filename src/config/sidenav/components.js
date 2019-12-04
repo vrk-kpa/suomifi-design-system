@@ -17,5 +17,6 @@ export default t => ({
     { to: '/components/dropdown/', label: t('dropdown:title') },
     { to: '/components/link/', label: t('link:title') },
     { to: '/components/heading/', label: t('heading:title') },
+    { to: '/components/text/', label: t('text:title') },
   ],
 });

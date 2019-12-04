@@ -6,6 +6,7 @@ import {
   Dropdown as OrigDropdown,
   Link as OrigLink,
   Heading as OrigHeading,
+  Text as OrigText,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -29,3 +30,6 @@ addDisplayNames(Link, OrigLink, 'Link');
 
 export class Heading extends OrigHeading {}
 addDisplayNames(Heading, OrigHeading, 'Heading');
+
+export class Text extends OrigText {}
+addDisplayNames(Text, OrigText, 'Text');

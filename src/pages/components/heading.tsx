@@ -37,15 +37,12 @@ const Page = (): JSX.Element => (
         ))}
         <ComponentDescription
           mainTitle={t('example.title')}
-          description={t('example.description')}
           exampleFirst={false}
         >
           <ComponentExample
             style={{
               flexFlow: 'column',
               alignItems: 'flex-start',
-              backgroundColor: suomifiTheme.colors.whiteBase,
-              border: `1px solid ${suomifiTheme.colors.depthLight13}`,
             }}
           >
             <SuomifiHeading.h1hero
@@ -53,14 +50,78 @@ const Page = (): JSX.Element => (
             >
               Heading 1 with hero styling
             </SuomifiHeading.h1hero>
-            <SuomifiHeading.h1>Heading h1</SuomifiHeading.h1>
-            <SuomifiHeading.h2>Heading h2</SuomifiHeading.h2>
-            <SuomifiHeading.h3>Heading h3</SuomifiHeading.h3>
-            <SuomifiHeading.h4>Heading h4</SuomifiHeading.h4>
-            <SuomifiHeading.h5>Heading h5</SuomifiHeading.h5>
+            <SuomifiHeading.h1
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h1
+            </SuomifiHeading.h1>
+            <SuomifiHeading.h2
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h2
+            </SuomifiHeading.h2>
+            <SuomifiHeading.h3
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h3
+            </SuomifiHeading.h3>
+            <SuomifiHeading.h4
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h4
+            </SuomifiHeading.h4>
+            <SuomifiHeading.h5
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h5
+            </SuomifiHeading.h5>
           </ComponentExample>
+        </ComponentDescription>
 
-          <ComponentExample />
+        <ComponentDescription>
+          <ComponentExample
+            style={{
+              flexFlow: 'column',
+              alignItems: 'flex-start',
+            }}
+          >
+            <SuomifiHeading.h1hero
+              smallScreen
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading 1 hero small screen
+            </SuomifiHeading.h1hero>
+            <SuomifiHeading.h1
+              smallScreen
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h1 small screen
+            </SuomifiHeading.h1>
+            <SuomifiHeading.h2
+              smallScreen
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h2 small screen
+            </SuomifiHeading.h2>
+            <SuomifiHeading.h3
+              smallScreen
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h3 small screen
+            </SuomifiHeading.h3>
+            <SuomifiHeading.h4
+              smallScreen
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h4 small screen
+            </SuomifiHeading.h4>
+            <SuomifiHeading.h5
+              smallScreen
+              style={{ margin: `${suomifiTheme.spacing.s} 0` }}
+            >
+              Heading h5 small screen
+            </SuomifiHeading.h5>
+          </ComponentExample>
         </ComponentDescription>
       </Layout>
     )}

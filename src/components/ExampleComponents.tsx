@@ -5,6 +5,7 @@ import {
   Toggle as OrigToggle,
   Dropdown as OrigDropdown,
   Link as OrigLink,
+  Heading as OrigHeading,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -25,3 +26,6 @@ addDisplayNames(Dropdown, OrigDropdown, 'Dropdown');
 
 export class Link extends OrigLink {}
 addDisplayNames(Link, OrigLink, 'Link');
+
+export class Heading extends OrigHeading {}
+addDisplayNames(Heading, OrigHeading, 'Heading');

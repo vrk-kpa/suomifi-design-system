@@ -1,6 +1,6 @@
 {
   "title": "Linkki (Link)",
-  "intro": "Linkkiä käytetään pääsääntöisesti navigaatioelementtinä",
+  "intro": "Linkkiä käytetään pääsääntöisesti navigaatioelementtinä.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Linkin tulee olla kuvaava ja sen tarkoituksen ymmärrettävissä pelkästä linkin nimestä.",
@@ -41,7 +41,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Linkit eroavat painikkeista siinä, että ne eivät muokkaa tietoa tai käynnistä toimintoa. Linkit vievät käyttäjän uuteen paikkaan käyttöliittymässä tai kokonaan pois sivustolta (External Link)"
+          "text": "Linkit eroavat painikkeista siinä, että ne eivät muokkaa tietoa tai käynnistä toimintoa. Linkit vievät käyttäjän uuteen paikkaan käyttöliittymässä tai kokonaan pois sivustolta (External Link)."
         }
       ],
       "links": [
@@ -72,7 +72,7 @@
   "exampleRegular.description": "Kirjasinkoko ja leikkaus on tasapainossa muun sisällön kanssa.",
   "exampleRegular.linkText": "Esimerkkilinkki",
   "exampleExternal.title": "Ulkoinen linkki (External link)",
-  "exampleExternal.description": "Linkeissä, jotka avautuvat uuteen ikkunaan on aina visuaalinen ja verbaalinen indikaatio",
+  "exampleExternal.description": "Linkeissä, jotka avautuvat uuteen ikkunaan on aina visuaalinen ja verbaalinen indikaatio.",
   "exampleExternal.linkText": "Ulkoinen linkki",
   "exampleExternal.label": "Avautuu uuteen ikkunaan"
 }

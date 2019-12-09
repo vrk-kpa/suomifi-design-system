@@ -13,6 +13,37 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Paragraph } from 'components/ResponsiveComponents';
 import { Text } from 'components/ExampleComponents';
 
+interface ExampleBlockProps {
+  title: string;
+  description: string;
+  children: React.ReactNode;
+}
+
+const ExampleBlock = ({
+  title,
+  description,
+  children,
+}: ExampleBlockProps): JSX.Element => (
+  <ComponentDescription
+    mainTitle={title}
+    description={description}
+    exampleFirst={false}
+    filterProps={[]}
+  >
+    <ComponentExample>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          flex: 1,
+        }}
+      >
+        {children}
+      </div>
+    </ComponentExample>
+  </ComponentDescription>
+);
+
 const Page: React.FC = (): React.ReactElement => {
   return (
     <NamespacesConsumer ns={['text']}>
@@ -36,47 +67,23 @@ const Page: React.FC = (): React.ReactElement => {
             />
           ))}
 
-          <ComponentDescription
-            mainTitle={t('body.title')}
+          <ExampleBlock
+            title={t('body.title')}
             description={t('body.description')}
-            exampleFirst={false}
-            filterProps={[]}
           >
-            <ComponentExample>
-              <div
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  flex: 1,
-                }}
-              >
-                <Text>Body text</Text>
-                <Text.bold>Body Text Bold</Text.bold>
-                <Text smallScreen>Body Text Small</Text>
-                <Text.bold smallScreen>Body Text Small Bold</Text.bold>
-              </div>
-            </ComponentExample>
-          </ComponentDescription>
+            <Text>Body text</Text>
+            <Text.bold>Body Text Bold</Text.bold>
+            <Text smallScreen>Body Text Small</Text>
+            <Text.bold smallScreen>Body Text Small Bold</Text.bold>
+          </ExampleBlock>
 
-          <ComponentDescription
-            mainTitle={t('lead.title')}
+          <ExampleBlock
+            title={t('lead.title')}
             description={t('lead.description')}
-            exampleFirst={false}
-            filterProps={[]}
           >
-            <ComponentExample>
-              <div
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  flex: 1,
-                }}
-              >
-                <Text.lead>Lead Text</Text.lead>
-                <Text.lead smallScreen>Lead Text Small</Text.lead>
-              </div>
-            </ComponentExample>
-          </ComponentDescription>
+            <Text.lead>Lead Text</Text.lead>
+            <Text.lead smallScreen>Lead Text Small</Text.lead>
+          </ExampleBlock>
         </Layout>
       )}
     </NamespacesConsumer>

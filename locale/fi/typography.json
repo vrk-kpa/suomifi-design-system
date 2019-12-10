@@ -4,7 +4,7 @@
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
-    "Otsikointihierarkia on yhtenäinen (h1, h2, h3, h4, h5, h6), eikä välistä saa puuttua otsikkotasoja. Oikea heading-tasojen hierarkia tukee rakenteen hahmottamista.",
+    "Otsikointihierarkia on yhtenäinen (h1, h2, h3, h4, h5), eikä välistä saa puuttua otsikkotasoja. Oikea heading-tasojen hierarkia tukee rakenteen hahmottamista.",
     "Otsikkotasojen puuttuminen välistä tai otsikkotasojen epäjärjestys vaikeuttaa sisällön hahmottamista ruudunlukijaa käytettäessä. Ruudunlukija tulkitsee vain heading-merkityt komponentit otsikoiksi.",
     "Huomioi tekstiä koskevia WCGA 2.1 ohjeistuksia: 1.4.3 Contrast (Minimum), 1.4.4 Resize text, 1.4.12 Text Spacing.",
     "",
@@ -111,7 +111,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Otsikoiden koot on määritelty erikseen sekä desktop-, että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Regular) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5 ja h6-otsikolle. Pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista.",
+          "text": "Otsikoiden koot on määritelty erikseen sekä desktop-, että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Regular) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5-otsikolle. Pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista.",
           "listItems": [
             { "text": "" },
             { "text": "" },

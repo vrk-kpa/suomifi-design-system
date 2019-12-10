@@ -30,16 +30,13 @@ const ExampleBlock = ({
     exampleFirst={false}
     filterProps={[]}
   >
-    <ComponentExample>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          flex: 1,
-        }}
-      >
-        {children}
-      </div>
+    <ComponentExample
+      style={{
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+      }}
+    >
+      {children}
     </ComponentExample>
   </ComponentDescription>
 );

@@ -2,16 +2,7 @@
   "title": "",
   "intro": "",
   "note.title": "",
-  "note.items": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
+  "note.items": ["", "", "", "", "", "", "", ""],
   "sections": [
     {
       "title": "",
@@ -150,98 +141,10 @@
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]
-    },
-    {
-      "title": "",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
     }
-  ]
+  ],
+  "heading.title": "",
+  "heading.description": "",
+  "textstyles.title": "",
+  "textstyles.description": ""
 }

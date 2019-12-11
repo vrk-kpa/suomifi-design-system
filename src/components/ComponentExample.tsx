@@ -10,11 +10,12 @@ const ComponentExample = ({ style, children }: Props): JSX.Element => (
       flexWrap: 'wrap',
       padding: suomifiTheme.spacing.m,
       margin: `${suomifiTheme.spacing.m} 0`,
+      border: `1px solid ${suomifiTheme.colors.depthBase}`,
       ...style,
       background:
         style && style.background
           ? style.background
-          : suomifiTheme.colors.depthLight30,
+          : suomifiTheme.colors.whiteBase,
     }}
   >
     {children}

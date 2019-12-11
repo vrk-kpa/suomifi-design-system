@@ -28,7 +28,6 @@ const components = [
     id: 'secondaryNoborder',
     comp: Button.secondaryNoborder,
     background: suomifiTheme.colors.whiteBase,
-    border: `1px solid ${suomifiTheme.colors.depthLight13}`,
   },
 ];
 
@@ -52,6 +51,8 @@ const disabledComponents = [
     comp: Button.secondaryNoborder,
   },
 ];
+
+const defaultBorder = `1px solid ${suomifiTheme.colors.depthBase}`;
 
 const clickCount = {};
 const handleClick = (id: string, name: string, t: Function): void => {
@@ -159,7 +160,7 @@ const Page = (): JSX.Element => (
               style={{
                 padding: suomifiTheme.spacing.s,
                 background: item.background,
-                border: item.border || 0,
+                border: item.border || defaultBorder,
               }}
             >
               {[
@@ -193,7 +194,7 @@ const Page = (): JSX.Element => (
               style={{
                 padding: suomifiTheme.spacing.s,
                 background: item.background,
-                border: item.border || 0,
+                border: item.border || defaultBorder,
               }}
             >
               {[

@@ -121,7 +121,8 @@ const Page = (): JSX.Element => (
               padding: `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m} 0 ${
                 suomifiTheme.spacing.m
               }`,
-              background: suomifiTheme.colors.depthLight30,
+              background: suomifiTheme.colors.whiteBase,
+              border: defaultBorder,
               display: 'flex',
               justifyContent: 'center',
             }}

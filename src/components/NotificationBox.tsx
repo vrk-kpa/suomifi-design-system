@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { suomifiTheme, Icon } from 'suomifi-ui-components';
+import { suomifiDesignTokens, Icon } from 'suomifi-ui-components';
 import { Text } from 'components/ResponsiveComponents';
 import { NamespacesConsumer } from 'react-i18next';
 
@@ -17,19 +17,19 @@ const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
           justifyContent: 'center',
           alignItems: 'center',
           flexWrap: 'wrap',
-          padding: suomifiTheme.spacing.l,
-          margin: `${suomifiTheme.spacing.m} 0`,
+          padding: suomifiDesignTokens.spacing.l,
+          margin: `${suomifiDesignTokens.spacing.m} 0`,
           ...style,
-          background: suomifiTheme.colors.accentSecondaryLight40,
+          background: suomifiDesignTokens.colors.accentSecondaryLight40,
           fontSize: '24px',
         }}
       >
-        <Icon icon="error" color={suomifiTheme.colors.accentSecondary} />
+        <Icon icon="error" color={suomifiDesignTokens.colors.accentSecondary} />
         <Text.bold
           style={{
-            marginLeft: suomifiTheme.spacing.m,
+            marginLeft: suomifiDesignTokens.spacing.m,
             verticalAlign: 'middle',
-            fontSize: suomifiTheme.typography.fontSize.body,
+            fontSize: suomifiDesignTokens.typography.bodyText,
           }}
         >
           {notificationText || t('common:work.in.progress.warning')}

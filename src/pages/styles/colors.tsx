@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 import { getLuminance } from 'polished';
 
 import Layout from 'components/layout';
@@ -15,13 +15,13 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const colorTokens =
-  !!suomifiTheme && !!suomifiTheme.colors
-    ? suomifiTheme.colors
+  !!suomifiDesignTokens && !!suomifiDesignTokens.colors
+    ? suomifiDesignTokens.colors
     : { depthLight13: undefined };
 
 const borderForLightColor = `1px solid ${colorTokens.depthLight13}`;
 
-type ColorKeys = keyof typeof suomifiTheme.colors;
+type ColorKeys = keyof typeof suomifiDesignTokens.colors;
 interface ColorItem {
   name: string;
   value: string;
@@ -117,9 +117,9 @@ const getExampleColor = (
   <div
     key={id}
     style={{
-      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
-        suomifiTheme.spacing.l
-      } 0`,
+      margin: `${suomifiDesignTokens.spacing.s} ${
+        suomifiDesignTokens.spacing.l
+      } ${suomifiDesignTokens.spacing.l} 0`,
       lineHeight: '1rem',
     }}
   >
@@ -127,7 +127,7 @@ const getExampleColor = (
       style={{
         width: '10rem',
         height: '3rem',
-        marginBottom: suomifiTheme.spacing.m,
+        marginBottom: suomifiDesignTokens.spacing.m,
         background: value,
         ...style,
       }}

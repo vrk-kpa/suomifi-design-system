@@ -28,7 +28,6 @@ const components = [
     id: 'secondaryNoborder',
     comp: Button.secondaryNoborder,
     background: suomifiTheme.colors.whiteBase,
-    border: `1px solid ${suomifiTheme.colors.depthLight13}`,
   },
 ];
 
@@ -120,9 +119,10 @@ const Page = (): JSX.Element => (
               padding: `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m} 0 ${
                 suomifiTheme.spacing.m
               }`,
-              background: suomifiTheme.colors.depthLight30,
+              background: suomifiTheme.colors.whiteBase,
               display: 'flex',
               justifyContent: 'center',
+              border: `1px solid ${suomifiTheme.colors.depthBase}`,
             }}
           >
             <MobileDevice>
@@ -159,7 +159,7 @@ const Page = (): JSX.Element => (
               style={{
                 padding: suomifiTheme.spacing.s,
                 background: item.background,
-                border: item.border || 0,
+                border: item.border,
               }}
             >
               {[
@@ -193,7 +193,7 @@ const Page = (): JSX.Element => (
               style={{
                 padding: suomifiTheme.spacing.s,
                 background: item.background,
-                border: item.border || 0,
+                border: item.border,
               }}
             >
               {[

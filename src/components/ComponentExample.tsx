@@ -14,7 +14,11 @@ const ComponentExample = ({ style, children }: Props): JSX.Element => (
       background:
         style && style.background
           ? style.background
-          : suomifiTheme.colors.depthLight30,
+          : suomifiTheme.colors.whiteBase,
+      border:
+        style && style.border
+          ? style.border
+          : `1px solid ${suomifiTheme.colors.depthBase}`,
     }}
   >
     {children}

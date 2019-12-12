@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme, Icon } from 'suomifi-ui-components';
+import { suomifiDesignTokens, Icon } from 'suomifi-ui-components';
 import {
   allIcons,
   IconKeys,
@@ -43,9 +43,9 @@ const getExampleIcon = (
   <div
     key={id}
     style={{
-      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.xl} ${
-        suomifiTheme.spacing.l
-      } 0`,
+      margin: `${suomifiDesignTokens.spacing.s} ${
+        suomifiDesignTokens.spacing.xl
+      } ${suomifiDesignTokens.spacing.l} 0`,
       lineHeight: '1rem',
       display: 'flex',
       flexDirection: 'column',
@@ -105,7 +105,7 @@ const Page = (): JSX.Element => (
             icon: (
               <Slack
                 style={{
-                  fill: suomifiTheme.colors.whiteBase,
+                  fill: suomifiDesignTokens.colors.whiteBase,
                   fontSize: '16px',
                 }}
               />

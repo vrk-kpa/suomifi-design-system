@@ -52,8 +52,6 @@ const disabledComponents = [
   },
 ];
 
-const defaultBorder = `1px solid ${suomifiTheme.colors.depthBase}`;
-
 const clickCount = {};
 const handleClick = (id: string, name: string, t: Function): void => {
   if (!clickCount[id]) {
@@ -122,9 +120,9 @@ const Page = (): JSX.Element => (
                 suomifiTheme.spacing.m
               }`,
               background: suomifiTheme.colors.whiteBase,
-              border: defaultBorder,
               display: 'flex',
               justifyContent: 'center',
+              border: `1px solid ${suomifiTheme.colors.depthBase}`,
             }}
           >
             <MobileDevice>
@@ -161,7 +159,7 @@ const Page = (): JSX.Element => (
               style={{
                 padding: suomifiTheme.spacing.s,
                 background: item.background,
-                border: item.border || defaultBorder,
+                border: item.border,
               }}
             >
               {[
@@ -195,7 +193,7 @@ const Page = (): JSX.Element => (
               style={{
                 padding: suomifiTheme.spacing.s,
                 background: item.background,
-                border: item.border || defaultBorder,
+                border: item.border,
               }}
             >
               {[

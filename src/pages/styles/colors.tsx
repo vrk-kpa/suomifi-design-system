@@ -173,6 +173,7 @@ const Page = (): JSX.Element => (
                 padding: 0,
                 justifyContent: 'flex-start',
                 background: 'none',
+                border: 'none',
               }}
             >
               {item.colors.map((color, index) =>

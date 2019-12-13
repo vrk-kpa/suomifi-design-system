@@ -1,7 +1,7 @@
 import React, { Component, ReactNode, MouseEvent } from 'react';
 import { suomifiDesignTokens, Icon, Button } from 'suomifi-ui-components';
 import { Link } from '@wapps/gatsby-plugin-i18next';
-
+import { focusOutline } from './utils/outline';
 import { isFrontPage } from 'components/LinkUtil';
 
 class SideNavItem extends Component<Props> {
@@ -44,7 +44,7 @@ class SideNavItem extends Component<Props> {
               color: suomifiDesignTokens.colors.brandBase,
             },
           },
-          // `&:focus { ${suomifiDesignTokens.outlines.basic} }`,
+          `&:focus { ${focusOutline} }`,
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           const isPartiallyCurrentPage = showAsTo

@@ -1,5 +1,5 @@
 import React, { Component, ReactNode } from 'react';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 import { Link } from '@wapps/gatsby-plugin-i18next';
 
 import { isFrontPage } from 'components/LinkUtil';
@@ -17,18 +17,20 @@ class MainMenuItem extends Component<Props> {
             alignItems: 'center',
             justifyContent: 'space-between',
             height: '3.2rem',
-            paddingLeft: suomifiTheme.spacing.m,
-            paddingRight: suomifiTheme.spacing.m,
-            borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
-            color: suomifiTheme.colors.highlightBase,
+            paddingLeft: suomifiDesignTokens.spacing.m,
+            paddingRight: suomifiDesignTokens.spacing.m,
+            borderBottom: `1px solid ${
+              suomifiDesignTokens.colors.depthSecondary
+            }`,
+            color: suomifiDesignTokens.colors.highlightBase,
             textDecoration: 'none',
             whiteSpace: 'nowrap',
             '&:hover': {
-              background: suomifiTheme.colors.depthSecondary,
-              color: suomifiTheme.colors.brandBase,
+              background: suomifiDesignTokens.colors.depthSecondary,
+              color: suomifiDesignTokens.colors.brandBase,
             },
           },
-          `&:focus { ${suomifiTheme.outlines.basic} }`,
+          // `&:focus { ${suomifiDesignTokens.outlines.basic} }`,
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           if (!isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
@@ -42,8 +44,8 @@ class MainMenuItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: suomifiTheme.colors.depthSecondary,
-                color: suomifiTheme.colors.brandBase,
+                background: suomifiDesignTokens.colors.depthSecondary,
+                color: suomifiDesignTokens.colors.brandBase,
                 fontWeight: 600,
               },
             };

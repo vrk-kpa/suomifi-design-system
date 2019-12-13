@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon, suomifiTheme, Button } from 'suomifi-ui-components';
+import { Icon, suomifiDesignTokens, Button } from 'suomifi-ui-components';
 import { NamespacesConsumer } from 'react-i18next';
 
 import MainMenuItem from 'components/MainMenuItem';
@@ -49,9 +49,15 @@ class MainMenu extends Component<Props, State> {
               onClick={this.toggleOpen}
             >
               {this.isOpen() ? (
-                <Icon icon="close" color={suomifiTheme.colors.depthDark27} />
+                <Icon
+                  icon="close"
+                  color={suomifiDesignTokens.colors.depthDark27}
+                />
               ) : (
-                <Icon icon="menu" color={suomifiTheme.colors.depthDark27} />
+                <Icon
+                  icon="menu"
+                  color={suomifiDesignTokens.colors.depthDark27}
+                />
               )}
             </Button>
             {this.isOpen() && (
@@ -60,11 +66,13 @@ class MainMenu extends Component<Props, State> {
                   position: 'absolute',
                   top: '50px',
                   right: 0,
-                  zIndex: suomifiTheme.zindexes.focus + 1,
+                  zIndex: 10000,
                   width: '20rem',
-                  background: suomifiTheme.colors.whiteBase,
-                  border: `1px solid ${suomifiTheme.colors.depthLight13}`,
-                  boxShadow: suomifiTheme.shadows.menuShadow,
+                  background: suomifiDesignTokens.colors.whiteBase,
+                  border: `1px solid ${
+                    suomifiDesignTokens.colors.depthLight13
+                  }`,
+                  // boxShadow: suomifiDesignTokens.shadows.menuShadow,
                 }}
               >
                 <nav aria-label={t('common:navigation.main')}>

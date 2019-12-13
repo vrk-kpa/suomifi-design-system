@@ -1,7 +1,6 @@
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
-export const focusOutline = (): string => {
-  return `
+export const focusOutline = `
   outline: 0;
   position: relative;
     &:after {
@@ -22,4 +21,3 @@ export const focusOutline = (): string => {
       border-image: initial;
     }
   `;
-};

@@ -1,8 +1,8 @@
 import React, { Component, ReactNode } from 'react';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 import { Link } from '@wapps/gatsby-plugin-i18next';
-
 import { isFrontPage } from 'components/LinkUtil';
+import { focusOutline } from './utils/outline';
 
 class MainMenuItem extends Component<Props> {
   public render(): JSX.Element {
@@ -30,7 +30,7 @@ class MainMenuItem extends Component<Props> {
               color: suomifiDesignTokens.colors.brandBase,
             },
           },
-          // `&:focus { ${suomifiDesignTokens.outlines.basic} }`,
+          `&:focus { ${focusOutline} }`,
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           if (!isFrontPage(to) && isPartiallyCurrent && !isCurrent) {

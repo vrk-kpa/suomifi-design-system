@@ -1,6 +1,8 @@
 import React, { ReactNode } from 'react';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
+import { focusOutline } from './utils/outline';
+
 const BypassLink = ({ to, children }: Props): JSX.Element => (
   <a
     href={to}
@@ -16,7 +18,7 @@ const BypassLink = ({ to, children }: Props): JSX.Element => (
         color: suomifiDesignTokens.colors.blackBase,
         textDecoration: 'none',
       },
-      // `&:focus { ${suomifiDesignTokens.outlines.basic} }`,
+      `&:focus { ${focusOutline} }`,
       { '&:focus': { position: 'absolute', left: 'auto' } },
     ]}
   >

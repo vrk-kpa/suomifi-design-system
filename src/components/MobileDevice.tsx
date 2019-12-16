@@ -1,5 +1,6 @@
 import React, { ReactNode, CSSProperties } from 'react';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { panelShadow } from './utils/shadow';
 
 const MobileDevice = ({ style, children }: Props): JSX.Element => (
   <div
@@ -8,7 +9,7 @@ const MobileDevice = ({ style, children }: Props): JSX.Element => (
       border: `.1rem solid ${suomifiDesignTokens.colors.depthDark27}`,
       borderBottom: 0,
       borderRadius: '1.5rem 1.5rem 0 0',
-      // boxShadow: suomifiDesignTokens.shadows.panelShadow,
+      boxShadow: panelShadow,
       padding: '2.5rem 1rem 0 1rem',
       margin: 0,
       background: suomifiDesignTokens.colors.depthLight13,

@@ -29,7 +29,9 @@ const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
           style={{
             marginLeft: suomifiDesignTokens.spacing.m,
             verticalAlign: 'middle',
-            fontSize: suomifiDesignTokens.typography.bodyText,
+            fontSize:
+              suomifiDesignTokens.values.typography.bodyText.fontSize.value +
+              suomifiDesignTokens.values.typography.bodyText.fontSize.unit,
           }}
         >
           {notificationText || t('common:work.in.progress.warning')}

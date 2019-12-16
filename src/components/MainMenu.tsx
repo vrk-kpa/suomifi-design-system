@@ -5,6 +5,7 @@ import { NamespacesConsumer } from 'react-i18next';
 import MainMenuItem from 'components/MainMenuItem';
 import { MainNavData } from 'components/MainNavData';
 import LanguageSwitcher from 'components/LanguageSwitcher';
+import { menuShadow } from './utils/shadow';
 
 class MainMenu extends Component<Props, State> {
   public constructor(props: Props) {
@@ -72,7 +73,7 @@ class MainMenu extends Component<Props, State> {
                   border: `1px solid ${
                     suomifiDesignTokens.colors.depthLight13
                   }`,
-                  // boxShadow: suomifiDesignTokens.shadows.menuShadow,
+                  boxShadow: menuShadow,
                 }}
               >
                 <nav aria-label={t('common:navigation.main')}>

@@ -57,7 +57,7 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
             hideIcon={!!icon}
             href={url}
             title={title}
-            aria-label={t('common:opens.new.window')}
+            labelNewWindow={t('common:opens.new.window')}
           >
             {content}
           </CustomLink>

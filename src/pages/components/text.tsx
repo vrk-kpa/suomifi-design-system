@@ -7,7 +7,6 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
-import NotificationBox from 'components/NotificationBox';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Paragraph } from 'components/ResponsiveComponents';
@@ -52,8 +51,6 @@ const Page: React.FC = (): React.ReactElement => {
           <Paragraph.lead>
             <Text.lead>{t('intro')}</Text.lead>
           </Paragraph.lead>
-
-          <NotificationBox />
 
           {t('sections').map((section, index) => (
             <Section

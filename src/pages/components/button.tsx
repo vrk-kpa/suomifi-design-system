@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -21,13 +21,13 @@ const components = [
   {
     id: 'negative',
     comp: Button.negative,
-    background: suomifiTheme.colors.highlightBase,
+    background: suomifiDesignTokens.colors.highlightBase,
   },
   { id: 'secondary', comp: Button.secondary },
   {
     id: 'secondaryNoborder',
     comp: Button.secondaryNoborder,
-    background: suomifiTheme.colors.whiteBase,
+    background: suomifiDesignTokens.colors.whiteBase,
   },
 ];
 
@@ -43,7 +43,7 @@ const disabledComponents = [
   {
     id: 'negative',
     comp: Button.negative,
-    background: suomifiTheme.colors.highlightBase,
+    background: suomifiDesignTokens.colors.highlightBase,
   },
   { id: 'secondary', comp: Button.secondary },
   {
@@ -77,7 +77,7 @@ const getExampleComp = (
     key={id}
     id={id}
     aria-label={label}
-    style={{ margin: suomifiTheme.spacing.s }}
+    style={{ margin: suomifiDesignTokens.spacing.s }}
     {...props}
     onClick={() => handleClick(id, label, t)}
   >
@@ -115,14 +115,14 @@ const Page = (): JSX.Element => (
           <div
             style={{
               overflow: 'hidden',
-              marginBottom: suomifiTheme.spacing.m,
-              padding: `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m} 0 ${
-                suomifiTheme.spacing.m
-              }`,
-              background: suomifiTheme.colors.whiteBase,
+              marginBottom: suomifiDesignTokens.spacing.m,
+              padding: `${suomifiDesignTokens.spacing.l} ${
+                suomifiDesignTokens.spacing.m
+              } 0 ${suomifiDesignTokens.spacing.m}`,
+              background: suomifiDesignTokens.colors.whiteBase,
               display: 'flex',
               justifyContent: 'center',
-              border: `1px solid ${suomifiTheme.colors.depthBase}`,
+              border: `1px solid ${suomifiDesignTokens.colors.depthBase}`,
             }}
           >
             <MobileDevice>
@@ -130,8 +130,8 @@ const Page = (): JSX.Element => (
                 <div
                   key={item.id}
                   style={{
-                    padding: `${suomifiTheme.spacing.m} ${
-                      suomifiTheme.spacing.s
+                    padding: `${suomifiDesignTokens.spacing.m} ${
+                      suomifiDesignTokens.spacing.s
                     }`,
                   }}
                 >
@@ -157,7 +157,7 @@ const Page = (): JSX.Element => (
           >
             <ComponentExample
               style={{
-                padding: suomifiTheme.spacing.s,
+                padding: suomifiDesignTokens.spacing.s,
                 background: item.background,
                 border: item.border,
               }}
@@ -191,7 +191,7 @@ const Page = (): JSX.Element => (
             <ComponentExample
               key={item.id}
               style={{
-                padding: suomifiTheme.spacing.s,
+                padding: suomifiDesignTokens.spacing.s,
                 background: item.background,
                 border: item.border,
               }}
@@ -229,12 +229,12 @@ const Page = (): JSX.Element => (
           description={t('disabled.description')}
           exampleFirst
         >
-          <ComponentExample style={{ padding: suomifiTheme.spacing.s }}>
+          <ComponentExample style={{ padding: suomifiDesignTokens.spacing.s }}>
             {disabledComponents.map(item => (
               <div
                 key={item.id}
                 style={{
-                  padding: item.background ? suomifiTheme.spacing.s : 0,
+                  padding: item.background ? suomifiDesignTokens.spacing.s : 0,
                   background: item.background || 'none',
                 }}
               >

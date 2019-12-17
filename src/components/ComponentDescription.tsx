@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { NamespacesConsumer } from 'react-i18next';
-import { Panel, suomifiTheme } from 'suomifi-ui-components';
+import { Panel, suomifiDesignTokens } from 'suomifi-ui-components';
 import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
@@ -26,11 +26,11 @@ const ComponentDescription = ({
     {t => (
       <div
         style={{
-          marginBottom: suomifiTheme.spacing.l,
-          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
+          marginBottom: suomifiDesignTokens.spacing.l,
+          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight13}`,
         }}
       >
-        <div style={{ margin: `${suomifiTheme.spacing.l} 0` }}>
+        <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
           {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
           {!!title && <Heading.h3>{title}</Heading.h3>}
         </div>
@@ -40,7 +40,7 @@ const ComponentDescription = ({
         </Paragraph>
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
-          <div style={{ margin: `${suomifiTheme.spacing.l} 0` }}>
+          <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
             <Panel.expansion title={t('common:react')} noPadding>
               {codeString && <ComponentCode javascript={codeString} />}
               {!showOnlyCodeString &&

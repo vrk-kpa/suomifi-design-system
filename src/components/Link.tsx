@@ -1,7 +1,10 @@
 import React, { ReactNode } from 'react';
 import { NamespacesConsumer } from 'react-i18next';
 import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next';
-import { Link as SuomifiLink, suomifiTheme } from 'suomifi-ui-components';
+import {
+  Link as SuomifiLink,
+  suomifiDesignTokens,
+} from 'suomifi-ui-components';
 import styled from '@emotion/styled';
 
 import { ensureTrailingSlash } from 'components/LinkUtil';
@@ -26,7 +29,7 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
         <span
           style={{
             display: 'inline-flex',
-            marginRight: text ? suomifiTheme.spacing.s : 0,
+            marginRight: text ? suomifiDesignTokens.spacing.s : 0,
           }}
         >
           {icon}
@@ -54,7 +57,7 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
             hideIcon={!!icon}
             href={url}
             title={title}
-            aria-label={t('common:opens.new.window')}
+            labelNewWindow={t('common:opens.new.window')}
           >
             {content}
           </CustomLink>

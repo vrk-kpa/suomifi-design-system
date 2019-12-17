@@ -1,7 +1,7 @@
 import React, { ReactNode, CSSProperties } from 'react';
 import reactElementToJSXString from 'react-element-to-jsx-string';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 const Highlighter = ({
   style,
@@ -34,7 +34,7 @@ const ComponentCode = ({
   filterProps,
   children,
 }: Props): JSX.Element => (
-  <div style={{ padding: suomifiTheme.spacing.m, ...style }}>
+  <div style={{ padding: suomifiDesignTokens.spacing.m, ...style }}>
     {!!javascript && (
       <Highlighter style={{ marginBottom: !children ? 0 : '1rem' }}>
         {javascript}

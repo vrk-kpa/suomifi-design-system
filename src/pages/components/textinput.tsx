@@ -12,7 +12,6 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import NotificationBox from 'components/NotificationBox';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['textinput']}>

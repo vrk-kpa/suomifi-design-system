@@ -2,12 +2,7 @@
   "title": "title",
   "intro": "intro",
   "note.title": "note.title",
-  "note.items": [
-    "note.item",
-    "note.item",
-    "note.item",
-    "note.item"
-  ],
+  "note.items": ["note.item", "note.item", "note.item", "note.item"],
 
   "notification.text": "notification.text",
   "exampleRegular.title": "exampleRegular.title",
@@ -16,5 +11,4 @@
   "exampleDisabled.title": "exampleDisabled.label",
   "exampleDisabled.label": "exampleDisabled.title",
   "exampleDisabled.description": "exampleDisabled.description"
-
 }

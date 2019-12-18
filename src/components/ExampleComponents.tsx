@@ -9,6 +9,7 @@ import {
   Text as OrigText,
   TextInput as OrigTextInput,
   SearchInput as OrigSearchInput,
+  Icon as OrigIcon,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -41,3 +42,6 @@ addDisplayNames(TextInput, OrigText, 'TextInput');
 
 export class SearchInput extends OrigSearchInput {}
 addDisplayNames(SearchInput, OrigSearchInput, 'SearchInput');
+
+export class Icon extends OrigIcon {}
+addDisplayNames(Icon, OrigIcon, 'Icon');

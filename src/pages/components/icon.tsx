@@ -12,8 +12,16 @@ import Section from 'components/Section';
 import NoteBox from 'components/NoteBox';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Paragraph, Text } from 'components/ResponsiveComponents';
-import { Icon } from 'components/ExampleComponents';
-import { suomifiDesignTokens, Link } from 'suomifi-ui-components';
+import { Icon as SuomifiIcon } from 'components/ExampleComponents';
+import { suomifiDesignTokens, Link, IconProps } from 'suomifi-ui-components';
+
+/**
+ * Wrapper to show all icons as bigger for better visiblity
+ */
+const Icon = (props: IconProps) => {
+  const newProps = { ...props, width: '2em', height: '2em' };
+  return <SuomifiIcon {...newProps} />;
+};
 
 const Page: React.FC = (): React.ReactElement => {
   return (

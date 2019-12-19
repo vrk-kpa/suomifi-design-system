@@ -4,11 +4,6 @@
   "note.title": "note.title",
   "note.items": ["note.item", "note.item", "note.item", "note.item"],
 
-  "notification.text": "notification.text",
-  "exampleRegular.title": "exampleRegular.title",
   "exampleRegular.label": "exampleRegular.label",
-  "exampleRegular.description": "exampleRegular.description",
-  "exampleDisabled.title": "exampleDisabled.label",
-  "exampleDisabled.label": "exampleDisabled.title",
-  "exampleDisabled.description": "exampleDisabled.description"
+  "exampleDisabled.title": "exampleDisabled.label"
 }

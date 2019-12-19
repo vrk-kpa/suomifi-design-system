@@ -51,7 +51,7 @@ const Page: React.FC = (): React.ReactElement => {
           <ComponentDescription
             mainTitle={t('basicIcons.title')}
             description={t('basicIcons.description')}
-            exampleFirst={true}
+            exampleFirst
           >
             <ComponentExample style={{ justifyContent: 'flex-start' }}>
               <Icon icon="check" />
@@ -61,7 +61,7 @@ const Page: React.FC = (): React.ReactElement => {
           <ComponentDescription
             mainTitle={t('infoIcons.title')}
             description={t('infoIcons.description')}
-            exampleFirst={true}
+            exampleFirst
           >
             <ComponentExample
               style={{
@@ -84,7 +84,7 @@ const Page: React.FC = (): React.ReactElement => {
           <ComponentDescription
             mainTitle={t('additionalInfoIcons.title')}
             description={t('additionalInfoIcons.description')}
-            exampleFirst={true}
+            exampleFirst
           >
             <ComponentExample style={{ justifyContent: 'flex-start' }}>
               <Icon
@@ -103,7 +103,7 @@ const Page: React.FC = (): React.ReactElement => {
           <ComponentDescription
             mainTitle={t('illustrationIcons.title')}
             description={t('illustrationIcons.description')}
-            exampleFirst={true}
+            exampleFirst
           >
             <ComponentExample style={{ justifyContent: 'flex-start' }}>
               <Icon icon="staticIllustrationHands" />

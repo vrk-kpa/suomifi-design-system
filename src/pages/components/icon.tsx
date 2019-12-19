@@ -54,7 +54,7 @@ const Page: React.FC = (): React.ReactElement => {
             exampleFirst={true}
           >
             <ComponentExample>
-              <Icon icon="attachment" />
+              <Icon icon="check" />
             </ComponentExample>
           </ComponentDescription>
 
@@ -64,9 +64,12 @@ const Page: React.FC = (): React.ReactElement => {
             exampleFirst={true}
           >
             <ComponentExample>
-              <Icon icon="help" />
               <Icon
                 icon="helpFilled"
+                color={suomifiDesignTokens.colors.highlightBase}
+              />
+              <Icon
+                icon="help"
                 color={suomifiDesignTokens.colors.highlightBase}
               />
             </ComponentExample>
@@ -79,8 +82,12 @@ const Page: React.FC = (): React.ReactElement => {
           >
             <ComponentExample>
               <Icon
+                icon="errorFilled"
+                color={suomifiDesignTokens.colors.highlightBase}
+              />
+              <Icon
                 icon="info"
-                color={suomifiDesignTokens.colors.accentSecondary}
+                color={suomifiDesignTokens.colors.highlightBase}
               />
             </ComponentExample>
           </ComponentDescription>

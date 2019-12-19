@@ -12,6 +12,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import NotificationBox from 'components/NotificationBox';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['textinput']}>
@@ -26,11 +27,11 @@ const Page = (): JSX.Element => (
         </Paragraph.lead>
 
         <ComponentDescription>
-          <ComponentExample>
+          <ComponentExample
+            style={{ marginBottom: suomifiDesignTokens.spacing.m }}
+          >
             <TextInput labelText={t('exampleRegular.label')} />
           </ComponentExample>
-        </ComponentDescription>
-        <ComponentDescription>
           <ComponentExample>
             <TextInput labelText={t('exampleDisabled.label')} disabled />
           </ComponentExample>

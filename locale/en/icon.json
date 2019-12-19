@@ -1,0 +1,28 @@
+{
+  "title": "",
+  "intro": "",
+  "note.title": "",
+  "note.items": ["", "", "", ""],
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": []
+    }
+  ],
+  "allIconsPageLink.title": "",
+  "basicIcons.title": "",
+  "basicIcons.description": "",
+  "infoIcons.title": "",
+  "infoIcons.description": "",
+  "additionalInfoIcons.title": "",
+  "additionalInfoIcons.description": "",
+  "illustrationIcons.title": "",
+  "illustrationIcons.description": ""
+}

@@ -148,7 +148,7 @@ source_file = locale/af/text.json
 source_lang = af
 type = KEYVALUEJSON
 
-[suomifi-design-system.text-json]
+[suomifi-design-system.textinput-json]
 file_filter = locale/<lang>/textinput.json
 minimum_perc = 0
 source_file = locale/af/textinput.json

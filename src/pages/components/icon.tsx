@@ -53,7 +53,7 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('basicIcons.description')}
             exampleFirst={true}
           >
-            <ComponentExample>
+            <ComponentExample style={{ justifyContent: 'flex-start' }}>
               <Icon icon="check" />
             </ComponentExample>
           </ComponentDescription>
@@ -63,14 +63,20 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('infoIcons.description')}
             exampleFirst={true}
           >
-            <ComponentExample>
+            <ComponentExample
+              style={{
+                justifyContent: 'flex-start',
+              }}
+            >
               <Icon
                 icon="helpFilled"
                 color={suomifiDesignTokens.colors.highlightBase}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
               />
               <Icon
                 icon="help"
                 color={suomifiDesignTokens.colors.highlightBase}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
               />
             </ComponentExample>
           </ComponentDescription>
@@ -80,14 +86,16 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('additionalInfoIcons.description')}
             exampleFirst={true}
           >
-            <ComponentExample>
+            <ComponentExample style={{ justifyContent: 'flex-start' }}>
               <Icon
                 icon="errorFilled"
                 color={suomifiDesignTokens.colors.highlightBase}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
               />
               <Icon
                 icon="info"
                 color={suomifiDesignTokens.colors.highlightBase}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
               />
             </ComponentExample>
           </ComponentDescription>
@@ -97,7 +105,7 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('illustrationIcons.description')}
             exampleFirst={true}
           >
-            <ComponentExample>
+            <ComponentExample style={{ justifyContent: 'flex-start' }}>
               <Icon icon="staticIllustrationHands" />
             </ComponentExample>
           </ComponentDescription>

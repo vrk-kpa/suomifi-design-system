@@ -9,6 +9,8 @@ import {
   IconKeys,
   allStaticIcons,
   StaticIconKeys,
+  allDoctypeIcons,
+  DoctypeIconKeys,
 } from 'suomifi-icons';
 
 import Layout from 'components/layout';
@@ -29,7 +31,12 @@ const iconCategories = [
     id: 'illustrativeIcons',
     icons: allStaticIcons.filter(icon => icon !== 'toggle'),
   },
+  {
+    id: 'doctypeIcons',
+    icons: allDoctypeIcons,
+  },
 ];
+
 const StyleIcon = styled(Icon)`
   height: 1.5em;
   width: 1.5em;
@@ -56,7 +63,9 @@ const getExampleIcon = (
       ...style,
     }}
   >
-    <StyleIcon icon={(id as any) as IconKeys | StaticIconKeys} />
+    <StyleIcon
+      icon={(id as any) as IconKeys | StaticIconKeys | DoctypeIconKeys}
+    />
     <div>{label}</div>
   </div>
 );

@@ -7,6 +7,7 @@ import {
   Link as OrigLink,
   Heading as OrigHeading,
   Text as OrigText,
+  TextInput as OrigTextInput,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -33,3 +34,6 @@ addDisplayNames(Heading, OrigHeading, 'Heading');
 
 export class Text extends OrigText {}
 addDisplayNames(Text, OrigText, 'Text');
+
+export class TextInput extends OrigTextInput {}
+addDisplayNames(TextInput, OrigText, 'TextInput');

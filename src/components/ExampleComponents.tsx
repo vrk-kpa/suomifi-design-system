@@ -36,4 +36,4 @@ export class Text extends OrigText {}
 addDisplayNames(Text, OrigText, 'Text');
 
 export class TextInput extends OrigTextInput {}
-addDisplayNames(Text, OrigText, 'TextInput');
+addDisplayNames(TextInput, OrigText, 'TextInput');

@@ -1,19 +1,14 @@
 {
   "title": "Tekstikenttä (Text Input)",
-  "intro": "Tekstikenttä on komponentti, johon käyttäjä kirjoittaa omin sanoin vastauksensa komponentin otsakkeessa annettuun kysymykseen. Käyttäjälle voidaan antaa tarpeen mukaan ohjeistusta, mutta yksinkertaisissa käyttötapauksissa ohjeistusta ei tarvita. Tekstikenttää käytetään kun kenttään täytettävä tieto on lyhyt. Jos täytettävä tieto on pitkä ja vaatii monta riviä, käytetään tekstialue-komponenttia.",
+  "intro": "Tekstikenttä on komponentti, johon käyttäjä täyttää komponentin otsakkeessa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsakkeessa annettuun kysymykseen. Käyttäjälle voidaan antaa tarpeen mukaan ohjeistusta, mutta yksinkertaisissa käyttötapauksissa ohjeistusta ei tarvita. Tekstikenttää käytetään kun kenttään täytettävä tieto on lyhyt. Jos täytettävä tieto on pitkä ja vaatii monta riviä, käytetään tekstialue-komponenttia.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Tekstikentän kanssa tulee aina käyttää otsaketta (label). Suomifi UI kirjaston komponenttiin otsake kuuluu pakollisena osana.",
-    "Error-kenttiin on varattu tekstialue kentän alle viestiä varten. Teksti kertoo käyttäjälle mikä on kenttään täytetyn sisällön tila. Tekstimuotoisen viestin lisäksi tila sisältää värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.-",
-    "Tekstikentän leveys toimii visuaalisena rajoitteena käyttäjälle ja antaa vihjeen siihen syötettävästä informaation määrästä. ",
+    "Error-kenttiin on varattu tekstialue kentän alle viestiä varten. Teksti kertoo käyttäjälle mikä on kenttään täytetyn sisällön tila. Tekstimuotoisen viestin lisäksi tila sisältää värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.",
+    "Tekstikentän leveys toimii visuaalisena rajoitteena käyttäjälle ja antaa vihjeen siihen syötettävästä informaation määrästä.",
     "Tekstikenttä komponenttia käytetään silloin kuin käyttäjän tulee täyttää vain yhden rivin informaatiota, kuten esimerkiksi nimensä. Monta riviä (multiline) vaativille vastauksille käytä Tekstialue (Textarea) komponenttia (tulossa)."
   ],
 
-  "notification.text": "Tekstikentän saavutettavuus on vielä tarkastelun alla, joten toteutus saattaa muuttua",
-  "exampleRegular.title": "Normaali teksikenttä",
   "exampleRegular.label": "Normaali tekstikenttä",
-  "exampleRegular.description": "Kirjasinkoko ja leikkaus on tasapainossa muun sisällön kanssa.",
-  "exampleDisabled.label": "Tekstikenttä (disabled)",
-  "exampleDisabled.description": "Linkeissä, jotka avautuvat uuteen ikkunaan on aina visuaalinen ja verbaalinen indikaatio.",
-  "exampleExternal.label": "Avautuu uuteen ikkunaan"
+  "exampleDisabled.label": "Tekstikenttä (disabled)"
 }

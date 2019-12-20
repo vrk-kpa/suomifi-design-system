@@ -53,7 +53,13 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('basicIcons.description')}
             exampleFirst
           >
-            <ComponentExample style={{ justifyContent: 'flex-start' }}>
+            <ComponentExample
+              style={{
+                justifyContent: 'flex-start',
+                padding: 0,
+                border: 'none',
+              }}
+            >
               <Icon icon="check" />
             </ComponentExample>
           </ComponentDescription>
@@ -66,6 +72,8 @@ const Page: React.FC = (): React.ReactElement => {
             <ComponentExample
               style={{
                 justifyContent: 'flex-start',
+                padding: 0,
+                border: 'none',
               }}
             >
               <Icon
@@ -86,7 +94,13 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('additionalInfoIcons.description')}
             exampleFirst
           >
-            <ComponentExample style={{ justifyContent: 'flex-start' }}>
+            <ComponentExample
+              style={{
+                justifyContent: 'flex-start',
+                padding: 0,
+                border: 'none',
+              }}
+            >
               <Icon
                 icon="errorFilled"
                 color={suomifiDesignTokens.colors.highlightBase}
@@ -105,7 +119,13 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('illustrationIcons.description')}
             exampleFirst
           >
-            <ComponentExample style={{ justifyContent: 'flex-start' }}>
+            <ComponentExample
+              style={{
+                justifyContent: 'flex-start',
+                padding: 0,
+                border: 'none',
+              }}
+            >
               <Icon icon="staticIllustrationHands" />
             </ComponentExample>
           </ComponentDescription>
@@ -115,7 +135,13 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('attachmentIcons.description')}
             exampleFirst
           >
-            <ComponentExample style={{ justifyContent: 'flex-start' }}>
+            <ComponentExample
+              style={{
+                justifyContent: 'flex-start',
+                padding: 0,
+                border: 'none',
+              }}
+            >
               <Icon icon="doc" />
             </ComponentExample>
           </ComponentDescription>
@@ -125,7 +151,13 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('signLanguageIcons.description')}
             exampleFirst
           >
-            <ComponentExample style={{ justifyContent: 'flex-start' }}>
+            <ComponentExample
+              style={{
+                justifyContent: 'flex-start',
+                padding: 0,
+                border: 'none',
+              }}
+            >
               <Icon icon="signLanguageContent" color="#00B6EC" />
             </ComponentExample>
           </ComponentDescription>

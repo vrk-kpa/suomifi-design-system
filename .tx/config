@@ -154,3 +154,10 @@ minimum_perc = 0
 source_file = locale/af/textinput.json
 source_lang = af
 type = KEYVALUEJSON
+
+[suomifi-design-system.searchinput-json]
+file_filter = locale/<lang>/searchinput.json
+minimum_perc = 0
+source_file = locale/af/searchinput.json
+source_lang = af
+type = KEYVALUEJSON

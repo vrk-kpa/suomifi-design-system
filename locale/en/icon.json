@@ -24,5 +24,12 @@
   "additionalInfoIcons.title": "",
   "additionalInfoIcons.description": "",
   "illustrationIcons.title": "",
-  "illustrationIcons.description": ""
+  "illustrationIcons.description": "",
+  "attachmentIcons.title": "",
+  "attachmentIcons.description": "",
+  "signLanguageIcons.title": "",
+  "signLanguageIcons.description": "",
+  "signLanguageIconsLink.title": "",
+  "signLanguageIconsLink.url": "",
+  "externalLink.label": ""
 }

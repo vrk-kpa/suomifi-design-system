@@ -109,6 +109,33 @@ const Page: React.FC = (): React.ReactElement => {
               <Icon icon="staticIllustrationHands" />
             </ComponentExample>
           </ComponentDescription>
+
+          <ComponentDescription
+            mainTitle={t('attachmentIcons.title')}
+            description={t('attachmentIcons.description')}
+            exampleFirst
+          >
+            <ComponentExample style={{ justifyContent: 'flex-start' }}>
+              <Icon icon="doc" />
+            </ComponentExample>
+          </ComponentDescription>
+
+          <ComponentDescription
+            mainTitle={t('signLanguageIcons.title')}
+            description={t('signLanguageIcons.description')}
+            exampleFirst
+          >
+            <ComponentExample style={{ justifyContent: 'flex-start' }}>
+              <Icon icon="signLanguageContent" color="#00B6EC" />
+            </ComponentExample>
+          </ComponentDescription>
+          <Link
+            variant="external"
+            href={t('signLanguageIconsLink.url')}
+            labelNewWindow={t('externalLink.label')}
+          >
+            {t('signLanguageIconsLink.title')}
+          </Link>
         </Layout>
       )}
     </NamespacesConsumer>

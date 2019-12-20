@@ -1,0 +1,8 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": ["note.item", "note.item", "note.item", "note.item"],
+
+  "exampleRegular.label": "exampleRegular.label"
+}

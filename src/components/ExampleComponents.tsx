@@ -8,6 +8,7 @@ import {
   Heading as OrigHeading,
   Text as OrigText,
   TextInput as OrigTextInput,
+  SearchInput as OrigSearchInput,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -37,3 +38,6 @@ addDisplayNames(Text, OrigText, 'Text');
 
 export class TextInput extends OrigTextInput {}
 addDisplayNames(TextInput, OrigText, 'TextInput');
+
+export class SearchInput extends OrigSearchInput {}
+addDisplayNames(SearchInput, OrigSearchInput, 'SearchInput');

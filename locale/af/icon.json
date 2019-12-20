@@ -23,6 +23,11 @@
   "infoIcons.description": "infoIcons.description",
   "additionalInfoIcons.title": "additionalInfoIcons.title",
   "additionalInfoIcons.description": "additionalInfoIcons.description",
-  "illustrationIcons.title": "illustrationIcons.title",
-  "illustrationIcons.description": "illustrationIcons.description"
+  "attachmentIcons.title": "attachmentIcons.title",
+  "attachmentIcons.description": "attachmentIcons.description",
+  "signLanguageIcons.title": "signLanguageIcons.title",
+  "signLanguageIcons.description": "signLanguageIcons.description",
+  "signLanguageIconsLink.title": "signLanguageIconsLink.title",
+  "signLanguageIconsLink.url": "signLanguageIconsLink.url",
+  "externalLink.label": "externalLink.label"
 }

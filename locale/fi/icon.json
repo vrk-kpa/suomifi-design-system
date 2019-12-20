@@ -3,8 +3,8 @@
   "intro": "Ikonit ovat visuaalisia symboleja, jotka tukevat toimintojen ja aiheiden ilmaisemista. Ikonien avulla käyttäjän huomiota voidaan korostetusti kiinnittää haluttuun informaatioon tai toimintoon. Ikonien käyttäminen voi myös parantaaa laajojen sisältöjen hahmottamista ja ryhmittämistä. Suomi.fi Design Systemissä on sekä käyttöliittymäikoneita, että kuvitusikoneita.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Jos ikoni on informatiivinen tai toiminnallinen, kuvalle on luotava tekstivastine käyttämällä WAIA-ARIA-määritettä 'aria-label' tai 'aria-labelledby'.",
-    "Jos ikoni on tarkoitettu vain visuaaliseksi tehosteeksi, käytetään sitä varten WAIA-ARIA-määritettä role='presentation' (ei role='img'). Tällöin avustavat tekniikat ohittavat kuvan.",
+    "Jos ikoni on informatiivinen tai toiminnallinen, kuvalle on luotava tekstivastine käyttämällä WAI-ARIA-määritettä 'aria-label' tai 'aria-labelledby'.",
+    "Jos ikoni on tarkoitettu vain visuaaliseksi tehosteeksi, käytetään sitä varten WAI-ARIA-määritettä role='presentation' (ei role='img'). Tällöin avustavat tekniikat ohittavat kuvan.",
     "Kuvitusikonien käytössä tulee huomioida ikonille looginen käyttötarkoitus. Jos ikoni on ristiriidassa sisällön kanssa, tämä voi heikentää käytettävyyttä ja kognitiivista saavutettavuutta.",
     "Ikonit ovat harvoin yksiselitteisiä kaikille käyttäjille. Suomifissa ikoni esitetään siksi yleensä tekstin kanssa, jolloin käyttäjän ymmärrys ei jää pelkän ikonin varaan. Poikkeuksena info-ikoni, jonka käyttö on yleisesti vakiintunut."
   ],

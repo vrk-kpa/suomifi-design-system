@@ -8,5 +8,6 @@ export default t => ({
     { to: '/info/', showAsTo: '/info/general/', label: t('info:info.title') },
     { to: '/info/accessibility/', label: t('accessibility:title') },
     { to: '/info/designers/', label: t('designers:title') },
+    { to: '/info/developers/', label: t('developers:title') },
   ],
 });

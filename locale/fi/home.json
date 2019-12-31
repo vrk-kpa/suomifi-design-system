@@ -1,53 +1,50 @@
 {
   "title": "Etusivu",
-  "intro.title": "Suomi.fi Design System",
-  "intro.description": "Suomi.fi Design System -kirjaston avulla Väestörekisterikeskus tukee ja edistää saavutettavien julkisten verkkopalvelujen rakentamista.",
-  "note.title": "Tämä on ensimmäinen kehitysversio (alpha)",
-  "note.description": "Osallistu uuden palvelun kehittämiseen! Anna palautetta ja liity keskusteluun Suomidigin kehittäjät #designsystem Slack- kanavalla.",
-  "note.link.text": "Liity Slack -kanavalle",
-  "note.link.url": "https://suomidigi-kehittajat.slack.com/",
+  "intro.title": "Suomi.fi Design System – digipalvelujen yhteiset rakennuspalikat",
+  "intro.description": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Kaikki komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti. ",
+
   "sections": [
     {
-      "mainTitle": "Mistä Suomi.fi Design System -kirjasto koostuu",
+      "mainTitle": "Mitä Suomi.fi Design System sisältää?",
       "blocks": [
-        {
+                {
           "icon": "",
-          "title": "Käyttöliittymäkomponenttikirjasto",
+          "title": "Design System -sivusto",
           "paragraphs": [
-            { "text": "Kirjastosta löydät yleisimpiä saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasuja siten, että ne vastaavat oman palvelusi visuaalista ilmettä." },
+            { "text": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto." },
             { "text": "" },
             { "text": "" }
           ],
           "links": [
-            { "text": "Tutustu käyttöliittymäkomponentteihin", "url": "/components" },
+            { "text": "Lue taustatietoja Suomi.fi Design Systemistä", "url": "/info" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]
         },
         {
           "icon": "",
-          "title": "Suunnitteluaineistot",
+          "title": "Käyttöliittymäkomponenttien kirjasto",
           "paragraphs": [
-            { "text": "Tulemme jatkossa julkaisemaan Design System -sivustolla myös käyttöliittymien suunnitteluaineiston Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit." },
-            { "text": "" },
+            { "text": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti." },
+            { "text": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa." },
             { "text": "" }
           ],
           "links": [
-            { "text": "", "url": "" },
+            { "text": "Tutustu komponentteihin", "url": "/components" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]
         },
         {
           "icon": "",
-          "title": "Design System sivusto",
+          "title": "Suunnitteluaineisto",
           "paragraphs": [
-            { "text": "Sivustolta löydät käyttöliittymäkomponenttien esikatselumallit, koodiesimerkit, käyttöohjeistukset ja dokumentaation. Julkaistut sisällöt luovat yhteisen alustan tukemaan sekä palveluiden suunnittelu-, että kehitystyötä. Design System -sivustoa kehittää ja ylläpitää Väestörekisterikeskus." },
-            { "text": "Onko sinulla ehdotuksia tai muuta palautetta?" },
+            { "text": "Julkaisemme keväällä 2020 Design System -sivustolla myös käyttöliittymien suunnitteluaineistoja Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit. " },
+            { "text": "" },
             { "text": "" }
           ],
           "links": [
-            { "text": "Yhteystiedot", "url": "/info" },
+            { "text": "", "url": "" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]

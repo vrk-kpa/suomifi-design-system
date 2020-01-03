@@ -4,52 +4,6 @@
   "intro": "Suomi.fi Design System tarjoaa kokoelman saavutettavia, uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Design System -kirjaston komponentit ovat yhteismitallisia rakennuspalikoita, jotka auttavat niin suunnittelijoita kuin kehittäjiäkin toteuttamaan yhdenmukaisia palveluja. Voit hyödyntää komponentteja joko sellaisenaan tai muokata niiden ulkoasua vastaamaan oman palvelusi visuaalista ilmettä.",
   "sections": [
     {
-      "title": "",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
       "title": "Käyttäjäkokemus ja saavutettavuus",
       "paragraphs": [
         {
@@ -68,18 +22,6 @@
           "image.key": "",
           "image.alt": "",
           "text": "Saavutettavuudesta huolehtiminen on erittäin keskeinen osa Suomi.fi Design System -kirjastoa. Kaikissa ratkaisuissa huomioidaan jo suunnitteluvaiheessa WCAG 2.1 -kriteeristöt. Apuvälinekäytön lisäksi suunnittelussa huomioidaan myös kognitiivinen saavutettavuus. Kaikki komponentit myös testataan saavutettavuusvaatimusten mukaisesti ennen niiden julkaisua.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -155,81 +97,17 @@
             { "text": "" },
             { "text": "" }
           ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
         }
       ],
       "links": [
-        { "text": "Suomidigi.fi kehittäjät Slack-kanava", "url": "https://suomidigi-kehittajat.slack.com" },
-        { "text": "Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "",
-      "paragraphs": [
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
+          "text": "Suomidigi.fi kehittäjät Slack-kanava",
+          "url": "https://suomidigi-kehittajat.slack.com"
         },
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
+          "text": "Github",
+          "url": "https://github.com/vrk-kpa/suomifi-ui-components"
         },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]
     }

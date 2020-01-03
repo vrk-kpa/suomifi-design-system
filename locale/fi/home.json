@@ -7,16 +7,21 @@
     {
       "mainTitle": "Mitä Suomi.fi Design System sisältää?",
       "blocks": [
-                {
+        {
           "icon": "",
           "title": "Design System -sivusto",
           "paragraphs": [
-            { "text": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto." },
+            {
+              "text": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto."
+            },
             { "text": "" },
             { "text": "" }
           ],
           "links": [
-            { "text": "Lue taustatietoja Suomi.fi Design Systemistä", "url": "/info" },
+            {
+              "text": "Lue taustatietoja Suomi.fi Design Systemistä",
+              "url": "/info"
+            },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]
@@ -25,8 +30,12 @@
           "icon": "",
           "title": "Käyttöliittymäkomponenttien kirjasto",
           "paragraphs": [
-            { "text": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti." },
-            { "text": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa." },
+            {
+              "text": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti."
+            },
+            {
+              "text": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa."
+            },
             { "text": "" }
           ],
           "links": [
@@ -39,56 +48,9 @@
           "icon": "",
           "title": "Suunnitteluaineisto",
           "paragraphs": [
-            { "text": "Julkaisemme keväällä 2020 Design System -sivustolla myös käyttöliittymien suunnitteluaineistoja Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit. " },
-            { "text": "" },
-            { "text": "" }
-          ],
-          "links": [
-            { "text": "", "url": "" },
-            { "text": "", "url": "" },
-            { "text": "", "url": "" }
-          ]
-        }
-      ]
-    }
-  ],
-  "framedSections": [
-    {
-      "mainTitle": "Miksi kannattaa hyödyntää Suomi.fi Design Systemiä?",
-      "blocks": [
-        {
-          "icon": "staticIllustrationRocket",
-          "title": "Nopeus",
-          "paragraphs": [
-            { "text": "Valmiilla käyttöliittymäkomponenteilla palvelusi suunnittelu- ja kehittämistyö on nopeaa ja kustannustehokasta. Voit hyödyntää jo olemassa olevia komponentteja ja tarvittaessa muokata niitä vain ulkoasullisesti vastaamaan omien palveluidesi visuaalista ulkoasua." },
-            { "text": "" },
-            { "text": "" }
-          ],
-          "links": [
-            { "text": "Näin pääset alkuun", "url": "/components" },
-            { "text": "", "url": "" },
-            { "text": "", "url": "" }
-          ]
-        },
-        {
-          "icon": "staticIllustrationHands",
-          "title": "Yhteiskehittäminen ja saavutettavuus",
-          "paragraphs": [
-            { "text": "Suomi.fi-palveluiden kehittämisessä on panostettu käytettävyyteen sekä kaikkia käyttäjäryhmiä palvelevaan saavutettavuuteen. Suomi.fi Design Systemin avulla kaikki pääsevät hyödyntämään jo tehtyä työtä sekä osallistumaan yhteiskehittämiseen. Yhdessä saadaan aikaan enemmän, pienemmilläkin resursseilla." },
-            { "text": "" },
-            { "text": "" }
-          ],
-          "links": [
-            { "text": "Lue lisää yhteiskehittämisestä", "url": "/info" },
-            { "text": "", "url": "" },
-            { "text": "", "url": "" }
-          ]
-        },
-        {
-          "icon": "staticIllustrationOrganisation",
-          "title": "Johdonmukainen käyttäjäkokemus",
-          "paragraphs": [
-            { "text": "Suomi.fi Design Systemin käyttäminen mahdollistaa organisaatio- ja palvelurajojen ylittävän yhdenmukaisen käyttäjäkokemuksen tarjoamisen julkishallinnon verkkopalveluiden käyttäjille. Käytettävyyden, saavutettavuuden ja visuaalisuuden tuoma yhtenäisyys tuottaa käyttäjille intuitiivisen sekä luotettavan kuvan organisaatioden digitaalisista palveluista." },
+            {
+              "text": "Julkaisemme keväällä 2020 Design System -sivustolla myös käyttöliittymien suunnitteluaineistoja Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit. "
+            },
             { "text": "" },
             { "text": "" }
           ],

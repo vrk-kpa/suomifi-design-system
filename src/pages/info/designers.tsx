@@ -24,6 +24,7 @@ const Page = (): JSX.Element => (
           <Section
             key={index}
             mainTitle={section.title}
+            title={section.subheading}
             paragraphs={section.paragraphs}
             links={section.links}
           />

@@ -45,7 +45,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Käyttöliittymäkomponenttien kirjasto on MIT-lisenssin alainen, eli kuka tahansa saa käyttää, hyödyntää ja jakaa sisältöä mihin tahansa käyttötarkoitukseen. Käyttäjien on mahdollista toivoa uusia ominaisuuksia, raportoida bugeista sekä tuottaa uutta sisältöä. Muutokset ja lisäykset kannattaa tehdä oman projektin sijaan yhteisesti käytettyyn kirjastoon, jolloin tehdystä työsä hyötyvät kaikki käyttäjät.",
+          "text": "Käyttöliittymäkomponenttien kirjasto on MIT-lisenssin alainen, eli kuka tahansa saa käyttää, hyödyntää ja jakaa sisältöä mihin tahansa käyttötarkoitukseen. Käyttäjien on mahdollista toivoa uusia ominaisuuksia, raportoida bugeista sekä tuottaa uutta sisältöä. Muutokset ja lisäykset kannattaa tehdä oman projektin sijaan yhteisesti käytettyyn kirjastoon, jolloin tehdystä työstä hyötyvät kaikki käyttäjät.",
           "listItems": [
             { "text": "" },
             { "text": "" },

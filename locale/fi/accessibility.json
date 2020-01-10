@@ -1,6 +1,6 @@
 {
   "title": "Saavutettavuus",
-  "intro": "Saavutettavuuden huomioiminen digitaalisissa palveluissa tarkoittaa sitä, että palvelut, verkkosivustot ja mobiilisovellukset sekä niiden sisällöt ovat ymmärrettäviä ja kenen tahansa käytettävissä. Verkkopalvelujen saavutettavuus koskee EU:n saavutettavuusdirektiivin ja sitä toteuttavan lain (Laki digitaalisten palvelujen tarjoamisesta) myötä koko julkista sektoria sekä osaa järjestöistä ja yrityksistä.",
+  "intro": "Saavutettavuudella tarkoitetaan, että digitaaliset palvelut, verkkosivustot ja mobiilisovellukset sekä niiden sisällöt ovat sellaisia, että kuka tahansa voisi niitä käyttää ja ymmärtää, mitä niissä sanotaan. Verkkopalvelujen saavutettavuus koskee EU:n saavutettavuusdirektiivin ja sitä toteuttavan lain (Laki digitaalisten palvelujen tarjoamisesta) myötä koko julkista sektoria sekä osaa järjestöistä ja yrityksistä.",
   "sections": [
     {
       "title": "",
@@ -8,7 +8,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Suomi.fi Design System -kirjaston avulla Digi- ja väestötietovirasto haluaa tukea ja edistää saavutettavien verkkopalvelujen rakentamista. Design Systemin -kirjastoon toteutettujen käyttöliittymäkomponenttien saavutettavuus varmistetaan sekä suunnittelu- että toteutusvaiheessa saavutettavuusasiantuntijan kanssa. Kaikki komponentit myös testataan ennen niiden julkaisua.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -20,19 +20,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
+          "text": "Laki digitaalisten palvelujen tarjoamisesta astui voimaan 1.4.2019. Saavutettavuusvaatimusten pohjana toimii World Wide Web Consortiumin laatima verkkosisältöjen saavutettavuusohjeistus WCAG 2.1 (tasot A ja AA). ",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -43,64 +31,27 @@
         }
       ],
       "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "",
-      "paragraphs": [
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Suomi.fi Design Systemin käyttämien saavutettavuusvaatimusten pohjana toimii World Wide Web Consortiumin laatima Verkkosisällön saavutettavuusohjeistus WCAG 2.1 (tasot A ja AA). Käyttöliittymäkomponenttien saavutettavuuden varmistetaan sekä Suomi.fi-palvelukehityksen yhteydessä, että saavutettavuusasiantuntijoiden tekemien validointien avulla.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
+          "text": "Laki digitaalisten palvelujen tarjoamisesta",
+          "url": "https://www.finlex.fi/fi/laki/alkup/2019/20190306"
         },
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Suomifi-projektissa on pyritty siihen, että tehdään saavutettavuuden osalta mahdollisimman laadukasta työtä. Tähän on pyritty kouluttamalla tekijöitä monella osa-alueella ja hyödyntämällä saavutettavuusasiantuntijan osaamista suunnittelun ja toteutuksen alkuvaiheessa. Saavutettavuusasiantuntija on pitänyt koulutuksia toteuttajille, suunnittelijoille ja sisällöntuottajille. Koulutuksilla on pyritty tiedon ja ymmärryksen kartuttamiseen, mutta varsinainen saavutettavuusosaaminen karttuu tekijöille projektityössä ja saavutettavuusasiantuntijan kanssa yhdessä toimimalla.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
+          "text": "EU:n saavutettavuusdirektiivi",
+          "url": "https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32016L2102&from=FI"
         },
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Saavutettavuuden eteen tehtyä työtä pyritään ylläpitämään huolehtimalla että uudet henkilöt projektissa omaavat riittävät tiedot ja perustaidot saavutettavuuden osalta. Nykyisten ja tulevien toteutusten laatu pidetään korkealla saavutettavuuden osalta huolehtimalla, että käyttöliittymät pysyvät mahdollisimman yhtenäisinä sekä käyttökokemukseltaan, että toteutukseltaan. Tämä on mahdollista käyttämällä samoja työkaluja ja tiedostoja suunnittelussa ja toteutuksen osalta yhtenäisyydestä huolehditaan komponenttikirjaston avulla.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
+          "text": "WCAG 2.1 -ohjeistus",
+          "url": "https://www.w3.org/Translations/WCAG21-fi/"
         }
-      ],
-      "links": [
-        { "text": "WCAG 2.1", "url": "https://www.w3.org/TR/WCAG21/" },
-        { "text": "Laki digitaalisten palvelujen tarjoamisesta", "url": "https://www.finlex.fi/fi/laki/alkup/2019/20190306" },
-        { "text": "", "url": "" }
       ]
     },
     {
-      "title": "",
+      "title": "Saavutettavuus koostuu useista tekijöistä",
       "paragraphs": [
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Onko sinulla huomautettavaa tai kysyttävää tietyn komponentin saavutettavuudesta?",
+          "text": "Saavutettavuusdirektiivi ja lainsäädäntö sisältävät ennen kaikkea määräyksiä teknisistä vaatimuksista, joilla parannetaan saavutettavuutta. Yhtä tärkeitä osatekijöitä hyvän saavutettavuuden toteuttamiseksi ovat visuaalisen ilmeen saavutettavuus, rakenteen saavutettavuus sekä sisältöjen ymmärrettävyys ja selkeys.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -112,41 +63,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "Anna palautetta suomidigi.fi kehittäjät slack-kanavalla", "url": "https://suomidigi-kehittajat.slack.com" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "Kehitys- ja suunnittelutyön saavutettavuutta tukevia asioita",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Saavutettavuus on laaja käsite ja vaatii myös paljon muuta kuin teknisesti saavutettavia käyttöliittymäkomponentteja. Vaikka komponentit itsessään olisivat saavutettavia, se ei kuitenkaan takaa sitä, että lopullinen palvelusi tai tuotteesi on saavutettava. Suomi.fi Design Systemin komponenttikohtainen käyttöohjeistus auttaa sinua käyttämään käyttöliittymäkomponentteja oikein. Muista kuitenkin, että verkkopalvelun lopullinen kokonaisvaltainen saavutettavuus vaatii aina erillistä työtä, harkintaa ja testausta.",
+          "text": "Vaikka käyttöliittymäkomponentit itsessään olisivat saavutettavia, se ei kuitenkaan takaa, että palvelu kokonaisuudessaan on saavutettava. Suomi.fi Design Systemin komponenttikohtainen käyttöohjeistus auttaa käyttämään komponentteja oikein. On kuitenkin muistettava, että verkkopalvelun lopullinen kokonaisvaltainen saavutettavuus vaatii aina erillistä työtä, harkintaa ja testausta.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -160,74 +77,27 @@
           "image.alt": "",
           "text": "Teknisen saavutettavuuden lisäksi tulee muistaa sisältöjen saavutettavuus (kognitiivinen saavutettavuus). Kognitiivinen saavutettavuus käsittää yhteisesti palvelussa esitettävän tiedon ja tavat, miten tieto esitetään käyttäjälle ymmärrettävästi. Sisältöjen ymmärrettävyys ja selkeys helpottavat jokaisen asiointia palvelussa. Koska kognitiivisia ominaisuuksia on vaikeampi mitata kuin teknisiä ominaisuuksia, on mahdollista, että digitaalinen palvelu ei ole helppokäyttöinen, vaikka palvelu täyttäisikin saavutettavuusvaatimukset.",
           "listItems": [
-            { "text": "Ymmärrettävyys tarkoittaa sitä, että palvelun sisällöt ja toiminta on esitetty käyttäjän ymmärtämällä tavalla. Käyttäjä siis käsittää, mitä hän on palvelussa tekemässä." },
-            { "text": "Palvelun sisältöjen osalta ymmärrettävyys tarkoittaa kielelliseen ilmaisuun liittyviä keinoja, joilla palvelun sisältö on käyttäjälle yksiselitteistä. Ymmärrettävyys tarkoittaa myös käyttöliittymässä käytettävien tekstien, erilaisten toimintojen ja palvelun logiikan kokonaisuutta. Tekstimuotoisen sisällön osalta ymmärrettävyys tarkoittaa lähtökohtaisesti selkeän ja hyvän yleiskielen käyttämistä." },
-            { "text": "Visuaalinen saavutettavuus tarkoittaa sitä, että palvelun käyttökokemus on johdonmukainen, käyttöliittymä on selkeä ja visuaalinen hierarkia tukee palvelun käytettävyyttä." },
-            { "text": "Digitaalisen palvelun toiminnan ja logiikan osalta ymmärrettävyys tarkoittaa erilaisia varmistuskeinoja, joilla käyttäjälle kerrotaan missä vaiheessa palvelua hän on ja miten hän pääsee liikkumaan palvelussa. Käyttäjälle myös kerrotaan eri toimintojen vaikutuksista ja hän ymmärtää eri toimintojen seuraukset ja yhtymäkohdat." },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
+            {
+              "text": "Ymmärrettävyys tarkoittaa sitä, että palvelun sisällöt ja toiminta on esitetty käyttäjän ymmärtämällä tavalla. Käyttäjä siis käsittää, mitä hän on palvelussa tekemässä."
+            },
+            {
+              "text": "Palvelun sisältöjen osalta ymmärrettävyys tarkoittaa kielelliseen ilmaisuun liittyviä keinoja, joilla palvelun sisältö on käyttäjälle yksiselitteistä. Ymmärrettävyys tarkoittaa myös käyttöliittymässä käytettävien tekstien, erilaisten toimintojen ja palvelun logiikan kokonaisuutta. Tekstimuotoisen sisällön osalta ymmärrettävyys tarkoittaa lähtökohtaisesti selkeän ja hyvän yleiskielen käyttämistä."
+            },
+            {
+              "text": "Visuaalinen saavutettavuus tarkoittaa sitä, että palvelun käyttökokemus on johdonmukainen, käyttöliittymä on selkeä ja visuaalinen hierarkia tukee palvelun käytettävyyttä."
+            },
+            {
+              "text": "Digitaalisen palvelun toiminnan ja logiikan osalta ymmärrettävyys tarkoittaa erilaisia varmistuskeinoja, joilla käyttäjälle kerrotaan missä vaiheessa palvelua hän on ja miten hän pääsee liikkumaan palvelussa. Käyttäjälle myös kerrotaan eri toimintojen vaikutuksista ja hän ymmärtää eri toimintojen seuraukset ja yhtymäkohdat."
+            },
             { "text": "" }
           ]
         }
       ],
       "links": [
-        { "text": "Lisää tietoa saavutettavuuden vaatimuksista", "url": "https://www.saavutettavuusvaatimukset.fi" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "",
-      "paragraphs": [
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
+          "text": "Lue lisää saavutettavuusvaatimuksista aluehallintoviratson sivuilta",
+          "url": "https://www.saavutettavuusvaatimukset.fi"
         },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]

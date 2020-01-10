@@ -5,23 +5,27 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import ContentBoxes from 'components/ContentBoxes';
-import Hero from 'components/Hero';
+import sideNavData from 'config/sidenav/info';
+import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+import Section from 'components/Section';
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['home']}>
+  <NamespacesConsumer ns={['developers']}>
     {t => (
-      <Layout hasFrame={false}>
+      <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
+        <Heading.h1>{t('title')}</Heading.h1>
 
-        <Hero title={t('intro.title')} description={t('intro.description')} />
+        <Paragraph.lead>
+          <Text.lead>{t('intro')}</Text.lead>
+        </Paragraph.lead>
 
         {t('sections').map((section, index) => (
-          <ContentBoxes
+          <Section
             key={index}
-            wrapAll
-            mainTitle={section.mainTitle}
-            blocks={section.blocks}
+            mainTitle={section.title}
+            paragraphs={section.paragraphs}
+            links={section.links}
           />
         ))}
       </Layout>

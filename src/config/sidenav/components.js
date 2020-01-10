@@ -20,5 +20,6 @@ export default t => ({
     { to: '/components/text/', label: t('text:title') },
     { to: '/components/textinput/', label: t('textinput:title') },
     { to: '/components/searchinput/', label: t('searchinput:title') },
+    { to: '/components/icon/', label: t('icon:title') },
   ],
 });

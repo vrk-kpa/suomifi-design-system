@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { NamespacesConsumer } from 'react-i18next';
-import { Panel, suomifiDesignTokens } from 'suomifi-ui-components';
+import { Expander, suomifiDesignTokens } from 'suomifi-ui-components';
 import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
@@ -41,7 +41,7 @@ const ComponentDescription = ({
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
           <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
-            <Panel.expansion title={t('common:react')} noPadding>
+            <Expander title={t('common:react')} noPadding>
               {codeString && <ComponentCode javascript={codeString} />}
               {!showOnlyCodeString &&
                 getWithoutWrappers(children).map((child, index) => (
@@ -55,7 +55,7 @@ const ComponentDescription = ({
                     {child}
                   </ComponentCode>
                 ))}
-            </Panel.expansion>
+            </Expander>
           </div>
         )}
       </div>

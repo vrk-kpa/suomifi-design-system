@@ -7,6 +7,7 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ContentBoxes from 'components/ContentBoxes';
 import Hero from 'components/Hero';
+import 'suomifi-ui-components/dist/main.css';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['home']}>

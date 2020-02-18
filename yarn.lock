@@ -790,7 +790,7 @@
 
 "@csstools/normalize.css@10.1.0":
   version "10.1.0"
-  resolved "http://localhost:4873/@csstools%2fnormalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
+  resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
 "@csstools/normalize.css@^10.0.0":
@@ -839,7 +839,7 @@
 
 "@j-kallunki/css-in-to-js@1.0.5":
   version "1.0.5"
-  resolved "http://localhost:4873/@j-kallunki%2fcss-in-to-js/-/css-in-to-js-1.0.5.tgz#0ce3aec875b16817c0e702260cc73eb198f44200"
+  resolved "https://registry.yarnpkg.com/@j-kallunki/css-in-to-js/-/css-in-to-js-1.0.5.tgz#0ce3aec875b16817c0e702260cc73eb198f44200"
   integrity sha512-1u1B41D7urc4HkSjkPeM53BMfENFzjJ4nhfQo17njA87ZRtbf/dx0Q3Zl9X4yTIT8jrnln2k7i/tLfgpCXRciQ==
   dependencies:
     lodash "4.17.15"
@@ -875,12 +875,12 @@
 
 "@reach/component-component@0.1.3", "@reach/component-component@^0.1.1", "@reach/component-component@^0.1.2", "@reach/component-component@^0.1.3":
   version "0.1.3"
-  resolved "http://localhost:4873/@reach%2fcomponent-component/-/component-component-0.1.3.tgz#5d156319572dc38995b246f81878bc2577c517e5"
+  resolved "https://registry.yarnpkg.com/@reach/component-component/-/component-component-0.1.3.tgz#5d156319572dc38995b246f81878bc2577c517e5"
   integrity sha512-a1USH7L3bEfDdPN4iNZGvMEFuBfkdG+QNybeyDv8RloVFgZYRoM+KGXyy2KOfEnTUM8QWDRSROwaL3+ts5Angg==
 
 "@reach/menu-button@0.1.7":
   version "0.1.7"
-  resolved "http://localhost:4873/@reach%2fmenu-button/-/menu-button-0.1.7.tgz#48666636b5774066839a312e37cc03f0bd770bad"
+  resolved "https://registry.yarnpkg.com/@reach/menu-button/-/menu-button-0.1.7.tgz#48666636b5774066839a312e37cc03f0bd770bad"
   integrity sha512-xPweR+luu5sgW8OeRHt8SN3dlV3d8S6fqABXAqfuI5Aebq0lOcSxZuL2gxlpH742OzrkjteBE/LV5Jt0vJUsOA==
   dependencies:
     "@reach/component-component" "^0.1.1"
@@ -893,19 +893,19 @@
 
 "@reach/observe-rect@^1.0.3":
   version "1.0.5"
-  resolved "http://localhost:4873/@reach%2fobserve-rect/-/observe-rect-1.0.5.tgz#28bf3c5c35da7fef72cd124af4ac32308d0c3f15"
+  resolved "https://registry.yarnpkg.com/@reach/observe-rect/-/observe-rect-1.0.5.tgz#28bf3c5c35da7fef72cd124af4ac32308d0c3f15"
   integrity sha512-EQLHhquzwAh2TFtMJU0PXJRmhpOrAhzApgoI4Lwn72J7ygrMk3Ys3a3i8KDnV0TetbwAxn4XSHi4pE8sPWUYLg==
 
 "@reach/portal@^0.1.1":
   version "0.1.3"
-  resolved "http://localhost:4873/@reach%2fportal/-/portal-0.1.3.tgz#31d820f31bbab73570d5b5a449e2b0fa6457802f"
+  resolved "https://registry.yarnpkg.com/@reach/portal/-/portal-0.1.3.tgz#31d820f31bbab73570d5b5a449e2b0fa6457802f"
   integrity sha512-yDcu5XZWfWKmKvbOs/uS7vITPVFXmn+XY5V6YcGhlz20KgwG+aJX2c7yvYzO++Zr0qvmtQCmxA4EGEciqIys6g==
   dependencies:
     "@reach/component-component" "^0.1.3"
 
 "@reach/rect@^0.1.1":
   version "0.1.2"
-  resolved "http://localhost:4873/@reach%2frect/-/rect-0.1.2.tgz#8f5dbd90152f8e865cc6c1622266403dcfe26691"
+  resolved "https://registry.yarnpkg.com/@reach/rect/-/rect-0.1.2.tgz#8f5dbd90152f8e865cc6c1622266403dcfe26691"
   integrity sha512-2zgOdngtfAiykcVrjsgyjBhLItqc0TpuMCK0RrYydkhjKuHazjhtB5NEGuzp3TFDl3dlR++U28P55Gt4MkN3+g==
   dependencies:
     "@reach/component-component" "^0.1.2"
@@ -913,7 +913,7 @@
 
 "@reach/router@^1.1.0":
   version "1.3.1"
-  resolved "http://localhost:4873/@reach%2frouter/-/router-1.3.1.tgz#0a49f75fa9621323d6e21c803447bcfcde1713b2"
+  resolved "https://registry.yarnpkg.com/@reach/router/-/router-1.3.1.tgz#0a49f75fa9621323d6e21c803447bcfcde1713b2"
   integrity sha512-Ov1j1J+pSgXliJHFL7XWhjyREwc6GxeWfgBTa5MMH5eRmYtHbPhaovba4xKo7aTVCg8fxkt2yDMNSpvwfUP+pA==
   dependencies:
     create-react-context "0.3.0"
@@ -934,12 +934,12 @@
 
 "@reach/utils@^0.1.2":
   version "0.1.2"
-  resolved "http://localhost:4873/@reach%2futils/-/utils-0.1.2.tgz#72f547b5c9b0401a56de303d9e508abf6d3fa56a"
+  resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.1.2.tgz#72f547b5c9b0401a56de303d9e508abf6d3fa56a"
   integrity sha512-HpDR5BeCApr3HufQtpg0P5b9sl0S66zikZSMtC/2jZBvrDzjVaT9O8PbKTQqW0PdkMNrnBkX1UtlrrM1TN3/Og==
 
 "@reach/window-size@^0.1.1":
   version "0.1.4"
-  resolved "http://localhost:4873/@reach%2fwindow-size/-/window-size-0.1.4.tgz#3257b646548f61c2708a661a683620fbe0a706cb"
+  resolved "https://registry.yarnpkg.com/@reach/window-size/-/window-size-0.1.4.tgz#3257b646548f61c2708a661a683620fbe0a706cb"
   integrity sha512-JZshEuGsLvi6fUIJ7Unx12yNeM5SmqWjber2MLr9tfwf1hpNv73EiPBOIJyV0DjW7GXzjcOEvwnqysm59s2s/A==
   dependencies:
     "@reach/component-component" "^0.1.3"
@@ -1080,7 +1080,7 @@
 
 "@tanem/svg-injector@^2.1.1":
   version "2.1.4"
-  resolved "http://localhost:4873/@tanem%2fsvg-injector/-/svg-injector-2.1.4.tgz#b804f1c78b5179365ae21061f119263acccbeb13"
+  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-2.1.4.tgz#b804f1c78b5179365ae21061f119263acccbeb13"
   integrity sha512-//NIrFl8G59OCHWEeMUcI/UI05/xtkHOu0kVrfJe3Zh13gtKKSkkSdlr2kZSJthFal2JvdMm3T3XBm8grbbRbw==
 
 "@types/configstore@^2.1.1":
@@ -3096,7 +3096,7 @@ class-utils@^0.3.5:
 
 classnames@2.2.6:
   version "2.2.6"
-  resolved "http://localhost:4873/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
 cli-boxes@^1.0.0:
@@ -3652,7 +3652,7 @@ create-react-context@0.2.3, create-react-context@^0.2.1:
 
 create-react-context@0.3.0:
   version "0.3.0"
-  resolved "http://localhost:4873/create-react-context/-/create-react-context-0.3.0.tgz#546dede9dc422def0d3fc2fe03afe0bc0f4f7d8c"
+  resolved "https://registry.yarnpkg.com/create-react-context/-/create-react-context-0.3.0.tgz#546dede9dc422def0d3fc2fe03afe0bc0f4f7d8c"
   integrity sha512-dNldIoSuNSvlTJ7slIKC/ZFGKexBMBrrcc+TTe1NdmROnaASuLPvqpwj9v4XS4uXZ8+YPu0sNmShX2rXI5LNsw==
   dependencies:
     gud "^1.0.0"
@@ -9242,7 +9242,7 @@ lodash.uniq@^4.5.0:
 
 lodash@4.17.15:
   version "4.17.15"
-  resolved "http://localhost:4873/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
   integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 lodash@^4.11.1, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
@@ -10230,7 +10230,7 @@ normalize-url@^3.0.0, normalize-url@^3.1.0:
 
 normalize.cssinjs@1.1.0:
   version "1.1.0"
-  resolved "http://localhost:4873/normalize.cssinjs/-/normalize.cssinjs-1.1.0.tgz#d60576c44f31e9f76570e3318b94ae3916ee6b94"
+  resolved "https://registry.yarnpkg.com/normalize.cssinjs/-/normalize.cssinjs-1.1.0.tgz#d60576c44f31e9f76570e3318b94ae3916ee6b94"
   integrity sha512-mXioiaurR20LtLfrERtsQ4IsMJeDpY22BVKIrgrxoTc51rW8S+kIFvs+p3Y5KmIKTQ8X3dKC2SOZSB5CfVRH3A==
   dependencies:
     "@csstools/normalize.css" "10.1.0"
@@ -11104,7 +11104,7 @@ pnp-webpack-plugin@^1.4.1:
 
 polished@3.4.0:
   version "3.4.0"
-  resolved "http://localhost:4873/polished/-/polished-3.4.0.tgz#29b2a028ee0408df5dded55a2a25e913bc6749a9"
+  resolved "https://registry.yarnpkg.com/polished/-/polished-3.4.0.tgz#29b2a028ee0408df5dded55a2a25e913bc6749a9"
   integrity sha512-GiuavmunMIKMOEoSPkXoqBYM2ZcI4YIwCaiwmTOQ55Zq4HG2kD0YZt3WlLZ2l3U9XhJ1LM/fgjCFHHffiZP0YQ==
   dependencies:
     "@babel/runtime" "^7.4.4"
@@ -11576,7 +11576,7 @@ postcss-value-parser@^3.0.0, postcss-value-parser@^3.2.3, postcss-value-parser@^
 
 postcss@7.0.5:
   version "7.0.5"
-  resolved "http://localhost:4873/postcss/-/postcss-7.0.5.tgz#70e6443e36a6d520b0fd4e7593fcca3635ee9f55"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-7.0.5.tgz#70e6443e36a6d520b0fd4e7593fcca3635ee9f55"
   integrity sha512-HBNpviAUFCKvEh7NZhw1e8MBPivRszIiUnhrJ+sBFVSYSqubrzwX3KG51mYgcRHX8j/cAgZJedONZcm5jTBdgQ==
   dependencies:
     chalk "^2.4.1"
@@ -12219,7 +12219,7 @@ react-side-effect@^1.1.0:
 
 react-svg@7.2.2:
   version "7.2.2"
-  resolved "http://localhost:4873/react-svg/-/react-svg-7.2.2.tgz#cd914c92c3fccedcb06bfdff3cef64cdc2dace21"
+  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-7.2.2.tgz#cd914c92c3fccedcb06bfdff3cef64cdc2dace21"
   integrity sha512-2EFN1pXHMZ5XZgXfsIlAIf5bOySwYbMvBuox5aUJwJfHuhqPEZ5DU73apEnm93fo7S1afL9/MZqtLsoEnukUwA==
   dependencies:
     "@babel/runtime" "^7.2.0"
@@ -14137,7 +14137,7 @@ sugarss@^2.0.0:
 
 suomifi-design-tokens@0.6.0:
   version "0.6.0"
-  resolved "http://localhost:4873/suomifi-design-tokens/-/suomifi-design-tokens-0.6.0.tgz#a849e6a1115df18beff82b74c7835586fcf19814"
+  resolved "https://registry.yarnpkg.com/suomifi-design-tokens/-/suomifi-design-tokens-0.6.0.tgz#a849e6a1115df18beff82b74c7835586fcf19814"
   integrity sha512-1His7iGBynkEzUI9uhMDGHCYQeFUh+kfbOsqdn4rMz8v9Vqpx/5QngTs3UstK85mjJzaZrN0Q7bdTcRtVCkrWA==
 
 suomifi-icons@0.0.12, suomifi-icons@^0.0.12:
@@ -15202,7 +15202,7 @@ warning@^3.0.0:
 
 warning@^4.0.2, warning@^4.0.3:
   version "4.0.3"
-  resolved "http://localhost:4873/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
   integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
   dependencies:
     loose-envify "^1.0.0"

@@ -35,9 +35,11 @@ const ComponentDescription = ({
           {!!title && <Heading.h3>{title}</Heading.h3>}
         </div>
         {!!exampleFirst && <div>{children}</div>}
-        <Paragraph>
-          <Text>{description}</Text>
-        </Paragraph>
+        {!!description && (
+          <Paragraph>
+            <Text>{description}</Text>
+          </Paragraph>
+        )}
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
           <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
@@ -66,8 +68,8 @@ const ComponentDescription = ({
 interface Props {
   mainTitle?: string;
   title?: string;
-  description: string;
-  exampleFirst: boolean;
+  description?: string;
+  exampleFirst?: boolean;
   noCode?: boolean;
   codeString?: string;
   showOnlyCodeString?: boolean;

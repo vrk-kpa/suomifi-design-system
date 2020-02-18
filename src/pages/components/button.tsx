@@ -161,7 +161,6 @@ const Page = (): JSX.Element => {
                 style={{
                   padding: suomifiDesignTokens.spacing.s,
                   background: item.background,
-                  border: item.border,
                 }}
               >
                 {[
@@ -195,7 +194,6 @@ const Page = (): JSX.Element => {
                 style={{
                   padding: suomifiDesignTokens.spacing.s,
                   background: item.background,
-                  border: item.border,
                 }}
               >
                 {[

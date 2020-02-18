@@ -52,9 +52,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
 
-        <Paragraph.lead>
+        <Paragraph>
           <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        </Paragraph>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 

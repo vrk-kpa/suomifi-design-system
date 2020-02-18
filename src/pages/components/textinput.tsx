@@ -22,9 +22,9 @@ const Page = (): JSX.Element => (
         <Heading.h1>{t('title')}</Heading.h1>
         <NotificationBox />
 
-        <Paragraph.lead>
+        <Paragraph>
           <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        </Paragraph>
 
         <ComponentDescription>
           <ComponentExample

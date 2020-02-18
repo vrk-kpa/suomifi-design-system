@@ -20,9 +20,9 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
         <SEO title={t('info.title')} />
         <Heading.h1>{t('info.title')}</Heading.h1>
 
-        <Paragraph.lead>
+        <Paragraph>
           <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        </Paragraph>
 
         {t('sections').map((section, index) => (
           <Section

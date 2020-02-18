@@ -1,6 +1,6 @@
 import {
   Button as OrigButton,
-  Panel as OrigPanel,
+  Expander as OrigExpander,
   Breadcrumb as OrigBreadcrumb,
   Toggle as OrigToggle,
   Dropdown as OrigDropdown,
@@ -16,8 +16,8 @@ import { addDisplayNames } from 'components/ExampleComponentUtil';
 export class Button extends OrigButton {}
 addDisplayNames(Button, OrigButton, 'Button');
 
-export class Panel extends OrigPanel {}
-addDisplayNames(Panel, OrigPanel, 'Panel');
+export class Expander extends OrigExpander {}
+addDisplayNames(Expander, OrigExpander, 'Expander');
 
 export class Breadcrumb extends OrigBreadcrumb {}
 addDisplayNames(Breadcrumb, OrigBreadcrumb, 'Breadcrumb');

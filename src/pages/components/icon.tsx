@@ -31,9 +31,9 @@ const Page: React.FC = (): React.ReactElement => {
           <SEO title={t('title')} />
           <Heading.h1>{t('title')}</Heading.h1>
 
-          <Paragraph>
+          <Paragraph.lead>
             <Text.lead>{t('intro')}</Text.lead>
-          </Paragraph>
+          </Paragraph.lead>
 
           <Link href="../../styles/icons">{t('allIconsPageLink.title')}</Link>
 

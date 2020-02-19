@@ -77,9 +77,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
 
-        <Paragraph>
+        <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph>
+        </Paragraph.lead>
 
         {iconCategories.map(item => (
           <ComponentDescription

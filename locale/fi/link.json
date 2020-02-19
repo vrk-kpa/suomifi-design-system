@@ -10,7 +10,6 @@
     "Yleensä heading-luokituksen mukainen otsikko ei ole linkki, vaan linkki esitetään erillisenä komponenttina. Poikkeuksena kuitenkin listaukset, jolloin linkin toistaminen jokaisen yksikön yhteydessä lisäisi listauksen pituutta.",
     "Vältä saman linkin toistumista näkymässä samalla tai eri nimellä.",
     "Mikäli linkki avaa tiedoston tai ohjaa käyttäjän pois sivustolta, täytyy tämän tiedon olla linkin yhteydessä sekä näkeville ja ruudunlukijakäyttäjille.",
-    "",
     ""
   ],
   "sections": [
@@ -18,13 +17,9 @@
       "title": "Mistä komponentti koostuu",
       "paragraphs": [
         {
-          "image.key": "",
-          "image.alt": "",
           "text": "Linkkien väri on Suomi.fi teemassa on sininen (highlightBase). Jos linkki on estetty, käytetään harmaata (depthBase). Linkit on Suomi.fi design systemissä esitetty ilman alleviivausta, jolloin linkki on hover-tilassa alleviivattu. Leipätekstin joukossa linkkitekstit alleviivataan, jotta ne erottuvat muusta tekstistä. Alleviivatut linkit ovat hover-tilassa ilman alleviivausta."
         },
         {
-          "image.key": "",
-          "image.alt": "",
           "text": "Vierailun jälkeisessä tilassa (visited state) linkin väri on violetti (accentTertiaryDark9). Tila indikoidaan kaikissa linkeissä lukuunottamatta päänavigaation linkkejä ja käänteisiä linkkejä. Huomioi, että jos muokkaat linkkien tilojen värejä, on hyvä valita värit, jotka erottuvat riittävästi toisistaan. Linkeissä ei ole välttämätöntä käyttää vierailun jälkeiselle tilalle eri väriä, mutta sen käytön on todettu parantavan huomattavasti tekstiä sisältävien näkymien luettavuutta. Lisäksi näin pystytään indikoimaan selkeämmin listanäkymissä käyttäjän jo vierailemat sivut."
         }
       ],
@@ -39,8 +34,6 @@
       "title": "Koko ja käyttö",
       "paragraphs": [
         {
-          "image.key": "",
-          "image.alt": "",
           "text": "Linkit eroavat painikkeista siinä, että ne eivät muokkaa tietoa tai käynnistä toimintoa. Linkit vievät käyttäjän uuteen paikkaan käyttöliittymässä tai kokonaan pois sivustolta (External Link)."
         }
       ],
@@ -55,8 +48,6 @@
       "title": "Komponentti käyttöliittymässä",
       "paragraphs": [
         {
-          "image.key": "",
-          "image.alt": "",
           "text": "Suomi.fi -palveluissa käytetään eri käyttötarkoituksiin erilaisia variaatioita linkistä."
         }
       ],

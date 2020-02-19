@@ -54,10 +54,7 @@
         }
       ],
       "links": [
-        {
-          "text": "WCAG 2.1 vaatimukset",
-          "url": "https://www.w3.org/TR/WCAG21/"
-        },
+        { "text": "WCAG 2.1 vaatimukset", "url": "https://www.w3.org/TR/WCAG21/" },
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]
@@ -103,21 +100,18 @@
         }
       ],
       "links": [
-        {
-          "text": "Source Sans Pro",
-          "url": "https://fonts.google.com/specimen/Source+Sans+Pro"
-        },
+        { "text": "Source Sans Pro", "url": "https://fonts.google.com/specimen/Source+Sans+Pro" },
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]
     },
     {
-      "title": "",
+      "title": "Otsikkotyylit (Heading)",
       "paragraphs": [
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Otsikoiden koot on määritelty erikseen sekä desktop-, että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Regular) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5 ja h6-otsikolle. Pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista.",
           "listItems": [
             { "text": "" },
             { "text": "" },

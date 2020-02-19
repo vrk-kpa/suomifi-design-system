@@ -29,10 +29,10 @@ source_file = locale/af/components.json
 source_lang = af
 type = KEYVALUEJSON
 
-[suomifi-design-system.panel-json]
-file_filter = locale/<lang>/panel.json
+[suomifi-design-system.expander-json]
+file_filter = locale/<lang>/expander.json
 minimum_perc = 0
-source_file = locale/af/panel.json
+source_file = locale/af/expander.json
 source_lang = af
 type = KEYVALUEJSON
 
@@ -168,3 +168,4 @@ minimum_perc = 0
 source_file = locale/af/icon.json
 source_lang = af
 type = KEYVALUEJSON
+

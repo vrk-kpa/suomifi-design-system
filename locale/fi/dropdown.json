@@ -9,9 +9,7 @@
     "Jos valintavaihtoehtoja on vain muutama, hyvä vaihtoehto pudotusvalikolle voi olla valintaruutu- tai valintanappikomponentti.",
     "Järjestä pudotusvalikon sisältö aakkosjärjestykseen tai relevanssin mukaan järjestäen.",
     "Nimikkeen (label) käyttäminen pudotusvalikon yhteydessä on suositeltavaa. Suomifin kielivalintakomponentissa nimiketieto on rakennettu komponenttiin, mutta teksti on piilotettu näkyvistä tyylisyistä.",
-    "",
-    "",
-    "",
+    "Estetty-tilassa pudotusvalikkoa koskevat samat tyylit kuin muita komponentteja vastaavassa tilassa. Suomifi-tyylin mukaiseen komponenttiin tämä tyyli on sisäänrakennettuna.",
     ""
   ],
   "sections": [

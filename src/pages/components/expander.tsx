@@ -15,7 +15,7 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['panel']}>
+  <NamespacesConsumer ns={['expander']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -43,7 +43,7 @@ const Page = (): JSX.Element => (
           filterProps={[]}
         >
           <ComponentExample>
-            <Expander title={t('panel.title')} noPadding>
+            <Expander title={t('expander.title')} noPadding>
               <p
                 style={{
                   margin: 0,
@@ -52,7 +52,7 @@ const Page = (): JSX.Element => (
                   color: suomifiDesignTokens.colors.whiteBase,
                 }}
               >
-                {t('panel.content')}
+                {t('expander.content')}
               </p>
             </Expander>
           </ComponentExample>
@@ -64,7 +64,9 @@ const Page = (): JSX.Element => (
           exampleFirst
         >
           <ComponentExample>
-            <Expander title={t('panel.title')}>{t('panel.content')}</Expander>
+            <Expander title={t('expander.title')}>
+              {t('expander.content')}
+            </Expander>
           </ComponentExample>
         </ComponentDescription>
 
@@ -78,9 +80,15 @@ const Page = (): JSX.Element => (
               OpenAll={t('group.open')}
               CloseAll={t('group.close')}
             >
-              <Expander title={t('panel.title')}>{t('panel.content')}</Expander>
-              <Expander title={t('panel.title')}>{t('panel.content')}</Expander>
-              <Expander title={t('panel.title')}>{t('panel.content')}</Expander>
+              <Expander title={t('expander.title')}>
+                {t('expander.content')}
+              </Expander>
+              <Expander title={t('expander.title')}>
+                {t('expander.content')}
+              </Expander>
+              <Expander title={t('expander.title')}>
+                {t('expander.content')}
+              </Expander>
             </Expander.group>
           </ComponentExample>
         </ComponentDescription>

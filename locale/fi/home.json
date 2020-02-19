@@ -2,7 +2,10 @@
   "title": "Etusivu",
   "intro.title": "Suomi.fi Design System – digipalvelujen yhteiset rakennuspalikat",
   "intro.description": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Kaikki komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti. ",
-
+  "note.title": "Tämä on ensimmäinen kehitysversio (alpha)",
+  "note.description": "Osallistu uuden palvelun kehittämiseen! Anna palautetta ja liity keskusteluun Suomidigin kehittäjät #designsystem Slack- kanavalla.",
+  "note.link.text": "Liity Slack -kanavalle",
+  "note.link.url": "https://suomidigi-kehittajat.slack.com/",
   "sections": [
     {
       "mainTitle": "Mitä Suomi.fi Design System sisältää?",
@@ -11,17 +14,12 @@
           "icon": "",
           "title": "Design System -sivusto",
           "paragraphs": [
-            {
-              "text": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto."
-            },
+            { "text": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto." },
             { "text": "" },
             { "text": "" }
           ],
           "links": [
-            {
-              "text": "Lue taustatietoja Suomi.fi Design Systemistä",
-              "url": "/info"
-            },
+            { "text": "Lue taustatietoja Suomi.fi Design Systemistä", "url": "/info" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]
@@ -30,12 +28,8 @@
           "icon": "",
           "title": "Käyttöliittymäkomponenttien kirjasto",
           "paragraphs": [
-            {
-              "text": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti."
-            },
-            {
-              "text": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa."
-            },
+            { "text": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti." },
+            { "text": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa." },
             { "text": "" }
           ],
           "links": [
@@ -48,14 +42,12 @@
           "icon": "",
           "title": "Suunnitteluaineisto",
           "paragraphs": [
-            {
-              "text": "Julkaisemme keväällä 2020 Design System -sivustolla myös käyttöliittymien suunnitteluaineistoja Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit. "
-            },
-            { "text": "" },
+            { "text": "Julkaisemme keväällä 2020 Design System -sivustolla myös käyttöliittymien suunnitteluaineistoja Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit. " },
+            { "text": "Onko sinulla ehdotuksia tai muuta palautetta?" },
             { "text": "" }
           ],
           "links": [
-            { "text": "", "url": "" },
+            { "text": "Yhteystiedot", "url": "/info" },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]

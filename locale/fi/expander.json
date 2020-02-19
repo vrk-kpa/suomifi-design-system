@@ -124,6 +124,6 @@
   "group.description": "Laajennuspaneeliryhmä koostuu useasta (kaksi tai useampi) päällekkäisestä yksittäisestä laajennuspaneelista. Laajennuspaneeliryhmä liittyy yhteen sisältökokonaisuuteen. Sivunäkymässä voi olla monta erillistä laajennuspaneeliryhmää jotka on selkeästi eritelty toisistaan alaotsikoita hyödyntäen. Yksittäisen laajennuspaneeliryhmän yläkulmassa on ‘Avaa kaikki’ toiminto, jonka avulla kaikki ryhmän paneelit saa halutessaan auki. Auki ollessa toiminto muuttuu muotoon \"Sulje kaikki\", jonka avulla kaikki ryhmän paneelit saa kiinni. Toiminto helpottaa käyttäjää pääsemään käsiksi heti koko sisältöön ja se myös parantaa paneelien sisällä olevasta sisällöstä etsimistä.",
   "group.open": "Avaa kaikki",
   "group.close": "Sulje kaikki",
-  "panel.title": "Paneeli",
-  "panel.content": "Paneelin sisältö"
+  "expander.title": "Paneeli",
+  "expander.content": "Paneelin sisältö"
 }

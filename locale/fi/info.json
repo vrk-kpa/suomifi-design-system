@@ -78,7 +78,7 @@
         }
       ],
       "links": [
-        { "text": "", "url": "" },
+        { "text": "Release Notes Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components/releases" },
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]
@@ -100,14 +100,8 @@
         }
       ],
       "links": [
-        {
-          "text": "Suomidigi.fi kehittäjät Slack-kanava",
-          "url": "https://suomidigi-kehittajat.slack.com"
-        },
-        {
-          "text": "Github",
-          "url": "https://github.com/vrk-kpa/suomifi-ui-components"
-        },
+        { "text": "Suomidigi.fi kehittäjät Slack-kanava", "url": "https://suomidigi-kehittajat.slack.com" },
+        { "text": "Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components" },
         { "text": "", "url": "" }
       ]
     }

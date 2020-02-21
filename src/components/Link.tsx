@@ -5,7 +5,7 @@ import {
   Link as SuomifiLink,
   suomifiDesignTokens,
 } from 'suomifi-ui-components';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 import { ensureTrailingSlash } from 'components/LinkUtil';
 

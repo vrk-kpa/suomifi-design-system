@@ -6,7 +6,7 @@ import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import { Panel } from 'components/ExampleComponents';
+import { Expander } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
@@ -15,7 +15,7 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['panel']}>
+  <NamespacesConsumer ns={['expander']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -43,7 +43,7 @@ const Page = (): JSX.Element => (
           filterProps={[]}
         >
           <ComponentExample>
-            <Panel.expansion title={t('panel.title')} noPadding>
+            <Expander title={t('expander.title')} noPadding>
               <p
                 style={{
                   margin: 0,
@@ -52,9 +52,9 @@ const Page = (): JSX.Element => (
                   color: suomifiDesignTokens.colors.whiteBase,
                 }}
               >
-                {t('panel.content')}
+                {t('expander.content')}
               </p>
-            </Panel.expansion>
+            </Expander>
           </ComponentExample>
         </ComponentDescription>
 
@@ -64,9 +64,9 @@ const Page = (): JSX.Element => (
           exampleFirst
         >
           <ComponentExample>
-            <Panel.expansion title={t('panel.title')}>
-              {t('panel.content')}
-            </Panel.expansion>
+            <Expander title={t('expander.title')}>
+              {t('expander.content')}
+            </Expander>
           </ComponentExample>
         </ComponentDescription>
 
@@ -76,20 +76,20 @@ const Page = (): JSX.Element => (
           exampleFirst
         >
           <ComponentExample>
-            <Panel.expansionGroup
+            <Expander.group
               OpenAll={t('group.open')}
               CloseAll={t('group.close')}
             >
-              <Panel.expansion title={t('panel.title')}>
-                {t('panel.content')}
-              </Panel.expansion>
-              <Panel.expansion title={t('panel.title')}>
-                {t('panel.content')}
-              </Panel.expansion>
-              <Panel.expansion title={t('panel.title')}>
-                {t('panel.content')}
-              </Panel.expansion>
-            </Panel.expansionGroup>
+              <Expander title={t('expander.title')}>
+                {t('expander.content')}
+              </Expander>
+              <Expander title={t('expander.title')}>
+                {t('expander.content')}
+              </Expander>
+              <Expander title={t('expander.title')}>
+                {t('expander.content')}
+              </Expander>
+            </Expander.group>
           </ComponentExample>
         </ComponentDescription>
       </Layout>

@@ -2,8 +2,8 @@ import React from 'react';
 import { Language } from '@wapps/gatsby-plugin-i18next';
 import { NamespacesConsumer } from 'react-i18next';
 import {
-  Menu,
-  MenuItem,
+  LanguageMenu,
+  LanguageMenuItem,
   Button,
   suomifiDesignTokens,
 } from 'suomifi-ui-components';
@@ -18,17 +18,17 @@ const MenuSwitcher = ({
 }: Props): JSX.Element => (
   <NamespacesConsumer ns={['language']}>
     {t => (
-      <Menu.language name={t(`${lng}.short`)} aria-label={t('menu.label')}>
+      <LanguageMenu name={t(`${lng}.short`)} aria-label={t('menu.label')}>
         {availableLngs.map(value => (
-          <MenuItem.language
+          <LanguageMenuItem
             key={value}
             onSelect={() => changeLng(value)}
             selected={value === lng}
           >
             {t(`${value}.long`)}
-          </MenuItem.language>
+          </LanguageMenuItem>
         ))}
-      </Menu.language>
+      </LanguageMenu>
     )}
   </NamespacesConsumer>
 );

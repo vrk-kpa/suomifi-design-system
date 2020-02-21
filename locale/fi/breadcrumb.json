@@ -1,72 +1,71 @@
 {
-  "title": "Murupolku (Breadcrumb)",
-  "intro": "Murupolku on navigaatiokomponentti, joka esittää käyttäjälle kulloisenkin näkymän sijainnin verkkopalvelun rakenteessa. Murupolun avulla käyttäjä voi liikkua verkkopalvelun sisältöhierarkiassa.",
-  "note.title": "Saavutettavuus",
-  "note.items": [
-    "Murupolun linkin nimen tulee olla sama kuin sen näkymän otsikko, johon linkki johtaa",
-    "Murupolku on piilotettu käyttöliittymän mobiilikoossa, koska sivun asiasisältöä halutaan korostaa tuomalla se mahdollisimman lähelle sivun alkua. Lisäksi murupolun käyttäminen mobiilinäkymässä on asettelun ja motorisen käytettävyyden kannalta haastavaa.",
-    "Murupolku ei lisää käytettävyyttä ja saavutettavuutta sellaisissa verkkopalveluissa, joiden rakenne koostuu vain muutamista tasoista",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
-  "sections": [
-    {
-      "title": "Mistä komponentti koostuu",
-      "paragraphs": [
+    "title": "Murupolku (Breadcrumb)",
+    "intro": "Murupolku on navigaatiokomponentti, joka esittää käyttäjälle kulloisenkin näkymän sijainnin verkkopalvelun rakenteessa. Murupolun avulla käyttäjä voi liikkua verkkopalvelun sisältöhierarkiassa.",
+    "note.title": "Saavutettavuus",
+    "note.items": [
+      "Murupolun linkin nimen tulee olla sama kuin sen näkymän otsikko, johon linkki johtaa",
+      "Murupolku on piilotettu käyttöliittymän mobiilikoossa, koska sivun asiasisältöä halutaan korostaa tuomalla se mahdollisimman lähelle sivun alkua. Lisäksi murupolun käyttäminen mobiilinäkymässä on asettelun ja motorisen käytettävyyden kannalta haastavaa.",
+      "Murupolku ei lisää käytettävyyttä ja saavutettavuutta sellaisissa verkkopalveluissa, joiden rakenne koostuu vain muutamista tasoista",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sections": [
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Murupolku koostuu palvelun eri tasot koostavasta linkkirivistä. Käyttäjän nykyisen sijainnin linkkilistan viimeisenä esittävä tieto ei toimi linkkinä ja se myös erotttuu visuaalisesti klikattavista linkeistä."
+          "title": "Mistä komponentti koostuu",
+          "paragraphs": [
+            {
+              "image.key": "",
+              "image.alt": "",
+              "text": "Murupolku koostuu palvelun eri tasot koostavasta linkkirivistä. Käyttäjän nykyisen sijainnin linkkilistan viimeisenä esittävä tieto ei toimi linkkinä ja se myös erotttuu visuaalisesti klikattavista linkeistä."
+            }
+          ],
+          "links": [
+            {
+              "text": "",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Koko ja käyttö",
+          "paragraphs": [
+            {
+              "image.key": "",
+              "image.alt": "",
+              "text": "Murupolkukomponenttia käytetään silloin kun halutaan auttaa käyttäjää ymmärtämään missä kyseinen sivu sijaitsee verkkopalvelun rakenteessa sekä missä kohtaa rakennetta käyttäjä parhaillaan on. Murupolku myös auttaa käyttäjää siirtymään tasolta toiselle verkkopalvelun sisältöhierarkiassa. Murupolut ovat hyödyllisiä erityisesti silloin kun käyttäjä saapuu näkymään etusivun ohittavalla suoralla linkillä tai esimerkiksi hakukoneen kautta."
+            }
+          ],
+          "links": [
+            {
+              "text": "",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Murupolku käyttöliittymässä",
+          "paragraphs": [
+            {
+              "image.key": "",
+              "image.alt": "",
+              "text": "Murupolku sijaitsee heti sivuston ylätunnisteen alapuolella."
+            }
+          ],
+          "links": [
+            {
+              "text": "",
+              "url": ""
+            }
+          ]
         }
       ],
-      "links": [
-        {
-          "text": "",
-          "url": ""
-        }
-      ]
-    },
-    {
-      "title": "Koko ja käyttö",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Murupolkukomponenttia käytetään silloin kun halutaan auttaa käyttäjää ymmärtämään missä kyseinen sivu sijaitsee verkkopalvelun rakenteessa sekä missä kohtaa rakennetta käyttäjä parhaillaan on. Murupolku myös auttaa käyttäjää siirtymään tasolta toiselle verkkopalvelun sisältöhierarkiassa. Murupolut ovat hyödyllisiä erityisesti silloin kun käyttäjä saapuu näkymään etusivun ohittavalla suoralla linkillä tai esimerkiksi hakukoneen kautta."
-        }
-      ],
-      "links": [
-        {
-          "text": "",
-          "url": ""
-        }
-      ]
-    },
-    {
-      "title": "Murupolku käyttöliittymässä",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Murupolku sijaitsee heti sivuston ylätunnisteen alapuolella."
-        }
-      ],
-      "links": [
-        {
-          "text": "",
-          "url": ""
-        }
-      ]
-    }
-  ],
-  "default.title": "",
-  "default.description": "",
-  "default.link1": "Etusivu",
-  "default.link2": "Alasivu",
-  "default.link3": "Alasivun alasivu"
+      "default.title": "",
+      "default.description": "",
+      "default.link1": "Etusivu",
+      "default.link2": "Alasivu",
+      "default.link3": "Alasivun alasivu"
+
 }

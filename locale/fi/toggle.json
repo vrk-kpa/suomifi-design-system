@@ -1,6 +1,6 @@
 {
   "title": "Valintakytkin (Toggle Switch)",
-  "intro": "Valintakytkintä käytetään kahden toisensa poissulkevan toimintavaihtoehdon vaihtamisessa.",
+  "intro": "Valintakytkintä käytetään esimerkiksi kahden toisensa pois sulkevan tilan tai toiminnan vaihtamisessa. Sitä ei pidä käyttää korvaamaan valintaruutu-komponenttia (checkbox). Käytä valintakytkintä harkiten. Suomi.fissa valintakytkin-komponenttia käytetään vain kriittiseen toimenpiteeseen, kuten tilamuutokseen sivustohausta viittomakielisten sisältöjen hauksi.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Kognitiivisen saavutettavuuden kannalta on suositeltavaa esittää selkeä ohjeistusteksti komponentin yhteydessä, koska valintakytkin muuttaa, piilottaa tai muokkaa sisältöä valinnan mukaisesti.",
@@ -16,7 +16,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Oheisteksti (Label) kertoo mitä ollaan kytkemässä päälle tai pois. Kytkin suorittaa vaakasuuntaisen edestakaisen toiminnon."
+          "text": "Otsake (Label) kertoo mitä ollaan kytkemässä päälle tai pois. Komponentissa on kaksi tilaa, pois päältä ja päällä. Pois päältä -tila on harmaa ja päällä-tila on pääosin vihreä. Valintakytkin voi olla myös disabloitu molemmissa tiloissa. Komponentin yhteyteen on hyvä liittää ohjeistusteksti, jotta käyttäjä ymmärtää mikä toimenpide tapahtuu kun valintakytkimen asentoa muutetaan."
         }
       ],
       "links": [
@@ -40,7 +40,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Valintakytkin piilottaa, vaihtaa, muuttaa sisällön tai näkymän valinnan mukaisesti. Toiminta tapahtuu välittömästi eikä vaadi käyttäjältä muuta erillistä vahvistusta. Valintakytkimessä on aina yksi oletustila valmiiksi valittuna. Valintakytkintä tulisi käyttää ainoastaan sellasissa tilanteissa, joissa käyttäjän täytyy valita kahdesta vastakkaisesta tilasta, esimerkiksi asettaa jokin toiminto päälle tai pois päältä. Muita vaihtoehtoja valintakytkimelle käyttöliittymässä on esimerkiksi valintapainike."
+          "text": "Valintakytkin piilottaa, vaihtaa, muuttaa sisällön tai näkymän valinnan mukaisesti. Toiminto tapahtuu välittömästi eikä vaadi käyttäjältä muuta erillistä vahvistusta. Valintakytkimessä on aina yksi oletustila valmiiksi valittuna. Valintakytkintä tulisi käyttää ainoastaan sellasissa tilanteissa, joissa käyttäjän täytyy valita kahdesta vastakkaisesta tilasta, esimerkiksi asettaa jokin toiminto päälle tai pois päältä."
         },
         {
           "image.key": "",

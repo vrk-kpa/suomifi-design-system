@@ -5,5 +5,5 @@
   "note.items": ["note.item", "note.item", "note.item", "note.item"],
 
   "exampleRegular.label": "exampleRegular.label",
-  "exampleDisabled.title": "exampleDisabled.label"
+  "exampleDisabled.label": "exampleDisabled.label"
 }

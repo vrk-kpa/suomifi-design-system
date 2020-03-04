@@ -1,6 +1,6 @@
 {
     "title": "Lohko (Block)",
-    "intro": "Lohko on sivun osiointiin tarkoitettu geneerinen alue joka edesauttaa Suomi.fi Design Systemin mukaisten tyylien käyttöä.",
+    "intro": "Lohko on sivun osiointiin tarkoitettu geneerinen alue, joka edesauttaa Suomi.fi Design Systemin mukaisten tyylien käyttöä.",
     "note.title": "Saavutettavuus ja käytettävyys",
     "note.items": [
       "Käyttäessäsi lohkoelementtiä, määrittele sille osion semanttinen merkitys.",

@@ -20,7 +20,7 @@
           "text": "Linkkien väri on Suomi.fi teemassa on sininen (highlightBase). Jos linkki on estetty, käytetään harmaata (depthBase). Linkit on Suomi.fi design systemissä esitetty ilman alleviivausta, jolloin linkki on hover-tilassa alleviivattu. Leipätekstin joukossa linkkitekstit alleviivataan, jotta ne erottuvat muusta tekstistä. Alleviivatut linkit ovat hover-tilassa ilman alleviivausta."
         },
         {
-          "text": "Vierailun jälkeisessä tilassa (visited state) linkin väri on violetti (accentTertiaryDark1). Tila indikoidaan kaikissa linkeissä lukuunottamatta päänavigaation linkkejä ja käänteisiä linkkejä. Huomioi, että jos muokkaat linkkien tilojen värejä, on hyvä valita värit, jotka erottuvat riittävästi toisistaan. Linkeissä ei ole välttämätöntä käyttää vierailun jälkeiselle tilalle eri väriä, mutta sen käytön on todettu parantavan huomattavasti tekstiä sisältävien näkymien luettavuutta. Lisäksi näin pystytään indikoimaan selkeämmin listanäkymissä käyttäjän jo vierailemat sivut."
+          "text": "Vierailun jälkeisessä tilassa (visited state) linkin väri on violetti (accentTertiaryDark9). Tila indikoidaan kaikissa linkeissä lukuunottamatta päänavigaation linkkejä ja käänteisiä linkkejä. Huomioi, että jos muokkaat linkkien tilojen värejä, on hyvä valita värit, jotka erottuvat riittävästi toisistaan. Linkeissä ei ole välttämätöntä käyttää vierailun jälkeiselle tilalle eri väriä, mutta sen käytön on todettu parantavan huomattavasti tekstiä sisältävien näkymien luettavuutta. Lisäksi näin pystytään indikoimaan selkeämmin listanäkymissä käyttäjän jo vierailemat sivut."
         }
       ],
       "links": [

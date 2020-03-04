@@ -176,3 +176,9 @@ source_file = locale/af/icon.json
 source_lang = af
 type = KEYVALUEJSON
 
+[suomifi-design-system.block-json]
+file_filter = locale/<lang>/block.json
+minimum_perc = 0
+source_file = locale/af/block.json
+source_lang = af
+type = KEYVALUEJSON

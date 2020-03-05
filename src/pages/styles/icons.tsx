@@ -3,15 +3,15 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens, Icon } from 'suomifi-ui-components';
+import { baseIcons, illustrativeIcons, doctypeIcons } from 'suomifi-icons';
 import {
-  allIcons,
-  IconKeys,
-  allStaticIcons,
-  StaticIconKeys,
-  allDoctypeIcons,
+  suomifiDesignTokens,
+  Icon,
+  StaticIcon,
+  BaseIconKeys,
+  IllustrativeIconKeys,
   DoctypeIconKeys,
-} from 'suomifi-icons';
+} from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -25,25 +25,31 @@ import { ReactComponent as Slack } from 'icons/slack.svg';
 const iconCategories = [
   {
     id: 'baseIcons',
-    icons: allIcons,
+    icons: baseIcons,
   },
   {
     id: 'illustrativeIcons',
-    icons: allStaticIcons.filter(icon => icon !== 'toggle'),
+    icons: illustrativeIcons,
   },
   {
     id: 'doctypeIcons',
-    icons: allDoctypeIcons,
+    icons: doctypeIcons,
   },
 ];
 
-const StyleIcon = styled(Icon)`
+const StyledIcon = styled(Icon)`
   height: 1.5em;
   width: 1.5em;
 `;
 
+const StyledStaticIcon = styled(StaticIcon)`
+  height: 256px;
+  width: 256px;
+`;
+
 const getExampleIcon = (
   id: string,
+  itemId: string,
   label: string,
   style?: CSSProperties,
 ): JSX.Element => (
@@ -63,15 +69,19 @@ const getExampleIcon = (
       ...style,
     }}
   >
-    <StyleIcon
-      icon={(id as any) as IconKeys | StaticIconKeys | DoctypeIconKeys}
-    />
+    {itemId === 'baseIcons' ? (
+      <StyledIcon icon={(id as any) as BaseIconKeys} />
+    ) : (
+      <StyledStaticIcon
+        icon={(id as any) as IllustrativeIconKeys | DoctypeIconKeys}
+      />
+    )}
     <div>{label}</div>
   </div>
 );
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['icons']}>
+  <NamespacesConsumer ns={['icons', 'static-icons']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -98,11 +108,11 @@ const Page = (): JSX.Element => (
               }}
             >
               {item.icons.map(icon => {
-                return item.id === 'baseIcons'
-                  ? getExampleIcon(icon, t(`${icon}.label`))
-                  : getExampleIcon(icon, t(`${icon}.label`), {
-                      width: '256px',
-                    });
+                const label =
+                  item.id === 'baseIcons'
+                    ? t(`${icon}.label`)
+                    : t(`static-icons:${icon}.label`);
+                return getExampleIcon(icon, item.id, label);
               })}
             </ComponentExample>
           </ComponentDescription>

@@ -33,8 +33,8 @@
     "react-responsive": "^6.1.1",
     "react-syntax-highlighter": "^10.1.2",
     "styled-components": "4.3.2",
-    "suomifi-icons": "0.0.12",
-    "suomifi-ui-components": "0.6.1"
+    "suomifi-icons": "0.1.0",
+    "suomifi-ui-components": "0.7.0"
   },
   "resolutions": {
     "@wapps/gatsby-plugin-i18next/i18next": "^15.0.6",

@@ -128,8 +128,8 @@ const Page: React.FC = (): React.ReactElement => {
           </ComponentDescription>
 
           <ComponentDescription
-            mainTitle={t('illustrationIcons.title')}
-            description={t('illustrationIcons.description')}
+            mainTitle={t('illustrativeIcons.title')}
+            description={t('illustrativeIcons.description')}
             exampleFirst
           >
             <ComponentExample

@@ -1,6 +1,10 @@
 import React from 'react';
-import { suomifiDesignTokens, Icon } from 'suomifi-ui-components';
-import { StaticIconKeys } from 'suomifi-icons';
+import {
+  suomifiDesignTokens,
+  StaticIcon,
+  IllustrativeIconKeys,
+  DoctypeIconKeys,
+} from 'suomifi-ui-components';
 
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import LinkList from 'components/LinkList';
@@ -22,7 +26,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           fontSize: '50px',
         }}
       >
-        <Icon icon={block.icon} />
+        <StaticIcon icon={block.icon} />
       </div>
     )}
     {!!block.title && <Heading.h2>{block.title}</Heading.h2>}
@@ -108,7 +112,7 @@ interface Props {
 }
 
 interface Block {
-  icon?: StaticIconKeys;
+  icon?: IllustrativeIconKeys | DoctypeIconKeys;
   title: string;
   paragraphs: ParagraphProps[];
   links: LinkProps[];

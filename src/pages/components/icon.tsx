@@ -12,15 +12,28 @@ import Section from 'components/Section';
 import NoteBox from 'components/NoteBox';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Paragraph, Text } from 'components/ResponsiveComponents';
-import { Icon as SuomifiIcon } from 'components/ExampleComponents';
-import { suomifiDesignTokens, Link, IconProps } from 'suomifi-ui-components';
+import {
+  Icon as SuomifiIcon,
+  StaticIcon as SuomifiStaticIcon,
+} from 'components/ExampleComponents';
+import {
+  suomifiDesignTokens,
+  Link,
+  IconProps,
+  StaticIconProps,
+} from 'suomifi-ui-components';
 
 /**
  * Wrapper to show all icons as bigger for better visiblity
  */
-const Icon = (props: IconProps) => {
+const Icon = (props: IconProps): JSX.Element => {
   const newProps = { ...props, width: '2em', height: '2em' };
   return <SuomifiIcon {...newProps} />;
+};
+
+const StaticIcon = (props: StaticIconProps): JSX.Element => {
+  const newProps = { ...props, width: '4em', height: '4em' };
+  return <SuomifiStaticIcon {...newProps} />;
 };
 
 const Page: React.FC = (): React.ReactElement => {
@@ -115,8 +128,8 @@ const Page: React.FC = (): React.ReactElement => {
           </ComponentDescription>
 
           <ComponentDescription
-            mainTitle={t('illustrationIcons.title')}
-            description={t('illustrationIcons.description')}
+            mainTitle={t('illustrativeIcons.title')}
+            description={t('illustrativeIcons.description')}
             exampleFirst
           >
             <ComponentExample
@@ -126,7 +139,7 @@ const Page: React.FC = (): React.ReactElement => {
                 border: 'none',
               }}
             >
-              <Icon icon="staticIllustrationHands" />
+              <StaticIcon icon="collaboration" />
             </ComponentExample>
           </ComponentDescription>
 
@@ -142,7 +155,7 @@ const Page: React.FC = (): React.ReactElement => {
                 border: 'none',
               }}
             >
-              <Icon icon="doc" />
+              <StaticIcon icon="doc" />
             </ComponentExample>
           </ComponentDescription>
 

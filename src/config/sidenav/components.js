@@ -1,9 +1,9 @@
 import React from 'react';
-import { Icon } from 'suomifi-ui-components';
+import { StaticIcon } from 'suomifi-ui-components';
 
 export default t => ({
   title: t('components:title'),
-  icon: <Icon icon="staticIllustrationPuzzle" />,
+  icon: <StaticIcon icon="puzzle" />,
   items: [
     {
       to: '/components/',

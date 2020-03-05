@@ -120,6 +120,13 @@ source_file = locale/af/icons.json
 source_lang = af
 type = KEYVALUEJSON
 
+[suomifi-design-system.static-icons-json]
+file_filter = locale/<lang>/static-icons.json
+minimum_perc = 0
+source_file = locale/af/static-icons.json
+source_lang = af
+type = KEYVALUEJSON
+
 [suomifi-design-system.dropdown-json]
 file_filter = locale/<lang>/dropdown.json
 minimum_perc = 0

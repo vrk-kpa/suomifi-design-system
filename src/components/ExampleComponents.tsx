@@ -10,6 +10,7 @@ import {
   TextInput as OrigTextInput,
   SearchInput as OrigSearchInput,
   Icon as OrigIcon,
+  StaticIcon as OrigStaticIcon,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -45,3 +46,6 @@ addDisplayNames(SearchInput, OrigSearchInput, 'SearchInput');
 
 export class Icon extends OrigIcon {}
 addDisplayNames(Icon, OrigIcon, 'Icon');
+
+export class StaticIcon extends OrigStaticIcon {}
+addDisplayNames(StaticIcon, OrigStaticIcon, 'StaticIcon');

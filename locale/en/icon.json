@@ -12,7 +12,8 @@
           "image.alt": "",
           "text": ""
         }
-      ]}
+      ]
+    }
   ],
   "allIconsPageLink.title": "",
   "basicIcons.title": "",
@@ -21,6 +22,8 @@
   "infoIcons.description": "",
   "additionalInfoIcons.title": "",
   "additionalInfoIcons.description": "",
+  "illustrationIcons.title": "",
+  "illustrationIcons.description": "",
   "attachmentIcons.title": "",
   "attachmentIcons.description": "",
   "signLanguageIcons.title": "",

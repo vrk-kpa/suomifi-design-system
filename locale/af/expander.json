@@ -124,6 +124,6 @@
   "group.description": "group.description",
   "group.open": "group.open",
   "group.close": "group.close",
-  "panel.title": "panel.title",
-  "panel.content": "panel.content"
+  "expander.title": "expander.title",
+  "expander.content": "expander.content"
 }

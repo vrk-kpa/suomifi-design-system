@@ -1,9 +1,9 @@
 {
   "title": "Suunnittelijoille",
-  "intro": "Tulemme jatkossa julkaisemaan Design System -sivustolla myös käyttöliittymien suunnitteluaineiston Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit.",
+  "intro": "Suomi.fi-palvelujen yhtenäinen käyttökokemus syntyy yhteisen suunnittelukirjaston ja yhtenäisen suunnitteluprosessin avulla. Yhteisten toimintatapojen avulla suunnittelutiimi pystyy toimimaan nopeasti ja yhdenmukaisesti, ja tämä myös tehostaa suunnittelijoiden ja kehittäjien välistä työskentelyä.",
   "sections": [
     {
-      "title": "",
+      "title": "Suomi.fi-palvelujen keskeiset suunnitteluperiaatteet",
       "paragraphs": [
         {
           "image.key": "",
@@ -54,7 +54,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Kaikki Suomi.fi-kokonaisuuteen kuuluvat eri palvelut käyttävät Suomi.fi-brändiä, jota hallinnoi Väestörekisterikeskus. Suomi.fi Design System kirjaston käyttöliittymäkomponentit hyödyntävät Suomi.fi brändin visuaalista ilmettä.",
+          "text": "Tuotamme yhdenmukaisia yksittäisiä suunnitteluelementtejä, joita käytetään sivustorakenteen eri kohdissa. Käyttämällä samanlaisia elementtejä johdonmukaisesti, tuotamme palvelun käyttäjälle intuitiivisen ja ymmärrettävän käyttökokemuksen. Määritämme sivustorakenteen eri tasoille sivujen mallipohjat (templatet), joita käytämme yhtenäisesti läpi verkkopalvelun.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -100,7 +100,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Suomi.fi-palveluissa on käytössä aina viimeisimmät suunnitteluratkaisut ja suunnittelukirjastomme on ajantasainen. Suunnittelemamme käyttöliittymäratkaisut toteutetaan moderneilla web-teknologioilla, jolloin tuotamme laadukkaan, helppokäyttöisen ja suorituskyvyltään korkeatasoisen käyttöliittymäkerroksen.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -146,7 +146,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Kaikki suunnittelemamme ratkaisut ovat jo lähtökohdiltaan saavutettavia WCAG 2.1 -kriteeristöjen mukaisesti. Apuvälinekäytön lisäksi huomioimme suunnittelussa myös kognitiivisen saavutettavuuden. Varmistamme saavutettavuuden toteutumisen saavutettavuusasiantuntijoiden avulla.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -192,7 +192,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Suunnittelemamme palvelu on johdonmukaisesti rakentunut ja käyttäjällä on koko ajan ymmärrys siitä, missä kohdin palvelua hän on. Suunnitteluratkaisut toistuvat läpi palvelun samanlaisina. Kaikki Suomi.fi-palvelut hyödyntävät samoja designperiaatteita ja käytäntöjä. Näin toimimalla varmistamme yhtenäisen käyttökokemuksen läpi palvelurajojen.",
           "listItems": [
             { "text": "" },
             { "text": "" },

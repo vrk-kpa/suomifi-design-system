@@ -1,10 +1,10 @@
 {
   "title": "Typografia",
-  "intro": "",
+  "intro": "Suomifin typografia teema koostuu kooltaan ja tyyliltään määritellyistä tekstikomponenteista / -tokeneista.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
-    "Otsikointihierarkia on yhtenäinen (h1, h2, h3, h4, h5, h6), eikä välistä saa puuttua otsikkotasoja. Oikea heading-tasojen hierarkia tukee rakenteen hahmottamista.",
+    "Otsikointihierarkia on yhtenäinen (h1, h2, h3, h4, h5), eikä välistä saa puuttua otsikkotasoja. Oikea heading-tasojen hierarkia tukee rakenteen hahmottamista.",
     "Otsikkotasojen puuttuminen välistä tai otsikkotasojen epäjärjestys vaikeuttaa sisällön hahmottamista ruudunlukijaa käytettäessä. Ruudunlukija tulkitsee vain heading-merkityt komponentit otsikoiksi.",
     "Huomioi tekstiä koskevia WCGA 2.1 ohjeistuksia: 1.4.3 Contrast (Minimum), 1.4.4 Resize text, 1.4.12 Text Spacing.",
     "",
@@ -150,98 +150,10 @@
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]
-    },
-    {
-      "title": "Tekstityylit ",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Lähtökohtaisesti käytetään 18px fonttia. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Leipäteksteissä (body text) käytetään Source Sans Pro Regular -fonttia, mutta joskus jotain tekstiosuutta halutaan korostaa ja käytetään Source Sans Pro Semibold -fonttia. Nämä korostukset on pääasiallisesti määritelty komponenteittain tai esimerkiksi otsikkotyyleissä. Joissain harvoissa tapauksissa käytetään Source Sans Pro Italic fonttia, kuten placeholder -tekstinä komponenteissa.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
     }
-  ]
+  ],
+  "heading.title": "Otsikkotyylit (Heading)",
+  "heading.description": "Otsikoiden koot on määritelty erikseen sekä desktop-, että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Regular) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5-otsikolle. Pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista.",
+  "textstyles.title": "Tekstityylit",
+  "textstyles.description": "Lähtökohtaisesti käytetään 18px fonttia. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Leipäteksteissä käytetään Source Sans Pro Regular -fonttia, mutta joskus jotain tekstiosuutta halutaan korostaa ja käytetään Source Sans Pro Semibold -fonttia. Nämä korostukset on pääasiallisesti määritelty komponenteittain tai esimerkiksi otsikkotyyleissä. Joissain harvoissa tapauksissa käytetään Source Sans Pro Italic fonttia, kuten placeholder -tekstinä komponenteissa."
 }

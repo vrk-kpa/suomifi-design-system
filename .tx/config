@@ -29,10 +29,10 @@ source_file = locale/af/components.json
 source_lang = af
 type = KEYVALUEJSON
 
-[suomifi-design-system.panel-json]
-file_filter = locale/<lang>/panel.json
+[suomifi-design-system.expander-json]
+file_filter = locale/<lang>/expander.json
 minimum_perc = 0
-source_file = locale/af/panel.json
+source_file = locale/af/expander.json
 source_lang = af
 type = KEYVALUEJSON
 
@@ -96,6 +96,76 @@ type = KEYVALUEJSON
 file_filter = locale/<lang>/accessibility-statement.json
 minimum_perc = 0
 source_file = locale/af/accessibility-statement.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.breadcrumb-json]
+file_filter = locale/<lang>/breadcrumb.json
+minimum_perc = 0
+source_file = locale/af/breadcrumb.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.toggle-json]
+file_filter = locale/<lang>/toggle.json
+minimum_perc = 0
+source_file = locale/af/toggle.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.icons-json]
+file_filter = locale/<lang>/icons.json
+minimum_perc = 0
+source_file = locale/af/icons.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.dropdown-json]
+file_filter = locale/<lang>/dropdown.json
+minimum_perc = 0
+source_file = locale/af/dropdown.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.link-json]
+file_filter = locale/<lang>/link.json
+minimum_perc = 0
+source_file = locale/af/link.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.heading-json]
+file_filter = locale/<lang>/heading.json
+minimum_perc = 0
+source_file = locale/af/heading.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.text-json]
+file_filter = locale/<lang>/text.json
+minimum_perc = 0
+source_file = locale/af/text.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.textinput-json]
+file_filter = locale/<lang>/textinput.json
+minimum_perc = 0
+source_file = locale/af/textinput.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.searchinput-json]
+file_filter = locale/<lang>/searchinput.json
+minimum_perc = 0
+source_file = locale/af/searchinput.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.icon-json]
+file_filter = locale/<lang>/icon.json
+minimum_perc = 0
+source_file = locale/af/icon.json
 source_lang = af
 type = KEYVALUEJSON
 

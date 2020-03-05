@@ -1,0 +1,35 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": ["note.item", "note.item", "note.item", "note.item"],
+  "sections": [
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": []
+    }
+  ],
+  "allIconsPageLink.title": "allIconsPageLink.title",
+  "basicIcons.title": "basicIcons.title",
+  "basicIcons.description": "basicIcons.description",
+  "infoIcons.title": "infoIcons.title",
+  "infoIcons.description": "infoIcons.description",
+  "additionalInfoIcons.title": "additionalInfoIcons.title",
+  "additionalInfoIcons.description": "additionalInfoIcons.description",
+  "illustrationIcons.title": "illustrationIcons.title",
+  "illustrationIcons.description": "illustrationIcons.description",
+  "attachmentIcons.title": "attachmentIcons.title",
+  "attachmentIcons.description": "attachmentIcons.description",
+  "signLanguageIcons.title": "signLanguageIcons.title",
+  "signLanguageIcons.description": "signLanguageIcons.description",
+  "signLanguageIconsLink.title": "signLanguageIconsLink.title",
+  "signLanguageIconsLink.url": "signLanguageIconsLink.url",
+  "externalLink.label": "externalLink.label"
+}

@@ -2,16 +2,7 @@
   "title": "",
   "intro": "",
   "note.title": "",
-  "note.items": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    ""
-  ],
+  "note.items": ["", "", ""],
   "sections": [
     {
       "title": "",
@@ -50,6 +41,11 @@
     {
       "title": "",
       "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
         {
           "image.key": "",
           "image.alt": "",
@@ -116,14 +112,10 @@
       ]
     }
   ],
-  "nopadding.title": "",
-  "nopadding.description": "",
-  "single.title": "",
-  "single.description": "",
-  "group.title": "",
-  "group.description": "",
-  "group.open": "",
-  "group.close": "",
-  "panel.title": "",
-  "panel.content": ""
+  "default.title": "",
+  "default.description": "",
+  "body.title": "",
+  "body.description": "",
+  "lead.title": "",
+  "lead.description": ""
 }

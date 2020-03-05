@@ -54,54 +54,5 @@
         }
       ]
     }
-  ],
-  "framedSections": [
-    {
-      "mainTitle": "",
-      "blocks": [
-        {
-          "icon": "",
-          "title": "",
-          "paragraphs": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ],
-          "links": [
-            { "text": "", "url": "" },
-            { "text": "", "url": "" },
-            { "text": "", "url": "" }
-          ]
-        },
-        {
-          "icon": "",
-          "title": "",
-          "paragraphs": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ],
-          "links": [
-            { "text": "", "url": "" },
-            { "text": "", "url": "" },
-            { "text": "", "url": "" }
-          ]
-        },
-        {
-          "icon": "",
-          "title": "",
-          "paragraphs": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ],
-          "links": [
-            { "text": "", "url": "" },
-            { "text": "", "url": "" },
-            { "text": "", "url": "" }
-          ]
-        }
-      ]
-    }
   ]
 }

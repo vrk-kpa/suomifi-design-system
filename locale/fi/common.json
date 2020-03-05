@@ -16,7 +16,7 @@
     { "text": "Saavutettavuusseloste", "url": "/accessibility-statement" },
     { "text": "Suomidigi.fi", "url": "https://beta.suomidigi.fi/" }
   ],
-  "footer.social.title": "Tämä on Suomi.fi Design Systemin julkinen kehitysversio (beta)",
+  "footer.social.title": "Tämä on Suomi.fi Design Systemin julkinen kehitysversio (alpha)",
   "footer.social.description": "Voit osallistua kehittämiseen Suomidigin Slack-yhteisössä tai Githubissa.",
   "slack.link.text": "suomidigi-kehittajat",
   "slack.link.url": "https://suomidigi-kehittajat.slack.com",

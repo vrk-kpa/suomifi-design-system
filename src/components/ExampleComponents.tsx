@@ -11,6 +11,7 @@ import {
   SearchInput as OrigSearchInput,
   Icon as OrigIcon,
   StaticIcon as OrigStaticIcon,
+  Block as OrigBlock,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -49,3 +50,6 @@ addDisplayNames(Icon, OrigIcon, 'Icon');
 
 export class StaticIcon extends OrigStaticIcon {}
 addDisplayNames(StaticIcon, OrigStaticIcon, 'StaticIcon');
+
+export class Block extends OrigBlock {}
+addDisplayNames(Block, OrigBlock, 'Block');

@@ -30,7 +30,7 @@
           {
             "image.key": "",
             "image.alt": "",
-            "text": "Lohkoelementille voidaan myös antaa Suomi.fi tyylien mukaisia tyylimääreitä. Tyylit voidaan antaa komponentille suoraan parametreina, mikä poistaa tarpeen tyylien määrittelemiselle erikseen ja edesauttaa Suomi.fi Design Systemin mukaisten tyylien käyttöä. Lohkoelementti saa myös automaattesesti Suomi.fi tyylien mukaiset fonttimääreet."
+            "text": "Lohkoelementille voidaan myös antaa Suomi.fi tyylien mukaisia tyylimääreitä. Tyylit voidaan antaa komponentille suoraan parametreina, mikä poistaa tarpeen tyylien määrittelemiselle erikseen ja edesauttaa Suomi.fi Design Systemin mukaisten tyylien käyttöä. Lohkoelementti saa myös automaattisesti Suomi.fi tyylien mukaiset fonttimääreet."
           },
           {
             "image.key": "",

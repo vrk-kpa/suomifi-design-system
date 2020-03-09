@@ -12,6 +12,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import { Block } from 'components/ExampleComponents';
+import NotificationBox from 'components/NotificationBox';
 
 const Page: React.FC = (): React.ReactElement => {
   return (
@@ -20,6 +21,7 @@ const Page: React.FC = (): React.ReactElement => {
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
           <Heading.h1>{t('title')}</Heading.h1>
+          <NotificationBox />
 
           <Paragraph.lead>
             <Text.lead>{t('intro')}</Text.lead>

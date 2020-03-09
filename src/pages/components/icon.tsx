@@ -30,11 +30,13 @@ const Icon = (props: IconProps): JSX.Element => {
   const newProps = { ...props, width: '2em', height: '2em' };
   return <SuomifiIcon {...newProps} />;
 };
+Icon.displayName = 'Icon';
 
 const StaticIcon = (props: StaticIconProps): JSX.Element => {
   const newProps = { ...props, width: '4em', height: '4em' };
   return <SuomifiStaticIcon {...newProps} />;
 };
+StaticIcon.displayName = 'StaticIcon';
 
 const Page: React.FC = (): React.ReactElement => {
   return (

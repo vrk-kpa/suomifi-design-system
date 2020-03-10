@@ -86,7 +86,6 @@ const getExampleComp = (
 );
 
 const Page = (): JSX.Element => {
-  console.log(components);
   return (
     <NamespacesConsumer ns={['button']}>
       {t => (
@@ -118,9 +117,7 @@ const Page = (): JSX.Element => {
               style={{
                 overflow: 'hidden',
                 marginBottom: suomifiDesignTokens.spacing.m,
-                padding: `${suomifiDesignTokens.spacing.l} ${
-                  suomifiDesignTokens.spacing.m
-                } 0 ${suomifiDesignTokens.spacing.m}`,
+                padding: `${suomifiDesignTokens.spacing.l} ${suomifiDesignTokens.spacing.m} 0 ${suomifiDesignTokens.spacing.m}`,
                 background: suomifiDesignTokens.colors.whiteBase,
                 display: 'flex',
                 justifyContent: 'center',
@@ -132,9 +129,7 @@ const Page = (): JSX.Element => {
                   <div
                     key={item.id}
                     style={{
-                      padding: `${suomifiDesignTokens.spacing.m} ${
-                        suomifiDesignTokens.spacing.s
-                      }`,
+                      padding: `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.s}`,
                     }}
                   >
                     {getExampleComp(

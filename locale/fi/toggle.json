@@ -4,7 +4,7 @@
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Kognitiivisen saavutettavuuden kannalta on suositeltavaa esittää selkeä ohjeistusteksti komponentin yhteydessä, koska valintakytkin muuttaa, piilottaa tai muokkaa sisältöä valinnan mukaisesti.",
-    "Käytä valintakytkintä harkiten. Suomi.fissä valintakytkin-komponenttia käytetään vain tilan muutokseen. Esimerksiksi Suomi.fin hakutoiminnossa valintakytkimellä saa hakutuloksissa näkyviin vain viittomakielisten sisältöjen hakutulokset.",
+    "Käytä valintakytkintä harkiten. Suomi.fi:ssä valintakytkin-komponenttia käytetään vain tilan muutokseen. Esimerksiksi Suomi.fi:n hakutoiminnossa valintakytkimellä saa hakutuloksissa näkyviin vain viittomakielisten sisältöjen hakutulokset.",
     "",
     "",
     ""

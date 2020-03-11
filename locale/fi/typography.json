@@ -1,6 +1,6 @@
 {
   "title": "Typografia",
-  "intro": "Suomi.fin typografiateema sisältää kooltaan ja tyyliltään määritellyt tekstikomponentit ja tekstitokenit.",
+  "intro": "Suomi.fi:n typografiateema sisältää kooltaan ja tyyliltään määritellyt tekstikomponentit ja tekstitokenit.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
@@ -106,12 +106,12 @@
       ]
     },
     {
-      "title": "Otsikkotyylit (Heading)",
+      "title": "",
       "paragraphs": [
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Otsikoiden koot on määritelty erikseen sekä desktop- että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Regular) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5 ja h6-otsikolle. Etusivun pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista.",
+          "text": "",
           "listItems": [
             { "text": "" },
             { "text": "" },

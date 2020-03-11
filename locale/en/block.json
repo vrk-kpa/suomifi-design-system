@@ -1,55 +1,54 @@
 {
-    "title": "",
-    "intro": "",
-    "note.title": "",
-    "note.items": [
-      "",
-      "",
-      ""
-    ],
-    "sections": [
-      {
-        "title": "",
-        "paragraphs": [
-          {
-            "image.key": "",
-            "image.alt": "",
-            "text": ""
-          }
-        ],
-        "links": [
-          {
-            "text": "",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "title": "",
-        "paragraphs": [
-          {
-            "image.key": "",
-            "image.alt": "",
-            "text": ""
-          },
-          {
-            "image.key": "",
-            "image.alt": "",
-            "text": ""
-          }
-        ],
-        "links": [
-          {
-            "text": "",
-            "url": ""
-          },
-          {
-            "text": "",
-            "url": ""
-          }
-        ]
-      }
-    ],
-    "example.content": ""
-  }
-  
+  "title": "",
+  "intro": "",
+  "note.title": "",
+  "note.items": [
+    "",
+    "",
+    ""
+  ],
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.title": ""
+}

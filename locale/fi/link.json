@@ -5,7 +5,7 @@
   "note.items": [
     "Linkin tulee olla kuvaava ja sen tarkoituksen ymmärrettävissä pelkästä linkin nimestä.",
     "Linkin nimen on hyvä vastata sen sivun otsikkoa, jonne linkki käyttäjän ohjaa.",
-    "Vältä yleisluontoisia "Lue lisää"-tyyppisiä linkkejä. Jos linkki kuitenkin halutaan esittää yleisluontoisena, voidaan ruudunlukijaa varten lisätä Aria-teknologialla lisätieto kohdesivusta tyyliin: \"Lue lisää aiheesta Vanhemmuuden tuki\".",
+    "Vältä yleisluontoisia \"Lue lisää\"-tyyppisiä linkkejä. Jos linkki kuitenkin halutaan esittää yleisluontoisena, voidaan ruudunlukijaa varten lisätä Aria-teknologialla lisätieto kohdesivusta tyyliin: \"Lue lisää aiheesta Vanhemmuuden tuki\".",
     "Linkkityylin tulee olla yhtenäinen. Suomi.fi Design Systemissä päädyttiin kuitenkin selkeyden vuoksi esittämään leipätekstin ulkopuoliset linkit ilman alleviivausta, koska jokaisen kohdan alleviivaus teki listoista vaikealukuisia. Poikkeuksena tähän luetaan myös navigaatiot, joissa ei käytetä linkkityylejä.",
     "Yleensä heading-luokituksen mukainen otsikko ei ole linkki, vaan linkki esitetään erillisenä komponenttina. Poikkeuksena kuitenkin listaukset, jolloin linkin toistaminen jokaisen yksikön yhteydessä lisäisi listauksen pituutta.",
     "Vältä saman linkin toistumista näkymässä samalla tai eri nimellä.",
@@ -63,7 +63,7 @@
   "exampleRegular.description": "Kirjasinkoko ja leikkaus on tasapainossa muun sisällön kanssa.",
   "exampleRegular.linkText": "Esimerkkilinkki",
   "exampleExternal.title": "Ulkoinen linkki (External link)",
-  "exampleExternal.description": "Ulkoiset linkit ovat linkkejä, jotka ohjaavat käyttäjän pois sivustolta. Ulkoiset linkit avataan uuteen välilehteen/ikkunaan. Linkeissä käytetään aina ulkoisen linkin symboloivaa ikonia sekä ruudunlukijakäyttäjille myös sanallista tietoa "Avautuu uuteen ikkunaan". ",
+  "exampleExternal.description": "Ulkoiset linkit ovat linkkejä, jotka ohjaavat käyttäjän pois sivustolta. Ulkoiset linkit avataan uuteen välilehteen/ikkunaan. Linkeissä käytetään aina ulkoisen linkin symboloivaa ikonia sekä ruudunlukijakäyttäjille myös sanallista tietoa \"Avautuu uuteen ikkunaan\". ",
   "exampleExternal.linkText": "Ulkoinen linkki",
   "exampleExternal.label": "Avautuu uuteen ikkunaan"
 }

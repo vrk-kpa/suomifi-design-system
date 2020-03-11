@@ -2,7 +2,7 @@
   "title": "Hakukenttä (Search Input)",
   "intro": "Hakukentän avulla käyttäjä voi etsiä tarvitsemaansa sisältöä sivustolta tai sovelluksesta hakusanoja käyttäen. Hakukenttä on käyttäjän tukena, mikäli hän ei löydä etsimäänsä sisältöä navigoimalla.",
   "note.title": "Saavutettavuus ja käytettävyys",
-  "note.items": ["Suurennuslasi-ikoni on yleisesti tunnettu tunniste hakutoiminnolle ja sen vuoksi sitä ei ole välttämätöntä yhdistää visuaalisesti sanaan 'haku'. Ruudunlukijalle kerrotaan kuitenkin toiminnon nimi siihen saavuttaessa.", "Hakukenttää kannattaa käyttää, sillä useimmat käyttäjät hyötyvät siitä, että he voivat etsiä sisältöä sivustolta tai sovelluksesta.", "Jos toteutuksen kokonaisuus on pieni ja yksinkertainen (single page ratkaisu) hakukenttää ei kuitenkaan tarvitse välttämättä käyttää.", "Käytä label-otsikkoa ruudunlukijaa varten, vaikka se olisi visuaalisesti piilotettu. Otsikko on sisäänrakennettuna ja vaadittuna tietona komponentissa."],
+  "note.items": ["Suurennuslasi-ikoni on yleisesti tunnettu tunniste hakutoiminnolle ja sen vuoksi sitä ei ole välttämätöntä yhdistää visuaalisesti sanaan \"haku\". Ruudunlukijalle kerrotaan kuitenkin toiminnon nimi siihen saavuttaessa.", "Hakukenttää kannattaa käyttää, sillä useimmat käyttäjät hyötyvät siitä, että he voivat etsiä sisältöä sivustolta tai sovelluksesta.", "Jos toteutuksen kokonaisuus on pieni ja yksinkertainen (single page ratkaisu) hakukenttää ei kuitenkaan tarvitse välttämättä käyttää.", "Käytä label-otsikkoa ruudunlukijaa varten, vaikka se olisi visuaalisesti piilotettu. Otsikko on sisäänrakennettuna ja vaadittuna tietona komponentissa."],
 
   "exampleRegular.label": "Hakukenttä"
 }

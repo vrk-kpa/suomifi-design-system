@@ -6,7 +6,7 @@
     "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
     "Otsikointihierarkian tulee olla yhtenäinen (h1, h2, h3, h4, h5), eikä välistä saa puuttua otsikkotasoja. Oikea otsikkotasojen hierarkia tukee rakenteen hahmottamista.",
     "Otsikkotasojen puuttuminen välistä tai otsikkotasojen epäjärjestys vaikeuttaa sisällön hahmottamista ruudunlukijaa käytettäessä. Ruudunlukija tulkitsee vain heading-merkityt komponentit otsikoiksi.",
-    "Huomioi tekstiä koskevia WCGA 2.1 ohjeistuksia: 1.4.3 Contrast (Minimum), 1.4.4 Resize text, 1.4.12 Text Spacing.",
+    "Huomioi tekstiä koskevat saavutettavuusohjeistukset (WCAG 2.1): 1.4.3 Kontrasti (minimi), 1.4.4 Tekstin koon muuttaminen, 1.4.12 Tekstin välistys.",
     ""
   ],
   "sections": [
@@ -31,8 +31,8 @@
       ],
       "links": [
         {
-          "text": "WCAG 2.1 vaatimukset",
-          "url": "https://www.w3.org/TR/WCAG21/"
+          "text": "Verkkosisällön saavutettavuusohjeet (WCAG) 2.1",
+          "url": "https://www.w3.org/Translations/WCAG21-fi/"
         },
         {
           "text": "",
@@ -50,7 +50,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Otsikoiden koot on määritelty erikseen sekä desktop-, että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Normal) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5-otsikolle. Pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista."
+          "text": "Otsikoiden koot on määritelty erikseen sekä desktop- että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Normal) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5-otsikolle. Etusivun pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista."
         },
         {
           "image.key": "",
@@ -65,7 +65,7 @@
       ],
       "links": [
         {
-          "text": "Enemmän Suomi.fi teeman typografiamäärittelyistä löytyy Tyylien alta.",
+          "text": "Lisätietoa typografiamäärittelyistä Tyylit-osiosta",
           "url": "/styles/typography"
         },
         {
@@ -113,5 +113,5 @@
       ]
     }
   ],
-  "example.title": "Suomi.fi teeman tukemat otsikkotyylit"
+  "example.title": "Suomi.fi-teeman tukemat otsikkotyylit"
 }

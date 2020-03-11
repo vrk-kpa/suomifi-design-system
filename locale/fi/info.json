@@ -21,7 +21,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Saavutettavuudesta huolehtiminen on erittäin keskeinen osa Suomi.fi Design System -kirjastoa. Kaikissa ratkaisuissa huomioidaan jo suunnitteluvaiheessa WCAG 2.1 -kriteeristöt. Apuvälinekäytön lisäksi suunnittelussa huomioidaan myös kognitiivinen saavutettavuus. Kaikki komponentit myös testataan saavutettavuusvaatimusten mukaisesti ennen niiden julkaisua.",
+          "text": "Saavutettavuudesta huolehtiminen on erittäin keskeinen osa Suomi.fi Design System -kirjastoa. Kaikissa ratkaisuissa huomioidaan jo suunnitteluvaiheessa saavutettavuuskriteerit (WCAG 2.1). Apuvälinekäytön lisäksi suunnittelussa huomioidaan myös kognitiivinen saavutettavuus. Kaikki komponentit myös testataan saavutettavuusvaatimusten mukaisesti ennen niiden julkaisua.",
           "listItems": [
             { "text": "" },
             { "text": "" },

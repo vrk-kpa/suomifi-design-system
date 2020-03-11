@@ -1,12 +1,12 @@
 {
   "title": "Värit",
-  "intro": "Pääväreihin kuuluvat sininen (brandBase) sekä (highlightBase), valkoinen (whiteBase) ja harmaa (depthBase). Tekstien päävärinä käytetään mustaa (blackBase). Korosteväreinä käytetään oranssia (accentBase) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
+  "intro": "Pääväreihin kuuluvat sininen (brandBase) sekä (highlightBase), valkoinen (whiteBase) ja harmaa (depthBase). Tekstien päävärinä käytetään mustaa (blackBase). Korosteväreinä käytetään oranssia (accentBase) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali, ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Käyttäessäsi komponenttien tarjoamaa valmista suomi.fi-väritemaa käyttöohjeistuksien mukaisesti, WCAG:n kontrastivaatimukset täyttyvät ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
-    "Jos haluat modifioida värit sopimaan erilaiseen visuaaliseen ilmeeseen, sinun tulee varmistaa, että valitsemasi väriyhdistelmien kontrastit täyttävät WCAG:n asettamat vaatimukset.",
-    "Huomioi että WCGA kontrastivaatimukset eivät koske komponentteja joiden käyttö on estetty. On kuitenkin tärkeää varmistaa että estetty sävy eroaa kontrastiltaan tarpeeksi aktiivisen tilan väristä. Suomi.fi-komponentteihin on toteutettu valmiiksi estetty-tila oikeaoppisesti.",
-    "Tutustu näihin kohtiin WCAG 2.1. ohjeistuksesta: 1.4.1 Use of Color, 1.4.3 Contrast (Minimum)",
+    "Kun käytät komponenttien tarjoamaa valmista Suomi.fi-väriteemaa käyttöohjeistuksien mukaisesti, täyttyvät saavutettavuuskriteeristön (WCAG) kontrastivaatimukset ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
+    "Jos haluat modifioida värit sopimaan erilaiseen visuaaliseen ilmeeseen, muista varmistaa, että valitsemasi väriyhdistelmien kontrastit täyttävät saavutettavuuskriteeristön (WCAG) asettamat vaatimukset.",
+    "Huomioi, että saavutettavuuskriteeristön (WCAG) kontrastivaatimukset eivät koske komponentteja, joiden käyttö on estetty. On kuitenkin tärkeää varmistaa, että estetty sävy eroaa kontrastiltaan tarpeeksi aktiivisen tilan väristä. Suomi.fi-komponentteihin on toteutettu valmiiksi estetty-tila oikeaoppisesti.",
+    "Tutustu näihin kohtiin tarkemmin saavutettavuuskriteeristön ohjeistuksessa: WCAG 2.1., onnistumiskriteeri 1.4.3 Kontrasti (minimi). ",
     ""
   ],
   "sections": [
@@ -114,15 +114,15 @@
     }
   ],
   "textColors.title": "Tekstit",
-  "textColors.description": "Tekstien pääväri on musta (blackBase). Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Tekstin korostevärinä käytetään tummaa harmaata (depthBaseDark27). Vihjeteksteissä käytetään tummanharmaata (blackLighten42).  Vihjetekstit tarkoittavat tekstejä, jotka ovat lomakekentissä ohjeistamassa käyttäjää ennen kuin käyttäjä aloittaa kirjoittamaan kenttään.",
+  "textColors.description": "Tekstien pääväri on musta (blackBase). Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Tekstin korostevärinä käytetään tummaa harmaata (depthDark1). Vihjeteksteissä käytetään tummanharmaata (blackLight1). Vihjetekstit tarkoittavat tekstejä, jotka ovat lomakekentissä ohjeistamassa käyttäjää ennen kuin käyttäjä aloittaa kirjoittamaan kenttään.",
   "brandColors.title": "Brändiväri",
   "brandColors.description": "Brändiväriä (brandBase) käytetään suomi.fi palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa.",
   "controlColors.title": "Linkit, painikkeet ja valinnat",
-  "controlColors.description": "Sinistä (highlightBase) sekä siitä johdettuja vaalempia sävyä (highlightLight) käytetään interaktiivisissa elementeissä ja valittujen elementtien korostamisessa. Violettia (accentTertiaryDark9) käytetään linkkien vierailun jälkeisessä tilassa (visited state). Estetyissä tiloissa käytetään harmaata (depthBase). Sinisestä johdettua tummempaa sävyä (highlightDark9) käytetään esim. painikkeiden hovertilassa (hover state). Oranssia (accentBase) väriä käytetään kaikkien komponenttien fokustilassa (focus state). ",
+  "controlColors.description": "Sinistä (highlightBase) sekä siitä johdettuja vaalempia sävyä (highlightLight) käytetään interaktiivisissa elementeissä ja valittujen elementtien korostamisessa. Violettia (accentTertiaryDark1) käytetään linkkien vierailun jälkeisessä tilassa (visited state). Estetyissä tiloissa käytetään harmaata (depthBase). Sinisestä johdettua tummempaa sävyä (highlightDark1) käytetään esim. painikkeiden hovertilassa (hover state). Oranssia (accentBase) väriä käytetään kaikkien komponenttien fokustilassa (focus state). ",
   "iconColors.title": "Ikonit",
-  "iconColors.description": "Kuvitusikoneissa käytetään harmaata (depthBase) sekä oranssia (accentBase) korostevärinä. Toiminnallisissa ikoneissa käytetään toiminnallisten elementtien sinistä (highlightBase) väriä sekä tummaa harmaata (depthDark27).",
+  "iconColors.description": "Kuvitusikoneissa käytetään harmaata (depthBase) sekä oranssia (accentBase) korostevärinä. Toiminnallisissa ikoneissa käytetään toiminnallisten elementtien sinistä (highlightBase) väriä sekä tummaa harmaata (depthDark1).",
   "backgroundColors.title": "Taustat ja reunukset",
-  "backgroundColors.description": "Sivun taustaväri on vaalean harmaa (depthLight30) ja sisältöalueen tausta on valkea (whiteBase). Reunuksien väri on harmaa (depthLight13). Lisäksi käytössä on sinisestä (highlightBase) väristä johdettuja sävyjä (highlightLight53, highlightLight50 ja highlightLight45) sekä kirkkaan vaaleansininen (depthSecondary). ",
+  "backgroundColors.description": "Sivun taustaväri on vaalean harmaa (depthLight3) ja sisältöalueen tausta on valkea (whiteBase). Reunuksien väri on harmaa (depthLight1). Lisäksi käytössä on sinisestä (highlightBase) väristä johdettuja sävyjä (highlightLight4, highlightLight3 ja highlightLight2) sekä kirkkaan vaaleansininen (depthSecondary). ",
   "trafficColors.title": "Liikennevalovärit",
   "trafficColors.description": "Liikennevalovärit kuvaavat komponenttien, elementtien tai toimintojen tilatietoa. Vihreä (successBase) kuvaa onnistumista tai positiivista toimintoa. Keltainen (warningBase) kuvaa esim. tehtävää tai muuta asiaa, johon käyttäjän tulee reagoida. Punainen (alertBase) kuvaa virhetilaa tai häiriötä. Pelkkä väri ei riitä tiedon tai toiminnallisuuksien esittämiseen vaan tieto pitää esittää myös sanallisesti.",
   "accentColors.title": "Korostevärit",

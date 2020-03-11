@@ -1,13 +1,8 @@
 {
   "title": "Ikoni (Icon)",
-  "intro": "Ikonit ovat visuaalisia symboleja, jotka tukevat toimintojen ja aiheiden ilmaisemista. Ikonien avulla käyttäjän huomiota voidaan korostetusti kiinnittää haluttuun informaatioon tai toimintoon. Ikonien käyttäminen voi myös parantaaa laajojen sisältöjen hahmottamista ja ryhmittämistä. Suomi.fi teemassa on sekä käyttöliittymäikoneita että kuvitusikoneita.",
+  "intro": "Ikonit ovat visuaalisia symboleja, jotka tukevat toimintojen ja aiheiden ilmaisemista. Ikonien avulla käyttäjän huomiota voidaan kiinnittää haluttuun informaatioon tai toimintoon. Ikonien käyttäminen voi myös parantaa laajojen sisältöjen hahmottamista ja ryhmittämistä. Suomi.fi-teemassa on sekä käyttöliittymäikoneita että kuvitusikoneita.",
   "note.title": "Saavutettavuus ja käytettävyys",
-  "note.items": [
-    "Jos ikoni on informatiivinen tai toiminnallinen, kuvalle on luotava tekstivastine käyttämällä WAI-ARIA-määritettä 'aria-label' tai 'aria-labelledby'.",
-    "Jos ikoni on tarkoitettu vain visuaaliseksi tehosteeksi, käytetään sitä varten WAI-ARIA-määritettä role='presentation' (ei role='img'). Tällöin avustavat tekniikat ohittavat kuvan.",
-    "Kuvitusikonien käytössä tulee huomioida ikonille looginen käyttötarkoitus. Jos ikoni on ristiriidassa sisällön kanssa, tämä voi heikentää käytettävyyttä ja kognitiivista saavutettavuutta.",
-    "Ikonit ovat harvoin yksiselitteisiä kaikille käyttäjille. Ikoni esitetään siksi yleensä tekstin kanssa, jolloin käyttäjän ymmärrys ei jää pelkän ikonin varaan. Poikkeuksena info-ikoni, jonka käyttö on yleisesti vakiintunut."
-  ],
+  "note.items": ["Jos ikoni on informatiivinen tai toiminnallinen, kuvalle on luotava tekstivastine käyttämällä WAI-ARIA-määritettä 'aria-label' tai 'aria-labelledby'.", "Jos ikoni on tarkoitettu vain visuaaliseksi tehosteeksi, käytetään sitä varten WAI-ARIA-määritettä role='presentation' (ei role='img'). Tällöin avustavat tekniikat ohittavat kuvan.", "Kuvitusikonien käytössä tulee huomioida ikonille looginen käyttötarkoitus. Jos ikoni on ristiriidassa sisällön kanssa, tämä voi heikentää käytettävyyttä ja kognitiivista saavutettavuutta.", "Ikonit ovat harvoin yksiselitteisiä kaikille käyttäjille. Ikoni esitetään siksi yleensä tekstin kanssa, jolloin käyttäjän ymmärrys ei jää pelkän ikonin varaan. Poikkeuksena info-ikoni, jonka käyttö on yleisesti vakiintunut."],
   "sections": [
     {
       "title": "Koko ja käyttö",
@@ -15,25 +10,24 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Jos ikoneita käytetään tekstin yhteydessä tekstin koko määrittelee ikonin koon."
+          "text": "Jos ikoneita käytetään tekstin yhteydessä, tekstin koko määrittelee ikonin koon."
         }
-      ]
-    }
+      ]}
   ],
-  "allIconsPageLink.title": "Katso kaikki Suomi.fi ikonit",
+  "allIconsPageLink.title": "Katso kaikki Suomi.fi-ikonit",
   "basicIcons.title": "Perusikonit",
-  "basicIcons.description": "Perusikonien oletusväri on harmaa (depthDark27). Jos ikonissa on mukana jokin toiminto, siinä käytetään sinistä väriä (highlightBase) klikattavuuden indikoimiseksi. Notifikaatioikoneissa käytetään liikennevalovärejä (successBase, warningBase, alertBase) sekä sinistä korosteväriä (accentSecondaryBase). Huomaa, että värit ovat ikoneissa ainoastaan hahmottamisen tukena. Pelkkä visuaalinen korostus ei ole saavutettavuuskriteereiden mukainen riittävä toiminnan kuvaustapa. Jos muokkaat ikonien värityksiä on hyvä valita toimintaa kuvaaville ikoneille muista ikoneista erottuva sävy. ",
-  "infoIcons.title": "Ohje-ikoni",
-  "infoIcons.description": "Ohjeet ovat esim. käyttöliittymässä näytettäviä kontekstiohjeita, joita käyttäjä tarvitsee, kun ei tiedä mitä tehdä tai miten toimia. Ikonin taakse piilotettujen ohjeiden lukeminen ei ole milloinkaan välttämätöntä. Suomi.fi teemassa ohje-ikoni on sininen (highlightBase) ja tummalla taustalla käytetään valkoista (whiteBase) ikonia. Ohje-ikonista on Suomi.fi teemassa kaksi erillistä versiota, täytetty sekä ääriviiva versio. Täytettyä ohje-ikonia käytetään silloin kun sitä klikkaamalla käyttäjälle aukeaa/tarjotaan lisää ohjeistusta. Ääriviiva versio ohje-ikonista käytetään visuaalisena tukena. Ohje-ikonilla ei ole selittävää tekstiä, koska teksti häiritsisi varsinaisen sisällön lukemista. Ohje-ikoni on ikoneista helpoiten ymmärrettäviä ja siksi se toimii myös ilman selittävää tekstiä.",
+  "basicIcons.description": "Perusikonien oletusväri on harmaa (depthDark27). Jos ikonissa on mukana jokin toiminto, siinä käytetään sinistä väriä (highlightBase) klikattavuuden indikoimiseksi. Notifikaatioikoneissa käytetään liikennevalovärejä (successBase, warningBase, alertBase) sekä sinistä korosteväriä (accentSecondaryBase). Huomaa, että värit ovat ikoneissa ainoastaan hahmottamisen tukena. Pelkkä visuaalinen korostus ei ole saavutettavuuskriteereiden mukainen riittävä toiminnan kuvaustapa. Jos muokkaat ikonien värityksiä, on hyvä valita toimintaa kuvaaville ikoneille muista ikoneista erottuva sävy. ",
+  "infoIcons.title": "Ohjeikoni",
+  "infoIcons.description": "Ohjeet ovat esim. käyttöliittymässä näytettäviä kontekstiohjeita, joita käyttäjä tarvitsee tietääkseen mitä tehdä tai miten toimia. Ikonin taakse piilotettujen ohjeiden lukeminen ei ole milloinkaan välttämätöntä. Suomi.fi-teemassa ohjeikoni on sininen (highlightBase) ja tummalla taustalla käytetään valkoista (whiteBase) ikonia. Ohjeikonista on Suomi.fi-teemassa kaksi erillistä versiota, täytetty versio sekä ääriviivaversio. Täytettyä ohjeikonia käytetään silloin, kun sitä klikkaamalla käyttäjälle aukeaa/tarjotaan lisää ohjeistusta. Ääriviivaversiota ohjeikonista käytetään visuaalisena tukena. Ohjeikonilla ei ole selittävää tekstiä, koska teksti häiritsisi varsinaisen sisällön lukemista. Ohjeikoni on ikoneista helpoiten ymmärrettävä, ja siksi se toimii myös ilman selittävää tekstiä.",
   "additionalInfoIcons.title": "Lisätietoikoni",
-  "additionalInfoIcons.description": "Lisätieto on asiaa, jonka käyttäjän täytyy lukea ja ymmärtää toimiakseen oikein. Lisätietoikoni on huomioarvoltaan suurempi kuin ohjeikoni. Tummalla pohjalla käytetään valkoista (whiteBase) ikonia. Lisätieto-ikonista on Suomi.fi teemassa kaksi erillistä versiota, täytetty sekä ääriviiva versio. Täytettyä lisätieto-ikonia käytetään silloin kun sitä klikkaamalla käyttäjälle aukeaa lisätietoa. Ääriviiva versio lisätieto-ikonista käytetään visuaalisena tukena esimerkiksi modaaleissa.",
+  "additionalInfoIcons.description": "Lisätieto on asiaa, jonka käyttäjän täytyy lukea ja ymmärtää toimiakseen oikein. Lisätietoikoni on huomioarvoltaan suurempi kuin ohjeikoni. Tummalla pohjalla käytetään valkoista (whiteBase) ikonia. Lisätietoikonista on Suomi.fi-teemassa kaksi erillistä versiota, täytetty sekä ääriviivaversio. Täytettyä lisätietoikonia käytetään silloin, kun sitä klikkaamalla käyttäjälle aukeaa lisätietoa. Ääriviivaversio lisätietoikonista käytetään visuaalisena tukena esimerkiksi modaaleissa.",
   "illustrativeIcons.title": "Kuvitusikonit",
-  "illustrativeIcons.description": "Kuvitusikonit kuvaavat sisällössä esitettäviä elämäntilanteita ja aihealueita. Ikoneissa käytetyt värit ovat vaaleanharmaa (depthBase) ja oranssi (accentBase). Myös kuvitusikonit pyritään pitämään yksinkertaisina, jotta vältyttäisiin luomasta ylimääräistä kognitiivista rasitetta. Suomi.fi palveluissa jokaisella kuvitusikonilla on teema, joka antaa osviittaa käyttötarkoituksesta.",
+  "illustrativeIcons.description": "Kuvitusikonit kuvaavat sisällössä esitettäviä elämäntilanteita ja aihealueita. Ikoneissa käytetyt värit ovat vaaleanharmaa (depthBase) ja oranssi (accentBase). Myös kuvitusikonit pyritään pitämään yksinkertaisina, jotta vältyttäisiin luomasta ylimääräistä kognitiivista rasitetta. Suomi.fi-palveluissa jokaisella kuvitusikonilla on teema, joka antaa osviittaa käyttötarkoituksesta.",
   "attachmentIcons.title": "Liitetiedosto-ikonit",
   "attachmentIcons.description": "",
   "signLanguageIcons.title": "Viittomakielipalvelut",
-  "signLanguageIcons.description": "Suomi.fi -verkkopalveluissa käytetään kuurojen liiton viittomakielen palveluiden symbolia.",
-  "signLanguageIconsLink.title": "Ikoni kuurojen liiton sivulla",
+  "signLanguageIcons.description": "Suomi.fi-verkkopalveluissa käytetään Kuurojen liiton viittomakielen palveluiden symbolia.",
+  "signLanguageIconsLink.title": "Viittomakielen ikoni Kuurojen liiton sivulla",
   "signLanguageIconsLink.url": "https://www.kuurojenliitto.fi/fi/artikkelit/viittomakieliset-palvelut-symboli",
   "externalLink.label": "Avautuu uuteen ikkunaan"
 }

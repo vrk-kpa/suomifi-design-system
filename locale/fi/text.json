@@ -10,7 +10,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Suomi.fi-tyyleissä sekä käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on Googlen välittämä open source fontti, kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Kirjasimen voi ladata omalle työasemalle Google Fontsista."
+          "text": "Suomi.fi-tyyleissä ja -käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on Googlen välittämä open source -fontti, kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Kirjasimen voi ladata omalle työasemalle Google Fontsista."
         },
         {
           "image.key": "",
@@ -44,12 +44,12 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Suomifi teemassa leipätekstin oletuskoko on 18px sekä mobiili- ja desktop näkymissä. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Suomifi teemassa leipäteksti on oletuksena sävyltään musta (blackBase) ja variaatiota luomassa käytetään tumman harmaata (depthDark27)."
+          "text": "Suomi.fi-teemassa leipätekstin oletuskoko on 18px sekä mobiili- että desktop-näkymissä. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Suomi.fi-teemassa leipäteksti on oletuksena sävyltään musta (blackBase) ja variaatiota luomassa käytetään tumman harmaata (depthDark1)."
         },
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Lihavoitua leikkausta käytetään leipätekstissä kun halutaan korostaa käyttäjälle erityisen huomioitavaa tietoa jonka he mahdollisesti ohittaisivat. Lihavoitua tekstiä tulee käyttää harkiten, ylikäyttö hankaloittaa käyttäjää ymmärtämään mihin hänen tulisi erityisimmin sisällössä kiinnittää huomiota."
+          "text": "Lihavoitua leikkausta käytetään leipätekstissä, kun halutaan korostaa käyttäjälle erityisen huomioitavaa tietoa. Lihavoitua tekstiä tulee käyttää harkiten. Jos lihavointia on käytetty liikaa, on käyttäjän vaikea ymmärtää, mihin hänen tulisi erityisesti kiinnittää huomiota sisällössä. "
         },
         {
           "image.key": "",
@@ -115,7 +115,7 @@
   "default.title": "",
   "default.description": "",
   "body.title": "",
-  "body.description": "Suomifi teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold  -fonttia.",
+  "body.description": "Suomi.fi-teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold -fonttia.",
   "lead.title": "Ingressi (Lead)",
-  "lead.description": "Ingressi on sivun alussa esiintyvä tiivistelmä sivun sisällöstä. Ingressiä käytetään vain kerran yhdessä näkymässä. Suomifi teemassa Ingressin koko on 22 px ja pienellä näytöllä 20 px."
+  "lead.description": "Ingressi on sivun alussa esiintyvä tiivistelmä sivun sisällöstä. Ingressiä käytetään vain kerran yhdessä näkymässä. Suomi.fi-teemassa ingressitekstin koko on 22 px ja pienellä näytöllä 20 px."
 }

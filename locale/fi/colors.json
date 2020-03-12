@@ -115,10 +115,14 @@
   ],
   "textColors.title": "Tekstit",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "textColors.description": "Tekstien pääväri on musta (blackBase). Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Tekstin korostevärinä käytetään tummaa harmaata (depthDark1). Vihjeteksteissä käytetään tummanharmaata (blackLight1). Vihjetekstit tarkoittavat tekstejä, jotka ovat lomakekentissä ohjeistamassa käyttäjää ennen kuin käyttäjä aloittaa kirjoittamaan kenttään.",
 =======
   "textColors.description": "Tekstien pääväri on musta (blackBase). Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Tekstin korostevärinä käytetään tummaa harmaata (depthBaseDark27). Vihjeteksteissä käytetään tummanharmaata (blackLight1).  Vihjetekstit tarkoittavat tekstejä, jotka ovat lomakekentissä ohjeistamassa käyttäjää ennen kuin käyttäjä aloittaa kirjoittamaan kenttään.",
 >>>>>>> ccbb9e4b... Replace the old color token names with new ones and run prettier
+=======
+  "textColors.description": "Tekstien pääväri on musta (blackBase). Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Tekstin korostevärinä käytetään tummaa harmaata (depthDark1). Vihjeteksteissä käytetään tummanharmaata (blackLight1).  Vihjetekstit tarkoittavat tekstejä, jotka ovat lomakekentissä ohjeistamassa käyttäjää ennen kuin käyttäjä aloittaa kirjoittamaan kenttään.",
+>>>>>>> 33bd1af7... Adjust highlightLight4 token name and remove one obsolete token name from the content
   "brandColors.title": "Brändiväri",
   "brandColors.description": "Brändiväriä (brandBase) käytetään suomi.fi palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa.",
   "controlColors.title": "Linkit, painikkeet ja valinnat",

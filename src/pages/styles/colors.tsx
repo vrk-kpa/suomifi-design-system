@@ -81,7 +81,7 @@ const colorCategories = [
       colors.depthLight1,
       colors.highlightLight2,
       colors.highlightLight3,
-      colors.highlightLight3,
+      colors.highlightLight4,
       colors.depthSecondary,
       colors.depthSecondaryDark1,
     ],

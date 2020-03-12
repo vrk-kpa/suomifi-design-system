@@ -20,7 +20,7 @@ const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
           padding: suomifiDesignTokens.spacing.l,
           margin: `${suomifiDesignTokens.spacing.m} 0`,
           ...style,
-          background: suomifiDesignTokens.colors.accentSecondaryLight40,
+          background: suomifiDesignTokens.colors.accentSecondaryLight1,
           fontSize: '24px',
         }}
       >

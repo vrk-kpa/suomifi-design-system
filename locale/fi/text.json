@@ -44,7 +44,11 @@
         {
           "image.key": "",
           "image.alt": "",
+<<<<<<< HEAD
           "text": "Suomi.fi-teemassa leipätekstin oletuskoko on 18px sekä mobiili- että desktop-näkymissä. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Suomi.fi-teemassa leipäteksti on oletuksena sävyltään musta (blackBase) ja variaatiota luomassa käytetään tumman harmaata (depthDark1)."
+=======
+          "text": "Suomifi teemassa leipätekstin oletuskoko on 18px sekä mobiili- ja desktop näkymissä. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Suomifi teemassa leipäteksti on oletuksena sävyltään musta (blackBase) ja variaatiota luomassa käytetään tumman harmaata (depthDark1)."
+>>>>>>> ccbb9e4b... Replace the old color token names with new ones and run prettier
         },
         {
           "image.key": "",

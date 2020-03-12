@@ -95,9 +95,7 @@ const Content = ({
                       flex: wrapAll ? '100%' : 'unset',
                       margin: wrapAll
                         ? `${suomifiDesignTokens.spacing.s} 0`
-                        : `0 ${suomifiDesignTokens.spacing.m} ${
-                            suomifiDesignTokens.spacing.m
-                          }`,
+                        : `0 ${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.m}`,
                     }}
                   >
                     <Link

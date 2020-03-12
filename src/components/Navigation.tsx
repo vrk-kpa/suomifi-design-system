@@ -14,7 +14,7 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
           padding: 0,
           boxSizing: 'border-box',
           background: `${suomifiDesignTokens.colors.whiteBase}`,
-          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight13}`,
+          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
           display: 'flex',
           justifyContent: 'center',
         }}
@@ -35,9 +35,7 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
             <li
               key={item.to}
               style={{
-                margin: `0 ${suomifiDesignTokens.spacing.l} 0 ${
-                  suomifiDesignTokens.spacing.s
-                }`,
+                margin: `0 ${suomifiDesignTokens.spacing.l} 0 ${suomifiDesignTokens.spacing.s}`,
               }}
             >
               <NavItem to={item.to}>{item.label}</NavItem>

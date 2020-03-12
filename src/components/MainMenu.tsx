@@ -52,12 +52,12 @@ class MainMenu extends Component<Props, State> {
               {this.isOpen() ? (
                 <Icon
                   icon="close"
-                  color={suomifiDesignTokens.colors.depthDark27}
+                  color={suomifiDesignTokens.colors.depthDark1}
                 />
               ) : (
                 <Icon
                   icon="menu"
-                  color={suomifiDesignTokens.colors.depthDark27}
+                  color={suomifiDesignTokens.colors.depthDark1}
                 />
               )}
             </Button>
@@ -70,9 +70,7 @@ class MainMenu extends Component<Props, State> {
                   zIndex: 10000,
                   width: '20rem',
                   background: suomifiDesignTokens.colors.whiteBase,
-                  border: `1px solid ${
-                    suomifiDesignTokens.colors.depthLight13
-                  }`,
+                  border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
                   boxShadow: menuShadow,
                 }}
               >

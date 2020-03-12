@@ -21,7 +21,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           width: '70px',
           height: '70px',
           marginBottom: suomifiDesignTokens.spacing.l,
-          border: `1px solid ${suomifiDesignTokens.colors.depthLight13}`,
+          border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
           borderRadius: '50%',
           fontSize: '50px',
         }}
@@ -54,9 +54,7 @@ const ContentBoxes = ({
   <section
     style={{
       background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
-      padding: `${suomifiDesignTokens.spacing.l} ${
-        suomifiDesignTokens.spacing.m
-      } 0`,
+      padding: `${suomifiDesignTokens.spacing.l} ${suomifiDesignTokens.spacing.m} 0`,
       display: 'flex',
       justifyContent: 'center',
     }}

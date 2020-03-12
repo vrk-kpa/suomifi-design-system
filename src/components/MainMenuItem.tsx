@@ -19,9 +19,7 @@ class MainMenuItem extends Component<Props> {
             height: '3.2rem',
             paddingLeft: suomifiDesignTokens.spacing.m,
             paddingRight: suomifiDesignTokens.spacing.m,
-            borderBottom: `1px solid ${
-              suomifiDesignTokens.colors.depthSecondary
-            }`,
+            borderBottom: `1px solid ${suomifiDesignTokens.colors.depthSecondary}`,
             color: suomifiDesignTokens.colors.highlightBase,
             textDecoration: 'none',
             whiteSpace: 'nowrap',

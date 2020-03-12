@@ -33,9 +33,7 @@ class SideNavItem extends Component<Props> {
             height: '3.2rem',
             paddingLeft: level + '.2rem',
             paddingRight: suomifiDesignTokens.spacing.s,
-            borderBottom: `1px solid ${
-              suomifiDesignTokens.colors.depthSecondary
-            }`,
+            borderBottom: `1px solid ${suomifiDesignTokens.colors.depthSecondary}`,
             color: suomifiDesignTokens.colors.highlightBase,
             textDecoration: 'none',
             textTransform: level === 1 ? 'uppercase' : 'none',
@@ -90,7 +88,7 @@ class SideNavItem extends Component<Props> {
           >
             <Icon
               icon="chevronDown"
-              color={suomifiDesignTokens.colors.depthDark27}
+              color={suomifiDesignTokens.colors.depthDark1}
             />
           </Button>
         )}

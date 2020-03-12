@@ -6,10 +6,10 @@ import { Heading, Text } from 'components/ResponsiveComponents';
 const NoteBox = ({ title, items }: Props): JSX.Element => (
   <section
     style={{
-      background: suomifiDesignTokens.colors.highlightLight50,
+      background: suomifiDesignTokens.colors.highlightLight3,
       margin: `${suomifiDesignTokens.spacing.l} 0`,
       padding: suomifiDesignTokens.spacing.m,
-      border: `1px solid ${suomifiDesignTokens.colors.depthLight13}`,
+      border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
     }}
   >
     <Heading.h3 as="h2">{title}</Heading.h3>

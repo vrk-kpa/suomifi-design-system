@@ -66,7 +66,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Suomi.fi-brändiperheeseen kuuluvat VRK:n sähköisen asioinnin tukipalvelut ja Kansalliseen palveluarkkitehtuuriin liittyvät sähköiset palvelut. Näitä ovat: Suomi.fi-verkkopalvelu, Palvelutietovaranto, Tunnistus, Viestit, Valtuudet, Kartat, Maksut, Palveluhallinta ja palveluväylän Liityntäkatalogi. Muiden palveluiden liittäminen Suomi.fi-palveluperheeseen tulee aina tehdä yhteistyössä VRK:n kanssa. Suomi.fi-logon käyttäminen palvelun tunnuksena on sallittua ainoastaan Suomi.fi-brändiperheeseen kuuluvissa palveluissa. Jos palvelusi tai tuotteesi haluaa hyödyntää Suomi.fi-brändiä kokonaisvaltaisesti, ota yhteyttä VRK:n viestintään.",
+          "text": "Suomi.fi-brändiperheeseen kuuluvat Digi- ja väestötietoviraston sähköisen asioinnin tukipalvelut ja Kansalliseen palveluarkkitehtuuriin liittyvät sähköiset palvelut. Näitä ovat: Suomi.fi-verkkopalvelu, Palvelutietovaranto, Tunnistus, Viestit, Valtuudet, Kartat, Maksut, Palveluhallinta ja palveluväylän Liityntäkatalogi. Muiden palveluiden liittäminen Suomi.fi-palveluperheeseen tulee aina tehdä yhteistyössä DVV:n kanssa. Suomi.fi-logon käyttäminen palvelun tunnuksena on sallittua ainoastaan Suomi.fi-brändiperheeseen kuuluvissa palveluissa. Jos palvelusi tai tuotteesi haluaa hyödyntää Suomi.fi-brändiä kokonaisvaltaisesti, ota yhteyttä DVV:n viestintään.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -192,7 +192,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Suunnittelemamme palvelu on johdonmukaisesti rakentunut ja käyttäjällä on koko ajan ymmärrys siitä, missä kohdin palvelua hän on. Suunnitteluratkaisut toistuvat läpi palvelun samanlaisina. Kaikki Suomi.fi-palvelut hyödyntävät samoja designperiaatteita ja käytäntöjä. Näin toimimalla varmistamme yhtenäisen käyttökokemuksen läpi palvelurajojen.",
+          "text": "Suunnittelemamme palvelu on johdonmukaisesti rakentunut ja käyttäjällä on koko ajan ymmärrys siitä, missä kohdin palvelua hän on. Suunnitteluratkaisut toistuvat läpi palvelun samanlaisina. Kaikki Suomi.fi-palvelut hyödyntävät samoja suunnitteluperiaatteita ja -käytäntöjä. Näin varmistamme yhtenäisen käyttökokemuksen yli palvelurajojen.",
           "listItems": [
             { "text": "" },
             { "text": "" },

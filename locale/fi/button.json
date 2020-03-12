@@ -3,7 +3,7 @@
   "intro": "Painike käynnistää toiminnon. Painiketta voidaan käyttää esimerkiksi siirtymiseen toiseen näkymään, tai painikkeella voidaan hyväksyä toiminto.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Painike käynnistää yleensä toiminnon, mutta joissain poikkeustapauksissa on päädytty käyttämään painiketta linkin sijaan, kuten palvelulistaan siirryttäessä.",
+    "Painike käynnistää yleensä toiminnon. Joissakin erityistapauksissa painiketta voidaan käyttää normaalin linkkityylin asemesta, kun käyttäjä ohjataan toiselle sivulle. ",
     "Painikkeet korostuvat helposti käyttöliittymässä ja siksi painikkeiden määrä sivulla kannattaa pitää rajallisena.",
     "",
     "",
@@ -16,7 +16,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Teksti kertoo painikkeen toiminnon. Toimintopainike kertoo vain olennaisen toiminnan, jonka se toteuttaa, esimerkiksi \"Valitse\" tai \"Seuraava\". Jos toimintopainikkeen nimi on yli kolme sanaa pitkä, mieti miten sitä voidaan lyhentää. Painikkeen teksti alkaa verbillä sekä aina isolla alkukirjaimella. "
+          "text": "Teksti kertoo painikkeen toiminnon. Toimintopainike kertoo vain olennaisen toiminnon, jonka se toteuttaa, esimerkiksi \"Valitse\" tai \"Seuraava\". Jos toimintopainikkeen nimi on yli kolme sanaa pitkä, mieti miten sitä voidaan lyhentää. Painikkeen teksti alkaa verbillä sekä aina isolla alkukirjaimella."
         },
         {
           "image.key": "",
@@ -116,7 +116,7 @@
   "fullWidth.title": "Koko ja käyttö",
   "fullWidth.description": "Mobiilikoossa käytetään täysleveää painiketta, joka skaalautuu näytön leveyden mukaan. Desktop-koossa käytetään kapeaa painiketta, joka skaalautuu painikkeen sisällön mukaan.",
   "primary.title": "Ensisijainen painike (Primary Button)",
-  "primary.description": "Ensisijaista painiketta käytetään, kun toiminto on ensisijainen, pakollinen tai olennainen prosessin tai muun toiminnan kannalta. Ensisijainen painike on yleisimmin käytetty painike. Painiketta käytetään erityisesti korostamaan pakollisia tai huomionarvoisia toimintoja, jotka ovat käyttäjälle keskeisiä. Usean ensisijaisen painikkeen käyttöä yhdessä näkymässä tulisi välttää.",
+  "primary.description": "Ensisijaista painiketta käytetään, kun toiminto on ensisijainen, pakollinen tai olennainen prosessin tai muun toiminnon kannalta. Ensisijainen painike on yleisimmin käytetty painike. Painiketta käytetään erityisesti korostamaan pakollisia tai huomionarvoisia toimintoja, jotka ovat käyttäjälle keskeisiä. Usean ensisijaisen painikkeen käyttöä yhdessä näkymässä tulisi välttää.",
   "primary.label": "Ensisijainen",
   "primary.labelDisabled": "Estetty ensisijainen",
   "secondary.title": "Toissijainen painike (Secondary Button)",
@@ -138,7 +138,7 @@
   "withIcon.title": "Painike ikonilla (Button with Icon)",
   "withIcon.description": "Ikonillista painiketta käytetään selkeyttämään toimintoa tai erottamaan tärkeä toiminto muista painikkeista. Ikoni korostaa painikkeen roolia ja auttaa painikkeen tunnistamisessa. Kuvaava ikoni myös helpottaa ymmärtämään, mitä painikkeesta tapahtuu. Jos käytetään painiketta, jossa on pelkkä ikoni ilman visuaalista tekstiä, tuetaan saavutettavuutta käyttämällä aria-label attribuuttia. Tyypillinen esimerkki on sulje-painike (X), jolloin luettava nimi annetaan aria-label=\"Sulje\".",
   "disabled.title": "Estetty painike (Disabled Button)",
-  "disabled.description": "Estettyä painiketta käytetään silloin, kun toiminto ei ole jostain syystä klikattava. Painike voi olla estettynä esimerkiksi silloin, jos käyttäjä ei ole täyttänyt tarvittavia tietoja edetäkseen toiminnossa tai prosessissa eteenpäin. Estetty painike ei reagoi hover-toimintoon (hiiren kohdistimen siirtämistä painikkeen päälle). Vaikka estetty painike ei täytä WCAG-kontrastivaatimusta, sitä on suositeltavaa käyttää, jos sen avulla voidaan parantaa käyttöliittymän ymmärrettävyyttä. Näin voidaan toimia, koska painikkeeseen ei kuitenkaan liity varsinaista toiminnallisuutta. ",
+  "disabled.description": "Estettyä painiketta käytetään silloin, kun toiminto ei ole jostain syystä klikattava. Painike voi olla estettynä esimerkiksi silloin, jos käyttäjä ei ole täyttänyt tarvittavia tietoja edetäkseen toiminnossa tai prosessissa eteenpäin. Estetty painike ei reagoi hover-toimintoon (hiiren kohdistimen siirtämistä painikkeen päälle). Vaikka estetty painike ei täytä saavutettavuuden kontrastivaatimusta, sitä on suositeltavaa käyttää, jos sen avulla voidaan parantaa käyttöliittymän ymmärrettävyyttä. Näin voidaan toimia, koska painikkeeseen ei kuitenkaan liity varsinaista toiminnallisuutta. ",
   "button.labelIcon": "{{name}} ikoni vasen",
   "button.labelIconRight": "{{name}} ikoni oikea",
   "button.labelClicked": "{{name}}, painettu {{count}} kertaa"

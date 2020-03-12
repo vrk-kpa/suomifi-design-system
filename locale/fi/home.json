@@ -2,7 +2,7 @@
   "title": "Etusivu",
   "intro.title": "Suomi.fi Design System – digipalvelujen yhteiset rakennuspalikat",
   "intro.description": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Kaikki komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti. ",
-  "note.title": "Tämä on ensimmäinen kehitysversio (alpha)",
+  "note.title": "Tämä on Suomi.fi Design Systemin julkinen kehitysversio (alpha)",
   "note.description": "Osallistu uuden palvelun kehittämiseen! Anna palautetta ja liity keskusteluun Suomidigin kehittäjät #designsystem Slack- kanavalla.",
   "note.link.text": "Liity Slack -kanavalle",
   "note.link.url": "https://suomidigi-kehittajat.slack.com/",
@@ -40,9 +40,9 @@
         },
         {
           "icon": "",
-          "title": "Suunnitteluaineisto",
+          "title": "",
           "paragraphs": [
-            { "text": "Julkaisemme keväällä 2020 Design System -sivustolla myös käyttöliittymien suunnitteluaineistoja Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit. " },
+            { "text": "" },
             { "text": "Onko sinulla ehdotuksia tai muuta palautetta?" },
             { "text": "" }
           ],

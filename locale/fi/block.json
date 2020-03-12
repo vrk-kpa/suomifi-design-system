@@ -1,55 +1,54 @@
 {
-    "title": "Lohko (Block)",
-    "intro": "Lohko on sivun osiointiin tarkoitettu geneerinen alue, joka edesauttaa Suomi.fi Design Systemin mukaisten tyylien käyttöä.",
-    "note.title": "Saavutettavuus ja käytettävyys",
-    "note.items": [
-      "Käyttäessäsi lohkoelementtiä, määrittele sille osion semanttinen merkitys.",
-      "",
-      ""
-    ],
-    "sections": [
-      {
-        "title": "Koko ja käyttö",
-        "paragraphs": [
-          {
-            "image.key": "",
-            "image.alt": "",
-            "text": "Lohkoelementtiä käytetään sivun osiointiin ja se vastaa käyttötarkoitukseltaan esim. div, nav, header ja main HTML-elementtejä. Lohkoelementille semanttinen merkitys voidaan antaa parametrina."
-          }
-        ],
-        "links": [
-          {
-            "text": "",
-            "url": ""
-          }
-        ]
-      },
-      {
-        "title": "",
-        "paragraphs": [
-          {
-            "image.key": "",
-            "image.alt": "",
-            "text": "Lohkoelementille voidaan myös antaa Suomi.fi tyylien mukaisia tyylimääreitä. Tyylit voidaan antaa komponentille suoraan parametreina, mikä poistaa tarpeen tyylien määrittelemiselle erikseen ja edesauttaa Suomi.fi Design Systemin mukaisten tyylien käyttöä. Lohkoelementti saa myös automaattisesti Suomi.fi tyylien mukaiset fonttimääreet."
-          },
-          {
-            "image.key": "",
-            "image.alt": "",
-            "text": ""
-          }
-        ],
-        "links": [
-          {
-            "text": "",
-            "url": ""
-          },
-          {
-            "text": "",
-            "url": ""
-          }
-        ]
-      }
-    ],
-    "example.content": "Main alue 'm' marginaalilla"
-  }
-  
+  "title": "Lohko (Block)",
+  "intro": "Lohko on sivun osiointiin tarkoitettu geneerinen alue, joka edesauttaa Suomi.fi Design Systemin mukaisten tyylien käyttöä.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Käyttäessäsi lohkoelementtiä, määrittele sille osion semanttinen merkitys.",
+    "",
+    ""
+  ],
+  "sections": [
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Lohkoelementtiä käytetään sivun osiointiin ja se vastaa käyttötarkoitukseltaan esim. div, nav, header ja main HTML-elementtejä. Lohkoelementille semanttinen merkitys voidaan antaa parametrina."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Lohkoelementille voidaan myös antaa Suomi.fi tyylien mukaisia tyylimääreitä. Tyylit voidaan antaa komponentille suoraan parametreina, mikä poistaa tarpeen tyylien määrittelemiselle erikseen ja edesauttaa Suomi.fi Design Systemin mukaisten tyylien käyttöä. Lohkoelementti saa myös automaattisesti Suomi.fi tyylien mukaiset fonttimääreet."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        },
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.content": "Main alue 'm' marginaalilla"
+}

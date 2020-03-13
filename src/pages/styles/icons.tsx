@@ -56,9 +56,7 @@ const getExampleIcon = (
   <div
     key={id}
     style={{
-      margin: `${suomifiDesignTokens.spacing.s} ${
-        suomifiDesignTokens.spacing.xl
-      } ${suomifiDesignTokens.spacing.l} 0`,
+      margin: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.l} 0`,
       lineHeight: '1rem',
       display: 'flex',
       flexDirection: 'column',

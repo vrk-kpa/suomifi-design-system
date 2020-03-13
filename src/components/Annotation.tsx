@@ -50,9 +50,7 @@ const Content = ({
       {description && (
         <Paragraph
           style={{
-            margin: `${suomifiDesignTokens.spacing.m} ${
-              suomifiDesignTokens.spacing.m
-            } 0 ${suomifiDesignTokens.spacing.m}`,
+            margin: `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.m} 0 ${suomifiDesignTokens.spacing.m}`,
             textAlign: 'inherit',
           }}
         >

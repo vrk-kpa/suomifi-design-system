@@ -119,9 +119,7 @@ class SideNav extends Component<Props, State> {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          borderBottom: `1px solid ${
-            suomifiDesignTokens.colors.depthSecondary
-          }`,
+          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthSecondary}`,
           textShadow: 'none',
         }}
       >
@@ -149,7 +147,7 @@ class SideNav extends Component<Props, State> {
           >
             <Icon
               icon="chevronDown"
-              color={suomifiDesignTokens.colors.depthDark27}
+              color={suomifiDesignTokens.colors.depthDark1}
             />
           </div>
         </MobileOrTablet>

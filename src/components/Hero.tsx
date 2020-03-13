@@ -16,9 +16,7 @@ const Content = ({
     style={{
       margin: 0,
       padding: compact ? '2rem 1rem 5rem 1rem' : '6rem 1rem 8rem 1rem',
-      background: `no-repeat center url(${Background}) ${
-        suomifiDesignTokens.colors.brandBase
-      }`,
+      background: `no-repeat center url(${Background}) ${suomifiDesignTokens.colors.brandBase}`,
       backgroundSize: compact ? 'auto' : 'cover',
       display: 'flex',
       justifyContent: 'center',

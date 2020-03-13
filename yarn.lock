@@ -15413,20 +15413,20 @@ sugarss@^2.0.0:
   dependencies:
     postcss "^7.0.2"
 
-suomifi-design-tokens@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/suomifi-design-tokens/-/suomifi-design-tokens-0.6.0.tgz#a849e6a1115df18beff82b74c7835586fcf19814"
-  integrity sha512-1His7iGBynkEzUI9uhMDGHCYQeFUh+kfbOsqdn4rMz8v9Vqpx/5QngTs3UstK85mjJzaZrN0Q7bdTcRtVCkrWA==
+suomifi-design-tokens@0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/suomifi-design-tokens/-/suomifi-design-tokens-0.7.1.tgz#faf606cfa69c3a7a32e8461939857663c4e333ed"
+  integrity sha512-0rsGyP+ed9d+H6O1n4A5W3e95/7tcxkKeCPnVZSiNesOsG7EYgJxxWI5+lEByvfyLYbpQoP+30oTgMYwDzAuug==
 
 suomifi-icons@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-0.1.0.tgz#cf22cbc51efd974e01a817c9b564731bd5a3c7b6"
   integrity sha512-VISrB4Lvxw313M61vs/ziF8iyiTu7cPU25C/IkGifMamECN+VTdv8EVCBn1OWGzFPoTBO6KHiI0iyatRpz67ng==
 
-suomifi-ui-components@0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.7.0.tgz#9167b5e5593d63a73798f46fc33f6dccad93d466"
-  integrity sha512-eeKc+PUbwVIaf+oaHGgEdz0H3z+5ZbX+k33BG+JbPUekaHAgxpL90WSGUBsTYpvvlsNbPzf8hvH2GqT2jFPizA==
+suomifi-ui-components@0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.8.0.tgz#916d7cc6e1701b2ded7f3034df3612f31613fe5b"
+  integrity sha512-tICyLo+aAywsjaXXTvPmgs4VwP4e1zYeQ7yTl3MSO+gTeejqy36IcF0sX8MMjzS+FiDPTfUjU71osDcySzw4sA==
   dependencies:
     "@reach/menu-button" "0.8.5"
     "@reach/popover" "0.8.5"
@@ -15434,7 +15434,7 @@ suomifi-ui-components@0.7.0:
     normalize.cssinjs "1.1.0"
     polished "3.4.0"
     react-svg "7.2.2"
-    suomifi-design-tokens "0.6.0"
+    suomifi-design-tokens "0.7.1"
     suomifi-icons "0.1.0"
     uuid "3.3.2"
 

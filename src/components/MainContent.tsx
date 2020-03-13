@@ -53,7 +53,7 @@ const MainContent = ({
 }: Props): JSX.Element => (
   <div
     style={{
-      background: suomifiDesignTokens.colors.depthLight30,
+      background: suomifiDesignTokens.colors.depthLight3,
       paddingTop: hasFrame ? suomifiDesignTokens.spacing.m : 0,
       paddingBottom: suomifiDesignTokens.spacing.xl,
     }}
@@ -69,9 +69,7 @@ const MainContent = ({
         <div
           style={{
             margin: hasFrame
-              ? `${suomifiDesignTokens.spacing.m} ${
-                  suomifiDesignTokens.spacing.l
-                } 0 ${suomifiDesignTokens.spacing.l}`
+              ? `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.l} 0 ${suomifiDesignTokens.spacing.l}`
               : 0,
             width: '100%',
             maxWidth: hasFrame ? 1140 : 'initial',
@@ -81,7 +79,7 @@ const MainContent = ({
               ? suomifiDesignTokens.colors.whiteBase
               : 'none',
             border: hasFrame
-              ? `1px solid ${suomifiDesignTokens.colors.depthLight13}`
+              ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`
               : 0,
           }}
         >
@@ -103,19 +101,17 @@ const MainContent = ({
         sideNavData={sideNavData}
         style={{
           margin: `0 ${suomifiDesignTokens.spacing.l}`,
-          border: `1px solid ${suomifiDesignTokens.colors.depthLight13}`,
+          border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
         }}
       />
       <div
         style={{
           margin: hasFrame
-            ? `${suomifiDesignTokens.spacing.m} ${
-                suomifiDesignTokens.spacing.l
-              } 0 ${suomifiDesignTokens.spacing.l}`
+            ? `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.l} 0 ${suomifiDesignTokens.spacing.l}`
             : 0,
           background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
           border: hasFrame
-            ? `1px solid ${suomifiDesignTokens.colors.depthLight13}`
+            ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`
             : 0,
         }}
       >
@@ -127,7 +123,7 @@ const MainContent = ({
         sideNavData={sideNavData}
         style={{
           margin: `0 ${suomifiDesignTokens.spacing.m}`,
-          border: `1px solid ${suomifiDesignTokens.colors.depthLight13}`,
+          border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
         }}
       />
       <div
@@ -136,7 +132,7 @@ const MainContent = ({
           marginTop: hasFrame ? suomifiDesignTokens.spacing.m : 0,
           background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
           border: hasFrame
-            ? `1px solid ${suomifiDesignTokens.colors.depthLight13}`
+            ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`
             : 0,
         }}
       >

@@ -24,9 +24,7 @@ const NavItem = ({ to, children }: Props): JSX.Element => (
       if (isCurrent || (!isFrontPage(to) && isPartiallyCurrent)) {
         return {
           style: {
-            borderBottom: `4px solid ${
-              suomifiDesignTokens.colors.highlightBase
-            }`,
+            borderBottom: `4px solid ${suomifiDesignTokens.colors.highlightBase}`,
           },
         };
       }

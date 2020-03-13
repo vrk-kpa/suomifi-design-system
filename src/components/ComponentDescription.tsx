@@ -27,7 +27,7 @@ const ComponentDescription = ({
       <div
         style={{
           marginBottom: suomifiDesignTokens.spacing.l,
-          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight13}`,
+          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
         }}
       >
         <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>

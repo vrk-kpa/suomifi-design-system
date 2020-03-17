@@ -15423,10 +15423,10 @@ suomifi-icons@0.1.0:
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-0.1.0.tgz#cf22cbc51efd974e01a817c9b564731bd5a3c7b6"
   integrity sha512-VISrB4Lvxw313M61vs/ziF8iyiTu7cPU25C/IkGifMamECN+VTdv8EVCBn1OWGzFPoTBO6KHiI0iyatRpz67ng==
 
-suomifi-ui-components@0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.8.0.tgz#916d7cc6e1701b2ded7f3034df3612f31613fe5b"
-  integrity sha512-tICyLo+aAywsjaXXTvPmgs4VwP4e1zYeQ7yTl3MSO+gTeejqy36IcF0sX8MMjzS+FiDPTfUjU71osDcySzw4sA==
+suomifi-ui-components@0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.9.0.tgz#6c63bfcff6e00f62c1d910ba2f180e922f835c5a"
+  integrity sha512-5ERQ59M5cs1isT2oRDi66ddwv5nxvHrnXgWMaO0VSSl7U30WYfDg1tnYX6W5sGswiGQLQ4ypFwBHNdGvPhSBOw==
   dependencies:
     "@reach/menu-button" "0.8.5"
     "@reach/popover" "0.8.5"

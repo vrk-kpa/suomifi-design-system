@@ -34,7 +34,7 @@
     "react-syntax-highlighter": "^10.1.2",
     "styled-components": "4.3.2",
     "suomifi-icons": "0.1.0",
-    "suomifi-ui-components": "0.8.0"
+    "suomifi-ui-components": "0.9.0"
   },
   "resolutions": {
     "@wapps/gatsby-plugin-i18next/i18next": "^15.0.6",

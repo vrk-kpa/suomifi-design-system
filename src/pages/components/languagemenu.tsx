@@ -34,17 +34,19 @@ const Page = (): JSX.Element => {
               <LanguageMenu name={language}>
                 <LanguageMenuItem
                   onSelect={() => setLanguage(t('example.menuitem1'))}
-                  selected
+                  selected={language === t('example.menuitem1')}
                 >
                   {t('example.menuitem1')}
                 </LanguageMenuItem>
                 <LanguageMenuItem
                   onSelect={() => setLanguage(t('example.menuitem2'))}
+                  selected={language === t('example.menuitem2')}
                 >
                   {t('example.menuitem2')}
                 </LanguageMenuItem>
                 <LanguageMenuItem
                   onSelect={() => setLanguage(t('example.menuitem3'))}
+                  selected={language === t('example.menuitem3')}
                 >
                   {t('example.menuitem3')}
                 </LanguageMenuItem>

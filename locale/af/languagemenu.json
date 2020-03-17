@@ -62,10 +62,7 @@
           ]
         }
       ],
-      "default.title": "default.title",
-      "default.description": "default.description",
-      "default.link1": "default.link1",
-      "default.link2": "default.link2",
-      "default.link3": "default.link3"
-
+      "example.menuitem1": "",
+      "example.menuitem2": "",
+      "example.menuitem3": ""
 }

@@ -19,7 +19,7 @@
             {
               "image.key": "",
               "image.alt": "",
-              "text": "Kielivalikossa näkyy palvelun eri kieliversiot. Suomi.fi verkkopalvelussa vaihtoehdotovat suomi, ruotsi, englanti."
+              "text": "Kielivalikossa näkyy palvelun eri kieliversiot. Suomi.fi verkkopalvelussa vaihtoehdot ovat suomi, ruotsi, englanti."
             }
           ],
           "links": [
@@ -62,10 +62,7 @@
           ]
         }
       ],
-      "default.title": "",
-      "default.description": "",
-      "default.link1": "Etusivu",
-      "default.link2": "Alasivu",
-      "default.link3": "Alasivun alasivu"
-
+      "example.menuitem1": "Suomeksi (FI)",
+      "example.menuitem2": "På Svenska (SV)",
+      "example.menuitem3": "In English (EN)"
 }

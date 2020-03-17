@@ -32,12 +32,46 @@ const Page = (): JSX.Element => (
           >
             <TextInput labelText={t('exampleRegular.label')} />
           </ComponentExample>
+        </ComponentDescription>
+
+        <NoteBox title={t('note.title')} items={t('note.items')} />
+
+        <ComponentDescription
+          mainTitle={t('exampleSuccess.title')}
+          description={t('exampleSuccess.description')}
+          exampleFirst
+          filterProps={[]}
+        >
+          <ComponentExample>
+            <TextInput labelText={t('exampleSuccess.label')} status="success" />
+          </ComponentExample>
+        </ComponentDescription>
+
+        <ComponentDescription
+          mainTitle={t('exampleError.title')}
+          description={t('exampleError.description')}
+          exampleFirst
+          filterProps={[]}
+        >
+          <ComponentExample>
+            <TextInput
+              labelText={t('exampleError.label')}
+              status="error"
+              statusText={t('exampleError.statusText')}
+            />
+          </ComponentExample>
+        </ComponentDescription>
+
+        <ComponentDescription
+          mainTitle={t('exampleDisabled.title')}
+          description={t('exampleDisabled.description')}
+          exampleFirst
+          filterProps={[]}
+        >
           <ComponentExample>
             <TextInput labelText={t('exampleDisabled.label')} disabled />
           </ComponentExample>
         </ComponentDescription>
-
-        <NoteBox title={t('note.title')} items={t('note.items')} />
       </Layout>
     )}
   </NamespacesConsumer>

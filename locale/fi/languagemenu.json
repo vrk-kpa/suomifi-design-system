@@ -1,6 +1,6 @@
 {
     "title": "Kielivalikko (Language Menu)",
-    "intro": "Kielivalikkoa käytetään kun palvelua voidaan käyttää useilla kielillä, eli sillä on useita kieliversioita. Kielen vaihtaminen vaihtaa käyttöliittymässä käytetyn kielen.",
+    "intro": "Kielivalikkoa käytetään, kun palvelua voidaan käyttää useilla kielillä, eli sillä on useita kieliversioita. Kielen vaihtaminen vaihtaa käyttöliittymässä käytetyn kielen.",
     "note.title": "Saavutettavuus",
     "note.items": [
       "Suomi.fi kielivalintakomponentissa otsake (label) on rakennettu komponenttiin, mutta teksti on visuaalisesti piilotettu näkyvistä tyylisyistä. Otsakkeen (label) käyttäminen pudotusvalikon yhteydessä on muuten aina suositeltavaa.",
@@ -51,7 +51,7 @@
             {
               "image.key": "",
               "image.alt": "",
-              "text": "Kielivalikko kannattaa sijoittaa sivuston tai palvelun ylätunnisteeseen (Header). Suomifi palvelussa kielivalikko sijaitsee ylätunnisteessa (Header) ja mobiilikoossa auki togglattavassa mobiilivalikossa."
+              "text": "Kielivalikko kannattaa sijoittaa sivuston tai palvelun ylätunnisteeseen (Header). Suomifi palvelussa kielivalikko sijaitsee ylätunnisteessa (Header) ja mobiilikoossa erikseen avattavassa mobiilivalikossa"
             }
           ],
           "links": [

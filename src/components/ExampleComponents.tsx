@@ -59,5 +59,5 @@ addDisplayNames(Block, OrigBlock, 'Block');
 export class LanguageMenu extends OrigLanguageMenu {}
 addDisplayNames(LanguageMenu, OrigLanguageMenu, 'LanguageMenu');
 
-export class LanguageMenuItem extends OrigLanguageMenu {}
+export class LanguageMenuItem extends OrigLanguageMenuItem {}
 addDisplayNames(LanguageMenuItem, OrigLanguageMenuItem, 'LanguageMenuItem');

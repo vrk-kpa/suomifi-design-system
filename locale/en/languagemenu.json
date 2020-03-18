@@ -1,0 +1,71 @@
+{
+    "title": "",
+    "intro": "",
+    "note.title": "",
+    "note.items": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sections": [
+        {
+          "title": "",
+          "paragraphs": [
+            {
+              "image.key": "",
+              "image.alt": "",
+              "text": ""
+            }
+          ],
+          "links": [
+            {
+              "text": "",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "",
+          "paragraphs": [
+            {
+              "image.key": "",
+              "image.alt": "",
+              "text": ""
+            }
+          ],
+          "links": [
+            {
+              "text": "",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "",
+          "paragraphs": [
+            {
+              "image.key": "",
+              "image.alt": "",
+              "text": ""
+            }
+          ],
+          "links": [
+            {
+              "text": "",
+              "url": ""
+            }
+          ]
+        }
+      ],
+      "example.menuitem1": "",
+      "example.menuitem1short": "",
+      "example.menuitem2": "",
+      "example.menuitem2short": "",
+      "example.menuitem3": "",
+      "example.menuitem3short": ""
+}

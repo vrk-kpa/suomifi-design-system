@@ -182,3 +182,10 @@ minimum_perc = 0
 source_file = locale/af/block.json
 source_lang = af
 type = KEYVALUEJSON
+
+[suomifi-design-system.languagemenu-json]
+file_filter = locale/<lang>/languagemenu.json
+minimum_perc = 0
+source_file = locale/af/languagemenu.json
+source_lang = af
+type = KEYVALUEJSON

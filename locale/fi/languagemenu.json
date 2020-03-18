@@ -1,0 +1,71 @@
+{
+    "title": "Kielivalikko (Language Menu)",
+    "intro": "Kielivalikkoa käytetään, kun palvelua voidaan käyttää useilla kielillä, eli sillä on useita kieliversioita. Kielen vaihtaminen vaihtaa käyttöliittymässä käytetyn kielen.",
+    "note.title": "Saavutettavuus",
+    "note.items": [
+      "Suomi.fi kielivalintakomponentissa otsake (label) on rakennettu komponenttiin, mutta teksti on visuaalisesti piilotettu näkyvistä tyylisyistä. Otsakkeen (label) käyttäminen pudotusvalikon yhteydessä on muuten aina suositeltavaa.",
+      "Huomioi, että viittomakieli ei ole kielivalinta vastaavasti kuin puhutut kielet, joten käyttäjää ei ohjata viittomakielisiin sisältöihin kielivalikosta. Suomi.fi palvelussa ohjataan viittomakielisiin sisältöihin etusivun nostolaatikosta, alatunnisteesta, sekä hakusivun kautta.",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "sections": [
+        {
+          "title": "Mistä komponentti koostuu",
+          "paragraphs": [
+            {
+              "image.key": "",
+              "image.alt": "",
+              "text": "Kielivalikossa näkyy palvelun eri kieliversiot. Suomi.fi verkkopalvelussa vaihtoehdot ovat suomi, ruotsi ja englanti."
+            }
+          ],
+          "links": [
+            {
+              "text": "",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Koko ja käyttö",
+          "paragraphs": [
+            {
+              "image.key": "",
+              "image.alt": "",
+              "text": "Klikkaamalla avautuu kielivalintamahdollisuudet ja valitsemalla haluttu kieli, Suomi.fi palvelu muuttuu valitulle kielelle."
+            }
+          ],
+          "links": [
+            {
+              "text": "",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "title": "Kielivalikko käyttöliittymässä",
+          "paragraphs": [
+            {
+              "image.key": "",
+              "image.alt": "",
+              "text": "Kielivalikko kannattaa sijoittaa sivuston tai palvelun ylätunnisteeseen (Header). Suomi.fi palvelussa kielivalikko sijaitsee ylätunnisteessa (Header). Pienillä näytöillä kielivalintaan käytetään linkkejä, jotka sijoitetaan osaksi navigointiin käytettävää valikkoa."
+            }
+          ],
+          "links": [
+            {
+              "text": "",
+              "url": ""
+            }
+          ]
+        }
+      ],
+      "example.menuitem1": "Suomeksi (FI)",
+      "example.menuitem1short": "FI",
+      "example.menuitem2": "På Svenska (SV)",
+      "example.menuitem2short": "SV",
+      "example.menuitem3": "In English (EN)",
+      "example.menuitem3short": "EN"
+}

@@ -12,6 +12,7 @@ export default t => ({
     },
     { to: '/components/searchinput/', label: t('searchinput:title') },
     { to: '/components/icon/', label: t('icon:title') },
+    { to: '/components/languagemenu/', label: t('languagemenu:title') },
     { to: '/components/expander/', label: t('expander:title') },
     { to: '/components/link/', label: t('link:title') },
     { to: '/components/block/', label: t('block:title') },

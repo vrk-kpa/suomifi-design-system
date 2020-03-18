@@ -12,6 +12,8 @@ import {
   Icon as OrigIcon,
   StaticIcon as OrigStaticIcon,
   Block as OrigBlock,
+  LanguageMenu as OrigLanguageMenu,
+  LanguageMenuItem as OrigLanguageMenuItem,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -53,3 +55,9 @@ addDisplayNames(StaticIcon, OrigStaticIcon, 'StaticIcon');
 
 export class Block extends OrigBlock {}
 addDisplayNames(Block, OrigBlock, 'Block');
+
+export class LanguageMenu extends OrigLanguageMenu {}
+addDisplayNames(LanguageMenu, OrigLanguageMenu, 'LanguageMenu');
+
+export class LanguageMenuItem extends OrigLanguageMenuItem {}
+addDisplayNames(LanguageMenuItem, OrigLanguageMenuItem, 'LanguageMenuItem');

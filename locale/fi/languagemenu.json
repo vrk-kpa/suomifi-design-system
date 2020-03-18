@@ -51,7 +51,7 @@
             {
               "image.key": "",
               "image.alt": "",
-              "text": "Kielivalikko kannattaa sijoittaa sivuston tai palvelun ylätunnisteeseen (Header). Suomifi palvelussa kielivalikko sijaitsee ylätunnisteessa (Header) ja mobiilikoossa erikseen avattavassa mobiilivalikossa"
+              "text": "Kielivalikko kannattaa sijoittaa sivuston tai palvelun ylätunnisteeseen (Header). Suomi.fi palvelussa kielivalikko sijaitsee ylätunnisteessa (Header). Pienillä näytöillä kielivalintaan käytetään linkkejä, jotka sijoitetaan osaksi navigointiin käytettävää valikkoa."
             }
           ],
           "links": [
@@ -62,7 +62,7 @@
           ]
         }
       ],
-      "example.menuitem1": "Suomeksi (FI)",
-      "example.menuitem2": "På Svenska (SV)",
-      "example.menuitem3": "In English (EN)"
+      "example.menuitem1": "FI",
+      "example.menuitem2": "SV",
+      "example.menuitem3": "EN"
 }

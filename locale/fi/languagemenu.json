@@ -4,7 +4,7 @@
     "note.title": "Saavutettavuus",
     "note.items": [
       "Suomi.fi kielivalintakomponentissa otsake (label) on rakennettu komponenttiin, mutta teksti on visuaalisesti piilotettu näkyvistä tyylisyistä. Otsakkeen (label) käyttäminen pudotusvalikon yhteydessä on muuten aina suositeltavaa.",
-      "Huomioi että viittomakieli ei ole kielivalinta vastaavasti kuin puhutut kielet, joten käyttäjää ei ohjata viittomakielisiin sisältöihin kielivalikosta. Suomi.fi palvelussa ohjataan viittomakielisiin sisältöihin etusivun nostolaatikosta, alatunnisteesta, sekä hakusivun kautta.",
+      "Huomioi, että viittomakieli ei ole kielivalinta vastaavasti kuin puhutut kielet, joten käyttäjää ei ohjata viittomakielisiin sisältöihin kielivalikosta. Suomi.fi palvelussa ohjataan viittomakielisiin sisältöihin etusivun nostolaatikosta, alatunnisteesta, sekä hakusivun kautta.",
       "",
       "",
       "",
@@ -19,7 +19,7 @@
             {
               "image.key": "",
               "image.alt": "",
-              "text": "Kielivalikossa näkyy palvelun eri kieliversiot. Suomi.fi verkkopalvelussa vaihtoehdot ovat suomi, ruotsi, englanti."
+              "text": "Kielivalikossa näkyy palvelun eri kieliversiot. Suomi.fi verkkopalvelussa vaihtoehdot ovat suomi, ruotsi ja englanti."
             }
           ],
           "links": [
@@ -51,7 +51,7 @@
             {
               "image.key": "",
               "image.alt": "",
-              "text": "Kielivalikko kannattaa sijoittaa sivuston tai palvelun ylätunnisteeseen (Header). Suomifi palvelussa kileivalikko sijaitsee ylätunnisteessa (Header) ja mobiilikoossa auki togglattavassa mobiilivalikossa."
+              "text": "Kielivalikko kannattaa sijoittaa sivuston tai palvelun ylätunnisteeseen (Header). Suomifi palvelussa kielivalikko sijaitsee ylätunnisteessa (Header) ja mobiilikoossa auki togglattavassa mobiilivalikossa."
             }
           ],
           "links": [

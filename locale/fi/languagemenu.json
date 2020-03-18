@@ -62,7 +62,10 @@
           ]
         }
       ],
-      "example.menuitem1": "FI",
-      "example.menuitem2": "SV",
-      "example.menuitem3": "EN"
+      "example.menuitem1": "Suomeksi (FI)",
+      "example.menuitem1short": "FI",
+      "example.menuitem2": "På Svenska (SV)",
+      "example.menuitem2short": "SV",
+      "example.menuitem3": "In English (EN)",
+      "example.menuitem3short": "EN"
 }

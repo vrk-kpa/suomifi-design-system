@@ -15,7 +15,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => {
   const [language, setLanguage] = useState(
-    i18next.t('languagemenu:example.menuitem1'),
+    i18next.t('languagemenu:example.menuitem1short'),
   );
   const pageContent = (
     <NamespacesConsumer ns={['languagemenu']}>
@@ -32,20 +32,20 @@ const Page = (): JSX.Element => {
             <ComponentExample>
               <LanguageMenu name={language}>
                 <LanguageMenuItem
-                  onSelect={() => setLanguage(t('example.menuitem1'))}
-                  selected={language === t('example.menuitem1')}
+                  onSelect={() => setLanguage(t('example.menuitem1short'))}
+                  selected={language === t('example.menuitem1short')}
                 >
                   {t('example.menuitem1')}
                 </LanguageMenuItem>
                 <LanguageMenuItem
-                  onSelect={() => setLanguage(t('example.menuitem2'))}
-                  selected={language === t('example.menuitem2')}
+                  onSelect={() => setLanguage(t('example.menuitem2short'))}
+                  selected={language === t('example.menuitem2short')}
                 >
                   {t('example.menuitem2')}
                 </LanguageMenuItem>
                 <LanguageMenuItem
-                  onSelect={() => setLanguage(t('example.menuitem3'))}
-                  selected={language === t('example.menuitem3')}
+                  onSelect={() => setLanguage(t('example.menuitem3short'))}
+                  selected={language === t('example.menuitem3short')}
                 >
                   {t('example.menuitem3')}
                 </LanguageMenuItem>

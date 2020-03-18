@@ -63,6 +63,9 @@
         }
       ],
       "example.menuitem1": "",
+      "example.menuitem1short": "",
       "example.menuitem2": "",
-      "example.menuitem3": ""
+      "example.menuitem2short": "",
+      "example.menuitem3": "",
+      "example.menuitem3short": ""
 }

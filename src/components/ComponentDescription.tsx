@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { NamespacesConsumer } from 'react-i18next';
-import { Expander, suomifiDesignTokens } from 'suomifi-ui-components';
+import { Panel, suomifiTheme } from 'suomifi-ui-components';
 import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
@@ -26,24 +26,22 @@ const ComponentDescription = ({
     {t => (
       <div
         style={{
-          marginBottom: suomifiDesignTokens.spacing.l,
-          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight13}`,
+          marginBottom: suomifiTheme.spacing.l,
+          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
         }}
       >
-        <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
+        <div style={{ margin: `${suomifiTheme.spacing.l} 0` }}>
           {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
           {!!title && <Heading.h3>{title}</Heading.h3>}
         </div>
         {!!exampleFirst && <div>{children}</div>}
-        {!!description && (
-          <Paragraph>
-            <Text>{description}</Text>
-          </Paragraph>
-        )}
+        <Paragraph>
+          <Text>{description}</Text>
+        </Paragraph>
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
-          <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
-            <Expander title={t('common:react')} noPadding>
+          <div style={{ margin: `${suomifiTheme.spacing.l} 0` }}>
+            <Panel.expansion title={t('common:react')} noPadding>
               {codeString && <ComponentCode javascript={codeString} />}
               {!showOnlyCodeString &&
                 getWithoutWrappers(children).map((child, index) => (
@@ -57,7 +55,7 @@ const ComponentDescription = ({
                     {child}
                   </ComponentCode>
                 ))}
-            </Expander>
+            </Panel.expansion>
           </div>
         )}
       </div>
@@ -68,8 +66,8 @@ const ComponentDescription = ({
 interface Props {
   mainTitle?: string;
   title?: string;
-  description?: string;
-  exampleFirst?: boolean;
+  description: string;
+  exampleFirst: boolean;
   noCode?: boolean;
   codeString?: string;
   showOnlyCodeString?: boolean;

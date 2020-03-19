@@ -29,6 +29,18 @@
             { "text": "section.listItem.text" },
             { "text": "section.listItem.text" }
           ]
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
         }
       ],
       "links": [
@@ -86,6 +98,122 @@
     {
       "title": "section.title",
       "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "section.link.text", "url": "section.link.url" },
+        { "text": "section.link.text", "url": "section.link.url" },
+        { "text": "section.link.text", "url": "section.link.url" }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "section.link.text", "url": "section.link.url" },
+        { "text": "section.link.text", "url": "section.link.url" },
+        { "text": "section.link.text", "url": "section.link.url" }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text",
+          "listItems": [
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" },
+            { "text": "section.listItem.text" }
+          ]
+        },
         {
           "image.key": "section.paragraph.image.key",
           "image.alt": "section.paragraph.image.alt",

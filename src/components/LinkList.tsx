@@ -1,5 +1,5 @@
 import React from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 import Link, { Props as LinkProps } from 'components/Link';
 
@@ -19,10 +19,7 @@ const LinkList = ({ links = [] }: Props): JSX.Element => {
     return (
       <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
         {links.map((link, index) => (
-          <li
-            key={index}
-            style={{ margin: `${suomifiDesignTokens.spacing.m} 0` }}
-          >
+          <li key={index} style={{ margin: `${suomifiTheme.spacing.m} 0` }}>
             <Link text={link.text} url={link.url} />
           </li>
         ))}

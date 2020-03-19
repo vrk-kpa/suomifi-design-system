@@ -54,5 +54,54 @@
         }
       ]
     }
+  ],
+  "framedSections": [
+    {
+      "mainTitle": "mainTitle",
+      "blocks": [
+        {
+          "icon": "icon",
+          "title": "title",
+          "paragraphs": [
+            { "text": "text" },
+            { "text": "text" },
+            { "text": "text" }
+          ],
+          "links": [
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" }
+          ]
+        },
+        {
+          "icon": "icon",
+          "title": "title",
+          "paragraphs": [
+            { "text": "text" },
+            { "text": "text" },
+            { "text": "text" }
+          ],
+          "links": [
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" }
+          ]
+        },
+        {
+          "icon": "icon",
+          "title": "title",
+          "paragraphs": [
+            { "text": "text" },
+            { "text": "text" },
+            { "text": "text" }
+          ],
+          "links": [
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" },
+            { "text": "link.text", "url": "link.url" }
+          ]
+        }
+      ]
+    }
   ]
 }

@@ -1,7 +1,5 @@
 import React, { ReactNode } from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
-
-import { focusOutline } from './utils/outline';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 const BypassLink = ({ to, children }: Props): JSX.Element => (
   <a
@@ -9,16 +7,16 @@ const BypassLink = ({ to, children }: Props): JSX.Element => (
     css={[
       {
         position: 'absolute',
-        zIndex: 10000,
+        zIndex: suomifiTheme.zindexes.focus + 1,
         left: '-1000px',
-        margin: suomifiDesignTokens.spacing.m,
-        padding: suomifiDesignTokens.spacing.s,
-        background: suomifiDesignTokens.colors.highlightLight53,
-        border: `1px solid ${suomifiDesignTokens.colors.depthLight13}`,
-        color: suomifiDesignTokens.colors.blackBase,
+        margin: suomifiTheme.spacing.m,
+        padding: suomifiTheme.spacing.s,
+        background: suomifiTheme.colors.highlightLight53,
+        border: `1px solid ${suomifiTheme.colors.depthLight13}`,
+        color: suomifiTheme.colors.blackBase,
         textDecoration: 'none',
       },
-      `&:focus { ${focusOutline} }`,
+      `&:focus { ${suomifiTheme.outlines.basic} }`,
       { '&:focus': { position: 'absolute', left: 'auto' } },
     ]}
   >

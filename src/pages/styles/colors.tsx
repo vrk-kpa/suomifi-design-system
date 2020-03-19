@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 import { getLuminance } from 'polished';
 
 import Layout from 'components/layout';
@@ -15,13 +15,13 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const colorTokens =
-  !!suomifiDesignTokens && !!suomifiDesignTokens.colors
-    ? suomifiDesignTokens.colors
+  !!suomifiTheme && !!suomifiTheme.colors
+    ? suomifiTheme.colors
     : { depthLight13: undefined };
 
 const borderForLightColor = `1px solid ${colorTokens.depthLight13}`;
 
-type ColorKeys = keyof typeof suomifiDesignTokens.colors;
+type ColorKeys = keyof typeof suomifiTheme.colors;
 interface ColorItem {
   name: string;
   value: string;
@@ -46,12 +46,7 @@ const colors: colorTypes = Object.entries(colorTokens).reduce(
 const colorCategories = [
   {
     id: 'textColors',
-    colors: [
-      colors.blackBase,
-      colors.blackLighten42,
-      colors.depthBase,
-      colors.depthDark27,
-    ],
+    colors: [colors.blackBase, colors.depthBase, colors.depthDark27],
   },
   { id: 'brandColors', colors: [colors.brandBase] },
   {
@@ -61,11 +56,14 @@ const colorCategories = [
       colors.highlightLight4,
       colors.highlightLight45,
       colors.highlightLight50,
+      colors.highlightLight53,
       colors.highlightDark9,
       colors.depthBase,
       colors.depthLight26,
       colors.depthDark27,
       colors.accentBase,
+      colors.depthSecondary,
+      colors.depthSecondaryDark6,
       colors.accentTertiaryDark9,
     ],
   },
@@ -83,14 +81,12 @@ const colorCategories = [
       colors.highlightLight50,
       colors.highlightLight53,
       colors.depthSecondary,
-      colors.depthSecondaryDark6,
     ],
   },
   {
     id: 'trafficColors',
     colors: [
       colors.successBase,
-      colors.successSecondary,
       colors.warningBase,
       colors.alertBase,
       colors.alertLight47,
@@ -117,9 +113,9 @@ const getExampleColor = (
   <div
     key={id}
     style={{
-      margin: `${suomifiDesignTokens.spacing.s} ${
-        suomifiDesignTokens.spacing.l
-      } ${suomifiDesignTokens.spacing.l} 0`,
+      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
+        suomifiTheme.spacing.l
+      } 0`,
       lineHeight: '1rem',
     }}
   >
@@ -127,7 +123,7 @@ const getExampleColor = (
       style={{
         width: '10rem',
         height: '3rem',
-        marginBottom: suomifiDesignTokens.spacing.m,
+        marginBottom: suomifiTheme.spacing.m,
         background: value,
         ...style,
       }}
@@ -173,7 +169,6 @@ const Page = (): JSX.Element => (
                 padding: 0,
                 justifyContent: 'flex-start',
                 background: 'none',
-                border: 'none',
               }}
             >
               {item.colors.map((color, index) =>

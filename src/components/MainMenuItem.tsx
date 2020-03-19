@@ -1,8 +1,8 @@
 import React, { Component, ReactNode } from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 import { Link } from '@wapps/gatsby-plugin-i18next';
+
 import { isFrontPage } from 'components/LinkUtil';
-import { focusOutline } from './utils/outline';
 
 class MainMenuItem extends Component<Props> {
   public render(): JSX.Element {
@@ -17,20 +17,18 @@ class MainMenuItem extends Component<Props> {
             alignItems: 'center',
             justifyContent: 'space-between',
             height: '3.2rem',
-            paddingLeft: suomifiDesignTokens.spacing.m,
-            paddingRight: suomifiDesignTokens.spacing.m,
-            borderBottom: `1px solid ${
-              suomifiDesignTokens.colors.depthSecondary
-            }`,
-            color: suomifiDesignTokens.colors.highlightBase,
+            paddingLeft: suomifiTheme.spacing.m,
+            paddingRight: suomifiTheme.spacing.m,
+            borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
+            color: suomifiTheme.colors.highlightBase,
             textDecoration: 'none',
             whiteSpace: 'nowrap',
             '&:hover': {
-              background: suomifiDesignTokens.colors.depthSecondary,
-              color: suomifiDesignTokens.colors.brandBase,
+              background: suomifiTheme.colors.depthSecondary,
+              color: suomifiTheme.colors.brandBase,
             },
           },
-          `&:focus { ${focusOutline} }`,
+          `&:focus { ${suomifiTheme.outlines.basic} }`,
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           if (!isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
@@ -44,8 +42,8 @@ class MainMenuItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: suomifiDesignTokens.colors.depthSecondary,
-                color: suomifiDesignTokens.colors.brandBase,
+                background: suomifiTheme.colors.depthSecondary,
+                color: suomifiTheme.colors.brandBase,
                 fontWeight: 600,
               },
             };

@@ -1,12 +1,7 @@
 import React from 'react';
 import { Language } from '@wapps/gatsby-plugin-i18next';
 import { NamespacesConsumer } from 'react-i18next';
-import {
-  LanguageMenu,
-  LanguageMenuItem,
-  Button,
-  suomifiDesignTokens,
-} from 'suomifi-ui-components';
+import { Menu, MenuItem, Button, suomifiTheme } from 'suomifi-ui-components';
 
 const hasMultipleLanguages = ({ availableLngs }: Props): boolean =>
   !!availableLngs && availableLngs.length > 1;
@@ -18,17 +13,17 @@ const MenuSwitcher = ({
 }: Props): JSX.Element => (
   <NamespacesConsumer ns={['language']}>
     {t => (
-      <LanguageMenu name={t(`${lng}.short`)} aria-label={t('menu.label')}>
+      <Menu.language name={t(`${lng}.short`)} aria-label={t('menu.label')}>
         {availableLngs.map(value => (
-          <LanguageMenuItem
+          <MenuItem.language
             key={value}
             onSelect={() => changeLng(value)}
             selected={value === lng}
           >
             {t(`${value}.long`)}
-          </LanguageMenuItem>
+          </MenuItem.language>
         ))}
-      </LanguageMenu>
+      </Menu.language>
     )}
   </NamespacesConsumer>
 );
@@ -43,7 +38,7 @@ const ListSwitcher = ({
       <ul
         aria-label={t('menu.label')}
         style={{
-          margin: suomifiDesignTokens.spacing.m,
+          margin: suomifiTheme.spacing.m,
           padding: 0,
           listStyle: 'none',
           display: 'flex',

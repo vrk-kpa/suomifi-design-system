@@ -1,7 +1,7 @@
 import React, { Component, ReactNode, MouseEvent } from 'react';
-import { suomifiDesignTokens, Icon, Button } from 'suomifi-ui-components';
+import { suomifiTheme, Icon, Button } from 'suomifi-ui-components';
 import { Link } from '@wapps/gatsby-plugin-i18next';
-import { focusOutline } from './utils/outline';
+
 import { isFrontPage } from 'components/LinkUtil';
 
 class SideNavItem extends Component<Props> {
@@ -32,19 +32,17 @@ class SideNavItem extends Component<Props> {
             justifyContent: 'space-between',
             height: '3.2rem',
             paddingLeft: level + '.2rem',
-            paddingRight: suomifiDesignTokens.spacing.s,
-            borderBottom: `1px solid ${
-              suomifiDesignTokens.colors.depthSecondary
-            }`,
-            color: suomifiDesignTokens.colors.highlightBase,
+            paddingRight: suomifiTheme.spacing.s,
+            borderBottom: `1px solid ${suomifiTheme.colors.depthSecondary}`,
+            color: suomifiTheme.colors.highlightBase,
             textDecoration: 'none',
             textTransform: level === 1 ? 'uppercase' : 'none',
             '&:hover': {
-              background: suomifiDesignTokens.colors.depthSecondary,
-              color: suomifiDesignTokens.colors.brandBase,
+              background: suomifiTheme.colors.depthSecondary,
+              color: suomifiTheme.colors.brandBase,
             },
           },
-          `&:focus { ${focusOutline} }`,
+          `&:focus { ${suomifiTheme.outlines.basic} }`,
         ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           const isPartiallyCurrentPage = showAsTo
@@ -62,8 +60,8 @@ class SideNavItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: suomifiDesignTokens.colors.depthSecondary,
-                color: suomifiDesignTokens.colors.brandBase,
+                background: suomifiTheme.colors.depthSecondary,
+                color: suomifiTheme.colors.brandBase,
                 fontWeight: 600,
               },
             };
@@ -88,10 +86,7 @@ class SideNavItem extends Component<Props> {
             }}
             onClick={this.toggleOpen}
           >
-            <Icon
-              icon="chevronDown"
-              color={suomifiDesignTokens.colors.depthDark27}
-            />
+            <Icon icon="chevronDown" color={suomifiTheme.colors.depthDark27} />
           </Button>
         )}
       </Link>

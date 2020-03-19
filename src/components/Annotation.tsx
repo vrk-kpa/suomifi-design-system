@@ -1,17 +1,17 @@
 import React from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import Link, { Props as LinkProps } from 'components/Link';
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
 
 const linkStyle = {
-  padding: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.m}`,
-  border: `1px solid ${suomifiDesignTokens.colors.whiteBase}`,
-  borderRadius: '2px',
+  padding: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.m}`,
+  border: `1px solid ${suomifiTheme.colors.whiteBase}`,
+  borderRadius: suomifiTheme.radius.basic,
   '&:link,:visited,:focus,:hover,:active': {
     fontSize: '16px',
-    color: suomifiDesignTokens.colors.whiteBase,
+    color: suomifiTheme.colors.whiteBase,
     textDecoration: 'none',
   },
 };
@@ -34,7 +34,7 @@ const Content = ({
   >
     <div
       style={{
-        flex: center ? '1 1 100%' : '1 1 60%',
+        flex: center ? '1 1 100%' : '1 1 70%',
         textAlign: center ? 'center' : 'initial',
       }}
     >
@@ -42,7 +42,7 @@ const Content = ({
         color="whiteBase"
         style={{
           textAlign: 'inherit',
-          margin: `0 0 0 ${suomifiDesignTokens.spacing.m}`,
+          margin: `0 0 0 ${suomifiTheme.spacing.m}`,
         }}
       >
         {title}
@@ -50,9 +50,7 @@ const Content = ({
       {description && (
         <Paragraph
           style={{
-            margin: `${suomifiDesignTokens.spacing.m} ${
-              suomifiDesignTokens.spacing.m
-            } 0 ${suomifiDesignTokens.spacing.m}`,
+            margin: `${suomifiTheme.spacing.m} 0 0 ${suomifiTheme.spacing.m}`,
             textAlign: 'inherit',
           }}
         >
@@ -63,9 +61,8 @@ const Content = ({
     {link && !!link.text && !!link.url && (
       <div
         style={{
-          margin: `${suomifiDesignTokens.spacing.m}`,
-          marginLeft: center ? 0 : suomifiDesignTokens.spacing.m,
-          marginRight: center ? 0 : suomifiDesignTokens.spacing.m,
+          margin: `${suomifiTheme.spacing.m} 0`,
+          marginLeft: center ? 0 : suomifiTheme.spacing.l,
         }}
       >
         <Link
@@ -83,8 +80,8 @@ const Annotation = ({ title, description, link }: Props): JSX.Element => (
   <div
     style={{
       margin: 0,
-      padding: suomifiDesignTokens.spacing.m,
-      background: suomifiDesignTokens.colors.highlightBase,
+      padding: suomifiTheme.spacing.m,
+      background: suomifiTheme.colors.highlightBase,
       display: 'flex',
       justifyContent: 'center',
     }}

@@ -2,11 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import { Expander } from 'components/ExampleComponents';
+import { Panel } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
@@ -15,7 +15,7 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['expander']}>
+  <NamespacesConsumer ns={['panel']}>
     {t => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -43,18 +43,18 @@ const Page = (): JSX.Element => (
           filterProps={[]}
         >
           <ComponentExample>
-            <Expander title={t('expander.title')} noPadding>
+            <Panel.expansion title={t('panel.title')} noPadding>
               <p
                 style={{
                   margin: 0,
-                  padding: suomifiDesignTokens.spacing.m,
-                  background: suomifiDesignTokens.colors.brandBase,
-                  color: suomifiDesignTokens.colors.whiteBase,
+                  padding: suomifiTheme.spacing.m,
+                  background: suomifiTheme.colors.brandBase,
+                  color: suomifiTheme.colors.whiteBase,
                 }}
               >
-                {t('expander.content')}
+                {t('panel.content')}
               </p>
-            </Expander>
+            </Panel.expansion>
           </ComponentExample>
         </ComponentDescription>
 
@@ -64,9 +64,9 @@ const Page = (): JSX.Element => (
           exampleFirst
         >
           <ComponentExample>
-            <Expander title={t('expander.title')}>
-              {t('expander.content')}
-            </Expander>
+            <Panel.expansion title={t('panel.title')}>
+              {t('panel.content')}
+            </Panel.expansion>
           </ComponentExample>
         </ComponentDescription>
 
@@ -76,20 +76,20 @@ const Page = (): JSX.Element => (
           exampleFirst
         >
           <ComponentExample>
-            <Expander.group
+            <Panel.expansionGroup
               OpenAll={t('group.open')}
               CloseAll={t('group.close')}
             >
-              <Expander title={t('expander.title')}>
-                {t('expander.content')}
-              </Expander>
-              <Expander title={t('expander.title')}>
-                {t('expander.content')}
-              </Expander>
-              <Expander title={t('expander.title')}>
-                {t('expander.content')}
-              </Expander>
-            </Expander.group>
+              <Panel.expansion title={t('panel.title')}>
+                {t('panel.content')}
+              </Panel.expansion>
+              <Panel.expansion title={t('panel.title')}>
+                {t('panel.content')}
+              </Panel.expansion>
+              <Panel.expansion title={t('panel.title')}>
+                {t('panel.content')}
+              </Panel.expansion>
+            </Panel.expansionGroup>
           </ComponentExample>
         </ComponentDescription>
       </Layout>

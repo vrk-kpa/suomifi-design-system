@@ -1,7 +1,7 @@
 {
   "title": "Tyylit",
   "info.title": "Tyylien käyttöohje",
-  "intro": "Komponenttikirjasto sisältää Suomi.fi-brändin mukaisia, valmiiksi paketoituja tyylimäärittelyjä eli tokeneita. Komponenttien tyylit pohjautuvat näihin tokeneihin.",
+  "intro": "Komponenttikirjasto sisältää Suomi.fi-brändin mukaisia design tokeneita. Kaikki komponenttien tyylit pohjautuvat näihin design tokeneihin.",
   "sections": [
     {
       "title": "",

@@ -10,18 +10,17 @@
   "open.navigation.main": "Avaa tai sulje päävalikko",
   "navigation.main": "Päänavigaatio",
   "react": "Koodiesimerkki (React)",
-  "footer.description": "Suomi.fi Design System -kirjaston kehittämisestä vastaa Digi- ja väestötietovirasto.",
+  "footer.description": "Suomi.fi Design System -kirjaston kehityksestä vastaa Väestorekisterikeskus.",
   "footer.links": [
     { "text": "", "url": "" },
     { "text": "Saavutettavuusseloste", "url": "/accessibility-statement" },
-    { "text": "Suomidigi.fi", "url": "https://beta.suomidigi.fi/" }
+    { "text": "Suomidigi.fi", "url": "https://suomidigi.fi/" }
   ],
-  "footer.social.title": "Tämä on Suomi.fi Design Systemin julkinen kehitysversio (alpha)",
-  "footer.social.description": "Voit osallistua kehittämiseen Suomidigin Slack-yhteisössä tai Githubissa.",
+  "footer.social.title": "Osallistu keskusteluun ja kehitystyöhön",
+  "footer.social.description": "Onko sinulla kysymyksiä, ehdotuksia ideoita? Jaetaan parhaita käytäntöjä ja ratkaistaan haasteita yhdessä!",
   "slack.link.text": "suomidigi-kehittajat",
   "slack.link.url": "https://suomidigi-kehittajat.slack.com",
   "github.link.text": "suomifi-ui-components",
   "github.link.url": "https://github.com/vrk-kpa/suomifi-ui-components",
-  "opens.new.window": "Avautuu uuteen ikkunaan",
-  "work.in.progress.warning": "Tämän sivun esittelemä toiminnallisuus on vielä työn alla ja saattaa muuttua."
+  "opens.new.window": "Avautuu uuteen ikkunaan"
 }

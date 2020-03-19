@@ -1,18 +1,16 @@
 import React from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
-import { panelShadow } from '../components/utils/shadow';
+import { suomifiTheme } from 'suomifi-ui-components';
 
 export const Example = () => (
   <div
     style={{
-      margin: suomifiDesignTokens.spacing.l,
-      padding: suomifiDesignTokens.spacing.m,
-      background: suomifiDesignTokens.colors.highlightBase,
-      boxShadow: panelShadow,
-      fontSize:
-        suomifiDesignTokens.values.typography.bodyText.fontSize.value +
-        suomifiDesignTokens.values.typography.bodyText.fontSize.unit,
-      color: suomifiDesignTokens.colors.whiteBase,
+      margin: suomifiTheme.spacing.l,
+      padding: suomifiTheme.spacing.m,
+      borderRadius: suomifiTheme.radius.basic,
+      background: suomifiTheme.colors.highlightBase,
+      boxShadow: suomifiTheme.shadows.panelShadow,
+      fontSize: suomifiTheme.typography.fontSize.body,
+      color: suomifiTheme.colors.whiteBase,
     }}
   >
     Example

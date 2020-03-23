@@ -75,7 +75,10 @@ const Page: React.FC = (): React.ReactElement => {
                 border: 'none',
               }}
             >
-              <Icon icon="check" />
+              <Icon
+                icon="check"
+                ariaLabel={t('basicIcons.example.arialabel')}
+              />
             </ComponentExample>
           </ComponentDescription>
 
@@ -95,11 +98,13 @@ const Page: React.FC = (): React.ReactElement => {
                 icon="helpFilled"
                 color={suomifiDesignTokens.colors.highlightBase}
                 style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                ariaLabel={t('infoIcons.example1.arialabel')}
               />
               <Icon
                 icon="help"
                 color={suomifiDesignTokens.colors.highlightBase}
                 style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                ariaLabel={t('infoIcons.example2.arialabel')}
               />
             </ComponentExample>
           </ComponentDescription>
@@ -120,11 +125,13 @@ const Page: React.FC = (): React.ReactElement => {
                 icon="errorFilled"
                 color={suomifiDesignTokens.colors.highlightBase}
                 style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                ariaLabel={t('additionalInfoIcons.example1.arialabel')}
               />
               <Icon
                 icon="info"
                 color={suomifiDesignTokens.colors.highlightBase}
                 style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                ariaLabel={t('additionalInfoIcons.example2.arialabel')}
               />
             </ComponentExample>
           </ComponentDescription>
@@ -141,7 +148,10 @@ const Page: React.FC = (): React.ReactElement => {
                 border: 'none',
               }}
             >
-              <StaticIcon icon="collaboration" />
+              <StaticIcon
+                icon="collaboration"
+                ariaLabel={t('illustrativeIcons.example.arialabel')}
+              />
             </ComponentExample>
           </ComponentDescription>
 
@@ -157,7 +167,10 @@ const Page: React.FC = (): React.ReactElement => {
                 border: 'none',
               }}
             >
-              <StaticIcon icon="doc" />
+              <StaticIcon
+                icon="doc"
+                ariaLabel={t('attachmentIcons.example.arialabel')}
+              />
             </ComponentExample>
           </ComponentDescription>
 
@@ -173,7 +186,11 @@ const Page: React.FC = (): React.ReactElement => {
                 border: 'none',
               }}
             >
-              <Icon icon="signLanguageContent" color="#00B6EC" />
+              <Icon
+                icon="signLanguageContent"
+                color="#00B6EC"
+                ariaLabel={t('signLanguageIcons.example.arialabel')}
+              />
             </ComponentExample>
           </ComponentDescription>
           <Link

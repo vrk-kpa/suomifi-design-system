@@ -42,5 +42,6 @@
   "signLanguageIcons.description": "Suomi.fi-verkkopalveluissa käytetään Kuurojen liiton viittomakielen palveluiden symbolia.",
   "signLanguageIconsLink.title": "Viittomakielen ikoni Kuurojen liiton sivulla",
   "signLanguageIconsLink.url": "https://www.kuurojenliitto.fi/fi/artikkelit/viittomakieliset-palvelut-symboli",
+  "signLanguageIcons.example.arialabel": "Viittomakielen ikoni",
   "externalLink.label": "Avautuu uuteen ikkunaan"
 }

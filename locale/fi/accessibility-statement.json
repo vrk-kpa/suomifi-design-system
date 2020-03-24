@@ -5,34 +5,34 @@
     {
       "paragraphs": [
         {
-          "text": "Tämä saavutettavuusseloste koskee Väestörekisterikeskuksen toteuttamaa Suomi.fi Design System -sivustoa. Seloste on laadittu 19.9.2019."
+          "text": "Tässä saavutettavuusselosteessa kerrotaan, miten Suomi.fi Design System -sivustolla noudatetaan lakia digitaalisten palvelujen tarjoamisesta, mitä puutteita sivuston saavutettavuudessa on ja miten voit antaa meille palautetta saavutettavuusongelmista. Seloste on laadittu 19.9.2019."
         },
         {
-          "text": "Suomi.fi Design System -sivuston saavutettavuutta on arvioinut Väestörekisterikeskuksen hankkima saavutettavuusasiantuntija säännöllisesti osana suunnittelu- ja kehitysprosessia."
+          "text": "Tästä verkkopalvelusta vastaa Digi- ja väestötietovirasto. Haluamme, että mahdollisimman moni käyttäjä pystyy käyttämään digitaalisia palvelujamme. Otamme saavutettavuuden huomioon digitaalisten palvelujen kehityksessä. Palvelujen saavutettavuutta arvioidaan säännöllisesti osana suunnittelu- ja kehitystyötä."
         }
       ]
     },
     {
-      "title": "Digipalvelun saavutettavuuden tila",
+      "title": "Miten saavutettavia sivut ovat?",
       "paragraphs": [
         {
-          "text": "Verkkopalvelu täyttää suurelta osin saavutettavuusvaatimukset, eikä sivustolla ole kriittisiä saavutettavuuspuutteita (täyttää WCAG-ohjeistuksen A- ja AA-tason kriittiset vaatimukset). "
+          "text": "Tämä sivusto täyttää lain vaatimat A- ja AA-tason saavutettavuuskriteerit (WCAG-kriteeristö 2.1). "
         }
       ]
     },
     {
-      "title": "Huomasitko saavutettavuuspuutteen sivustollamme? Kerro se meille ja teemme parhaamme puutteen korjaamiseksi",
+      "title": "Huomasitko puutteita saavutettavuudessa?",
       "paragraphs": [
         {
-          "text": "Ota yhteyttä sähköpostitse osoitteella: suomifi(at)suomi.fi"
+          "text": "Pyrimme jatkuvasti huolehtimaan saavutettavuudesta. Jos löydät ongelmia, ilmoita niistä meille ja teemme parhaamme puutteiden korjaamiseksi. Vastaamme mahdollisimman pian tai viimeistään kahden viikon sisällä. Voit ottaa yhteyttä sähköpostitse osoitteella saavutettavuus(at)dvv.fi."
         }
       ]
     },
     {
-      "title": "Valvontaviranomainen",
+      "title": "Saavutettavuuden valvonta",
       "paragraphs": [
         {
-          "text": "Jos huomaat sivustolla saavutettavuusongelmia, anna ensin palautetta sivuston ylläpitäjälle. Vastauksessa voi mennä 14 päivää. Jos et ole tyytyväinen saamaasi vastaukseen tai et saa vastausta lainkaan kahden viikon aikana, voit antaa palautteen Etelä-Suomen aluehallintovirastoon. Etelä-Suomen aluehallintoviraston sivulla kerrotaan tarkasti, miten valituksen voi tehdä ja miten asia käsitellään."
+          "text": "Etelä-Suomen aluehallintovirasto valvoo saavutettavuusvaatimusten toteutumista. Jos et ole tyytyväinen saamaasi vastaukseen tai et saa vastausta lainkaan kahden viikon aikana, voit antaa palautteen Etelä-Suomen aluehallintovirastoon. Etelä-Suomen aluehallintoviraston sivulla kerrotaan tarkasti, miten valituksen voi tehdä ja miten asia käsitellään."
         }
       ]
     },
@@ -62,22 +62,22 @@
     {
       "paragraphs": [
         {
-          "text": "saavutettavuus(at)avi.fi"
+          "text": "sähköposti: saavutettavuus(at)avi.fi"
         }
       ]
     },
     {
       "paragraphs": [
         {
-          "text": "puhelinnumero vaihde 0295 016 000"
+          "text": "puhelin: vaihde 0295 016 000"
         }
       ]
     },
     {
-      "title": "Teemme jatkuvasti työtä saavutettavuuden parantamiseksi",
+      "title": "Miten olemme testanneet saavutettavuutta?",
       "paragraphs": [
         {
-          "text": "Saavutettavuus on huomioitu Väestörekisterikeskuksen digitaalisten palvelujen kehityksessä suunnittelusta toteutukseen kokonaisketterän mallin mukaisesti. Väestörekisterikeskuksen hankkima saavutettavuusasiantuntija arvioi palvelujen saavutettavuutta säännöllisesti osana suunnittelu- ja kehitystyötä."
+          "text": "Saavutettavuus on huomioitu Digi- ja väestötietoviraston digitaalisten palvelujen kehityksessä suunnittelusta toteutukseen kokonaisketterän mallin mukaisesti. Verkkosivuston saavutettavuutta on arvioinut Digi- ja väestötietoviraston hankkima saavutettavuusasiantuntija säännöllisesti osana suunnittelu- ja kehitysprosessia."
         }
       ]
     }

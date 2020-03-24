@@ -1,15 +1,15 @@
 {
   "title": "Taustatietoa",
   "info.title": "Yleistä Design Systemistä",
-  "intro": "Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Kirjastosta löydät saavutettavuudeltaan testattuja ja Reactilla toteutettuja käyttöliittymäkomponentteja. Voit hyödyntää niitä verkkopalveluiden rakentamisessa joko sellaisenaan tai muokata niiden ulkoasua vastaamaan oman palvelusi visuaalista ilmettä.",
+  "intro": "Suomi.fi Design System tarjoaa kokoelman saavutettavia, uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Design System -kirjaston komponentit ovat yhteismitallisia rakennuspalikoita, jotka auttavat niin suunnittelijoita kuin kehittäjiäkin toteuttamaan yhdenmukaisia palveluja. Voit hyödyntää komponentteja joko sellaisenaan tai muokata niiden ulkoasua vastaamaan oman palvelusi visuaalista ilmettä.",
   "sections": [
     {
-      "title": "",
+      "title": "Käyttäjäkokemus ja saavutettavuus",
       "paragraphs": [
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Yhdenmukaisten käyttöliittymäkomponenttien avulla eri palvelut näyttäytyvät käyttäjille yhtenäisinä ja käyttäjäkokemus säilyy eheänä. Käyttämällä samanlaisia elementtejä johdonmukaisesti, tuotamme palvelun käyttäjälle intuitiivisen ja ymmärrettävän käyttökokemuksen. Yhdenmukaisesti toimivat palvelut ovat käyttäjien etu.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -21,19 +21,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
+          "text": "Saavutettavuudesta huolehtiminen on erittäin keskeinen osa Suomi.fi Design System -kirjastoa. Kaikissa ratkaisuissa huomioidaan jo suunnitteluvaiheessa saavutettavuuskriteerit (WCAG 2.1). Apuvälinekäytön lisäksi suunnittelussa huomioidaan myös kognitiivinen saavutettavuus. Kaikki komponentit myös testataan saavutettavuusvaatimusten mukaisesti ennen niiden julkaisua.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -50,12 +38,12 @@
       ]
     },
     {
-      "title": "Versiointi ja päivitys",
+      "title": "Suomi.fi-brändi",
       "paragraphs": [
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelukehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti. Komponenttikirjasto noudattaa Semanttisen versioinnin (Semantic Versioning) säännöstöä. Julkaisutiedot (Release Notes) käyttöliittymäkomponenttikirjaston muutoksista ja julkaistavista versioista löytyy git repositorystä.",
+          "text": "Kaikki Suomi.fi-kokonaisuuteen kuuluvat eri palvelut käyttävät Suomi.fi-brändiä, jota hallinnoi Digi- ja väestötietovirasto. Suomi.fi Design System -kirjaston käyttöliittymäkomponentit pohjautuvat Suomi.fi-brändin visuaaliseen ilmeeseen.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -67,7 +55,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Suomi.fi-brändiperheeseen kuuluu useita sähköisen asioinnin tukipalveluja. Näitä ovat: Suomi.fi-verkkopalvelu, Palvelutietovaranto, Tunnistus, Viestit, Valtuudet, Kartat, Maksut, Palveluhallinta ja palveluväylän Liityntäkatalogi. Suomi.fi-logon käyttäminen palvelun tunnuksena on sallittua ainoastaan Suomi.fi-brändiperheeseen kuuluvissa palveluissa.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -79,7 +67,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Digi- ja väestötietoviraston uudet digitaaliset asiointipalvelut kansalaisille toteutetaan myös yhtenäisen Suomi.fi-käyttökokemuksen mukaisesti.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -96,82 +84,12 @@
       ]
     },
     {
-      "title": "Yhteiskehittäminen",
+      "title": "Kysy ja kommentoi",
       "paragraphs": [
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Suomi.fi Design Systemin tarkempi yhteiskehittämisen malli ja sen dokumentointi on parhaillaan työn alla, mutta voit jo nyt osallistua kehitystyöhön Gihubin kautta. Design Systemin käyttäjänä voit myös kontribuoida Open Source -hengen mukaisesti Githubin työkaluja käyttämällä. Käyttöliittymäkomponenttien kirjasto on MIT-lisenssin alainen, eli kuka tahansa saa käyttää, hyödyntää ja jakaa sisältöä mihin tahansa käyttötarkoitukseen. Käyttäjien on mahdollista toivoa uusia ominaisuuksia, raportoida bugeista sekä tuottaa uutta sisältöä. Muutokset ja lisäykset kannattaa tehdä oman projektin sijaan yhteisesti käytettyyn kirjastoon, jolloin tehdystä työsä hyötyvät kaikki käyttäjät.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "Ota yhteyttä",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Onko sinulla ehdotuksia, palautetta tai ideoita? Puuttuuko jokin tarvitsemasi komponentti? Suomi.fi Design Systemiä koskeva keskustelu käydään ensisijaisesti suomidigin Slack-kehittäjäyhteisössä #designsystem kanavalla. Kehittäjäyhteisö, UI kirjaston käyttäjät löytyvät Githubista.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
+          "text": "Suomi.fi Design Systemiä koskeva keskustelu käydään ensisijaisesti Suomidigin Slack-yhteisössä (kanava #designsystem). Kehittäjien, komponenttikirjaston käyttäjien välinen keskustelu löytyy Githubista.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -184,52 +102,6 @@
       "links": [
         { "text": "Suomidigi.fi kehittäjät Slack-kanava", "url": "https://suomidigi-kehittajat.slack.com" },
         { "text": "Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]
     }

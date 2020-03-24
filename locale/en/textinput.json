@@ -1,0 +1,18 @@
+{
+  "title": "",
+  "intro": "",
+  "note.title": "",
+  "note.items": ["", "", "", ""],
+
+  "exampleRegular.label": "",
+  "exampleSuccess.title": "",
+  "exampleSuccess.description": "",
+  "exampleSuccess.label": "",
+  "exampleError.title": "",
+  "exampleError.description": "",
+  "exampleError.label": "",
+  "exampleError.statusText": "",
+  "exampleDisabled.title": "",
+  "exampleDisabled.description": "",
+  "exampleDisabled.label": ""
+}

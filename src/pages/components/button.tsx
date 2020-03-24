@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -20,15 +20,14 @@ const components = [
   { id: 'tertiary', comp: Button.tertiary },
   {
     id: 'negative',
-    comp: Button.negative,
-    background: suomifiTheme.colors.highlightBase,
+    comp: Button.inverted,
+    background: suomifiDesignTokens.colors.highlightBase,
   },
   { id: 'secondary', comp: Button.secondary },
   {
     id: 'secondaryNoborder',
     comp: Button.secondaryNoborder,
-    background: suomifiTheme.colors.whiteBase,
-    border: `1px solid ${suomifiTheme.colors.depthLight13}`,
+    background: suomifiDesignTokens.colors.whiteBase,
   },
 ];
 
@@ -43,8 +42,8 @@ const disabledComponents = [
   { id: 'tertiary', comp: Button.tertiary },
   {
     id: 'negative',
-    comp: Button.negative,
-    background: suomifiTheme.colors.highlightBase,
+    comp: Button.inverted,
+    background: suomifiDesignTokens.colors.highlightBase,
   },
   { id: 'secondary', comp: Button.secondary },
   {
@@ -78,7 +77,7 @@ const getExampleComp = (
     key={id}
     id={id}
     aria-label={label}
-    style={{ margin: suomifiTheme.spacing.s }}
+    style={{ margin: suomifiDesignTokens.spacing.s }}
     {...props}
     onClick={() => handleClick(id, label, t)}
   >
@@ -86,173 +85,174 @@ const getExampleComp = (
   </Comp>
 );
 
-const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['button']}>
-    {t => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading.h1>{t('title')}</Heading.h1>
+const Page = (): JSX.Element => {
+  return (
+    <NamespacesConsumer ns={['button']}>
+      {t => (
+        <Layout sideNavData={sideNavData(t)}>
+          <SEO title={t('title')} />
+          <Heading.h1>{t('title')}</Heading.h1>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+          <Paragraph.lead>
+            <Text.lead>{t('intro')}</Text.lead>
+          </Paragraph.lead>
 
-        <NoteBox title={t('note.title')} items={t('note.items')} />
+          <NoteBox title={t('note.title')} items={t('note.items')} />
 
-        {t('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
+          {t('sections').map((section, index) => (
+            <Section
+              key={index}
+              mainTitle={section.title}
+              paragraphs={section.paragraphs}
+              links={section.links}
+            />
+          ))}
 
-        <ComponentDescription
-          mainTitle={t('fullWidth.title')}
-          description={t('fullWidth.description')}
-          exampleFirst
-        >
-          <div
-            style={{
-              overflow: 'hidden',
-              marginBottom: suomifiTheme.spacing.m,
-              padding: `${suomifiTheme.spacing.l} ${suomifiTheme.spacing.m} 0 ${
-                suomifiTheme.spacing.m
-              }`,
-              background: suomifiTheme.colors.depthLight30,
-              display: 'flex',
-              justifyContent: 'center',
-            }}
+          <ComponentDescription
+            mainTitle={t('fullWidth.title')}
+            description={t('fullWidth.description')}
+            exampleFirst
           >
-            <MobileDevice>
-              {mobileComponents.map(item => (
+            <div
+              style={{
+                overflow: 'hidden',
+                marginBottom: suomifiDesignTokens.spacing.m,
+                padding: `${suomifiDesignTokens.spacing.l} ${suomifiDesignTokens.spacing.m} 0 ${suomifiDesignTokens.spacing.m}`,
+                background: suomifiDesignTokens.colors.whiteBase,
+                display: 'flex',
+                justifyContent: 'center',
+                border: `1px solid ${suomifiDesignTokens.colors.depthBase}`,
+              }}
+            >
+              <MobileDevice>
+                {mobileComponents.map(item => (
+                  <div
+                    key={item.id}
+                    style={{
+                      padding: `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.s}`,
+                    }}
+                  >
+                    {getExampleComp(
+                      item.comp,
+                      `${item.id}.fullWidth`,
+                      t(`${item.id}.label`),
+                      { fullWidth: true, style: {} },
+                      t,
+                    )}
+                  </div>
+                ))}
+              </MobileDevice>
+            </div>
+          </ComponentDescription>
+
+          {components.map(item => (
+            <ComponentDescription
+              key={item.id}
+              mainTitle={t(`${item.id}.title`)}
+              description={t(`${item.id}.description`)}
+              exampleFirst
+            >
+              <ComponentExample
+                style={{
+                  padding: suomifiDesignTokens.spacing.s,
+                  background: item.background,
+                }}
+              >
+                {[
+                  { id: item.id, label: t(`${item.id}.label`) },
+                  {
+                    id: `${item.id}.disabled`,
+                    label: t(`${item.id}.labelDisabled`),
+                    props: { disabled: true },
+                  },
+                ].map(example =>
+                  getExampleComp(
+                    item.comp,
+                    example.id,
+                    example.label,
+                    example.props,
+                    t,
+                  ),
+                )}
+              </ComponentExample>
+            </ComponentDescription>
+          ))}
+
+          <ComponentDescription
+            mainTitle={t('withIcon.title')}
+            description={t('withIcon.description')}
+            exampleFirst
+          >
+            {components.map(item => (
+              <ComponentExample
+                key={item.id}
+                style={{
+                  padding: suomifiDesignTokens.spacing.s,
+                  background: item.background,
+                }}
+              >
+                {[
+                  {
+                    id: `${item.id}.icon`,
+                    label: t('button.labelIcon', {
+                      name: t(`${item.id}.label`),
+                    }),
+                    props: { icon: 'login' },
+                  },
+                  {
+                    id: `${item.id}.iconRight`,
+                    label: t('button.labelIconRight', {
+                      name: t(`${item.id}.label`),
+                    }),
+                    props: { iconRight: 'logout' },
+                  },
+                ].map(example =>
+                  getExampleComp(
+                    item.comp,
+                    example.id,
+                    example.label,
+                    example.props,
+                    t,
+                  ),
+                )}
+              </ComponentExample>
+            ))}
+          </ComponentDescription>
+
+          <ComponentDescription
+            mainTitle={t('disabled.title')}
+            description={t('disabled.description')}
+            exampleFirst
+          >
+            <ComponentExample
+              style={{ padding: suomifiDesignTokens.spacing.s }}
+            >
+              {disabledComponents.map(item => (
                 <div
                   key={item.id}
                   style={{
-                    padding: `${suomifiTheme.spacing.m} ${
-                      suomifiTheme.spacing.s
-                    }`,
+                    padding: item.background
+                      ? suomifiDesignTokens.spacing.s
+                      : 0,
+                    background: item.background || 'none',
                   }}
                 >
                   {getExampleComp(
                     item.comp,
-                    `${item.id}.fullWidth`,
-                    t(`${item.id}.label`),
-                    { fullWidth: true, style: {} },
+                    `${item.id}.disabled.another`,
+                    t(`${item.id}.labelDisabled`),
+                    { disabled: true },
                     t,
                   )}
                 </div>
               ))}
-            </MobileDevice>
-          </div>
-        </ComponentDescription>
-
-        {components.map(item => (
-          <ComponentDescription
-            key={item.id}
-            mainTitle={t(`${item.id}.title`)}
-            description={t(`${item.id}.description`)}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                padding: suomifiTheme.spacing.s,
-                background: item.background,
-                border: item.border || 0,
-              }}
-            >
-              {[
-                { id: item.id, label: t(`${item.id}.label`) },
-                {
-                  id: `${item.id}.disabled`,
-                  label: t(`${item.id}.labelDisabled`),
-                  props: { disabled: true },
-                },
-              ].map(example =>
-                getExampleComp(
-                  item.comp,
-                  example.id,
-                  example.label,
-                  example.props,
-                  t,
-                ),
-              )}
             </ComponentExample>
           </ComponentDescription>
-        ))}
-
-        <ComponentDescription
-          mainTitle={t('withIcon.title')}
-          description={t('withIcon.description')}
-          exampleFirst
-        >
-          {components.map(item => (
-            <ComponentExample
-              key={item.id}
-              style={{
-                padding: suomifiTheme.spacing.s,
-                background: item.background,
-                border: item.border || 0,
-              }}
-            >
-              {[
-                {
-                  id: `${item.id}.icon`,
-                  label: t('button.labelIcon', {
-                    name: t(`${item.id}.label`),
-                  }),
-                  props: { icon: 'login' },
-                },
-                {
-                  id: `${item.id}.iconRight`,
-                  label: t('button.labelIconRight', {
-                    name: t(`${item.id}.label`),
-                  }),
-                  props: { iconRight: 'logout' },
-                },
-              ].map(example =>
-                getExampleComp(
-                  item.comp,
-                  example.id,
-                  example.label,
-                  example.props,
-                  t,
-                ),
-              )}
-            </ComponentExample>
-          ))}
-        </ComponentDescription>
-
-        <ComponentDescription
-          mainTitle={t('disabled.title')}
-          description={t('disabled.description')}
-          exampleFirst
-        >
-          <ComponentExample style={{ padding: suomifiTheme.spacing.s }}>
-            {disabledComponents.map(item => (
-              <div
-                key={item.id}
-                style={{
-                  padding: item.background ? suomifiTheme.spacing.s : 0,
-                  background: item.background || 'none',
-                }}
-              >
-                {getExampleComp(
-                  item.comp,
-                  `${item.id}.disabled.another`,
-                  t(`${item.id}.labelDisabled`),
-                  { disabled: true },
-                  t,
-                )}
-              </div>
-            ))}
-          </ComponentExample>
-        </ComponentDescription>
-      </Layout>
-    )}
-  </NamespacesConsumer>
-);
+        </Layout>
+      )}
+    </NamespacesConsumer>
+  );
+};
 
 export default withI18next()(Page);
 

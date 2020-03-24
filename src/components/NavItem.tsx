@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Link } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
-
+import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { focusOutline } from './utils/outline';
 import { isFrontPage } from 'components/LinkUtil';
 
 const NavItem = ({ to, children }: Props): JSX.Element => (
@@ -9,22 +9,22 @@ const NavItem = ({ to, children }: Props): JSX.Element => (
     to={to}
     css={[
       {
-        padding: suomifiTheme.spacing.s,
+        padding: suomifiDesignTokens.spacing.s,
         lineHeight: '2.8rem',
         whiteSpace: 'nowrap',
-        color: suomifiTheme.colors.blackBase,
+        color: suomifiDesignTokens.colors.blackBase,
         textDecoration: 'none',
         '&:hover': {
-          borderBottom: `4px solid ${suomifiTheme.colors.highlightBase}`,
+          borderBottom: `4px solid ${suomifiDesignTokens.colors.highlightBase}`,
         },
       },
-      `&:focus { ${suomifiTheme.outlines.basic} }`,
+      `&:focus { ${focusOutline} }`,
     ]}
     getProps={({ isCurrent, isPartiallyCurrent }) => {
       if (isCurrent || (!isFrontPage(to) && isPartiallyCurrent)) {
         return {
           style: {
-            borderBottom: `4px solid ${suomifiTheme.colors.highlightBase}`,
+            borderBottom: `4px solid ${suomifiDesignTokens.colors.highlightBase}`,
           },
         };
       }

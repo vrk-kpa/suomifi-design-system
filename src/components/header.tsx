@@ -1,6 +1,6 @@
 import React from 'react';
 import { NamespacesConsumer } from 'react-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import LanguageSwitcher from 'components/LanguageSwitcher';
 import { ReactComponent as SuomiFi } from 'staticIcons/SuomiFi.svg';
@@ -15,11 +15,11 @@ const Header = (): JSX.Element => (
     {t => (
       <header
         style={{
-          padding: suomifiTheme.spacing.m,
-          borderTop: `4px solid ${suomifiTheme.colors.brandBase}`,
+          padding: suomifiDesignTokens.spacing.m,
+          borderTop: `4px solid ${suomifiDesignTokens.colors.brandBase}`,
           boxSizing: `border-box`,
-          background: suomifiTheme.colors.whiteBase,
-          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
+          background: suomifiDesignTokens.colors.whiteBase,
+          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
           display: 'flex',
           justifyContent: 'center',
           lineHeight: '40px',
@@ -52,14 +52,14 @@ const Header = (): JSX.Element => (
             style={{
               flex: 1,
               position: 'relative',
-              marginLeft: suomifiTheme.spacing.s,
+              marginLeft: suomifiDesignTokens.spacing.s,
             }}
           >
             <div
               style={{
                 fontSize: '28px',
                 fontWeight: 600,
-                color: suomifiTheme.colors.brandBase,
+                color: suomifiDesignTokens.colors.brandBase,
               }}
             >
               {t('common:header.title')}
@@ -74,7 +74,7 @@ const Header = (): JSX.Element => (
                 fontSize: '16px',
                 fontWeight: 600,
                 textTransform: 'uppercase',
-                color: suomifiTheme.colors.highlightBase,
+                color: suomifiDesignTokens.colors.highlightBase,
               }}
             >
               {t('common:header.stamp')}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NamespacesConsumer } from 'react-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import NavItem from 'components/NavItem';
 import { MainNavData } from 'components/MainNavData';
@@ -13,8 +13,8 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
         style={{
           padding: 0,
           boxSizing: 'border-box',
-          background: `${suomifiTheme.colors.whiteBase}`,
-          borderBottom: `1px solid ${suomifiTheme.colors.depthLight13}`,
+          background: `${suomifiDesignTokens.colors.whiteBase}`,
+          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
           display: 'flex',
           justifyContent: 'center',
         }}
@@ -35,9 +35,7 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
             <li
               key={item.to}
               style={{
-                margin: `0 ${suomifiTheme.spacing.l} 0 ${
-                  suomifiTheme.spacing.s
-                }`,
+                margin: `0 ${suomifiDesignTokens.spacing.l} 0 ${suomifiDesignTokens.spacing.s}`,
               }}
             >
               <NavItem to={item.to}>{item.label}</NavItem>

@@ -1,9 +1,9 @@
 {
   "title": "Suunnittelijoille",
-  "intro": "Tulemme jatkossa julkaisemaan Design System -sivustolla myös käyttöliittymien suunnitteluaineiston Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit.",
+  "intro": "Suomi.fi-palvelujen yhtenäinen käyttökokemus syntyy yhteisen suunnittelukirjaston ja yhtenäisen suunnitteluprosessin avulla. Yhteisten toimintatapojen avulla suunnittelutiimi pystyy toimimaan nopeasti ja yhdenmukaisesti, ja tämä myös tehostaa suunnittelijoiden ja kehittäjien välistä työskentelyä.",
   "sections": [
     {
-      "title": "",
+      "title": "Suomi.fi-palvelujen keskeiset suunnitteluperiaatteet",
       "paragraphs": [
         {
           "image.key": "",
@@ -54,7 +54,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Kaikki Suomi.fi-kokonaisuuteen kuuluvat eri palvelut käyttävät Suomi.fi-brändiä, jota hallinnoi Väestörekisterikeskus. Suomi.fi Design System kirjaston käyttöliittymäkomponentit hyödyntävät Suomi.fi brändin visuaalista ilmettä.",
+          "text": "Tuotamme yhdenmukaisia yksittäisiä suunnitteluelementtejä, joita käytetään sivustorakenteen eri kohdissa. Käyttämällä samanlaisia elementtejä johdonmukaisesti, tuotamme palvelun käyttäjälle intuitiivisen ja ymmärrettävän käyttökokemuksen. Määritämme sivustorakenteen eri tasoille sivujen mallipohjat (templatet), joita käytämme yhtenäisesti läpi verkkopalvelun.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -66,53 +66,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Suomi.fi-brändiperheeseen kuuluvat VRK:n sähköisen asioinnin tukipalvelut ja Kansalliseen palveluarkkitehtuuriin liittyvät sähköiset palvelut. Näitä ovat: Suomi.fi-verkkopalvelu, Palvelutietovaranto, Tunnistus, Viestit, Valtuudet, Kartat, Maksut, Palveluhallinta ja palveluväylän Liityntäkatalogi. Muiden palveluiden liittäminen Suomi.fi-palveluperheeseen tulee aina tehdä yhteistyössä VRK:n kanssa. Suomi.fi-logon käyttäminen palvelun tunnuksena on sallittua ainoastaan Suomi.fi-brändiperheeseen kuuluvissa palveluissa. Jos palvelusi tai tuotteesi haluaa hyödyntää Suomi.fi-brändiä kokonaisvaltaisesti, ota yhteyttä VRK:n viestintään.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
-      ]
-    },
-    {
-      "title": "",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
+          "text": "Suomi.fi-brändiperheeseen kuuluvat Digi- ja väestötietoviraston sähköisen asioinnin tukipalvelut ja Kansalliseen palveluarkkitehtuuriin liittyvät sähköiset palvelut. Näitä ovat: Suomi.fi-verkkopalvelu, Palvelutietovaranto, Tunnistus, Viestit, Valtuudet, Kartat, Maksut, Palveluhallinta ja palveluväylän Liityntäkatalogi. Muiden palveluiden liittäminen Suomi.fi-palveluperheeseen tulee aina tehdä yhteistyössä DVV:n kanssa. Suomi.fi-logon käyttäminen palvelun tunnuksena on sallittua ainoastaan Suomi.fi-brändiperheeseen kuuluvissa palveluissa. Jos palvelusi tai tuotteesi haluaa hyödyntää Suomi.fi-brändiä kokonaisvaltaisesti, ota yhteyttä DVV:n viestintään.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -146,7 +100,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "",
+          "text": "Suomi.fi-palveluissa on käytössä aina viimeisimmät suunnitteluratkaisut ja suunnittelukirjastomme on ajantasainen. Suunnittelemamme käyttöliittymäratkaisut toteutetaan moderneilla web-teknologioilla, jolloin tuotamme laadukkaan, helppokäyttöisen ja suorituskyvyltään korkeatasoisen käyttöliittymäkerroksen.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -192,7 +146,53 @@
         {
           "image.key": "",
           "image.alt": "",
+          "text": "Kaikki suunnittelemamme ratkaisut ovat jo lähtökohdiltaan saavutettavia WCAG 2.1 -kriteeristöjen mukaisesti. Apuvälinekäytön lisäksi huomioimme suunnittelussa myös kognitiivisen saavutettavuuden. Varmistamme saavutettavuuden toteutumisen saavutettavuusasiantuntijoiden avulla.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
           "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
+      ],
+      "links": [
+        { "text": "", "url": "" },
+        { "text": "", "url": "" },
+        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Suunnittelemamme palvelu on johdonmukaisesti rakentunut ja käyttäjällä on koko ajan ymmärrys siitä, missä kohdin palvelua hän on. Suunnitteluratkaisut toistuvat läpi palvelun samanlaisina. Kaikki Suomi.fi-palvelut hyödyntävät samoja suunnitteluperiaatteita ja -käytäntöjä. Näin varmistamme yhtenäisen käyttökokemuksen yli palvelurajojen.",
           "listItems": [
             { "text": "" },
             { "text": "" },

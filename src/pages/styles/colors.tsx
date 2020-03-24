@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react';
 import { graphql } from 'gatsby';
 import { NamespacesConsumer } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiTheme } from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 import { getLuminance } from 'polished';
 
 import Layout from 'components/layout';
@@ -15,13 +15,13 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const colorTokens =
-  !!suomifiTheme && !!suomifiTheme.colors
-    ? suomifiTheme.colors
-    : { depthLight13: undefined };
+  !!suomifiDesignTokens && !!suomifiDesignTokens.colors
+    ? suomifiDesignTokens.colors
+    : { depthLight1: undefined };
 
-const borderForLightColor = `1px solid ${colorTokens.depthLight13}`;
+const borderForLightColor = `1px solid ${colorTokens.depthLight1}`;
 
-type ColorKeys = keyof typeof suomifiTheme.colors;
+type ColorKeys = keyof typeof suomifiDesignTokens.colors;
 interface ColorItem {
   name: string;
   value: string;
@@ -46,50 +46,54 @@ const colors: colorTypes = Object.entries(colorTokens).reduce(
 const colorCategories = [
   {
     id: 'textColors',
-    colors: [colors.blackBase, colors.depthBase, colors.depthDark27],
+    colors: [
+      colors.blackBase,
+      colors.blackLight1,
+      colors.depthBase,
+      colors.depthDark1,
+    ],
   },
   { id: 'brandColors', colors: [colors.brandBase] },
   {
     id: 'controlColors',
     colors: [
       colors.highlightBase,
-      colors.highlightLight4,
-      colors.highlightLight45,
-      colors.highlightLight50,
-      colors.highlightLight53,
-      colors.highlightDark9,
+      colors.highlightLight1,
+      colors.highlightLight2,
+      colors.highlightLight3,
+      colors.highlightDark1,
       colors.depthBase,
-      colors.depthLight26,
-      colors.depthDark27,
+      colors.depthLight2,
+      colors.depthDark1,
       colors.accentBase,
-      colors.depthSecondary,
-      colors.depthSecondaryDark6,
-      colors.accentTertiaryDark9,
+      colors.accentTertiaryDark1,
     ],
   },
   {
     id: 'iconColors',
-    colors: [colors.accentBase, colors.depthBase, colors.depthDark27],
+    colors: [colors.accentBase, colors.depthBase, colors.depthDark1],
   },
   {
     id: 'backgroundColors',
     colors: [
       colors.whiteBase,
-      colors.depthLight30,
-      colors.depthLight13,
-      colors.highlightLight45,
-      colors.highlightLight50,
-      colors.highlightLight53,
+      colors.depthLight3,
+      colors.depthLight1,
+      colors.highlightLight2,
+      colors.highlightLight3,
+      colors.highlightLight4,
       colors.depthSecondary,
+      colors.depthSecondaryDark1,
     ],
   },
   {
     id: 'trafficColors',
     colors: [
       colors.successBase,
+      colors.successSecondary,
       colors.warningBase,
       colors.alertBase,
-      colors.alertLight47,
+      colors.alertLight1,
     ],
   },
   {
@@ -97,7 +101,7 @@ const colorCategories = [
     colors: [
       colors.accentBase,
       colors.accentSecondary,
-      colors.accentSecondaryLight40,
+      colors.accentSecondaryLight1,
       colors.accentTertiary,
     ],
   },
@@ -113,9 +117,7 @@ const getExampleColor = (
   <div
     key={id}
     style={{
-      margin: `${suomifiTheme.spacing.s} ${suomifiTheme.spacing.l} ${
-        suomifiTheme.spacing.l
-      } 0`,
+      margin: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.l} ${suomifiDesignTokens.spacing.l} 0`,
       lineHeight: '1rem',
     }}
   >
@@ -123,7 +125,7 @@ const getExampleColor = (
       style={{
         width: '10rem',
         height: '3rem',
-        marginBottom: suomifiTheme.spacing.m,
+        marginBottom: suomifiDesignTokens.spacing.m,
         background: value,
         ...style,
       }}
@@ -169,6 +171,7 @@ const Page = (): JSX.Element => (
                 padding: 0,
                 justifyContent: 'flex-start',
                 background: 'none',
+                border: 'none',
               }}
             >
               {item.colors.map((color, index) =>

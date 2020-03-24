@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from 'suomifi-ui-components';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 import { customTheme } from './customTheme';
 

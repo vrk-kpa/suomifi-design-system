@@ -7,8 +7,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`
-      }
+        path: `${__dirname}/src/images`,
+      },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -16,21 +16,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/locale`,
-        name: `locale`
-      }
+        name: `locale`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/examples`,
-        name: `examples`
-      }
+        name: `examples`,
+      },
     },
     {
       resolve: `gatsby-transformer-code`,
       options: {
-        name: `examples`
-      }
+        name: `examples`,
+      },
     },
     {
       resolve: `@wapps/gatsby-plugin-i18next`,
@@ -38,18 +38,18 @@ module.exports = {
         availableLngs: ['fi'],
         fallbackLng: 'fi',
         i18nextOptions: {
-          returnObjects: true
-        }
-      }
+          returnObjects: true,
+        },
+      },
     },
-    `gatsby-plugin-emotion`,
+    `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Source Sans Pro:300,400,600&display=swap']
-        }
-      }
+          families: ['Source Sans Pro:300,400,600&display=swap'],
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-module-resolver',
@@ -60,23 +60,23 @@ module.exports = {
           icons: './icons',
           staticIcons: './staticIcons',
           config: './config',
-          examples: './examples'
-        }
-      }
+          examples: './examples',
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-s3`,
       options: {
         bucketName: 'designsystem.suomi.fi',
         protocol: 'https',
-        hostname: 'designsystem.suomi.fi'
-      }
+        hostname: 'designsystem.suomi.fi',
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `src/staticIcons/SuomiFi.svg`
-      }
-    }
-  ]
-}
+        icon: `src/staticIcons/SuomiFi.svg`,
+      },
+    },
+  ],
+};

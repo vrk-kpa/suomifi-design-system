@@ -31,9 +31,18 @@
         }
       ],
       "links": [
-        { "text": "Laki digitaalisten palvelujen tarjoamisesta", "url": "https://www.finlex.fi/fi/laki/alkup/2019/20190306" },
-        { "text": "EU:n saavutettavuusdirektiivi", "url": "https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32016L2102&from=FI" },
-        { "text": "WCAG 2.1 -ohjeistus", "url": "https://www.w3.org/Translations/WCAG21-fi/" }
+        {
+          "text": "Laki digitaalisten palvelujen tarjoamisesta",
+          "url": "https://www.finlex.fi/fi/laki/alkup/2019/20190306"
+        },
+        {
+          "text": "EU:n saavutettavuusdirektiivi",
+          "url": "https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32016L2102&from=FI"
+        },
+        {
+          "text": "WCAG 2.1 -ohjeistus",
+          "url": "https://www.w3.org/Translations/WCAG21-fi/"
+        }
       ]
     },
     {
@@ -68,17 +77,31 @@
           "image.alt": "",
           "text": "Teknisen saavutettavuuden lisäksi tulee muistaa sisältöjen saavutettavuus (kognitiivinen saavutettavuus). Kognitiivinen saavutettavuus käsittää yhteisesti palvelussa esitettävän tiedon ja tavat, miten tieto esitetään käyttäjälle ymmärrettävästi. Sisältöjen ymmärrettävyys ja selkeys helpottavat jokaisen asiointia palvelussa. Koska kognitiivisia ominaisuuksia on vaikeampi mitata kuin teknisiä ominaisuuksia, on mahdollista, että digitaalinen palvelu ei ole helppokäyttöinen, vaikka palvelu täyttäisikin saavutettavuusvaatimukset.",
           "listItems": [
-            { "text": "Ymmärrettävyys tarkoittaa sitä, että palvelun sisällöt ja toiminta on esitetty käyttäjän ymmärtämällä tavalla. Käyttäjä siis käsittää, mitä hän on palvelussa tekemässä." },
-            { "text": "Palvelun sisältöjen osalta ymmärrettävyys tarkoittaa kielelliseen ilmaisuun liittyviä keinoja, joilla palvelun sisältö on käyttäjälle yksiselitteistä. Ymmärrettävyys tarkoittaa myös käyttöliittymässä käytettävien tekstien, erilaisten toimintojen ja palvelun logiikan kokonaisuutta. Tekstimuotoisen sisällön osalta ymmärrettävyys tarkoittaa lähtökohtaisesti selkeän ja hyvän yleiskielen käyttämistä." },
-            { "text": "Visuaalinen saavutettavuus tarkoittaa sitä, että palvelun käyttökokemus on johdonmukainen, käyttöliittymä on selkeä ja visuaalinen hierarkia tukee palvelun käytettävyyttä." },
-            { "text": "Digitaalisen palvelun toiminnan ja logiikan osalta ymmärrettävyys tarkoittaa erilaisia varmistuskeinoja, joilla käyttäjälle kerrotaan missä vaiheessa palvelua hän on ja miten hän pääsee liikkumaan palvelussa. Käyttäjälle myös kerrotaan eri toimintojen vaikutuksista ja hän ymmärtää eri toimintojen seuraukset ja yhtymäkohdat." },
+            {
+              "text": "Ymmärrettävyys tarkoittaa sitä, että palvelun sisällöt ja toiminta on esitetty käyttäjän ymmärtämällä tavalla. Käyttäjä siis käsittää, mitä hän on palvelussa tekemässä."
+            },
+            {
+              "text": "Palvelun sisältöjen osalta ymmärrettävyys tarkoittaa kielelliseen ilmaisuun liittyviä keinoja, joilla palvelun sisältö on käyttäjälle yksiselitteistä. Ymmärrettävyys tarkoittaa myös käyttöliittymässä käytettävien tekstien, erilaisten toimintojen ja palvelun logiikan kokonaisuutta. Tekstimuotoisen sisällön osalta ymmärrettävyys tarkoittaa lähtökohtaisesti selkeän ja hyvän yleiskielen käyttämistä."
+            },
+            {
+              "text": "Visuaalinen saavutettavuus tarkoittaa sitä, että palvelun käyttökokemus on johdonmukainen, käyttöliittymä on selkeä ja visuaalinen hierarkia tukee palvelun käytettävyyttä."
+            },
+            {
+              "text": "Digitaalisen palvelun toiminnan ja logiikan osalta ymmärrettävyys tarkoittaa erilaisia varmistuskeinoja, joilla käyttäjälle kerrotaan missä vaiheessa palvelua hän on ja miten hän pääsee liikkumaan palvelussa. Käyttäjälle myös kerrotaan eri toimintojen vaikutuksista ja hän ymmärtää eri toimintojen seuraukset ja yhtymäkohdat."
+            },
             { "text": "" }
           ]
         }
       ],
       "links": [
-        { "text": "Lue lisää saavutettavuusvaatimuksista aluehallintoviratson sivuilta", "url": "https://www.saavutettavuusvaatimukset.fi" },
-        { "text": "Laki digitaalisten palvelujen tarjoamisesta", "url": "https://www.finlex.fi/fi/laki/alkup/2019/20190306" },
+        {
+          "text": "Lue lisää saavutettavuusvaatimuksista aluehallintoviraston sivuilta",
+          "url": "https://www.saavutettavuusvaatimukset.fi"
+        },
+        {
+          "text": "",
+          "url": ""
+        },
         { "text": "", "url": "" }
       ]
     }

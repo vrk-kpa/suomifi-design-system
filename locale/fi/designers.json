@@ -4,6 +4,7 @@
   "sections": [
     {
       "title": "Suomi.fi-palvelujen keskeiset suunnitteluperiaatteet",
+      "subheading": "",
       "paragraphs": [
         {
           "image.key": "",
@@ -16,40 +17,12 @@
             { "text": "" },
             { "text": "" }
           ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
         }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
       ]
     },
     {
-      "title": "Suomi.fi-brändi",
+      "title": "",
+      "subheading": "Uudelleenkäytettävyys",
       "paragraphs": [
         {
           "image.key": "",
@@ -62,40 +35,12 @@
             { "text": "" },
             { "text": "" }
           ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Suomi.fi-brändiperheeseen kuuluvat Digi- ja väestötietoviraston sähköisen asioinnin tukipalvelut ja Kansalliseen palveluarkkitehtuuriin liittyvät sähköiset palvelut. Näitä ovat: Suomi.fi-verkkopalvelu, Palvelutietovaranto, Tunnistus, Viestit, Valtuudet, Kartat, Maksut, Palveluhallinta ja palveluväylän Liityntäkatalogi. Muiden palveluiden liittäminen Suomi.fi-palveluperheeseen tulee aina tehdä yhteistyössä DVV:n kanssa. Suomi.fi-logon käyttäminen palvelun tunnuksena on sallittua ainoastaan Suomi.fi-brändiperheeseen kuuluvissa palveluissa. Jos palvelusi tai tuotteesi haluaa hyödyntää Suomi.fi-brändiä kokonaisvaltaisesti, ota yhteyttä DVV:n viestintään.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
         }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
       ]
     },
     {
       "title": "",
+      "subheading": "Ajantasaisuus",
       "paragraphs": [
         {
           "image.key": "",
@@ -108,40 +53,12 @@
             { "text": "" },
             { "text": "" }
           ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
         }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
       ]
     },
     {
       "title": "",
+      "subheading": "Saavutettavuus",
       "paragraphs": [
         {
           "image.key": "",
@@ -154,69 +71,17 @@
             { "text": "" },
             { "text": "" }
           ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
         }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
       ]
     },
     {
       "title": "",
+      "subheading": "Yhtenäisyys",
       "paragraphs": [
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Suunnittelemamme palvelu on johdonmukaisesti rakentunut ja käyttäjällä on koko ajan ymmärrys siitä, missä kohdin palvelua hän on. Suunnitteluratkaisut toistuvat läpi palvelun samanlaisina. Kaikki Suomi.fi-palvelut hyödyntävät samoja suunnitteluperiaatteita ja -käytäntöjä. Näin varmistamme yhtenäisen käyttökokemuksen yli palvelurajojen.",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
-          "listItems": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ]
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "",
+          "text": "Suunnittelemamme palvelu on johdonmukaisesti rakentunut ja käyttäjällä on koko ajan ymmärrys siitä, missä kohdin palvelua hän on. Suunnitteluratkaisut toistuvat läpi palvelun samanlaisina. Kaikki Suomi.fi-palvelut hyödyntävät samoja designperiaatteita ja käytäntöjä. Näin toimimalla varmistamme yhtenäisen käyttökokemuksen läpi palvelurajojen.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -225,11 +90,23 @@
             { "text": "" }
           ]
         }
-      ],
-      "links": [
-        { "text": "", "url": "" },
-        { "text": "", "url": "" },
-        { "text": "", "url": "" }
+      ]
+    },
+    {
+      "title": "Suunnitteluaineistot",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Julkaisemme keväällä 2020 Design System -sivustolla myös käyttöliittymien suunnitteluaineistoja Sketch-muodossa. Suunnitteluaineisto tulee sisältämään kaikki keskeiset Suomi.fi-tyylien ja käyttökokemuksen mukaiset, saavutettavuudeltaan testatut käyttöliittymäkomponentit.",
+          "listItems": [
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" },
+            { "text": "" }
+          ]
+        }
       ]
     }
   ]

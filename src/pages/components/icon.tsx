@@ -97,13 +97,13 @@ const Page: React.FC = (): React.ReactElement => {
               <Icon
                 icon="helpFilled"
                 color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
                 ariaLabel={t('infoIcons.example1.arialabel')}
               />
               <Icon
                 icon="help"
                 color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
                 ariaLabel={t('infoIcons.example2.arialabel')}
               />
             </ComponentExample>
@@ -124,13 +124,13 @@ const Page: React.FC = (): React.ReactElement => {
               <Icon
                 icon="errorFilled"
                 color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
                 ariaLabel={t('additionalInfoIcons.example1.arialabel')}
               />
               <Icon
                 icon="info"
                 color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
                 ariaLabel={t('additionalInfoIcons.example2.arialabel')}
               />
             </ComponentExample>

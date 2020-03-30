@@ -5,8 +5,8 @@ import { panelShadow } from '../components/utils/shadow';
 export const Example = () => (
   <div
     style={{
-      margin: suomifiDesignTokens.spacing.l,
-      padding: suomifiDesignTokens.spacing.m,
+      margin: suomifiDesignTokens.spacing.xl,
+      padding: suomifiDesignTokens.spacing.s,
       background: suomifiDesignTokens.colors.highlightBase,
       boxShadow: panelShadow,
       fontSize:

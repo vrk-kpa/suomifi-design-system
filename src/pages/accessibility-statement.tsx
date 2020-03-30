@@ -13,7 +13,7 @@ const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['accessibility-statement']}>
     {t => (
       <Layout>
-        <div style={{ padding: `0 ${suomifiDesignTokens.spacing.l}` }}>
+        <div style={{ padding: `0 ${suomifiDesignTokens.spacing.xl}` }}>
           <SEO title={t('title')} />
           <Heading variant="h1">{t('title')}</Heading>
           {t('sections').map((section, index) => (

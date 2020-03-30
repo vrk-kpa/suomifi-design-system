@@ -77,7 +77,7 @@ const getExampleComp = (
     key={id}
     id={id}
     aria-label={label}
-    style={{ margin: suomifiDesignTokens.spacing.s }}
+    style={{ margin: suomifiDesignTokens.spacing.xs }}
     {...props}
     onClick={() => handleClick(id, label, t)}
   >
@@ -116,8 +116,8 @@ const Page = (): JSX.Element => {
             <div
               style={{
                 overflow: 'hidden',
-                marginBottom: suomifiDesignTokens.spacing.m,
-                padding: `${suomifiDesignTokens.spacing.l} ${suomifiDesignTokens.spacing.m} 0 ${suomifiDesignTokens.spacing.m}`,
+                marginBottom: suomifiDesignTokens.spacing.s,
+                padding: `${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.s} 0 ${suomifiDesignTokens.spacing.s}`,
                 background: suomifiDesignTokens.colors.whiteBase,
                 display: 'flex',
                 justifyContent: 'center',
@@ -129,7 +129,7 @@ const Page = (): JSX.Element => {
                   <div
                     key={item.id}
                     style={{
-                      padding: `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.s}`,
+                      padding: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xs}`,
                     }}
                   >
                     {getExampleComp(
@@ -154,7 +154,7 @@ const Page = (): JSX.Element => {
             >
               <ComponentExample
                 style={{
-                  padding: suomifiDesignTokens.spacing.s,
+                  padding: suomifiDesignTokens.spacing.xs,
                   background: item.background,
                 }}
               >
@@ -187,7 +187,7 @@ const Page = (): JSX.Element => {
               <ComponentExample
                 key={item.id}
                 style={{
-                  padding: suomifiDesignTokens.spacing.s,
+                  padding: suomifiDesignTokens.spacing.xs,
                   background: item.background,
                 }}
               >
@@ -225,14 +225,14 @@ const Page = (): JSX.Element => {
             exampleFirst
           >
             <ComponentExample
-              style={{ padding: suomifiDesignTokens.spacing.s }}
+              style={{ padding: suomifiDesignTokens.spacing.xs }}
             >
               {disabledComponents.map(item => (
                 <div
                   key={item.id}
                   style={{
                     padding: item.background
-                      ? suomifiDesignTokens.spacing.s
+                      ? suomifiDesignTokens.spacing.xs
                       : 0,
                     background: item.background || 'none',
                   }}

@@ -7,19 +7,19 @@ const NoteBox = ({ title, items }: Props): JSX.Element => (
   <section
     style={{
       background: suomifiDesignTokens.colors.highlightLight3,
-      margin: `${suomifiDesignTokens.spacing.l} 0`,
-      padding: suomifiDesignTokens.spacing.m,
+      margin: `${suomifiDesignTokens.spacing.xl} 0`,
+      padding: suomifiDesignTokens.spacing.s,
       border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
     }}
   >
     <Heading.h3 as="h2">{title}</Heading.h3>
     <ul
-      style={{ margin: 0, padding: `0 0 0 ${suomifiDesignTokens.spacing.m}` }}
+      style={{ margin: 0, padding: `0 0 0 ${suomifiDesignTokens.spacing.s}` }}
     >
       {items.map(
         (item, index) =>
           !!item && (
-            <li key={index} style={{ margin: suomifiDesignTokens.spacing.m }}>
+            <li key={index} style={{ margin: suomifiDesignTokens.spacing.s }}>
               <Text>{item}</Text>
             </li>
           ),

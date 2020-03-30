@@ -33,12 +33,12 @@ const Section = ({
             <Text>{paragraph.text}</Text>
           </Paragraph>
         )}
-        <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
+        <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
           <BulletedList items={paragraph.listItems} />
         </div>
       </div>
     ))}
-    <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
+    <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
       <LinkList links={links} />
     </div>
   </section>

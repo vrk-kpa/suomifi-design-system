@@ -43,7 +43,7 @@ const ListSwitcher = ({
       <ul
         aria-label={t('menu.label')}
         style={{
-          margin: suomifiDesignTokens.spacing.m,
+          margin: suomifiDesignTokens.spacing.s,
           padding: 0,
           listStyle: 'none',
           display: 'flex',

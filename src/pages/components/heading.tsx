@@ -46,32 +46,32 @@ const Page = (): JSX.Element => (
             }}
           >
             <SuomifiHeading.h1hero
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading 1 with hero styling
             </SuomifiHeading.h1hero>
             <SuomifiHeading.h1
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h1
             </SuomifiHeading.h1>
             <SuomifiHeading.h2
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h2
             </SuomifiHeading.h2>
             <SuomifiHeading.h3
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h3
             </SuomifiHeading.h3>
             <SuomifiHeading.h4
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h4
             </SuomifiHeading.h4>
             <SuomifiHeading.h5
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h5
             </SuomifiHeading.h5>
@@ -87,37 +87,37 @@ const Page = (): JSX.Element => (
           >
             <SuomifiHeading.h1hero
               smallScreen
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading 1 hero small screen
             </SuomifiHeading.h1hero>
             <SuomifiHeading.h1
               smallScreen
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h1 small screen
             </SuomifiHeading.h1>
             <SuomifiHeading.h2
               smallScreen
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h2 small screen
             </SuomifiHeading.h2>
             <SuomifiHeading.h3
               smallScreen
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h3 small screen
             </SuomifiHeading.h3>
             <SuomifiHeading.h4
               smallScreen
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h4 small screen
             </SuomifiHeading.h4>
             <SuomifiHeading.h5
               smallScreen
-              style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
+              style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h5 small screen
             </SuomifiHeading.h5>

@@ -17,8 +17,8 @@ const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
           justifyContent: 'center',
           alignItems: 'center',
           flexWrap: 'wrap',
-          padding: suomifiDesignTokens.spacing.l,
-          margin: `${suomifiDesignTokens.spacing.m} 0`,
+          padding: suomifiDesignTokens.spacing.xl,
+          margin: `${suomifiDesignTokens.spacing.s} 0`,
           ...style,
           background: suomifiDesignTokens.colors.accentSecondaryLight1,
           fontSize: '24px',
@@ -27,7 +27,7 @@ const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
         <Icon icon="error" color={suomifiDesignTokens.colors.accentSecondary} />
         <Text.bold
           style={{
-            marginLeft: suomifiDesignTokens.spacing.m,
+            marginLeft: suomifiDesignTokens.spacing.s,
             verticalAlign: 'middle',
             fontSize:
               suomifiDesignTokens.values.typography.bodyText.fontSize.value +

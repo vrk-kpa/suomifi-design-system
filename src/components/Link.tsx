@@ -29,7 +29,7 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
         <span
           style={{
             display: 'inline-flex',
-            marginRight: text ? suomifiDesignTokens.spacing.s : 0,
+            marginRight: text ? suomifiDesignTokens.spacing.xs : 0,
           }}
         >
           {icon}

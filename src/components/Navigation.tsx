@@ -35,7 +35,7 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
             <li
               key={item.to}
               style={{
-                margin: `0 ${suomifiDesignTokens.spacing.l} 0 ${suomifiDesignTokens.spacing.s}`,
+                margin: `0 ${suomifiDesignTokens.spacing.xl} 0 ${suomifiDesignTokens.spacing.xs}`,
               }}
             >
               <NavItem to={item.to}>{item.label}</NavItem>

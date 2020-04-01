@@ -26,11 +26,11 @@ const ComponentDescription = ({
     {t => (
       <div
         style={{
-          marginBottom: suomifiDesignTokens.spacing.l,
+          marginBottom: suomifiDesignTokens.spacing.xl,
           borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
         }}
       >
-        <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
+        <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
           {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
           {!!title && <Heading.h3>{title}</Heading.h3>}
         </div>
@@ -42,7 +42,7 @@ const ComponentDescription = ({
         )}
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
-          <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
+          <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
             <Expander title={t('common:react')} noPadding>
               {codeString && <ComponentCode javascript={codeString} />}
               {!showOnlyCodeString &&

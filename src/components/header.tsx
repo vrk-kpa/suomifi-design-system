@@ -14,7 +14,7 @@ const Header = (): JSX.Element => (
     {t => (
       <header
         style={{
-          padding: suomifiDesignTokens.spacing.m,
+          padding: suomifiDesignTokens.spacing.s,
           borderTop: `4px solid ${suomifiDesignTokens.colors.brandBase}`,
           boxSizing: `border-box`,
           background: suomifiDesignTokens.colors.whiteBase,
@@ -44,7 +44,7 @@ const Header = (): JSX.Element => (
             style={{
               flex: 1,
               position: 'relative',
-              marginLeft: suomifiDesignTokens.spacing.s,
+              marginLeft: suomifiDesignTokens.spacing.xs,
             }}
           >
             <div

@@ -6,7 +6,7 @@ import Link, { Props as LinkProps } from 'components/Link';
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
 
 const linkStyle = {
-  padding: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.m}`,
+  padding: `${suomifiDesignTokens.spacing.xs} ${suomifiDesignTokens.spacing.s}`,
   border: `1px solid ${suomifiDesignTokens.colors.whiteBase}`,
   borderRadius: '2px',
   '&:link,:visited,:focus,:hover,:active': {
@@ -42,7 +42,7 @@ const Content = ({
         color="whiteBase"
         style={{
           textAlign: 'inherit',
-          margin: `0 0 0 ${suomifiDesignTokens.spacing.m}`,
+          margin: `0 0 0 ${suomifiDesignTokens.spacing.s}`,
         }}
       >
         {title}
@@ -50,7 +50,7 @@ const Content = ({
       {description && (
         <Paragraph
           style={{
-            margin: `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.m} 0 ${suomifiDesignTokens.spacing.m}`,
+            margin: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.s} 0 ${suomifiDesignTokens.spacing.s}`,
             textAlign: 'inherit',
           }}
         >
@@ -61,9 +61,9 @@ const Content = ({
     {link && !!link.text && !!link.url && (
       <div
         style={{
-          margin: `${suomifiDesignTokens.spacing.m}`,
-          marginLeft: center ? 0 : suomifiDesignTokens.spacing.m,
-          marginRight: center ? 0 : suomifiDesignTokens.spacing.m,
+          margin: `${suomifiDesignTokens.spacing.s}`,
+          marginLeft: center ? 0 : suomifiDesignTokens.spacing.s,
+          marginRight: center ? 0 : suomifiDesignTokens.spacing.s,
         }}
       >
         <Link
@@ -81,7 +81,7 @@ const Annotation = ({ title, description, link }: Props): JSX.Element => (
   <div
     style={{
       margin: 0,
-      padding: suomifiDesignTokens.spacing.m,
+      padding: suomifiDesignTokens.spacing.s,
       background: suomifiDesignTokens.colors.highlightBase,
       display: 'flex',
       justifyContent: 'center',

@@ -115,7 +115,7 @@ class SideNav extends Component<Props, State> {
     return (
       <div
         style={{
-          padding: suomifiDesignTokens.spacing.s,
+          padding: suomifiDesignTokens.spacing.xs,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -127,7 +127,7 @@ class SideNav extends Component<Props, State> {
           <div style={{ fontSize: '40px', lineHeight: '1em' }}>
             {sideNavData.icon}
           </div>
-          <Text.bold style={{ marginLeft: suomifiDesignTokens.spacing.s }}>
+          <Text.bold style={{ marginLeft: suomifiDesignTokens.spacing.xs }}>
             {sideNavData.title}
           </Text.bold>
         </div>
@@ -136,7 +136,7 @@ class SideNav extends Component<Props, State> {
             style={{
               float: 'right',
               background: 'none',
-              marginRight: suomifiDesignTokens.spacing.m,
+              marginRight: suomifiDesignTokens.spacing.s,
               padding: 0,
               border: 0,
               width: '16px',

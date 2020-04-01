@@ -20,7 +20,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           justifyContent: 'center',
           width: '70px',
           height: '70px',
-          marginBottom: suomifiDesignTokens.spacing.l,
+          marginBottom: suomifiDesignTokens.spacing.xl,
           border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
           borderRadius: '50%',
           fontSize: '50px',
@@ -39,7 +39,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
         )}
       </div>
     ))}
-    <div style={{ margin: `${suomifiDesignTokens.spacing.m} 0` }}>
+    <div style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}>
       <LinkList links={block.links} />
     </div>
   </>
@@ -54,7 +54,7 @@ const ContentBoxes = ({
   <section
     style={{
       background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
-      padding: `${suomifiDesignTokens.spacing.l} ${suomifiDesignTokens.spacing.m} 0`,
+      padding: `${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.s} 0`,
       display: 'flex',
       justifyContent: 'center',
     }}
@@ -63,7 +63,7 @@ const ContentBoxes = ({
       <Heading.h1
         style={{
           textAlign: 'left',
-          margin: `0 0 0 ${suomifiDesignTokens.spacing.m}`,
+          margin: `0 0 0 ${suomifiDesignTokens.spacing.s}`,
         }}
       >
         {mainTitle}
@@ -73,7 +73,7 @@ const ContentBoxes = ({
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          margin: `${suomifiDesignTokens.spacing.l} 0 0 0`,
+          margin: `${suomifiDesignTokens.spacing.xl} 0 0 0`,
         }}
       >
         <div
@@ -90,7 +90,7 @@ const ContentBoxes = ({
               key={index}
               style={{
                 flex: wrapAll ? '100%' : '30%',
-                margin: suomifiDesignTokens.spacing.m,
+                margin: suomifiDesignTokens.spacing.s,
               }}
             >
               <Block block={block} />

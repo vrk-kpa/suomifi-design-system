@@ -47,7 +47,7 @@ const Page = (): JSX.Element => (
               <p
                 style={{
                   margin: 0,
-                  padding: suomifiDesignTokens.spacing.m,
+                  padding: suomifiDesignTokens.spacing.s,
                   background: suomifiDesignTokens.colors.brandBase,
                   color: suomifiDesignTokens.colors.whiteBase,
                 }}

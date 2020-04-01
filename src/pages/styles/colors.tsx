@@ -117,7 +117,7 @@ const getExampleColor = (
   <div
     key={id}
     style={{
-      margin: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.l} ${suomifiDesignTokens.spacing.l} 0`,
+      margin: `${suomifiDesignTokens.spacing.xs} ${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.xl} 0`,
       lineHeight: '1rem',
     }}
   >
@@ -125,7 +125,7 @@ const getExampleColor = (
       style={{
         width: '10rem',
         height: '3rem',
-        marginBottom: suomifiDesignTokens.spacing.m,
+        marginBottom: suomifiDesignTokens.spacing.s,
         background: value,
         ...style,
       }}

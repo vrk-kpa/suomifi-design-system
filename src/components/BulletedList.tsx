@@ -13,7 +13,10 @@ const BulletedList = ({ items = [] }: Props): JSX.Element => {
   if (items.length > 0) {
     return (
       <ul
-        style={{ margin: 0, padding: `0 0 0 ${suomifiDesignTokens.spacing.l}` }}
+        style={{
+          margin: 0,
+          padding: `0 0 0 ${suomifiDesignTokens.spacing.xl}`,
+        }}
       >
         {items.map((item, index) => (
           <li key={index}>

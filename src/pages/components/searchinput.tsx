@@ -28,7 +28,7 @@ const Page = (): JSX.Element => (
 
         <ComponentDescription>
           <ComponentExample
-            style={{ marginBottom: suomifiDesignTokens.spacing.m }}
+            style={{ marginBottom: suomifiDesignTokens.spacing.s }}
           >
             <SearchInput labelText={t('exampleRegular.label')} />
           </ComponentExample>

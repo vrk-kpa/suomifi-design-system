@@ -21,7 +21,7 @@ const LinkList = ({ links = [] }: Props): JSX.Element => {
         {links.map((link, index) => (
           <li
             key={index}
-            style={{ margin: `${suomifiDesignTokens.spacing.m} 0` }}
+            style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}
           >
             <Link text={link.text} url={link.url} />
           </li>

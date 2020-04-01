@@ -9,7 +9,7 @@ const NavItem = ({ to, children }: Props): JSX.Element => (
     to={to}
     css={[
       {
-        padding: suomifiDesignTokens.spacing.s,
+        padding: suomifiDesignTokens.spacing.insetM,
         lineHeight: '2.8rem',
         whiteSpace: 'nowrap',
         color: suomifiDesignTokens.colors.blackBase,

@@ -19,7 +19,7 @@ class MainMenu extends Component<Props, State> {
   private isOpen = (): boolean => this.state.isOpen;
 
   private toggleOpen = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return {
         isOpen: !prevState.isOpen,
       };
@@ -31,7 +31,7 @@ class MainMenu extends Component<Props, State> {
 
     return (
       <NamespacesConsumer>
-        {t => (
+        {(t) => (
           <div style={{ position: 'relative' }}>
             <Button
               aria-label={t('common:open.navigation.main')}
@@ -76,7 +76,7 @@ class MainMenu extends Component<Props, State> {
               >
                 <nav aria-label={t('common:navigation.main')}>
                   <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
-                    {mainNavData.items.map(item => (
+                    {mainNavData.items.map((item) => (
                       <li key={item.to}>
                         <MainMenuItem to={item.to}>{item.label}</MainMenuItem>
                       </li>

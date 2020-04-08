@@ -19,7 +19,7 @@ const Page = (): JSX.Element => {
   );
   const pageContent = (
     <NamespacesConsumer ns={['languagemenu']}>
-      {t => (
+      {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
           <Heading.h1>{t('title')}</Heading.h1>

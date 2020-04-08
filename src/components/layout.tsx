@@ -16,7 +16,7 @@ import './layout.css';
 
 const BypassLinks = ({ hasSideNav }: { hasSideNav: boolean }): JSX.Element => (
   <NamespacesConsumer>
-    {t => (
+    {(t) => (
       <>
         <BypassLink to="#main">{t('common:to.main.content')}</BypassLink>
         {hasSideNav && (
@@ -33,7 +33,7 @@ const Layout = ({
   children,
 }: Props): JSX.Element => (
   <NamespacesConsumer>
-    {t => (
+    {(t) => (
       <div
         style={{
           fontFamily: suomifiDesignTokens.values.typography.bodyText.fontFamily,

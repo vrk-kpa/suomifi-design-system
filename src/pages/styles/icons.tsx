@@ -80,7 +80,7 @@ const getExampleIcon = (
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['icons', 'static-icons']}>
-    {t => (
+    {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
@@ -89,7 +89,7 @@ const Page = (): JSX.Element => (
           <Text.lead>{t('intro')}</Text.lead>
         </Paragraph.lead>
 
-        {iconCategories.map(item => (
+        {iconCategories.map((item) => (
           <ComponentDescription
             key={item.id}
             mainTitle={t(`${item.id}.title`)}
@@ -105,7 +105,7 @@ const Page = (): JSX.Element => (
                 border: 'none',
               }}
             >
-              {item.icons.map(icon => {
+              {item.icons.map((icon) => {
                 const label =
                   item.id === 'baseIcons'
                     ? t(`${icon}.label`)

@@ -15,7 +15,7 @@ import ComponentExample from 'components/ComponentExample';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['link']}>
-    {t => (
+    {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>

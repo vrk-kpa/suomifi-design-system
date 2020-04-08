@@ -10,7 +10,7 @@ import Link from 'components/Link';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['404']}>
-    {t => (
+    {(t) => (
       <Layout>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>

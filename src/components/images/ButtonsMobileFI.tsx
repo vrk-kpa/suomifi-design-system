@@ -15,7 +15,9 @@ const Image = (props: GatsbyImageProps): JSX.Element => (
         }
       }
     `}
-    render={data => <Img fluid={data.image.childImageSharp.fluid} {...props} />}
+    render={(data) => (
+      <Img fluid={data.image.childImageSharp.fluid} {...props} />
+    )}
   />
 );
 

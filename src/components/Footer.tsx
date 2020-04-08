@@ -127,7 +127,7 @@ const AllContent = ({
   wrapAll?: boolean;
 }): JSX.Element => (
   <NamespacesConsumer>
-    {t => (
+    {(t) => (
       <>
         <Content
           header={

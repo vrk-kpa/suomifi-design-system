@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticIcon } from 'suomifi-ui-components';
 
-export default t => ({
+export default (t) => ({
   title: t('styles:title'),
   icon: <StaticIcon icon="magicWand" />,
   items: [

@@ -11,7 +11,7 @@ import { Heading } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['accessibility-statement']}>
-    {t => (
+    {(t) => (
       <Layout>
         <div style={{ padding: `0 ${suomifiDesignTokens.spacing.xl}` }}>
           <SEO title={t('title')} />

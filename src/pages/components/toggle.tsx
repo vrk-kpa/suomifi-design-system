@@ -27,7 +27,7 @@ const Page: React.FC = (): React.ReactElement => {
 
   return (
     <NamespacesConsumer ns={['toggle']}>
-      {t => (
+      {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
           <Heading.h1>{t('title')}</Heading.h1>

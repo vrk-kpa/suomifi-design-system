@@ -28,7 +28,7 @@
     "react-dom": "^16.13.1",
     "react-element-to-jsx-string": "^14.3.1",
     "react-helmet": "^5.2.1",
-    "react-i18next": "^10.13.2",
+    "react-i18next": "^11.3.4",
     "react-motion": "^0.5.2",
     "react-responsive": "^8.0.3",
     "react-syntax-highlighter": "^12.2.1",
@@ -38,7 +38,7 @@
   },
   "resolutions": {
     "@wapps/gatsby-plugin-i18next/i18next": "^19.3.4",
-    "@wapps/gatsby-plugin-i18next/react-i18next": "^10.13.2"
+    "@wapps/gatsby-plugin-i18next/react-i18next": "^11.3.4"
   },
   "license": "MIT",
   "scripts": {

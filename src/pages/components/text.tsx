@@ -7,7 +7,7 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Paragraph } from 'components/ResponsiveComponents';
 import { Text } from 'components/ExampleComponents';
@@ -52,7 +52,7 @@ const Page: React.FC = (): React.ReactElement => {
             <Text.lead>{t('intro')}</Text.lead>
           </Paragraph.lead>
 
-          {t('sections').map((section, index) => (
+          {t<SectionProps[]>('sections').map((section, index) => (
             <Section
               key={index}
               mainTitle={section.title}

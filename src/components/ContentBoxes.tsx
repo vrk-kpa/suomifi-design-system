@@ -102,7 +102,7 @@ const ContentBoxes = ({
   </section>
 );
 
-interface Props {
+export interface Props {
   wrapAll?: boolean;
   hasFrame?: boolean;
   mainTitle: string;

@@ -8,7 +8,7 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 import NoteBox from 'components/NoteBox';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Paragraph, Text } from 'components/ResponsiveComponents';
@@ -54,7 +54,7 @@ const Page: React.FC = (): React.ReactElement => {
 
           <NoteBox title={t('note.title')} items={t('note.items')} />
 
-          {t('sections').map((section, index) => (
+          {t<SectionProps[]>('sections').map((section, index) => (
             <Section
               key={index}
               mainTitle={section.title}

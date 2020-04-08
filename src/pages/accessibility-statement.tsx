@@ -6,8 +6,8 @@ import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import Section from 'components/Section';
 import { Heading } from 'components/ResponsiveComponents';
+import Section, { Props as SectionProps } from 'components/Section';
 
 const Page = (): JSX.Element => (
   <Translation ns={['accessibility-statement']}>
@@ -16,7 +16,7 @@ const Page = (): JSX.Element => (
         <div style={{ padding: `0 ${suomifiDesignTokens.spacing.xl}` }}>
           <SEO title={t('title')} />
           <Heading variant="h1">{t('title')}</Heading>
-          {t('sections').map((section, index) => (
+          {t<SectionProps[]>('sections').map((section, index) => (
             <Section
               key={index}
               mainTitle={section.title}
@@ -29,7 +29,6 @@ const Page = (): JSX.Element => (
     )}
   </Translation>
 );
-
 export default withI18next()(Page);
 
 export const query = graphql`

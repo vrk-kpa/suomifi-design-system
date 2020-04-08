@@ -12,7 +12,7 @@ import { Example } from 'examples/components';
 import { Example as ExampleAdvanced } from 'examples/componentsAdvanced';
 import { getExample, CodeExampleData } from 'components/CodeExampleUtil';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
   <Translation ns={['components']}>
@@ -25,7 +25,7 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
           <Text.lead>{t('intro')}</Text.lead>
         </Paragraph.lead>
 
-        {t('sections').map((section, index) => (
+        {t<SectionProps[]>('sections').map((section, index) => (
           <Section
             key={index}
             mainTitle={section.title}

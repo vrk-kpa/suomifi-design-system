@@ -7,7 +7,7 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/info';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 
 const Page = (): JSX.Element => (
   <Translation ns={['info']}>
@@ -20,7 +20,7 @@ const Page = (): JSX.Element => (
           <Text.lead>{t('intro')}</Text.lead>
         </Paragraph.lead>
 
-        {t('sections').map((section, index) => (
+        {t<SectionProps[]>('sections').map((section, index) => (
           <Section
             key={index}
             mainTitle={section.title}

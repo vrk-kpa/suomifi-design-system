@@ -5,7 +5,9 @@ import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import ContentBoxes from 'components/ContentBoxes';
+import ContentBoxes, {
+  Props as ContentBoxProps,
+} from 'components/ContentBoxes';
 import Hero from 'components/Hero';
 
 const Page = (): JSX.Element => (
@@ -16,7 +18,7 @@ const Page = (): JSX.Element => (
 
         <Hero title={t('intro.title')} description={t('intro.description')} />
 
-        {t('sections').map((section, index) => (
+        {t<ContentBoxProps[]>('sections').map((section, index) => (
           <ContentBoxes
             key={index}
             wrapAll

@@ -30,26 +30,26 @@ When you're done, simply open the site on the specified localhost port and you'r
 
 ### Other commands
 
-* `yarn prettier` write code style fixes to all files in src.
+- `yarn prettier` write code style fixes to all files in src.
 
-* `yarn prettier:check` checks the code style
+- `yarn prettier:check` checks the code style
 
-* `yarn lint:code` checks the code style using eslint.
+- `yarn lint:code` checks the code style using eslint.
 
-* `yarn format:style` write the code style fixes to all src-files.
+- `yarn format:style` write the code style fixes to all src-files.
 
-* `yarn lint:style` check styling for formatting errors.
+- `yarn lint:style` check styling for formatting errors.
 
-* `yarn validate` runs the complete test suite.
+- `yarn validate` runs the complete test suite.
 
-* `yarn build` clears `.cache` and `public` folder, compiles the code and outputs it to the `public` folder
+- `yarn build` clears `.cache` and `public` folder, compiles the code and outputs it to the `public` folder
 
 ## Built using
 
-* [React](https://reactjs.org/)
-* [Gatsby](https://www.gatsbyjs.org/)
-* [i18Next](https://www.i18next.com/)
-* [Suomi.fi UI-components](https://github.com/vrk-kpa/suomifi-ui-components)
+- [React](https://reactjs.org/)
+- [Gatsby](https://www.gatsbyjs.org/)
+- [i18Next](https://www.i18next.com/)
+- [Suomi.fi UI-components](https://github.com/vrk-kpa/suomifi-ui-components)
 
 ## Implementation
 
@@ -93,8 +93,7 @@ When you're done, simply open the site on the specified localhost port and you'r
 
   1. `tx push -s`
 
-  - Be extra careful when modifying existing keys/structure, it destroys translations in Transifex and cannot be undone.
-    In such case:
+  - Be extra careful when modifying existing keys/structure, it destroys translations in Transifex and cannot be undone. In such case:
 
     1. `tx pull` (download first latest translations and update them locally to follow new structure)
 

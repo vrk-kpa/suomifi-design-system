@@ -30,7 +30,8 @@ When you're done, simply open the site on the specified localhost port and you'r
 
 ### Other commands
 
-* `yarn format:code` write code style fixes to all files in src.
+* `yarn prettier` write code style fixes to all files in src.
+
 * `yarn prettier:check` checks the code style
 
 * `yarn lint:code` checks the code style using eslint.

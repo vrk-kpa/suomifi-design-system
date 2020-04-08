@@ -48,6 +48,7 @@
     "start": "gatsby serve",
     "lint:code": "eslint \"src/**/*.{js,jsx,ts,tsx,md}\"",
     "format:code": "prettier --write \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
+    "prettier:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "format:style": "prettier-stylelint --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "validate": "yarn run lint:code && yarn run lint:style && yarn run test",

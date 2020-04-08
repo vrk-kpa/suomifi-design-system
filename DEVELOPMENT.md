@@ -6,7 +6,7 @@ You need to have [Yarn](https://yarnpkg.com/lang/en/) and [Node.js](https://node
 
 ## Installing and building
 
-To get started working with this site, clone the repository and install dependencies by running ```yarn``` or ```yarn install```
+To get started working with this site, clone the repository and install dependencies by running `yarn` or `yarn install`
 
 This project uses Gatsby, so to start a development server, run:
 

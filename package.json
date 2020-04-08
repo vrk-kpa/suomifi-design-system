@@ -51,7 +51,7 @@
     "prettier:check": "prettier --check \"src/**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint:style": "stylelint \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
     "format:style": "prettier-stylelint --write \"src/**/*.{js,jsx,ts,tsx,css,scss}\"",
-    "validate": "yarn run lint:code && yarn run lint:style && yarn run test",
+    "validate": "yarn run lint:code && yarn run lint:style && yarn run test && yarn run prettier:check",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "deploy": "yarn build --prefix-paths && gh-pages -d public -m \"[skip ci] Updates\"",
     "deploy:prod": "yarn build && gatsby-plugin-s3 deploy --yes"

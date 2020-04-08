@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
@@ -10,7 +10,7 @@ import Section from 'components/Section';
 import { Heading } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['accessibility-statement']}>
+  <Translation ns={['accessibility-statement']}>
     {(t) => (
       <Layout>
         <div style={{ padding: `0 ${suomifiDesignTokens.spacing.xl}` }}>
@@ -27,7 +27,7 @@ const Page = (): JSX.Element => (
         </div>
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(Page);

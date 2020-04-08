@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
@@ -87,7 +87,7 @@ const getExampleComp = (
 
 const Page = (): JSX.Element => {
   return (
-    <NamespacesConsumer ns={['button']}>
+    <Translation ns={['button']}>
       {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
@@ -250,7 +250,7 @@ const Page = (): JSX.Element => {
           </ComponentDescription>
         </Layout>
       )}
-    </NamespacesConsumer>
+    </Translation>
   );
 };
 

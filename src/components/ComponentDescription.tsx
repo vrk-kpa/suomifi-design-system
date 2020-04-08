@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { Expander, suomifiDesignTokens } from 'suomifi-ui-components';
 import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
@@ -22,7 +22,7 @@ const ComponentDescription = ({
   filterProps,
   children,
 }: Props): JSX.Element => (
-  <NamespacesConsumer>
+  <Translation>
     {(t) => (
       <div
         style={{
@@ -62,7 +62,7 @@ const ComponentDescription = ({
         )}
       </div>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 interface Props {

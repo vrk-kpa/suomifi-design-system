@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from 'components/layout';
@@ -14,7 +14,7 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['breadcrumb']}>
+  <Translation ns={['breadcrumb']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -51,7 +51,7 @@ const Page = (): JSX.Element => (
         ))}
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(Page);

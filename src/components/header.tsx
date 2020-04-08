@@ -1,5 +1,5 @@
 import React from 'react';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import LanguageSwitcher from 'components/LanguageSwitcher';
@@ -10,7 +10,7 @@ import mainNavData from 'config/mainnav';
 import Link from 'components/Link';
 
 const Header = (): JSX.Element => (
-  <NamespacesConsumer>
+  <Translation>
     {(t) => (
       <header
         style={{
@@ -72,7 +72,7 @@ const Header = (): JSX.Element => (
         </div>
       </header>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default Header;

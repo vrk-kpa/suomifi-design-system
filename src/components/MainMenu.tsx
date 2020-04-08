@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Icon, suomifiDesignTokens, Button } from 'suomifi-ui-components';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 
 import MainMenuItem from 'components/MainMenuItem';
 import { MainNavData } from 'components/MainNavData';
@@ -30,7 +30,7 @@ class MainMenu extends Component<Props, State> {
     const { mainNavData } = this.props;
 
     return (
-      <NamespacesConsumer>
+      <Translation>
         {(t) => (
           <div style={{ position: 'relative' }}>
             <Button
@@ -88,7 +88,7 @@ class MainMenu extends Component<Props, State> {
             )}
           </div>
         )}
-      </NamespacesConsumer>
+      </Translation>
     );
   }
 }

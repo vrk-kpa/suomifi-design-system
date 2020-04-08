@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next';
 import {
   Link as SuomifiLink,
@@ -40,7 +40,7 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
   );
 
   return (
-    <NamespacesConsumer>
+    <Translation>
       {(t) =>
         url.startsWith('/') ? (
           <CustomLink
@@ -63,7 +63,7 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
           </CustomLink>
         )
       }
-    </NamespacesConsumer>
+    </Translation>
   );
 };
 

@@ -88,7 +88,7 @@ const getExampleComp = (
 const Page = (): JSX.Element => {
   return (
     <NamespacesConsumer ns={['button']}>
-      {t => (
+      {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
           <Heading.h1>{t('title')}</Heading.h1>
@@ -125,7 +125,7 @@ const Page = (): JSX.Element => {
               }}
             >
               <MobileDevice>
-                {mobileComponents.map(item => (
+                {mobileComponents.map((item) => (
                   <div
                     key={item.id}
                     style={{
@@ -145,7 +145,7 @@ const Page = (): JSX.Element => {
             </div>
           </ComponentDescription>
 
-          {components.map(item => (
+          {components.map((item) => (
             <ComponentDescription
               key={item.id}
               mainTitle={t(`${item.id}.title`)}
@@ -165,7 +165,7 @@ const Page = (): JSX.Element => {
                     label: t(`${item.id}.labelDisabled`),
                     props: { disabled: true },
                   },
-                ].map(example =>
+                ].map((example) =>
                   getExampleComp(
                     item.comp,
                     example.id,
@@ -183,7 +183,7 @@ const Page = (): JSX.Element => {
             description={t('withIcon.description')}
             exampleFirst
           >
-            {components.map(item => (
+            {components.map((item) => (
               <ComponentExample
                 key={item.id}
                 style={{
@@ -206,7 +206,7 @@ const Page = (): JSX.Element => {
                     }),
                     props: { iconRight: 'logout' },
                   },
-                ].map(example =>
+                ].map((example) =>
                   getExampleComp(
                     item.comp,
                     example.id,
@@ -227,7 +227,7 @@ const Page = (): JSX.Element => {
             <ComponentExample
               style={{ padding: suomifiDesignTokens.spacing.xs }}
             >
-              {disabledComponents.map(item => (
+              {disabledComponents.map((item) => (
                 <div
                   key={item.id}
                   style={{

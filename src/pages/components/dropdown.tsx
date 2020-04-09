@@ -15,7 +15,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['dropdown']}>
-    {t => (
+    {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>

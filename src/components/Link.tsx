@@ -41,7 +41,7 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
 
   return (
     <NamespacesConsumer>
-      {t =>
+      {(t) =>
         url.startsWith('/') ? (
           <CustomLink
             to={ensureTrailingSlash(url)}

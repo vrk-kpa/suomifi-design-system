@@ -16,7 +16,7 @@ import Section from 'components/Section';
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
   <NamespacesConsumer ns={['components']}>
-    {t => (
+    {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('info.title')} />
         <Heading.h1>{t('info.title')}</Heading.h1>

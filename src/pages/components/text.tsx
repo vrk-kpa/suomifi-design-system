@@ -43,7 +43,7 @@ const ExampleBlock = ({
 const Page: React.FC = (): React.ReactElement => {
   return (
     <NamespacesConsumer ns={['text']}>
-      {t => (
+      {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
           <Heading.h1>{t('title')}</Heading.h1>

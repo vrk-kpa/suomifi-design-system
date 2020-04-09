@@ -7,7 +7,7 @@ import { MainNavData } from 'components/MainNavData';
 
 const Navigation = ({ mainNavData }: Props): JSX.Element => (
   <NamespacesConsumer>
-    {t => (
+    {(t) => (
       <nav
         aria-label={t('common:navigation.main')}
         style={{
@@ -31,7 +31,7 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
             listStyle: 'none',
           }}
         >
-          {mainNavData.items.map(item => (
+          {mainNavData.items.map((item) => (
             <li
               key={item.to}
               style={{

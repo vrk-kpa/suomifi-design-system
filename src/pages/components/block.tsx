@@ -17,7 +17,7 @@ import NotificationBox from 'components/NotificationBox';
 const Page: React.FC = (): React.ReactElement => {
   return (
     <NamespacesConsumer ns={['block']}>
-      {t => (
+      {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
           <Heading.h1>{t('title')}</Heading.h1>

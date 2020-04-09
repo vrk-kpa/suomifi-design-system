@@ -25,6 +25,9 @@
     "@typescript-eslint/explicit-function-return-type": [
       "warn",
       { "allowExpressions": true }
-    ]
+    ],
+    "react/jsx-pascal-case": 0,
+    "react/jsx-handler-names": 0,
+    "@typescript-eslint/no-inferrable-types": 1
   }
 }

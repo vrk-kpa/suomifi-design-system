@@ -17,9 +17,9 @@ const MenuSwitcher = ({
   availableLngs,
 }: Props): JSX.Element => (
   <NamespacesConsumer ns={['language']}>
-    {t => (
+    {(t) => (
       <LanguageMenu name={t(`${lng}.short`)} aria-label={t('menu.label')}>
-        {availableLngs.map(value => (
+        {availableLngs.map((value) => (
           <LanguageMenuItem
             key={value}
             onSelect={() => changeLng(value)}
@@ -39,7 +39,7 @@ const ListSwitcher = ({
   availableLngs,
 }: Props): JSX.Element => (
   <NamespacesConsumer ns={['language']}>
-    {t => (
+    {(t) => (
       <ul
         aria-label={t('menu.label')}
         style={{
@@ -51,7 +51,7 @@ const ListSwitcher = ({
           justifyContent: 'center',
         }}
       >
-        {availableLngs.map(value => (
+        {availableLngs.map((value) => (
           <li key={value}>
             <Button.secondaryNoborder
               onClick={() => changeLng(value)}

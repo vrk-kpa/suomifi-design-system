@@ -138,7 +138,7 @@ const getExampleColor = (
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['colors']}>
-    {t => (
+    {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
@@ -158,7 +158,7 @@ const Page = (): JSX.Element => (
           />
         ))}
 
-        {colorCategories.map(item => (
+        {colorCategories.map((item) => (
           <ComponentDescription
             key={item.id}
             mainTitle={t(`${item.id}.title`)}

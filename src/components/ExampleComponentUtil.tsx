@@ -14,7 +14,7 @@ const getVariants = (
   displayName: string,
 ): Record<string, Function> =>
   Object.keys(Comp)
-    .map(key => ({
+    .map((key) => ({
       [key]: getComponentWithDisplayName(Comp[key], `${displayName}.${key}`),
     }))
     .reduce((obj, item) => ({ ...obj, ...item }), {});

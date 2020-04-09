@@ -47,7 +47,7 @@ const ExampleBlock = ({
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['typography']}>
-    {t => (
+    {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
@@ -86,8 +86,10 @@ const Page = (): JSX.Element => (
           >
             {`Headline h1, line height: ${
               suomifiDesignTokens.values.typography.heading1.lineHeight.value
-            }${suomifiDesignTokens.values.typography.heading1.lineHeight.unit ||
-              ''}`}
+            }${
+              suomifiDesignTokens.values.typography.heading1.lineHeight.unit ||
+              ''
+            }`}
           </SuomifiHeading.h1>
           <SuomifiHeading.h1
             smallScreen
@@ -100,8 +102,10 @@ const Page = (): JSX.Element => (
           >
             {`Headline h2, line height: ${
               suomifiDesignTokens.values.typography.heading2.lineHeight.value
-            }${suomifiDesignTokens.values.typography.heading2.lineHeight.unit ||
-              ''}`}
+            }${
+              suomifiDesignTokens.values.typography.heading2.lineHeight.unit ||
+              ''
+            }`}
           </SuomifiHeading.h2>
           <SuomifiHeading.h2
             smallScreen
@@ -114,8 +118,10 @@ const Page = (): JSX.Element => (
           >
             {`Headline h3, line height: ${
               suomifiDesignTokens.values.typography.heading3.lineHeight.value
-            }${suomifiDesignTokens.values.typography.heading3.lineHeight.unit ||
-              ''}`}
+            }${
+              suomifiDesignTokens.values.typography.heading3.lineHeight.unit ||
+              ''
+            }`}
           </SuomifiHeading.h3>
           <SuomifiHeading.h3
             smallScreen
@@ -128,8 +134,10 @@ const Page = (): JSX.Element => (
           >
             {`Headline h4, line height: ${
               suomifiDesignTokens.values.typography.heading4.lineHeight.value
-            }${suomifiDesignTokens.values.typography.heading4.lineHeight.unit ||
-              ''}`}
+            }${
+              suomifiDesignTokens.values.typography.heading4.lineHeight.unit ||
+              ''
+            }`}
           </SuomifiHeading.h4>
           <SuomifiHeading.h4
             smallScreen
@@ -142,8 +150,10 @@ const Page = (): JSX.Element => (
           >
             {`Headline h5, line height: ${
               suomifiDesignTokens.values.typography.heading5.lineHeight.value
-            }${suomifiDesignTokens.values.typography.heading5.lineHeight.unit ||
-              ''}`}
+            }${
+              suomifiDesignTokens.values.typography.heading5.lineHeight.unit ||
+              ''
+            }`}
           </SuomifiHeading.h5>
         </ExampleBlock>
 
@@ -156,8 +166,10 @@ const Page = (): JSX.Element => (
           >
             {`Lead text, line height: ${
               suomifiDesignTokens.values.typography.leadText.lineHeight.value
-            }${suomifiDesignTokens.values.typography.leadText.lineHeight.unit ||
-              ''}`}
+            }${
+              suomifiDesignTokens.values.typography.leadText.lineHeight.unit ||
+              ''
+            }`}
           </SuomifiText.lead>
           <SuomifiText.lead
             smallScreen
@@ -166,16 +178,20 @@ const Page = (): JSX.Element => (
             {`Lead text small, line height: ${
               suomifiDesignTokens.values.typography.leadTextSmallScreen
                 .lineHeight.value
-            }${suomifiDesignTokens.values.typography.leadTextSmallScreen
-              .lineHeight.unit || ''}`}
+            }${
+              suomifiDesignTokens.values.typography.leadTextSmallScreen
+                .lineHeight.unit || ''
+            }`}
           </SuomifiText.lead>
           <SuomifiText
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Body text, line height: ${
               suomifiDesignTokens.values.typography.bodyText.lineHeight.value
-            }${suomifiDesignTokens.values.typography.bodyText.lineHeight.unit ||
-              ''}`}
+            }${
+              suomifiDesignTokens.values.typography.bodyText.lineHeight.unit ||
+              ''
+            }`}
           </SuomifiText>
           <SuomifiText
             smallScreen
@@ -184,8 +200,10 @@ const Page = (): JSX.Element => (
             {`Body text small, line height: ${
               suomifiDesignTokens.values.typography.bodyTextSmall.lineHeight
                 .value
-            }${suomifiDesignTokens.values.typography.bodyTextSmall.lineHeight
-              .unit || ''}`}
+            }${
+              suomifiDesignTokens.values.typography.bodyTextSmall.lineHeight
+                .unit || ''
+            }`}
           </SuomifiText>
         </ExampleBlock>
       </Layout>

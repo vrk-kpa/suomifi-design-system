@@ -5,7 +5,7 @@ import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
-  React.Children.map(children, child =>
+  React.Children.map(children, (child) =>
     !!child.type && (child.type === 'div' || child.type.displayName === 'div')
       ? getWithoutWrappers(child.props.children)
       : child,
@@ -23,7 +23,7 @@ const ComponentDescription = ({
   children,
 }: Props): JSX.Element => (
   <NamespacesConsumer>
-    {t => (
+    {(t) => (
       <div
         style={{
           marginBottom: suomifiDesignTokens.spacing.xl,

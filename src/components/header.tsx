@@ -11,7 +11,7 @@ import Link from 'components/Link';
 
 const Header = (): JSX.Element => (
   <NamespacesConsumer>
-    {t => (
+    {(t) => (
       <header
         style={{
           padding: suomifiDesignTokens.spacing.s,

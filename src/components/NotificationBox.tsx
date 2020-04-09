@@ -10,7 +10,7 @@ interface Props {
 
 const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
   <NamespacesConsumer>
-    {t => (
+    {(t) => (
       <div
         style={{
           display: 'flex',

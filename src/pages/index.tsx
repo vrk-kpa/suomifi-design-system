@@ -10,7 +10,7 @@ import Hero from 'components/Hero';
 
 const Page = (): JSX.Element => (
   <NamespacesConsumer ns={['home']}>
-    {t => (
+    {(t) => (
       <Layout hasFrame={false}>
         <SEO title={t('title')} />
 

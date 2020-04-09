@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import { suomifiDesignTokens, Icon } from 'suomifi-ui-components';
 import { Text } from 'components/ResponsiveComponents';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 
 interface Props {
   style?: CSSProperties;
@@ -9,7 +9,7 @@ interface Props {
 }
 
 const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
-  <NamespacesConsumer>
+  <Translation>
     {(t) => (
       <div
         style={{
@@ -38,7 +38,7 @@ const NotificationBox = ({ style, notificationText }: Props): JSX.Element => (
         </Text.bold>
       </div>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 NotificationBox.displayName = 'div';

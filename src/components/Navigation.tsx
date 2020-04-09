@@ -1,12 +1,12 @@
 import React from 'react';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import NavItem from 'components/NavItem';
 import { MainNavData } from 'components/MainNavData';
 
 const Navigation = ({ mainNavData }: Props): JSX.Element => (
-  <NamespacesConsumer>
+  <Translation>
     {(t) => (
       <nav
         aria-label={t('common:navigation.main')}
@@ -44,7 +44,7 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
         </ul>
       </nav>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 interface Props {

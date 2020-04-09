@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import { Text, Paragraph } from 'components/ResponsiveComponents';
@@ -126,7 +126,7 @@ const AllContent = ({
   center?: boolean;
   wrapAll?: boolean;
 }): JSX.Element => (
-  <NamespacesConsumer>
+  <Translation>
     {(t) => (
       <>
         <Content
@@ -181,7 +181,7 @@ const AllContent = ({
         />
       </>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 const Footer = (): JSX.Element => (

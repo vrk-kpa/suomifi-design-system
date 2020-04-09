@@ -1,22 +1,24 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import ContentBoxes from 'components/ContentBoxes';
+import ContentBoxes, {
+  Props as ContentBoxProps,
+} from 'components/ContentBoxes';
 import Hero from 'components/Hero';
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['home']}>
+  <Translation ns={['home']}>
     {(t) => (
       <Layout hasFrame={false}>
         <SEO title={t('title')} />
 
         <Hero title={t('intro.title')} description={t('intro.description')} />
 
-        {t('sections').map((section, index) => (
+        {t<ContentBoxProps[]>('sections').map((section, index) => (
           <ContentBoxes
             key={index}
             wrapAll
@@ -26,7 +28,7 @@ const Page = (): JSX.Element => (
         ))}
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(Page);

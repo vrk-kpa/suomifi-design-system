@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from 'components/layout';
@@ -11,10 +11,10 @@ import ComponentExample from 'components/ComponentExample';
 import { Example } from 'examples/styles';
 import { getExample, CodeExampleData } from 'components/CodeExampleUtil';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
-  <NamespacesConsumer ns={['styles']}>
+  <Translation ns={['styles']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('info.title')} />
@@ -24,7 +24,7 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
           <Text.lead>{t('intro')}</Text.lead>
         </Paragraph.lead>
 
-        {t('sections').map((section, index) => (
+        {t<SectionProps[]>('sections').map((section, index) => (
           <Section
             key={index}
             mainTitle={section.title}
@@ -46,7 +46,7 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
         </ComponentDescription>
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(Page);

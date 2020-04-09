@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from 'components/layout';
@@ -15,7 +15,7 @@ import NotificationBox from 'components/NotificationBox';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['searchinput']}>
+  <Translation ns={['searchinput']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -37,7 +37,7 @@ const Page = (): JSX.Element => (
         <NoteBox title={t('note.title')} items={t('note.items')} />
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(Page);

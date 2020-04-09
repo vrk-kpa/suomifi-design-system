@@ -1,6 +1,6 @@
 import React from 'react';
 import { Language } from '@wapps/gatsby-plugin-i18next';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import {
   LanguageMenu,
   LanguageMenuItem,
@@ -16,7 +16,7 @@ const MenuSwitcher = ({
   lng,
   availableLngs,
 }: Props): JSX.Element => (
-  <NamespacesConsumer ns={['language']}>
+  <Translation ns={['language']}>
     {(t) => (
       <LanguageMenu name={t(`${lng}.short`)} aria-label={t('menu.label')}>
         {availableLngs.map((value) => (
@@ -30,7 +30,7 @@ const MenuSwitcher = ({
         ))}
       </LanguageMenu>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 const ListSwitcher = ({
@@ -38,7 +38,7 @@ const ListSwitcher = ({
   lng,
   availableLngs,
 }: Props): JSX.Element => (
-  <NamespacesConsumer ns={['language']}>
+  <Translation ns={['language']}>
     {(t) => (
       <ul
         aria-label={t('menu.label')}
@@ -65,7 +65,7 @@ const ListSwitcher = ({
         ))}
       </ul>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 interface Props {

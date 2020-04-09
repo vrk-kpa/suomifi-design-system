@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Header from 'components/header';
@@ -15,7 +15,7 @@ import '@csstools/normalize.css';
 import './layout.css';
 
 const BypassLinks = ({ hasSideNav }: { hasSideNav: boolean }): JSX.Element => (
-  <NamespacesConsumer>
+  <Translation>
     {(t) => (
       <>
         <BypassLink to="#main">{t('common:to.main.content')}</BypassLink>
@@ -24,7 +24,7 @@ const BypassLinks = ({ hasSideNav }: { hasSideNav: boolean }): JSX.Element => (
         )}
       </>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 const Layout = ({
@@ -32,7 +32,7 @@ const Layout = ({
   hasFrame = true,
   children,
 }: Props): JSX.Element => (
-  <NamespacesConsumer>
+  <Translation>
     {(t) => (
       <div
         style={{
@@ -57,7 +57,7 @@ const Layout = ({
         <Footer />
       </div>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 interface Props {

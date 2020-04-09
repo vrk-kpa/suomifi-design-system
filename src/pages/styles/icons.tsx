@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { baseIcons, illustrativeIcons, doctypeIcons } from 'suomifi-icons';
 import {
@@ -79,7 +79,7 @@ const getExampleIcon = (
 );
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['icons', 'static-icons']}>
+  <Translation ns={['icons', 'static-icons']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -133,7 +133,7 @@ const Page = (): JSX.Element => (
         />
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(Page);

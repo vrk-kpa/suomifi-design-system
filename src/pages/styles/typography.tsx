@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import { suomifiDesignTokens } from 'suomifi-ui-components';
@@ -9,7 +9,7 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/styles';
 import NoteBox from 'components/NoteBox';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
@@ -46,7 +46,7 @@ const ExampleBlock = ({
 );
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['typography']}>
+  <Translation ns={['typography']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -58,7 +58,7 @@ const Page = (): JSX.Element => (
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
-        {t('sections').map((section, index) => (
+        {t<SectionProps[]>('sections').map((section, index) => (
           <Section
             key={index}
             mainTitle={section.title}
@@ -208,7 +208,7 @@ const Page = (): JSX.Element => (
         </ExampleBlock>
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(Page);

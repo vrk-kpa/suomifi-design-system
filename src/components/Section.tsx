@@ -44,7 +44,7 @@ const Section = ({
   </section>
 );
 
-interface Props {
+export interface Props {
   mainTitle?: string;
   title?: string;
   paragraphs: ParagraphProps[];

@@ -9,7 +9,7 @@
     "@svgr/webpack": "^5.3.1",
     "@wapps/gatsby-plugin-i18next": "^1.1.6",
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.20.13",
+    "gatsby": "^2.20.14",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-module-resolver": "^1.0.3",
@@ -22,7 +22,7 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-code": "^0.1.0",
     "gatsby-transformer-sharp": "^2.4.4",
-    "i18next": "^19.3.4",
+    "i18next": "^19.4.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -37,7 +37,7 @@
     "suomifi-ui-components": "0.11.0"
   },
   "resolutions": {
-    "@wapps/gatsby-plugin-i18next/i18next": "^19.3.4",
+    "@wapps/gatsby-plugin-i18next/i18next": "^19.4.0",
     "@wapps/gatsby-plugin-i18next/react-i18next": "^11.3.4"
   },
   "license": "MIT",
@@ -68,7 +68,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^16.9.32",
+    "@types/react": "^16.9.33",
     "@types/react-dom": "^16.9.6",
     "@types/react-helmet": "^5.0.15",
     "@types/react-responsive": "^8.0.2",

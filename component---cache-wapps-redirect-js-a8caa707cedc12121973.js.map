@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./.cache/@wapps/redirect.js"],"names":["Redirect","require","module","exports"],"mappings":"oFACcA,EAAaC,EAAQ,QAArBD,SACRE,EAAOC,QAAUH","file":"component---cache-wapps-redirect-js-a8caa707cedc12121973.js","sourcesContent":["\n      const { Redirect } = require('@wapps/gatsby-i18n');\n      module.exports = Redirect;\n  "],"sourceRoot":""}

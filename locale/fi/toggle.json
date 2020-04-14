@@ -66,11 +66,23 @@
           "url": ""
         }
       ]
+    },
+    {
+      "title": "Variaatiot",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Valintakytkimestä on saatavilla kaksi eri variaatiota; painike (button) ja kenttä (input). Painiketta on tarkoitus käyttää kun kyseessä on toiminto, heti tapahtuva muutos. Kenttää käytetään lomakkeissa, jolloin lomaketta lähettäessä sen arvo luetaan."
+        }
+      ],
+      "links": []
     }
   ],
   "default.title": "",
   "default.description": "",
-  "toggle.label": "Esimerkkitoiminto",
+  "toggle.label.button": "Esimerkkitoiminto, painike-variaatio",
+  "toggle.label.input": "Esimerkkitoiminto, kenttä-variaatio",
   "toggle.state.on": "{{name}} päällä.",
   "toggle.state.off": "{{name}} pois päältä."
 }

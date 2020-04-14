@@ -66,6 +66,17 @@
           "url": ""
         }
       ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": []
     }
   ],
   "default.title": "",

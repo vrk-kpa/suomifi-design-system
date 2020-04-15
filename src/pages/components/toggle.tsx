@@ -18,18 +18,14 @@ const Page: React.FC = (): React.ReactElement => {
   const [isButtonChecked, setButtonChecked] = useState(false);
   const [isInputChecked, setInputChecked] = useState(false);
 
-  const getAriaLabelText = (t: Function, inputVariant = false): string => {
-    const componentVariantState = inputVariant
-      ? isInputChecked
-      : isButtonChecked;
-
-    const componentVariantLabel = inputVariant
-      ? 'toggle.label.input'
-      : 'toggle.label.button';
-
-    return t(`toggle.state.${componentVariantState ? 'on' : 'off'}`, {
-      name: t(componentVariantLabel),
+  const getButtonAriaLabelText = (t: Function): string => {
+    return t(`toggle.state.${isButtonChecked ? 'on' : 'off'}`, {
+      name: t('toggle.label.button'),
     });
+  };
+
+  const getInputAriaLabelText = (t: Function): string => {
+    return t(`toggle.state.${isInputChecked ? 'on' : 'off'}`);
   };
 
   const handleButtonClick = (newState: boolean): void => {
@@ -64,7 +60,7 @@ const Page: React.FC = (): React.ReactElement => {
               }}
             >
               <Toggle
-                aria-label={getAriaLabelText(t)}
+                aria-label={getButtonAriaLabelText(t)}
                 onClick={({ toggleState }) => handleButtonClick(toggleState)}
                 checked={isButtonChecked}
               >
@@ -73,7 +69,7 @@ const Page: React.FC = (): React.ReactElement => {
 
               <Toggle
                 variant="withInput"
-                aria-label={getAriaLabelText(t, true)}
+                aria-label={getInputAriaLabelText(t)}
                 onClick={({ toggleState }) => handleInputClick(toggleState)}
                 checked={isInputChecked}
               >

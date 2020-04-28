@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -14,15 +15,25 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page: React.FC = (): React.ReactElement => {
-  const [isChecked, setChecked] = useState(false);
+  const [isButtonChecked, setButtonChecked] = useState(false);
+  const [isInputChecked, setInputChecked] = useState(false);
 
-  const getAriaLabelText = (t: Function): string =>
-    t(`toggle.state.${isChecked ? 'on' : 'off'}`, {
-      name: t('toggle.label'),
+  const getButtonAriaLabelText = (t: Function): string => {
+    return t(`toggle.state.${isButtonChecked ? 'on' : 'off'}`, {
+      name: t('toggle.label.button'),
     });
+  };
 
-  const handleClick = (newState: boolean): void => {
-    setChecked(newState);
+  const getInputAriaLabelText = (t: Function): string => {
+    return t(`toggle.state.${isInputChecked ? 'on' : 'off'}`);
+  };
+
+  const handleButtonClick = (newState: boolean): void => {
+    setButtonChecked(newState);
+  };
+
+  const handleInputClick = (newState: boolean): void => {
+    setInputChecked(newState);
   };
 
   return (
@@ -40,13 +51,29 @@ const Page: React.FC = (): React.ReactElement => {
             mainTitle={t('default.title')}
             description={t('default.description')}
           >
-            <ComponentExample>
+            <ComponentExample
+              style={{
+                flexDirection: 'column',
+                alignItems: 'flex-start',
+                justifyContent: 'space-between',
+                height: `${suomifiDesignTokens.spacing.xxxxl}`,
+              }}
+            >
               <Toggle
-                aria-label={getAriaLabelText(t)}
-                onClick={({ toggleState }) => handleClick(toggleState)}
-                checked={isChecked}
+                aria-label={getButtonAriaLabelText(t)}
+                onClick={({ toggleState }) => handleButtonClick(toggleState)}
+                checked={isButtonChecked}
               >
-                {t('toggle.label')}
+                {t('toggle.label.button')}
+              </Toggle>
+
+              <Toggle
+                variant="withInput"
+                aria-label={getInputAriaLabelText(t)}
+                onClick={({ toggleState }) => handleInputClick(toggleState)}
+                checked={isInputChecked}
+              >
+                {t('toggle.label.input')}
               </Toggle>
             </ComponentExample>
           </ComponentDescription>

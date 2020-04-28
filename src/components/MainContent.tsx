@@ -34,12 +34,14 @@ const Content = ({
   style?: CSSProperties;
 }): JSX.Element => (
   <main
+    tabIndex={-1}
     id="main"
     style={{
       margin: hasFrame
         ? `${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.s}`
         : 0,
       ...style,
+      outline: 'none',
     }}
   >
     {children}

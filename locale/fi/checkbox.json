@@ -1,0 +1,70 @@
+{
+  "title": "Valintaruutu (Checkbox)",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item"
+  ],
+  "sections": [
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    }
+  ],
+  "default.title": "default.title",
+  "default.description": "default.description",
+  "default.link1": "default.link1",
+  "default.link2": "default.link2",
+  "default.link3": "default.link3"
+}

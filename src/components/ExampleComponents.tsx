@@ -14,6 +14,7 @@ import {
   Block as OrigBlock,
   LanguageMenu as OrigLanguageMenu,
   LanguageMenuItem as OrigLanguageMenuItem,
+  Checkbox as OrigCheckbox,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -61,3 +62,6 @@ addDisplayNames(LanguageMenu, OrigLanguageMenu, 'LanguageMenu');
 
 export class LanguageMenuItem extends OrigLanguageMenuItem {}
 addDisplayNames(LanguageMenuItem, OrigLanguageMenuItem, 'LanguageMenuItem');
+
+export class Checkbox extends OrigCheckbox {}
+addDisplayNames(Checkbox, OrigCheckbox, 'Checkbox');

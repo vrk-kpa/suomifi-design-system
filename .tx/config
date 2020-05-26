@@ -189,3 +189,10 @@ minimum_perc = 0
 source_file = locale/af/languagemenu.json
 source_lang = af
 type = KEYVALUEJSON
+
+[suomifi-design-system.checkbox-json]
+file_filter = locale/<lang>/checkbox.json
+minimum_perc = 0
+source_file = locale/af/checkbox.json
+source_lang = af
+type = KEYVALUEJSON

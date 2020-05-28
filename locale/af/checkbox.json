@@ -62,9 +62,17 @@
       ]
     }
   ],
-  "default.title": "default.title",
-  "default.description": "default.description",
-  "default.link1": "default.link1",
-  "default.link2": "default.link2",
-  "default.link3": "default.link3"
+  "example.default.title": "example.default.title",
+  "example.default.content": "example.default.content",
+  "example.large.title": "example.large.title",
+  "example.large.description": "example.large.description",
+  "example.large.content": "example.large.content",
+  "example.hintstate.title": "example.hintstate.title",
+  "example.hintstate.description": "example.hintstate.description",
+  "example.hintstate.content": "example.hintstate.content",
+  "example.hintstate.hintText": "example.hintstate.hintText",
+  "example.hintstate.statusText": "example.hintstate.statusText",
+  "example.disabled.title": "example.disabled.title",
+  "example.disabled.description": "example.disabled.description",
+  "example.disabled.content": "example.disabled.content"
 }

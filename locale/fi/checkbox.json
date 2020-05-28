@@ -1,70 +1,62 @@
 {
   "title": "Valintaruutu (Checkbox)",
-  "intro": "intro",
-  "note.title": "note.title",
+  "intro": "Valintaruutu on lomakekomponentti, jolla voidaan merkitä tarjottu vaihtoehto valituksi. Useasta valintaruudusta koostuvasta valintaruuturyhmästä käyttäjä voi valita useampia vaihtoehtoja.",
+  "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "note.item",
-    "note.item",
-    "note.item",
-    "note.item",
-    "note.item",
-    "note.item",
-    "note.item",
-    "note.item"
+    "Pyri kuvaaviin, lyhyisiin ja ytimekkäisiin label-teksteihin.",
+    "Sijoita saman aihealueen valintaruudut ryhmiin asemoimalla ne päällekkäin.",
+    "Käytä valintaruutua, kun käyttäjän halutaan valitsevan vapaasti yhden tai useampia annetuista vaihtoehdoista.",
+    "Älä käytä valintaruutua tilanteissa, joissa käyttäjän on määrä valita ainoastaan yksi vaihtoehto. Käytä tällöin valintanappia (radiobutton).",
+    "Älä käytä valintaruutua tilan muutokseen. Käytä tähän tarkoitukseen valintakytkintä (toggle).",
+    "Käytä ohjetekstiä tilanteissa, joissa käyttäjälle on tarpeen antaa lisäohjeistusta valinnan suhteen. Yksinkertaisissa tapauksissa ohjetekstiä ei tarvita.",
+    "",
+    ""
   ],
   "sections": [
     {
-      "title": "section.title",
+      "title": "Mistä komponentti koostuu?",
       "paragraphs": [
         {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
+          "image.key": "",
+          "image.alt": "",
+          "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla notifikaatioteksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Notifikaatiotekstin lisäksi tilaa viestitään käyttäjälle myös värien sekä valintaruudun reunuksen paksuuden avulla. "
         }
       ],
       "links": [
         {
-          "text": "section.link.text",
-          "url": "section.link.url"
+          "text": "",
+          "url": ""
         }
       ]
     },
     {
-      "title": "section.title",
+      "title": "Koko ja käyttö",
       "paragraphs": [
         {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
+          "image.key": "",
+          "image.alt": "",
+          "text": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot valintaruudusta. Oletuksena käytetään pienempää valintaruutua (default), mobiilinäytöillä niille suunniteltua kokoa (large)."
         }
       ],
       "links": [
         {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        }
-      ]
-    },
-    {
-      "title": "section.title",
-      "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        }
-      ],
-      "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
+          "text": "",
+          "url": ""
         }
       ]
     }
   ],
-  "default.title": "default.title",
-  "default.description": "default.description",
-  "default.link1": "default.link1",
-  "default.link2": "default.link2",
-  "default.link3": "default.link3"
+  "example.default.title": "Tavallinen valintaruutu",
+  "example.default.content": "Valinta",
+  "example.large.title": "Valintaruudun mobiiliversio",
+  "example.large.description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintaruudun mobiiliversiota (Checkbox.large)",
+  "example.large.content": "Valinta",
+  "example.hintstate.title": "Ohje- ja notifikaatiotekstit",
+  "example.hintstate.description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit, jotka näytetään komponentin alla. Komponentin ja notifikaatiotekstin ulkonäkö muuttuu komponentin tilan (status) mukana.",
+  "example.hintstate.content": "Valinta",
+  "example.hintstate.hintText": "Ohjeteksti valinnan tueksi",
+  "example.hintstate.statusText": "Notifikaatioteksti",
+  "example.disabled.title": "Estetty valintaruutu (Disabled Checkbox)",
+  "example.disabled.description": "Estetty valintaruutu ei ole käyttäjän valittavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
+  "example.disabled.content": "Valinta"
 }

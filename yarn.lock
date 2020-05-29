@@ -1363,7 +1363,7 @@
     lodash.debounce "^4.0.8"
     react-dev-utils "^9.1.0"
 
-"@reach/auto-id@^0.10.0":
+"@reach/auto-id@^0.10.3":
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/@reach/auto-id/-/auto-id-0.10.3.tgz#d2b6fe3ccb81b0fb44dc8bd3aca567c94ac11f5e"
   integrity sha512-LK3qIsurXnga+gUbjl6t6msrZ+F3aZMY+k2go5Xcns9b85bNRyF/LwlUtcGSqmhgqbVYvMcnLeEdSQLZRxCGnQ==
@@ -1371,7 +1371,7 @@
     "@reach/utils" "^0.10.3"
     tslib "^1.11.2"
 
-"@reach/descendants@^0.10.0":
+"@reach/descendants@^0.10.3":
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/@reach/descendants/-/descendants-0.10.3.tgz#c2cbd14c172cb82189bf6f290b09577193926a1a"
   integrity sha512-1uwe2w49xSMF0ei1KedydB30sEWfyksk5axI3nEanwUDO7Sd1kCyt2GHZHoP2ESr6VQx2a9ETzMw8gKHsoy79g==
@@ -1379,36 +1379,24 @@
     "@reach/utils" "^0.10.3"
     tslib "^1.11.2"
 
-"@reach/menu-button@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@reach/menu-button/-/menu-button-0.10.0.tgz#3b427d5bd1f7260b0da500a57c332e56a03ac1dc"
-  integrity sha512-8opK3agB1rvprkFMgdhQxyznxXg4B5Hpn6aBZjv0m3tIb8NTLdQxwVwYKgXhvm1Vh8Jz9MfH137hXMQrvJDnrg==
+"@reach/menu-button@0.10.3":
+  version "0.10.3"
+  resolved "https://registry.yarnpkg.com/@reach/menu-button/-/menu-button-0.10.3.tgz#6e72cd122e16f28c4b15a140f329be256adc72c8"
+  integrity sha512-50C5nl7JJG9YcKqngmwTLVft+ZF2MMieto1GSCC7qEU8ykUNz0p69Ipup+Eqjk7KRHpSIYPlYIfAOS75dDuiZQ==
   dependencies:
-    "@reach/auto-id" "^0.10.0"
-    "@reach/descendants" "^0.10.0"
-    "@reach/popover" "^0.10.0"
-    "@reach/utils" "^0.10.0"
+    "@reach/auto-id" "^0.10.3"
+    "@reach/descendants" "^0.10.3"
+    "@reach/popover" "^0.10.3"
+    "@reach/utils" "^0.10.3"
     prop-types "^15.7.2"
-    tslib "^1.10.0"
-    warning "^4.0.3"
+    tslib "^1.11.2"
 
 "@reach/observe-rect@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@reach/observe-rect/-/observe-rect-1.1.0.tgz#4e967a93852b6004c3895d9ed8d4e5b41895afde"
   integrity sha512-kE+jvoj/OyJV24C03VvLt5zclb9ArJi04wWXMMFwQvdZjdHoBlN4g0ZQFjyy/ejPF1Z/dpUD5dhRdBiUmIGZTA==
 
-"@reach/popover@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@reach/popover/-/popover-0.10.0.tgz#054601f98ef1616a0d439be4dafd8cf7ac172da6"
-  integrity sha512-Iff9qHuJypxdG7a6IiAZFFgpbfQK9v3FH+GDsdZiKLbtmRDIMC3AM8ebkBTKUAnEsumHekBrk8cf9WAIJVz1jg==
-  dependencies:
-    "@reach/portal" "^0.10.0"
-    "@reach/rect" "^0.10.0"
-    "@reach/utils" "^0.10.0"
-    tabbable "^4.0.0"
-    tslib "^1.10.0"
-
-"@reach/popover@^0.10.0":
+"@reach/popover@0.10.3", "@reach/popover@^0.10.3":
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/@reach/popover/-/popover-0.10.3.tgz#82e29b91748869923756a165758a29c8269b93e3"
   integrity sha512-41iNfdjd9/5HtYuhezTc9z9WGkloYFVB8wBmPX3QOTuBP4qYd0La5sXClrfyiVqPn/uj1gGzehrZKuh8oSkorw==
@@ -1419,7 +1407,7 @@
     tabbable "^4.0.0"
     tslib "^1.11.2"
 
-"@reach/portal@^0.10.0", "@reach/portal@^0.10.3":
+"@reach/portal@^0.10.3":
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/@reach/portal/-/portal-0.10.3.tgz#2eb408cc246d3eabbbf3b47ca4dc9c381cdb1d88"
   integrity sha512-t8c+jtDxMLSPRGg93sQd2s6dDNilh5/qdrwmx88ki7l9h8oIXqMxPP3kSkOqZ9cbVR0b2A68PfMhCDOwMGvkoQ==
@@ -1427,7 +1415,7 @@
     "@reach/utils" "^0.10.3"
     tslib "^1.11.2"
 
-"@reach/rect@^0.10.0", "@reach/rect@^0.10.3":
+"@reach/rect@^0.10.3":
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/@reach/rect/-/rect-0.10.3.tgz#b4fd7c730d27eaf5fdf04c9a65227cc805787803"
   integrity sha512-OmnGfG+MdumviJXK5oPcrw2Nd4EgMPKLMCs03GrbkmZJwtXIQJNhQrVg60PQT6HKAKI0+0LobHKxHFT+7Ri7kw==
@@ -1447,7 +1435,7 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@reach/utils@^0.10.0", "@reach/utils@^0.10.3":
+"@reach/utils@^0.10.3":
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/@reach/utils/-/utils-0.10.3.tgz#e30f9b172d131161953df7dd01553c57ca4e78f8"
   integrity sha512-LoIZSfVAJMA+DnzAMCMfc/wAM39iKT8BQQ9gI1FODpxd8nPFP4cKisMuRXImh2/iVtG2Z6NzzCNgceJSrywqFQ==
@@ -14197,19 +14185,24 @@ suomifi-icons@0.1.1:
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-0.1.1.tgz#b5cfa13e5f88b740d65613a478fb982e6106ea29"
   integrity sha512-IB9cM3x3GLq5TKh6xPs8t3MF2JN3FOJZdwF0n7CFYu4kRy2CnqQrpferUGE/blCdmYHWFqBIIyeLSLKm5adIKA==
 
-suomifi-ui-components@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.14.0.tgz#256d22a29034ad9f6bfb96afa9deb6c750856fa7"
-  integrity sha512-am50ijwYl4rxbO6RF7b1PneEaXSFvlMN5JhLUluXiu96I7U1/VBBVeto3Z+Ry+9hQIN0dkw2vJFhkJk0YvN//g==
+suomifi-icons@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-0.1.2.tgz#fe138013547b9b379b030b1c06f39a23b6277437"
+  integrity sha512-BNIaSlcpxqFt7+XmrF/LO1n/TXtDXWbVPbjkSgAxGJqP256DW70Y78N8hXi05eNhtDsXOyUT6Q33ctEWDDBfCA==
+
+suomifi-ui-components@0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-0.15.1.tgz#744ad94beb0fa387bccdbb57553b179e5062937f"
+  integrity sha512-Tj4/znUH7Aqumuq3TaPfP/zoKzbblzxS7xKWNrGX/gbqgtY971W2WEWUDlgf7WFx9QHxFG4RvYwvlARJDBVckg==
   dependencies:
-    "@reach/menu-button" "0.10.0"
-    "@reach/popover" "0.10.0"
+    "@reach/menu-button" "0.10.3"
+    "@reach/popover" "0.10.3"
     classnames "2.2.6"
     normalize.cssinjs "1.1.1"
     polished "3.5.1"
     react-svg "11.0.16"
     suomifi-design-tokens "0.8.0"
-    suomifi-icons "0.1.1"
+    suomifi-icons "0.1.2"
     uuid "7.0.3"
 
 supports-color@^2.0.0:

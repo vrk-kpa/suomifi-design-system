@@ -7,7 +7,7 @@ version: 2.1
 executors:
   build-executor:
     machine:
-      image: ubuntu-1604:201903-01
+      image: ubuntu-1604:202004-01
 
 commands:
   build:
@@ -17,6 +17,8 @@ commands:
       - restore_cache:
           keys:
             - yarn-packages-{{ checksum "yarn.lock" }}
+      - run: curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+      - run: echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
       - run: sudo apt-get update
       - run: sudo apt-get install yarn
       - run: yarn install --frozen-lockfile

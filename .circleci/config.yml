@@ -23,6 +23,8 @@ commands:
           paths:
             - ~/.cache/yarn
       # run tests!
+      - run: sudo apt-get update
+      - run: sudo apt-get install yarn
       - run: yarn validate
 
 jobs:
@@ -42,7 +44,7 @@ jobs:
             git config user.name "ci"
       - add_ssh_keys:
           fingerprints:
-            - "75:51:12:bc:d4:83:3b:7b:c0:1e:ac:61:14:bc:74:0d"
+            - '75:51:12:bc:d4:83:3b:7b:c0:1e:ac:61:14:bc:74:0d'
       - run: yarn deploy
 
   deploy-prod:

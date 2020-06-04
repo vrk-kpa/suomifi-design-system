@@ -6,8 +6,8 @@ version: 2.1
 
 executors:
   build-executor:
-    docker:
-      - image: circleci/node:lts
+    machine:
+      image: ubuntu-1604:201903-01
 
 commands:
   build:

@@ -6,8 +6,8 @@ version: 2.1
 
 executors:
   build-executor:
-    docker:
-      - image: circleci/node:lts
+    machine:
+      image: ubuntu-1604:202004-01
 
 commands:
   build:
@@ -17,6 +17,7 @@ commands:
       - restore_cache:
           keys:
             - yarn-packages-{{ checksum "yarn.lock" }}
+      - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
       - save_cache:
           key: yarn-packages-{{ checksum "yarn.lock" }}
@@ -42,7 +43,7 @@ jobs:
             git config user.name "ci"
       - add_ssh_keys:
           fingerprints:
-            - "75:51:12:bc:d4:83:3b:7b:c0:1e:ac:61:14:bc:74:0d"
+            - '75:51:12:bc:d4:83:3b:7b:c0:1e:ac:61:14:bc:74:0d'
       - run: yarn deploy
 
   deploy-prod:

@@ -15,7 +15,7 @@ class CustomParagraph extends Component<Props> {
     return (
       <OrigParagraph
         style={{
-          margin: `${suomifiDesignTokens.spacing.l} 0`,
+          margin: `${suomifiDesignTokens.spacing.xl} 0`,
           lineHeight: smallScreen ? '28px' : '30px',
           ...style,
         }}
@@ -29,7 +29,7 @@ class CustomParagraph extends Component<Props> {
     return (
       <OrigParagraph
         style={{
-          margin: `${suomifiDesignTokens.spacing.m} 0`,
+          margin: `${suomifiDesignTokens.spacing.s} 0`,
           lineHeight: '24px',
           ...style,
         }}
@@ -43,7 +43,7 @@ class CustomParagraph extends Component<Props> {
     return (
       <OrigParagraph
         style={{
-          margin: `${suomifiDesignTokens.spacing.l} 0`,
+          margin: `${suomifiDesignTokens.spacing.xl} 0`,
           lineHeight: '27px',
           ...style,
         }}

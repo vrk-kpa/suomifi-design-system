@@ -34,12 +34,14 @@ const Content = ({
   style?: CSSProperties;
 }): JSX.Element => (
   <main
+    tabIndex={-1}
     id="main"
     style={{
       margin: hasFrame
-        ? `${suomifiDesignTokens.spacing.l} ${suomifiDesignTokens.spacing.m}`
+        ? `${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.s}`
         : 0,
       ...style,
+      outline: 'none',
     }}
   >
     {children}
@@ -54,8 +56,8 @@ const MainContent = ({
   <div
     style={{
       background: suomifiDesignTokens.colors.depthLight3,
-      paddingTop: hasFrame ? suomifiDesignTokens.spacing.m : 0,
-      paddingBottom: suomifiDesignTokens.spacing.xl,
+      paddingTop: hasFrame ? suomifiDesignTokens.spacing.s : 0,
+      paddingBottom: suomifiDesignTokens.spacing.xxxl,
     }}
   >
     <Desktop>
@@ -69,7 +71,7 @@ const MainContent = ({
         <div
           style={{
             margin: hasFrame
-              ? `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.l} 0 ${suomifiDesignTokens.spacing.l}`
+              ? `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xl} 0 ${suomifiDesignTokens.spacing.xl}`
               : 0,
             width: '100%',
             maxWidth: hasFrame ? 1140 : 'initial',
@@ -87,7 +89,7 @@ const MainContent = ({
             sideNavData={sideNavData}
             style={{
               width: '22rem',
-              marginRight: suomifiDesignTokens.spacing.m,
+              marginRight: suomifiDesignTokens.spacing.s,
             }}
           />
           <Content hasFrame={hasFrame} style={{ flex: 1 }}>
@@ -100,14 +102,14 @@ const MainContent = ({
       <SideNav
         sideNavData={sideNavData}
         style={{
-          margin: `0 ${suomifiDesignTokens.spacing.l}`,
+          margin: `0 ${suomifiDesignTokens.spacing.xl}`,
           border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
         }}
       />
       <div
         style={{
           margin: hasFrame
-            ? `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.l} 0 ${suomifiDesignTokens.spacing.l}`
+            ? `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xl} 0 ${suomifiDesignTokens.spacing.xl}`
             : 0,
           background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
           border: hasFrame
@@ -122,14 +124,14 @@ const MainContent = ({
       <SideNav
         sideNavData={sideNavData}
         style={{
-          margin: `0 ${suomifiDesignTokens.spacing.m}`,
+          margin: `0 ${suomifiDesignTokens.spacing.s}`,
           border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
         }}
       />
       <div
         style={{
           margin: 0,
-          marginTop: hasFrame ? suomifiDesignTokens.spacing.m : 0,
+          marginTop: hasFrame ? suomifiDesignTokens.spacing.s : 0,
           background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
           border: hasFrame
             ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`

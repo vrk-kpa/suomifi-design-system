@@ -32,7 +32,7 @@ class SideNavItem extends Component<Props> {
             justifyContent: 'space-between',
             height: '3.2rem',
             paddingLeft: level + '.2rem',
-            paddingRight: suomifiDesignTokens.spacing.s,
+            paddingRight: suomifiDesignTokens.spacing.xs,
             borderBottom: `1px solid ${suomifiDesignTokens.colors.depthSecondary}`,
             color: suomifiDesignTokens.colors.highlightBase,
             textDecoration: 'none',

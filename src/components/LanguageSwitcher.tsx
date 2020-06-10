@@ -1,6 +1,6 @@
 import React from 'react';
 import { Language } from '@wapps/gatsby-plugin-i18next';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import {
   LanguageMenu,
   LanguageMenuItem,
@@ -16,10 +16,10 @@ const MenuSwitcher = ({
   lng,
   availableLngs,
 }: Props): JSX.Element => (
-  <NamespacesConsumer ns={['language']}>
-    {t => (
+  <Translation ns={['language']}>
+    {(t) => (
       <LanguageMenu name={t(`${lng}.short`)} aria-label={t('menu.label')}>
-        {availableLngs.map(value => (
+        {availableLngs.map((value) => (
           <LanguageMenuItem
             key={value}
             onSelect={() => changeLng(value)}
@@ -30,7 +30,7 @@ const MenuSwitcher = ({
         ))}
       </LanguageMenu>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 const ListSwitcher = ({
@@ -38,12 +38,12 @@ const ListSwitcher = ({
   lng,
   availableLngs,
 }: Props): JSX.Element => (
-  <NamespacesConsumer ns={['language']}>
-    {t => (
+  <Translation ns={['language']}>
+    {(t) => (
       <ul
         aria-label={t('menu.label')}
         style={{
-          margin: suomifiDesignTokens.spacing.m,
+          margin: suomifiDesignTokens.spacing.s,
           padding: 0,
           listStyle: 'none',
           display: 'flex',
@@ -51,7 +51,7 @@ const ListSwitcher = ({
           justifyContent: 'center',
         }}
       >
-        {availableLngs.map(value => (
+        {availableLngs.map((value) => (
           <li key={value}>
             <Button.secondaryNoborder
               onClick={() => changeLng(value)}
@@ -65,7 +65,7 @@ const ListSwitcher = ({
         ))}
       </ul>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 interface Props {

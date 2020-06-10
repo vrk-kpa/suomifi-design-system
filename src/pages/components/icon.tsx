@@ -1,14 +1,14 @@
 import React from 'react';
 
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 import NoteBox from 'components/NoteBox';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Paragraph, Text } from 'components/ResponsiveComponents';
@@ -40,8 +40,8 @@ StaticIcon.displayName = 'StaticIcon';
 
 const Page: React.FC = (): React.ReactElement => {
   return (
-    <NamespacesConsumer ns={['icon']}>
-      {t => (
+    <Translation ns={['icon']}>
+      {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
           <Heading.h1>{t('title')}</Heading.h1>
@@ -54,7 +54,7 @@ const Page: React.FC = (): React.ReactElement => {
 
           <NoteBox title={t('note.title')} items={t('note.items')} />
 
-          {t('sections').map((section, index) => (
+          {t<SectionProps[]>('sections').map((section, index) => (
             <Section
               key={index}
               mainTitle={section.title}
@@ -97,13 +97,13 @@ const Page: React.FC = (): React.ReactElement => {
               <Icon
                 icon="helpFilled"
                 color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
                 ariaLabel={t('infoIcons.example1.arialabel')}
               />
               <Icon
                 icon="help"
                 color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
                 ariaLabel={t('infoIcons.example2.arialabel')}
               />
             </ComponentExample>
@@ -124,13 +124,13 @@ const Page: React.FC = (): React.ReactElement => {
               <Icon
                 icon="errorFilled"
                 color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
                 ariaLabel={t('additionalInfoIcons.example1.arialabel')}
               />
               <Icon
                 icon="info"
                 color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.s}` }}
+                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
                 ariaLabel={t('additionalInfoIcons.example2.arialabel')}
               />
             </ComponentExample>
@@ -202,7 +202,7 @@ const Page: React.FC = (): React.ReactElement => {
           </Link>
         </Layout>
       )}
-    </NamespacesConsumer>
+    </Translation>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import { Text, Paragraph } from 'components/ResponsiveComponents';
@@ -25,7 +25,7 @@ const Content = ({
   <div
     style={{
       margin: 0,
-      padding: suomifiDesignTokens.spacing.m,
+      padding: suomifiDesignTokens.spacing.s,
       background: background,
       display: 'flex',
       justifyContent: 'center',
@@ -41,7 +41,7 @@ const Content = ({
       }}
     >
       {header && (
-        <div style={{ flex: '100%', marginTop: suomifiDesignTokens.spacing.m }}>
+        <div style={{ flex: '100%', marginTop: suomifiDesignTokens.spacing.s }}>
           {header}
         </div>
       )}
@@ -55,8 +55,8 @@ const Content = ({
       </div>
       <div
         style={{
-          margin: `${suomifiDesignTokens.spacing.m} 0`,
-          marginLeft: wrapAll ? 0 : suomifiDesignTokens.spacing.xl,
+          margin: `${suomifiDesignTokens.spacing.s} 0`,
+          marginLeft: wrapAll ? 0 : suomifiDesignTokens.spacing.xxxl,
           flex: '50%',
           textAlign: center ? 'center' : 'initial',
         }}
@@ -94,8 +94,8 @@ const Content = ({
                         : 'flex-end',
                       flex: wrapAll ? '100%' : 'unset',
                       margin: wrapAll
-                        ? `${suomifiDesignTokens.spacing.s} 0`
-                        : `0 ${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.m}`,
+                        ? `${suomifiDesignTokens.spacing.xs} 0`
+                        : `0 ${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.s}`,
                     }}
                   >
                     <Link
@@ -126,8 +126,8 @@ const AllContent = ({
   center?: boolean;
   wrapAll?: boolean;
 }): JSX.Element => (
-  <NamespacesConsumer>
-    {t => (
+  <Translation>
+    {(t) => (
       <>
         <Content
           header={
@@ -181,7 +181,7 @@ const AllContent = ({
         />
       </>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 const Footer = (): JSX.Element => (

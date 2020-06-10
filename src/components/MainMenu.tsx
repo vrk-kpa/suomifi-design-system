@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Icon, suomifiDesignTokens, Button } from 'suomifi-ui-components';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 
 import MainMenuItem from 'components/MainMenuItem';
 import { MainNavData } from 'components/MainNavData';
@@ -19,7 +19,7 @@ class MainMenu extends Component<Props, State> {
   private isOpen = (): boolean => this.state.isOpen;
 
   private toggleOpen = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       return {
         isOpen: !prevState.isOpen,
       };
@@ -30,8 +30,8 @@ class MainMenu extends Component<Props, State> {
     const { mainNavData } = this.props;
 
     return (
-      <NamespacesConsumer>
-        {t => (
+      <Translation>
+        {(t) => (
           <div style={{ position: 'relative' }}>
             <Button
               aria-label={t('common:open.navigation.main')}
@@ -76,7 +76,7 @@ class MainMenu extends Component<Props, State> {
               >
                 <nav aria-label={t('common:navigation.main')}>
                   <ul style={{ margin: 0, padding: 0, listStyle: 'none' }}>
-                    {mainNavData.items.map(item => (
+                    {mainNavData.items.map((item) => (
                       <li key={item.to}>
                         <MainMenuItem to={item.to}>{item.label}</MainMenuItem>
                       </li>
@@ -88,7 +88,7 @@ class MainMenu extends Component<Props, State> {
             )}
           </div>
         )}
-      </NamespacesConsumer>
+      </Translation>
     );
   }
 }

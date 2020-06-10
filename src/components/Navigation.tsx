@@ -1,13 +1,13 @@
 import React from 'react';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import NavItem from 'components/NavItem';
 import { MainNavData } from 'components/MainNavData';
 
 const Navigation = ({ mainNavData }: Props): JSX.Element => (
-  <NamespacesConsumer>
-    {t => (
+  <Translation>
+    {(t) => (
       <nav
         aria-label={t('common:navigation.main')}
         style={{
@@ -31,11 +31,11 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
             listStyle: 'none',
           }}
         >
-          {mainNavData.items.map(item => (
+          {mainNavData.items.map((item) => (
             <li
               key={item.to}
               style={{
-                margin: `0 ${suomifiDesignTokens.spacing.l} 0 ${suomifiDesignTokens.spacing.s}`,
+                margin: `0 ${suomifiDesignTokens.spacing.xl} 0 ${suomifiDesignTokens.spacing.xs}`,
               }}
             >
               <NavItem to={item.to}>{item.label}</NavItem>
@@ -44,7 +44,7 @@ const Navigation = ({ mainNavData }: Props): JSX.Element => (
         </ul>
       </nav>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 interface Props {

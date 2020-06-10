@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { Expander, suomifiDesignTokens } from 'suomifi-ui-components';
 import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
-  React.Children.map(children, child =>
+  React.Children.map(children, (child) =>
     !!child.type && (child.type === 'div' || child.type.displayName === 'div')
       ? getWithoutWrappers(child.props.children)
       : child,
@@ -22,15 +22,15 @@ const ComponentDescription = ({
   filterProps,
   children,
 }: Props): JSX.Element => (
-  <NamespacesConsumer>
-    {t => (
+  <Translation>
+    {(t) => (
       <div
         style={{
-          marginBottom: suomifiDesignTokens.spacing.l,
+          marginBottom: suomifiDesignTokens.spacing.xl,
           borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
         }}
       >
-        <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
+        <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
           {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
           {!!title && <Heading.h3>{title}</Heading.h3>}
         </div>
@@ -42,7 +42,7 @@ const ComponentDescription = ({
         )}
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
-          <div style={{ margin: `${suomifiDesignTokens.spacing.l} 0` }}>
+          <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
             <Expander title={t('common:react')} noPadding>
               {codeString && <ComponentCode javascript={codeString} />}
               {!showOnlyCodeString &&
@@ -62,7 +62,7 @@ const ComponentDescription = ({
         )}
       </div>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 interface Props {

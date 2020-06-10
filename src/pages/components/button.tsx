@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
@@ -10,7 +10,7 @@ import { Button } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import MobileDevice from 'components/MobileDevice';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
@@ -77,7 +77,7 @@ const getExampleComp = (
     key={id}
     id={id}
     aria-label={label}
-    style={{ margin: suomifiDesignTokens.spacing.s }}
+    style={{ margin: suomifiDesignTokens.spacing.xs }}
     {...props}
     onClick={() => handleClick(id, label, t)}
   >
@@ -87,8 +87,8 @@ const getExampleComp = (
 
 const Page = (): JSX.Element => {
   return (
-    <NamespacesConsumer ns={['button']}>
-      {t => (
+    <Translation ns={['button']}>
+      {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
           <Heading.h1>{t('title')}</Heading.h1>
@@ -99,7 +99,7 @@ const Page = (): JSX.Element => {
 
           <NoteBox title={t('note.title')} items={t('note.items')} />
 
-          {t('sections').map((section, index) => (
+          {t<SectionProps[]>('sections').map((section, index) => (
             <Section
               key={index}
               mainTitle={section.title}
@@ -116,8 +116,8 @@ const Page = (): JSX.Element => {
             <div
               style={{
                 overflow: 'hidden',
-                marginBottom: suomifiDesignTokens.spacing.m,
-                padding: `${suomifiDesignTokens.spacing.l} ${suomifiDesignTokens.spacing.m} 0 ${suomifiDesignTokens.spacing.m}`,
+                marginBottom: suomifiDesignTokens.spacing.s,
+                padding: `${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.s} 0 ${suomifiDesignTokens.spacing.s}`,
                 background: suomifiDesignTokens.colors.whiteBase,
                 display: 'flex',
                 justifyContent: 'center',
@@ -125,11 +125,11 @@ const Page = (): JSX.Element => {
               }}
             >
               <MobileDevice>
-                {mobileComponents.map(item => (
+                {mobileComponents.map((item) => (
                   <div
                     key={item.id}
                     style={{
-                      padding: `${suomifiDesignTokens.spacing.m} ${suomifiDesignTokens.spacing.s}`,
+                      padding: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xs}`,
                     }}
                   >
                     {getExampleComp(
@@ -145,7 +145,7 @@ const Page = (): JSX.Element => {
             </div>
           </ComponentDescription>
 
-          {components.map(item => (
+          {components.map((item) => (
             <ComponentDescription
               key={item.id}
               mainTitle={t(`${item.id}.title`)}
@@ -154,7 +154,7 @@ const Page = (): JSX.Element => {
             >
               <ComponentExample
                 style={{
-                  padding: suomifiDesignTokens.spacing.s,
+                  padding: suomifiDesignTokens.spacing.xs,
                   background: item.background,
                 }}
               >
@@ -165,7 +165,7 @@ const Page = (): JSX.Element => {
                     label: t(`${item.id}.labelDisabled`),
                     props: { disabled: true },
                   },
-                ].map(example =>
+                ].map((example) =>
                   getExampleComp(
                     item.comp,
                     example.id,
@@ -183,11 +183,11 @@ const Page = (): JSX.Element => {
             description={t('withIcon.description')}
             exampleFirst
           >
-            {components.map(item => (
+            {components.map((item) => (
               <ComponentExample
                 key={item.id}
                 style={{
-                  padding: suomifiDesignTokens.spacing.s,
+                  padding: suomifiDesignTokens.spacing.xs,
                   background: item.background,
                 }}
               >
@@ -206,7 +206,7 @@ const Page = (): JSX.Element => {
                     }),
                     props: { iconRight: 'logout' },
                   },
-                ].map(example =>
+                ].map((example) =>
                   getExampleComp(
                     item.comp,
                     example.id,
@@ -225,14 +225,14 @@ const Page = (): JSX.Element => {
             exampleFirst
           >
             <ComponentExample
-              style={{ padding: suomifiDesignTokens.spacing.s }}
+              style={{ padding: suomifiDesignTokens.spacing.xs }}
             >
-              {disabledComponents.map(item => (
+              {disabledComponents.map((item) => (
                 <div
                   key={item.id}
                   style={{
                     padding: item.background
-                      ? suomifiDesignTokens.spacing.s
+                      ? suomifiDesignTokens.spacing.xs
                       : 0,
                     background: item.background || 'none',
                   }}
@@ -250,7 +250,7 @@ const Page = (): JSX.Element => {
           </ComponentDescription>
         </Layout>
       )}
-    </NamespacesConsumer>
+    </Translation>
   );
 };
 

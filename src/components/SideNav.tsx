@@ -36,7 +36,7 @@ class SideNav extends Component<Props, State> {
 
     const currentPath = this.getCurrentPath();
     const openStatesForPath = this.getPathTree(currentPath)
-      .map(path => ({
+      .map((path) => ({
         [path]: true,
       }))
       .reduce((obj, item) => ({ ...obj, ...item }), {});
@@ -58,10 +58,7 @@ class SideNav extends Component<Props, State> {
       part += part.endsWith('/') ? '' : '/';
       res.push(part);
 
-      const rest = path
-        .split('/')
-        .slice(0, -1)
-        .join('/');
+      const rest = path.split('/').slice(0, -1).join('/');
       this.getPathTree(rest, res);
     }
     return res;
@@ -86,7 +83,7 @@ class SideNav extends Component<Props, State> {
   private isNavOpen = (): boolean => this.state.isNavOpen;
 
   private toggleNavOpen = () => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       this.setSessionState({ ...prevState, isNavOpen: !prevState.isNavOpen });
       return {
         isNavOpen: !prevState.isNavOpen,
@@ -97,7 +94,7 @@ class SideNav extends Component<Props, State> {
   private isOpen = (to: string): boolean => this.state.isOpen[to];
 
   private toggleOpen = (to: string): void => {
-    this.setState(prevState => {
+    this.setState((prevState) => {
       prevState.isOpen[to] = !prevState.isOpen[to];
       this.setSessionState(prevState);
       return {
@@ -115,7 +112,7 @@ class SideNav extends Component<Props, State> {
     return (
       <div
         style={{
-          padding: suomifiDesignTokens.spacing.s,
+          padding: suomifiDesignTokens.spacing.xs,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -127,7 +124,7 @@ class SideNav extends Component<Props, State> {
           <div style={{ fontSize: '40px', lineHeight: '1em' }}>
             {sideNavData.icon}
           </div>
-          <Text.bold style={{ marginLeft: suomifiDesignTokens.spacing.s }}>
+          <Text.bold style={{ marginLeft: suomifiDesignTokens.spacing.xs }}>
             {sideNavData.title}
           </Text.bold>
         </div>
@@ -136,7 +133,7 @@ class SideNav extends Component<Props, State> {
             style={{
               float: 'right',
               background: 'none',
-              marginRight: suomifiDesignTokens.spacing.m,
+              marginRight: suomifiDesignTokens.spacing.s,
               padding: 0,
               border: 0,
               width: '16px',
@@ -164,7 +161,7 @@ class SideNav extends Component<Props, State> {
         listStyle: 'none',
       }}
     >
-      {items.map(item => (
+      {items.map((item) => (
         <li
           key={item.to}
           css={{
@@ -177,10 +174,12 @@ class SideNav extends Component<Props, State> {
               bottom: 0,
               borderLeft:
                 level === 1
-                  ? (item.showAsTo
-                    ? this.isCurrent(item.to) ||
-                      this.isPartiallyCurrent(item.showAsTo)
-                    : this.isPartiallyCurrent(item.to))
+                  ? (
+                      item.showAsTo
+                        ? this.isCurrent(item.to) ||
+                          this.isPartiallyCurrent(item.showAsTo)
+                        : this.isPartiallyCurrent(item.to)
+                    )
                     ? `4px solid ${suomifiDesignTokens.colors.brandBase}`
                     : 0
                   : 0,

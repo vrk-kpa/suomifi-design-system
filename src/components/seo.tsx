@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 
 const SEO = ({
   title,
@@ -8,7 +8,7 @@ const SEO = ({
   meta = [],
   keywords = [],
 }: Props): JSX.Element => (
-  <NamespacesConsumer>
+  <Translation>
     {(t, { i18n }) => {
       const metaDescription = description || t('common:site.description');
       const lang = i18n.language;
@@ -36,7 +36,7 @@ const SEO = ({
         />
       );
     }}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 interface Props {

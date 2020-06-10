@@ -1,17 +1,17 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/info';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['accessibility']}>
-    {t => (
+  <Translation ns={['accessibility']}>
+    {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
@@ -20,7 +20,7 @@ const Page = (): JSX.Element => (
           <Text.lead>{t('intro')}</Text.lead>
         </Paragraph.lead>
 
-        {t('sections').map((section, index) => (
+        {t<SectionProps[]>('sections').map((section, index) => (
           <Section
             key={index}
             mainTitle={section.title}
@@ -30,7 +30,7 @@ const Page = (): JSX.Element => (
         ))}
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(Page);

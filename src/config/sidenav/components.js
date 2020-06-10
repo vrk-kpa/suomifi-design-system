@@ -1,7 +1,7 @@
 import React from 'react';
 import { StaticIcon } from 'suomifi-ui-components';
 
-export default t => ({
+export default (t) => ({
   title: t('components:title'),
   icon: <StaticIcon icon="puzzle" />,
   items: [
@@ -23,5 +23,6 @@ export default t => ({
     { to: '/components/text/', label: t('text:title') },
     { to: '/components/textinput/', label: t('textinput:title') },
     { to: '/components/toggle/', label: t('toggle:title') },
+    { to: '/components/checkbox/', label: t('checkbox:title') },
   ],
 });

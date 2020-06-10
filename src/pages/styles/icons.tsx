@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
-import { NamespacesConsumer } from 'react-i18next';
+import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { baseIcons, illustrativeIcons, doctypeIcons } from 'suomifi-icons';
 import {
@@ -56,7 +56,7 @@ const getExampleIcon = (
   <div
     key={id}
     style={{
-      margin: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.l} 0`,
+      margin: `${suomifiDesignTokens.spacing.xs} ${suomifiDesignTokens.spacing.xxxl} ${suomifiDesignTokens.spacing.xl} 0`,
       lineHeight: '1rem',
       display: 'flex',
       flexDirection: 'column',
@@ -79,8 +79,8 @@ const getExampleIcon = (
 );
 
 const Page = (): JSX.Element => (
-  <NamespacesConsumer ns={['icons', 'static-icons']}>
-    {t => (
+  <Translation ns={['icons', 'static-icons']}>
+    {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
@@ -89,7 +89,7 @@ const Page = (): JSX.Element => (
           <Text.lead>{t('intro')}</Text.lead>
         </Paragraph.lead>
 
-        {iconCategories.map(item => (
+        {iconCategories.map((item) => (
           <ComponentDescription
             key={item.id}
             mainTitle={t(`${item.id}.title`)}
@@ -105,7 +105,7 @@ const Page = (): JSX.Element => (
                 border: 'none',
               }}
             >
-              {item.icons.map(icon => {
+              {item.icons.map((icon) => {
                 const label =
                   item.id === 'baseIcons'
                     ? t(`${icon}.label`)
@@ -133,7 +133,7 @@ const Page = (): JSX.Element => (
         />
       </Layout>
     )}
-  </NamespacesConsumer>
+  </Translation>
 );
 
 export default withI18next()(Page);

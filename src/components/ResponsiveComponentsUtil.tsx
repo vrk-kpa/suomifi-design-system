@@ -19,7 +19,7 @@ export const getResponsiveComponent = (Comp: Function): Function => {
 
 const getVariants = (Comp: ComponentClass): Record<string, Function> =>
   Object.keys(Comp)
-    .map(key => ({
+    .map((key) => ({
       [key]: getResponsiveComponent(Comp[key]),
     }))
     .reduce((obj, item) => ({ ...obj, ...item }), {});

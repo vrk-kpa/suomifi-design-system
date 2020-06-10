@@ -34,7 +34,7 @@ const ComponentCode = ({
   filterProps,
   children,
 }: Props): JSX.Element => (
-  <div style={{ padding: suomifiDesignTokens.spacing.m, ...style }}>
+  <div style={{ padding: suomifiDesignTokens.spacing.s, ...style }}>
     {!!javascript && (
       <Highlighter style={{ marginBottom: !children ? 0 : '1rem' }}>
         {javascript}

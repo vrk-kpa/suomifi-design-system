@@ -7,6 +7,9 @@
     "note.item",
     "note.item",
     "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
     "note.item"
   ],
   "sections": [
@@ -23,25 +26,12 @@
         {
           "text": "section.link.text",
           "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
         }
       ]
     },
     {
       "title": "section.title",
       "paragraphs": [
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
-        },
         {
           "image.key": "section.paragraph.image.key",
           "image.alt": "section.paragraph.image.alt",
@@ -52,18 +42,6 @@
         {
           "text": "section.link.text",
           "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
         }
       ]
     },
@@ -76,12 +54,25 @@
           "text": "section.paragraph.text"
         }
       ],
-      "links": []
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
     }
   ],
-  "default.title": "default.title",
-  "default.description": "default.description",
-  "toggle.label": "toggle.label",
-  "toggle.state.on": "toggle.state.on",
-  "toggle.state.off": "toggle.state.off"
+  "example.default.title": "example.default.title",
+  "example.default.content": "example.default.content",
+  "example.large.title": "example.large.title",
+  "example.large.description": "example.large.description",
+  "example.large.content": "example.large.content",
+  "example.hintstate.title": "example.hintstate.title",
+  "example.hintstate.description": "example.hintstate.description",
+  "example.hintstate.content": "example.hintstate.content",
+  "example.hintstate.hintText": "example.hintstate.hintText",
+  "example.hintstate.statusText": "example.hintstate.statusText",
+  "example.disabled.title": "example.disabled.title",
+  "example.disabled.description": "example.disabled.description",
+  "example.disabled.content": "example.disabled.content"
 }

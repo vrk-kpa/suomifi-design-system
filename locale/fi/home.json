@@ -2,7 +2,7 @@
   "title": "Etusivu",
   "intro.title": "Suomi.fi Design System – digipalvelujen yhteiset rakennuspalikat",
   "intro.description": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Kaikki komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti. ",
-  "note.title": "Tämä on Suomi.fi Design Systemin julkinen kehitysversio (alpha)",
+  "note.title": "Tämä on Suomi.fi Design Systemin julkinen kehitysversio (beta)",
   "note.description": "Osallistu uuden palvelun kehittämiseen! Anna palautetta ja liity keskusteluun Suomidigin kehittäjät #designsystem Slack- kanavalla.",
   "note.link.text": "Liity Slack -kanavalle",
   "note.link.url": "https://suomidigi-kehittajat.slack.com/",
@@ -30,7 +30,7 @@
           "paragraphs": [
             { "text": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti." },
             { "text": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa." },
-            { "text": "" }
+            { "text": "Kehitysversiossa saattaa olla yksittäisiä puutteita saavutettavuudessa." }
           ],
           "links": [
             { "text": "Tutustu komponentteihin", "url": "/components" },

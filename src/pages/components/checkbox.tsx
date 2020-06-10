@@ -7,14 +7,15 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import Section, { Props as SectionProps } from 'components/Section';
-import { Link as ExampleLink } from 'components/ExampleComponents';
+import { Checkbox } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
+import Section, { Props as SectionProps } from 'components/Section';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
-  <Translation ns={['link']}>
+  <Translation ns={['checkbox']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -23,6 +24,14 @@ const Page = (): JSX.Element => (
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
         </Paragraph.lead>
+
+        <ComponentDescription>
+          <ComponentExample
+            style={{ marginBottom: suomifiDesignTokens.spacing.s }}
+          >
+            <Checkbox>{t('example.default.content')}</Checkbox>
+          </ComponentExample>
+        </ComponentDescription>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
@@ -34,31 +43,43 @@ const Page = (): JSX.Element => (
             links={section.links}
           />
         ))}
+
         <ComponentDescription
-          mainTitle={t('exampleRegular.title')}
-          description={t('exampleRegular.description')}
-          exampleFirst={false}
+          mainTitle={t('example.large.title')}
+          description={t('example.large.description')}
+          exampleFirst
+          filterProps={[]}
         >
           <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('exampleRegular.linkText')}
-            </ExampleLink>
+            <Checkbox.large>{t('example.large.content')}</Checkbox.large>
           </ComponentExample>
         </ComponentDescription>
 
         <ComponentDescription
-          mainTitle={t('exampleExternal.title')}
-          description={t('exampleExternal.description')}
-          exampleFirst={false}
+          mainTitle={t('example.hintstate.title')}
+          description={t('example.hintstate.description')}
+          exampleFirst
+          filterProps={[]}
         >
           <ComponentExample>
-            <ExampleLink.external
-              className="test-classname"
-              href="http://www.esimerkkiosoite.com"
-              labelNewWindow={t('exampleExternal.label')}
+            <Checkbox
+              hintText={t('example.hintstate.hintText')}
+              status="error"
+              statusText={t('example.hintstate.statusText')}
             >
-              {t('exampleExternal.linkText')}
-            </ExampleLink.external>
+              {t('example.hintstate.content')}
+            </Checkbox>
+          </ComponentExample>
+        </ComponentDescription>
+
+        <ComponentDescription
+          mainTitle={t('example.disabled.title')}
+          description={t('example.disabled.description')}
+          exampleFirst
+          filterProps={[]}
+        >
+          <ComponentExample>
+            <Checkbox disabled>{t('example.disabled.content')}</Checkbox>
           </ComponentExample>
         </ComponentDescription>
       </Layout>

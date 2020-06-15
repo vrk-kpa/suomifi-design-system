@@ -11,6 +11,7 @@ import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
+import NotificationBox from 'components/NotificationBox';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
@@ -19,6 +20,7 @@ const Page = (): JSX.Element => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
+        <NotificationBox />
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>

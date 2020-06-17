@@ -14,12 +14,17 @@
           "icon": "",
           "title": "Design System -sivusto",
           "paragraphs": [
-            { "text": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto." },
+            {
+              "text": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto."
+            },
             { "text": "" },
             { "text": "" }
           ],
           "links": [
-            { "text": "Lue taustatietoja Suomi.fi Design Systemistä", "url": "/info" },
+            {
+              "text": "Lue taustatietoja Suomi.fi Design Systemistä",
+              "url": "/info"
+            },
             { "text": "", "url": "" },
             { "text": "", "url": "" }
           ]
@@ -28,9 +33,15 @@
           "icon": "",
           "title": "Käyttöliittymäkomponenttien kirjasto",
           "paragraphs": [
-            { "text": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti." },
-            { "text": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa." },
-            { "text": "Kehitysversiossa saattaa olla yksittäisiä puutteita saavutettavuudessa." }
+            {
+              "text": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti."
+            },
+            {
+              "text": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa. Komponenttikirjasto on julkisessa betavaiheessa ja noudattaa versiosta 1.0 eteenpäin semanttista versiointia."
+            },
+            {
+              "text": "Kehitysversiossa saattaa olla yksittäisiä puutteita saavutettavuudessa."
+            }
           ],
           "links": [
             { "text": "Tutustu komponentteihin", "url": "/components" },

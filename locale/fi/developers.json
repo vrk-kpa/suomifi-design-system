@@ -8,7 +8,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti. Komponenttikirjasto noudattaa semanttisen versioinnin (Semantic Versioning) säännöstöä. Julkaisutiedot (Release Notes) käyttöliittymäkomponenttikirjaston muutoksista ja julkaistavista versioista löytyvät Git Repositorystä.",
+          "text": "Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti. Version 1.0 myötä komponenttikirjasto siirtyy betavaiheeseen, joka tarkoittaa muun muassa sitä, että rikkovat muutokset olemassa oleviin komponentteihin pyritään minimoimaan. Komponenttikirjasto noudattaa myös versiosta 1.0 eteenpäin semanttista versiointia (Semantic Versioning). Julkaisutiedot (Release Notes) käyttöliittymäkomponenttikirjaston muutoksista ja julkaistavista versioista löytyvät Git Repositorystä.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -23,7 +23,10 @@
           "text": "Release Notes GitHub",
           "url": "https://github.com/vrk-kpa/suomifi-ui-components/releases"
         },
-        { "text": "", "url": "" },
+        {
+          "text": "Lisätietoa semanttisesta versioinnista",
+          "url": "https://semver.org/"
+        },
         { "text": "", "url": "" }
       ]
     },

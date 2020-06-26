@@ -62,6 +62,7 @@
       ]
     }
   ],
+  "notification.content": "notification.content",
   "example.title": "example.title",
   "example.description": "example.description",
   "example.option1": "example.option1",

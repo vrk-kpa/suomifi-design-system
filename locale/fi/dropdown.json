@@ -64,7 +64,15 @@
   "notification.content": "Komponentissa on tällä hetkellä iPhonekäyttäjiin vaikuttava saavutettavuusongelma.",
   "example.title": "",
   "example.description": "",
+  "example.label": "Esimerkki 1",
   "example.option1": "Vaihtoehto 1",
   "example.option2": "Vaihtoehto 2",
-  "example.option3": "Vaihtoehto 3"
+  "example.option3": "Vaihtoehto 3",
+
+  "example1.title": "Toimintovalikko (Action Menu)",
+  "example1.description": "Pudotusvalikkoa voidaan käyttää myös toimintojen aktivoimiseen, jolloin komponenttia kutsutaan toimintovalikoksi. Tällöin annettu täyteteksti on aina näkyvissä eivätkä tehdyt valinnat muuta komponentin tilaa.",
+  "example1.label": "Valitse toiminto",
+  "example1.placeholder": "Toimintovalikko",
+  "example1.option1": "Toiminto 1",
+  "example1.option2": "Toiminto 2"
 }

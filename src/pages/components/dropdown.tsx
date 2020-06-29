@@ -31,16 +31,10 @@ const Page = (): JSX.Element => (
           description={t('example.description')}
         >
           <ComponentExample>
-            <Dropdown name="Dropdown">
-              <Dropdown.item onSelect={() => console.log(t('example.option1'))}>
-                {t('example.option1')}
-              </Dropdown.item>
-              <Dropdown.item onSelect={() => console.log(t('example.option2'))}>
-                {t('example.option2')}
-              </Dropdown.item>
-              <Dropdown.item onSelect={() => console.log(t('example.option3'))}>
-                {t('example.option3')}
-              </Dropdown.item>
+            <Dropdown name="Dropdown" labelText={t('example.label')}>
+              <Dropdown.item value="1">{t('example.option1')}</Dropdown.item>
+              <Dropdown.item value="2">{t('example.option2')}</Dropdown.item>
+              <Dropdown.item value="3">{t('example.option3')}</Dropdown.item>
             </Dropdown>
           </ComponentExample>
         </ComponentDescription>
@@ -55,6 +49,27 @@ const Page = (): JSX.Element => (
             links={section.links}
           />
         ))}
+
+        <ComponentDescription
+          mainTitle={t('example1.title')}
+          description={t('example1.description')}
+        >
+          <ComponentExample>
+            <Dropdown
+              visualPlaceholder={t('example1.placeholder')}
+              alwaysShowVisualPlaceholder
+              labelText={t('example1.label')}
+              onChange={(action) => console.log(action, 'selected')}
+            >
+              <Dropdown.item value="Toiminto1">
+                {t('example1.option1')}
+              </Dropdown.item>
+              <Dropdown.item value="Toiminto2">
+                {t('example1.option2')}
+              </Dropdown.item>
+            </Dropdown>
+          </ComponentExample>
+        </ComponentDescription>
       </Layout>
     )}
   </Translation>

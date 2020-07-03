@@ -33,7 +33,7 @@
     "react-responsive": "^8.0.3",
     "react-syntax-highlighter": "^12.2.1",
     "styled-components": "^5.1.0",
-    "suomifi-icons": "1.0",
+    "suomifi-icons": "1.0.0",
     "suomifi-ui-components": "1.0.0"
   },
   "resolutions": {

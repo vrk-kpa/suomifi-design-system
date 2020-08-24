@@ -8,6 +8,9 @@
     "note.item",
     "note.item",
     "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
     "note.item"
   ],
   "sections": [
@@ -56,7 +59,7 @@
   "example.disabled.description": "example.disabled.description",
   "example.disabled.content": "example.disabled.content",
   "example.group.title": "example.group.title",
-  "example.group.grouptHint": "example.group.grouptHint",
+  "example.group.grouptHint": "",
   "example.group.content": "example.group.content",
   "example.group.contentHint": "example.group.content2",
   "example.group.hintText": "example.group.hintText",

@@ -8,7 +8,10 @@
     "Käytä valintanappia, kun käyttäjän halutaan valitsevan yksi annetuista vaihtoehdoista.",
     "Älä käytä valintanappia tilanteissa, joissa käyttäjän on määrä valita useita vaihtoehtoja. Käytä tällöin valintaruutua (checkbox).",
     "Älä käytä valintanappia tilan muutokseen. Käytä tähän tarkoitukseen valintakytkintä (toggle).",
-    "Käytä ohjetekstiä tilanteissa, joissa käyttäjälle on tarpeen antaa lisäohjeistusta valinnan suhteen. Yksinkertaisissa tapauksissa ohjetekstiä ei tarvita."
+    "Käytä ohjetekstiä tilanteissa, joissa käyttäjälle on tarpeen antaa lisäohjeistusta valinnan suhteen. Yksinkertaisissa tapauksissa ohjetekstiä ei tarvita.",
+    "Valittuun valintanappiin voi liittyä lisävalintoja, kuten esimerkiksi tekstikenttiä tai valintakytkimiä.",
+    "Lisävalinnat ovat piilotettuina oletustilassa ja ne näytetään vasta, kun valintanappi valitaan.",
+    "Lisävalinnat asetellaan suoraan valitun valintanapin alle sisennettynä."
   ],
   "sections": [
     {

@@ -24,5 +24,6 @@ export default (t) => ({
     { to: '/components/textinput/', label: t('textinput:title') },
     { to: '/components/toggle/', label: t('toggle:title') },
     { to: '/components/checkbox/', label: t('checkbox:title') },
+    { to: '/components/radiobutton/', label: t('checkbox:title') },
   ],
 });

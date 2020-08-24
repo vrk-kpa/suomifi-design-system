@@ -1,5 +1,5 @@
 {
-  "title": "RadioButton (Valintanappi)",
+  "title": "Valintanappi (Radio Button)",
   "intro": "Valintanappi on lomakekomponentti, jolla voi valita yhden vaihtoehdon useammasta valintanapista koostuvasta valintanappiryhmästä. Käyttäjä voi valita kerrallaan vain yhden vaihtoehdon. Kun käyttäjä tekee uuden valinnan, aiemmin tehty valinta poistuu ja korvautuu uudella valinnalla.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
@@ -44,19 +44,18 @@
       ]
     }
   ],
-  "example.default.title": "Tavallinen valintanappi",
   "example.default.content": "Valinta",
-  "example.large.title": "Valintanapin mobiiliversio",
-  "example.large.description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintaruudun mobiiliversiota (Checkbox.large)",
+  "example.large.title": "Valintanapin mobiiliversio (Large Radio Button)",
+  "example.large.description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintanapin mobiiliversiota.",
   "example.large.content": "Valinta",
-  "example.hint.title": "Valintanappi ohjetekstillä",
+  "example.hint.title": "Valintanappi ohjetekstillä (Radio Button + Hint Text)",
   "example.hint.description": "Komponentille voidaan antaa ohjeteksti, joka näytetään komponentin alla.",
   "example.hint.content": "Valinta",
   "example.hint.hintText": "Ohjeteksti valinnan tueksi",
-  "example.disabled.title": "Estetty valintanappi (Disabled RadioButton)",
+  "example.disabled.title": "Estetty valintanappi (Disabled Radio Button)",
   "example.disabled.description": "Estetty valintanappi ei ole käyttäjän valittavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
   "example.disabled.content": "Valinta",
-  "example.group.title": "Valintanappiryhmä (RadioButtonGroup)",
+  "example.group.title": "Valintanappiryhmä (Radio Button Group)",
   "example.group.grouptHint": "Ohjeteksti valintanappiryhmän tueksi",
   "example.group.content": "Valinta",
   "example.group.contentHint": "Valinta ohjetekstillä",

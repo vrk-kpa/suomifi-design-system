@@ -15,7 +15,7 @@ import Section, { Props as SectionProps } from 'components/Section';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
-  <Translation ns={['checkbox']}>
+  <Translation ns={['radiobutton']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
@@ -60,17 +60,17 @@ const Page = (): JSX.Element => (
         </ComponentDescription>
 
         <ComponentDescription
-          mainTitle={t('example.hintstate.title')}
-          description={t('example.hintstate.description')}
+          mainTitle={t('example.hint.title')}
+          description={t('example.hint.description')}
           exampleFirst
           filterProps={[]}
         >
           <ComponentExample>
             <RadioButton
               value="hint-radio"
-              hintText={t('example.hintstate.hintText')}
+              hintText={t('example.hint.hintText')}
             >
-              {t('example.hintstate.content')}
+              {t('example.hint.content')}
             </RadioButton>
           </ComponentExample>
         </ComponentDescription>
@@ -85,6 +85,38 @@ const Page = (): JSX.Element => (
             <RadioButton value="disabled-radio" disabled>
               {t('example.disabled.content')}
             </RadioButton>
+          </ComponentExample>
+        </ComponentDescription>
+
+        <ComponentDescription
+          mainTitle={t('example.group.title')}
+          description={t('example.group.description')}
+          exampleFirst
+          filterProps={[]}
+        >
+          <ComponentExample>
+            <RadioButton.group
+              label={t('example.group.title')}
+              hintText={t('example.group.grouptHint')}
+              name="test-group-large"
+            >
+              <RadioButton.large value="value-test-1">
+                {t('example.group.content')}
+              </RadioButton.large>
+              <RadioButton
+                value="value-test-3"
+                variant="large"
+                hintText={t('example.group.hintText')}
+              >
+                {t('example.group.contentHint')}
+              </RadioButton>
+              <RadioButton.divider variant="large">
+                {t('example.group.divider')}
+              </RadioButton.divider>
+              <RadioButton.large value="value-test-4" disabled>
+                {t('example.group.contentDisabled')}
+              </RadioButton.large>
+            </RadioButton.group>
           </ComponentExample>
         </ComponentDescription>
       </Layout>

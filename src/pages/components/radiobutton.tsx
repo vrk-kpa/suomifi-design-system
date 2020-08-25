@@ -29,7 +29,7 @@ const Page = (): JSX.Element => (
           <ComponentExample
             style={{ marginBottom: suomifiDesignTokens.spacing.s }}
           >
-            <RadioButton value="default-radio">
+            <RadioButton name="default" value="default-radio">
               {t('example.default.content')}
             </RadioButton>
           </ComponentExample>
@@ -53,7 +53,7 @@ const Page = (): JSX.Element => (
           filterProps={[]}
         >
           <ComponentExample>
-            <RadioButton.large value="large-radio">
+            <RadioButton.large name="large" value="large-radio">
               {t('example.large.content')}
             </RadioButton.large>
           </ComponentExample>
@@ -82,7 +82,7 @@ const Page = (): JSX.Element => (
           filterProps={[]}
         >
           <ComponentExample>
-            <RadioButton value="disabled-radio" disabled>
+            <RadioButton name="disabled" value="disabled-radio" disabled>
               {t('example.disabled.content')}
             </RadioButton>
           </ComponentExample>

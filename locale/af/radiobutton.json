@@ -47,7 +47,14 @@
       ]
     }
   ],
+  "example.default.title": "example.default.title",
   "example.default.content": "example.default.content",
+  "example.default.hintText": "example.default.hintText",
+  "example.default.content2": "example.default.content2",
+  "example.default.divider": "example.default.divider",
+  "example.default.content3": "example.default.content3",
+  "example.default.disabledHintText": "example.default.disabledHintText",
+  "example.default.disabled": "example.default.disabled",
   "example.large.title": "example.large.title",
   "example.large.description": "example.large.description",
   "example.large.content": "example.large.content",

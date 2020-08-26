@@ -29,9 +29,34 @@ const Page = (): JSX.Element => (
           <ComponentExample
             style={{ marginBottom: suomifiDesignTokens.spacing.s }}
           >
-            <RadioButton name="default" value="default-radio">
-              {t('example.default.content')}
-            </RadioButton>
+            <RadioButton.group
+              name="test-default-group"
+              defaultValue="default-radio"
+              label={t('example.default.title')}
+            >
+              <RadioButton value="default-radio">
+                {t('example.default.content')}
+              </RadioButton>
+              <RadioButton
+                value="default-radio2"
+                hintText={t('example.default.hintText')}
+              >
+                {t('example.default.content2')}
+              </RadioButton>
+              <RadioButton.divider>
+                {t('example.default.divider')}
+              </RadioButton.divider>
+              <RadioButton value="default-radio3">
+                {t('example.default.content3')}
+              </RadioButton>
+              <RadioButton
+                value="default-radio4"
+                hintText={t('example.default.disabledHintText')}
+                disabled
+              >
+                {t('example.default.disabled')}
+              </RadioButton>
+            </RadioButton.group>
           </ComponentExample>
         </ComponentDescription>
 

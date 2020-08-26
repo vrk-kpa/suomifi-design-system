@@ -3,7 +3,7 @@
   "intro": "Valintanappi on lomakekomponentti, jolla voi valita yhden vaihtoehdon useammasta valintanapista koostuvasta valintanappiryhmästä. Käyttäjä voi valita kerrallaan vain yhden vaihtoehdon. Kun käyttäjä tekee uuden valinnan, aiemmin tehty valinta poistuu ja korvautuu uudella valinnalla.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Pyri kuvaaviin, lyhyisiin ja ytimekkäisiin otsake-teksteihin (label).",
+    "Pyri kuvaaviin, lyhyisiin ja ytimekkäisiin otsakkeisiin (label).",
     "Sijoita saman aihealueen valintanapit ryhmiin asemoimalla ne päällekkäin.",
     "Käytä valintanappia, kun käyttäjän halutaan valitsevan yksi annetuista vaihtoehdoista.",
     "Älä käytä valintanappia tilanteissa, joissa käyttäjän on määrä valita useita vaihtoehtoja. Käytä tällöin valintaruutua (checkbox).",
@@ -47,7 +47,14 @@
       ]
     }
   ],
-  "example.default.content": "Valinta",
+  "example.default.title": "Tiedotteiden toimitustapa",
+  "example.default.content": "Sähköposti",
+  "example.default.hintText": "Tiedotteet voidaan toimittaa vain Suomalaisiin puhelinnumeroihin",
+  "example.default.content2": "Tekstiviesti",
+  "example.default.divider": "Kirjallisesti",
+  "example.default.content3": "Posti",
+  "example.default.disabledHintText": "Faksi ei ole toistaiseksi valittavissa toimitustavaksi",
+  "example.default.disabled": "Faksi",
   "example.large.title": "Valintanapin mobiiliversio (Large Radio Button)",
   "example.large.description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintanapin mobiiliversiota.",
   "example.large.content": "Valinta",

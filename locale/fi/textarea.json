@@ -1,6 +1,6 @@
 {
   "title": "Tekstialue (Textarea)",
-  "intro": "Tekstialue on komponentti, johon käyttäjä voi syöttää otsakkeessa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsakkeessa annettuun kysymykseen. Tekstialuetta käytetään tilanteissa, joissa käyttäjälle halutaan antaa mahdollisuus pidemmän vastauksen antamiseen. Lyhyitä tekstimuotoisia vastauksia varten käytetään tekstikenttää (Text Input).",
+  "intro": "Tekstialue on komponentti, johon käyttäjä voi syöttää otsakkeessa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsakkeessa annettuun kysymykseen. Tekstialuetta käytetään tilanteissa, joissa käyttäjälle halutaan antaa mahdollisuus pidemmän vastauksen antamiseen. Lyhyitä tekstimuotoisia vastauksia varten käytetään tekstikenttää.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Tekstialueen kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
@@ -50,7 +50,7 @@
   "exampleError.label": "Kuvaus tilanteesta",
   "exampleError.hintText": "Kuvaile tapahtunutta mahdollisimman tarkasti",
   "exampleError.statusText": "Virhe: kuvaus tilanteesta vaaditaan",
-  "exampleDisabled.title": "",
+  "exampleDisabled.title": "Estetty Tekstialue (Disabled Textarea)",
   "exampleDisabled.description": "",
-  "exampleDisabled.label": ""
+  "exampleDisabled.label": "Lisätietoja"
 }

@@ -92,6 +92,7 @@ const Page = (): JSX.Element => (
           <ComponentExample>
             <RadioButton.group
               name="test-hint-group"
+              hintText={t('example.default.groupHint')}
               defaultValue="default-radio"
               label={t('example.default.title')}
             >
@@ -137,37 +138,6 @@ const Page = (): JSX.Element => (
               </RadioButton>
               <RadioButton value="default-radio3" disabled>
                 {t('example.default.content3')}
-              </RadioButton>
-            </RadioButton.group>
-          </ComponentExample>
-        </ComponentDescription>
-
-        <ComponentDescription
-          mainTitle={t('example.group.title')}
-          description={t('example.group.description')}
-          exampleFirst
-          filterProps={[]}
-        >
-          <ComponentExample>
-            <RadioButton.group
-              label={t('example.group.title')}
-              hintText={t('example.group.grouptHint')}
-              name="test-group-api"
-            >
-              <RadioButton value="value-test-1">
-                {t('example.group.content')}
-              </RadioButton>
-              <RadioButton
-                value="value-test-3"
-                hintText={t('example.group.hintText')}
-              >
-                {t('example.group.contentHint')}
-              </RadioButton>
-              <RadioButton.divider variant="large">
-                {t('example.group.divider')}
-              </RadioButton.divider>
-              <RadioButton value="value-test-4" disabled>
-                {t('example.group.contentDisabled')}
               </RadioButton>
             </RadioButton.group>
           </ComponentExample>

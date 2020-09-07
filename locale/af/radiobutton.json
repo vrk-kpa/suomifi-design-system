@@ -57,15 +57,8 @@
   "example.large.title": "example.large.title",
   "example.large.description": "example.large.description",
   "example.hint.title": "example.hint.title",
+  "example.hint.groupHint": "example.hint.groupHint",
   "example.hint.description": "example.hint.description",
   "example.disabled.title": "example.disabled.title",
-  "example.disabled.description": "example.disabled.description",
-  "example.group.title": "example.group.title",
-  "example.group.groupHint": "example.group.groupHint",
-  "example.group.content": "example.group.content",
-  "example.group.contentHint": "example.group.content2",
-  "example.group.hintText": "example.group.hintText",
-  "example.group.divider": "example.group.divider",
-  "example.group.contentDisabled": "example.group.contentDisabled",
-  "example.group.description": "example.group.description"
+  "example.disabled.description": "example.disabled.description"
 }

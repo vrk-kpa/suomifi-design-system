@@ -92,7 +92,7 @@ const Page = (): JSX.Element => (
           <ComponentExample>
             <RadioButton.group
               name="test-hint-group"
-              hintText={t('example.default.groupHint')}
+              hintText={t('example.hint.groupHint')}
               defaultValue="default-radio"
               label={t('example.default.title')}
             >

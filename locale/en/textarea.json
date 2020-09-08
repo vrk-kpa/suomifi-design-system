@@ -64,9 +64,8 @@
   ],
 
   "exampleRegular.label": "",
-  "exampleSuccess.title": "",
-  "exampleSuccess.description": "",
-  "exampleSuccess.label": "",
+  "exampleRegular.hintText": "",
+  "exampleRegular.placeholder": "",
   "exampleError.title": "",
   "exampleError.description": "",
   "exampleError.label": "",

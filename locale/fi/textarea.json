@@ -44,13 +44,15 @@
     }
   ],
 
-  "exampleRegular.label": "Lisätietoja",
+  "exampleRegular.label": "Perustelut",
+  "exampleRegular.hintText": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
+  "exampleRegular.placeholder": "Kirjoita perustelut",
   "exampleError.title": "Ohje- ja notifikaatiotekstit",
   "exampleError.description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja notifikaatioteksti syötekentän alapuolella.",
-  "exampleError.label": "Kuvaus tilanteesta",
-  "exampleError.hintText": "Kuvaile tapahtunutta mahdollisimman tarkasti",
-  "exampleError.statusText": "Virhe: kuvaus tilanteesta vaaditaan",
+  "exampleError.label": "Perustelut",
+  "exampleError.hintText": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
+  "exampleError.statusText": "Virhe: perustelut on pakollinen tieto",
   "exampleDisabled.title": "Estetty Tekstialue (Disabled Textarea)",
-  "exampleDisabled.description": "",
-  "exampleDisabled.label": "Lisätietoja"
+  "exampleDisabled.description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
+  "exampleDisabled.label": "Perustelut"
 }

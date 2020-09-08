@@ -29,7 +29,11 @@ const Page = (): JSX.Element => (
           <ComponentExample
             style={{ marginBottom: suomifiDesignTokens.spacing.s }}
           >
-            <Textarea labelText={t('exampleRegular.label')} />
+            <Textarea
+              labelText={t('exampleRegular.label')}
+              hintText={t('exampleRegular.hintText')}
+              visualPlaceholder={t('exampleRegular.placeholder')}
+            />
           </ComponentExample>
         </ComponentDescription>
 

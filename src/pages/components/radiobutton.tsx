@@ -98,21 +98,15 @@ const Page = (): JSX.Element => (
             >
               <RadioButton
                 value="default-radio"
-                hintText={t('example.default.hintText')}
+                hintText={t('example.hint.hintText')}
               >
-                {t('example.default.content')}
+                {t('example.hint.content')}
               </RadioButton>
               <RadioButton
                 value="default-radio2"
-                hintText={t('example.default.hintText2')}
+                hintText={t('example.hint.hintText2')}
               >
-                {t('example.default.content2')}
-              </RadioButton>
-              <RadioButton
-                value="default-radio3"
-                hintText={t('example.default.hintText3')}
-              >
-                {t('example.default.content3')}
+                {t('example.hint.content2')}
               </RadioButton>
             </RadioButton.group>
           </ComponentExample>

@@ -69,6 +69,7 @@ const Page = (): JSX.Element => (
               name="test-large-group"
               defaultValue="default-radio"
               label={t('example.default.title')}
+              hintText={t('example.large.groupHint')}
             >
               <RadioButton.large value="default-radio">
                 {t('example.default.content')}
@@ -92,7 +93,6 @@ const Page = (): JSX.Element => (
           <ComponentExample>
             <RadioButton.group
               name="test-hint-group"
-              hintText={t('example.hint.groupHint')}
               defaultValue="default-radio"
               label={t('example.default.title')}
             >

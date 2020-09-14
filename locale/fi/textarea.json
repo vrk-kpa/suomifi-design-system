@@ -5,7 +5,7 @@
   "note.items": [
     "Tekstialueen kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
     "Tekstialueen ohjeteksti on valinnainen tieto ja sen voi jättää lisäämättä komponenttiin, jos kenttään täytettävä asia on hyvin yksinkertainen.",
-    "Tekstialueen ohjeistavaan kenttätekstiin (visualPlaceholder) ei kuulu täyttää käyttötilanteeseen olennaisesti kuuluvaa tietoa. Ohjeistamiseen tulee käyttää ensisijaisesti ohjetekstiä.",
+    "Tekstialueen ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa. Ohjeistamiseen tulee käyttää ensisijaisesti ohjetekstiä (hintText).",
     "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi.",
     "Tekstialuetta käytetään silloin, kun käyttäjille halutaan antaa mahdollisuus pidemmän vastauksen kirjoittamiselle. Lyhyitä vastauksia varten käytetään tekstikenttää (Text Input)."
   ],
@@ -44,15 +44,15 @@
     }
   ],
 
-  "exampleRegular.label": "Perustelut",
-  "exampleRegular.hintText": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
-  "exampleRegular.placeholder": "Kirjoita perustelut",
-  "exampleError.title": "Ohje- ja notifikaatiotekstit",
-  "exampleError.description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja notifikaatioteksti syötekentän alapuolella.",
-  "exampleError.label": "Perustelut",
-  "exampleError.hintText": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
-  "exampleError.statusText": "Perustelut on pakollinen tieto",
-  "exampleDisabled.title": "Estetty Tekstialue (Disabled Textarea)",
-  "exampleDisabled.description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
-  "exampleDisabled.label": "Perustelut"
+  "example.regular.label": "Perustelut",
+  "example.regular.hintText": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
+  "example.regular.placeholder": "Kirjoita perustelut",
+  "example.error.title": "Ohje- ja notifikaatiotekstit",
+  "example.error.description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja notifikaatioteksti syötekentän alapuolella.",
+  "example.error.label": "Perustelut",
+  "example.error.hintText": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
+  "example.error.statusText": "Perustelut on pakollinen tieto",
+  "example.disabled.title": "Estetty Tekstialue (Disabled Textarea)",
+  "example.disabled.description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
+  "example.disabled.label": "Perustelut"
 }

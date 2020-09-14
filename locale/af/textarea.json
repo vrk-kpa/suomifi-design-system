@@ -17,14 +17,6 @@
         {
           "text": "section.link.text",
           "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
         }
       ]
     },
@@ -35,26 +27,9 @@
           "image.key": "section.paragraph.image.key",
           "image.alt": "section.paragraph.image.alt",
           "text": "section.paragraph.text"
-        },
-        {
-          "image.key": "section.paragraph.image.key",
-          "image.alt": "section.paragraph.image.alt",
-          "text": "section.paragraph.text"
         }
       ],
       "links": [
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
-        {
-          "text": "section.link.text",
-          "url": "section.link.url"
-        },
         {
           "text": "section.link.text",
           "url": "section.link.url"

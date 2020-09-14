@@ -38,15 +38,15 @@
     }
   ],
 
-  "exampleRegular.label": "exampleRegular.label",
-  "exampleRegular.hintText": "exampleRegular.hintText",
-  "exampleRegular.placeholder": "exampleRegular.placeholder",
-  "exampleError.title": "exampleError.title",
-  "exampleError.description": "exampleError.description",
-  "exampleError.label": "exampleError.label",
-  "exampleError.hintText": "exampleError.hintText",
-  "exampleError.statusText": "exampleError.statusText",
-  "exampleDisabled.title": "exampleDisabled.title",
-  "exampleDisabled.description": "exampleDisabled.description",
-  "exampleDisabled.label": "exampleDisabled.label"
+  "example.regular.label": "example.regular.label",
+  "example.regular.hintText": "example.regular.hintText",
+  "example.regular.placeholder": "example.regular.placeholder",
+  "example.error.title": "example.error.title",
+  "example.error.description": "example.error.description",
+  "example.error.label": "example.error.label",
+  "example.error.hintText": "example.error.hintText",
+  "example.error.statusText": "example.error.statusText",
+  "example.disabled.title": "example.disabled.title",
+  "example.disabled.description": "example.disabled.description",
+  "example.disabled.label": "example.disabled.label"
 }

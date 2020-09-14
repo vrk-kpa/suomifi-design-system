@@ -30,46 +30,49 @@ const Page = (): JSX.Element => (
           <ComponentExample
             style={{ marginBottom: suomifiDesignTokens.spacing.s }}
           >
-            <TextInput labelText={t('exampleRegular.label')} />
+            <TextInput labelText={t('example.regular.label')} />
           </ComponentExample>
         </ComponentDescription>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
         <ComponentDescription
-          mainTitle={t('exampleSuccess.title')}
-          description={t('exampleSuccess.description')}
-          exampleFirst
-          filterProps={[]}
-        >
-          <ComponentExample>
-            <TextInput labelText={t('exampleSuccess.label')} status="success" />
-          </ComponentExample>
-        </ComponentDescription>
-
-        <ComponentDescription
-          mainTitle={t('exampleError.title')}
-          description={t('exampleError.description')}
+          mainTitle={t('example.success.title')}
+          description={t('example.success.description')}
           exampleFirst
           filterProps={[]}
         >
           <ComponentExample>
             <TextInput
-              labelText={t('exampleError.label')}
-              status="error"
-              statusText={t('exampleError.statusText')}
+              labelText={t('example.success.label')}
+              status="success"
             />
           </ComponentExample>
         </ComponentDescription>
 
         <ComponentDescription
-          mainTitle={t('exampleDisabled.title')}
-          description={t('exampleDisabled.description')}
+          mainTitle={t('example.error.title')}
+          description={t('example.error.description')}
           exampleFirst
           filterProps={[]}
         >
           <ComponentExample>
-            <TextInput labelText={t('exampleDisabled.label')} disabled />
+            <TextInput
+              labelText={t('example.error.label')}
+              status="error"
+              statusText={t('example.error.statusText')}
+            />
+          </ComponentExample>
+        </ComponentDescription>
+
+        <ComponentDescription
+          mainTitle={t('example.disabled.title')}
+          description={t('example.disabled.description')}
+          exampleFirst
+          filterProps={[]}
+        >
+          <ComponentExample>
+            <TextInput labelText={t('example.disabled.label')} disabled />
           </ComponentExample>
         </ComponentDescription>
       </Layout>

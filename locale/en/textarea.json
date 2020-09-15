@@ -44,6 +44,7 @@
   "example.error.title": "",
   "example.error.description": "",
   "example.error.label": "",
+  "example.error.hintText": "",
   "example.error.statusText": "",
   "example.disabled.title": "",
   "example.disabled.description": "",

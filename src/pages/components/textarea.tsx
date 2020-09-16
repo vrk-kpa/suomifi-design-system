@@ -30,9 +30,9 @@ const Page = (): JSX.Element => (
             style={{ marginBottom: suomifiDesignTokens.spacing.s }}
           >
             <Textarea
-              labelText={t('exampleRegular.label')}
-              hintText={t('exampleRegular.hintText')}
-              visualPlaceholder={t('exampleRegular.placeholder')}
+              labelText={t('example.regular.label')}
+              hintText={t('example.regular.hintText')}
+              visualPlaceholder={t('example.regular.placeholder')}
             />
           </ComponentExample>
         </ComponentDescription>
@@ -49,29 +49,30 @@ const Page = (): JSX.Element => (
         ))}
 
         <ComponentDescription
-          mainTitle={t('exampleError.title')}
-          description={t('exampleError.description')}
+          mainTitle={t('example.error.title')}
+          description={t('example.error.description')}
           exampleFirst
           filterProps={[]}
         >
           <ComponentExample>
             <Textarea
-              labelText={t('exampleError.label')}
+              labelText={t('example.error.label')}
               status="error"
-              hintText={t('exampleError.hintText')}
-              statusText={t('exampleError.statusText')}
+              hintText={t('example.error.hintText')}
+              visualPlaceholder={t('example.error.placeholder')}
+              statusText={t('example.error.statusText')}
             />
           </ComponentExample>
         </ComponentDescription>
 
         <ComponentDescription
-          mainTitle={t('exampleDisabled.title')}
-          description={t('exampleDisabled.description')}
+          mainTitle={t('example.disabled.title')}
+          description={t('example.disabled.description')}
           exampleFirst
           filterProps={[]}
         >
           <ComponentExample>
-            <Textarea labelText={t('exampleDisabled.label')} disabled />
+            <Textarea labelText={t('example.disabled.label')} disabled />
           </ComponentExample>
         </ComponentDescription>
       </Layout>

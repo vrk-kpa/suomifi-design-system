@@ -51,6 +51,7 @@
   "example.error.description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja notifikaatioteksti syötekentän alapuolella.",
   "example.error.label": "Perustelut",
   "example.error.hintText": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
+  "example.error.placeholder": "Kirjoita perustelut",
   "example.error.statusText": "Perustelut on pakollinen tieto",
   "example.disabled.title": "Estetty Tekstialue (Disabled Textarea)",
   "example.disabled.description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",

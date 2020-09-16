@@ -45,6 +45,7 @@
   "example.error.description": "example.error.description",
   "example.error.label": "example.error.label",
   "example.error.hintText": "example.error.hintText",
+  "example.error.placeholder": "example.error.placeholder",
   "example.error.statusText": "example.error.statusText",
   "example.disabled.title": "example.disabled.title",
   "example.disabled.description": "example.disabled.description",

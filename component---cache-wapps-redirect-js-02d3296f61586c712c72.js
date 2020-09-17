@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"3Q2M":function(n,o,p){var w=p("4nKT").Redirect;n.exports=w}}]);
-//# sourceMappingURL=component---cache-wapps-redirect-js-02d3296f61586c712c72.js.map

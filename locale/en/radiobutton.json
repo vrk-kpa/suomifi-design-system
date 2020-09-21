@@ -1,0 +1,65 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item"
+  ],
+  "sections": [
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    }
+  ],
+  "example.default.title": "example.default.title",
+  "example.default.content": "example.default.content",
+  "example.default.content2": "example.default.content2",
+  "example.default.content3": "example.default.content3",
+  "example.large.title": "example.large.title",
+  "example.large.groupHint": "example.large.groupHint",
+  "example.large.description": "example.large.description",
+  "example.hint.title": "example.hint.title",
+  "example.hint.description": "example.hint.description",
+  "example.hint.content": "example.hint.content",
+  "example.hint.hintText": "example.hint.hintText",
+  "example.hint.content2": "example.hint.content2",
+  "example.hint.hintText2": "example.hint.hintText2",
+  "example.disabled.title": "example.disabled.title",
+  "example.disabled.description": "example.disabled.description"
+}

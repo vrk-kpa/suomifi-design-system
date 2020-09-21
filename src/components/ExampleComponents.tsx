@@ -15,6 +15,8 @@ import {
   LanguageMenu as OrigLanguageMenu,
   LanguageMenuItem as OrigLanguageMenuItem,
   Checkbox as OrigCheckbox,
+  RadioButton as OrigRadioButton,
+  Textarea as OrigTextarea,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
@@ -65,3 +67,9 @@ addDisplayNames(LanguageMenuItem, OrigLanguageMenuItem, 'LanguageMenuItem');
 
 export class Checkbox extends OrigCheckbox {}
 addDisplayNames(Checkbox, OrigCheckbox, 'Checkbox');
+
+export class RadioButton extends OrigRadioButton {}
+addDisplayNames(RadioButton, OrigRadioButton, 'RadioButton');
+
+export class Textarea extends OrigTextarea {}
+addDisplayNames(Textarea, OrigTextarea, 'Textarea');

@@ -1,0 +1,53 @@
+{
+  "title": "",
+  "intro": "",
+  "note.title": "",
+  "note.items": ["", "", "", ""],
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+
+  "example.regular.label": "",
+  "example.regular.hintText": "",
+  "example.regular.placeholder": "",
+  "example.error.title": "",
+  "example.error.description": "",
+  "example.error.label": "",
+  "example.error.hintText": "",
+  "example.error.placeholder": "",
+  "example.error.statusText": "",
+  "example.disabled.title": "",
+  "example.disabled.description": "",
+  "example.disabled.label": ""
+}

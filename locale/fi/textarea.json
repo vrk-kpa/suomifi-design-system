@@ -1,0 +1,59 @@
+{
+  "title": "Tekstialue (Textarea)",
+  "intro": "Tekstialue on komponentti, johon käyttäjä voi syöttää otsakkeessa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsakkeessa annettuun kysymykseen. Tekstialuetta käytetään tilanteissa, joissa käyttäjälle halutaan antaa mahdollisuus pidemmän vastauksen antamiseen. Lyhyitä tekstimuotoisia vastauksia varten käytetään tekstikenttää.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Tekstialueen kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
+    "Tekstialueen ohjeteksti on valinnainen tieto ja sen voi jättää lisäämättä komponenttiin, jos kenttään täytettävä asia on hyvin yksinkertainen.",
+    "Tekstialueen ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa. Ohjeistamiseen tulee käyttää ensisijaisesti ohjetekstiä (hintText).",
+    "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi.",
+    "Tekstialuetta käytetään silloin, kun käyttäjille halutaan antaa mahdollisuus pidemmän vastauksen kirjoittamiselle. Lyhyitä vastauksia varten käytetään tekstikenttää (Text Input)."
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Tekstialue koostuu otsakkeesta ja syötekentästä. Suomi.fi -palvelussa käytetään yleensä puhuttelumuodossa olevaa ohjeistavaa kenttätekstiä. Lisäksi komponentti voi sisältää ohjetekstin, joka sijoittuu otsakkeen ja syötekentän väliin. Komponenttiin on liitettävissä notifikaatiotieto mahdollisesta virheestä. Notifikaatiotieto näytetään syötekentän alapuolella. Tekstimuotoisen notifikaation lisäksi kentän reunus on notifikaation aikana värikoodattu virheen merkiksi."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Tekstialueen oletuskoko asetetaan toivotun sisällön mukaan, mutta ei kuitenkaan liioitellun suureksi. Jos käyttäjä täyttää tekstialue-komponenttiin enemmän tekstiä kuin siihen mahtuu, on alue vieritettävissä (scrolling) tai venytettävissä sisällön mukaiseksi komponentin oikeasta alakulmasta."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+
+  "example.regular.label": "Perustelut",
+  "example.regular.hintText": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
+  "example.regular.placeholder": "Kirjoita perustelut",
+  "example.error.title": "Ohje- ja notifikaatiotekstit",
+  "example.error.description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja notifikaatioteksti syötekentän alapuolella.",
+  "example.error.label": "Perustelut",
+  "example.error.hintText": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
+  "example.error.placeholder": "Kirjoita perustelut",
+  "example.error.statusText": "Perustelut on pakollinen tieto",
+  "example.disabled.title": "Estetty Tekstialue (Disabled Textarea)",
+  "example.disabled.description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
+  "example.disabled.label": "Perustelut"
+}

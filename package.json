@@ -2,7 +2,7 @@
   "name": "suomifi-design-system",
   "private": true,
   "description": "Suomi.fi Design System",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "author": "Jari Porola <jari.porola@gmail.com>",
   "dependencies": {
     "@csstools/normalize.css": "^10.1.0",
@@ -34,7 +34,7 @@
     "react-syntax-highlighter": "^12.2.1",
     "styled-components": "^5.1.0",
     "suomifi-icons": "1.0.0",
-    "suomifi-ui-components": "1.0.1"
+    "suomifi-ui-components": "^1.1.0"
   },
   "resolutions": {
     "@wapps/gatsby-plugin-i18next/i18next": "^19.4.0",

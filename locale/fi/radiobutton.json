@@ -1,0 +1,65 @@
+{
+  "title": "Valintanappi (Radio Button)",
+  "intro": "Valintanappi on lomakekomponentti, jolla voi valita yhden vaihtoehdon useammasta valintanapista koostuvasta valintanappiryhmästä. Käyttäjä voi valita kerrallaan vain yhden vaihtoehdon. Kun käyttäjä tekee uuden valinnan, aiemmin tehty valinta poistuu ja korvautuu uudella valinnalla.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Pyri kuvaaviin, lyhyisiin ja ytimekkäisiin otsakkeisiin (label).",
+    "Sijoita saman aihealueen valintanapit ryhmiin asemoimalla ne päällekkäin.",
+    "Käytä valintanappia, kun käyttäjän halutaan valitsevan yksi annetuista vaihtoehdoista.",
+    "Älä käytä valintanappia tilanteissa, joissa käyttäjän on määrä valita useita vaihtoehtoja. Käytä tällöin valintaruutua (checkbox).",
+    "Älä käytä valintanappia tilan muutokseen. Käytä tähän tarkoitukseen valintakytkintä (toggle).",
+    "Käytä ohjetekstiä tilanteissa, joissa käyttäjälle on tarpeen antaa lisäohjeistusta valinnan suhteen. Yksinkertaisissa tapauksissa ohjetekstiä ei tarvita.",
+    "Valittuun valintanappiin voi liittyä lisävalintoja, kuten esimerkiksi tekstikenttiä tai valintakytkimiä.",
+    "Lisävalinnat ovat piilotettuina oletustilassa ja ne näytetään vasta, kun valintanappi valitaan.",
+    "Lisävalinnat asetellaan suoraan valitun valintanapin alle sisennettynä."
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Valintanappi koostuu pyöreästä painikkeesta ja sen oikealla puolella olevasta label-tekstistä. Valintanapin alla voidaan näyttää valintanappiin liittyvä ohjeteksti. "
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot valintanapista. Oletuksena käytetään pienempää valintanappia (default), mobiilinäytöillä niille suunniteltua kokoa (large)."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.default.title": "Toimitustapa",
+  "example.default.content": "Sähköposti",
+  "example.default.content2": "Tekstiviesti",
+  "example.default.content3": "Paperiposti",
+  "example.large.title": "Valintanapin mobiiliversio (Large Radio Button)",
+  "example.large.groupHint": "Valittua toimitustapaa ei voi muuttaa lomakkeen lähetyksen jälkeen",
+  "example.large.description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintanapin mobiiliversiota.",
+  "example.hint.title": "Valintanappi ohjetekstillä (Radio Button + Hint Text)",
+  "example.hint.description": "Komponentille voidaan antaa ohjeteksti, joka näytetään komponentin alla.",
+  "example.hint.content": "Sähköisesti",
+  "example.hint.hintText": "Saan päätökset Suomi.fi viesteihin",
+  "example.hint.content2": "Paperipostilla",
+  "example.hint.hintText2": "Saan päätökset postitse kotiosoitteeseeni",
+  "example.disabled.title": "Estetty valintanappi (Disabled Radio Button)",
+  "example.disabled.description": "Estetty valintanappi ei ole käyttäjän valittavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen."
+}

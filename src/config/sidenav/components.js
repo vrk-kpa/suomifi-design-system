@@ -21,8 +21,10 @@ export default (t) => ({
     { to: '/components/button/', label: t('button:title') },
     { to: '/components/dropdown/', label: t('dropdown:title') },
     { to: '/components/text/', label: t('text:title') },
+    { to: '/components/textarea/', label: t('textarea:title') },
     { to: '/components/textinput/', label: t('textinput:title') },
     { to: '/components/toggle/', label: t('toggle:title') },
+    { to: '/components/radiobutton/', label: t('radiobutton:title') },
     { to: '/components/checkbox/', label: t('checkbox:title') },
   ],
 });

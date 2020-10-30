@@ -15542,7 +15542,7 @@ suomifi-icons@^1.0.0:
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-1.0.2.tgz#ba4c078111d16fce12a2562b23b4643ab6543199"
   integrity sha512-Py4ONldrjukDHtW7XsC7egFhSE51dvGpbmWCvGOzKZDJYJickemUhh/89WrBnq/Ms/KZ2oW4vFi52//cqXbsYA==
 
-suomifi-ui-components@2.0.0:
+suomifi-ui-components@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-2.0.0.tgz#9590d508c3d3d6983ae52448364a59e8bc58dbed"
   integrity sha512-AkWdvKk30qZXMcGFW5Bemwsey5G2lH3uYb/Aw8Fw1bxgSDT6DqCmtYZkbRHwXG8JbTPRsUGs6tbW/gcU5a2EXA==

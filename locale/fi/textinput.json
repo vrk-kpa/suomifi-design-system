@@ -8,6 +8,45 @@
     "Tekstikentän leveys toimii visuaalisena rajoitteena käyttäjälle ja antaa vihjeen siihen syötettävästä informaation määrästä.",
     "Tekstikenttä komponenttia käytetään silloin kuin käyttäjän tulee täyttää vain yhden rivin informaatiota, kuten esimerkiksi nimensä. Monta riviä (multiline) vaativille vastauksille käytä Tekstialue (Textarea) komponenttia."
   ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Tekstikenttä koostuu otsakkeesta ja kentästä, jossa on käyttäjää ohjeistava kenttäteksti. Suomi.fi -palvelussa käytetään yleensä puhuttelumuodossa olevaa ohjeistavaa kenttätekstiä. Lisäksi kenttä voi sisältää ohjetekstin, joka sijoittuu otsakkeen ja kentän väliin, mutta on teknisesti osa otsikkoa. Näin ruudunlukija lukee ohjetekstin otsakkeen jälkeen. Kenttään on liitettävissä notifikaatiotieto mahdollisesta virheestä tai onnistumisesta. Notifikaatiotieto näytetään kentän alapuolella. Tekstimuotoisen notifikaation lisäksi kentän reunus on notifikaation aikana värikoodattu virheen tai onnistumisen merkiksi. Kentälle voidaan asettaa myös ikoni, joka esitetään kentän oikeassa laidassa. Ikonia voidaan hyödyntää kentän käyttötarkoituksen viestimiseen."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Lähtökohtaisesti kaikki lomakekentät ovat pakollisia, ja valinnaiset kentät merkitään valinnaisuustekstillä (optionalText). Valinnaisuusteksti näytetään suluissa otsakkeen lopussa."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Tekstikentän leveys on riippuu käyttötilanteesta. Täytettävän asian pitää mahtua tekstikenttään, mutta liian pitkä tekstikenttä antaa väärän viestin käyttäjälle.  Tutkimusten mukaan tyypillisesti kentän pituus on 18-33 merkkiä (englannin kieli). 33 merkkiä on leveydeltään noin 300 px jolloin marginaaleineen 33 merkin tekstikentän sopiva leveys on 320 px. Tekstikenttäkomponentin oletusleveys on 290px. Komponentin koko voi rajoittaa vastauksen laajuutta, mutta se voi myös ohjata käyttäjää vastaamaan riittävän tiiviisti."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
 
   "exampleRegular.label": "Normaali tekstikenttä",
   "exampleSuccess.title": "Tekstikenttä hyväksytty (Success Text Input)",
@@ -19,5 +58,9 @@
   "exampleError.statusText": "Virheellinen tieto",
   "exampleDisabled.title": "Tekstikenttä estetty (Disabled Text Input)",
   "exampleDisabled.description": "Disabloitu tekstikenttä estää kentän täyttämisen, kunnes käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
-  "exampleDisabled.label": "Estetty tekstikenttä"
+  "exampleDisabled.label": "Estetty tekstikenttä",
+  "exampleOptional.title": "Valinnainen tekstikenttä ikonilla (Optional Text Input)",
+  "exampleOptional.description": "",
+  "exampleOptional.label": "Tekstikenttä ikonilla",
+  "exampleOptional.optionalText": "valinnainen"
 }

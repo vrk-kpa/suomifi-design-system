@@ -9,9 +9,9 @@ import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import { SearchInput } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+import Section, { Props as SectionProps } from 'components/Section';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import NotificationBox from 'components/NotificationBox';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
@@ -20,7 +20,6 @@ const Page = (): JSX.Element => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading.h1>{t('title')}</Heading.h1>
-        <NotificationBox />
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
@@ -30,11 +29,41 @@ const Page = (): JSX.Element => (
           <ComponentExample
             style={{ marginBottom: suomifiDesignTokens.spacing.s }}
           >
-            <SearchInput labelText={t('exampleRegular.label')} />
+            <SearchInput
+              labelText={t('exampleRegular.label')}
+              clearButtonLabel={t('exampleRegular.clearButtonLabel')}
+              searchButtonLabel={t('exampleRegular.searchButtonLabel')}
+            />
           </ComponentExample>
         </ComponentDescription>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
+
+        {t<SectionProps[]>('sections').map((section, index) => (
+          <Section
+            key={index}
+            mainTitle={section.title}
+            paragraphs={section.paragraphs}
+            links={section.links}
+          />
+        ))}
+        <Paragraph>
+          Määrityksiä komponentin käyttöön mobiilikoossa:
+          <ul>
+            <li>
+              <Text>{t('mobile-use.bullet1')}</Text>
+            </li>
+            <li style={{ marginTop: suomifiDesignTokens.spacing.s }}>
+              <Text>{t('mobile-use.bullet2')}</Text>
+            </li>
+            <li style={{ marginTop: suomifiDesignTokens.spacing.s }}>
+              <Text>{t('mobile-use.bullet3')}</Text>
+            </li>
+            <li style={{ marginTop: suomifiDesignTokens.spacing.s }}>
+              <Text>{t('mobile-use.bullet4')}</Text>
+            </li>
+          </ul>
+        </Paragraph>
       </Layout>
     )}
   </Translation>

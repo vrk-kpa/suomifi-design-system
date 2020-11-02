@@ -65,6 +65,11 @@
       ]
     }
   ],
+  "mobile-use.description": "Määrityksiä komponentin käyttöön mobiilikoossa:",
+  "mobile-use.bullet1": "S- ja XS-kokoisilla näytöillä hakukomponentti aukeaa koko header-palkin päälle peittäen alleen muun headersisällön. Hakukomponentti on pienennettävissä \"Sulje\" -painikkeesta.",
+  "mobile-use.bullet2": "XS-koossa tunnistautuneen nimitiedot ja uloskirjautumislinkki jäävät näkyviin haun alapuolelle.",
+  "mobile-use.bullet3": "Hakupalkki pysyy näkyvissä, vaikka käyttäjä klikkaa/täppää sisältöalueelle.",
+  "mobile-use.bullet4": "Jos käyttäjä avaa valikon hampurilaisikonista ja tämän jälkeen avaa haun, valikko sulkeutuu.",
   "exampleRegular.label": "Hakukenttä",
   "exampleRegular.clearButtonLabel": "Tyhjennä haku",
   "exampleRegular.searchButtonLabel": "Hae"

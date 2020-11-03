@@ -48,7 +48,7 @@ const Page = (): JSX.Element => (
           />
         ))}
         <Paragraph>
-          Määrityksiä komponentin käyttöön mobiilikoossa:
+          {t('mobile-use.description')}
           <ul>
             <li>
               <Text>{t('mobile-use.bullet1')}</Text>

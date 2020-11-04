@@ -7,8 +7,7 @@
     "Hakukenttää kannattaa käyttää, sillä useimmat käyttäjät hyötyvät siitä, että he voivat etsiä sisältöä sivustolta tai sovelluksesta.",
     "Hakukentästä hyötyvät useimmat käyttäjät. Hakusanalla voidaan etsiä sisältöä sivustolta tai sovelluksesta.",
     "Jos toteutuksen kokonaisuus on pieni ja yksinkertainen (single page ratkaisu), hakukenttää ei kuitenkaan tarvitse välttämättä käyttää.",
-    "Anna hakukentälle aina otsaketieto. Otsaketieto voidaan piilottaa visuaalisesti, mutta ruudunlukijakäyttäjälle otsake on tärkeä tieto hänen saapuessaan komponenttiin.",
-    "Ruudunlukijalle näytetään hakuehdotukset selailtavassa muodossa."
+    "Anna hakukentälle aina otsaketieto. Otsaketieto voidaan piilottaa visuaalisesti, mutta ruudunlukijakäyttäjälle otsake on tärkeä tieto hänen saapuessaan komponenttiin."
   ],
   "sections": [
     {
@@ -17,7 +16,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Hakukenttä, johon käyttäjä syöttää hakutermin tai -termit, on yhdistetty (unified) komponentti (hakukenttä ja painike + hakusanan poistopainike). Tehty haku vie käyttäjän hakusivulle, jossa hakutulos näytetään. Hakukentässä käytetään vihjetekstiä (placeholder text). Vihjeteksti toimii ainoastaan visuaalisena lisänä näkeville. Kun hakukenttään on syötetty sisältöä, käyttäjälle näytetään hakupainike sinisellä painiketaustalla sekä hakusanan poistopainike, joka sijaitsee hakupainikkeen vasemmalla puolella. Komponentit ovat erikseen fokusoitavissa ja niihin pääsee näin navigoimaan myös näppäimistöllä."
+          "text": "Hakukenttä, johon käyttäjä syöttää hakutermin tai -termit, on yhdistetty komponentti (hakukenttä ja painike + hakusanan poistopainike). Tehty haku vie käyttäjän hakusivulle, jossa hakutulos näytetään. Hakukentässä käytetään vihjetekstiä (placeholder text). Vihjeteksti toimii ainoastaan visuaalisena lisänä näkeville. Kun hakukenttään on syötetty sisältöä, käyttäjälle näytetään hakupainike sinisellä painiketaustalla sekä hakusanan poistopainike, joka sijaitsee hakupainikkeen vasemmalla puolella. Komponentit ovat erikseen fokusoitavissa ja niihin pääsee näin navigoimaan myös näppäimistöllä."
         }
       ],
       "links": [
@@ -33,12 +32,12 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Haku toimii ennakoivasti tarjoten pudotusvalikossa listauksena hakutermejä käyttäjän kirjoittaman tekstin mukaisesti. Kirjoitettu hakuteksti on poistettavissa hakusanan poistopainikkeella. Hakupainikkeen painaminen tai hakusanan valitseminen näppäimistön enter-painikkeella vie käyttäjän hakusivulle, jossa näytetään hakutulokset. Mahdollinen uusi haku voidaan tehdä hakusivulla."
+          "text": "Kirjoitettu hakuteksti on poistettavissa hakusanan poistopainikkeella. Hakupainikkeen painaminen tai hakusanan valitseminen näppäimistön enter-painikkeella vie käyttäjän hakusivulle, jossa näytetään hakutulokset. Mahdollinen uusi haku voidaan tehdä hakusivulla."
         },
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Hakukenttä on kokonaisuudessaan minimissään 320 px leveä ja 40 px korkea. Hakukentän tekstialueen suositusleveys on minimissään 230 px, koska siihen mahtuu hyvin yleisimpiin hakutilanteisiin riittävä merkkimäärä. Kyseinen merkkimäärä on 27 merkkiä, ja se perustuu Englannin kieleen. Hakupainikkeen kosketusalue on leveydeltään ja korkeudeltaan 40 px, kuten myös hakusanan poistopainikkeen vastaava alue. XS-koossa hakukentän kokonaispituus on pienempi näytön leveydestä johtuen."
+          "text": "Hakukentän tulee olla leveydeltään minimissään 320 px. Hakukentän tekstialueen suositusleveys on minimissään 230 px, joka toteutuu komponentin 320 px kokonaisleveydellä. Tähän kokoon mahtuu hyvin yleisimpiin hakutilanteisiin riittävät hakuehdot. Kapeimmilla mobiilinäytöillä leveyttä rajoittavat sivumarginaalit, jolloin komponentin leveys on 290px."
         }
       ],
       "links": [
@@ -66,8 +65,8 @@
     }
   ],
   "mobile-use.description": "Määrityksiä komponentin käyttöön mobiilikoossa:",
-  "mobile-use.bullet1": "S- ja XS-kokoisilla näytöillä hakukomponentti aukeaa koko header-palkin päälle peittäen alleen muun headersisällön. Hakukomponentti on pienennettävissä \"Sulje\" -painikkeesta.",
-  "mobile-use.bullet2": "XS-koossa tunnistautuneen nimitiedot ja uloskirjautumislinkki jäävät näkyviin haun alapuolelle.",
+  "mobile-use.bullet1": "Pienikokoisilla näytöillä hakukomponentin tulee aueta koko header-palkin päälle peittäen alleen muun headersisällön. Hakukomponentin tulee tällöin olla pienennettävissä erillisestä \"Sulje\" -painikkeesta.",
+  "mobile-use.bullet2": "Pienimmillä näytöillä tunnistautuneen nimitiedot ja uloskirjautumislinkki jäävät näkyviin haun alapuolelle.",
   "mobile-use.bullet3": "Hakupalkki pysyy näkyvissä, vaikka käyttäjä klikkaa/täppää sisältöalueelle.",
   "mobile-use.bullet4": "Jos käyttäjä avaa valikon hampurilaisikonista ja tämän jälkeen avaa haun, valikko sulkeutuu.",
   "exampleRegular.label": "Hakukenttä",

@@ -59,9 +59,6 @@ const Page = (): JSX.Element => (
             <li style={{ marginTop: suomifiDesignTokens.spacing.s }}>
               <Text>{t('mobile-use.bullet3')}</Text>
             </li>
-            <li style={{ marginTop: suomifiDesignTokens.spacing.s }}>
-              <Text>{t('mobile-use.bullet4')}</Text>
-            </li>
           </ul>
         </Paragraph>
       </Layout>

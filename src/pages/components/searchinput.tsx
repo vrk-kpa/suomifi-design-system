@@ -47,20 +47,6 @@ const Page = (): JSX.Element => (
             links={section.links}
           />
         ))}
-        <Paragraph>
-          {t('mobile-use.description')}
-          <ul>
-            <li>
-              <Text>{t('mobile-use.bullet1')}</Text>
-            </li>
-            <li style={{ marginTop: suomifiDesignTokens.spacing.s }}>
-              <Text>{t('mobile-use.bullet2')}</Text>
-            </li>
-            <li style={{ marginTop: suomifiDesignTokens.spacing.s }}>
-              <Text>{t('mobile-use.bullet3')}</Text>
-            </li>
-          </ul>
-        </Paragraph>
       </Layout>
     )}
   </Translation>

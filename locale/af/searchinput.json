@@ -32,6 +32,11 @@
           "image.key": "section.paragraph.image.key",
           "image.alt": "section.paragraph.image.alt",
           "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
         }
       ],
       "links": [

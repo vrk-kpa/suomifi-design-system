@@ -5,7 +5,6 @@
   "note.items": [
     "Suurennuslasi-ikoni on yleisesti tunnettu tunniste hakutoiminnolle, ja siksi sitä ei ole välttämätöntä yhdistää visuaalisesti sanaan 'haku'. Ruudunlukijalle kerrotaan kuitenkin toiminnon nimi komponenttiin saavuttaessa.",
     "Hakukenttää kannattaa käyttää, sillä useimmat käyttäjät hyötyvät siitä, että he voivat etsiä sisältöä sivustolta tai sovelluksesta.",
-    "Hakukentästä hyötyvät useimmat käyttäjät. Hakusanalla voidaan etsiä sisältöä sivustolta tai sovelluksesta.",
     "Jos toteutuksen kokonaisuus on pieni ja yksinkertainen (single page ratkaisu), hakukenttää ei kuitenkaan tarvitse välttämättä käyttää.",
     "Anna hakukentälle aina otsaketieto. Otsaketieto voidaan piilottaa visuaalisesti, mutta ruudunlukijakäyttäjälle otsake on tärkeä tieto hänen saapuessaan komponenttiin."
   ],
@@ -16,7 +15,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Hakukenttä, johon käyttäjä syöttää hakutermin tai -termit, on yhdistetty komponentti (hakukenttä, hakupainike ja hakusanan poistopainike). Tehty haku vie käyttäjän hakusivulle, jossa hakutulos näytetään. Hakukentässä käytetään vihjetekstiä (placeholder text), mutta se toimii ainoastaan visuaalisena lisänä näkeville käyttäjille. Kun hakukenttään on syötetty sisältöä, käyttäjälle näytetään hakupainike sinisellä painiketaustalla sekä hakusanan poistopainike, joka sijaitsee hakupainikkeen vasemmalla puolella. Komponentit ovat erikseen fokusoitavissa ja niihin pääsee näin navigoimaan myös näppäimistöllä."
+          "text": "Hakukenttä, johon käyttäjä syöttää hakutermin tai -termit, on yhdistetty komponentti (hakukenttä, hakupainike ja hakusanan poistopainike). Tehty haku vie käyttäjän hakusivulle, jossa hakutulos näytetään. Hakukentässä käytetään ohjeistavaa kenttätekstiä (placeholder text), mutta se toimii ainoastaan visuaalisena lisänä näkeville käyttäjille. Kun hakukenttään on syötetty sisältöä, käyttäjälle näytetään hakupainike sinisellä painiketaustalla sekä hakusanan poistopainike, joka sijaitsee hakupainikkeen vasemmalla puolella. Komponentit ovat erikseen fokusoitavissa ja niihin pääsee näin navigoimaan myös näppäimistöllä."
         }
       ],
       "links": [

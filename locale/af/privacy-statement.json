@@ -1,0 +1,16 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "sections": [
+    {
+      "paragraphs": [
+        {
+          "text": "section.paragraph.text"
+        },
+        {
+          "text": "section.paragraph.text"
+        }
+      ]
+    }
+  ]
+}

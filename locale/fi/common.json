@@ -12,6 +12,7 @@
   "footer.description": "Suomi.fi Design System -kirjaston kehittämisestä vastaa Digi- ja väestötietovirasto.",
   "footer.links": [
     { "text": "", "url": "" },
+    { "text": "Evästekäytännöt", "url": "/privacy-statement" },
     { "text": "Saavutettavuusseloste", "url": "/accessibility-statement" },
     { "text": "Suomidigi.fi", "url": "https://www.suomidigi.fi/" }
   ],

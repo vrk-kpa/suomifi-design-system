@@ -7,7 +7,6 @@ import Link, { Props as LinkProps } from 'components/Link';
 
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
 import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg';
-import { ReactComponent as Slack } from 'icons/slack.svg';
 import { ReactComponent as Github } from 'icons/github.svg';
 
 const Content = ({

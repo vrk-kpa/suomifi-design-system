@@ -13,11 +13,7 @@
         {
           "icon": "",
           "title": "",
-          "paragraphs": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ],
+          "paragraphs": [{ "text": "" }, { "text": "" }, { "text": "" }],
           "links": [
             { "text": "", "url": "" },
             { "text": "", "url": "" },
@@ -27,11 +23,7 @@
         {
           "icon": "",
           "title": "",
-          "paragraphs": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ],
+          "paragraphs": [{ "text": "" }, { "text": "" }],
           "links": [
             { "text": "", "url": "" },
             { "text": "", "url": "" },
@@ -41,11 +33,7 @@
         {
           "icon": "",
           "title": "",
-          "paragraphs": [
-            { "text": "" },
-            { "text": "" },
-            { "text": "" }
-          ],
+          "paragraphs": [{ "text": "" }, { "text": "" }, { "text": "" }],
           "links": [
             { "text": "", "url": "" },
             { "text": "", "url": "" },

@@ -89,7 +89,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Suomi.fi Design Systemiä koskeva keskustelu käydään ensisijaisesti Suomidigin Slack-yhteisössä (kanava #designsystem). Kehittäjien, komponenttikirjaston käyttäjien välinen keskustelu löytyy Githubista.",
+          "text": "Kehittäjien ja komponenttikirjaston käyttäjien välinen keskustelu löytyy Githubista.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -101,13 +101,10 @@
       ],
       "links": [
         {
-          "text": "Suomidigi.fi kehittäjät Slack-kanava",
-          "url": "https://suomidigi-kehittajat.slack.com"
-        },
-        {
           "text": "GitHub",
           "url": "https://github.com/vrk-kpa/suomifi-ui-components"
         },
+        { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]
     }

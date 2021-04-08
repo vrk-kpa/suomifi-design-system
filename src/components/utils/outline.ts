@@ -12,7 +12,6 @@ export const focusOutline = `
       left: -4px;
       background-color: transparent;
       box-sizing: border-box;
-      box-shadow: ${suomifiDesignTokens.colors.accentSecondary} 0px 0px 0px 0px;
       z-index: 9999;
       border-radius: 4px;
       border-width: 3px;

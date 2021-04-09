@@ -12,14 +12,8 @@
   "footer.description": "footer.description",
   "footer.links": [
     { "text": "link.text", "url": "link.url" },
-    { "text": "link.text", "url": "link.url" },
-    { "text": "link.text", "url": "link.url" },
     { "text": "link.text", "url": "link.url" }
   ],
-  "footer.social.title": "footer.social.title",
-  "footer.social.description": "footer.social.description",
-  "slack.link.text": "slack.link.text",
-  "slack.link.url": "slack.link.url",
   "github.link.text": "github.link.text",
   "github.link.url": "github.link.url",
   "opens.new.window": "opens.new.window",

@@ -12,14 +12,8 @@
   "footer.description": "",
   "footer.links": [
     { "text": "", "url": "" },
-    { "text": "", "url": "" },
-    { "text": "", "url": "" },
     { "text": "", "url": "" }
   ],
-  "footer.social.title": "",
-  "footer.social.description": "",
-  "slack.link.text": "",
-  "slack.link.url": "",
   "github.link.text": "",
   "github.link.url": "",
   "opens.new.window": "",

@@ -14,10 +14,6 @@
     { "text": "Evästekäytännöt", "url": "/privacy-statement" },
     { "text": "Saavutettavuusseloste", "url": "/accessibility-statement" }
   ],
-  "footer.social.title": "Tämä on Suomi.fi Design Systemin julkinen kehitysversio (beta)",
-  "footer.social.description": "Voit osallistua kehittämiseen Suomidigin Slack-yhteisössä tai GitHubissa.",
-  "slack.link.text": "suomidigi-kehittajat",
-  "slack.link.url": "https://suomidigi-kehittajat.slack.com",
   "github.link.text": "suomifi-ui-components",
   "github.link.url": "https://github.com/vrk-kpa/suomifi-ui-components",
   "opens.new.window": "Avautuu uuteen ikkunaan",

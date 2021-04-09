@@ -1,6 +1,11 @@
 import React, { ReactNode } from 'react';
 import { Translation } from 'react-i18next';
-import { Expander, suomifiDesignTokens } from 'suomifi-ui-components';
+import {
+  Expander,
+  ExpanderTitleButton,
+  ExpanderContent,
+  suomifiDesignTokens,
+} from 'suomifi-ui-components';
 import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
@@ -43,20 +48,25 @@ const ComponentDescription = ({
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
           <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
-            <Expander title={t('common:react')} noPadding>
-              {codeString && <ComponentCode javascript={codeString} />}
-              {!showOnlyCodeString &&
-                getWithoutWrappers(children).map((child, index) => (
-                  <ComponentCode
-                    key={index}
-                    filterProps={filterProps}
-                    style={{
-                      paddingTop: index === 0 && !codeString ? '1rem' : 0,
-                    }}
-                  >
-                    {child}
-                  </ComponentCode>
-                ))}
+            <Expander>
+              <ExpanderTitleButton asHeading="h3">
+                {t('common:react')}
+              </ExpanderTitleButton>
+              <ExpanderContent noPadding>
+                {codeString && <ComponentCode javascript={codeString} />}
+                {!showOnlyCodeString &&
+                  getWithoutWrappers(children).map((child, index) => (
+                    <ComponentCode
+                      key={index}
+                      filterProps={filterProps}
+                      style={{
+                        paddingTop: index === 0 && !codeString ? '1rem' : 0,
+                      }}
+                    >
+                      {child}
+                    </ComponentCode>
+                  ))}
+              </ExpanderContent>
             </Expander>
           </div>
         )}

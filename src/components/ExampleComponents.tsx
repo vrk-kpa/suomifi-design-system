@@ -2,7 +2,8 @@ import {
   Button as OrigButton,
   Expander as OrigExpander,
   Breadcrumb as OrigBreadcrumb,
-  Toggle as OrigToggle,
+  ToggleButton as OrigToggleButton,
+  ToggleInput as OrigToggleInput,
   Dropdown as OrigDropdown,
   Link as OrigLink,
   Heading as OrigHeading,
@@ -20,8 +21,8 @@ import {
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
-export class Button extends OrigButton {}
-addDisplayNames(Button, OrigButton, 'Button');
+// export class Button extends OrigButton {}
+// addDisplayNames(Button, OrigButton, 'Button');
 
 export class Expander extends OrigExpander {}
 addDisplayNames(Expander, OrigExpander, 'Expander');
@@ -29,11 +30,14 @@ addDisplayNames(Expander, OrigExpander, 'Expander');
 export class Breadcrumb extends OrigBreadcrumb {}
 addDisplayNames(Breadcrumb, OrigBreadcrumb, 'Breadcrumb');
 
-export class Toggle extends OrigToggle {}
-addDisplayNames(Toggle, OrigToggle, 'Toggle');
+// export class ToggleButton extends OrigToggleButton {}
+// addDisplayNames(ToggleButton, OrigToggleButton, 'ToggleButton');
 
-export class Dropdown extends OrigDropdown {}
-addDisplayNames(Dropdown, OrigDropdown, 'Dropdown');
+// export class ToggleInput extends OrigToggleInput {}
+// addDisplayNames(ToggleInput, OrigToggleInput, 'ToggleInput');
+
+// export class Dropdown extends OrigDropdown {}
+// addDisplayNames(Dropdown, OrigDropdown, 'Dropdown');
 
 export class Link extends OrigLink {}
 addDisplayNames(Link, OrigLink, 'Link');
@@ -44,8 +48,8 @@ addDisplayNames(Heading, OrigHeading, 'Heading');
 export class Text extends OrigText {}
 addDisplayNames(Text, OrigText, 'Text');
 
-export class TextInput extends OrigTextInput {}
-addDisplayNames(TextInput, OrigText, 'TextInput');
+// export class TextInput extends OrigTextInput {}
+// addDisplayNames(TextInput, OrigText, 'TextInput');
 
 export class SearchInput extends OrigSearchInput {}
 addDisplayNames(SearchInput, OrigSearchInput, 'SearchInput');
@@ -65,11 +69,11 @@ addDisplayNames(LanguageMenu, OrigLanguageMenu, 'LanguageMenu');
 export class LanguageMenuItem extends OrigLanguageMenuItem {}
 addDisplayNames(LanguageMenuItem, OrigLanguageMenuItem, 'LanguageMenuItem');
 
-export class Checkbox extends OrigCheckbox {}
-addDisplayNames(Checkbox, OrigCheckbox, 'Checkbox');
+// export class Checkbox extends OrigCheckbox {}
+// addDisplayNames(Checkbox, OrigCheckbox, 'Checkbox');
 
-export class RadioButton extends OrigRadioButton {}
-addDisplayNames(RadioButton, OrigRadioButton, 'RadioButton');
+// export class RadioButton extends OrigRadioButton {}
+// addDisplayNames(RadioButton, OrigRadioButton, 'RadioButton');
 
-export class Textarea extends OrigTextarea {}
-addDisplayNames(Textarea, OrigTextarea, 'Textarea');
+// export class Textarea extends OrigTextarea {}
+// addDisplayNames(OrigTextarea, 'Textarea');

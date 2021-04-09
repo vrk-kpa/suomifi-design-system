@@ -2,10 +2,6 @@
   "title": "title",
   "intro.title": "intro.title",
   "intro.description": "intro.description",
-  "note.title": "note.title",
-  "note.description": "note.description",
-  "note.link.text": "note.link.text",
-  "note.link.url": "note.link.url",
   "sections": [
     {
       "mainTitle": "mainTitle",
@@ -27,11 +23,7 @@
         {
           "icon": "icon",
           "title": "title",
-          "paragraphs": [
-            { "text": "text" },
-            { "text": "text" },
-            { "text": "text" }
-          ],
+          "paragraphs": [{ "text": "text" }, { "text": "text" }],
           "links": [
             { "text": "link.text", "url": "link.url" },
             { "text": "link.text", "url": "link.url" },

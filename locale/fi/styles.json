@@ -9,7 +9,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Komponenttikirjasto tarjoaa kaikki design tokenit samasta npm-moduulista. Kirjaston tekninen ohjeistus ja käyttöönotto löytyy Github-dokumentaatiosta.",
+          "text": "Komponenttikirjasto tarjoaa kaikki design tokenit samasta npm-moduulista. Kirjaston tekninen ohjeistus ja käyttöönotto löytyy GitHub-dokumentaatiosta.",
           "listItems": [
             { "text": "" },
             { "text": "" },
@@ -44,7 +44,10 @@
         }
       ],
       "links": [
-        { "text": "Github", "url": "https://github.com/vrk-kpa/suomifi-ui-components" },
+        {
+          "text": "GitHub",
+          "url": "https://github.com/vrk-kpa/suomifi-ui-components"
+        },
         { "text": "", "url": "" },
         { "text": "", "url": "" }
       ]

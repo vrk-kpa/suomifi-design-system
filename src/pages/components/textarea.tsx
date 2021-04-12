@@ -7,12 +7,13 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import { Textarea } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { Textarea, suomifiDesignTokens } from 'suomifi-ui-components';
+
+Textarea.displayName = 'Textarea';
 
 const Page = (): JSX.Element => (
   <Translation ns={['textarea']}>

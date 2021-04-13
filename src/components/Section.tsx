@@ -16,8 +16,8 @@ const Section = ({
   links,
 }: Props): JSX.Element => (
   <section>
-    {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
-    {!!title && <Heading.h3>{title}</Heading.h3>}
+    {!!mainTitle && <Heading variant="h2">{mainTitle}</Heading>}
+    {!!title && <Heading variant="h3">{title}</Heading>}
     {paragraphs.map((paragraph, index) => (
       <div key={index}>
         {!!paragraph['image.key'] && (

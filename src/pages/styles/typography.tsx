@@ -50,7 +50,7 @@ const Page = (): JSX.Element => (
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <Heading.h1>{t('title')}</Heading.h1>
+        <Heading variant="h1">{t('title')}</Heading>
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
@@ -70,18 +70,21 @@ const Page = (): JSX.Element => (
           title={t('heading.title')}
           description={t('heading.description')}
         >
-          <SuomifiHeading.h1hero
+          <SuomifiHeading
+            variant="h1hero"
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h1 hero, line height: ${suomifiDesignTokens.values.typography.heading1Hero.lineHeight.value}${suomifiDesignTokens.values.typography.heading1Hero.lineHeight.unit}`}
-          </SuomifiHeading.h1hero>
-          <SuomifiHeading.h1hero
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h1hero"
             smallScreen
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h1 hero small, line height: ${suomifiDesignTokens.values.typography.heading1HeroSmallScreen.lineHeight.value}${suomifiDesignTokens.values.typography.heading1HeroSmallScreen.lineHeight.unit}`}
-          </SuomifiHeading.h1hero>
-          <SuomifiHeading.h1
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h1"
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h1, line height: ${
@@ -90,14 +93,16 @@ const Page = (): JSX.Element => (
               suomifiDesignTokens.values.typography.heading1.lineHeight.unit ||
               ''
             }`}
-          </SuomifiHeading.h1>
-          <SuomifiHeading.h1
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h1"
             smallScreen
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h1 small, line height: ${suomifiDesignTokens.values.typography.heading1SmallScreen.lineHeight.value}${suomifiDesignTokens.values.typography.heading1SmallScreen.lineHeight.unit}`}
-          </SuomifiHeading.h1>
-          <SuomifiHeading.h2
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h2"
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h2, line height: ${
@@ -106,14 +111,16 @@ const Page = (): JSX.Element => (
               suomifiDesignTokens.values.typography.heading2.lineHeight.unit ||
               ''
             }`}
-          </SuomifiHeading.h2>
-          <SuomifiHeading.h2
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h2"
             smallScreen
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h2 small, line height: ${suomifiDesignTokens.values.typography.heading2SmallScreen.lineHeight.value}${suomifiDesignTokens.values.typography.heading2SmallScreen.lineHeight.unit}`}
-          </SuomifiHeading.h2>
-          <SuomifiHeading.h3
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h3"
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h3, line height: ${
@@ -122,14 +129,16 @@ const Page = (): JSX.Element => (
               suomifiDesignTokens.values.typography.heading3.lineHeight.unit ||
               ''
             }`}
-          </SuomifiHeading.h3>
-          <SuomifiHeading.h3
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h3"
             smallScreen
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h3 small, line height: ${suomifiDesignTokens.values.typography.heading3SmallScreen.lineHeight.value}${suomifiDesignTokens.values.typography.heading3SmallScreen.lineHeight.unit}`}
-          </SuomifiHeading.h3>
-          <SuomifiHeading.h4
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h4"
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h4, line height: ${
@@ -138,14 +147,16 @@ const Page = (): JSX.Element => (
               suomifiDesignTokens.values.typography.heading4.lineHeight.unit ||
               ''
             }`}
-          </SuomifiHeading.h4>
-          <SuomifiHeading.h4
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h4"
             smallScreen
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h4 small, line height: ${suomifiDesignTokens.values.typography.heading4SmallScreen.lineHeight.value}${suomifiDesignTokens.values.typography.heading4SmallScreen.lineHeight.unit}`}
-          </SuomifiHeading.h4>
-          <SuomifiHeading.h5
+          </SuomifiHeading>
+          <SuomifiHeading
+            variant="h5"
             style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
           >
             {`Headline h5, line height: ${
@@ -154,7 +165,7 @@ const Page = (): JSX.Element => (
               suomifiDesignTokens.values.typography.heading5.lineHeight.unit ||
               ''
             }`}
-          </SuomifiHeading.h5>
+          </SuomifiHeading>
         </ExampleBlock>
 
         <ExampleBlock

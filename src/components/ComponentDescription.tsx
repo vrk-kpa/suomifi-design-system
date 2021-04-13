@@ -36,8 +36,8 @@ const ComponentDescription = ({
         }}
       >
         <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
-          {!!mainTitle && <Heading.h2>{mainTitle}</Heading.h2>}
-          {!!title && <Heading.h3>{title}</Heading.h3>}
+          {!!mainTitle && <Heading variant="h2">{mainTitle}</Heading>}
+          {!!title && <Heading variant="h3">{title}</Heading>}
         </div>
         {!!exampleFirst && <div>{children}</div>}
         {!!description && (

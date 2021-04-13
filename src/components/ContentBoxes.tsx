@@ -29,7 +29,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
         <StaticIcon icon={block.icon} />
       </div>
     )}
-    {!!block.title && <Heading.h2>{block.title}</Heading.h2>}
+    {!!block.title && <Heading variant="h2">{block.title}</Heading>}
     {block.paragraphs.map((paragraph, index) => (
       <div key={index}>
         {!!paragraph.text && (
@@ -60,14 +60,15 @@ const ContentBoxes = ({
     }}
   >
     <div style={{ maxWidth: 1140 }}>
-      <Heading.h1
+      <Heading
+        variant="h1"
         style={{
           textAlign: 'left',
           margin: `0 0 0 ${suomifiDesignTokens.spacing.s}`,
         }}
       >
         {mainTitle}
-      </Heading.h1>
+      </Heading>
       <div
         style={{
           display: 'flex',

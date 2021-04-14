@@ -22,7 +22,7 @@ const Page = (): JSX.Element => {
       {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
-          <Heading.h1>{t('title')}</Heading.h1>
+          <Heading variant="h1">{t('title')}</Heading>
 
           <Paragraph.lead>
             <Text.lead>{t('intro')}</Text.lead>

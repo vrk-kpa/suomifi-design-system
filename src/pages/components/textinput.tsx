@@ -7,19 +7,20 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import { TextInput } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { TextInput, suomifiDesignTokens } from 'suomifi-ui-components';
+
+TextInput.displayName = 'TextInput';
 
 const Page = (): JSX.Element => (
   <Translation ns={['textinput']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <Heading.h1>{t('title')}</Heading.h1>
+        <Heading variant="h1">{t('title')}</Heading>
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>

@@ -12,7 +12,9 @@ const NoteBox = ({ title, items }: Props): JSX.Element => (
       border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
     }}
   >
-    <Heading.h3 as="h2">{title}</Heading.h3>
+    <Heading variant="h3" as="h2">
+      {title}
+    </Heading>
     <ul
       style={{ margin: 0, padding: `0 0 0 ${suomifiDesignTokens.spacing.s}` }}
     >

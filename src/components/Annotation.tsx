@@ -38,7 +38,8 @@ const Content = ({
         textAlign: center ? 'center' : 'initial',
       }}
     >
-      <Heading.h2
+      <Heading
+        variant="h2"
         color="whiteBase"
         style={{
           textAlign: 'inherit',
@@ -46,7 +47,7 @@ const Content = ({
         }}
       >
         {title}
-      </Heading.h2>
+      </Heading>
       {description && (
         <Paragraph
           style={{

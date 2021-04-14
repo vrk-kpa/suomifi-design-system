@@ -2,10 +2,10 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
+import { Dropdown, DropdownItem } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import { Dropdown } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
@@ -14,12 +14,14 @@ import ComponentExample from 'components/ComponentExample';
 import NotificationBox from 'components/NotificationBox';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
+Dropdown.displayName = 'Dropdown';
+
 const Page = (): JSX.Element => (
   <Translation ns={['dropdown']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <Heading.h1>{t('title')}</Heading.h1>
+        <Heading variant="h1">{t('title')}</Heading>
         <NotificationBox notificationText={t('notification.content')} />
 
         <Paragraph.lead>
@@ -32,9 +34,9 @@ const Page = (): JSX.Element => (
         >
           <ComponentExample>
             <Dropdown name="Dropdown" labelText={t('example.label')}>
-              <Dropdown.item value="1">{t('example.option1')}</Dropdown.item>
-              <Dropdown.item value="2">{t('example.option2')}</Dropdown.item>
-              <Dropdown.item value="3">{t('example.option3')}</Dropdown.item>
+              <DropdownItem value="1">{t('example.option1')}</DropdownItem>
+              <DropdownItem value="2">{t('example.option2')}</DropdownItem>
+              <DropdownItem value="3">{t('example.option3')}</DropdownItem>
             </Dropdown>
           </ComponentExample>
         </ComponentDescription>
@@ -61,12 +63,12 @@ const Page = (): JSX.Element => (
               labelText={t('example1.label')}
               onChange={(action) => console.log(action, 'selected')}
             >
-              <Dropdown.item value="Toiminto1">
+              <DropdownItem value="Toiminto1">
                 {t('example1.option1')}
-              </Dropdown.item>
-              <Dropdown.item value="Toiminto2">
+              </DropdownItem>
+              <DropdownItem value="Toiminto2">
                 {t('example1.option2')}
-              </Dropdown.item>
+              </DropdownItem>
             </Dropdown>
           </ComponentExample>
         </ComponentDescription>

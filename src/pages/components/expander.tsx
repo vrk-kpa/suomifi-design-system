@@ -29,6 +29,19 @@ const Page = (): JSX.Element => (
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
         </Paragraph.lead>
+        <ComponentDescription>
+          <ComponentExample>
+            <Expander>
+              <ExpanderTitleButton
+                ariaOpenText="Open expander"
+                ariaCloseText="Close expander"
+              >
+                {t('expander.title')}
+              </ExpanderTitleButton>
+              <ExpanderContent>{t('expander.content')}</ExpanderContent>
+            </Expander>
+          </ComponentExample>
+        </ComponentDescription>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 

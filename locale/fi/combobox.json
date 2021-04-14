@@ -3,7 +3,7 @@
   "intro": "Monivalinta-komponentin avulla käyttäjä voi valita yhden tai useamman vaihtoehdon listalta.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Listalla olevien vaihtoehtojen tekstien olisi hyvä olla uniikkeja.",
+    "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
     "Monivalinnan kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
     "Ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa.",
     "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi."
@@ -13,7 +13,7 @@
       "title": "Mistä komponentti koostuu",
       "paragraphs": [
         {
-          "text": "Monivalinta koostuu otsakkeesta, hakukentästä, valikosta, tilatekstistä, tehtyjen valintojen listasta sekä tehtyjen valintojen poistamiseen tarkoitetusta tyhjennyspainikkeesta. Valikko aukeaa kun fokus siirtyy hakukenttään. Valikossa näytettäviä vaihtoehtoja rajataan hakukentän tekstin mukaisesti. "
+          "text": "Monivalinta koostuu otsakkeesta, hakukentästä, valikosta, tilatekstistä, tehtyjen valintojen listasta sekä tehtyjen valintojen poistamiseen tarkoitetusta tyhjennyspainikkeesta. Valikko aukeaa kun fokus siirtyy hakukenttään. Valikossa näytettäviä vaihtoehtoja rajataan hakukentän tekstin mukaisesti."
         },
         {
           "text": "Valinnat voivat olla pakollisia, milloin niitä ei voi muokata. Valikosta valitut ja pakolliset vaihtoehdot näytetään listana hakukentän alla. Valitut vaihtoehdot, pakollisia lukuunottamatta, voi poistaa tyhjennyspainikkeen avulla."

@@ -1,0 +1,58 @@
+{
+  "title": "Monivalinta (MultiSelect)",
+  "intro": "Monivalinta-komponentin avulla käyttäjä voi valita yhden tai useamman vaihtoehdon listalta.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
+    "Monivalinnan kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
+    "Ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa.",
+    "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi."
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "text": "Monivalinta koostuu otsakkeesta, hakukentästä, valikosta, tilatekstistä, tehtyjen valintojen listasta sekä tehtyjen valintojen poistamiseen tarkoitetusta tyhjennyspainikkeesta. Valikko aukeaa kun fokus siirtyy hakukenttään. Valikossa näytettäviä vaihtoehtoja rajataan hakukentän tekstin mukaisesti."
+        },
+        {
+          "text": "Valinnat voivat olla pakollisia, milloin niitä ei voi muokata. Valikosta valitut ja pakolliset vaihtoehdot näytetään listana hakukentän alla. Valitut vaihtoehdot, pakollisia lukuunottamatta, voi poistaa tyhjennyspainikkeen avulla."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "text": "Monivalintaa käytetään tilanteissa, missä käyttäjä voi valita useita vaihtoehtoja ennaltamääritellyistä vaihtoehdoista ja erityisesti tilanteissa, missä vaihtoehtoja on paljon ja niiden rajaaminen helpottaa valinnan tekemistä."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.label": "Työkalut",
+  "example.visualPlaceholder": "Valitse työkalu(t)",
+  "example.removeAllSelections": "Poista kaikki valinnat",
+  "example.noItems": "Ei vaihtoehtoja",
+  "example.chipActionLabel": "Poista",
+  "example.tools.jackhammer": "Poravasara",
+  "example.tools.hammer": "Vasara",
+  "example.tools.sledgehammer": "Moukari",
+  "example.tools.spade": "Lapio",
+  "example.tools.powersaw": "Käsisirkkeli",
+  "example.tools.shovel": "Kauha",
+  "example.tools.ironStick": "Rautakanki",
+  "example.tools.rake": "Harava",
+  "example.tools.motorsaw": "Moottorisaha"
+}

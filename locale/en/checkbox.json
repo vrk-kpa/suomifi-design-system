@@ -1,0 +1,78 @@
+{
+  "title": "",
+  "intro": "",
+  "note.title": "",
+  "note.items": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.default.title": "",
+  "example.default.content": "",
+  "example.large.title": "",
+  "example.large.description": "",
+  "example.large.content": "",
+  "example.hintstate.title": "",
+  "example.hintstate.description": "",
+  "example.hintstate.content": "",
+  "example.hintstate.hintText": "",
+  "example.hintstate.statusText": "",
+  "example.disabled.title": "",
+  "example.disabled.description": "",
+  "example.disabled.content": ""
+}

@@ -16,7 +16,7 @@ import NotificationBox from 'components/NotificationBox';
 
 const Page: React.FC = (): React.ReactElement => {
   return (
-    <Translation ns={['combobox']}>
+    <Translation ns={['multiselect']}>
       {(t) => {
         const tools = [
           {

@@ -1,5 +1,5 @@
 {
-  "title": "Monivalinta (Combobox)",
+  "title": "Monivalinta (MultiSelect)",
   "intro": "Monivalinta-komponentin avulla käyttäjä voi valita yhden tai useamman vaihtoehdon listalta.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [

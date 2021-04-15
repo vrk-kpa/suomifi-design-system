@@ -217,3 +217,10 @@ minimum_perc = 0
 source_file = locale/af/privacy-statement.json
 source_lang = af
 type = KEYVALUEJSON
+
+[suomifi-design-system.multiselect-json]
+file_filter = locale/<lang>/multiselect.json
+minimum_perc = 0
+source_file = locale/af/multiselect.json
+source_lang = af
+type = KEYVALUEJSON

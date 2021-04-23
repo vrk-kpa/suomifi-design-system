@@ -13,11 +13,16 @@ import ComponentExample from 'components/ComponentExample';
 import Section, { Props as SectionProps } from 'components/Section';
 import {
   RadioButton,
-  RadioButtonGroup,
+  RadioButtonGroup as OrigRadioButtonGroup,
+  RadioButtonGroupProps,
   suomifiDesignTokens,
 } from 'suomifi-ui-components';
 
 RadioButton.displayName = 'RadioButton';
+const RadioButtonGroup = (props: RadioButtonGroupProps): JSX.Element => (
+  <OrigRadioButtonGroup {...props} />
+);
+RadioButtonGroup.displayName = 'RadioButtonGroup';
 
 const Page = (): JSX.Element => (
   <Translation ns={['radiobutton']}>

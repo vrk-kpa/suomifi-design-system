@@ -2,7 +2,11 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { Combobox } from 'suomifi-ui-components';
+import {
+  Combobox as OrigCombobox,
+  ComboboxData,
+  ComboboxProps,
+} from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -13,6 +17,13 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import NotificationBox from 'components/NotificationBox';
+
+const Combobox = function <T extends ComboboxData>(
+  props: ComboboxProps<T>,
+): JSX.Element {
+  return <OrigCombobox {...props} />;
+};
+Combobox.displayName = 'Combobox';
 
 const Page: React.FC = (): React.ReactElement => {
   return (

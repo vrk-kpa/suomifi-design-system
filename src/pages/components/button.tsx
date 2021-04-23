@@ -21,6 +21,7 @@ const ExampleWrapper = ({
 }: {
   children: React.ReactNode;
 }): JSX.Element => <div style={{ padding: 15 }}>{children}</div>;
+ExampleWrapper.displayName = 'div';
 
 const Page = (): JSX.Element => {
   return (

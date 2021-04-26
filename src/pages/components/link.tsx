@@ -54,7 +54,7 @@ const Page = (): JSX.Element => (
           <ComponentExample>
             <ExampleLink.external
               className="test-classname"
-              href="http://www.esimerkkiosoite.com"
+              href="https://github.com/vrk-kpa/suomifi-ui-components"
               labelNewWindow={t('exampleExternal.label')}
             >
               {t('exampleExternal.linkText')}

@@ -3,10 +3,14 @@ import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import {
-  Expander,
-  ExpanderGroup,
-  ExpanderTitleButton,
-  ExpanderContent,
+  Expander as OrigExpander,
+  ExpanderProps,
+  ExpanderGroup as OrigExpanderGroup,
+  ExpanderGroupProps,
+  ExpanderTitleButton as OrigExpanderTitleButton,
+  ExpanderTitleButtonProps,
+  ExpanderContent as OrigExpanderContent,
+  ExpanderContentProps,
   suomifiDesignTokens,
 } from 'suomifi-ui-components';
 
@@ -18,6 +22,23 @@ import NoteBox from 'components/NoteBox';
 import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+
+const Expander = (props: ExpanderProps): JSX.Element => (
+  <OrigExpander {...props} />
+);
+Expander.displayName = 'Expander';
+const ExpanderGroup = (props: ExpanderGroupProps): JSX.Element => (
+  <OrigExpanderGroup {...props} />
+);
+ExpanderGroup.displayName = 'ExpanderGroup';
+const ExpanderTitleButton = (props: ExpanderTitleButtonProps): JSX.Element => (
+  <OrigExpanderTitleButton {...props} />
+);
+ExpanderTitleButton.displayName = 'ExpanderTitleButton';
+const ExpanderContent = (props: ExpanderContentProps): JSX.Element => (
+  <OrigExpanderContent {...props} />
+);
+ExpanderContent.displayName = 'ExpanderContent';
 
 const Page = (): JSX.Element => (
   <Translation ns={['expander']}>

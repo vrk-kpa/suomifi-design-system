@@ -2,13 +2,7 @@
   "title": "Tekstialue (Textarea)",
   "intro": "Tekstialue on komponentti, johon käyttäjä voi syöttää otsakkeessa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsakkeessa annettuun kysymykseen. Tekstialuetta käytetään tilanteissa, joissa käyttäjälle halutaan antaa mahdollisuus pidemmän vastauksen antamiseen. Lyhyitä tekstimuotoisia vastauksia varten käytetään tekstikenttää.",
   "note.title": "Saavutettavuus ja käytettävyys",
-  "note.items": [
-    "Tekstialueen kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
-    "Tekstialueen ohjeteksti on valinnainen tieto ja sen voi jättää lisäämättä komponenttiin, jos kenttään täytettävä asia on hyvin yksinkertainen.",
-    "Tekstialueen ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa. Ohjeistamiseen tulee käyttää ensisijaisesti ohjetekstiä (hintText).",
-    "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi.",
-    "Tekstialuetta käytetään silloin, kun käyttäjille halutaan antaa mahdollisuus pidemmän vastauksen kirjoittamiselle. Lyhyitä vastauksia varten käytetään tekstikenttää (Text Input)."
-  ],
+  "note.items": ["Tekstialueen kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.", "Tekstialueen ohjeteksti on valinnainen tieto ja sen voi jättää lisäämättä komponenttiin, jos kenttään täytettävä asia on hyvin yksinkertainen.", "Tekstialueen ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa. Ohjeistamiseen tulee käyttää ensisijaisesti ohjetekstiä (hintText).", "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi."],
   "sections": [
     {
       "title": "Mistä komponentti koostuu",

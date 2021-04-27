@@ -21,6 +21,7 @@ const ExampleWrapper = ({
 }: {
   children: React.ReactNode;
 }): JSX.Element => <div style={{ padding: 15 }}>{children}</div>;
+ExampleWrapper.displayName = 'div';
 
 const Page = (): JSX.Element => {
   return (
@@ -69,7 +70,7 @@ const Page = (): JSX.Element => {
                 </ExampleWrapper>
                 <ExampleWrapper>
                   <Button fullWidth variant="link" onClick={() => undefined}>
-                    {t(`tertiary.label`)}
+                    {t(`link.label`)}
                   </Button>
                 </ExampleWrapper>
                 <ExampleWrapper>
@@ -108,8 +109,8 @@ const Page = (): JSX.Element => {
           </ComponentDescription>
 
           <ComponentDescription
-            mainTitle={t(`tertiary.title`)}
-            description={t(`tertiary.description`)}
+            mainTitle={t(`link.title`)}
+            description={t(`link.description`)}
             exampleFirst
           >
             <ComponentExample
@@ -120,12 +121,12 @@ const Page = (): JSX.Element => {
             >
               <ExampleWrapper>
                 <Button variant="link" onClick={() => undefined}>
-                  {t(`tertiary.label`)}
+                  {t(`link.label`)}
                 </Button>
               </ExampleWrapper>
               <ExampleWrapper>
                 <Button variant="link" disabled onClick={() => undefined}>
-                  {t(`tertiary.labelDisabled`)}
+                  {t(`link.labelDisabled`)}
                 </Button>
               </ExampleWrapper>
             </ComponentExample>
@@ -242,7 +243,7 @@ const Page = (): JSX.Element => {
               <ExampleWrapper>
                 <Button icon="login" variant="link" onClick={() => undefined}>
                   {t(`button.labelIcon`, {
-                    name: t(`tertiary.label`),
+                    name: t(`link.label`),
                   })}
                 </Button>
               </ExampleWrapper>
@@ -253,7 +254,7 @@ const Page = (): JSX.Element => {
                   onClick={() => undefined}
                 >
                   {t(`button.labelIconRight`, {
-                    name: t(`tertiary.label`),
+                    name: t(`link.label`),
                   })}
                 </Button>
               </ExampleWrapper>
@@ -365,7 +366,7 @@ const Page = (): JSX.Element => {
               </ExampleWrapper>
               <ExampleWrapper>
                 <Button disabled variant="link" onClick={() => undefined}>
-                  {t(`tertiary.labelDisabled`)}
+                  {t(`link.labelDisabled`)}
                 </Button>
               </ExampleWrapper>
               <div

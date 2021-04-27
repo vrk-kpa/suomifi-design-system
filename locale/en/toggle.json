@@ -75,13 +75,12 @@
           "image.alt": "",
           "text": ""
         }
-      ],
-      "links": []
-    }
+      ]}
   ],
   "default.title": "",
   "default.description": "",
-  "toggle.label": "",
+  "toggle.label.button": "",
+  "toggle.label.input": "",
   "toggle.state.on": "",
   "toggle.state.off": ""
 }

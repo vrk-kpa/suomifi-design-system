@@ -26,6 +26,6 @@ export default (t) => ({
     { to: '/components/toggle/', label: t('toggle:title') },
     { to: '/components/radiobutton/', label: t('radiobutton:title') },
     { to: '/components/checkbox/', label: t('checkbox:title') },
-    { to: '/components/multiselect/', label: t('multiselect:title') },
+    // { to: '/components/multiselect/', label: t('multiselect:title') },
   ],
 });

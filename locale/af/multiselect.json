@@ -1,0 +1,53 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": ["note.item", "note.item", "note.item", "note.item"],
+  "sections": [
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "text": "section.paragraph.text"
+        },
+        {
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    }
+  ],
+  "example.label": "example.label",
+  "example.visualPlaceholder": "example.visualPlaceholder",
+  "example.removeAllSelections": "example.removeAllSelections",
+  "example.noItems": "example.noItems",
+  "example.chipActionLabel": "example.chipActionLabel",
+  "example.tools.jackhammer": "example.tools.jackhammer",
+  "example.tools.hammer": "example.tools.hammer",
+  "example.tools.sledgehammer": "example.tools.sledgehammer",
+  "example.tools.spade": "example.tools.spade",
+  "example.tools.powersaw": "example.tools.powersaw",
+  "example.tools.shovel": "example.tools.shovel",
+  "example.tools.ironStick": "example.tools.ironStick",
+  "example.tools.rake": "example.tools.rake",
+  "example.tools.motorsaw": "example.tools.motorsaw"
+}

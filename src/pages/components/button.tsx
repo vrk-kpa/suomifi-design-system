@@ -2,11 +2,10 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { Button, suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import { Button } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
@@ -15,75 +14,14 @@ import ComponentExample from 'components/ComponentExample';
 import MobileDevice from 'components/MobileDevice';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
-const components = [
-  { id: 'primary', comp: Button },
-  { id: 'tertiary', comp: Button.tertiary },
-  {
-    id: 'negative',
-    comp: Button.inverted,
-    background: suomifiDesignTokens.colors.highlightBase,
-  },
-  { id: 'secondary', comp: Button.secondary },
-  {
-    id: 'secondaryNoborder',
-    comp: Button.secondaryNoborder,
-    background: suomifiDesignTokens.colors.whiteBase,
-  },
-];
+Button.displayName = 'Button';
 
-const mobileComponents = [
-  { id: 'primary', comp: Button },
-  { id: 'tertiary', comp: Button.tertiary },
-  { id: 'secondary', comp: Button.secondary },
-];
-
-const disabledComponents = [
-  { id: 'primary', comp: Button },
-  { id: 'tertiary', comp: Button.tertiary },
-  {
-    id: 'negative',
-    comp: Button.inverted,
-    background: suomifiDesignTokens.colors.highlightBase,
-  },
-  { id: 'secondary', comp: Button.secondary },
-  {
-    id: 'secondaryNoborder',
-    comp: Button.secondaryNoborder,
-  },
-];
-
-const clickCount = {};
-const handleClick = (id: string, name: string, t: Function): void => {
-  if (!clickCount[id]) {
-    clickCount[id] = 0;
-  }
-  document.getElementById(id).setAttribute(
-    'aria-label',
-    t('button.labelClicked', {
-      name: name,
-      count: ++clickCount[id],
-    }),
-  );
-};
-
-const getExampleComp = (
-  Comp: Function,
-  id: string,
-  label: string,
-  props: object,
-  t: Function,
-): JSX.Element => (
-  <Comp
-    key={id}
-    id={id}
-    aria-label={label}
-    style={{ margin: suomifiDesignTokens.spacing.xs }}
-    {...props}
-    onClick={() => handleClick(id, label, t)}
-  >
-    {label}
-  </Comp>
-);
+const ExampleWrapper = ({
+  children,
+}: {
+  children: React.ReactNode;
+}): JSX.Element => <div style={{ padding: 15 }}>{children}</div>;
+ExampleWrapper.displayName = 'div';
 
 const Page = (): JSX.Element => {
   return (
@@ -91,7 +29,7 @@ const Page = (): JSX.Element => {
       {(t) => (
         <Layout sideNavData={sideNavData(t)}>
           <SEO title={t('title')} />
-          <Heading.h1>{t('title')}</Heading.h1>
+          <Heading variant="h1">{t('title')}</Heading>
 
           <Paragraph.lead>
             <Text.lead>{t('intro')}</Text.lead>
@@ -125,127 +63,336 @@ const Page = (): JSX.Element => {
               }}
             >
               <MobileDevice>
-                {mobileComponents.map((item) => (
-                  <div
-                    key={item.id}
-                    style={{
-                      padding: `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xs}`,
-                    }}
+                <ExampleWrapper>
+                  <Button fullWidth onClick={() => undefined}>
+                    {t(`primary.label`)}
+                  </Button>
+                </ExampleWrapper>
+                <ExampleWrapper>
+                  <Button fullWidth variant="link" onClick={() => undefined}>
+                    {t(`link.label`)}
+                  </Button>
+                </ExampleWrapper>
+                <ExampleWrapper>
+                  <Button
+                    fullWidth
+                    variant="secondary"
+                    onClick={() => undefined}
                   >
-                    {getExampleComp(
-                      item.comp,
-                      `${item.id}.fullWidth`,
-                      t(`${item.id}.label`),
-                      { fullWidth: true, style: {} },
-                      t,
-                    )}
-                  </div>
-                ))}
+                    {t(`secondary.label`)}
+                  </Button>
+                </ExampleWrapper>
               </MobileDevice>
             </div>
           </ComponentDescription>
 
-          {components.map((item) => (
-            <ComponentDescription
-              key={item.id}
-              mainTitle={t(`${item.id}.title`)}
-              description={t(`${item.id}.description`)}
-              exampleFirst
-            >
-              <ComponentExample
-                style={{
-                  padding: suomifiDesignTokens.spacing.xs,
-                  background: item.background,
-                }}
-              >
-                {[
-                  { id: item.id, label: t(`${item.id}.label`) },
-                  {
-                    id: `${item.id}.disabled`,
-                    label: t(`${item.id}.labelDisabled`),
-                    props: { disabled: true },
-                  },
-                ].map((example) =>
-                  getExampleComp(
-                    item.comp,
-                    example.id,
-                    example.label,
-                    example.props,
-                    t,
-                  ),
-                )}
-              </ComponentExample>
-            </ComponentDescription>
-          ))}
-
           <ComponentDescription
-            mainTitle={t('withIcon.title')}
-            description={t('withIcon.description')}
-            exampleFirst
-          >
-            {components.map((item) => (
-              <ComponentExample
-                key={item.id}
-                style={{
-                  padding: suomifiDesignTokens.spacing.xs,
-                  background: item.background,
-                }}
-              >
-                {[
-                  {
-                    id: `${item.id}.icon`,
-                    label: t('button.labelIcon', {
-                      name: t(`${item.id}.label`),
-                    }),
-                    props: { icon: 'login' },
-                  },
-                  {
-                    id: `${item.id}.iconRight`,
-                    label: t('button.labelIconRight', {
-                      name: t(`${item.id}.label`),
-                    }),
-                    props: { iconRight: 'logout' },
-                  },
-                ].map((example) =>
-                  getExampleComp(
-                    item.comp,
-                    example.id,
-                    example.label,
-                    example.props,
-                    t,
-                  ),
-                )}
-              </ComponentExample>
-            ))}
-          </ComponentDescription>
-
-          <ComponentDescription
-            mainTitle={t('disabled.title')}
-            description={t('disabled.description')}
+            mainTitle={t(`primary.title`)}
+            description={t(`primary.description`)}
             exampleFirst
           >
             <ComponentExample
-              style={{ padding: suomifiDesignTokens.spacing.xs }}
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.whiteBase,
+              }}
             >
-              {disabledComponents.map((item) => (
-                <div
-                  key={item.id}
-                  style={{
-                    padding: item.background
-                      ? suomifiDesignTokens.spacing.xs
-                      : 0,
-                    background: item.background || 'none',
-                  }}
+              <ExampleWrapper>
+                <Button onClick={() => undefined}>{t(`primary.label`)}</Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button disabled onClick={() => undefined}>
+                  {t(`primary.labelDisabled`)}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+          </ComponentDescription>
+
+          <ComponentDescription
+            mainTitle={t(`link.title`)}
+            description={t(`link.description`)}
+            exampleFirst
+          >
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.whiteBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button variant="link" onClick={() => undefined}>
+                  {t(`link.label`)}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button variant="link" disabled onClick={() => undefined}>
+                  {t(`link.labelDisabled`)}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+          </ComponentDescription>
+
+          <ComponentDescription
+            mainTitle={t(`negative.title`)}
+            description={t(`negative.description`)}
+            exampleFirst
+          >
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.highlightBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button variant="inverted" onClick={() => undefined}>
+                  {t(`negative.label`)}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button variant="inverted" disabled onClick={() => undefined}>
+                  {t(`negative.labelDisabled`)}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+          </ComponentDescription>
+
+          <ComponentDescription
+            mainTitle={t(`secondary.title`)}
+            description={t(`secondary.description`)}
+            exampleFirst
+          >
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.whiteBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button variant="secondary" onClick={() => undefined}>
+                  {t(`secondary.label`)}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button variant="secondary" disabled onClick={() => undefined}>
+                  {t(`secondary.labelDisabled`)}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+          </ComponentDescription>
+
+          <ComponentDescription
+            mainTitle={t(`secondaryNoborder.title`)}
+            description={t(`secondaryNoborder.description`)}
+            exampleFirst
+          >
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.whiteBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button variant="secondaryNoBorder" onClick={() => undefined}>
+                  {t(`secondaryNoborder.label`)}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button
+                  variant="secondaryNoBorder"
+                  disabled
+                  onClick={() => undefined}
                 >
-                  {getExampleComp(
-                    item.comp,
-                    `${item.id}.disabled.another`,
-                    t(`${item.id}.labelDisabled`),
-                    { disabled: true },
-                    t,
-                  )}
-                </div>
-              ))}
+                  {t(`secondaryNoborder.labelDisabled`)}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+          </ComponentDescription>
+
+          <ComponentDescription
+            mainTitle={t(`withIcon.title`)}
+            description={t(`withIcon.description`)}
+            exampleFirst
+          >
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.whiteBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button icon="login" onClick={() => undefined}>
+                  {t(`button.labelIcon`, {
+                    name: t(`primary.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button iconRight="login" onClick={() => undefined}>
+                  {t(`button.labelIconRight`, {
+                    name: t(`primary.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.whiteBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button icon="login" variant="link" onClick={() => undefined}>
+                  {t(`button.labelIcon`, {
+                    name: t(`link.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button
+                  iconRight="login"
+                  variant="link"
+                  onClick={() => undefined}
+                >
+                  {t(`button.labelIconRight`, {
+                    name: t(`link.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.highlightBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button
+                  icon="login"
+                  variant="inverted"
+                  onClick={() => undefined}
+                >
+                  {t(`button.labelIcon`, {
+                    name: t(`negative.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button
+                  iconRight="login"
+                  variant="inverted"
+                  onClick={() => undefined}
+                >
+                  {t(`button.labelIconRight`, {
+                    name: t(`negative.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.whiteBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button
+                  icon="login"
+                  variant="secondary"
+                  onClick={() => undefined}
+                >
+                  {t(`button.labelIcon`, {
+                    name: t(`secondary.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button
+                  iconRight="login"
+                  variant="secondary"
+                  onClick={() => undefined}
+                >
+                  {t(`button.labelIconRight`, {
+                    name: t(`secondary.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.whiteBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button
+                  icon="login"
+                  variant="secondaryNoBorder"
+                  onClick={() => undefined}
+                >
+                  {t(`button.labelIcon`, {
+                    name: t(`secondaryNoborder.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button
+                  iconRight="login"
+                  variant="secondaryNoBorder"
+                  onClick={() => undefined}
+                >
+                  {t(`button.labelIconRight`, {
+                    name: t(`secondaryNoborder.label`),
+                  })}
+                </Button>
+              </ExampleWrapper>
+            </ComponentExample>
+          </ComponentDescription>
+
+          <ComponentDescription
+            mainTitle={t(`disabled.title`)}
+            description={t(`disabled.description`)}
+            exampleFirst
+          >
+            <ComponentExample
+              style={{
+                padding: suomifiDesignTokens.spacing.xs,
+                background: suomifiDesignTokens.colors.whiteBase,
+              }}
+            >
+              <ExampleWrapper>
+                <Button disabled onClick={() => undefined}>
+                  {t(`primary.labelDisabled`)}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button disabled variant="link" onClick={() => undefined}>
+                  {t(`link.labelDisabled`)}
+                </Button>
+              </ExampleWrapper>
+              <div
+                style={{
+                  padding: 15,
+                  background: suomifiDesignTokens.colors.highlightBase,
+                }}
+              >
+                <Button disabled variant="inverted" onClick={() => undefined}>
+                  {t(`negative.labelDisabled`)}
+                </Button>
+              </div>
+              <ExampleWrapper>
+                <Button disabled variant="secondary" onClick={() => undefined}>
+                  {t(`secondary.labelDisabled`)}
+                </Button>
+              </ExampleWrapper>
+              <ExampleWrapper>
+                <Button
+                  disabled
+                  variant="secondaryNoBorder"
+                  onClick={() => undefined}
+                >
+                  {t(`secondaryNoborder.labelDisabled`)}
+                </Button>
+              </ExampleWrapper>
             </ComponentExample>
           </ComponentDescription>
         </Layout>

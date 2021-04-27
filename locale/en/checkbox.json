@@ -2,7 +2,16 @@
   "title": "",
   "intro": "",
   "note.title": "",
-  "note.items": ["", "", "", ""],
+  "note.items": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
   "sections": [
     {
       "title": "",
@@ -23,16 +32,6 @@
     {
       "title": "",
       "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": ""
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": ""
-        },
         {
           "image.key": "",
           "image.alt": "",
@@ -63,7 +62,17 @@
       ]
     }
   ],
-  "exampleRegular.label": "",
-  "exampleRegular.clearButtonLabel": "",
-  "exampleRegular.searchButtonLabel": ""
+  "example.default.title": "",
+  "example.default.content": "",
+  "example.large.title": "",
+  "example.large.description": "",
+  "example.large.content": "",
+  "example.hintstate.title": "",
+  "example.hintstate.description": "",
+  "example.hintstate.content": "",
+  "example.hintstate.hintText": "",
+  "example.hintstate.statusText": "",
+  "example.disabled.title": "",
+  "example.disabled.description": "",
+  "example.disabled.content": ""
 }

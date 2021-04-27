@@ -18,7 +18,7 @@ const Page = (): JSX.Element => (
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <Heading.h1>{t('title')}</Heading.h1>
+        <Heading variant="h1">{t('title')}</Heading>
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
@@ -54,7 +54,7 @@ const Page = (): JSX.Element => (
           <ComponentExample>
             <ExampleLink.external
               className="test-classname"
-              href="http://www.esimerkkiosoite.com"
+              href="https://github.com/vrk-kpa/suomifi-ui-components"
               labelNewWindow={t('exampleExternal.label')}
             >
               {t('exampleExternal.linkText')}

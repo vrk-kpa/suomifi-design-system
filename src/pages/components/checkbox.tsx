@@ -7,19 +7,20 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import { Checkbox } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import Section, { Props as SectionProps } from 'components/Section';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { Checkbox, suomifiDesignTokens } from 'suomifi-ui-components';
+
+Checkbox.displayName = 'Checkbox';
 
 const Page = (): JSX.Element => (
   <Translation ns={['checkbox']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <Heading.h1>{t('title')}</Heading.h1>
+        <Heading variant="h1">{t('title')}</Heading>
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
@@ -51,7 +52,7 @@ const Page = (): JSX.Element => (
           filterProps={[]}
         >
           <ComponentExample>
-            <Checkbox.large>{t('example.large.content')}</Checkbox.large>
+            <Checkbox variant="large">{t('example.large.content')}</Checkbox>
           </ComponentExample>
         </ComponentDescription>
 

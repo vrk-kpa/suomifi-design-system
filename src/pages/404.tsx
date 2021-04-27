@@ -13,7 +13,7 @@ const Page = (): JSX.Element => (
     {(t) => (
       <Layout>
         <SEO title={t('title')} />
-        <Heading.h1>{t('title')}</Heading.h1>
+        <Heading variant="h1">{t('title')}</Heading>
         <Paragraph>
           <Text>{t('intro')}</Text>
         </Paragraph>

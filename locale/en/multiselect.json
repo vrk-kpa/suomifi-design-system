@@ -1,0 +1,53 @@
+{
+  "title": "",
+  "intro": "",
+  "note.title": "",
+  "note.items": ["", "", "", ""],
+  "sections": [
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "text": ""
+        },
+        {
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "",
+      "paragraphs": [
+        {
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.label": "",
+  "example.visualPlaceholder": "",
+  "example.removeAllSelections": "",
+  "example.noItems": "",
+  "example.chipActionLabel": "",
+  "example.tools.jackhammer": "",
+  "example.tools.hammer": "",
+  "example.tools.sledgehammer": "",
+  "example.tools.spade": "",
+  "example.tools.powersaw": "",
+  "example.tools.shovel": "",
+  "example.tools.ironStick": "",
+  "example.tools.rake": "",
+  "example.tools.motorsaw": ""
+}

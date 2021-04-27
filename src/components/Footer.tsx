@@ -7,7 +7,6 @@ import Link, { Props as LinkProps } from 'components/Link';
 
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
 import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg';
-import { ReactComponent as Slack } from 'icons/slack.svg';
 import { ReactComponent as Github } from 'icons/github.svg';
 
 const Content = ({
@@ -140,30 +139,13 @@ const AllContent = ({
             />
           }
           description={t('common:footer.description')}
-          links={t('common:footer.links')}
-          wrapAll={wrapAll}
-        />
-        <Content
-          title={t('common:footer.social.title')}
-          description={t('common:footer.social.description')}
           links={[
-            {
-              icon: (
-                <Slack
-                  style={{
-                    fill: suomifiDesignTokens.colors.whiteBase,
-                    fontSize: '25px',
-                  }}
-                />
-              ),
-              text: t('common:slack.link.text'),
-              url: t('common:slack.link.url'),
-            },
+            ...t('common:footer.links'),
             {
               icon: (
                 <Github
                   style={{
-                    fill: suomifiDesignTokens.colors.whiteBase,
+                    fill: suomifiDesignTokens.colors.brandBase,
                     fontSize: '25px',
                   }}
                 />
@@ -172,11 +154,6 @@ const AllContent = ({
               url: t('common:github.link.url'),
             },
           ]}
-          background={suomifiDesignTokens.colors.brandBase}
-          textColor="whiteBase"
-          linkColor="whiteBase"
-          textDecoration="underline"
-          center={center}
           wrapAll={wrapAll}
         />
       </>

@@ -75,13 +75,12 @@
           "image.alt": "section.paragraph.image.alt",
           "text": "section.paragraph.text"
         }
-      ],
-      "links": []
-    }
+      ]}
   ],
   "default.title": "default.title",
   "default.description": "default.description",
-  "toggle.label": "toggle.label",
+  "toggle.label.button": "toggle.label.button",
+  "toggle.label.input": "toggle.label.input",
   "toggle.state.on": "toggle.state.on",
   "toggle.state.off": "toggle.state.off"
 }

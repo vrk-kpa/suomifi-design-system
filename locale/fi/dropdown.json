@@ -9,7 +9,8 @@
     "Jos valintavaihtoehtoja on vain muutama, hyvä vaihtoehto pudotusvalikolle voi olla valintaruutu- tai valintanappikomponentti.",
     "Järjestä pudotusvalikon sisältö aakkosjärjestykseen tai relevanssin mukaan.",
     "Pudotusvalikon yhteydessä tulee aina käyttää otsaketta (label)",
-    "Ruudunlukijat eivät lue täytetekstiä (visual placeholder). Täyteteksti myös katoaa käyttäjän tehtyä valinnan, joten sitä ei tule käyttää ohjeistukseen"
+    "Ruudunlukijat eivät lue täytetekstiä (visual placeholder). Täyteteksti myös katoaa käyttäjän tehtyä valinnan, joten sitä ei tule käyttää ohjeistukseen",
+    ""
   ],
   "sections": [
     {

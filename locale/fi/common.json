@@ -2,7 +2,7 @@
   "site.title": "Suomi.fi Design System",
   "site.description": "Suomi.fi Design System",
   "site.author": "Suomi.fi",
-  "header.stamp": "Beta",
+  "header.stamp": "",
   "to.main.content": "Siirry pääsisältöön",
   "to.homepage": "Siirry etusivulle",
   "to.sidenav": "Siirry sivunavigaatioon",
@@ -11,14 +11,9 @@
   "react": "Koodiesimerkki (React)",
   "footer.description": "Suomi.fi Design System -kirjaston kehittämisestä vastaa Digi- ja väestötietovirasto.",
   "footer.links": [
-    { "text": "", "url": "" },
-    { "text": "Saavutettavuusseloste", "url": "/accessibility-statement" },
-    { "text": "Suomidigi.fi", "url": "https://www.suomidigi.fi/" }
+    { "text": "Evästekäytännöt", "url": "/privacy-statement" },
+    { "text": "Saavutettavuusseloste", "url": "/accessibility-statement" }
   ],
-  "footer.social.title": "Tämä on Suomi.fi Design Systemin julkinen kehitysversio (beta)",
-  "footer.social.description": "Voit osallistua kehittämiseen Suomidigin Slack-yhteisössä tai Githubissa.",
-  "slack.link.text": "suomidigi-kehittajat",
-  "slack.link.url": "https://suomidigi-kehittajat.slack.com",
   "github.link.text": "suomifi-ui-components",
   "github.link.url": "https://github.com/vrk-kpa/suomifi-ui-components",
   "opens.new.window": "Avautuu uuteen ikkunaan",

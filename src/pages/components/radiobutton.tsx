@@ -7,19 +7,29 @@ import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import { RadioButton } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import Section, { Props as SectionProps } from 'components/Section';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import {
+  RadioButton,
+  RadioButtonGroup as OrigRadioButtonGroup,
+  RadioButtonGroupProps,
+  suomifiDesignTokens,
+} from 'suomifi-ui-components';
+
+RadioButton.displayName = 'RadioButton';
+const RadioButtonGroup = (props: RadioButtonGroupProps): JSX.Element => (
+  <OrigRadioButtonGroup {...props} />
+);
+RadioButtonGroup.displayName = 'RadioButtonGroup';
 
 const Page = (): JSX.Element => (
   <Translation ns={['radiobutton']}>
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <Heading.h1>{t('title')}</Heading.h1>
+        <Heading variant="h1">{t('title')}</Heading>
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
@@ -29,10 +39,10 @@ const Page = (): JSX.Element => (
           <ComponentExample
             style={{ marginBottom: suomifiDesignTokens.spacing.s }}
           >
-            <RadioButton.group
+            <RadioButtonGroup
               name="test-default-group"
               defaultValue="default-radio"
-              label={t('example.default.title')}
+              labelText={t('example.default.title')}
             >
               <RadioButton value="default-radio">
                 {t('example.default.content')}
@@ -43,7 +53,7 @@ const Page = (): JSX.Element => (
               <RadioButton value="default-radio3">
                 {t('example.default.content3')}
               </RadioButton>
-            </RadioButton.group>
+            </RadioButtonGroup>
           </ComponentExample>
         </ComponentDescription>
 
@@ -65,22 +75,22 @@ const Page = (): JSX.Element => (
           filterProps={[]}
         >
           <ComponentExample>
-            <RadioButton.group
+            <RadioButtonGroup
               name="test-large-group"
               defaultValue="default-radio"
-              label={t('example.default.title')}
+              labelText={t('example.default.title')}
               hintText={t('example.large.groupHint')}
             >
-              <RadioButton.large value="default-radio">
+              <RadioButton variant="large" value="default-radio">
                 {t('example.default.content')}
-              </RadioButton.large>
-              <RadioButton.large value="default-radio2">
+              </RadioButton>
+              <RadioButton variant="large" value="default-radio2">
                 {t('example.default.content2')}
-              </RadioButton.large>
-              <RadioButton.large value="default-radio3">
+              </RadioButton>
+              <RadioButton variant="large" value="default-radio3">
                 {t('example.default.content3')}
-              </RadioButton.large>
-            </RadioButton.group>
+              </RadioButton>
+            </RadioButtonGroup>
           </ComponentExample>
         </ComponentDescription>
 
@@ -91,10 +101,10 @@ const Page = (): JSX.Element => (
           filterProps={[]}
         >
           <ComponentExample>
-            <RadioButton.group
+            <RadioButtonGroup
               name="test-hint-group"
               defaultValue="default-radio"
-              label={t('example.default.title')}
+              labelText={t('example.default.title')}
             >
               <RadioButton
                 value="default-radio"
@@ -108,7 +118,7 @@ const Page = (): JSX.Element => (
               >
                 {t('example.hint.content2')}
               </RadioButton>
-            </RadioButton.group>
+            </RadioButtonGroup>
           </ComponentExample>
         </ComponentDescription>
 
@@ -119,10 +129,10 @@ const Page = (): JSX.Element => (
           filterProps={[]}
         >
           <ComponentExample>
-            <RadioButton.group
+            <RadioButtonGroup
               name="test-disabled-group"
               defaultValue="default-radio"
-              label={t('example.default.title')}
+              labelText={t('example.default.title')}
             >
               <RadioButton value="default-radio" disabled>
                 {t('example.default.content')}
@@ -133,7 +143,7 @@ const Page = (): JSX.Element => (
               <RadioButton value="default-radio3" disabled>
                 {t('example.default.content3')}
               </RadioButton>
-            </RadioButton.group>
+            </RadioButtonGroup>
           </ComponentExample>
         </ComponentDescription>
       </Layout>

@@ -2,7 +2,7 @@
   "name": "suomifi-design-system",
   "private": true,
   "description": "Suomi.fi Design System",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "author": "Jari Porola <jari.porola@gmail.com>",
   "dependencies": {
     "@csstools/normalize.css": "^10.1.0",

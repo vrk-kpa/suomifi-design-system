@@ -2,8 +2,10 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import {
+  Heading as SuomifiHeading,
+  suomifiDesignTokens,
+} from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -13,10 +15,9 @@ import Section, { Props as SectionProps } from 'components/Section';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import {
-  Heading as SuomifiHeading,
-  Text as SuomifiText,
-} from 'components/ExampleComponents';
+import { Text as SuomifiText } from 'components/ExampleComponents';
+
+SuomifiHeading.displayName = 'Heading';
 
 interface ExampleBlockProps {
   title: string;

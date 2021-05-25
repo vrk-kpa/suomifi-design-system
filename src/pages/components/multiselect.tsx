@@ -114,10 +114,10 @@ const Page: React.FC = (): React.ReactElement => {
                   labelText={t('example.label')}
                   items={tools}
                   chipListVisible
-                  chipActionLabel={t('example.chipActionLabel')}
+                  ariaChipActionLabel={t('example.chipActionLabel')}
                   removeAllButtonLabel={t('example.removeAllSelections')}
                   visualPlaceholder={t('example.visualPlaceholder')}
-                  emptyItemsLabel={t('example.noItems')}
+                  noItemsText={t('example.noItems')}
                   defaultSelectedItems={defaultSelectedTools}
                 />
               </ComponentExample>

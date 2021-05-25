@@ -1,7 +1,6 @@
 import {
   Breadcrumb as OrigBreadcrumb,
   Link as OrigLink,
-  Heading as OrigHeading,
   Text as OrigText,
   SearchInput as OrigSearchInput,
   Icon as OrigIcon,
@@ -17,9 +16,6 @@ addDisplayNames(Breadcrumb, OrigBreadcrumb, 'Breadcrumb');
 
 export class Link extends OrigLink {}
 addDisplayNames(Link, OrigLink, 'Link');
-
-export class Heading extends OrigHeading {}
-addDisplayNames(Heading, OrigHeading, 'Heading');
 
 export class Text extends OrigText {}
 addDisplayNames(Text, OrigText, 'Text');

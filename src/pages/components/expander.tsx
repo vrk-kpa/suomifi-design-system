@@ -53,12 +53,7 @@ const Page = (): JSX.Element => (
         <ComponentDescription>
           <ComponentExample>
             <Expander>
-              <ExpanderTitleButton
-                ariaOpenText="Open expander"
-                ariaCloseText="Close expander"
-              >
-                {t('expander.title')}
-              </ExpanderTitleButton>
+              <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
               <ExpanderContent>{t('expander.content')}</ExpanderContent>
             </Expander>
           </ComponentExample>
@@ -83,12 +78,7 @@ const Page = (): JSX.Element => (
         >
           <ComponentExample>
             <Expander>
-              <ExpanderTitleButton
-                ariaOpenText="Open expander"
-                ariaCloseText="Close expander"
-              >
-                {t('expander.title')}
-              </ExpanderTitleButton>
+              <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
               <ExpanderContent noPadding>
                 <p
                   style={{
@@ -112,12 +102,7 @@ const Page = (): JSX.Element => (
         >
           <ComponentExample>
             <Expander>
-              <ExpanderTitleButton
-                ariaOpenText="Open expander"
-                ariaCloseText="Close expander"
-              >
-                {t('expander.title')}
-              </ExpanderTitleButton>
+              <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
               <ExpanderContent>{t('expander.content')}</ExpanderContent>
             </Expander>
           </ComponentExample>
@@ -130,34 +115,19 @@ const Page = (): JSX.Element => (
         >
           <ComponentExample>
             <ExpanderGroup
-              OpenAllText={t('group.open')}
-              CloseAllText={t('group.close')}
+              openAllText={t('group.open')}
+              closeAllText={t('group.close')}
             >
               <Expander>
-                <ExpanderTitleButton
-                  ariaOpenText="Open expander"
-                  ariaCloseText="Close expander"
-                >
-                  {t('expander.title')}
-                </ExpanderTitleButton>
+                <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
                 <ExpanderContent>{t('expander.content')}</ExpanderContent>
               </Expander>
               <Expander>
-                <ExpanderTitleButton
-                  ariaOpenText="Open expander"
-                  ariaCloseText="Close expander"
-                >
-                  {t('expander.title')}
-                </ExpanderTitleButton>
+                <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
                 <ExpanderContent>{t('expander.content')}</ExpanderContent>
               </Expander>
               <Expander>
-                <ExpanderTitleButton
-                  ariaOpenText="Open expander"
-                  ariaCloseText="Close expander"
-                >
-                  {t('expander.title')}
-                </ExpanderTitleButton>
+                <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
                 <ExpanderContent>{t('expander.content')}</ExpanderContent>
               </Expander>
             </ExpanderGroup>

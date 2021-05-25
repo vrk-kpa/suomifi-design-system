@@ -11,8 +11,12 @@ import Section, { Props as SectionProps } from 'components/Section';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import { Heading as SuomifiHeading } from 'components/ExampleComponents';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import {
+  Heading as SuomifiHeading,
+  suomifiDesignTokens,
+} from 'suomifi-ui-components';
+
+SuomifiHeading.displayName = 'Heading';
 
 const Page = (): JSX.Element => (
   <Translation ns={['heading']}>

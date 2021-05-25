@@ -16,6 +16,7 @@ export default (t) => ({
     { to: '/components/expander/', label: t('expander:title') },
     { to: '/components/link/', label: t('link:title') },
     { to: '/components/block/', label: t('block:title') },
+    { to: '/components/multiselect/', label: t('multiselect:title') },
     { to: '/components/breadcrumb/', label: t('breadcrumb:title') },
     { to: '/components/heading/', label: t('heading:title') },
     { to: '/components/button/', label: t('button:title') },
@@ -26,6 +27,5 @@ export default (t) => ({
     { to: '/components/toggle/', label: t('toggle:title') },
     { to: '/components/radiobutton/', label: t('radiobutton:title') },
     { to: '/components/checkbox/', label: t('checkbox:title') },
-    // { to: '/components/multiselect/', label: t('multiselect:title') },
   ],
 });

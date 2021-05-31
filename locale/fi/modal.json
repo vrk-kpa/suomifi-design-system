@@ -1,0 +1,87 @@
+{
+  "title": "Dialogi (Modal)",
+  "intro": "Dialogi on modaalinen komponentti, millä voidaan esittää käyttäjälle olennaista tietoa muun sisällön päällä, samalla muu sisältö piilottaen. Dialogia voidaan käyttää esimerkiksi ilmoitusten näyttämiseen, toimintojen suorittamiseen poistumatta nykyisestä näkymästä tai toimintojen varmistamiseen.  Dialogi piilottaa nykyisen näkymän ja lukitsee fokuksen dialogin näkymän sisään. Kun toiminto on saatu suoritettua tai mikäli käyttäjä peruuttaa toiminnon, dialogi sulkeutuu ja palataan alkuperäiseen näkymään.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Dialogin kanssa tulee aina käyttää otsaketta (ModalTitle). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
+    "Dialogin alatunnisteessa tulee aina olla toimintopainike millä dialogi voidaan sulkea.",
+    "Dialogin ulkopuolella olevat sisällöt piilotetaan ruudunlukijoilta.",
+    "Fokus siirretään oletuksena dialogin otsakkeeseen dialogin avaamisen yhteydessä.",
+    "Fokus lukitaan dialogin sisään, eivätkä dialogin ulkopuolella olevat sisällöt ole fokusoitavissa.",
+    "Dialogin sulkemisen yhteydessä fokus palautetaan samaan elementtiin missä se oli ennen dialogin avaamista.",
+    "Dialogia käytetään tilanteissa missä halutaan kiinniittää käyttäjän huomio vain tiettyyn asiaan tai toiminnallisuuteen."
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Dialogi koostuu otsakkeesta, sisältöalueesta ja alatunnisteesta sekä taustalle jäävät elementit visuaalisesti himmentävästä peitteestä. Otsake sijaitsee dialogin yläreunassa ja toimii osana dialogin sisältöä. Otsake saa fokuksen dialogin avaamisen yhteydessä. Sisältöalueelle voidaan sijoittaa mitä tahansa sisältöä, pois lukien uudet dialogit. Alatunniste sisältää aina painikkeen millä dialogi sulkeutuu sekä mahdollisia toissijaisia painikkeita. Tällaisia painikkeita voivat olla esimerkiksi 'OK' ja 'Peruuta'."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Dialogia voidaan käyttää joko pienempikokoisena varmistusdialogina tai laajempia kokonaisuuksia tukevana dialogina (oletus). Dialogi tukee sekä pieniä näyttöjä että työpöytäkäyttöä. Pienillä näytöillä dialogi täyttää aina koko näytön. Työpöytäkäytössä dialogin maksimikorkeus on aina 50 pikseliä vähemmän kuin näytön korkeus."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+
+  "example.openText": "Avaa dialogi",
+  "example.ok": "Hyväksy",
+  "example.okAria": "Hyväksy ja sulje dialogi",
+  "example.cancel": "Peruuta ja sulje dialogi",
+  "example.cancelAria": "Peruuta ja sulje dialogi",
+  "example.default.heading": "Täysikokokoinen dialogi",
+  "example.default.description": "Kun halutaan suorittaa laajempia toimintoja poistumatta nykyisestä näkymästä, voidaan käyttää täysikokoista dialogia. Dialogin oletusleveys on työpöytäkäytössä 800 pikseliä ja minimikorkeus 230 pikseliä. Työpöytäkäytössä dialogin korkeus kasvaa sisällön mukana ja sisältöalue muuttuu vieritettäväksi (scrolling), kun sisältö ei enää mahdu saatavilla olevaan tilaan.",
+  "example.default.title": "Valitse julkaistavat kieliversiot",
+  "example.default.content": "Valitse, mitkä kieliversiot haluat julkaista. Sisältö julkaistaan heti, ellet ajasta sisällölle julkaisuajankohtaa. Julkaisemasi sisältö näkyy Suomi.fi verkkopalvelussa noin 10-15 minuutin viiveellä. Jos jätät kieliversion luonnostilaan, se näkyy vain palvelutietovarannossa.",
+  "example.default.groupOpenAll": "Avaa laajennuspaanelit",
+  "example.default.groupCloseAll": "Sulje laajennuspaanelit",
+  "example.default.ariaOpen": "Avaa laajennuspaneeli",
+  "example.default.ariaClose": "Sulje laajennuspaneeli",
+  "example.default.checkboxContentEdited": "Muokattu",
+  "example.default.date": "16.4.2021 2.20",
+  "example.default.checkboxContentEditedBy": "Muokkaaja",
+  "example.default.email": "taneli.kayttaja@dvv.fi",
+  "example.default.checkboxHint1": "Suomi - luonnos",
+  "example.default.checkboxLabel1": "Sukunimen muuttaminen",
+  "example.default.checkboxHint2": "Ruotsi - julkaistu",
+  "example.default.checkboxLabel2": "Ändring av efternamn",
+  "example.default.checkboxHint3": "Englanti - muokattu",
+  "example.default.checkboxLabel3": "Change of surname",
+  "example.default.publish": "Julkaise",
+  "example.default.ariaPublishDisabled": "Julkaistavia tietoja ei ole valittu.",
+  "example.default.cancel": "Peruuta",
+  "example.confirm.heading": "Varmistusdialogi",
+  "example.confirm.description": "Ilmoitusten näyttämiseen ja toimintojen varmistamiseen käytetään varmistusdialogia. Varmistusdialogi keskeyttää käyttäjän toiminnan ja pyytää varmistuksen meneillään olevalle toiminnolle tai ilmoitukselle. Esimerkiksi ennen kohteen poistamista käyttäjältä varmistetaan, että hän todella haluaa poistaa valitsemansa kohteen. Varmistusdialogin oletusleveys on työpöytäkäytössä 540 pikseliä ja minimikorkeus 190 pikseliä. Työpöytäkäytössä varmistusdialogin korkeus kasvaa sisällön mukana, mutta varmistusdialogi ei tue vieritystä (scrolling). Varmistusdialogia tulee käyttää vain lyhyiden sisältöjen esittämiseen.",
+  "example.confirm.title": "Poista ilmoitettu tieto",
+  "example.confirm.content": "Olet poistamassa kutsumanimen voimassaolevista tiedoistasi.",
+  "example.confirm.save": "Hyväksy",
+  "example.confirm.ariaSave": "Hyväksy tietojen poistaminen ja sulje dialogi.",
+  "example.confirm.cancel": "Peruuta",
+  "example.confirm.ariaCancel": "Peruuta tietojen poistaminen ja sulje dialogi.",
+  "example.smallScreen.heading": "Dialogi pienillä näytöillä",
+  "example.smallScreen.description": "Pienillä näytöillä dialogi täyttää aina koko näytön riippumatta siitä onko kyseessä varmistusdialogi vai täysikokoinen dialogi.",
+  "example.smallScreen.title": "Dialogi pienillä näytöillä",
+  "example.smallScreen.content": "Dialogin sisältö"
+}

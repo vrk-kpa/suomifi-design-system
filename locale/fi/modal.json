@@ -9,7 +9,7 @@
     "Fokus siirretään oletuksena dialogin otsakkeeseen dialogin avaamisen yhteydessä.",
     "Fokus lukitaan dialogin sisään, eivätkä dialogin ulkopuolella olevat sisällöt ole fokusoitavissa.",
     "Dialogin sulkemisen yhteydessä fokus palautetaan samaan elementtiin missä se oli ennen dialogin avaamista.",
-    "Dialogia käytetään tilanteissa missä halutaan kiinniittää käyttäjän huomio vain tiettyyn asiaan tai toiminnallisuuteen."
+    "Dialogia käytetään tilanteissa missä halutaan kiinnittää käyttäjän huomio vain tiettyyn asiaan tai toiminnallisuuteen."
   ],
   "sections": [
     {

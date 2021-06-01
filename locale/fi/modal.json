@@ -1,15 +1,15 @@
 {
   "title": "Dialogi (Modal)",
-  "intro": "Dialogi on modaalinen komponentti, millä voidaan esittää käyttäjälle olennaista tietoa muun sisällön päällä, samalla muu sisältö piilottaen. Dialogia voidaan käyttää esimerkiksi ilmoitusten näyttämiseen, toimintojen suorittamiseen poistumatta nykyisestä näkymästä tai toimintojen varmistamiseen.  Dialogi piilottaa nykyisen näkymän ja lukitsee fokuksen dialogin näkymän sisään. Kun toiminto on saatu suoritettua tai mikäli käyttäjä peruuttaa toiminnon, dialogi sulkeutuu ja palataan alkuperäiseen näkymään.",
+  "intro": "Dialogi on modaalinen komponentti, jolla voidaan esittää käyttäjälle olennaista tietoa muun sisällön päällä, samalla muu sisältö piilottaen. Dialogia voidaan käyttää esimerkiksi ilmoitusten näyttämiseen, toimintojen suorittamiseen poistumatta nykyisestä näkymästä tai toimintojen varmistamiseen.  Dialogi peittää nykyisen näkymän ja lukitsee fokuksen dialogin näkymän sisään. Kun toiminto on saatu suoritettua tai mikäli käyttäjä peruuttaa toiminnon, dialogi sulkeutuu ja palataan alkuperäiseen näkymään.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Dialogin kanssa tulee aina käyttää otsaketta (ModalTitle). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
-    "Dialogin alatunnisteessa tulee aina olla toimintopainike millä dialogi voidaan sulkea.",
+    "Dialogin alatunnisteen tulee aina sisältää toimintopainike jolla dialogi voidaan sulkea.",
     "Dialogin ulkopuolella olevat sisällöt piilotetaan ruudunlukijoilta.",
     "Fokus siirretään oletuksena dialogin otsakkeeseen dialogin avaamisen yhteydessä.",
     "Fokus lukitaan dialogin sisään, eivätkä dialogin ulkopuolella olevat sisällöt ole fokusoitavissa.",
     "Dialogin sulkemisen yhteydessä fokus palautetaan samaan elementtiin missä se oli ennen dialogin avaamista.",
-    "Dialogia käytetään tilanteissa missä halutaan kiinnittää käyttäjän huomio vain tiettyyn asiaan tai toiminnallisuuteen."
+    "Dialogia käytetään tilanteissa joissa halutaan kiinnittää käyttäjän huomio vain tiettyyn asiaan tai toiminnallisuuteen."
   ],
   "sections": [
     {
@@ -18,7 +18,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Dialogi koostuu otsakkeesta, sisältöalueesta ja alatunnisteesta sekä taustalle jäävät elementit visuaalisesti himmentävästä peitteestä. Otsake sijaitsee dialogin yläreunassa ja toimii osana dialogin sisältöä. Otsake saa fokuksen dialogin avaamisen yhteydessä. Sisältöalueelle voidaan sijoittaa mitä tahansa sisältöä, pois lukien uudet dialogit. Alatunniste sisältää aina painikkeen millä dialogi sulkeutuu sekä mahdollisia toissijaisia painikkeita. Tällaisia painikkeita voivat olla esimerkiksi 'OK' ja 'Peruuta'."
+          "text": "Dialogi koostuu otsakkeesta, sisältöalueesta ja alatunnisteesta sekä taustalle jäävät elementit visuaalisesti himmentävästä peitteestä. Otsake sijaitsee dialogin yläreunassa ja toimii osana dialogin sisältöä. Otsake saa fokuksen dialogin avaamisen yhteydessä. Sisältöalueelle voidaan sijoittaa mitä tahansa sisältöä, pois lukien uudet dialogit. Alatunnisteen tulee aina sisältää painike millä dialogi sulkeutuu. Alatunniste voi lisäksi sisältää mahdollisia toissijaisia painikkeita. Tällaisia painikkeita voivat olla esimerkiksi 'OK' ja 'Peruuta'."
         }
       ],
       "links": [

@@ -18,7 +18,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Dialogi koostuu otsakkeesta, sisältöalueesta ja alatunnisteesta sekä taustalle jäävät elementit visuaalisesti himmentävästä peitteestä. Otsake sijaitsee dialogin yläreunassa ja toimii osana dialogin sisältöä. Otsake saa fokuksen dialogin avaamisen yhteydessä. Sisältöalueelle voidaan sijoittaa mitä tahansa sisältöä, pois lukien uudet dialogit. Alatunnisteen tulee aina sisältää painike millä dialogi sulkeutuu. Alatunniste voi lisäksi sisältää mahdollisia toissijaisia painikkeita. Tällaisia painikkeita voivat olla esimerkiksi 'OK' ja 'Peruuta'."
+          "text": "Dialogi koostuu otsakkeesta, sisältöalueesta ja alatunnisteesta sekä taustalle jäävät elementit visuaalisesti himmentävästä peitteestä. Otsake sijaitsee dialogin yläreunassa ja toimii osana dialogin sisältöä. Otsake saa fokuksen dialogin avaamisen yhteydessä. Sisältöalueelle voidaan sijoittaa mitä tahansa sisältöä, pois lukien uudet dialogit. Alatunnisteen tulee aina sisältää painike millä dialogi sulkeutuu. Alatunniste voi lisäksi sisältää mahdollisia toissijaisia painikkeita esimerkiksi toiminnon peruuttamista varten."
         }
       ],
       "links": [

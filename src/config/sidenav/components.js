@@ -10,6 +10,7 @@ export default (t) => ({
       showAsTo: '/components/info/',
       label: t('components:info.title'),
     },
+    { to: '/components/modal/', label: t('modal:title') },
     { to: '/components/searchinput/', label: t('searchinput:title') },
     { to: '/components/icon/', label: t('icon:title') },
     { to: '/components/languagemenu/', label: t('languagemenu:title') },
@@ -27,6 +28,5 @@ export default (t) => ({
     { to: '/components/toggle/', label: t('toggle:title') },
     { to: '/components/radiobutton/', label: t('radiobutton:title') },
     { to: '/components/checkbox/', label: t('checkbox:title') },
-    { to: '/components/modal/', label: t('modal:title') },
   ],
 });

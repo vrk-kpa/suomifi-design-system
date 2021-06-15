@@ -42,8 +42,9 @@
     }
   ],
   "example.label": "Työkalut",
-  "example.visualPlaceholder": "Valitse työkalu(t)",
+  "example.visualPlaceholder": "Valitse työkalut",
   "example.removeAllSelections": "Poista kaikki valinnat",
+  "example.ariaSelectedAmountText": "työkalua valittu",
   "example.noItems": "Ei vaihtoehtoja",
   "example.chipActionLabel": "Poista",
   "example.tools.jackhammer": "Poravasara",

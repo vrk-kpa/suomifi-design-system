@@ -3,9 +3,9 @@ import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import {
-  Combobox as OrigCombobox,
-  ComboboxData,
-  ComboboxProps,
+  MultiSelect as OrigMultiSelect,
+  MultiSelectData,
+  MultiSelectProps,
 } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
@@ -18,12 +18,12 @@ import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import NotificationBox from 'components/NotificationBox';
 
-const Combobox = function <T extends ComboboxData>(
-  props: ComboboxProps<T>,
+const MultiSelect = function <T extends MultiSelectData>(
+  props: MultiSelectProps<T>,
 ): JSX.Element {
-  return <OrigCombobox {...props} />;
+  return <OrigMultiSelect {...props} />;
 };
-Combobox.displayName = 'Combobox';
+MultiSelect.displayName = 'MultiSelect';
 
 const Page: React.FC = (): React.ReactElement => {
   return (
@@ -110,7 +110,7 @@ const Page: React.FC = (): React.ReactElement => {
 
             <ComponentDescription>
               <ComponentExample>
-                <Combobox
+                <MultiSelect
                   labelText={t('example.label')}
                   items={tools}
                   chipListVisible
@@ -119,6 +119,7 @@ const Page: React.FC = (): React.ReactElement => {
                   visualPlaceholder={t('example.visualPlaceholder')}
                   noItemsText={t('example.noItems')}
                   defaultSelectedItems={defaultSelectedTools}
+                  ariaSelectedAmountText={t('example.ariaSelectedAmountText')}
                 />
               </ComponentExample>
             </ComponentDescription>

@@ -39,6 +39,7 @@
   "example.label": "example.label",
   "example.visualPlaceholder": "example.visualPlaceholder",
   "example.removeAllSelections": "example.removeAllSelections",
+  "example.ariaSelectedAmountText": "example.ariaSelectedAmountText",
   "example.noItems": "example.noItems",
   "example.chipActionLabel": "example.chipActionLabel",
   "example.tools.jackhammer": "example.tools.jackhammer",

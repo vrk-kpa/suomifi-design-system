@@ -197,6 +197,13 @@ source_file = locale/af/checkbox.json
 source_lang = af
 type = KEYVALUEJSON
 
+[suomifi-design-system.modal-json]
+file_filter = locale/<lang>/modal.json
+minimum_perc = 0
+source_file = locale/af/modal.json
+source_lang = af
+type = KEYVALUEJSON
+
 [suomifi-design-system.radiobutton-json]
 file_filter = locale/<lang>/radiobutton.json
 minimum_perc = 0

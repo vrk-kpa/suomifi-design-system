@@ -74,12 +74,11 @@ const Page: React.FC = (): React.ReactElement => {
             <ComponentExample>
               <TextInput
                 labelText={t('exampleError.label')}
-                hintText={t('exampleError.hintText')}
                 statusText={statusText(t)}
                 status={status}
                 debounce={300}
-                onChange={() => {
-                  setErrorState(!errorState);
+                onChange={(value) => {
+                  setErrorState(!value);
                 }}
               />
             </ComponentExample>

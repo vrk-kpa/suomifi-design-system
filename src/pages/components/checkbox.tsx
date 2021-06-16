@@ -8,12 +8,11 @@ import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+import { Checkbox } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import Section, { Props as SectionProps } from 'components/Section';
-import { Checkbox, suomifiDesignTokens } from 'suomifi-ui-components';
-
-Checkbox.displayName = 'Checkbox';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <Translation ns={['checkbox']}>

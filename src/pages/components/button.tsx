@@ -14,8 +14,6 @@ import ComponentExample from 'components/ComponentExample';
 import MobileDevice from 'components/MobileDevice';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
-Button.displayName = 'Button';
-
 const ExampleWrapper = ({
   children,
 }: {

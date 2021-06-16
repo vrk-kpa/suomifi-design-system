@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { Button, suomifiDesignTokens } from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -13,6 +13,7 @@ import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import MobileDevice from 'components/MobileDevice';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+import { Button } from 'components/ExampleComponents';
 
 const ExampleWrapper = ({
   children,

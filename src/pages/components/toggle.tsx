@@ -14,7 +14,7 @@ import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import { ToggleButton, ToggleInput } from 'components/ExampleComponents';
 
-const Page: React.FC = (): React.ReactElement => {
+const Page = (): React.ReactElement => {
   const [isButtonChecked, setButtonChecked] = useState(false);
   const [isInputChecked, setInputChecked] = useState(false);
 

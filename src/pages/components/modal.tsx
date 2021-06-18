@@ -2,33 +2,34 @@ import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-
+import { suomifiDesignTokens, ModalProps } from 'suomifi-ui-components';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import ComponentDescription from 'components/ComponentDescription';
-import Section, { Props as SectionProps } from 'components/Section';
-import ComponentExample from 'components/ComponentExample';
 import {
-  Modal as OrigModal,
-  ModalProps,
-  ModalContent as OrigModalContent,
-  ModalContentProps,
-  ModalTitle as OrigModalTitle,
-  ModalTitleProps,
-  ModalFooter as OrigModalFooter,
-  ModalFooterProps,
+  Text,
+  Paragraph,
+  Modal,
+  ModalContent,
+  ModalTitle,
+  ModalFooter,
   Button,
   Expander,
   ExpanderGroup,
   ExpanderContent,
   ExpanderTitle,
   Checkbox,
-  suomifiDesignTokens,
   VisuallyHidden,
-} from 'suomifi-ui-components';
+} from 'components/ExampleComponents';
+import {
+  Heading,
+  Text as ResponsiveText,
+  Paragraph as ResponsiveParagraph,
+} from 'components/ResponsiveComponents';
+import ComponentDescription from 'components/ComponentDescription';
+import Section, { Props as SectionProps } from 'components/Section';
+import ComponentExample from 'components/ComponentExample';
 
 const Page = (): JSX.Element => (
   <Translation ns={['modal']}>
@@ -37,9 +38,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        <ResponsiveParagraph.lead>
+          <ResponsiveText.lead>{t('intro')}</ResponsiveText.lead>
+        </ResponsiveParagraph.lead>
 
         <ConfirmExample title="" desc="" noCode />
 
@@ -92,21 +93,7 @@ const ExpanderExampleContent = (): JSX.Element => (
     )}
   </Translation>
 );
-
-const Modal = (props: ModalProps): JSX.Element => <OrigModal {...props} />;
-Modal.displayName = 'Modal';
-const ModalContent = (props: ModalContentProps): JSX.Element => (
-  <OrigModalContent {...props} />
-);
-Modal.displayName = 'Modal';
-const ModalTitle = (props: ModalTitleProps): JSX.Element => (
-  <OrigModalTitle {...props} />
-);
-Modal.displayName = 'Modal';
-const ModalFooter = (props: ModalFooterProps): JSX.Element => (
-  <OrigModalFooter {...props} />
-);
-Modal.displayName = 'Modal';
+ExpanderExampleContent.displayName = 'ExpanderExampleContent';
 
 const DefaultExample = ({
   title,

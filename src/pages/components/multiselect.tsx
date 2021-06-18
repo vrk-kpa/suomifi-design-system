@@ -2,11 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import {
-  MultiSelect as OrigMultiSelect,
-  MultiSelectData,
-  MultiSelectProps,
-} from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -17,13 +12,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import NotificationBox from 'components/NotificationBox';
-
-const MultiSelect = function <T extends MultiSelectData>(
-  props: MultiSelectProps<T>,
-): JSX.Element {
-  return <OrigMultiSelect {...props} />;
-};
-MultiSelect.displayName = 'MultiSelect';
+import { MultiSelect } from 'components/ExampleComponents';
 
 const Page: React.FC = (): React.ReactElement => {
   return (

@@ -1,5 +1,7 @@
 import React, { ComponentClass } from 'react';
 
+type SourceOrDestinationComp = ComponentClass | Function;
+
 const getComponentWithDisplayName = (
   Comp: Function,
   displayName: string,
@@ -10,7 +12,7 @@ const getComponentWithDisplayName = (
 };
 
 const getVariants = (
-  Comp: ComponentClass,
+  Comp: SourceOrDestinationComp,
   displayName: string,
 ): Record<string, Function> =>
   Object.keys(Comp)
@@ -20,8 +22,8 @@ const getVariants = (
     .reduce((obj, item) => ({ ...obj, ...item }), {});
 
 export const addDisplayNames = (
-  DestComp: ComponentClass,
-  SourceComp: ComponentClass,
+  DestComp: SourceOrDestinationComp,
+  SourceComp: SourceOrDestinationComp,
   displayName: string,
 ): void => {
   Object.assign(DestComp, {

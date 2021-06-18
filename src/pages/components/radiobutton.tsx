@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -11,18 +12,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import Section, { Props as SectionProps } from 'components/Section';
-import {
-  RadioButton,
-  RadioButtonGroup as OrigRadioButtonGroup,
-  RadioButtonGroupProps,
-  suomifiDesignTokens,
-} from 'suomifi-ui-components';
-
-RadioButton.displayName = 'RadioButton';
-const RadioButtonGroup = (props: RadioButtonGroupProps): JSX.Element => (
-  <OrigRadioButtonGroup {...props} />
-);
-RadioButtonGroup.displayName = 'RadioButtonGroup';
+import { RadioButton, RadioButtonGroup } from 'components/ExampleComponents';
 
 const Page = (): JSX.Element => (
   <Translation ns={['radiobutton']}>

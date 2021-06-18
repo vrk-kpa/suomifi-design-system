@@ -14,11 +14,8 @@ import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { TextInput } from 'components/ExampleComponents';
 
-const Page: React.FC = (): React.ReactElement => {
+const Page = (): React.ReactElement => {
   const [errorState, setErrorState] = React.useState(true);
-  const statusText = (t: Function): string => {
-    return errorState ? t('exampleError.statusText') : undefined;
-  };
   const status = errorState ? 'error' : 'default';
 
   return (
@@ -74,7 +71,9 @@ const Page: React.FC = (): React.ReactElement => {
             <ComponentExample>
               <TextInput
                 labelText={t('exampleError.label')}
-                statusText={statusText(t)}
+                {...(errorState
+                  ? { statusText: t('exampleError.statusText') }
+                  : {})}
                 status={status}
                 debounce={300}
                 onChange={(value) => {

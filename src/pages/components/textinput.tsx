@@ -14,90 +14,104 @@ import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { TextInput } from 'components/ExampleComponents';
 
-const Page = (): JSX.Element => (
-  <Translation ns={['textinput']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+const Page = (): React.ReactElement => {
+  const [errorState, setErrorState] = React.useState(true);
+  const status = errorState ? 'error' : 'default';
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+  return (
+    <Translation ns={['textinput']}>
+      {(t) => (
+        <Layout sideNavData={sideNavData(t)}>
+          <SEO title={t('title')} />
+          <Heading variant="h1">{t('title')}</Heading>
 
-        <ComponentDescription>
-          <ComponentExample
-            style={{ marginBottom: suomifiDesignTokens.spacing.s }}
+          <Paragraph.lead>
+            <Text.lead>{t('intro')}</Text.lead>
+          </Paragraph.lead>
+
+          <ComponentDescription>
+            <ComponentExample
+              style={{ marginBottom: suomifiDesignTokens.spacing.s }}
+            >
+              <TextInput labelText={t('exampleRegular.label')} />
+            </ComponentExample>
+          </ComponentDescription>
+
+          <NoteBox title={t('note.title')} items={t('note.items')} />
+
+          {t<SectionProps[]>('sections').map((section, index) => (
+            <Section
+              key={index}
+              mainTitle={section.title}
+              paragraphs={section.paragraphs}
+              links={section.links}
+            />
+          ))}
+
+          <ComponentDescription
+            mainTitle={t('exampleSuccess.title')}
+            description={t('exampleSuccess.description')}
+            exampleFirst
+            filterProps={[]}
           >
-            <TextInput labelText={t('exampleRegular.label')} />
-          </ComponentExample>
-        </ComponentDescription>
+            <ComponentExample>
+              <TextInput
+                labelText={t('exampleSuccess.label')}
+                status="success"
+              />
+            </ComponentExample>
+          </ComponentDescription>
 
-        <NoteBox title={t('note.title')} items={t('note.items')} />
+          <ComponentDescription
+            mainTitle={t('exampleError.title')}
+            description={t('exampleError.description')}
+            exampleFirst
+            filterProps={[]}
+          >
+            <ComponentExample>
+              <TextInput
+                labelText={t('exampleError.label')}
+                {...(errorState
+                  ? { statusText: t('exampleError.statusText') }
+                  : {})}
+                status={status}
+                debounce={300}
+                onChange={(value) => {
+                  setErrorState(!value);
+                }}
+              />
+            </ComponentExample>
+          </ComponentDescription>
 
-        {t<SectionProps[]>('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
-
-        <ComponentDescription
-          mainTitle={t('exampleSuccess.title')}
-          description={t('exampleSuccess.description')}
-          exampleFirst
-          filterProps={[]}
-        >
-          <ComponentExample>
-            <TextInput labelText={t('exampleSuccess.label')} status="success" />
-          </ComponentExample>
-        </ComponentDescription>
-
-        <ComponentDescription
-          mainTitle={t('exampleError.title')}
-          description={t('exampleError.description')}
-          exampleFirst
-          filterProps={[]}
-        >
-          <ComponentExample>
-            <TextInput
-              labelText={t('exampleError.label')}
-              status="error"
-              statusText={t('exampleError.statusText')}
-            />
-          </ComponentExample>
-        </ComponentDescription>
-
-        <ComponentDescription
-          mainTitle={t('exampleDisabled.title')}
-          description={t('exampleDisabled.description')}
-          exampleFirst
-          filterProps={[]}
-        >
-          <ComponentExample>
-            <TextInput labelText={t('exampleDisabled.label')} disabled />
-          </ComponentExample>
-        </ComponentDescription>
-        <ComponentDescription
-          mainTitle={t('exampleOptional.title')}
-          description={t('exampleOptional.description')}
-          exampleFirst
-          filterProps={[]}
-        >
-          <ComponentExample>
-            <TextInput
-              labelText={t('exampleOptional.label')}
-              icon="mapLocation"
-              optionalText={t('exampleOptional.optionalText')}
-            />
-          </ComponentExample>
-        </ComponentDescription>
-      </Layout>
-    )}
-  </Translation>
-);
+          <ComponentDescription
+            mainTitle={t('exampleDisabled.title')}
+            description={t('exampleDisabled.description')}
+            exampleFirst
+            filterProps={[]}
+          >
+            <ComponentExample>
+              <TextInput labelText={t('exampleDisabled.label')} disabled />
+            </ComponentExample>
+          </ComponentDescription>
+          <ComponentDescription
+            mainTitle={t('exampleOptional.title')}
+            description={t('exampleOptional.description')}
+            exampleFirst
+            filterProps={[]}
+          >
+            <ComponentExample>
+              <TextInput
+                labelText={t('exampleOptional.label')}
+                icon="mapLocation"
+                optionalText={t('exampleOptional.optionalText')}
+              />
+            </ComponentExample>
+          </ComponentDescription>
+        </Layout>
+      )}
+    </Translation>
+  );
+};
 
 export default withI18next()(Page);
 

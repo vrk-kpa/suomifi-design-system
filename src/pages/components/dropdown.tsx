@@ -9,7 +9,6 @@ import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
-import NotificationBox from 'components/NotificationBox';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import { Dropdown, DropdownItem } from 'components/ExampleComponents';
 
@@ -19,7 +18,6 @@ const Page = (): JSX.Element => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
-        <NotificationBox notificationText={t('notification.content')} />
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>

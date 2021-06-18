@@ -13,6 +13,7 @@
   "attachment.label": "attachment.label",
   "authorise.label": "authorise.label",
   "calendar.label": "calendar.label",
+  "calendarChecked.label": "calendarChecked.label",
   "chatHeart.label": "chatHeart.label",
   "chatQuestion.label": "chatQuestion.label",
   "checkCircleFilled.label": "checkCircleFilled.label",
@@ -51,6 +52,8 @@
   "linkBreadcrumb.label": "linkBreadcrumb.label",
   "linkExternal.label": "linkExternal.label",
   "linkList.label": "linkList.label",
+  "listBulleted.label": "listBulleted.label",
+  "listNumbered.label": "listNumbered.label",
   "login.label": "login.label",
   "logout.label": "logout.label",
   "mailSend.label": "mailSend.label",
@@ -77,10 +80,12 @@
   "search.label": "search.label",
   "settings.label": "settings.label",
   "signLanguageContent.label": "signLanguageContent.label",
+  "subDirectory.label": "subDirectory.label",
   "swapRounded.label": "swapRounded.label",
   "swapVertical.label": "swapVertical.label",
   "transportBicycle.label": "transportBicycle.label",
   "transportBus.label": "transportBus.label",
   "transportCar.label": "transportCar.label",
-  "transportWalk.label": "transportWalk.label"
+  "transportWalk.label": "transportWalk.label",
+  "upload.label": "upload.label"
 }

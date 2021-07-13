@@ -8,10 +8,14 @@ import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section, { Props as SectionProps } from 'components/Section';
-import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+import {
+  Heading as ResponsiveHeading,
+  Text,
+  Paragraph,
+} from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import { Heading as SuomifiHeading } from 'components/ExampleComponents';
+import { Heading } from 'components/ExampleComponents';
 import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
@@ -19,7 +23,7 @@ const Page = (): JSX.Element => (
     {(t) => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+        <ResponsiveHeading variant="h1">{t('title')}</ResponsiveHeading>
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>
@@ -45,42 +49,42 @@ const Page = (): JSX.Element => (
               alignItems: 'flex-start',
             }}
           >
-            <SuomifiHeading
+            <Heading
               variant="h1hero"
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading 1 with hero styling
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h1"
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h1
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h2"
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h2
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h3"
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h3
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h4"
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h4
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h5"
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h5
-            </SuomifiHeading>
+            </Heading>
           </ComponentExample>
         </ComponentDescription>
 
@@ -91,48 +95,48 @@ const Page = (): JSX.Element => (
               alignItems: 'flex-start',
             }}
           >
-            <SuomifiHeading
+            <Heading
               variant="h1hero"
               smallScreen
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading 1 hero small screen
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h1"
               smallScreen
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h1 small screen
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h2"
               smallScreen
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h2 small screen
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h3"
               smallScreen
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h3 small screen
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h4"
               smallScreen
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h4 small screen
-            </SuomifiHeading>
-            <SuomifiHeading
+            </Heading>
+            <Heading
               variant="h5"
               smallScreen
               style={{ margin: `${suomifiDesignTokens.spacing.xs} 0` }}
             >
               Heading h5 small screen
-            </SuomifiHeading>
+            </Heading>
           </ComponentExample>
         </ComponentDescription>
       </Layout>

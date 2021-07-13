@@ -2,12 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import {
-  Dropdown,
-  DropdownItem as OrigDropdownItem,
-  DropdownItemProps,
-} from 'suomifi-ui-components';
-
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
@@ -15,15 +9,8 @@ import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
-import NotificationBox from 'components/NotificationBox';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-
-Dropdown.displayName = 'Dropdown';
-const DropdownItem = (props: DropdownItemProps): JSX.Element => {
-  return <OrigDropdownItem {...props} />;
-};
-
-DropdownItem.displayName = 'DropdownItem';
+import { Dropdown, DropdownItem } from 'components/ExampleComponents';
 
 const Page = (): JSX.Element => (
   <Translation ns={['dropdown']}>
@@ -31,7 +18,6 @@ const Page = (): JSX.Element => (
       <Layout sideNavData={sideNavData(t)}>
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
-        <NotificationBox notificationText={t('notification.content')} />
 
         <Paragraph.lead>
           <Text.lead>{t('intro')}</Text.lead>

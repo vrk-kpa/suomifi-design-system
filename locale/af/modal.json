@@ -1,0 +1,87 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item"
+  ],
+  "sections": [
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    }
+  ],
+
+  "example.openText": "example.openText",
+  "example.ok": "example.ok",
+  "example.okAria": "example.okAria",
+  "example.cancel": "example.cancel",
+  "example.cancelAria": "example.cancelAria",
+  "example.default.heading": "example.default.heading",
+  "example.default.description": "example.default.description",
+  "example.default.title": "example.default.title",
+  "example.default.content": "example.default.content",
+  "example.default.groupOpenAll": "example.default.groupOpenAll",
+  "example.default.groupCloseAll": "example.default.groupCloseAll",
+  "example.default.ariaOpen": "example.default.ariaOpen",
+  "example.default.ariaClose": "example.default.ariaClose",
+  "example.default.checkboxContentEdited": "example.default.checkboxContentEdited",
+  "example.default.date": "example.default.date",
+  "example.default.checkboxContentEditedBy": "example.default.checkboxContentEditedBy",
+  "example.default.email": "example.default.email",
+  "example.default.checkboxHint1": "example.default.checkboxHint1",
+  "example.default.checkboxLabel1": "example.default.checkboxLabel1",
+  "example.default.checkboxHint2": "example.default.checkboxHint2",
+  "example.default.checkboxLabel2": "example.default.checkboxLabel2",
+  "example.default.checkboxHint3": "example.default.checkboxHint3",
+  "example.default.checkboxLabel3": "example.default.checkboxLabel3",
+  "example.default.publish": "example.default.publish",
+  "example.default.ariaPublishDisabled": "example.default.ariaPublishDisabled",
+  "example.default.cancel": "example.default.cancel",
+  "example.confirm.heading": "example.confirm.heading",
+  "example.confirm.description": "example.confirm.description",
+  "example.confirm.title": "example.confirm.title",
+  "example.confirm.content": "example.confirm.content",
+  "example.confirm.save": "example.confirm.save",
+  "example.confirm.ariaSave": "example.confirm.ariaSave",
+  "example.confirm.cancel": "example.confirm.cancel",
+  "example.confirm.ariaCancel": "example.confirm.ariaCancel",
+  "example.smallScreen.heading": "example.smallScreen.heading",
+  "example.smallScreen.description": "example.smallScreen.description",
+  "example.smallScreen.title": "example.smallScreen.title",
+  "example.smallScreen.content": "example.smallScreen.content"
+}

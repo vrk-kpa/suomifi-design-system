@@ -15,12 +15,10 @@ import {
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import Annotation from 'components/Annotation';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/styles';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import { ReactComponent as Slack } from 'icons/slack.svg';
 
 const iconCategories = [
   {
@@ -115,22 +113,6 @@ const Page = (): JSX.Element => (
             </ComponentExample>
           </ComponentDescription>
         ))}
-        <Annotation
-          title={t('note.title')}
-          description={t('note.description')}
-          link={{
-            icon: (
-              <Slack
-                style={{
-                  fill: suomifiDesignTokens.colors.whiteBase,
-                  fontSize: '16px',
-                }}
-              />
-            ),
-            text: t('note.link.text'),
-            url: t('note.link.url'),
-          }}
-        />
       </Layout>
     )}
   </Translation>

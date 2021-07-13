@@ -2,17 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import {
-  Expander as OrigExpander,
-  ExpanderProps,
-  ExpanderGroup as OrigExpanderGroup,
-  ExpanderGroupProps,
-  ExpanderTitleButton as OrigExpanderTitleButton,
-  ExpanderTitleButtonProps,
-  ExpanderContent as OrigExpanderContent,
-  ExpanderContentProps,
-  suomifiDesignTokens,
-} from 'suomifi-ui-components';
+import { suomifiDesignTokens } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -22,23 +12,12 @@ import NoteBox from 'components/NoteBox';
 import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-
-const Expander = (props: ExpanderProps): JSX.Element => (
-  <OrigExpander {...props} />
-);
-Expander.displayName = 'Expander';
-const ExpanderGroup = (props: ExpanderGroupProps): JSX.Element => (
-  <OrigExpanderGroup {...props} />
-);
-ExpanderGroup.displayName = 'ExpanderGroup';
-const ExpanderTitleButton = (props: ExpanderTitleButtonProps): JSX.Element => (
-  <OrigExpanderTitleButton {...props} />
-);
-ExpanderTitleButton.displayName = 'ExpanderTitleButton';
-const ExpanderContent = (props: ExpanderContentProps): JSX.Element => (
-  <OrigExpanderContent {...props} />
-);
-ExpanderContent.displayName = 'ExpanderContent';
+import {
+  Expander,
+  ExpanderGroup,
+  ExpanderTitleButton,
+  ExpanderContent,
+} from 'components/ExampleComponents';
 
 const Page = (): JSX.Element => (
   <Translation ns={['expander']}>
@@ -53,12 +32,7 @@ const Page = (): JSX.Element => (
         <ComponentDescription>
           <ComponentExample>
             <Expander>
-              <ExpanderTitleButton
-                ariaOpenText="Open expander"
-                ariaCloseText="Close expander"
-              >
-                {t('expander.title')}
-              </ExpanderTitleButton>
+              <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
               <ExpanderContent>{t('expander.content')}</ExpanderContent>
             </Expander>
           </ComponentExample>
@@ -83,12 +57,7 @@ const Page = (): JSX.Element => (
         >
           <ComponentExample>
             <Expander>
-              <ExpanderTitleButton
-                ariaOpenText="Open expander"
-                ariaCloseText="Close expander"
-              >
-                {t('expander.title')}
-              </ExpanderTitleButton>
+              <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
               <ExpanderContent noPadding>
                 <p
                   style={{
@@ -112,12 +81,7 @@ const Page = (): JSX.Element => (
         >
           <ComponentExample>
             <Expander>
-              <ExpanderTitleButton
-                ariaOpenText="Open expander"
-                ariaCloseText="Close expander"
-              >
-                {t('expander.title')}
-              </ExpanderTitleButton>
+              <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
               <ExpanderContent>{t('expander.content')}</ExpanderContent>
             </Expander>
           </ComponentExample>
@@ -130,34 +94,19 @@ const Page = (): JSX.Element => (
         >
           <ComponentExample>
             <ExpanderGroup
-              OpenAllText={t('group.open')}
-              CloseAllText={t('group.close')}
+              openAllText={t('group.open')}
+              closeAllText={t('group.close')}
             >
               <Expander>
-                <ExpanderTitleButton
-                  ariaOpenText="Open expander"
-                  ariaCloseText="Close expander"
-                >
-                  {t('expander.title')}
-                </ExpanderTitleButton>
+                <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
                 <ExpanderContent>{t('expander.content')}</ExpanderContent>
               </Expander>
               <Expander>
-                <ExpanderTitleButton
-                  ariaOpenText="Open expander"
-                  ariaCloseText="Close expander"
-                >
-                  {t('expander.title')}
-                </ExpanderTitleButton>
+                <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
                 <ExpanderContent>{t('expander.content')}</ExpanderContent>
               </Expander>
               <Expander>
-                <ExpanderTitleButton
-                  ariaOpenText="Open expander"
-                  ariaCloseText="Close expander"
-                >
-                  {t('expander.title')}
-                </ExpanderTitleButton>
+                <ExpanderTitleButton>{t('expander.title')}</ExpanderTitleButton>
                 <ExpanderContent>{t('expander.content')}</ExpanderContent>
               </Expander>
             </ExpanderGroup>

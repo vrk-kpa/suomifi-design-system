@@ -2,11 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import {
-  Combobox as OrigCombobox,
-  ComboboxData,
-  ComboboxProps,
-} from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -17,13 +12,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import NotificationBox from 'components/NotificationBox';
-
-const Combobox = function <T extends ComboboxData>(
-  props: ComboboxProps<T>,
-): JSX.Element {
-  return <OrigCombobox {...props} />;
-};
-Combobox.displayName = 'Combobox';
+import { MultiSelect } from 'components/ExampleComponents';
 
 const Page: React.FC = (): React.ReactElement => {
   return (
@@ -110,15 +99,16 @@ const Page: React.FC = (): React.ReactElement => {
 
             <ComponentDescription>
               <ComponentExample>
-                <Combobox
+                <MultiSelect
                   labelText={t('example.label')}
                   items={tools}
                   chipListVisible
-                  chipActionLabel={t('example.chipActionLabel')}
+                  ariaChipActionLabel={t('example.chipActionLabel')}
                   removeAllButtonLabel={t('example.removeAllSelections')}
                   visualPlaceholder={t('example.visualPlaceholder')}
-                  emptyItemsLabel={t('example.noItems')}
+                  noItemsText={t('example.noItems')}
                   defaultSelectedItems={defaultSelectedTools}
+                  ariaSelectedAmountText={t('example.ariaSelectedAmountText')}
                 />
               </ComponentExample>
             </ComponentDescription>

@@ -6,7 +6,7 @@ updates:
   schedule:
     interval: monthly
     time: "03:00"
-  open-pull-requests-limit: 10
+  open-pull-requests-limit: 0
   versioning-strategy: lockfile-only
   ignore:
   - dependency-name: y18n

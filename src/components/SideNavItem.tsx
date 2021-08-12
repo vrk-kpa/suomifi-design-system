@@ -1,11 +1,11 @@
-import React, { Component, ReactNode, MouseEvent } from 'react';
-import { suomifiDesignTokens, Icon, Button } from 'suomifi-ui-components';
+import React, { Component, ReactNode } from 'react';
+import { defaultSuomifiTheme, Icon, Button } from 'suomifi-ui-components';
 import { Link } from '@wapps/gatsby-plugin-i18next';
 import { focusOutline } from './utils/outline';
 import { isFrontPage } from 'components/LinkUtil';
 
 class SideNavItem extends Component<Props> {
-  private toggleOpen = (event: MouseEvent) => {
+  private toggleOpen = (event) => {
     event.preventDefault();
     const { to, handleToggle } = this.props;
     handleToggle(to);
@@ -32,14 +32,14 @@ class SideNavItem extends Component<Props> {
             justifyContent: 'space-between',
             height: '3.2rem',
             paddingLeft: level + '.2rem',
-            paddingRight: suomifiDesignTokens.spacing.xs,
-            borderBottom: `1px solid ${suomifiDesignTokens.colors.depthSecondary}`,
-            color: suomifiDesignTokens.colors.highlightBase,
+            paddingRight: defaultSuomifiTheme.spacing.xs,
+            borderBottom: `1px solid ${defaultSuomifiTheme.colors.depthSecondary}`,
+            color: defaultSuomifiTheme.colors.highlightBase,
             textDecoration: 'none',
             textTransform: level === 1 ? 'uppercase' : 'none',
             '&:hover': {
-              background: suomifiDesignTokens.colors.depthSecondary,
-              color: suomifiDesignTokens.colors.brandBase,
+              background: defaultSuomifiTheme.colors.depthSecondary,
+              color: defaultSuomifiTheme.colors.brandBase,
             },
           },
           `&:focus { ${focusOutline} }`,
@@ -60,8 +60,8 @@ class SideNavItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: suomifiDesignTokens.colors.depthSecondary,
-                color: suomifiDesignTokens.colors.brandBase,
+                background: defaultSuomifiTheme.colors.depthSecondary,
+                color: defaultSuomifiTheme.colors.brandBase,
                 fontWeight: 600,
               },
             };
@@ -88,7 +88,7 @@ class SideNavItem extends Component<Props> {
           >
             <Icon
               icon="chevronDown"
-              color={suomifiDesignTokens.colors.depthDark1}
+              color={defaultSuomifiTheme.colors.depthDark1}
             />
           </Button>
         )}

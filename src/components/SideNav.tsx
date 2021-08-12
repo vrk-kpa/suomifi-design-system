@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { suomifiDesignTokens, Icon, Button, Text } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, Icon, Button, Text } from 'suomifi-ui-components';
 import { withPrefix } from 'gatsby';
 import { WindowLocation } from '@reach/router';
 
@@ -8,7 +8,7 @@ import { SideNavData, SideNavItemData } from 'components/SideNavData';
 import { Desktop, MobileOrTablet } from 'components/Responsive';
 
 class SideNav extends Component<Props, State> {
-  private SIDENAVSTATE_KEY: string = 'sideNavState';
+  private SIDENAVSTATE_KEY = 'sideNavState';
 
   public constructor(props: Props) {
     super(props);
@@ -112,11 +112,11 @@ class SideNav extends Component<Props, State> {
     return (
       <div
         style={{
-          padding: suomifiDesignTokens.spacing.xs,
+          padding: defaultSuomifiTheme.spacing.xs,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthSecondary}`,
+          borderBottom: `1px solid ${defaultSuomifiTheme.colors.depthSecondary}`,
           textShadow: 'none',
         }}
       >
@@ -124,16 +124,19 @@ class SideNav extends Component<Props, State> {
           <div style={{ fontSize: '40px', lineHeight: '1em' }}>
             {sideNavData.icon}
           </div>
-          <Text.bold style={{ marginLeft: suomifiDesignTokens.spacing.xs }}>
+          <Text
+            variant="bold"
+            style={{ marginLeft: defaultSuomifiTheme.spacing.xs }}
+          >
             {sideNavData.title}
-          </Text.bold>
+          </Text>
         </div>
         <MobileOrTablet>
           <div
             style={{
               float: 'right',
               background: 'none',
-              marginRight: suomifiDesignTokens.spacing.s,
+              marginRight: defaultSuomifiTheme.spacing.s,
               padding: 0,
               border: 0,
               width: '16px',
@@ -144,7 +147,7 @@ class SideNav extends Component<Props, State> {
           >
             <Icon
               icon="chevronDown"
-              color={suomifiDesignTokens.colors.depthDark1}
+              color={defaultSuomifiTheme.colors.depthDark1}
             />
           </div>
         </MobileOrTablet>
@@ -180,7 +183,7 @@ class SideNav extends Component<Props, State> {
                           this.isPartiallyCurrent(item.showAsTo)
                         : this.isPartiallyCurrent(item.to)
                     )
-                    ? `4px solid ${suomifiDesignTokens.colors.brandBase}`
+                    ? `4px solid ${defaultSuomifiTheme.colors.brandBase}`
                     : 0
                   : 0,
             },
@@ -215,7 +218,7 @@ class SideNav extends Component<Props, State> {
           margin: 0,
           padding: 0,
           boxSizing: 'border-box',
-          background: `${suomifiDesignTokens.colors.whiteBase}`,
+          background: `${defaultSuomifiTheme.colors.whiteBase}`,
         }}
       >
         <Desktop>

@@ -8,7 +8,10 @@ import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section, { Props as SectionProps } from 'components/Section';
-import { Link as ExampleLink } from 'components/ExampleComponents';
+import {
+  Link as ExampleLink,
+  ExternalLink as ExampleExternalLink,
+} from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
@@ -20,9 +23,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        <Paragraph variant="lead">
+          <Text variant="lead">{t('intro')}</Text>
+        </Paragraph>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 
@@ -52,13 +55,13 @@ const Page = (): JSX.Element => (
           exampleFirst={false}
         >
           <ComponentExample>
-            <ExampleLink.external
+            <ExampleExternalLink
               className="test-classname"
               href="https://github.com/vrk-kpa/suomifi-ui-components"
               labelNewWindow={t('exampleExternal.label')}
             >
               {t('exampleExternal.linkText')}
-            </ExampleLink.external>
+            </ExampleExternalLink>
           </ComponentExample>
         </ComponentDescription>
       </Layout>

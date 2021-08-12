@@ -4,7 +4,7 @@ import {
   Expander,
   ExpanderTitleButton,
   ExpanderContent,
-  suomifiDesignTokens,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
@@ -31,11 +31,11 @@ const ComponentDescription = ({
     {(t) => (
       <div
         style={{
-          marginBottom: suomifiDesignTokens.spacing.xl,
-          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
+          marginBottom: defaultSuomifiTheme.spacing.xl,
+          borderBottom: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
         }}
       >
-        <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
+        <div style={{ margin: `${defaultSuomifiTheme.spacing.xl} 0` }}>
           {!!mainTitle && <Heading variant="h2">{mainTitle}</Heading>}
           {!!title && <Heading variant="h3">{title}</Heading>}
         </div>
@@ -47,7 +47,7 @@ const ComponentDescription = ({
         )}
         {!exampleFirst && <div>{children}</div>}
         {!noCode && (
-          <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
+          <div style={{ margin: `${defaultSuomifiTheme.spacing.xl} 0` }}>
             <Expander>
               <ExpanderTitleButton asHeading="h3">
                 {t('common:react')}

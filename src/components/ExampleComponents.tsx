@@ -4,6 +4,9 @@ import {
   Button as OrigButton,
   ButtonProps,
   Breadcrumb as OrigBreadcrumb,
+  BreadcrumbProps,
+  BreadcrumbLink as OrigBreadcrumbLink,
+  BreadcrumbLinkProps,
   Checkbox as OrigCheckbox,
   CheckboxProps,
   Dropdown as OrigDropdown,
@@ -26,6 +29,9 @@ import {
   LanguageMenu as OrigLanguageMenu,
   LanguageMenuItem as OrigLanguageMenuItem,
   Link as OrigLink,
+  LinkProps,
+  ExternalLink as OrigExternalLink,
+  ExternalLinkProps,
   Modal as OrigModal,
   ModalProps,
   ModalTitle as OrigModalTitle,
@@ -54,15 +60,25 @@ import {
   ToggleInput as OrigToggleInput,
   ToggleInputProps,
   VisuallyHidden as OrigVisuallyHidden,
+  LanguageMenuItemProps,
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
 export class Block extends OrigBlock {}
 addDisplayNames(Block, OrigBlock, 'Block');
-
-export class Breadcrumb extends OrigBreadcrumb {}
+export class Breadcrumb extends Component<BreadcrumbProps> {
+  render(): JSX.Element {
+    return <OrigBreadcrumb {...this.props} />;
+  }
+}
 addDisplayNames(Breadcrumb, OrigBreadcrumb, 'Breadcrumb');
 
+export class BreadcrumbLink extends Component<BreadcrumbLinkProps> {
+  render(): JSX.Element {
+    return <OrigBreadcrumbLink {...this.props} />;
+  }
+}
+addDisplayNames(BreadcrumbLink, OrigBreadcrumbLink, 'BreadcrumbLink');
 export class Button extends Component<ButtonProps> {
   render(): JSX.Element {
     return <OrigButton {...this.props} />;
@@ -143,11 +159,25 @@ addDisplayNames(Icon, OrigIcon, 'Icon');
 export class LanguageMenu extends OrigLanguageMenu {}
 addDisplayNames(LanguageMenu, OrigLanguageMenu, 'LanguageMenu');
 
-export class LanguageMenuItem extends OrigLanguageMenuItem {}
+export class LanguageMenuItem extends Component<LanguageMenuItemProps> {
+  render(): JSX.Element {
+    return <OrigLanguageMenuItem {...this.props} />;
+  }
+}
 addDisplayNames(LanguageMenuItem, OrigLanguageMenuItem, 'LanguageMenuItem');
-
-export class Link extends OrigLink {}
+export class Link extends Component<LinkProps> {
+  render(): JSX.Element {
+    return <OrigLink {...this.props} />;
+  }
+}
 addDisplayNames(Link, OrigLink, 'Link');
+
+export class ExternalLink extends Component<ExternalLinkProps> {
+  render(): JSX.Element {
+    return <OrigExternalLink {...this.props} />;
+  }
+}
+addDisplayNames(ExternalLink, OrigExternalLink, 'ExternalLink');
 
 export class Modal extends Component<ModalProps> {
   render(): JSX.Element {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import { Text } from 'components/ResponsiveComponents';
 
@@ -15,7 +15,7 @@ const BulletedList = ({ items = [] }: Props): JSX.Element => {
       <ul
         style={{
           margin: 0,
-          padding: `0 0 0 ${suomifiDesignTokens.spacing.xl}`,
+          padding: `0 0 0 ${defaultSuomifiTheme.spacing.xl}`,
         }}
       >
         {items.map((item, index) => (

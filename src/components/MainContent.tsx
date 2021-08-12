@@ -1,5 +1,5 @@
 import React, { ReactNode, CSSProperties } from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 import { Location } from '@reach/router';
 
 import SideNavComp from 'components/SideNav';
@@ -38,7 +38,7 @@ const Content = ({
     id="main"
     style={{
       margin: hasFrame
-        ? `${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.s}`
+        ? `${defaultSuomifiTheme.spacing.xl} ${defaultSuomifiTheme.spacing.s}`
         : 0,
       ...style,
       outline: 'none',
@@ -55,9 +55,9 @@ const MainContent = ({
 }: Props): JSX.Element => (
   <div
     style={{
-      background: suomifiDesignTokens.colors.depthLight3,
-      paddingTop: hasFrame ? suomifiDesignTokens.spacing.s : 0,
-      paddingBottom: suomifiDesignTokens.spacing.xxxl,
+      background: defaultSuomifiTheme.colors.depthLight3,
+      paddingTop: hasFrame ? defaultSuomifiTheme.spacing.s : 0,
+      paddingBottom: defaultSuomifiTheme.spacing.xxxl,
     }}
   >
     <Desktop>
@@ -71,17 +71,17 @@ const MainContent = ({
         <div
           style={{
             margin: hasFrame
-              ? `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xl} 0 ${suomifiDesignTokens.spacing.xl}`
+              ? `${defaultSuomifiTheme.spacing.s} ${defaultSuomifiTheme.spacing.xl} 0 ${defaultSuomifiTheme.spacing.xl}`
               : 0,
             width: '100%',
             maxWidth: hasFrame ? 1140 : 'initial',
             display: 'flex',
             flexWrap: 'nowrap',
             background: hasFrame
-              ? suomifiDesignTokens.colors.whiteBase
+              ? defaultSuomifiTheme.colors.whiteBase
               : 'none',
             border: hasFrame
-              ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`
+              ? `1px solid ${defaultSuomifiTheme.colors.depthLight1}`
               : 0,
           }}
         >
@@ -89,7 +89,7 @@ const MainContent = ({
             sideNavData={sideNavData}
             style={{
               width: '22rem',
-              marginRight: suomifiDesignTokens.spacing.s,
+              marginRight: defaultSuomifiTheme.spacing.s,
             }}
           />
           <Content hasFrame={hasFrame} style={{ flex: 1 }}>
@@ -102,18 +102,18 @@ const MainContent = ({
       <SideNav
         sideNavData={sideNavData}
         style={{
-          margin: `0 ${suomifiDesignTokens.spacing.xl}`,
-          border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
+          margin: `0 ${defaultSuomifiTheme.spacing.xl}`,
+          border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
         }}
       />
       <div
         style={{
           margin: hasFrame
-            ? `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xl} 0 ${suomifiDesignTokens.spacing.xl}`
+            ? `${defaultSuomifiTheme.spacing.s} ${defaultSuomifiTheme.spacing.xl} 0 ${defaultSuomifiTheme.spacing.xl}`
             : 0,
-          background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
+          background: hasFrame ? defaultSuomifiTheme.colors.whiteBase : 'none',
           border: hasFrame
-            ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`
+            ? `1px solid ${defaultSuomifiTheme.colors.depthLight1}`
             : 0,
         }}
       >
@@ -124,17 +124,17 @@ const MainContent = ({
       <SideNav
         sideNavData={sideNavData}
         style={{
-          margin: `0 ${suomifiDesignTokens.spacing.s}`,
-          border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
+          margin: `0 ${defaultSuomifiTheme.spacing.s}`,
+          border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
         }}
       />
       <div
         style={{
           margin: 0,
-          marginTop: hasFrame ? suomifiDesignTokens.spacing.s : 0,
-          background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
+          marginTop: hasFrame ? defaultSuomifiTheme.spacing.s : 0,
+          background: hasFrame ? defaultSuomifiTheme.colors.whiteBase : 'none',
           border: hasFrame
-            ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`
+            ? `1px solid ${defaultSuomifiTheme.colors.depthLight1}`
             : 0,
         }}
       >

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -30,9 +30,9 @@ const Page = (): JSX.Element => {
           <SEO title={t('title')} />
           <Heading variant="h1">{t('title')}</Heading>
 
-          <Paragraph.lead>
-            <Text.lead>{t('intro')}</Text.lead>
-          </Paragraph.lead>
+          <Paragraph variant="lead">
+            <Text variant="lead">{t('intro')}</Text>
+          </Paragraph>
 
           <NoteBox title={t('note.title')} items={t('note.items')} />
 
@@ -53,12 +53,12 @@ const Page = (): JSX.Element => {
             <div
               style={{
                 overflow: 'hidden',
-                marginBottom: suomifiDesignTokens.spacing.s,
-                padding: `${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.s} 0 ${suomifiDesignTokens.spacing.s}`,
-                background: suomifiDesignTokens.colors.whiteBase,
+                marginBottom: defaultSuomifiTheme.spacing.s,
+                padding: `${defaultSuomifiTheme.spacing.xl} ${defaultSuomifiTheme.spacing.s} 0 ${defaultSuomifiTheme.spacing.s}`,
+                background: defaultSuomifiTheme.colors.whiteBase,
                 display: 'flex',
                 justifyContent: 'center',
-                border: `1px solid ${suomifiDesignTokens.colors.depthBase}`,
+                border: `1px solid ${defaultSuomifiTheme.colors.depthBase}`,
               }}
             >
               <MobileDevice>
@@ -92,8 +92,8 @@ const Page = (): JSX.Element => {
           >
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.whiteBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.whiteBase,
               }}
             >
               <ExampleWrapper>
@@ -114,8 +114,8 @@ const Page = (): JSX.Element => {
           >
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.whiteBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.whiteBase,
               }}
             >
               <ExampleWrapper>
@@ -138,8 +138,8 @@ const Page = (): JSX.Element => {
           >
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.highlightBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.highlightBase,
               }}
             >
               <ExampleWrapper>
@@ -162,8 +162,8 @@ const Page = (): JSX.Element => {
           >
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.whiteBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.whiteBase,
               }}
             >
               <ExampleWrapper>
@@ -186,8 +186,8 @@ const Page = (): JSX.Element => {
           >
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.whiteBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.whiteBase,
               }}
             >
               <ExampleWrapper>
@@ -214,8 +214,8 @@ const Page = (): JSX.Element => {
           >
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.whiteBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.whiteBase,
               }}
             >
               <ExampleWrapper>
@@ -235,8 +235,8 @@ const Page = (): JSX.Element => {
             </ComponentExample>
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.whiteBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.whiteBase,
               }}
             >
               <ExampleWrapper>
@@ -260,8 +260,8 @@ const Page = (): JSX.Element => {
             </ComponentExample>
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.highlightBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.highlightBase,
               }}
             >
               <ExampleWrapper>
@@ -289,8 +289,8 @@ const Page = (): JSX.Element => {
             </ComponentExample>
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.whiteBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.whiteBase,
               }}
             >
               <ExampleWrapper>
@@ -318,8 +318,8 @@ const Page = (): JSX.Element => {
             </ComponentExample>
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.whiteBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.whiteBase,
               }}
             >
               <ExampleWrapper>
@@ -354,8 +354,8 @@ const Page = (): JSX.Element => {
           >
             <ComponentExample
               style={{
-                padding: suomifiDesignTokens.spacing.xs,
-                background: suomifiDesignTokens.colors.whiteBase,
+                padding: defaultSuomifiTheme.spacing.xs,
+                background: defaultSuomifiTheme.colors.whiteBase,
               }}
             >
               <ExampleWrapper>
@@ -371,7 +371,7 @@ const Page = (): JSX.Element => {
               <div
                 style={{
                   padding: 15,
-                  background: suomifiDesignTokens.colors.highlightBase,
+                  background: defaultSuomifiTheme.colors.highlightBase,
                 }}
               >
                 <Button disabled variant="inverted" onClick={() => undefined}>

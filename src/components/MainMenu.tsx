@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Icon, suomifiDesignTokens, Button } from 'suomifi-ui-components';
+import { Icon, defaultSuomifiTheme, Button } from 'suomifi-ui-components';
 import { Translation } from 'react-i18next';
 
 import MainMenuItem from 'components/MainMenuItem';
@@ -52,12 +52,12 @@ class MainMenu extends Component<Props, State> {
               {this.isOpen() ? (
                 <Icon
                   icon="close"
-                  color={suomifiDesignTokens.colors.depthDark1}
+                  color={defaultSuomifiTheme.colors.depthDark1}
                 />
               ) : (
                 <Icon
                   icon="menu"
-                  color={suomifiDesignTokens.colors.depthDark1}
+                  color={defaultSuomifiTheme.colors.depthDark1}
                 />
               )}
             </Button>
@@ -69,8 +69,8 @@ class MainMenu extends Component<Props, State> {
                   right: 0,
                   zIndex: 10000,
                   width: '20rem',
-                  background: suomifiDesignTokens.colors.whiteBase,
-                  border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
+                  background: defaultSuomifiTheme.colors.whiteBase,
+                  border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
                   boxShadow: menuShadow,
                 }}
               >

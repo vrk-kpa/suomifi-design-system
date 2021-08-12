@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -13,7 +13,7 @@ const Page = (): JSX.Element => (
   <Translation ns={['accessibility-statement']}>
     {(t) => (
       <Layout>
-        <div style={{ padding: `0 ${suomifiDesignTokens.spacing.xl}` }}>
+        <div style={{ padding: `0 ${defaultSuomifiTheme.spacing.xl}` }}>
           <SEO title={t('title')} />
           <Heading variant="h1">{t('title')}</Heading>
           {t<SectionProps[]>('sections').map((section, index) => (

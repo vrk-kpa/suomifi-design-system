@@ -93,9 +93,9 @@ const Page: React.FC = (): React.ReactElement => {
             <Heading variant="h1">{t('title')}</Heading>
             <NotificationBox />
 
-            <Paragraph.lead>
-              <Text.lead>{t('intro')}</Text.lead>
-            </Paragraph.lead>
+            <Paragraph variant="lead">
+              <Text variant="lead">{t('intro')}</Text>
+            </Paragraph>
 
             <ComponentDescription>
               <ComponentExample>
@@ -103,12 +103,14 @@ const Page: React.FC = (): React.ReactElement => {
                   labelText={t('example.label')}
                   items={tools}
                   chipListVisible
-                  ariaChipActionLabel={t('example.chipActionLabel')}
+                  ariaOptionChipRemovedText={t('example.chipActionLabel')}
+                  ariaChipActionLabel={t('')}
+                  ariaSelectedAmountText={t('')}
+                  ariaOptionsAvailableText={t('')}
                   removeAllButtonLabel={t('example.removeAllSelections')}
                   visualPlaceholder={t('example.visualPlaceholder')}
                   noItemsText={t('example.noItems')}
                   defaultSelectedItems={defaultSelectedTools}
-                  ariaSelectedAmountText={t('example.ariaSelectedAmountText')}
                 />
               </ComponentExample>
             </ComponentDescription>

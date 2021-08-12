@@ -1,7 +1,7 @@
 import React, { Component, CSSProperties } from 'react';
 import {
   Paragraph as OrigParagraph,
-  suomifiDesignTokens,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 
 import {
@@ -10,41 +10,28 @@ import {
 } from 'components/ResponsiveComponentsUtil';
 
 class CustomParagraph extends Component<Props> {
-  public static lead = (props: Props) => {
-    const { smallScreen, style, ...passProps } = props;
-    return (
-      <OrigParagraph
-        style={{
-          margin: `${suomifiDesignTokens.spacing.xl} 0`,
-          lineHeight: smallScreen ? '28px' : '30px',
-          ...style,
-        }}
-        {...passProps}
-      />
-    );
-  };
-
-  public static secondary = (props: Props) => {
-    const { smallScreen, style, ...passProps } = props;
-    return (
-      <OrigParagraph
-        style={{
-          margin: `${suomifiDesignTokens.spacing.s} 0`,
-          lineHeight: '24px',
-          ...style,
-        }}
-        {...passProps}
-      />
-    );
-  };
-
   public render(): JSX.Element {
-    const { smallScreen, style, ...passProps } = this.props;
+    const { smallScreen, variant, style, ...passProps } = this.props;
+
+    const spacingStyle = {
+      margin:
+        variant === 'secondary'
+          ? `${defaultSuomifiTheme.spacing.s} 0`
+          : `${defaultSuomifiTheme.spacing.xl} 0`,
+      lineHeight:
+        variant === 'lead' && smallScreen
+          ? '28px'
+          : variant === 'lead'
+          ? '30px'
+          : variant === 'secondary'
+          ? '24px'
+          : '27px',
+    };
+
     return (
       <OrigParagraph
         style={{
-          margin: `${suomifiDesignTokens.spacing.xl} 0`,
-          lineHeight: '27px',
+          ...spacingStyle,
           ...style,
         }}
         {...passProps}
@@ -56,6 +43,7 @@ class CustomParagraph extends Component<Props> {
 interface Props {
   smallScreen?: boolean;
   style?: CSSProperties;
+  variant?: 'lead' | 'secondary';
 }
 
 export class Paragraph extends CustomParagraph {

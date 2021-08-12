@@ -3,9 +3,7 @@ import { GatsbyImageProps } from 'gatsby-image';
 
 import ButtonsMobileFI from 'components/images/ButtonsMobileFI';
 
-interface Props extends GatsbyImageProps {
-  imgKey: string;
-}
+type Props = Omit<GatsbyImageProps, 'fluid' | 'fixed'> & { imgKey: string };
 
 export class Image extends Component<Props> {
   private images = {

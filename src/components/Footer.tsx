@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Translation } from 'react-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import { Text, Paragraph } from 'components/ResponsiveComponents';
 import Link, { Props as LinkProps } from 'components/Link';
@@ -14,7 +14,7 @@ const Content = ({
   title,
   description,
   links,
-  background = suomifiDesignTokens.colors.whiteBase,
+  background = defaultSuomifiTheme.colors.whiteBase,
   textColor = 'blackBase',
   linkColor,
   textDecoration,
@@ -24,7 +24,7 @@ const Content = ({
   <div
     style={{
       margin: 0,
-      padding: suomifiDesignTokens.spacing.s,
+      padding: defaultSuomifiTheme.spacing.s,
       background: background,
       display: 'flex',
       justifyContent: 'center',
@@ -40,22 +40,24 @@ const Content = ({
       }}
     >
       {header && (
-        <div style={{ flex: '100%', marginTop: suomifiDesignTokens.spacing.s }}>
+        <div style={{ flex: '100%', marginTop: defaultSuomifiTheme.spacing.s }}>
           {header}
         </div>
       )}
       <div style={{ flex: '40%', textAlign: center ? 'center' : 'initial' }}>
-        <Paragraph.secondary style={{ textAlign: 'inherit' }}>
-          <Text.bold color={textColor}>{title}</Text.bold>
-        </Paragraph.secondary>
-        <Paragraph.secondary style={{ textAlign: 'inherit' }}>
+        <Paragraph variant="secondary" style={{ textAlign: 'inherit' }}>
+          <Text variant="bold" color={textColor}>
+            {title}
+          </Text>
+        </Paragraph>
+        <Paragraph variant="secondary" style={{ textAlign: 'inherit' }}>
           <Text color={textColor}>{description}</Text>
-        </Paragraph.secondary>
+        </Paragraph>
       </div>
       <div
         style={{
-          margin: `${suomifiDesignTokens.spacing.s} 0`,
-          marginLeft: wrapAll ? 0 : suomifiDesignTokens.spacing.xxxl,
+          margin: `${defaultSuomifiTheme.spacing.s} 0`,
+          marginLeft: wrapAll ? 0 : defaultSuomifiTheme.spacing.xxxl,
           flex: '50%',
           textAlign: center ? 'center' : 'initial',
         }}
@@ -93,8 +95,8 @@ const Content = ({
                         : 'flex-end',
                       flex: wrapAll ? '100%' : 'unset',
                       margin: wrapAll
-                        ? `${suomifiDesignTokens.spacing.xs} 0`
-                        : `0 ${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.s}`,
+                        ? `${defaultSuomifiTheme.spacing.xs} 0`
+                        : `0 ${defaultSuomifiTheme.spacing.s} ${defaultSuomifiTheme.spacing.s}`,
                     }}
                   >
                     <Link
@@ -104,7 +106,7 @@ const Content = ({
                       style={{
                         '&:link,:visited,:focus,:hover,:active': {
                           fontSize: '16px',
-                          color: suomifiDesignTokens.colors[linkColor],
+                          color: defaultSuomifiTheme.colors[linkColor],
                           textDecoration: textDecoration,
                         },
                       }}
@@ -119,10 +121,8 @@ const Content = ({
 );
 
 const AllContent = ({
-  center = false,
   wrapAll = false,
 }: {
-  center?: boolean;
   wrapAll?: boolean;
 }): JSX.Element => (
   <Translation>
@@ -140,12 +140,12 @@ const AllContent = ({
           }
           description={t('common:footer.description')}
           links={[
-            ...t('common:footer.links'),
+            ...(t('common:footer.links') as []),
             {
               icon: (
                 <Github
                   style={{
-                    fill: suomifiDesignTokens.colors.brandBase,
+                    fill: defaultSuomifiTheme.colors.brandBase,
                     fontSize: '25px',
                   }}
                 />
@@ -170,7 +170,7 @@ const Footer = (): JSX.Element => (
       <AllContent />
     </Tablet>
     <Mobile>
-      <AllContent center wrapAll />
+      <AllContent wrapAll />
     </Mobile>
   </footer>
 );
@@ -181,8 +181,8 @@ interface Props {
   description: string;
   links?: LinkProps[];
   background?: string;
-  textColor?: keyof typeof suomifiDesignTokens.colors;
-  linkColor?: keyof typeof suomifiDesignTokens.colors;
+  textColor?: keyof typeof defaultSuomifiTheme.colors;
+  linkColor?: keyof typeof defaultSuomifiTheme.colors;
   textDecoration?: string;
   center?: boolean;
   wrapAll?: boolean;

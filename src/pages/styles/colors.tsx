@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 import { getLuminance } from 'polished';
 
 import Layout from 'components/layout';
@@ -14,14 +14,11 @@ import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
-const colorTokens =
-  !!suomifiDesignTokens && !!suomifiDesignTokens.colors
-    ? suomifiDesignTokens.colors
-    : { depthLight1: undefined };
+const colorTokens = defaultSuomifiTheme.colors;
 
 const borderForLightColor = `1px solid ${colorTokens.depthLight1}`;
 
-type ColorKeys = keyof typeof suomifiDesignTokens.colors;
+type ColorKeys = keyof typeof defaultSuomifiTheme.colors;
 interface ColorItem {
   name: string;
   value: string;
@@ -117,7 +114,7 @@ const getExampleColor = (
   <div
     key={id}
     style={{
-      margin: `${suomifiDesignTokens.spacing.xs} ${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.xl} 0`,
+      margin: `${defaultSuomifiTheme.spacing.xs} ${defaultSuomifiTheme.spacing.xl} ${defaultSuomifiTheme.spacing.xl} 0`,
       lineHeight: '1rem',
     }}
   >
@@ -125,7 +122,7 @@ const getExampleColor = (
       style={{
         width: '10rem',
         height: '3rem',
-        marginBottom: suomifiDesignTokens.spacing.s,
+        marginBottom: defaultSuomifiTheme.spacing.s,
         background: value,
         ...style,
       }}
@@ -143,9 +140,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        <Paragraph variant="lead">
+          <Text variant="lead">{t('intro')}</Text>
+        </Paragraph>
 
         <NoteBox title={t('note.title')} items={t('note.items')} />
 

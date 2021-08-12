@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Translation } from 'react-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import Header from 'components/header';
 import Navigation from 'components/Navigation';
@@ -36,14 +36,14 @@ const Layout = ({
     {(t) => (
       <div
         style={{
-          fontFamily: suomifiDesignTokens.values.typography.bodyText.fontFamily,
+          fontFamily: defaultSuomifiTheme.values.typography.bodyText.fontFamily,
           fontSize:
-            suomifiDesignTokens.values.typography.bodyText.fontSize.value +
-            suomifiDesignTokens.values.typography.bodyText.fontSize.unit,
+            defaultSuomifiTheme.values.typography.bodyText.fontSize.value +
+            defaultSuomifiTheme.values.typography.bodyText.fontSize.unit,
           lineHeight:
-            suomifiDesignTokens.values.typography.bodyText.lineHeight.value +
-            suomifiDesignTokens.values.typography.bodyText.lineHeight.unit,
-          color: suomifiDesignTokens.colors.blackBase,
+            defaultSuomifiTheme.values.typography.bodyText.lineHeight.value +
+            defaultSuomifiTheme.values.typography.bodyText.lineHeight.unit,
+          color: defaultSuomifiTheme.colors.blackBase,
         }}
       >
         <BypassLinks hasSideNav={!!sideNavData} />

@@ -1,5 +1,5 @@
 import React, { Component, ReactNode } from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 import { Link } from '@wapps/gatsby-plugin-i18next';
 import { isFrontPage } from 'components/LinkUtil';
 import { focusOutline } from './utils/outline';
@@ -17,15 +17,15 @@ class MainMenuItem extends Component<Props> {
             alignItems: 'center',
             justifyContent: 'space-between',
             height: '3.2rem',
-            paddingLeft: suomifiDesignTokens.spacing.s,
-            paddingRight: suomifiDesignTokens.spacing.s,
-            borderBottom: `1px solid ${suomifiDesignTokens.colors.depthSecondary}`,
-            color: suomifiDesignTokens.colors.highlightBase,
+            paddingLeft: defaultSuomifiTheme.spacing.s,
+            paddingRight: defaultSuomifiTheme.spacing.s,
+            borderBottom: `1px solid ${defaultSuomifiTheme.colors.depthSecondary}`,
+            color: defaultSuomifiTheme.colors.highlightBase,
             textDecoration: 'none',
             whiteSpace: 'nowrap',
             '&:hover': {
-              background: suomifiDesignTokens.colors.depthSecondary,
-              color: suomifiDesignTokens.colors.brandBase,
+              background: defaultSuomifiTheme.colors.depthSecondary,
+              color: defaultSuomifiTheme.colors.brandBase,
             },
           },
           `&:focus { ${focusOutline} }`,
@@ -42,8 +42,8 @@ class MainMenuItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: suomifiDesignTokens.colors.depthSecondary,
-                color: suomifiDesignTokens.colors.brandBase,
+                background: defaultSuomifiTheme.colors.depthSecondary,
+                color: defaultSuomifiTheme.colors.brandBase,
                 fontWeight: 600,
               },
             };

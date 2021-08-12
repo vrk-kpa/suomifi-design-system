@@ -17,10 +17,11 @@ import {
   StaticIcon as SuomifiStaticIcon,
 } from 'components/ExampleComponents';
 import {
-  suomifiDesignTokens,
+  defaultSuomifiTheme,
   Link,
   IconProps,
   StaticIconProps,
+  ExternalLink,
 } from 'suomifi-ui-components';
 
 /**
@@ -46,9 +47,9 @@ const Page: React.FC = (): React.ReactElement => {
           <SEO title={t('title')} />
           <Heading variant="h1">{t('title')}</Heading>
 
-          <Paragraph.lead>
-            <Text.lead>{t('intro')}</Text.lead>
-          </Paragraph.lead>
+          <Paragraph variant="lead">
+            <Text variant="lead">{t('intro')}</Text>
+          </Paragraph>
 
           <Link href="../../styles/icons">{t('allIconsPageLink.title')}</Link>
 
@@ -96,14 +97,14 @@ const Page: React.FC = (): React.ReactElement => {
             >
               <Icon
                 icon="helpFilled"
-                color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
+                color={defaultSuomifiTheme.colors.highlightBase}
+                style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
                 ariaLabel={t('infoIcons.example1.arialabel')}
               />
               <Icon
                 icon="help"
-                color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
+                color={defaultSuomifiTheme.colors.highlightBase}
+                style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
                 ariaLabel={t('infoIcons.example2.arialabel')}
               />
             </ComponentExample>
@@ -123,14 +124,14 @@ const Page: React.FC = (): React.ReactElement => {
             >
               <Icon
                 icon="errorFilled"
-                color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
+                color={defaultSuomifiTheme.colors.highlightBase}
+                style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
                 ariaLabel={t('additionalInfoIcons.example1.arialabel')}
               />
               <Icon
                 icon="info"
-                color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
+                color={defaultSuomifiTheme.colors.highlightBase}
+                style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
                 ariaLabel={t('additionalInfoIcons.example2.arialabel')}
               />
             </ComponentExample>
@@ -193,13 +194,12 @@ const Page: React.FC = (): React.ReactElement => {
               />
             </ComponentExample>
           </ComponentDescription>
-          <Link
-            variant="external"
+          <ExternalLink
             href={t('signLanguageIconsLink.url')}
             labelNewWindow={t('externalLink.label')}
           >
             {t('signLanguageIconsLink.title')}
-          </Link>
+          </ExternalLink>
         </Layout>
       )}
     </Translation>

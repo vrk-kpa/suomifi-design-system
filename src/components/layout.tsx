@@ -44,17 +44,25 @@ const Layout = ({
             defaultSuomifiTheme.values.typography.bodyText.lineHeight.value +
             defaultSuomifiTheme.values.typography.bodyText.lineHeight.unit,
           color: defaultSuomifiTheme.colors.blackBase,
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
         }}
       >
         <BypassLinks hasSideNav={!!sideNavData} />
         <Header />
-        <Desktop>
+        <Desktop style={{ display: 'flex' }}>
           <Navigation mainNavData={mainNavData(t)} />
         </Desktop>
-        <MainContent sideNavData={sideNavData} hasFrame={hasFrame}>
+        <MainContent
+          sideNavData={sideNavData}
+          hasFrame={hasFrame}
+          style={{ display: 'flex', flexGrow: 1, justifyContent: 'center' }}
+        >
           {children}
         </MainContent>
-        <Footer />
+        <Footer style={{ display: 'flex', justifyContent: 'center' }} />
       </div>
     )}
   </Translation>

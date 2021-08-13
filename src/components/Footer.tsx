@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, DetailedHTMLProps, HTMLAttributes } from 'react';
 import { Translation } from 'react-i18next';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
@@ -161,8 +161,10 @@ const AllContent = ({
   </Translation>
 );
 
-const Footer = (): JSX.Element => (
-  <footer id="footer">
+const Footer = (
+  props: DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>,
+): JSX.Element => (
+  <footer id="footer" {...props}>
     <Desktop>
       <AllContent />
     </Desktop>

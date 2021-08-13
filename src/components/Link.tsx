@@ -12,16 +12,10 @@ import { ensureTrailingSlash } from 'components/LinkUtil';
 
 const InternalLink = ({
   children,
-  href,
   ...passProps
 }: {
-  href: string;
   children: ReactNode;
-}): JSX.Element => (
-  <GatsbyLink to={href} {...passProps}>
-    {children}
-  </GatsbyLink>
-);
+}): JSX.Element => <GatsbyLink {...passProps}>{children}</GatsbyLink>;
 
 const CustomLink = styled(SuomifiLink)`
   display: 'initial';
@@ -50,18 +44,18 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
     </span>
   );
 
+  const customLinkProps = {
+    to: ensureTrailingSlash(url),
+    as: InternalLink,
+    title,
+    style,
+  };
+
   return (
     <Translation>
       {(t) =>
         url.startsWith('/') ? (
-          <CustomLink
-            href={ensureTrailingSlash(url)}
-            as={InternalLink}
-            title={title}
-            style={style}
-          >
-            {content}
-          </CustomLink>
+          <CustomLink {...(customLinkProps as any)}>{content}</CustomLink>
         ) : (
           <CustomExternalLink
             // hide external icon when there is already icon to indicate link target

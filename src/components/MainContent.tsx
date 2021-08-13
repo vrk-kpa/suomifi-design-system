@@ -1,4 +1,9 @@
-import React, { ReactNode, CSSProperties } from 'react';
+import React, {
+  ReactNode,
+  CSSProperties,
+  DetailedHTMLProps,
+  HTMLAttributes,
+} from 'react';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 import { Location } from '@reach/router';
 
@@ -52,13 +57,17 @@ const MainContent = ({
   sideNavData,
   hasFrame = true,
   children,
+  style,
+  ...passProps
 }: Props): JSX.Element => (
   <div
     style={{
       background: defaultSuomifiTheme.colors.depthLight3,
       paddingTop: hasFrame ? defaultSuomifiTheme.spacing.s : 0,
       paddingBottom: defaultSuomifiTheme.spacing.xxxl,
+      ...style,
     }}
+    {...passProps}
   >
     <Desktop>
       <div
@@ -66,6 +75,7 @@ const MainContent = ({
           display: 'flex',
           justifyContent: 'center',
           flexWrap: 'nowrap',
+          width: '100%',
         }}
       >
         <div
@@ -144,7 +154,8 @@ const MainContent = ({
   </div>
 );
 
-interface Props {
+interface Props
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   sideNavData?: SideNavData;
   hasFrame?: boolean;
   children: ReactNode;

@@ -10,6 +10,7 @@ import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import { Example } from 'examples/components';
 import { Example as ExampleAdvanced } from 'examples/componentsAdvanced';
+import { Example as ExampleTheme } from 'examples/componentsTheme';
 import { getExample, CodeExampleData } from 'components/CodeExampleUtil';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import Section, { Props as SectionProps } from 'components/Section';
@@ -43,6 +44,18 @@ const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
         >
           <ComponentExample>
             <Example />
+          </ComponentExample>
+        </ComponentDescription>
+
+        <ComponentDescription
+          mainTitle={t('theme.title')}
+          description={t('theme.description')}
+          exampleFirst
+          showOnlyCodeString
+          codeString={getExample(data, 'componentsTheme')}
+        >
+          <ComponentExample>
+            <ExampleTheme />
           </ComponentExample>
         </ComponentDescription>
 

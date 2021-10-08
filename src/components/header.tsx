@@ -37,6 +37,7 @@ const Header = (): JSX.Element => (
             icon={
               <DesignSystemLogo style={{ width: '191px', height: '32px' }} />
             }
+            style={{ display: 'flex' }}
             title={t('common:to.homepage')}
             url="/"
           />

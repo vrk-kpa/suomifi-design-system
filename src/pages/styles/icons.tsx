@@ -101,6 +101,7 @@ const Page = (): JSX.Element => (
                 justifyContent: 'flex-start',
                 background: 'none',
                 border: 'none',
+                paddingLeft: '60px',
               }}
             >
               {item.icons.map((icon) => {

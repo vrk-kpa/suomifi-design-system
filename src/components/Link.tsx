@@ -17,7 +17,9 @@ const InternalLink = ({
   children: ReactNode;
 }): JSX.Element => <GatsbyLink {...passProps}>{children}</GatsbyLink>;
 
-const CustomLink = styled(SuomifiLink)`
+const CustomLink = styled(({ asProp, ...passProps }) => {
+  return <SuomifiLink asProp={asProp} {...passProps} />;
+})`
   display: 'initial';
   align-items: 'center';
 `;
@@ -46,7 +48,7 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
 
   const customLinkProps = {
     to: ensureTrailingSlash(url),
-    as: InternalLink,
+    asProp: InternalLink,
     title,
     style,
   };

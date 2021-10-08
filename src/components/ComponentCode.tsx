@@ -18,6 +18,7 @@ const Highlighter = ({
       background: 'none',
       fontSize: '1rem',
       whiteSpace: 'pre-wrap',
+      wordBreak: 'break-word',
       overflow: 'hidden',
       ...style,
     }}

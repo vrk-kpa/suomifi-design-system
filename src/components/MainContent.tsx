@@ -46,6 +46,7 @@ const Content = ({
         ? `${defaultSuomifiTheme.spacing.xl} ${defaultSuomifiTheme.spacing.s}`
         : 0,
       marginBottom: 0,
+      overflowX: 'hidden',
       ...style,
       outline: 'none',
     }}

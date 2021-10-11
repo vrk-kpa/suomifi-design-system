@@ -197,6 +197,7 @@ const Page: React.FC = (): React.ReactElement => {
           <ExternalLink
             href={t('signLanguageIconsLink.url')}
             labelNewWindow={t('externalLink.label')}
+            style={{ marginBottom: '30px', display: 'block' }}
           >
             {t('signLanguageIconsLink.title')}
           </ExternalLink>

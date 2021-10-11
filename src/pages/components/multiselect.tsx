@@ -91,7 +91,7 @@ const Page: React.FC = (): React.ReactElement => {
           <Layout sideNavData={sideNavData(t)}>
             <SEO title={t('title')} />
             <Heading variant="h1">{t('title')}</Heading>
-            <NotificationBox />
+            <NotificationBox notificationText={t('note.accessibility')} />
 
             <Paragraph variant="lead">
               <Text variant="lead">{t('intro')}</Text>

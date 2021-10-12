@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -43,9 +43,9 @@ const Page = (): React.ReactElement => {
           <SEO title={t('title')} />
           <Heading variant="h1">{t('title')}</Heading>
 
-          <Paragraph.lead>
-            <Text.lead>{t('intro')}</Text.lead>
-          </Paragraph.lead>
+          <Paragraph variant="lead">
+            <Text variant="lead">{t('intro')}</Text>
+          </Paragraph>
 
           <ComponentDescription
             mainTitle={t('default.title')}
@@ -56,7 +56,7 @@ const Page = (): React.ReactElement => {
                 flexDirection: 'column',
                 alignItems: 'flex-start',
                 justifyContent: 'space-between',
-                height: `${suomifiDesignTokens.spacing.xxxxl}`,
+                height: `${defaultSuomifiTheme.spacing.xxxxl}`,
               }}
             >
               <ToggleButton

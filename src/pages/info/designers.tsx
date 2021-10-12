@@ -16,9 +16,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        <Paragraph variant="lead">
+          <Text variant="lead">{t('intro')}</Text>
+        </Paragraph>
 
         {t<SectionProps[]>('sections').map((section, index) => (
           <Section

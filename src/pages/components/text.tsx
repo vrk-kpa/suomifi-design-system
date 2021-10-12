@@ -48,9 +48,9 @@ const Page: React.FC = (): React.ReactElement => {
           <SEO title={t('title')} />
           <Heading variant="h1">{t('title')}</Heading>
 
-          <Paragraph.lead>
-            <Text.lead>{t('intro')}</Text.lead>
-          </Paragraph.lead>
+          <Paragraph variant="lead">
+            <Text variant="lead">{t('intro')}</Text>
+          </Paragraph>
 
           {t<SectionProps[]>('sections').map((section, index) => (
             <Section
@@ -66,17 +66,21 @@ const Page: React.FC = (): React.ReactElement => {
             description={t('body.description')}
           >
             <Text>Body text</Text>
-            <Text.bold>Body Text Bold</Text.bold>
+            <Text variant="bold">Body Text Bold</Text>
             <Text smallScreen>Body Text Small</Text>
-            <Text.bold smallScreen>Body Text Small Bold</Text.bold>
+            <Text variant="bold" smallScreen>
+              Body Text Small Bold
+            </Text>
           </ExampleBlock>
 
           <ExampleBlock
             title={t('lead.title')}
             description={t('lead.description')}
           >
-            <Text.lead>Lead Text</Text.lead>
-            <Text.lead smallScreen>Lead Text Small</Text.lead>
+            <Text variant="lead">Lead Text</Text>
+            <Text variant="lead" smallScreen>
+              Lead Text Small
+            </Text>
           </ExampleBlock>
         </Layout>
       )}

@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -21,13 +21,13 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        <Paragraph variant="lead">
+          <Text variant="lead">{t('intro')}</Text>
+        </Paragraph>
 
         <ComponentDescription>
           <ComponentExample
-            style={{ marginBottom: suomifiDesignTokens.spacing.s }}
+            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
           >
             <RadioButtonGroup
               name="test-default-group"

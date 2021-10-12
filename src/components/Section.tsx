@@ -1,5 +1,5 @@
 import React from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import { Image } from 'components/Image';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
@@ -33,12 +33,12 @@ const Section = ({
             <Text>{paragraph.text}</Text>
           </Paragraph>
         )}
-        <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
+        <div style={{ margin: `${defaultSuomifiTheme.spacing.xl} 0` }}>
           <BulletedList items={paragraph.listItems} />
         </div>
       </div>
     ))}
-    <div style={{ margin: `${suomifiDesignTokens.spacing.xl} 0` }}>
+    <div style={{ margin: `${defaultSuomifiTheme.spacing.xl} 0` }}>
       <LinkList links={links} />
     </div>
   </section>

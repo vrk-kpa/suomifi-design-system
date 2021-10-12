@@ -236,6 +236,8 @@
   ],
   "usage.title": "usage.title",
   "usage.description": "usage.description",
+  "theme.title": "theme.title",
+  "theme.description": "theme.description",
   "advancedUsage.title": "advancedUsage.title",
   "advancedUsage.description": "advancedUsage.description"
 }

@@ -239,6 +239,8 @@
   ],
   "usage.title": "Komponenttien käyttö",
   "usage.description": "Kirjastosta voi valita käyttöön haluamiaan komponentteja. Komponentit ovat avointa lähdekoodia.",
+  "theme.title": "Teeman muokkaaminen",
+  "theme.description": "Kirjaston käyttämää oletusteemaa voi myös tarvittaessa muokata. Teeman muokkaaminen vaikuttaa kaikkiin muokatun teeman sisältämiin komponentteihin.",
   "advancedUsage.title": "Komponenttien vaativampi muokkaaminen",
   "advancedUsage.description": "Jos komponentin tyylejä tarvitsee täydentää tai muokata se onnistuu usealla eri tavalla."
 }

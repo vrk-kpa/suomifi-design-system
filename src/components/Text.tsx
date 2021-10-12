@@ -10,6 +10,3 @@ export class Text extends OrigText {
   }
 }
 addResponsiveness(Text, OrigText);
-
-// TODO remove when smallScreen style updated in component
-Text.bold = OrigText.bold;

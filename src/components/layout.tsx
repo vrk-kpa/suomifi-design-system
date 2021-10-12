@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { Translation } from 'react-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import Header from 'components/header';
 import Navigation from 'components/Navigation';
@@ -36,25 +36,33 @@ const Layout = ({
     {(t) => (
       <div
         style={{
-          fontFamily: suomifiDesignTokens.values.typography.bodyText.fontFamily,
+          fontFamily: defaultSuomifiTheme.values.typography.bodyText.fontFamily,
           fontSize:
-            suomifiDesignTokens.values.typography.bodyText.fontSize.value +
-            suomifiDesignTokens.values.typography.bodyText.fontSize.unit,
+            defaultSuomifiTheme.values.typography.bodyText.fontSize.value +
+            defaultSuomifiTheme.values.typography.bodyText.fontSize.unit,
           lineHeight:
-            suomifiDesignTokens.values.typography.bodyText.lineHeight.value +
-            suomifiDesignTokens.values.typography.bodyText.lineHeight.unit,
-          color: suomifiDesignTokens.colors.blackBase,
+            defaultSuomifiTheme.values.typography.bodyText.lineHeight.value +
+            defaultSuomifiTheme.values.typography.bodyText.lineHeight.unit,
+          color: defaultSuomifiTheme.colors.blackBase,
+          height: '100%',
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
         }}
       >
         <BypassLinks hasSideNav={!!sideNavData} />
         <Header />
-        <Desktop>
+        <Desktop style={{ display: 'flex' }}>
           <Navigation mainNavData={mainNavData(t)} />
         </Desktop>
-        <MainContent sideNavData={sideNavData} hasFrame={hasFrame}>
+        <MainContent
+          sideNavData={sideNavData}
+          hasFrame={hasFrame}
+          style={{ display: 'flex', flexGrow: 1, justifyContent: 'center' }}
+        >
           {children}
         </MainContent>
-        <Footer />
+        <Footer style={{ display: 'flex', justifyContent: 'center' }} />
       </div>
     )}
   </Translation>

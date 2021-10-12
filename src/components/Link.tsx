@@ -3,7 +3,8 @@ import { Translation } from 'react-i18next';
 import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next';
 import {
   Link as SuomifiLink,
-  suomifiDesignTokens,
+  ExternalLink as SuomifiExternalLink,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 import styled from 'styled-components';
 
@@ -16,20 +17,26 @@ const InternalLink = ({
   children: ReactNode;
 }): JSX.Element => <GatsbyLink {...passProps}>{children}</GatsbyLink>;
 
-const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
-  const CustomLink = styled(SuomifiLink)({
-    display: icon ? 'inline-flex' : 'initial',
-    alignItems: 'center',
-    ...style,
-  });
+const CustomLink = styled(({ asProp, ...passProps }) => {
+  return <SuomifiLink asProp={asProp} {...passProps} />;
+})`
+  display: 'initial';
+  align-items: 'center';
+`;
 
+const CustomExternalLink = styled(SuomifiExternalLink)`
+  display: ${(props) => (props.hideIcon ? 'inline-flex' : 'initial')};
+  align-items: 'center';
+`;
+
+const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
   const content = (
     <span style={{ display: 'inline-flex', alignItems: 'center' }}>
       {icon && (
         <span
           style={{
             display: 'inline-flex',
-            marginRight: text ? suomifiDesignTokens.spacing.xs : 0,
+            marginRight: text ? defaultSuomifiTheme.spacing.xs : 0,
           }}
         >
           {icon}
@@ -39,28 +46,29 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
     </span>
   );
 
+  const customLinkProps = {
+    to: ensureTrailingSlash(url),
+    asProp: InternalLink,
+    title,
+    style,
+  };
+
   return (
     <Translation>
       {(t) =>
         url.startsWith('/') ? (
-          <CustomLink
-            to={ensureTrailingSlash(url)}
-            as={InternalLink}
-            title={title}
-          >
-            {content}
-          </CustomLink>
+          <CustomLink {...(customLinkProps as any)}>{content}</CustomLink>
         ) : (
-          <CustomLink
-            variant="external"
+          <CustomExternalLink
             // hide external icon when there is already icon to indicate link target
             hideIcon={!!icon}
             href={url}
             title={title}
             labelNewWindow={t('common:opens.new.window')}
+            style={style}
           >
             {content}
-          </CustomLink>
+          </CustomExternalLink>
         )
       }
     </Translation>

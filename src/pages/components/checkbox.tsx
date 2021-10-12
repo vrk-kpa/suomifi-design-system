@@ -12,7 +12,7 @@ import { Checkbox } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import Section, { Props as SectionProps } from 'components/Section';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <Translation ns={['checkbox']}>
@@ -21,13 +21,13 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        <Paragraph variant="lead">
+          <Text variant="lead">{t('intro')}</Text>
+        </Paragraph>
 
         <ComponentDescription>
           <ComponentExample
-            style={{ marginBottom: suomifiDesignTokens.spacing.s }}
+            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
           >
             <Checkbox>{t('example.default.content')}</Checkbox>
           </ComponentExample>

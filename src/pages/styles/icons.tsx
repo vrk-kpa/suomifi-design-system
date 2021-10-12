@@ -5,7 +5,7 @@ import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { baseIcons, illustrativeIcons, doctypeIcons } from 'suomifi-icons';
 import {
-  suomifiDesignTokens,
+  defaultSuomifiTheme,
   Icon,
   StaticIcon,
   BaseIconKeys,
@@ -54,7 +54,7 @@ const getExampleIcon = (
   <div
     key={id}
     style={{
-      margin: `${suomifiDesignTokens.spacing.xs} ${suomifiDesignTokens.spacing.xxxl} ${suomifiDesignTokens.spacing.xl} 0`,
+      margin: `${defaultSuomifiTheme.spacing.xs} ${defaultSuomifiTheme.spacing.xxxl} ${defaultSuomifiTheme.spacing.xl} 0`,
       lineHeight: '1rem',
       display: 'flex',
       flexDirection: 'column',
@@ -83,9 +83,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+        <Paragraph variant="lead">
+          <Text variant="lead">{t('intro')}</Text>
+        </Paragraph>
 
         {iconCategories.map((item) => (
           <ComponentDescription
@@ -101,6 +101,7 @@ const Page = (): JSX.Element => (
                 justifyContent: 'flex-start',
                 background: 'none',
                 border: 'none',
+                paddingLeft: '60px',
               }}
             >
               {item.icons.map((icon) => {

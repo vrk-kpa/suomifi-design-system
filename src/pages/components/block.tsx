@@ -23,9 +23,9 @@ const Page: React.FC = (): React.ReactElement => {
           <Heading variant="h1">{t('title')}</Heading>
           <NotificationBox />
 
-          <Paragraph.lead>
-            <Text.lead>{t('intro')}</Text.lead>
-          </Paragraph.lead>
+          <Paragraph variant="lead">
+            <Text variant="lead">{t('intro')}</Text>
+          </Paragraph>
 
           <ComponentDescription>
             <ComponentExample>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Translation } from 'react-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import LanguageSwitcher from 'components/LanguageSwitcher';
 import { ReactComponent as DesignSystemLogo } from 'staticIcons/designSystemLogo.svg';
@@ -14,11 +14,11 @@ const Header = (): JSX.Element => (
     {(t) => (
       <header
         style={{
-          padding: suomifiDesignTokens.spacing.s,
-          borderTop: `4px solid ${suomifiDesignTokens.colors.brandBase}`,
+          padding: defaultSuomifiTheme.spacing.s,
+          borderTop: `4px solid ${defaultSuomifiTheme.colors.brandBase}`,
           boxSizing: `border-box`,
-          background: suomifiDesignTokens.colors.whiteBase,
-          borderBottom: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
+          background: defaultSuomifiTheme.colors.whiteBase,
+          borderBottom: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
           display: 'flex',
           justifyContent: 'center',
           lineHeight: '40px',
@@ -37,6 +37,7 @@ const Header = (): JSX.Element => (
             icon={
               <DesignSystemLogo style={{ width: '191px', height: '32px' }} />
             }
+            style={{ display: 'flex' }}
             title={t('common:to.homepage')}
             url="/"
           />
@@ -44,7 +45,7 @@ const Header = (): JSX.Element => (
             style={{
               flex: 1,
               position: 'relative',
-              marginLeft: suomifiDesignTokens.spacing.xs,
+              marginLeft: defaultSuomifiTheme.spacing.xs,
             }}
           >
             <div
@@ -57,7 +58,7 @@ const Header = (): JSX.Element => (
                 fontSize: '16px',
                 fontWeight: 600,
                 textTransform: 'uppercase',
-                color: suomifiDesignTokens.colors.highlightBase,
+                color: defaultSuomifiTheme.colors.highlightBase,
               }}
             >
               {t('common:header.stamp')}

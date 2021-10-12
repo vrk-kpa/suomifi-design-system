@@ -1,18 +1,18 @@
 import React, { ReactNode, CSSProperties } from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 import { panelShadow } from './utils/shadow';
 
 const MobileDevice = ({ style, children }: Props): JSX.Element => (
   <div
     style={{
       width: '13rem',
-      border: `.1rem solid ${suomifiDesignTokens.colors.depthDark1}`,
+      border: `.1rem solid ${defaultSuomifiTheme.colors.depthDark1}`,
       borderBottom: 0,
       borderRadius: '1.5rem 1.5rem 0 0',
       boxShadow: panelShadow,
       padding: '2.5rem 1rem 0 1rem',
       margin: 0,
-      background: suomifiDesignTokens.colors.depthLight1,
+      background: defaultSuomifiTheme.colors.depthLight1,
     }}
   >
     <div
@@ -22,7 +22,7 @@ const MobileDevice = ({ style, children }: Props): JSX.Element => (
         margin: '0 auto',
         width: '3.5rem',
         height: '.25rem',
-        background: suomifiDesignTokens.colors.depthDark1,
+        background: defaultSuomifiTheme.colors.depthDark1,
         borderRadius: '.125rem',
       }}
     />

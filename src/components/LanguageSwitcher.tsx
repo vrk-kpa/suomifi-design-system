@@ -5,7 +5,7 @@ import {
   LanguageMenu,
   LanguageMenuItem,
   Button,
-  suomifiDesignTokens,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 
 const hasMultipleLanguages = ({ availableLngs }: Props): boolean =>
@@ -43,7 +43,7 @@ const ListSwitcher = ({
       <ul
         aria-label={t('menu.label')}
         style={{
-          margin: suomifiDesignTokens.spacing.s,
+          margin: defaultSuomifiTheme.spacing.s,
           padding: 0,
           listStyle: 'none',
           display: 'flex',
@@ -53,14 +53,15 @@ const ListSwitcher = ({
       >
         {availableLngs.map((value) => (
           <li key={value}>
-            <Button.secondaryNoborder
+            <Button
+              variant="secondaryNoBorder"
               onClick={() => changeLng(value)}
               disabled={value === lng}
               lang={value}
               style={{ textTransform: 'uppercase' }}
             >
               {t(`${value}.medium`)}
-            </Button.secondaryNoborder>
+            </Button>
           </li>
         ))}
       </ul>

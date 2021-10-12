@@ -29,5 +29,6 @@
     "react/jsx-pascal-case": 0,
     "react/jsx-handler-names": 0,
     "@typescript-eslint/no-inferrable-types": 1
-  }
+  },
+  "ignorePatterns": ["**/node_modules/**"]
 }

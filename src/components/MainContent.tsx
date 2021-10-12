@@ -1,5 +1,10 @@
-import React, { ReactNode, CSSProperties } from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import React, {
+  ReactNode,
+  CSSProperties,
+  DetailedHTMLProps,
+  HTMLAttributes,
+} from 'react';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 import { Location } from '@reach/router';
 
 import SideNavComp from 'components/SideNav';
@@ -38,8 +43,10 @@ const Content = ({
     id="main"
     style={{
       margin: hasFrame
-        ? `${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.s}`
+        ? `${defaultSuomifiTheme.spacing.xl} ${defaultSuomifiTheme.spacing.s}`
         : 0,
+      marginBottom: 0,
+      overflowX: 'hidden',
       ...style,
       outline: 'none',
     }}
@@ -52,99 +59,106 @@ const MainContent = ({
   sideNavData,
   hasFrame = true,
   children,
-}: Props): JSX.Element => (
-  <div
-    style={{
-      background: suomifiDesignTokens.colors.depthLight3,
-      paddingTop: hasFrame ? suomifiDesignTokens.spacing.s : 0,
-      paddingBottom: suomifiDesignTokens.spacing.xxxl,
-    }}
-  >
-    <Desktop>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          flexWrap: 'nowrap',
-        }}
-      >
+  style,
+  ...passProps
+}: Props): JSX.Element => {
+  const flexWrapperStyles: React.CSSProperties = {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'nowrap',
+    width: '100%',
+  };
+
+  const contentContainerStyles = {
+    border: hasFrame
+      ? `1px solid ${defaultSuomifiTheme.colors.depthLight1}`
+      : 0,
+    background: hasFrame ? defaultSuomifiTheme.colors.whiteBase : 'none',
+    margin: hasFrame
+      ? `${defaultSuomifiTheme.spacing.s} ${defaultSuomifiTheme.spacing.xl} 0 ${defaultSuomifiTheme.spacing.xl}`
+      : 0,
+    display: 'flex',
+    flexGrow: 1,
+  };
+
+  return (
+    <div
+      style={{
+        background: defaultSuomifiTheme.colors.depthLight3,
+        paddingTop: hasFrame ? defaultSuomifiTheme.spacing.s : 0,
+        paddingBottom: defaultSuomifiTheme.spacing.xxxl,
+        ...style,
+      }}
+      {...passProps}
+    >
+      <Desktop>
+        <div style={flexWrapperStyles}>
+          <div
+            style={{
+              ...contentContainerStyles,
+              width: '100%',
+              maxWidth: hasFrame ? 1140 : 'initial',
+              flexWrap: 'nowrap',
+            }}
+          >
+            <SideNav
+              sideNavData={sideNavData}
+              style={{
+                width: '22rem',
+                marginRight: defaultSuomifiTheme.spacing.s,
+              }}
+            />
+            <Content hasFrame={hasFrame} style={{ flex: 1 }}>
+              {children}
+            </Content>
+          </div>
+        </div>
+      </Desktop>
+      <Tablet>
         <div
           style={{
-            margin: hasFrame
-              ? `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xl} 0 ${suomifiDesignTokens.spacing.xl}`
-              : 0,
-            width: '100%',
-            maxWidth: hasFrame ? 1140 : 'initial',
-            display: 'flex',
-            flexWrap: 'nowrap',
-            background: hasFrame
-              ? suomifiDesignTokens.colors.whiteBase
-              : 'none',
-            border: hasFrame
-              ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`
-              : 0,
+            ...flexWrapperStyles,
+            flexDirection: 'column',
           }}
         >
           <SideNav
             sideNavData={sideNavData}
             style={{
-              width: '22rem',
-              marginRight: suomifiDesignTokens.spacing.s,
+              margin: `0 ${defaultSuomifiTheme.spacing.xl}`,
+              border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
             }}
           />
-          <Content hasFrame={hasFrame} style={{ flex: 1 }}>
-            {children}
-          </Content>
+          <div style={{ ...contentContainerStyles }}>
+            <Content hasFrame={hasFrame}>{children}</Content>
+          </div>
         </div>
-      </div>
-    </Desktop>
-    <Tablet>
-      <SideNav
-        sideNavData={sideNavData}
-        style={{
-          margin: `0 ${suomifiDesignTokens.spacing.xl}`,
-          border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
-        }}
-      />
-      <div
-        style={{
-          margin: hasFrame
-            ? `${suomifiDesignTokens.spacing.s} ${suomifiDesignTokens.spacing.xl} 0 ${suomifiDesignTokens.spacing.xl}`
-            : 0,
-          background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
-          border: hasFrame
-            ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`
-            : 0,
-        }}
-      >
-        <Content hasFrame={hasFrame}>{children}</Content>
-      </div>
-    </Tablet>
-    <Mobile>
-      <SideNav
-        sideNavData={sideNavData}
-        style={{
-          margin: `0 ${suomifiDesignTokens.spacing.s}`,
-          border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
-        }}
-      />
-      <div
-        style={{
-          margin: 0,
-          marginTop: hasFrame ? suomifiDesignTokens.spacing.s : 0,
-          background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
-          border: hasFrame
-            ? `1px solid ${suomifiDesignTokens.colors.depthLight1}`
-            : 0,
-        }}
-      >
-        <Content hasFrame={hasFrame}>{children}</Content>
-      </div>
-    </Mobile>
-  </div>
-);
+      </Tablet>
+      <Mobile>
+        <div style={{ ...flexWrapperStyles, flexDirection: 'column' }}>
+          <SideNav
+            sideNavData={sideNavData}
+            style={{
+              margin: `0 ${defaultSuomifiTheme.spacing.s}`,
+              border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
+            }}
+          />
+          <div
+            style={{
+              ...contentContainerStyles,
+              margin: 0,
+              marginTop: hasFrame ? defaultSuomifiTheme.spacing.s : 0,
+            }}
+          >
+            <Content hasFrame={hasFrame}>{children}</Content>
+          </div>
+        </div>
+      </Mobile>
+    </div>
+  );
+};
 
-interface Props {
+interface Props
+  extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   sideNavData?: SideNavData;
   hasFrame?: boolean;
   children: ReactNode;

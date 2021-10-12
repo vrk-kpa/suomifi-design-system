@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { graphql } from 'gatsby';
 import { Translation } from 'react-i18next';
 import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens, ModalProps } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, ModalProps } from 'suomifi-ui-components';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
@@ -38,9 +38,9 @@ const Page = (): JSX.Element => (
         <SEO title={t('title')} />
         <Heading variant="h1">{t('title')}</Heading>
 
-        <ResponsiveParagraph.lead>
-          <ResponsiveText.lead>{t('intro')}</ResponsiveText.lead>
-        </ResponsiveParagraph.lead>
+        <ResponsiveParagraph variant="lead">
+          <ResponsiveText variant="lead">{t('intro')}</ResponsiveText>
+        </ResponsiveParagraph>
 
         <ConfirmExample title="" desc="" noCode />
 
@@ -80,12 +80,16 @@ const ExpanderExampleContent = (): JSX.Element => (
     {(t) => (
       <>
         <Paragraph>
-          <Text.bold>{t('example.default.checkboxContentEdited')}</Text.bold>
+          <Text variant="bold">
+            {t('example.default.checkboxContentEdited')}
+          </Text>
           <br />
           <Text>{t('example.default.date')}</Text>
         </Paragraph>
         <Paragraph>
-          <Text.bold>{t('example.default.checkboxContentEditedBy')}</Text.bold>
+          <Text variant="bold">
+            {t('example.default.checkboxContentEditedBy')}
+          </Text>
           <br />
           <Text>{t('example.default.email')}</Text>
         </Paragraph>
@@ -110,7 +114,7 @@ const DefaultExample = ({
       {(t) => (
         <ComponentDescription mainTitle={title} description={desc}>
           <ComponentExample
-            style={{ marginBottom: suomifiDesignTokens.spacing.s }}
+            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
           >
             <Button onClick={() => setVisible(true)}>
               {t('example.openText')}
@@ -242,7 +246,7 @@ const ConfirmExample = ({
           noCode={noCode}
         >
           <ComponentExample
-            style={{ marginBottom: suomifiDesignTokens.spacing.s }}
+            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
           >
             <Button onClick={() => setVisible(true)}>
               {t('example.openText')}

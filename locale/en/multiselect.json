@@ -38,9 +38,12 @@
     }
   ],
   "example.label": "",
+  "example.hintText": "",
   "example.visualPlaceholder": "",
   "example.removeAllSelections": "",
-  "example.ariaSelectedAmountText": "",
+  "example.selectedAmountText": "",
+  "example.optionsAvailableText": "",
+  "example.optionChipRemovedText": "",
   "example.noItems": "",
   "example.chipActionLabel": "",
   "example.tools.jackhammer": "",

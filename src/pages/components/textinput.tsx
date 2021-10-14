@@ -1,16 +1,14 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
+import * as textInputContent from '../../../locale/fi/textinput.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { TextInput } from 'components/ExampleComponents';
 
@@ -19,104 +17,100 @@ const Page = (): React.ReactElement => {
   const status = errorState ? 'error' : 'default';
 
   return (
-    <Translation ns={['textinput']}>
-      {(t) => (
-        <Layout sideNavData={sideNavData(t)}>
-          <SEO title={t('title')} />
-          <Heading variant="h1">{t('title')}</Heading>
+    <Layout sideNavData={sideNavData}>
+      <SEO title={textInputContent.title} />
+      <Heading variant="h1">{textInputContent.title}</Heading>
 
-          <Paragraph variant="lead">
-            <Text variant="lead">{t('intro')}</Text>
-          </Paragraph>
+      <Paragraph variant="lead">
+        <Text variant="lead">{textInputContent.intro}</Text>
+      </Paragraph>
 
-          <ComponentDescription>
-            <ComponentExample
-              style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
-            >
-              <TextInput labelText={t('exampleRegular.label')} />
-            </ComponentExample>
-          </ComponentDescription>
+      <ComponentDescription>
+        <ComponentExample
+          style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+        >
+          <TextInput labelText={textInputContent['exampleRegular.label']} />
+        </ComponentExample>
+      </ComponentDescription>
 
-          <NoteBox title={t('note.title')} items={t('note.items')} />
+      <NoteBox
+        title={textInputContent['note.title']}
+        items={textInputContent['note.items']}
+      />
 
-          {t<SectionProps[]>('sections').map((section, index) => (
-            <Section
-              key={index}
-              mainTitle={section.title}
-              paragraphs={section.paragraphs}
-              links={section.links}
-            />
-          ))}
+      {textInputContent.sections.map((section, index) => (
+        <Section
+          key={index}
+          mainTitle={section.title}
+          paragraphs={(section as any).paragraphs}
+          links={section.links}
+        />
+      ))}
 
-          <ComponentDescription
-            mainTitle={t('exampleSuccess.title')}
-            description={t('exampleSuccess.description')}
-            exampleFirst
-            filterProps={[]}
-          >
-            <ComponentExample>
-              <TextInput
-                labelText={t('exampleSuccess.label')}
-                status="success"
-              />
-            </ComponentExample>
-          </ComponentDescription>
+      <ComponentDescription
+        mainTitle={textInputContent['exampleSuccess.title']}
+        description={textInputContent['exampleSuccess.description']}
+        exampleFirst
+        filterProps={[]}
+      >
+        <ComponentExample>
+          <TextInput
+            labelText={textInputContent['exampleSuccess.label']}
+            status="success"
+          />
+        </ComponentExample>
+      </ComponentDescription>
 
-          <ComponentDescription
-            mainTitle={t('exampleError.title')}
-            description={t('exampleError.description')}
-            exampleFirst
-            filterProps={[]}
-          >
-            <ComponentExample>
-              <TextInput
-                labelText={t('exampleError.label')}
-                {...(errorState
-                  ? { statusText: t('exampleError.statusText') }
-                  : {})}
-                status={status}
-                debounce={300}
-                onChange={(value) => {
-                  setErrorState(!value);
-                }}
-              />
-            </ComponentExample>
-          </ComponentDescription>
+      <ComponentDescription
+        mainTitle={textInputContent['exampleError.title']}
+        description={textInputContent['exampleError.description']}
+        exampleFirst
+        filterProps={[]}
+      >
+        <ComponentExample>
+          <TextInput
+            labelText={textInputContent['exampleError.label']}
+            {...(errorState
+              ? { statusText: textInputContent['exampleError.statusText'] }
+              : {})}
+            status={status}
+            debounce={300}
+            onChange={(value) => {
+              setErrorState(!value);
+            }}
+          />
+        </ComponentExample>
+      </ComponentDescription>
 
-          <ComponentDescription
-            mainTitle={t('exampleDisabled.title')}
-            description={t('exampleDisabled.description')}
-            exampleFirst
-            filterProps={[]}
-          >
-            <ComponentExample>
-              <TextInput labelText={t('exampleDisabled.label')} disabled />
-            </ComponentExample>
-          </ComponentDescription>
-          <ComponentDescription
-            mainTitle={t('exampleOptional.title')}
-            description={t('exampleOptional.description')}
-            exampleFirst
-            filterProps={[]}
-          >
-            <ComponentExample>
-              <TextInput
-                labelText={t('exampleOptional.label')}
-                icon="mapLocation"
-                optionalText={t('exampleOptional.optionalText')}
-              />
-            </ComponentExample>
-          </ComponentDescription>
-        </Layout>
-      )}
-    </Translation>
+      <ComponentDescription
+        mainTitle={textInputContent['exampleDisabled.title']}
+        description={textInputContent['exampleDisabled.description']}
+        exampleFirst
+        filterProps={[]}
+      >
+        <ComponentExample>
+          <TextInput
+            labelText={textInputContent['exampleDisabled.label']}
+            disabled
+          />
+        </ComponentExample>
+      </ComponentDescription>
+      <ComponentDescription
+        mainTitle={textInputContent['exampleOptional.title']}
+        description={textInputContent['exampleOptional.description']}
+        exampleFirst
+        filterProps={[]}
+      >
+        <ComponentExample>
+          <TextInput
+            labelText={textInputContent['exampleOptional.label']}
+            icon="mapLocation"
+            optionalText={textInputContent['exampleOptional.optionalText']}
+          />
+        </ComponentExample>
+      </ComponentDescription>
+    </Layout>
   );
 };
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

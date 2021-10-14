@@ -43,9 +43,12 @@
     }
   ],
   "example.label": "Työkalut",
+  "example.hintText": "Vaihtoehtoja voi rajata kirjoittamalla kenttään",
   "example.visualPlaceholder": "Valitse työkalut",
   "example.removeAllSelections": "Poista kaikki valinnat",
-  "example.ariaSelectedAmountText": "työkalua valittu",
+  "example.selectedAmountText": "työkalua valittu",
+  "example.optionsAvailableText": "vaihtoehtoa",
+  "example.optionChipRemovedText": "poistettu",
   "example.noItems": "Ei vaihtoehtoja",
   "example.chipActionLabel": "Poista",
   "example.tools.jackhammer": "Poravasara",

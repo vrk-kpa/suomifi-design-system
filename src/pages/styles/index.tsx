@@ -1,9 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
-
 import Layout from 'components/layout';
+import * as stylesContent from '../../../locale/fi/styles.json';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/styles';
 import ComponentDescription from 'components/ComponentDescription';
@@ -11,49 +9,44 @@ import ComponentExample from 'components/ComponentExample';
 import { Example } from 'examples/styles';
 import { getExample, CodeExampleData } from 'components/CodeExampleUtil';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
-  <Translation ns={['styles']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('info.title')} />
-        <Heading variant="h1">{t('info.title')}</Heading>
+  <Layout sideNavData={sideNavData}>
+    <SEO title={stylesContent.title} />
+    <Heading variant="h1">{stylesContent.title}</Heading>
 
-        <Paragraph variant="lead">
-          <Text variant="lead">{t('intro')}</Text>
-        </Paragraph>
+    <Paragraph variant="lead">
+      <Text variant="lead">{stylesContent.intro}</Text>
+    </Paragraph>
 
-        {t<SectionProps[]>('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
+    {stylesContent.sections.map((section, index) => (
+      <Section
+        key={index}
+        mainTitle={section.title}
+        paragraphs={section.paragraphs}
+        links={section.links}
+      />
+    ))}
 
-        <ComponentDescription
-          mainTitle={t('usage.title')}
-          description={t('usage.description')}
-          exampleFirst
-          showOnlyCodeString
-          codeString={getExample(data, 'styles')}
-        >
-          <ComponentExample>
-            <Example />
-          </ComponentExample>
-        </ComponentDescription>
-      </Layout>
-    )}
-  </Translation>
+    <ComponentDescription
+      mainTitle={stylesContent['usage.title']}
+      description={stylesContent['usage.description']}
+      exampleFirst
+      showOnlyCodeString
+      codeString={getExample(data, 'styles')}
+    >
+      <ComponentExample>
+        <Example />
+      </ComponentExample>
+    </ComponentDescription>
+  </Layout>
 );
 
-export default withI18next()(Page);
+export default Page;
 
 export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
+  query {
     ...ExamplesFragment
   }
 `;

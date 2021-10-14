@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
+
+import * as modalContent from '../../../locale/fi/modal.json';
 import { defaultSuomifiTheme, ModalProps } from 'suomifi-ui-components';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
@@ -28,74 +27,69 @@ import {
   Paragraph as ResponsiveParagraph,
 } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 
 const Page = (): JSX.Element => (
-  <Translation ns={['modal']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+  <Layout sideNavData={sideNavData}>
+    <SEO title={modalContent.title} />
+    <Heading variant="h1">{modalContent.title}</Heading>
 
-        <ResponsiveParagraph variant="lead">
-          <ResponsiveText variant="lead">{t('intro')}</ResponsiveText>
-        </ResponsiveParagraph>
+    <ResponsiveParagraph variant="lead">
+      <ResponsiveText variant="lead">{modalContent.intro}</ResponsiveText>
+    </ResponsiveParagraph>
 
-        <ConfirmExample title="" desc="" noCode />
+    <ConfirmExample title="" desc="" noCode />
 
-        <NoteBox title={t('note.title')} items={t('note.items')} />
+    <NoteBox
+      title={modalContent['note.title']}
+      items={modalContent['note.items']}
+    />
 
-        {t<SectionProps[]>('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
+    {modalContent.sections.map((section, index) => (
+      <Section
+        key={index}
+        mainTitle={section.title}
+        paragraphs={(section as any).paragraphs}
+        links={section.links}
+      />
+    ))}
 
-        <ConfirmExample
-          title={t('example.confirm.heading')}
-          desc={t('example.confirm.description')}
-          noCode={false}
-        />
+    <ConfirmExample
+      title={modalContent['example.confirm.heading']}
+      desc={modalContent['example.confirm.description']}
+      noCode={false}
+    />
 
-        <DefaultExample
-          title={t('example.default.heading')}
-          desc={t('example.default.description')}
-        />
-        <DefaultExample
-          variant="smallScreen"
-          title={t('example.smallScreen.heading')}
-          desc={t('example.smallScreen.description')}
-        />
-      </Layout>
-    )}
-  </Translation>
+    <DefaultExample
+      title={modalContent['example.default.heading']}
+      desc={modalContent['example.default.description']}
+    />
+    <DefaultExample
+      variant="smallScreen"
+      title={modalContent['example.smallScreen.heading']}
+      desc={modalContent['example.smallScreen.description']}
+    />
+  </Layout>
 );
 
 const ExpanderExampleContent = (): JSX.Element => (
-  <Translation ns={['modal']}>
-    {(t) => (
-      <>
-        <Paragraph>
-          <Text variant="bold">
-            {t('example.default.checkboxContentEdited')}
-          </Text>
-          <br />
-          <Text>{t('example.default.date')}</Text>
-        </Paragraph>
-        <Paragraph>
-          <Text variant="bold">
-            {t('example.default.checkboxContentEditedBy')}
-          </Text>
-          <br />
-          <Text>{t('example.default.email')}</Text>
-        </Paragraph>
-      </>
-    )}
-  </Translation>
+  <>
+    <Paragraph>
+      <Text variant="bold">
+        {modalContent['example.default.checkboxContentEdited']}
+      </Text>
+      <br />
+      <Text>{modalContent['example.default.date']}</Text>
+    </Paragraph>
+    <Paragraph>
+      <Text variant="bold">
+        {modalContent['example.default.checkboxContentEditedBy']}
+      </Text>
+      <br />
+      <Text>{modalContent['example.default.email']}</Text>
+    </Paragraph>
+  </>
 );
 ExpanderExampleContent.displayName = 'ExpanderExampleContent';
 
@@ -110,119 +104,111 @@ const DefaultExample = ({
   const saveDisabled = !checked[2] && !checked[3];
 
   return (
-    <Translation ns={['modal']}>
-      {(t) => (
-        <ComponentDescription mainTitle={title} description={desc}>
-          <ComponentExample
-            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
-          >
-            <Button onClick={() => setVisible(true)}>
-              {t('example.openText')}
-            </Button>
-            <Modal
-              {...passProps}
-              appElementId="___gatsby"
-              visible={visible}
-              onEscKeyDown={() => setVisible(false)}
+    <ComponentDescription mainTitle={title} description={desc}>
+      <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
+        <Button onClick={() => setVisible(true)}>
+          {modalContent['example.openText']}
+        </Button>
+        <Modal
+          {...passProps}
+          appElementId="___gatsby"
+          visible={visible}
+          onEscKeyDown={() => setVisible(false)}
+        >
+          <ModalContent>
+            <ModalTitle>{modalContent['example.default.title']}</ModalTitle>
+            <Paragraph>
+              <Text>{modalContent['example.default.content']}</Text>
+            </Paragraph>
+            <ExpanderGroup
+              openAllText={modalContent['example.default.groupOpenAll']}
+              closeAllText={modalContent['example.default.groupCloseAll']}
             >
-              <ModalContent>
-                <ModalTitle>{t('example.default.title')}</ModalTitle>
-                <Paragraph>
-                  <Text>{t('example.default.content')}</Text>
-                </Paragraph>
-                <ExpanderGroup
-                  openAllText={t('example.default.groupOpenAll')}
-                  closeAllText={t('example.default.groupCloseAll')}
+              <Expander>
+                <ExpanderTitle
+                  ariaOpenText={modalContent['example.default.ariaOpen']}
+                  ariaCloseText={modalContent['example.default.ariaClose']}
+                  toggleButtonAriaDescribedBy="checkbox-id-1"
                 >
-                  <Expander>
-                    <ExpanderTitle
-                      ariaOpenText={t('example.default.ariaOpen')}
-                      ariaCloseText={t('example.default.ariaClose')}
-                      toggleButtonAriaDescribedBy="checkbox-id-1"
-                    >
-                      <Checkbox
-                        disabled
-                        hintText={t('example.default.checkboxHint1')}
-                        id="checkbox-id-1"
-                      >
-                        {t('example.default.checkboxLabel1')}
-                      </Checkbox>
-                    </ExpanderTitle>
-                    <ExpanderContent>
-                      <ExpanderExampleContent />
-                    </ExpanderContent>
-                  </Expander>
-                  <Expander>
-                    <ExpanderTitle
-                      ariaOpenText={t('example.default.ariaOpen')}
-                      ariaCloseText={t('example.default.ariaClose')}
-                      toggleButtonAriaDescribedBy="checkbox-id-2"
-                    >
-                      <Checkbox
-                        hintText={t('example.default.checkboxHint2')}
-                        id="checkbox-id-2"
-                        checked={checked[2]}
-                        onClick={({ checkboxState }) => {
-                          setChecked({ ...checked, 2: checkboxState });
-                        }}
-                      >
-                        {t('example.default.checkboxLabel2')}
-                      </Checkbox>
-                    </ExpanderTitle>
-                    <ExpanderContent>
-                      <ExpanderExampleContent />
-                    </ExpanderContent>
-                  </Expander>
-                  <Expander>
-                    <ExpanderTitle
-                      ariaOpenText={t('example.default.ariaOpen')}
-                      ariaCloseText={t('example.default.ariaClose')}
-                      toggleButtonAriaDescribedBy="checkbox-id-3"
-                    >
-                      <Checkbox
-                        hintText={t('example.default.checkboxHint3')}
-                        id="checkbox-id-3"
-                        checked={checked[3]}
-                        onClick={({ checkboxState }) => {
-                          setChecked({ ...checked, 3: checkboxState });
-                        }}
-                      >
-                        {t('example.default.checkboxLabel3')}
-                      </Checkbox>
-                    </ExpanderTitle>
-                    <ExpanderContent>
-                      <ExpanderExampleContent />
-                    </ExpanderContent>
-                  </Expander>
-                </ExpanderGroup>
-              </ModalContent>
-              <ModalFooter>
-                <VisuallyHidden id="save-disabled">
-                  {t('example.default.ariaPublishDisabled')}
-                </VisuallyHidden>
-                <Button
-                  arial-label={t('example.default.publish')}
-                  onClick={() => setVisible(false)}
-                  aria-disabled={saveDisabled}
-                  {...(saveDisabled
-                    ? { 'aria-describedby': 'save-disabled' }
-                    : {})}
+                  <Checkbox
+                    disabled
+                    hintText={modalContent['example.default.checkboxHint1']}
+                    id="checkbox-id-1"
+                  >
+                    {modalContent['example.default.checkboxLabel1']}
+                  </Checkbox>
+                </ExpanderTitle>
+                <ExpanderContent>
+                  <ExpanderExampleContent />
+                </ExpanderContent>
+              </Expander>
+              <Expander>
+                <ExpanderTitle
+                  ariaOpenText={modalContent['example.default.ariaOpen']}
+                  ariaCloseText={modalContent['example.default.ariaClose']}
+                  toggleButtonAriaDescribedBy="checkbox-id-2"
                 >
-                  {t('example.default.publish')}
-                </Button>
-                <Button
-                  variant="secondary"
-                  arial-label={t('example.default.cancel')}
-                  onClick={() => setVisible(false)}
+                  <Checkbox
+                    hintText={modalContent['example.default.checkboxHint2']}
+                    id="checkbox-id-2"
+                    checked={checked[2]}
+                    onClick={({ checkboxState }) => {
+                      setChecked({ ...checked, 2: checkboxState });
+                    }}
+                  >
+                    {modalContent['example.default.checkboxLabel2']}
+                  </Checkbox>
+                </ExpanderTitle>
+                <ExpanderContent>
+                  <ExpanderExampleContent />
+                </ExpanderContent>
+              </Expander>
+              <Expander>
+                <ExpanderTitle
+                  ariaOpenText={modalContent['example.default.ariaOpen']}
+                  ariaCloseText={modalContent['example.default.ariaClose']}
+                  toggleButtonAriaDescribedBy="checkbox-id-3"
                 >
-                  {t('example.default.cancel')}
-                </Button>
-              </ModalFooter>
-            </Modal>
-          </ComponentExample>
-        </ComponentDescription>
-      )}
-    </Translation>
+                  <Checkbox
+                    hintText={modalContent['example.default.checkboxHint3']}
+                    id="checkbox-id-3"
+                    checked={checked[3]}
+                    onClick={({ checkboxState }) => {
+                      setChecked({ ...checked, 3: checkboxState });
+                    }}
+                  >
+                    {modalContent['example.default.checkboxLabel3']}
+                  </Checkbox>
+                </ExpanderTitle>
+                <ExpanderContent>
+                  <ExpanderExampleContent />
+                </ExpanderContent>
+              </Expander>
+            </ExpanderGroup>
+          </ModalContent>
+          <ModalFooter>
+            <VisuallyHidden id="save-disabled">
+              {modalContent['example.default.ariaPublishDisabled']}
+            </VisuallyHidden>
+            <Button
+              arial-label={modalContent['example.default.publish']}
+              onClick={() => setVisible(false)}
+              aria-disabled={saveDisabled}
+              {...(saveDisabled ? { 'aria-describedby': 'save-disabled' } : {})}
+            >
+              {modalContent['example.default.publish']}
+            </Button>
+            <Button
+              variant="secondary"
+              arial-label={modalContent['example.default.cancel']}
+              onClick={() => setVisible(false)}
+            >
+              {modalContent['example.default.cancel']}
+            </Button>
+          </ModalFooter>
+        </Modal>
+      </ComponentExample>
+    </ComponentDescription>
   );
 };
 
@@ -238,59 +224,43 @@ const ConfirmExample = ({
 }): JSX.Element => {
   const [visible, setVisible] = useState(false);
   return (
-    <Translation ns={['modal']}>
-      {(t) => (
-        <ComponentDescription
-          mainTitle={title}
-          description={desc}
-          noCode={noCode}
+    <ComponentDescription mainTitle={title} description={desc} noCode={noCode}>
+      <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
+        <Button onClick={() => setVisible(true)}>
+          {modalContent['example.openText']}
+        </Button>
+        <Modal
+          {...passProps}
+          scrollable={false}
+          appElementId="___gatsby"
+          visible={visible}
+          onEscKeyDown={() => setVisible(false)}
         >
-          <ComponentExample
-            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
-          >
-            <Button onClick={() => setVisible(true)}>
-              {t('example.openText')}
-            </Button>
-            <Modal
-              {...passProps}
-              scrollable={false}
-              appElementId="___gatsby"
-              visible={visible}
-              onEscKeyDown={() => setVisible(false)}
+          <ModalContent>
+            <ModalTitle>{modalContent['example.confirm.title']}</ModalTitle>
+            <Paragraph>
+              <Text>{modalContent['example.confirm.content']}</Text>
+            </Paragraph>
+          </ModalContent>
+          <ModalFooter>
+            <Button
+              arial-label={modalContent['example.confirm.ariaSave']}
+              onClick={() => setVisible(false)}
             >
-              <ModalContent>
-                <ModalTitle>{t('example.confirm.title')}</ModalTitle>
-                <Paragraph>
-                  <Text>{t('example.confirm.content')}</Text>
-                </Paragraph>
-              </ModalContent>
-              <ModalFooter>
-                <Button
-                  arial-label={t('example.confirm.ariaSave')}
-                  onClick={() => setVisible(false)}
-                >
-                  {t('example.confirm.save')}
-                </Button>
-                <Button
-                  variant="secondary"
-                  arial-label={t('example.confirm.ariaCancel')}
-                  onClick={() => setVisible(false)}
-                >
-                  {t('example.confirm.cancel')}
-                </Button>
-              </ModalFooter>
-            </Modal>
-          </ComponentExample>
-        </ComponentDescription>
-      )}
-    </Translation>
+              {modalContent['example.confirm.save']}
+            </Button>
+            <Button
+              variant="secondary"
+              arial-label={modalContent['example.confirm.ariaCancel']}
+              onClick={() => setVisible(false)}
+            >
+              {modalContent['example.confirm.cancel']}
+            </Button>
+          </ModalFooter>
+        </Modal>
+      </ComponentExample>
+    </ComponentDescription>
   );
 };
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

@@ -1,16 +1,14 @@
 import React, { CSSProperties } from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 import { getLuminance } from 'polished';
 
+import colorsContent from '../../../locale/fi/colors.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/styles';
 import NoteBox from 'components/NoteBox';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
@@ -134,64 +132,57 @@ const getExampleColor = (
 );
 
 const Page = (): JSX.Element => (
-  <Translation ns={['colors']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+  <Layout sideNavData={sideNavData}>
+    <SEO title={colorsContent.title} />
+    <Heading variant="h1">{colorsContent.title}</Heading>
 
-        <Paragraph variant="lead">
-          <Text variant="lead">{t('intro')}</Text>
-        </Paragraph>
+    <Paragraph variant="lead">
+      <Text variant="lead">{colorsContent.intro}</Text>
+    </Paragraph>
 
-        <NoteBox title={t('note.title')} items={t('note.items')} />
+    <NoteBox
+      title={colorsContent['note.title']}
+      items={colorsContent['note.items']}
+    />
 
-        {t<SectionProps[]>('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
+    {colorsContent.sections.map((section, index) => (
+      <Section
+        key={index}
+        mainTitle={section.title}
+        paragraphs={(section as any).paragraphs}
+        links={section.links}
+      />
+    ))}
 
-        {colorCategories.map((item) => (
-          <ComponentDescription
-            key={item.id}
-            mainTitle={t(`${item.id}.title`)}
-            description={t(`${item.id}.description`)}
-            exampleFirst={false}
-            noCode
-          >
-            <ComponentExample
-              style={{
-                padding: 0,
-                justifyContent: 'flex-start',
-                background: 'none',
-                border: 'none',
-              }}
-            >
-              {item.colors.map((color, index) =>
-                getExampleColor(
-                  `${item.id}.${index}`,
-                  color.name,
-                  color.value,
-                  t(`${color.name}.label`),
-                  { border: color.border },
-                ),
-              )}
-            </ComponentExample>
-          </ComponentDescription>
-        ))}
-      </Layout>
-    )}
-  </Translation>
+    {colorCategories.map((item) => (
+      <ComponentDescription
+        key={item.id}
+        mainTitle={colorsContent[`${item.id}.title`]}
+        description={colorsContent[`${item.id}.description`]}
+        exampleFirst={false}
+        noCode
+      >
+        <ComponentExample
+          style={{
+            padding: 0,
+            justifyContent: 'flex-start',
+            background: 'none',
+            border: 'none',
+          }}
+        >
+          {item.colors.map((color, index) =>
+            getExampleColor(
+              `${item.id}.${index}`,
+              color.name,
+              color.value,
+              colorsContent[`${color.name}.label`],
+              { border: color.border },
+            ),
+          )}
+        </ComponentExample>
+      </ComponentDescription>
+    ))}
+  </Layout>
 );
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

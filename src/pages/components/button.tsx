@@ -1,15 +1,13 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
+import * as buttonContent from '../../../locale/fi/button.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import MobileDevice from 'components/MobileDevice';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
@@ -24,386 +22,375 @@ ExampleWrapper.displayName = 'div';
 
 const Page = (): JSX.Element => {
   return (
-    <Translation ns={['button']}>
-      {(t) => (
-        <Layout sideNavData={sideNavData(t)}>
-          <SEO title={t('title')} />
-          <Heading variant="h1">{t('title')}</Heading>
+    <Layout sideNavData={sideNavData}>
+      <SEO title={buttonContent.title} />
+      <Heading variant="h1">{buttonContent.title}</Heading>
 
-          <Paragraph variant="lead">
-            <Text variant="lead">{t('intro')}</Text>
-          </Paragraph>
+      <Paragraph variant="lead">
+        <Text variant="lead">{buttonContent.intro}</Text>
+      </Paragraph>
 
-          <NoteBox title={t('note.title')} items={t('note.items')} />
+      <NoteBox
+        title={buttonContent['note.title']}
+        items={buttonContent['note.items']}
+      />
 
-          {t<SectionProps[]>('sections').map((section, index) => (
-            <Section
-              key={index}
-              mainTitle={section.title}
-              paragraphs={section.paragraphs}
-              links={section.links}
-            />
-          ))}
+      {buttonContent.sections.map((section, index) => (
+        <Section
+          key={index}
+          mainTitle={section.title}
+          paragraphs={(section as any).paragraphs}
+          links={section.links}
+        />
+      ))}
 
-          <ComponentDescription
-            mainTitle={t('fullWidth.title')}
-            description={t('fullWidth.description')}
-            exampleFirst
+      <ComponentDescription
+        mainTitle={buttonContent['fullWidth.title']}
+        description={buttonContent['fullWidth.description']}
+        exampleFirst
+      >
+        <div
+          style={{
+            overflow: 'hidden',
+            marginBottom: defaultSuomifiTheme.spacing.s,
+            padding: `${defaultSuomifiTheme.spacing.xl} ${defaultSuomifiTheme.spacing.s} 0 ${defaultSuomifiTheme.spacing.s}`,
+            background: defaultSuomifiTheme.colors.whiteBase,
+            display: 'flex',
+            justifyContent: 'center',
+            border: `1px solid ${defaultSuomifiTheme.colors.depthBase}`,
+          }}
+        >
+          <MobileDevice>
+            <ExampleWrapper>
+              <Button fullWidth onClick={() => undefined}>
+                {buttonContent['primary.label']}
+              </Button>
+            </ExampleWrapper>
+            <ExampleWrapper>
+              <Button fullWidth variant="link" onClick={() => undefined}>
+                {buttonContent['link.label']}
+              </Button>
+            </ExampleWrapper>
+            <ExampleWrapper>
+              <Button fullWidth variant="secondary" onClick={() => undefined}>
+                {buttonContent['secondary.label']}
+              </Button>
+            </ExampleWrapper>
+          </MobileDevice>
+        </div>
+      </ComponentDescription>
+
+      <ComponentDescription
+        mainTitle={buttonContent['primary.title']}
+        description={buttonContent['primary.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.whiteBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button onClick={() => undefined}>
+              {buttonContent['primary.label']}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button disabled onClick={() => undefined}>
+              {buttonContent['primary.labelDisabled']}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+      </ComponentDescription>
+
+      <ComponentDescription
+        mainTitle={buttonContent['link.title']}
+        description={buttonContent['link.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.whiteBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button variant="link" onClick={() => undefined}>
+              {buttonContent['link.label']}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button variant="link" disabled onClick={() => undefined}>
+              {buttonContent['link.labelDisabled']}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+      </ComponentDescription>
+
+      <ComponentDescription
+        mainTitle={buttonContent['negative.title']}
+        description={buttonContent['negative.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.highlightBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button variant="inverted" onClick={() => undefined}>
+              {buttonContent['negative.label']}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button variant="inverted" disabled onClick={() => undefined}>
+              {buttonContent['negative.labelDisabled']}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+      </ComponentDescription>
+
+      <ComponentDescription
+        mainTitle={buttonContent['secondary.title']}
+        description={buttonContent['secondary.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.whiteBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button variant="secondary" onClick={() => undefined}>
+              {buttonContent['secondary.label']}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button variant="secondary" disabled onClick={() => undefined}>
+              {buttonContent['secondary.labelDisabled']}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+      </ComponentDescription>
+
+      <ComponentDescription
+        mainTitle={buttonContent['secondaryNoborder.title']}
+        description={buttonContent['secondaryNoborder.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.whiteBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button variant="secondaryNoBorder" onClick={() => undefined}>
+              {buttonContent['secondaryNoborder.label']}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button
+              variant="secondaryNoBorder"
+              disabled
+              onClick={() => undefined}
+            >
+              {buttonContent['secondaryNoborder.labelDisabled']}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+      </ComponentDescription>
+
+      <ComponentDescription
+        mainTitle={buttonContent['withIcon.title']}
+        description={buttonContent['withIcon.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.whiteBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button icon="login" onClick={() => undefined}>
+              {buttonContent['button.labelIcon'].replace(
+                '{{name}}',
+                buttonContent['primary.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button iconRight="login" onClick={() => undefined}>
+              {buttonContent['button.labelIconRight'].replace(
+                '{{name}}',
+                buttonContent['primary.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.whiteBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button icon="login" variant="link" onClick={() => undefined}>
+              {buttonContent['button.labelIcon'].replace(
+                '{{name}}',
+                buttonContent['link.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button iconRight="login" variant="link" onClick={() => undefined}>
+              {buttonContent['button.labelIconRight'].replace(
+                '{{name}}',
+                buttonContent['link.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.highlightBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button icon="login" variant="inverted" onClick={() => undefined}>
+              {buttonContent['button.labelIcon'].replace(
+                '{{name}}',
+                buttonContent['negative.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button
+              iconRight="login"
+              variant="inverted"
+              onClick={() => undefined}
+            >
+              {buttonContent['button.labelIconRight'].replace(
+                '{{name}}',
+                buttonContent['negative.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.whiteBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button icon="login" variant="secondary" onClick={() => undefined}>
+              {buttonContent['button.labelIcon'].replace(
+                '{{name}}',
+                buttonContent['secondary.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button
+              iconRight="login"
+              variant="secondary"
+              onClick={() => undefined}
+            >
+              {buttonContent['button.labelIconRight'].replace(
+                '{{name}}',
+                buttonContent['secondary.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.whiteBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button
+              icon="login"
+              variant="secondaryNoBorder"
+              onClick={() => undefined}
+            >
+              {buttonContent['button.labelIcon'].replace(
+                '{{name}}',
+                buttonContent['secondaryNoborder.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button
+              iconRight="login"
+              variant="secondaryNoBorder"
+              onClick={() => undefined}
+            >
+              {buttonContent['button.labelIconRight'].replace(
+                '{{name}}',
+                buttonContent['secondaryNoborder.label'],
+              )}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+      </ComponentDescription>
+
+      <ComponentDescription
+        mainTitle={buttonContent['disabled.title']}
+        description={buttonContent['disabled.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            padding: defaultSuomifiTheme.spacing.xs,
+            background: defaultSuomifiTheme.colors.whiteBase,
+          }}
+        >
+          <ExampleWrapper>
+            <Button disabled onClick={() => undefined}>
+              {buttonContent['primary.labelDisabled']}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button disabled variant="link" onClick={() => undefined}>
+              {buttonContent['link.labelDisabled']}
+            </Button>
+          </ExampleWrapper>
+          <div
+            style={{
+              padding: 15,
+              background: defaultSuomifiTheme.colors.highlightBase,
+            }}
           >
-            <div
-              style={{
-                overflow: 'hidden',
-                marginBottom: defaultSuomifiTheme.spacing.s,
-                padding: `${defaultSuomifiTheme.spacing.xl} ${defaultSuomifiTheme.spacing.s} 0 ${defaultSuomifiTheme.spacing.s}`,
-                background: defaultSuomifiTheme.colors.whiteBase,
-                display: 'flex',
-                justifyContent: 'center',
-                border: `1px solid ${defaultSuomifiTheme.colors.depthBase}`,
-              }}
+            <Button disabled variant="inverted" onClick={() => undefined}>
+              {buttonContent['negative.labelDisabled']}
+            </Button>
+          </div>
+          <ExampleWrapper>
+            <Button disabled variant="secondary" onClick={() => undefined}>
+              {buttonContent['secondary.labelDisabled']}
+            </Button>
+          </ExampleWrapper>
+          <ExampleWrapper>
+            <Button
+              disabled
+              variant="secondaryNoBorder"
+              onClick={() => undefined}
             >
-              <MobileDevice>
-                <ExampleWrapper>
-                  <Button fullWidth onClick={() => undefined}>
-                    {t(`primary.label`)}
-                  </Button>
-                </ExampleWrapper>
-                <ExampleWrapper>
-                  <Button fullWidth variant="link" onClick={() => undefined}>
-                    {t(`link.label`)}
-                  </Button>
-                </ExampleWrapper>
-                <ExampleWrapper>
-                  <Button
-                    fullWidth
-                    variant="secondary"
-                    onClick={() => undefined}
-                  >
-                    {t(`secondary.label`)}
-                  </Button>
-                </ExampleWrapper>
-              </MobileDevice>
-            </div>
-          </ComponentDescription>
-
-          <ComponentDescription
-            mainTitle={t(`primary.title`)}
-            description={t(`primary.description`)}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.whiteBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button onClick={() => undefined}>{t(`primary.label`)}</Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button disabled onClick={() => undefined}>
-                  {t(`primary.labelDisabled`)}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-          </ComponentDescription>
-
-          <ComponentDescription
-            mainTitle={t(`link.title`)}
-            description={t(`link.description`)}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.whiteBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button variant="link" onClick={() => undefined}>
-                  {t(`link.label`)}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button variant="link" disabled onClick={() => undefined}>
-                  {t(`link.labelDisabled`)}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-          </ComponentDescription>
-
-          <ComponentDescription
-            mainTitle={t(`negative.title`)}
-            description={t(`negative.description`)}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.highlightBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button variant="inverted" onClick={() => undefined}>
-                  {t(`negative.label`)}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button variant="inverted" disabled onClick={() => undefined}>
-                  {t(`negative.labelDisabled`)}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-          </ComponentDescription>
-
-          <ComponentDescription
-            mainTitle={t(`secondary.title`)}
-            description={t(`secondary.description`)}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.whiteBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button variant="secondary" onClick={() => undefined}>
-                  {t(`secondary.label`)}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button variant="secondary" disabled onClick={() => undefined}>
-                  {t(`secondary.labelDisabled`)}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-          </ComponentDescription>
-
-          <ComponentDescription
-            mainTitle={t(`secondaryNoborder.title`)}
-            description={t(`secondaryNoborder.description`)}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.whiteBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button variant="secondaryNoBorder" onClick={() => undefined}>
-                  {t(`secondaryNoborder.label`)}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button
-                  variant="secondaryNoBorder"
-                  disabled
-                  onClick={() => undefined}
-                >
-                  {t(`secondaryNoborder.labelDisabled`)}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-          </ComponentDescription>
-
-          <ComponentDescription
-            mainTitle={t(`withIcon.title`)}
-            description={t(`withIcon.description`)}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.whiteBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button icon="login" onClick={() => undefined}>
-                  {t(`button.labelIcon`, {
-                    name: t(`primary.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button iconRight="login" onClick={() => undefined}>
-                  {t(`button.labelIconRight`, {
-                    name: t(`primary.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.whiteBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button icon="login" variant="link" onClick={() => undefined}>
-                  {t(`button.labelIcon`, {
-                    name: t(`link.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button
-                  iconRight="login"
-                  variant="link"
-                  onClick={() => undefined}
-                >
-                  {t(`button.labelIconRight`, {
-                    name: t(`link.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.highlightBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button
-                  icon="login"
-                  variant="inverted"
-                  onClick={() => undefined}
-                >
-                  {t(`button.labelIcon`, {
-                    name: t(`negative.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button
-                  iconRight="login"
-                  variant="inverted"
-                  onClick={() => undefined}
-                >
-                  {t(`button.labelIconRight`, {
-                    name: t(`negative.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.whiteBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button
-                  icon="login"
-                  variant="secondary"
-                  onClick={() => undefined}
-                >
-                  {t(`button.labelIcon`, {
-                    name: t(`secondary.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button
-                  iconRight="login"
-                  variant="secondary"
-                  onClick={() => undefined}
-                >
-                  {t(`button.labelIconRight`, {
-                    name: t(`secondary.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.whiteBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button
-                  icon="login"
-                  variant="secondaryNoBorder"
-                  onClick={() => undefined}
-                >
-                  {t(`button.labelIcon`, {
-                    name: t(`secondaryNoborder.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button
-                  iconRight="login"
-                  variant="secondaryNoBorder"
-                  onClick={() => undefined}
-                >
-                  {t(`button.labelIconRight`, {
-                    name: t(`secondaryNoborder.label`),
-                  })}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-          </ComponentDescription>
-
-          <ComponentDescription
-            mainTitle={t(`disabled.title`)}
-            description={t(`disabled.description`)}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                padding: defaultSuomifiTheme.spacing.xs,
-                background: defaultSuomifiTheme.colors.whiteBase,
-              }}
-            >
-              <ExampleWrapper>
-                <Button disabled onClick={() => undefined}>
-                  {t(`primary.labelDisabled`)}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button disabled variant="link" onClick={() => undefined}>
-                  {t(`link.labelDisabled`)}
-                </Button>
-              </ExampleWrapper>
-              <div
-                style={{
-                  padding: 15,
-                  background: defaultSuomifiTheme.colors.highlightBase,
-                }}
-              >
-                <Button disabled variant="inverted" onClick={() => undefined}>
-                  {t(`negative.labelDisabled`)}
-                </Button>
-              </div>
-              <ExampleWrapper>
-                <Button disabled variant="secondary" onClick={() => undefined}>
-                  {t(`secondary.labelDisabled`)}
-                </Button>
-              </ExampleWrapper>
-              <ExampleWrapper>
-                <Button
-                  disabled
-                  variant="secondaryNoBorder"
-                  onClick={() => undefined}
-                >
-                  {t(`secondaryNoborder.labelDisabled`)}
-                </Button>
-              </ExampleWrapper>
-            </ComponentExample>
-          </ComponentDescription>
-        </Layout>
-      )}
-    </Translation>
+              {buttonContent['secondaryNoborder.labelDisabled']}
+            </Button>
+          </ExampleWrapper>
+        </ComponentExample>
+      </ComponentDescription>
+    </Layout>
   );
 };
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

@@ -1,7 +1,7 @@
 import React, { ReactNode, DetailedHTMLProps, HTMLAttributes } from 'react';
-import { Translation } from 'react-i18next';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
+import * as commonContent from '../../locale/fi/common.json';
 import { Text, Paragraph } from 'components/ResponsiveComponents';
 import Link, { Props as LinkProps } from 'components/Link';
 
@@ -125,40 +125,32 @@ const AllContent = ({
 }: {
   wrapAll?: boolean;
 }): JSX.Element => (
-  <Translation>
-    {(t) => (
-      <>
-        <Content
-          header={
-            <Link
-              icon={
-                <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
-              }
-              title={t('common:to.homepage')}
-              url="/"
-            />
-          }
-          description={t('common:footer.description')}
-          links={[
-            ...(t('common:footer.links') as []),
-            {
-              icon: (
-                <Github
-                  style={{
-                    fill: defaultSuomifiTheme.colors.brandBase,
-                    fontSize: '25px',
-                  }}
-                />
-              ),
-              text: t('common:github.link.text'),
-              url: t('common:github.link.url'),
-            },
-          ]}
-          wrapAll={wrapAll}
-        />
-      </>
-    )}
-  </Translation>
+  <Content
+    header={
+      <Link
+        icon={<SuomiFiWithText style={{ width: '128px', height: '32px' }} />}
+        title={commonContent['to.homepage']}
+        url="/"
+      />
+    }
+    description={commonContent['footer.description']}
+    links={[
+      ...(commonContent['footer.links'] as []),
+      {
+        icon: (
+          <Github
+            style={{
+              fill: defaultSuomifiTheme.colors.brandBase,
+              fontSize: '25px',
+            }}
+          />
+        ),
+        text: commonContent['github.link.text'],
+        url: commonContent['github.link.url'],
+      },
+    ]}
+    wrapAll={wrapAll}
+  />
 );
 
 const Footer = (

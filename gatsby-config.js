@@ -32,16 +32,6 @@ module.exports = {
         name: `examples`,
       },
     },
-    {
-      resolve: `@wapps/gatsby-plugin-i18next`,
-      options: {
-        availableLngs: ['fi'],
-        fallbackLng: 'fi',
-        i18nextOptions: {
-          returnObjects: true,
-        },
-      },
-    },
     `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-web-font-loader',

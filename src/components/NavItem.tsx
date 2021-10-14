@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Link } from '@wapps/gatsby-plugin-i18next';
+import { Link } from 'gatsby';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 import { focusOutline } from './utils/outline';
 import { isFrontPage } from 'components/LinkUtil';

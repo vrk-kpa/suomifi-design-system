@@ -82,6 +82,6 @@
   "default.description": "",
   "toggle.label.button": "Esimerkkitoiminto, painike-variaatio",
   "toggle.label.input": "Esimerkkitoiminto, kenttä-variaatio",
-  "toggle.state.on": "{{name}} päällä.",
-  "toggle.state.off": "{{name}} pois päältä."
+  "toggle.state.on": " päällä.",
+  "toggle.state.off": " pois päältä."
 }

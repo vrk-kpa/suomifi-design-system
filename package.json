@@ -7,7 +7,6 @@
   "dependencies": {
     "@csstools/normalize.css": "^10.1.0",
     "@svgr/webpack": "^5.3.1",
-    "@wapps/gatsby-plugin-i18next": "^1.1.6",
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.20.14",
     "gatsby-image": "^2.3.2",
@@ -22,23 +21,17 @@
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-code": "^0.1.0",
     "gatsby-transformer-sharp": "^2.4.4",
-    "i18next": "^19.4.0",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-element-to-jsx-string": "^14.3.1",
     "react-helmet": "^5.2.1",
-    "react-i18next": "^11.3.4",
     "react-motion": "^0.5.2",
     "react-responsive": "^8.0.3",
     "react-syntax-highlighter": "^12.2.1",
     "styled-components": "^5.3.1",
     "suomifi-icons": "^5.0.0",
     "suomifi-ui-components": "^6.0.0"
-  },
-  "resolutions": {
-    "@wapps/gatsby-plugin-i18next/i18next": "^19.4.0",
-    "@wapps/gatsby-plugin-i18next/react-i18next": "^11.3.4"
   },
   "license": "MIT",
   "scripts": {

@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Link as GatsbyLink } from 'gatsby';
 
-import * as commonContent from '../../locale/fi/common.json';
+import commonContent from '../../locale/fi/common.json';
 import {
   Link as SuomifiLink,
   ExternalLink as SuomifiExternalLink,

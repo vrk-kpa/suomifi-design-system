@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as developersContent from '../../../locale/fi/developers.json';
+import developersContent from '../../../locale/fi/developers.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/info';

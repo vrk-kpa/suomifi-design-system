@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as textContent from '../../../locale/fi/text.json';
+import textContent from '../../../locale/fi/text.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';

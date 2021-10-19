@@ -1,25 +1,25 @@
 import React from 'react';
 import { StaticIcon } from 'suomifi-ui-components';
 
-import * as componentsSideNavContent from '../../../locale/fi/components.json';
-import * as modalContent from '../../../locale/fi/modal.json';
-import * as searchinputContent from '../../../locale/fi/searchinput.json';
-import * as iconContent from '../../../locale/fi/icon.json';
-import * as languagemenuContent from '../../../locale/fi/languagemenu.json';
-import * as expanderContent from '../../../locale/fi/expander.json';
-import * as linkContent from '../../../locale/fi/link.json';
-import * as blockContent from '../../../locale/fi/block.json';
-import * as multiselectContent from '../../../locale/fi/multiselect.json';
-import * as breadcrumbContent from '../../../locale/fi/breadcrumb.json';
-import * as headingContent from '../../../locale/fi/heading.json';
-import * as buttonContent from '../../../locale/fi/button.json';
-import * as dropdownContent from '../../../locale/fi/dropdown.json';
-import * as textContent from '../../../locale/fi/text.json';
-import * as textareaContent from '../../../locale/fi/textarea.json';
-import * as textinputContent from '../../../locale/fi/textinput.json';
-import * as toggleContent from '../../../locale/fi/toggle.json';
-import * as radiobuttonContent from '../../../locale/fi/radiobutton.json';
-import * as checkboxContent from '../../../locale/fi/checkbox.json';
+import componentsSideNavContent from '../../../locale/fi/components.json';
+import modalContent from '../../../locale/fi/modal.json';
+import searchinputContent from '../../../locale/fi/searchinput.json';
+import iconContent from '../../../locale/fi/icon.json';
+import languagemenuContent from '../../../locale/fi/languagemenu.json';
+import expanderContent from '../../../locale/fi/expander.json';
+import linkContent from '../../../locale/fi/link.json';
+import blockContent from '../../../locale/fi/block.json';
+import multiselectContent from '../../../locale/fi/multiselect.json';
+import breadcrumbContent from '../../../locale/fi/breadcrumb.json';
+import headingContent from '../../../locale/fi/heading.json';
+import buttonContent from '../../../locale/fi/button.json';
+import dropdownContent from '../../../locale/fi/dropdown.json';
+import textContent from '../../../locale/fi/text.json';
+import textareaContent from '../../../locale/fi/textarea.json';
+import textinputContent from '../../../locale/fi/textinput.json';
+import toggleContent from '../../../locale/fi/toggle.json';
+import radiobuttonContent from '../../../locale/fi/radiobutton.json';
+import checkboxContent from '../../../locale/fi/checkbox.json';
 
 export default {
   title: componentsSideNavContent.title,

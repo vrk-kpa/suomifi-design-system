@@ -6,7 +6,7 @@ import {
   defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 
-import * as commonContent from '../../locale/fi/common.json';
+import commonContent from '../../locale/fi/common.json';
 import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 

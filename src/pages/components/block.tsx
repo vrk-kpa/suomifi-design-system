@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as blockContent from '../../../locale/fi/block.json';
+import blockContent from '../../../locale/fi/block.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';

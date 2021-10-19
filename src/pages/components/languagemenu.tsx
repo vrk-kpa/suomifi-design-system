@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import * as languageMenuContent from '../../../locale/fi/languagemenu.json';
+import languageMenuContent from '../../../locale/fi/languagemenu.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import { LanguageMenu, LanguageMenuItem } from 'components/ExampleComponents';

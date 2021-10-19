@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as designersContent from '../../../locale/fi/designers.json';
+import designersContent from '../../../locale/fi/designers.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/info';

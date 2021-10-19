@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as breadcrumbContent from '../../../locale/fi/breadcrumb.json';
+import breadcrumbContent from '../../../locale/fi/breadcrumb.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import { Breadcrumb, BreadcrumbLink } from 'components/ExampleComponents';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as accessibilityContent from '../../../locale/fi/accessibility.json';
+import accessibilityContent from '../../../locale/fi/accessibility.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/info';

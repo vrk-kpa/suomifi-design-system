@@ -1,7 +1,7 @@
 import React from 'react';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
-import * as commonContent from '../../locale/fi/common.json';
+import commonContent from '../../locale/fi/common.json';
 import DesignSystemLogo from 'staticIcons/designSystemLogo.svg';
 import MainMenu from 'components/MainMenu';
 import { MobileOrTablet } from 'components/Responsive';

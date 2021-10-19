@@ -1,5 +1,5 @@
 import React from 'react';
-import * as homeContent from '../../locale/fi/home.json';
+import homeContent from '../../locale/fi/home.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ContentBoxes from 'components/ContentBoxes';

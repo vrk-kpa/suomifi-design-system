@@ -10,8 +10,8 @@ import {
   DoctypeIconKeys,
 } from 'suomifi-ui-components';
 
-import * as iconsContent from '../../../locale/fi/icons.json';
-import * as staticIconsContent from '../../../locale/fi/static-icons.json';
+import iconsContent from '../../../locale/fi/icons.json';
+import staticIconsContent from '../../../locale/fi/static-icons.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
@@ -68,10 +68,10 @@ const getExampleIcon = (
     }}
   >
     {itemId === 'baseIcons' ? (
-      <StyledIcon icon={(id as any) as BaseIconKeys} />
+      <StyledIcon icon={id as any as BaseIconKeys} />
     ) : (
       <StyledStaticIcon
-        icon={(id as any) as IllustrativeIconKeys | DoctypeIconKeys}
+        icon={id as any as IllustrativeIconKeys | DoctypeIconKeys}
       />
     )}
     <div>{label}</div>

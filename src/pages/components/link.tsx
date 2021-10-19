@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as linkContent from '../../../locale/fi/link.json';
+import linkContent from '../../../locale/fi/link.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from 'components/layout';
-import * as stylesContent from '../../../locale/fi/styles.json';
+import stylesContent from '../../../locale/fi/styles.json';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/styles';
 import ComponentDescription from 'components/ComponentDescription';

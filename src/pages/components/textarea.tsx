@@ -1,7 +1,7 @@
 import React from 'react';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
-import * as textareaContent from '../../../locale/fi/textarea.json';
+import textareaContent from '../../../locale/fi/textarea.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';

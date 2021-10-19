@@ -1,7 +1,7 @@
 import React from 'react';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
-import * as privacyStatementeContent from '../../locale/fi/privacy-statement.json';
+import privacyStatementeContent from '../../locale/fi/privacy-statement.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import { Heading } from 'components/ResponsiveComponents';

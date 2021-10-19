@@ -7,7 +7,7 @@ import {
   ExternalLink,
 } from 'suomifi-ui-components';
 
-import * as iconContent from '../../../locale/fi/icon.json';
+import iconContent from '../../../locale/fi/icon.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';

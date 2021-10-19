@@ -1,7 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import * as commonContent from '../../locale/fi/common.json';
+import commonContent from '../../locale/fi/common.json';
 
 const SEO = ({
   title,

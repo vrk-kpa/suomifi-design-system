@@ -1,7 +1,7 @@
-import * as homeContent from '../../locale/fi/home.json';
-import * as stylesContent from '../../locale/fi/styles.json';
-import * as componentsContent from '../../locale/fi/components.json';
-import * as infoContent from '../../locale/fi/info.json';
+import homeContent from '../../locale/fi/home.json';
+import stylesContent from '../../locale/fi/styles.json';
+import componentsContent from '../../locale/fi/components.json';
+import infoContent from '../../locale/fi/info.json';
 
 export default {
   items: [

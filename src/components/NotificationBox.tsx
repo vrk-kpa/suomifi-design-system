@@ -1,7 +1,7 @@
 import React, { CSSProperties } from 'react';
 import { defaultSuomifiTheme, Icon } from 'suomifi-ui-components';
 import { Text } from 'components/ResponsiveComponents';
-import * as commonContent from '../../locale/fi/common.json';
+import commonContent from '../../locale/fi/common.json';
 
 interface Props {
   style?: CSSProperties;

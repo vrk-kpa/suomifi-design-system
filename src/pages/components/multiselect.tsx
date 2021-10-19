@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as multiSelectContent from '../../../locale/fi/multiselect.json';
+import multiSelectContent from '../../../locale/fi/multiselect.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';

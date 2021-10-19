@@ -1,10 +1,10 @@
 import React from 'react';
 import { StaticIcon } from 'suomifi-ui-components';
 
-import * as infoContent from '../../../locale/fi/info.json';
-import * as accessibilityContent from '../../../locale/fi/accessibility.json';
-import * as designersContent from '../../../locale/fi/designers.json';
-import * as developersContent from '../../../locale/fi/developers.json';
+import infoContent from '../../../locale/fi/info.json';
+import accessibilityContent from '../../../locale/fi/accessibility.json';
+import designersContent from '../../../locale/fi/designers.json';
+import developersContent from '../../../locale/fi/developers.json';
 
 export default {
   title: infoContent.title,

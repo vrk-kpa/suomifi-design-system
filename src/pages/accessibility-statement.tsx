@@ -1,7 +1,7 @@
 import React from 'react';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
-import * as accessibilityStatementContent from '../../locale/fi/accessibility-statement.json';
+import accessibilityStatementContent from '../../locale/fi/accessibility-statement.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import { Heading } from 'components/ResponsiveComponents';

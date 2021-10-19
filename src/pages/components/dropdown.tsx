@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as dropdownContent from '../../../locale/fi/dropdown.json';
+import dropdownContent from '../../../locale/fi/dropdown.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';

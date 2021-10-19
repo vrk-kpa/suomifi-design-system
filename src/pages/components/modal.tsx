@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import * as modalContent from '../../../locale/fi/modal.json';
+import modalContent from '../../../locale/fi/modal.json';
 import { defaultSuomifiTheme, ModalProps } from 'suomifi-ui-components';
 import Layout from 'components/layout';
 import SEO from 'components/seo';

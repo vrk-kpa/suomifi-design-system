@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as headingContent from '../../../locale/fi/dropdown.json';
+import headingContent from '../../../locale/fi/dropdown.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';

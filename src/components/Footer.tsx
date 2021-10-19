@@ -1,7 +1,7 @@
 import React, { ReactNode, DetailedHTMLProps, HTMLAttributes } from 'react';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
-import * as commonContent from '../../locale/fi/common.json';
+import commonContent from '../../locale/fi/common.json';
 import { Text, Paragraph } from 'components/ResponsiveComponents';
 import Link, { Props as LinkProps } from 'components/Link';
 

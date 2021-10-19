@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
-import * as commonContent from '../../locale/fi/common.json';
+import commonContent from '../../locale/fi/common.json';
 import Header from 'components/header';
 import Navigation from 'components/Navigation';
 import { SideNavData } from 'components/SideNavData';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as checkboxContent from '../../../locale/fi/checkbox.json';
+import checkboxContent from '../../../locale/fi/checkbox.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';

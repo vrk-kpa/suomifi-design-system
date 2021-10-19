@@ -1,6 +1,6 @@
 import React from 'react';
-import * as content404 from '../../locale/fi/404.json';
-import * as commonContent from '../../locale/fi/common.json';
+import content404 from '../../locale/fi/404.json';
+import commonContent from '../../locale/fi/common.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';

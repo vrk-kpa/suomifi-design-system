@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
-import * as toggleContent from '../../../locale/fi/toggle.json';
+import toggleContent from '../../../locale/fi/toggle.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';

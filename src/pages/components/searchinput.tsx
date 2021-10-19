@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as searchInputContent from '../../../locale/fi/searchinput.json';
+import searchInputContent from '../../../locale/fi/searchinput.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';

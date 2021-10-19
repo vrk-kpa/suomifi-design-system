@@ -8,9 +8,11 @@ import SideNavItem from 'components/SideNavItem';
 import { SideNavData, SideNavItemData } from 'components/SideNavData';
 import { Desktop, MobileOrTablet } from 'components/Responsive';
 
-const StyledLi = styled(({ level, item, children, ...passProps }) => (
-  <li {...passProps}>{children}</li>
-))`
+const StyledLi = styled(
+  ({ level, item, children, isCurrent, isPartiallyCurrent, ...passProps }) => (
+    <li {...passProps}>{children}</li>
+  ),
+)`
   ${({ level, isCurrent, isPartiallyCurrent, item }) => css`
     position: 'relative';
     &::after {
@@ -20,14 +22,14 @@ const StyledLi = styled(({ level, item, children, ...passProps }) => (
       left: 0;
       bottom: 0;
       border-left: ${level === 1
-        ? (
-            item.showAsTo
-              ? isCurrent(item.to) || isPartiallyCurrent(item.showAsTo)
-              : isPartiallyCurrent(item.to)
-          )
-          ? `4px solid ${defaultSuomifiTheme.colors.brandBase}`
-          : 0
-        : 0};
+      ? (
+        item.showAsTo
+          ? isCurrent(item.to) || isPartiallyCurrent(item.showAsTo)
+          : isPartiallyCurrent(item.to)
+      )
+        ? `4px solid ${defaultSuomifiTheme.colors.brandBase}`
+        : 0
+      : 0};
     }
   `}
 `;

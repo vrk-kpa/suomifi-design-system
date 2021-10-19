@@ -1,38 +1,38 @@
 module.exports = {
   pathPrefix: '/suomifi-design-system',
   plugins: [
-    `gatsby-plugin-typescript`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/locale`,
-        name: `locale`,
+        name: 'locale',
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/examples`,
-        name: `examples`,
+        name: 'examples',
       },
     },
     {
-      resolve: `gatsby-transformer-code`,
+      resolve: 'gatsby-transformer-code',
       options: {
-        name: `examples`,
+        name: 'examples',
       },
     },
-    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -55,7 +55,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-s3`,
+      resolve: 'gatsby-plugin-s3',
       options: {
         bucketName: 'designsystem.suomi.fi',
         protocol: 'https',
@@ -63,9 +63,17 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: `src/staticIcons/SuomiFi.svg`,
+        icon: 'src/staticIcons/SuomiFi.svg',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /(src\/staticIcons|src\/icons)/
+        },
       },
     },
   ],

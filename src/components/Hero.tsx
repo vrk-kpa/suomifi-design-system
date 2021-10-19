@@ -3,7 +3,7 @@ import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
-import { ReactComponent as SuomiFi } from 'icons/suomifi.svg';
+import SuomiFi from 'icons/suomifi.svg';
 import Background from './Hero_bg.png';
 
 const Content = ({

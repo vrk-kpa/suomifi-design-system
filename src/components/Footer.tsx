@@ -6,8 +6,8 @@ import { Text, Paragraph } from 'components/ResponsiveComponents';
 import Link, { Props as LinkProps } from 'components/Link';
 
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
-import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg';
-import { ReactComponent as Github } from 'icons/github.svg';
+import SuomiFiWithText from 'staticIcons/SuomiFiWithText.svg';
+import Github from 'icons/github.svg';
 
 const Content = ({
   header,

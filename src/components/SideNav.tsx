@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled, { css } from 'styled-components';
 import { defaultSuomifiTheme, Icon, Button, Text } from 'suomifi-ui-components';
 import { withPrefix } from 'gatsby';
 import { WindowLocation } from '@reach/router';
@@ -6,6 +7,30 @@ import { WindowLocation } from '@reach/router';
 import SideNavItem from 'components/SideNavItem';
 import { SideNavData, SideNavItemData } from 'components/SideNavData';
 import { Desktop, MobileOrTablet } from 'components/Responsive';
+
+const StyledLi = styled(({ level, item, children, ...passProps }) => (
+  <li {...passProps}>{children}</li>
+))`
+  ${({ level, isCurrent, isPartiallyCurrent, item }) => css`
+    position: 'relative';
+    &::after {
+      content: '""';
+      position: 'absolute';
+      top: '-1px';
+      left: 0;
+      bottom: 0;
+      border-left: ${level === 1
+        ? (
+            item.showAsTo
+              ? isCurrent(item.to) || isPartiallyCurrent(item.showAsTo)
+              : isPartiallyCurrent(item.to)
+          )
+          ? `4px solid ${defaultSuomifiTheme.colors.brandBase}`
+          : 0
+        : 0};
+    }
+  `}
+`;
 
 class SideNav extends Component<Props, State> {
   private SIDENAVSTATE_KEY = 'sideNavState';
@@ -165,29 +190,10 @@ class SideNav extends Component<Props, State> {
       }}
     >
       {items.map((item) => (
-        <li
+        <StyledLi
           key={item.to}
-          css={{
-            position: 'relative',
-            '&::after': {
-              content: '""',
-              position: 'absolute',
-              top: '-1px',
-              left: 0,
-              bottom: 0,
-              borderLeft:
-                level === 1
-                  ? (
-                      item.showAsTo
-                        ? this.isCurrent(item.to) ||
-                          this.isPartiallyCurrent(item.showAsTo)
-                        : this.isPartiallyCurrent(item.to)
-                    )
-                    ? `4px solid ${defaultSuomifiTheme.colors.brandBase}`
-                    : 0
-                  : 0,
-            },
-          }}
+          isCurrent={this.isCurrent}
+          isPartiallyCurrent={this.isPartiallyCurrent}
         >
           <SideNavItem
             to={item.to}
@@ -203,7 +209,7 @@ class SideNav extends Component<Props, State> {
           {this.hasChildren(item) &&
             !!this.state.isOpen[item.to] &&
             this.renderNavItems(item.children, level + 1)}
-        </li>
+        </StyledLi>
       ))}
     </ul>
   );

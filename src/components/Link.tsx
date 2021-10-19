@@ -16,7 +16,11 @@ const InternalLink = ({
   ...passProps
 }: {
   children: ReactNode;
-}): JSX.Element => <GatsbyLink {...(passProps as any)}>{children}</GatsbyLink>;
+}): JSX.Element => (
+  <GatsbyLink {...passProps} to="/">
+    {children}
+  </GatsbyLink>
+);
 
 const CustomLink = styled(({ asProp, ...passProps }) => {
   return <SuomifiLink asProp={asProp} {...passProps} />;

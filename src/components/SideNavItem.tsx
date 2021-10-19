@@ -1,9 +1,31 @@
 import React, { Component, ReactNode } from 'react';
+import styled, { css } from 'styled-components';
 import { defaultSuomifiTheme, Icon, Button } from 'suomifi-ui-components';
 import { Link } from 'gatsby';
 import { focusOutline } from './utils/outline';
 import { isFrontPage } from 'components/LinkUtil';
 
+const StyledLink = styled(({ level, ...passProps }) => <Link {...passProps} />)`
+  ${({ level }) => css`
+    display: 'flex';
+    align-items: center;
+    justify-content: space-between;
+    height: 3.2rem;
+    padding-left: level + 0.2rem;
+    padding-right: ${defaultSuomifiTheme.spacing.xs};
+    border-bottom: 1px solid ${defaultSuomifiTheme.colors.depthSecondary};
+    color: ${defaultSuomifiTheme.colors.highlightBase};
+    text-decoration: none;
+    text-transform: ${level === 1 ? 'uppercase' : 'none'};
+    &:hover {
+      background: ${defaultSuomifiTheme.colors.depthSecondary};
+      color: ${defaultSuomifiTheme.colors.brandBase};
+    }
+    &:focus {
+      ${focusOutline}
+    }
+  `}
+`;
 class SideNavItem extends Component<Props> {
   private toggleOpen = (event) => {
     event.preventDefault();
@@ -23,27 +45,9 @@ class SideNavItem extends Component<Props> {
     } = this.props;
 
     return (
-      <Link
+      <StyledLink
         to={to}
-        css={[
-          {
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            height: '3.2rem',
-            paddingLeft: level + '.2rem',
-            paddingRight: defaultSuomifiTheme.spacing.xs,
-            borderBottom: `1px solid ${defaultSuomifiTheme.colors.depthSecondary}`,
-            color: defaultSuomifiTheme.colors.highlightBase,
-            textDecoration: 'none',
-            textTransform: level === 1 ? 'uppercase' : 'none',
-            '&:hover': {
-              background: defaultSuomifiTheme.colors.depthSecondary,
-              color: defaultSuomifiTheme.colors.brandBase,
-            },
-          },
-          `&:focus { ${focusOutline} }`,
-        ]}
+        level={level}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           const isPartiallyCurrentPage = showAsTo
             ? isPartialMatch(showAsTo)
@@ -92,7 +96,7 @@ class SideNavItem extends Component<Props> {
             />
           </Button>
         )}
-      </Link>
+      </StyledLink>
     );
   }
 }

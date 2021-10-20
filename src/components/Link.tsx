@@ -13,11 +13,13 @@ import { ensureTrailingSlash } from 'components/LinkUtil';
 
 const InternalLink = ({
   children,
+  to,
   ...passProps
 }: {
   children: ReactNode;
+  to: string;
 }): JSX.Element => (
-  <GatsbyLink {...passProps} to="/">
+  <GatsbyLink {...passProps} to={to}>
     {children}
   </GatsbyLink>
 );

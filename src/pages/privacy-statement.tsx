@@ -13,7 +13,7 @@ const Page = (): JSX.Element => (
       <SEO title={privacyStatementeContent.title} />
       <Heading variant="h1">{privacyStatementeContent.title}</Heading>
       {privacyStatementeContent.sections.map((section, index) => {
-        const sectionData: SectionProps = section as any;
+        const sectionData: SectionProps = section;
         return (
           <Section
             key={index}

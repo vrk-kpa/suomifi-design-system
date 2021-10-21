@@ -59,7 +59,7 @@ const Page: React.FC = (): React.ReactElement => {
         <Section
           key={index}
           mainTitle={section.title}
-          paragraphs={(section as any).paragraphs}
+          paragraphs={section.paragraphs}
           links={(section as any).links}
         />
       ))}

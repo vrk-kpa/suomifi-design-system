@@ -50,7 +50,7 @@ const Page = (): JSX.Element => (
       <Section
         key={index}
         mainTitle={section.title}
-        paragraphs={(section as any).paragraphs}
+        paragraphs={section.paragraphs}
         links={section.links}
       />
     ))}

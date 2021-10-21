@@ -1,12 +1,11 @@
 import React, { ReactNode } from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, SkipLink } from 'suomifi-ui-components';
 
 import commonContent from '../../locale/fi/common.json';
 import Header from 'components/header';
 import Navigation from 'components/Navigation';
 import { SideNavData } from 'components/SideNavData';
 import { Desktop } from 'components/Responsive';
-import BypassLink from 'components/BypassLink';
 import MainContent from 'components/MainContent';
 import Footer from 'components/Footer';
 import mainNavData from 'config/mainnav';
@@ -16,9 +15,9 @@ import './layout.css';
 
 const BypassLinks = ({ hasSideNav }: { hasSideNav: boolean }): JSX.Element => (
   <>
-    <BypassLink to="#main">{commonContent['to.main.content']}</BypassLink>
+    <SkipLink href="#main">{commonContent['to.main.content']}</SkipLink>
     {hasSideNav && (
-      <BypassLink to="#sidenav">{commonContent['to.sidenav']}</BypassLink>
+      <SkipLink href="#sidenav">{commonContent['to.sidenav']}</SkipLink>
     )}
   </>
 );

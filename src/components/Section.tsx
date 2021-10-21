@@ -55,7 +55,7 @@ interface ParagraphProps {
   'image.key': string;
   'image.alt': string;
   text: string;
-  listItems: BulletedListItem[];
+  listItems?: BulletedListItem[];
 }
 
 export default Section;

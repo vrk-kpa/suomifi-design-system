@@ -9,29 +9,31 @@ import { SideNavData, SideNavItemData } from 'components/SideNavData';
 import { Desktop, MobileOrTablet } from 'components/Responsive';
 
 const StyledLi = styled(
-  ({ level, item, children, isCurrent, isPartiallyCurrent, ...passProps }) => (
-    <li {...passProps}>{children}</li>
-  ),
+  ({ level, item, children, isCurrent, isPartiallyCurrent, ...passProps }) => {
+    return <li {...passProps}>{children}</li>;
+  },
 )`
-  ${({ level, isCurrent, isPartiallyCurrent, item }) => css`
-    position: 'relative';
-    &::after {
-      content: '""';
-      position: 'absolute';
-      top: '-1px';
-      left: 0;
-      bottom: 0;
-      border-left: ${level === 1
-      ? (
-        item.showAsTo
-          ? isCurrent(item.to) || isPartiallyCurrent(item.showAsTo)
-          : isPartiallyCurrent(item.to)
-      )
-        ? `4px solid ${defaultSuomifiTheme.colors.brandBase}`
-        : 0
-      : 0};
-    }
-  `}
+  ${({ level, isCurrent, isPartiallyCurrent, item }) => {
+    return css`
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: 0;
+        bottom: 0;
+        border-left: ${level === 1
+        ? (
+          item.showAsTo
+            ? isCurrent(item.to) || isPartiallyCurrent(item.showAsTo)
+            : isPartiallyCurrent(item.to)
+        )
+          ? `4px solid ${defaultSuomifiTheme.colors.brandBase}`
+          : 0
+        : 0};
+      }
+    `;
+  }}
 `;
 
 class SideNav extends Component<Props, State> {
@@ -93,7 +95,7 @@ class SideNav extends Component<Props, State> {
 
   private getCurrentPath = (): string => {
     const { location } = this.props;
-    const match = location.pathname.match(RegExp(withPrefix('/../(.*)')));
+    const match = location.pathname.match(RegExp(withPrefix('/(.*)')));
     return match && match[1];
   };
 
@@ -196,6 +198,8 @@ class SideNav extends Component<Props, State> {
           key={item.to}
           isCurrent={this.isCurrent}
           isPartiallyCurrent={this.isPartiallyCurrent}
+          item={item}
+          level={level}
         >
           <SideNavItem
             to={item.to}

@@ -7,11 +7,11 @@ import { isFrontPage } from 'components/LinkUtil';
 
 const StyledLink = styled(({ level, ...passProps }) => <Link {...passProps} />)`
   ${({ level }) => css`
-    display: 'flex';
+    display: flex;
     align-items: center;
     justify-content: space-between;
     height: 3.2rem;
-    padding-left: level + 0.2rem;
+    padding-left: ${level + 0.2}rem;
     padding-right: ${defaultSuomifiTheme.spacing.xs};
     border-bottom: 1px solid ${defaultSuomifiTheme.colors.depthSecondary};
     color: ${defaultSuomifiTheme.colors.highlightBase};

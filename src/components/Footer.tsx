@@ -135,7 +135,7 @@ const AllContent = ({
     }
     description={commonContent['footer.description']}
     links={[
-      ...(commonContent['footer.links'] as []),
+      ...commonContent['footer.links'],
       {
         icon: (
           <Github

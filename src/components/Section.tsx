@@ -48,12 +48,12 @@ export interface Props {
   mainTitle?: string;
   title?: string;
   paragraphs: ParagraphProps[];
-  links: LinkProps[];
+  links?: LinkProps[];
 }
 
 interface ParagraphProps {
-  'image.key': string;
-  'image.alt': string;
+  'image.key'?: string;
+  'image.alt'?: string;
   text: string;
   listItems?: BulletedListItem[];
 }

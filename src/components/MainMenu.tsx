@@ -17,7 +17,7 @@ class MainMenu extends Component<Props, State> {
 
   private isOpen = (): boolean => this.state.isOpen;
 
-  private toggleOpen = () => {
+  private toggleOpen = (): void => {
     this.setState((prevState) => {
       return {
         isOpen: !prevState.isOpen,

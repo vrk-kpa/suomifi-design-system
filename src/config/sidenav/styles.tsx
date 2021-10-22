@@ -1,11 +1,12 @@
 import React from 'react';
 import { StaticIcon } from 'suomifi-ui-components';
+import { SideNavData } from 'components/SideNavData';
 import stylesContent from '../../../locale/fi/styles.json';
 import iconsContent from '../../../locale/fi/icons.json';
 import typographyContent from '../../../locale/fi/typography.json';
 import colorsContent from '../../../locale/fi/colors.json';
 
-export default {
+const sideNavData: SideNavData = {
   title: stylesContent.title,
   icon: <StaticIcon icon="magicWand" />,
   items: [
@@ -19,3 +20,4 @@ export default {
     { to: '/styles/colors/', label: colorsContent.title },
   ],
 };
+export default sideNavData;

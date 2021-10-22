@@ -8,7 +8,7 @@ import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/styles';
 import NoteBox from 'components/NoteBox';
-import Section from 'components/Section';
+import Section, { Props as SectionProps } from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
@@ -17,13 +17,16 @@ const colorTokens = defaultSuomifiTheme.colors;
 const borderForLightColor = `1px solid ${colorTokens.depthLight1}`;
 
 type ColorKeys = keyof typeof defaultSuomifiTheme.colors;
+
 interface ColorItem {
   name: string;
   value: string;
   border: string;
 }
-type colorTypes = { [key in ColorKeys]?: ColorItem };
-const colors: colorTypes = Object.entries(colorTokens).reduce(
+
+type ColorTypes = { [key in ColorKeys]?: ColorItem };
+
+const colors: ColorTypes = Object.entries(colorTokens).reduce(
   (obj, [key, value]: [ColorKeys, string]) => ({
     ...obj,
     [key]: {
@@ -38,7 +41,12 @@ const colors: colorTypes = Object.entries(colorTokens).reduce(
   {},
 );
 
-const colorCategories = [
+type ColorCategory = {
+  id: string;
+  colors: ColorItem[];
+};
+
+const colorCategories: ColorCategory[] = [
   {
     id: 'textColors',
     colors: [
@@ -145,7 +153,7 @@ const Page = (): JSX.Element => (
       items={colorsContent['note.items']}
     />
 
-    {colorsContent.sections.map((section, index) => (
+    {colorsContent.sections.map((section: SectionProps, index: number) => (
       <Section
         key={index}
         mainTitle={section.title}

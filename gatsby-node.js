@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const addPolyfills = require('./webpack/polyfills');
+const polyfillConfig = require('./webpack/polyfills');
 
 exports.onCreateWebpackConfig = ({ stage, getConfig, actions, plugins }) => {
   switch (stage) {
     case 'build-javascript':
-      addPolyfills(getConfig(), actions);
+      polyfillConfig.addPolyfills(getConfig(), actions);
   }
   const dev = stage === 'develop';
   actions.setWebpackConfig({

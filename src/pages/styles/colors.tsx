@@ -1,5 +1,5 @@
 import React, { CSSProperties } from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, ColorDesignTokens } from 'suomifi-ui-components';
 import { getLuminance } from 'polished';
 
 import colorsContent from '../../../locale/fi/colors.json';
@@ -16,7 +16,7 @@ const colorTokens = defaultSuomifiTheme.colors;
 
 const borderForLightColor = `1px solid ${colorTokens.depthLight1}`;
 
-type ColorKeys = keyof typeof defaultSuomifiTheme.colors;
+type ColorKeys = keyof ColorDesignTokens;
 
 interface ColorItem {
   name: string;
@@ -26,18 +26,21 @@ interface ColorItem {
 
 type ColorTypes = { [key in ColorKeys]?: ColorItem };
 
+// FIXME: Problematic part with great chances; map of undefined
 const colors: ColorTypes = Object.entries(colorTokens).reduce(
-  (obj, [key, value]: [ColorKeys, string]) => ({
-    ...obj,
-    [key]: {
-      name: key,
-      value,
-      border:
-        getLuminance(value) > getLuminance('#f8f8f8')
-          ? borderForLightColor
-          : '0',
-    },
-  }),
+  (obj, [key, value]: [ColorKeys, string]) => {
+    return {
+      ...obj,
+      [key]: {
+        name: key,
+        value,
+        border:
+          getLuminance(value) > getLuminance('#f8f8f8')
+            ? borderForLightColor
+            : '0',
+      },
+    };
+  },
   {},
 );
 

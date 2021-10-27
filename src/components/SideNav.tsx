@@ -23,14 +23,14 @@ const StyledLi = styled(
         left: 0;
         bottom: 0;
         border-left: ${level === 1
-        ? (
-          item.showAsTo
-            ? isCurrent(item.to) || isPartiallyCurrent(item.showAsTo)
-            : isPartiallyCurrent(item.to)
-        )
-          ? `4px solid ${defaultSuomifiTheme.colors.brandBase}`
-          : 0
-        : 0};
+          ? (
+              item.showAsTo
+                ? isCurrent(item.to) || isPartiallyCurrent(item.showAsTo)
+                : isPartiallyCurrent(item.to)
+            )
+            ? `4px solid ${defaultSuomifiTheme.colors.brandBase}`
+            : 0
+          : 0};
       }
     `;
   }}

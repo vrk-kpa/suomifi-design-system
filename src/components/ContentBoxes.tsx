@@ -10,7 +10,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import LinkList from 'components/LinkList';
 import { Props as LinkProps } from 'components/Link';
 
-const Block = ({ block }: { block: Block }): JSX.Element => (
+const BlockComponent = ({ block }: { block: Block }): JSX.Element => (
   <>
     {!!block.icon && (
       <div
@@ -94,7 +94,7 @@ const ContentBoxes = ({
                 margin: defaultSuomifiTheme.spacing.s,
               }}
             >
-              <Block block={block} />
+              <BlockComponent block={block} />
             </article>
           ))}
         </div>

@@ -26,9 +26,8 @@ interface ColorItem {
 
 type ColorTypes = { [key in ColorKeys]?: ColorItem };
 
-// FIXME: Problematic part with great chances; map of undefined
 const colors: ColorTypes = Object.entries(colorTokens).reduce(
-  (obj, [key, value]: [ColorKeys, string]) => {
+  (obj: ColorTypes, [key, value]: [ColorKeys, string]) => {
     return {
       ...obj,
       [key]: {

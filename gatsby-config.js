@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path');
+
 module.exports = {
   pathPrefix: '/suomifi-design-system',
   plugins: [
@@ -7,7 +10,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, 'src', 'images'),
       },
     },
     'gatsby-transformer-sharp',
@@ -15,14 +18,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/locale`,
+        path: path.join(__dirname, 'locale'),
         name: 'locale',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/src/examples`,
+        path: path.join(__dirname, 'src', 'examples'),
         name: 'examples',
       },
     },
@@ -72,7 +75,7 @@ module.exports = {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
-          include: /(src\/staticIcons|src\/icons)/
+          include: /(src\/staticIcons|src\/icons)/,
         },
       },
     },

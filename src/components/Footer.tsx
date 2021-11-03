@@ -7,7 +7,7 @@ import Link, { Props as LinkProps } from 'components/Link';
 
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
 import SuomiFiWithText from 'staticIcons/SuomiFiWithText.svg';
-import Github from 'icons/github.svg';
+import GitHubLogo from 'icons/github.svg';
 
 const Content = ({
   header,
@@ -138,8 +138,10 @@ const AllContent = ({
       ...commonContent['footer.links'],
       {
         icon: (
-          <Github
+          <GitHubLogo
             style={{
+              width: '1em',
+              height: '1em',
               fill: defaultSuomifiTheme.colors.brandBase,
               fontSize: '25px',
             }}

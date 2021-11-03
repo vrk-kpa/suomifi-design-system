@@ -13,8 +13,8 @@ import Section from 'components/Section';
 
 const Page = ({ data }: { data: CodeExampleData }): JSX.Element => (
   <Layout sideNavData={sideNavData}>
-    <SEO title={stylesContent.title} />
-    <Heading variant="h1">{stylesContent.title}</Heading>
+    <SEO title={stylesContent['info.title']} />
+    <Heading variant="h1">{stylesContent['info.title']}</Heading>
 
     <Paragraph variant="lead">
       <Text variant="lead">{stylesContent.intro}</Text>

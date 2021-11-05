@@ -27,7 +27,7 @@ const StyledLink = styled(({ level, ...passProps }) => <Link {...passProps} />)`
   `}
 `;
 class SideNavItem extends Component<Props> {
-  private toggleOpen = (event: MouseEvent | KeyboardEvent) => {
+  private toggleOpen = (event: MouseEvent | KeyboardEvent): void => {
     event.preventDefault();
     const { to, handleToggle } = this.props;
     handleToggle(to);

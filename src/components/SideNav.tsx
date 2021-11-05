@@ -60,7 +60,7 @@ class SideNav extends Component<Props, State> {
     }
   };
 
-  public componentDidMount = () => {
+  public componentDidMount = (): void => {
     const sessionState = this.getSessionState();
 
     const currentPath = this.getCurrentPath();
@@ -111,7 +111,7 @@ class SideNav extends Component<Props, State> {
 
   private isNavOpen = (): boolean => this.state.isNavOpen;
 
-  private toggleNavOpen = () => {
+  private toggleNavOpen = (): void => {
     this.setState((prevState) => {
       this.setSessionState({ ...prevState, isNavOpen: !prevState.isNavOpen });
       return {
@@ -135,7 +135,7 @@ class SideNav extends Component<Props, State> {
   private hasChildren = (item: SideNavItemData): boolean =>
     !!item.children && item.children.length > 0;
 
-  private Title = () => {
+  private Title = (): JSX.Element => {
     const { sideNavData } = this.props;
 
     return (
@@ -184,7 +184,10 @@ class SideNav extends Component<Props, State> {
     );
   };
 
-  private renderNavItems = (items: SideNavItemData[], level: number) => (
+  private renderNavItems = (
+    items: SideNavItemData[],
+    level: number,
+  ): JSX.Element => (
     <ul
       style={{
         margin: 0,

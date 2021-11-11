@@ -43,7 +43,7 @@ const Page = (): JSX.Element => (
     >
       <ComponentExample>
         <ExampleLink className="test-classname" href="#">
-          {linkContent['example.RegularlinkText']}
+          {linkContent['exampleRegular.linkText']}
         </ExampleLink>
       </ComponentExample>
     </ComponentDescription>

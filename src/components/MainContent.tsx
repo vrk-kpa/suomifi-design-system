@@ -49,6 +49,7 @@ const Content = ({
       overflowX: 'hidden',
       ...style,
       outline: 'none',
+      padding: '0 4px 0 4px',
     }}
   >
     {children}

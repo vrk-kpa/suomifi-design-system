@@ -49,7 +49,6 @@ const ComponentDescription = ({
       <div
         style={{
           margin: `${defaultSuomifiTheme.spacing.xl} 0`,
-          padding: '0 2px 0 2px',
         }}
       >
         <Expander>

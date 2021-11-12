@@ -46,7 +46,12 @@ const ComponentDescription = ({
     )}
     {!exampleFirst && <div>{children}</div>}
     {!noCode && (
-      <div style={{ margin: `${defaultSuomifiTheme.spacing.xl} 0` }}>
+      <div
+        style={{
+          margin: `${defaultSuomifiTheme.spacing.xl} 0`,
+          padding: '0 2px 0 2px',
+        }}
+      >
         <Expander>
           <ExpanderTitleButton asHeading="h3">
             {commonContent.react}

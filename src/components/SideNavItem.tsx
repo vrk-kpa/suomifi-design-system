@@ -23,6 +23,9 @@ const StyledLink = styled(({ level, ...passProps }) => <Link {...passProps} />)`
     }
     &:focus {
       ${focusOutline}
+      &::after {
+        left: 0;
+      }
     }
   `}
 `;

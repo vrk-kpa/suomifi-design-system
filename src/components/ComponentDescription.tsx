@@ -32,6 +32,7 @@ const ComponentDescription = ({
     style={{
       marginBottom: defaultSuomifiTheme.spacing.xl,
       borderBottom: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
+      padding: '0 4px 0 4px',
     }}
   >
     <div style={{ margin: `${defaultSuomifiTheme.spacing.xl} 0` }}>

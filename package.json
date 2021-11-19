@@ -28,7 +28,7 @@
     "react-helmet": "^6.1.0",
     "react-motion": "^0.5.2",
     "react-responsive": "8.2.0",
-    "react-syntax-highlighter": "^15.4.4",
+    "react-syntax-highlighter": "^15.4.5",
     "styled-components": "^5.3.3",
     "suomifi-icons": "^5.0.0",
     "suomifi-ui-components": "^6.0.0"

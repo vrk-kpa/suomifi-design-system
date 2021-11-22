@@ -1,13 +1,13 @@
 import React, { ReactNode, DetailedHTMLProps, HTMLAttributes } from 'react';
-import { Translation } from 'react-i18next';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
+import commonContent from '../../locale/fi/common.json';
 import { Text, Paragraph } from 'components/ResponsiveComponents';
 import Link, { Props as LinkProps } from 'components/Link';
 
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
-import { ReactComponent as SuomiFiWithText } from 'staticIcons/SuomiFiWithText.svg';
-import { ReactComponent as Github } from 'icons/github.svg';
+import SuomiFiWithText from 'staticIcons/SuomiFiWithText.svg';
+import GitHubLogo from 'icons/github.svg';
 
 const Content = ({
   header,
@@ -125,40 +125,34 @@ const AllContent = ({
 }: {
   wrapAll?: boolean;
 }): JSX.Element => (
-  <Translation>
-    {(t) => (
-      <>
-        <Content
-          header={
-            <Link
-              icon={
-                <SuomiFiWithText style={{ width: '128px', height: '32px' }} />
-              }
-              title={t('common:to.homepage')}
-              url="/"
-            />
-          }
-          description={t('common:footer.description')}
-          links={[
-            ...(t('common:footer.links') as []),
-            {
-              icon: (
-                <Github
-                  style={{
-                    fill: defaultSuomifiTheme.colors.brandBase,
-                    fontSize: '25px',
-                  }}
-                />
-              ),
-              text: t('common:github.link.text'),
-              url: t('common:github.link.url'),
-            },
-          ]}
-          wrapAll={wrapAll}
-        />
-      </>
-    )}
-  </Translation>
+  <Content
+    header={
+      <Link
+        icon={<SuomiFiWithText style={{ width: '128px', height: '32px' }} />}
+        title={commonContent['to.homepage']}
+        url="/"
+      />
+    }
+    description={commonContent['footer.description']}
+    links={[
+      ...commonContent['footer.links'],
+      {
+        icon: (
+          <GitHubLogo
+            style={{
+              width: '1em',
+              height: '1em',
+              fill: defaultSuomifiTheme.colors.brandBase,
+              fontSize: '25px',
+            }}
+          />
+        ),
+        text: commonContent['github.link.text'],
+        url: commonContent['github.link.url'],
+      },
+    ]}
+    wrapAll={wrapAll}
+  />
 );
 
 const Footer = (

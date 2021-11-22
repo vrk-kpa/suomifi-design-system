@@ -1,11 +1,12 @@
 import React, { ReactNode } from 'react';
-import { Translation } from 'react-i18next';
 import {
   Expander,
   ExpanderTitleButton,
   ExpanderContent,
   defaultSuomifiTheme,
 } from 'suomifi-ui-components';
+
+import commonContent from '../../locale/fi/common.json';
 import ComponentCode from 'components/ComponentCode';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
@@ -27,52 +28,53 @@ const ComponentDescription = ({
   filterProps,
   children,
 }: Props): JSX.Element => (
-  <Translation>
-    {(t) => (
+  <div
+    style={{
+      marginBottom: defaultSuomifiTheme.spacing.xl,
+      borderBottom: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
+      padding: '0 4px 0 4px',
+    }}
+  >
+    <div style={{ margin: `${defaultSuomifiTheme.spacing.xl} 0` }}>
+      {!!mainTitle && <Heading variant="h2">{mainTitle}</Heading>}
+      {!!title && <Heading variant="h3">{title}</Heading>}
+    </div>
+    {!!exampleFirst && <div>{children}</div>}
+    {!!description && (
+      <Paragraph>
+        <Text>{description}</Text>
+      </Paragraph>
+    )}
+    {!exampleFirst && <div>{children}</div>}
+    {!noCode && (
       <div
         style={{
-          marginBottom: defaultSuomifiTheme.spacing.xl,
-          borderBottom: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
+          margin: `${defaultSuomifiTheme.spacing.xl} 0`,
         }}
       >
-        <div style={{ margin: `${defaultSuomifiTheme.spacing.xl} 0` }}>
-          {!!mainTitle && <Heading variant="h2">{mainTitle}</Heading>}
-          {!!title && <Heading variant="h3">{title}</Heading>}
-        </div>
-        {!!exampleFirst && <div>{children}</div>}
-        {!!description && (
-          <Paragraph>
-            <Text>{description}</Text>
-          </Paragraph>
-        )}
-        {!exampleFirst && <div>{children}</div>}
-        {!noCode && (
-          <div style={{ margin: `${defaultSuomifiTheme.spacing.xl} 0` }}>
-            <Expander>
-              <ExpanderTitleButton asHeading="h3">
-                {t('common:react')}
-              </ExpanderTitleButton>
-              <ExpanderContent noPadding>
-                {codeString && <ComponentCode javascript={codeString} />}
-                {!showOnlyCodeString &&
-                  getWithoutWrappers(children).map((child, index) => (
-                    <ComponentCode
-                      key={index}
-                      filterProps={filterProps}
-                      style={{
-                        paddingTop: index === 0 && !codeString ? '1rem' : 0,
-                      }}
-                    >
-                      {child}
-                    </ComponentCode>
-                  ))}
-              </ExpanderContent>
-            </Expander>
-          </div>
-        )}
+        <Expander>
+          <ExpanderTitleButton asHeading="h3">
+            {commonContent.react}
+          </ExpanderTitleButton>
+          <ExpanderContent noPadding>
+            {codeString && <ComponentCode javascript={codeString} />}
+            {!showOnlyCodeString &&
+              getWithoutWrappers(children).map((child, index) => (
+                <ComponentCode
+                  key={index}
+                  filterProps={filterProps}
+                  style={{
+                    paddingTop: index === 0 && !codeString ? '1rem' : 0,
+                  }}
+                >
+                  {child}
+                </ComponentCode>
+              ))}
+          </ExpanderContent>
+        </Expander>
       </div>
     )}
-  </Translation>
+  </div>
 );
 
 interface Props {

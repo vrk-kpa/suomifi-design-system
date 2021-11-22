@@ -1,43 +1,31 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
+import designersContent from '../../../locale/fi/designers.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/info';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 
 const Page = (): JSX.Element => (
-  <Translation ns={['designers']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+  <Layout sideNavData={sideNavData}>
+    <SEO title={designersContent.title} />
+    <Heading variant="h1">{designersContent.title}</Heading>
 
-        <Paragraph variant="lead">
-          <Text variant="lead">{t('intro')}</Text>
-        </Paragraph>
+    <Paragraph variant="lead">
+      <Text variant="lead">{designersContent.intro}</Text>
+    </Paragraph>
 
-        {t<SectionProps[]>('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            title={section.subheading}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
-      </Layout>
-    )}
-  </Translation>
+    {designersContent.sections.map((section, index) => (
+      <Section
+        key={index}
+        mainTitle={section.title}
+        title={section.subheading}
+        paragraphs={section.paragraphs}
+        links={(section as any).links}
+      />
+    ))}
+  </Layout>
 );
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

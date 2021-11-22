@@ -1,13 +1,11 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
+import linkContent from '../../../locale/fi/link.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 import {
   Link as ExampleLink,
   ExternalLink as ExampleExternalLink,
@@ -17,62 +15,55 @@ import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 
 const Page = (): JSX.Element => (
-  <Translation ns={['link']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+  <Layout sideNavData={sideNavData}>
+    <SEO title={linkContent.title} />
+    <Heading variant="h1">{linkContent.title}</Heading>
 
-        <Paragraph variant="lead">
-          <Text variant="lead">{t('intro')}</Text>
-        </Paragraph>
+    <Paragraph variant="lead">
+      <Text variant="lead">{linkContent.intro}</Text>
+    </Paragraph>
 
-        <NoteBox title={t('note.title')} items={t('note.items')} />
+    <NoteBox
+      title={linkContent['note.title']}
+      items={linkContent['note.items']}
+    />
 
-        {t<SectionProps[]>('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
-        <ComponentDescription
-          mainTitle={t('exampleRegular.title')}
-          description={t('exampleRegular.description')}
-          exampleFirst={false}
+    {linkContent.sections.map((section, index) => (
+      <Section
+        key={index}
+        mainTitle={section.title}
+        paragraphs={section.paragraphs}
+        links={section.links}
+      />
+    ))}
+    <ComponentDescription
+      mainTitle={linkContent['exampleRegular.title']}
+      description={linkContent['exampleRegular.description']}
+      exampleFirst={false}
+    >
+      <ComponentExample>
+        <ExampleLink className="test-classname" href="#">
+          {linkContent['exampleRegular.linkText']}
+        </ExampleLink>
+      </ComponentExample>
+    </ComponentDescription>
+
+    <ComponentDescription
+      mainTitle={linkContent['exampleExternal.title']}
+      description={linkContent['exampleExternal.description']}
+      exampleFirst={false}
+    >
+      <ComponentExample>
+        <ExampleExternalLink
+          className="test-classname"
+          href="https://github.com/vrk-kpa/suomifi-ui-components"
+          labelNewWindow={linkContent['exampleExternal.label']}
         >
-          <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('exampleRegular.linkText')}
-            </ExampleLink>
-          </ComponentExample>
-        </ComponentDescription>
-
-        <ComponentDescription
-          mainTitle={t('exampleExternal.title')}
-          description={t('exampleExternal.description')}
-          exampleFirst={false}
-        >
-          <ComponentExample>
-            <ExampleExternalLink
-              className="test-classname"
-              href="https://github.com/vrk-kpa/suomifi-ui-components"
-              labelNewWindow={t('exampleExternal.label')}
-            >
-              {t('exampleExternal.linkText')}
-            </ExampleExternalLink>
-          </ComponentExample>
-        </ComponentDescription>
-      </Layout>
-    )}
-  </Translation>
+          {linkContent['exampleExternal.linkText']}
+        </ExampleExternalLink>
+      </ComponentExample>
+    </ComponentDescription>
+  </Layout>
 );
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

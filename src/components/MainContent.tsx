@@ -99,6 +99,7 @@ const MainContent = ({
               width: '100%',
               maxWidth: hasFrame ? 1140 : 'initial',
               flexWrap: 'nowrap',
+              overflow: 'hidden',
             }}
           >
             <SideNav

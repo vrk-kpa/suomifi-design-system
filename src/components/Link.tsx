@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
-import { Translation } from 'react-i18next';
-import { Link as GatsbyLink } from '@wapps/gatsby-plugin-i18next';
+import { Link as GatsbyLink } from 'gatsby';
+
+import commonContent from '../../locale/fi/common.json';
 import {
   Link as SuomifiLink,
   ExternalLink as SuomifiExternalLink,
@@ -12,10 +13,16 @@ import { ensureTrailingSlash } from 'components/LinkUtil';
 
 const InternalLink = ({
   children,
+  to,
   ...passProps
 }: {
   children: ReactNode;
-}): JSX.Element => <GatsbyLink {...passProps}>{children}</GatsbyLink>;
+  to: string;
+}): JSX.Element => (
+  <GatsbyLink {...passProps} to={to}>
+    {children}
+  </GatsbyLink>
+);
 
 const CustomLink = styled(({ asProp, ...passProps }) => {
   return <SuomifiLink asProp={asProp} {...passProps} />;
@@ -53,25 +60,19 @@ const Link = ({ icon, text, title, url, style }: Props): JSX.Element => {
     style,
   };
 
-  return (
-    <Translation>
-      {(t) =>
-        url.startsWith('/') ? (
-          <CustomLink {...(customLinkProps as any)}>{content}</CustomLink>
-        ) : (
-          <CustomExternalLink
-            // hide external icon when there is already icon to indicate link target
-            hideIcon={!!icon}
-            href={url}
-            title={title}
-            labelNewWindow={t('common:opens.new.window')}
-            style={style}
-          >
-            {content}
-          </CustomExternalLink>
-        )
-      }
-    </Translation>
+  return url.startsWith('/') ? (
+    <CustomLink {...customLinkProps}>{content}</CustomLink>
+  ) : (
+    <CustomExternalLink
+      // hide external icon when there is already icon to indicate link target
+      hideIcon={!!icon}
+      href={url}
+      title={title}
+      labelNewWindow={commonContent['opens.new.window']}
+      style={style}
+    >
+      {content}
+    </CustomExternalLink>
   );
 };
 

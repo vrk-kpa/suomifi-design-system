@@ -3,7 +3,7 @@ import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
-import { ReactComponent as SuomiFi } from 'icons/suomifi.svg';
+import SuomiFiLogo from 'icons/suomifi.svg';
 import Background from './Hero_bg.png';
 
 const Content = ({
@@ -32,8 +32,10 @@ const Content = ({
       }}
     >
       <div>
-        <SuomiFi
+        <SuomiFiLogo
           style={{
+            width: '1em',
+            height: '1em',
             fill: defaultSuomifiTheme.colors.whiteBase,
             fontSize: compact ? '30px' : '64px',
             margin: center ? '0 0 1rem' : '0 2rem 1rem 0',

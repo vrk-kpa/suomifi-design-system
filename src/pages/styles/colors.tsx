@@ -1,10 +1,8 @@
 import React, { CSSProperties } from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, ColorDesignTokens } from 'suomifi-ui-components';
 import { getLuminance } from 'polished';
 
+import colorsContent from '../../../locale/fi/colors.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
@@ -18,29 +16,39 @@ const colorTokens = defaultSuomifiTheme.colors;
 
 const borderForLightColor = `1px solid ${colorTokens.depthLight1}`;
 
-type ColorKeys = keyof typeof defaultSuomifiTheme.colors;
+type ColorKeys = keyof ColorDesignTokens;
+
 interface ColorItem {
   name: string;
   value: string;
   border: string;
 }
-type colorTypes = { [key in ColorKeys]?: ColorItem };
-const colors: colorTypes = Object.entries(colorTokens).reduce(
-  (obj, [key, value]: [ColorKeys, string]) => ({
-    ...obj,
-    [key]: {
-      name: key,
-      value,
-      border:
-        getLuminance(value) > getLuminance('#f8f8f8')
-          ? borderForLightColor
-          : '0',
-    },
-  }),
+
+type ColorTypes = { [key in ColorKeys]?: ColorItem };
+
+const colors: ColorTypes = Object.entries(colorTokens).reduce(
+  (obj: ColorTypes, [key, value]: [ColorKeys, string]) => {
+    return {
+      ...obj,
+      [key]: {
+        name: key,
+        value,
+        border:
+          getLuminance(value) > getLuminance('#f8f8f8')
+            ? borderForLightColor
+            : '0',
+      },
+    };
+  },
   {},
 );
 
-const colorCategories = [
+type ColorCategory = {
+  id: string;
+  colors: ColorItem[];
+};
+
+const colorCategories: ColorCategory[] = [
   {
     id: 'textColors',
     colors: [
@@ -134,64 +142,57 @@ const getExampleColor = (
 );
 
 const Page = (): JSX.Element => (
-  <Translation ns={['colors']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+  <Layout sideNavData={sideNavData}>
+    <SEO title={colorsContent.title} />
+    <Heading variant="h1">{colorsContent.title}</Heading>
 
-        <Paragraph variant="lead">
-          <Text variant="lead">{t('intro')}</Text>
-        </Paragraph>
+    <Paragraph variant="lead">
+      <Text variant="lead">{colorsContent.intro}</Text>
+    </Paragraph>
 
-        <NoteBox title={t('note.title')} items={t('note.items')} />
+    <NoteBox
+      title={colorsContent['note.title']}
+      items={colorsContent['note.items']}
+    />
 
-        {t<SectionProps[]>('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
+    {colorsContent.sections.map((section: SectionProps, index: number) => (
+      <Section
+        key={index}
+        mainTitle={section.title}
+        paragraphs={section.paragraphs}
+        links={section.links}
+      />
+    ))}
 
-        {colorCategories.map((item) => (
-          <ComponentDescription
-            key={item.id}
-            mainTitle={t(`${item.id}.title`)}
-            description={t(`${item.id}.description`)}
-            exampleFirst={false}
-            noCode
-          >
-            <ComponentExample
-              style={{
-                padding: 0,
-                justifyContent: 'flex-start',
-                background: 'none',
-                border: 'none',
-              }}
-            >
-              {item.colors.map((color, index) =>
-                getExampleColor(
-                  `${item.id}.${index}`,
-                  color.name,
-                  color.value,
-                  t(`${color.name}.label`),
-                  { border: color.border },
-                ),
-              )}
-            </ComponentExample>
-          </ComponentDescription>
-        ))}
-      </Layout>
-    )}
-  </Translation>
+    {colorCategories.map((item) => (
+      <ComponentDescription
+        key={item.id}
+        mainTitle={colorsContent[`${item.id}.title`]}
+        description={colorsContent[`${item.id}.description`]}
+        exampleFirst={false}
+        noCode
+      >
+        <ComponentExample
+          style={{
+            padding: 0,
+            justifyContent: 'flex-start',
+            background: 'none',
+            border: 'none',
+          }}
+        >
+          {item.colors.map((color, index) =>
+            getExampleColor(
+              `${item.id}.${index}`,
+              color.name,
+              color.value,
+              colorsContent[`${color.name}.label`],
+              { border: color.border },
+            ),
+          )}
+        </ComponentExample>
+      </ComponentDescription>
+    ))}
+  </Layout>
 );
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

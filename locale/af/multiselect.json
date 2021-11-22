@@ -38,9 +38,12 @@
     }
   ],
   "example.label": "example.label",
+  "example.hintText": "example.hintText",
   "example.visualPlaceholder": "example.visualPlaceholder",
   "example.removeAllSelections": "example.removeAllSelections",
-  "example.ariaSelectedAmountText": "example.ariaSelectedAmountText",
+  "example.selectedAmountText": "example.ariaSelectedAmountText",
+  "example.optionsAvailableText": "example.optionsAvailableText",
+  "example.optionChipRemovedText": "example.ariaOptionChipRemovedText",
   "example.noItems": "example.noItems",
   "example.chipActionLabel": "example.chipActionLabel",
   "example.tools.jackhammer": "example.tools.jackhammer",

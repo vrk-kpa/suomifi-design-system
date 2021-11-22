@@ -1,61 +1,54 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
+import searchInputContent from '../../../locale/fi/searchinput.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import { SearchInput } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
-  <Translation ns={['searchinput']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+  <Layout sideNavData={sideNavData}>
+    <SEO title={searchInputContent.title} />
+    <Heading variant="h1">{searchInputContent.title}</Heading>
 
-        <Paragraph variant="lead">
-          <Text variant="lead">{t('intro')}</Text>
-        </Paragraph>
+    <Paragraph variant="lead">
+      <Text variant="lead">{searchInputContent.intro}</Text>
+    </Paragraph>
 
-        <ComponentDescription>
-          <ComponentExample
-            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
-          >
-            <SearchInput
-              labelText={t('exampleRegular.label')}
-              clearButtonLabel={t('exampleRegular.clearButtonLabel')}
-              searchButtonLabel={t('exampleRegular.searchButtonLabel')}
-            />
-          </ComponentExample>
-        </ComponentDescription>
+    <ComponentDescription>
+      <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
+        <SearchInput
+          labelText={searchInputContent['exampleRegular.label']}
+          clearButtonLabel={
+            searchInputContent['exampleRegular.clearButtonLabel']
+          }
+          searchButtonLabel={
+            searchInputContent['exampleRegular.searchButtonLabel']
+          }
+        />
+      </ComponentExample>
+    </ComponentDescription>
 
-        <NoteBox title={t('note.title')} items={t('note.items')} />
+    <NoteBox
+      title={searchInputContent['note.title']}
+      items={searchInputContent['note.items']}
+    />
 
-        {t<SectionProps[]>('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
-      </Layout>
-    )}
-  </Translation>
+    {searchInputContent.sections.map((section, index) => (
+      <Section
+        key={index}
+        mainTitle={section.title}
+        paragraphs={section.paragraphs}
+        links={section.links}
+      />
+    ))}
+  </Layout>
 );
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

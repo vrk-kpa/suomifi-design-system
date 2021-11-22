@@ -1,13 +1,22 @@
 import React from 'react';
 import { StaticIcon } from 'suomifi-ui-components';
 
-export default (t) => ({
-  title: t('info:title'),
+import infoContent from '../../../locale/fi/info.json';
+import accessibilityContent from '../../../locale/fi/accessibility.json';
+import designersContent from '../../../locale/fi/designers.json';
+import developersContent from '../../../locale/fi/developers.json';
+
+export default {
+  title: infoContent.title,
   icon: <StaticIcon icon="book" />,
   items: [
-    { to: '/info/', showAsTo: '/info/general/', label: t('info:info.title') },
-    { to: '/info/accessibility/', label: t('accessibility:title') },
-    { to: '/info/designers/', label: t('designers:title') },
-    { to: '/info/developers/', label: t('developers:title') },
+    {
+      to: '/info/',
+      showAsTo: '/info/general/',
+      label: infoContent['info.title'],
+    },
+    { to: '/info/accessibility/', label: accessibilityContent.title },
+    { to: '/info/designers/', label: designersContent.title },
+    { to: '/info/developers/', label: developersContent.title },
   ],
-});
+};

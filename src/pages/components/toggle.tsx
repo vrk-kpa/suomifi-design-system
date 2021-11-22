@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
+import toggleContent from '../../../locale/fi/toggle.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import { ToggleButton, ToggleInput } from 'components/ExampleComponents';
@@ -18,14 +16,22 @@ const Page = (): React.ReactElement => {
   const [isButtonChecked, setButtonChecked] = useState(false);
   const [isInputChecked, setInputChecked] = useState(false);
 
-  const getButtonAriaLabelText = (t: Function): string => {
-    return t(`toggle.state.${isButtonChecked ? 'on' : 'off'}`, {
-      name: t('toggle.label.button'),
-    });
+  const getButtonAriaLabelText = (): string => {
+    return (
+      toggleContent['toggle.label.button'] +
+      (isButtonChecked
+        ? toggleContent['toggle.state.on']
+        : toggleContent['toggle.state.off'])
+    );
   };
 
-  const getInputAriaLabelText = (t: Function): string => {
-    return t(`toggle.state.${isInputChecked ? 'on' : 'off'}`);
+  const getInputAriaLabelText = (): string => {
+    return (
+      toggleContent['toggle.label.input'] +
+      (isInputChecked
+        ? toggleContent['toggle.state.on']
+        : toggleContent['toggle.state.off'])
+    );
   };
 
   const handleButtonClick = (newState: boolean): void => {
@@ -37,65 +43,58 @@ const Page = (): React.ReactElement => {
   };
 
   return (
-    <Translation ns={['toggle']}>
-      {(t) => (
-        <Layout sideNavData={sideNavData(t)}>
-          <SEO title={t('title')} />
-          <Heading variant="h1">{t('title')}</Heading>
+    <Layout sideNavData={sideNavData}>
+      <SEO title={toggleContent.title} />
+      <Heading variant="h1">{toggleContent.title}</Heading>
 
-          <Paragraph variant="lead">
-            <Text variant="lead">{t('intro')}</Text>
-          </Paragraph>
+      <Paragraph variant="lead">
+        <Text variant="lead">{toggleContent.intro}</Text>
+      </Paragraph>
 
-          <ComponentDescription
-            mainTitle={t('default.title')}
-            description={t('default.description')}
+      <ComponentDescription
+        mainTitle={toggleContent['default.title']}
+        description={toggleContent['default.description']}
+      >
+        <ComponentExample
+          style={{
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            justifyContent: 'space-between',
+            height: `${defaultSuomifiTheme.spacing.xxxxl}`,
+          }}
+        >
+          <ToggleButton
+            aria-label={getButtonAriaLabelText()}
+            onClick={(checked) => handleButtonClick(checked)}
+            checked={isButtonChecked}
           >
-            <ComponentExample
-              style={{
-                flexDirection: 'column',
-                alignItems: 'flex-start',
-                justifyContent: 'space-between',
-                height: `${defaultSuomifiTheme.spacing.xxxxl}`,
-              }}
-            >
-              <ToggleButton
-                aria-label={getButtonAriaLabelText(t)}
-                onClick={(checked) => handleButtonClick(checked)}
-                checked={isButtonChecked}
-              >
-                {t('toggle.label.button')}
-              </ToggleButton>
+            {toggleContent['toggle.label.button']}
+          </ToggleButton>
 
-              <ToggleInput
-                aria-label={getInputAriaLabelText(t)}
-                onChange={(checked) => handleInputChange(checked)}
-                checked={isInputChecked}
-              >
-                {t('toggle.label.input')}
-              </ToggleInput>
-            </ComponentExample>
-          </ComponentDescription>
-          <NoteBox title={t('note.title')} items={t('note.items')} />
+          <ToggleInput
+            aria-label={getInputAriaLabelText()}
+            onChange={(checked) => handleInputChange(checked)}
+            checked={isInputChecked}
+          >
+            {toggleContent['toggle.label.input']}
+          </ToggleInput>
+        </ComponentExample>
+      </ComponentDescription>
+      <NoteBox
+        title={toggleContent['note.title']}
+        items={toggleContent['note.items']}
+      />
 
-          {t<SectionProps[]>('sections').map((section, index) => (
-            <Section
-              key={index}
-              mainTitle={section.title}
-              paragraphs={section.paragraphs}
-              links={section.links}
-            />
-          ))}
-        </Layout>
-      )}
-    </Translation>
+      {toggleContent.sections.map((section, index) => (
+        <Section
+          key={index}
+          mainTitle={section.title}
+          paragraphs={section.paragraphs}
+          links={section.links}
+        />
+      ))}
+    </Layout>
   );
 };
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

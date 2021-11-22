@@ -1,12 +1,12 @@
 {
-  "title": "Hakukenttä (Search Input)",
-  "intro": "Hakukentän avulla käyttäjä voi etsiä tarvitsemaansa sisältöä sivustolta tai sovelluksesta hakusanoja käyttäen. Hakukenttä on käyttäjän tukena, mikäli hän ei löydä etsimäänsä sisältöä navigoimalla.",
+  "title": "Yksittäisvalinta (SingleSelect)",
+  "intro": "Yksittäisvalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijlla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromium-pohjaisilla selaimilla, kuten Chromella tai Edgellä.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Suurennuslasi-ikoni on yleisesti tunnettu tunniste hakutoiminnolle, ja siksi sitä ei ole välttämätöntä yhdistää visuaalisesti sanaan 'haku'. Ruudunlukijalle kerrotaan kuitenkin toiminnon nimi komponenttiin saavuttaessa.",
-    "Hakukenttää kannattaa käyttää, sillä useimmat käyttäjät hyötyvät siitä, että he voivat etsiä sisältöä sivustolta tai sovelluksesta.",
-    "Jos toteutuksen kokonaisuus on pieni ja yksinkertainen (single page ratkaisu), hakukenttää ei kuitenkaan tarvitse välttämättä käyttää.",
-    "Anna hakukentälle aina otsaketieto. Otsaketieto voidaan piilottaa visuaalisesti, mutta ruudunlukijakäyttäjälle otsake on tärkeä tieto hänen saapuessaan komponenttiin."
+    "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
+    "Yksittäisvalinnan kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
+    "Ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa.",
+    "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi."
   ],
   "sections": [
     {
@@ -15,7 +15,12 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Hakukenttä, johon käyttäjä syöttää hakutermin tai -termit, on yhdistetty komponentti (hakukenttä, hakupainike ja hakusanan poistopainike). Tehty haku vie käyttäjän hakusivulle, jossa hakutulos näytetään. Hakukentässä käytetään ohjeistavaa kenttätekstiä (placeholder text), mutta se toimii ainoastaan visuaalisena lisänä näkeville käyttäjille. Kun hakukenttään on syötetty sisältöä, käyttäjälle näytetään hakupainike sinisellä painiketaustalla sekä hakusanan poistopainike, joka sijaitsee hakupainikkeen vasemmalla puolella. Komponentit ovat erikseen fokusoitavissa ja niihin pääsee näin navigoimaan myös näppäimistöllä."
+          "text": "Yksittäisvalinta koostuu otsakkeesta, hakukentästä, valikosta, tilatekstistä, valinnan poistamiseen tarkoitetusta tyhjennyspainikkeesta sekä valikon näyttämiseen ja piilottamiseen tarkoitetusta painikkeesta. Valikko aukeaa automaattisesti kun fokus siirtyy hakukenttään ja sulkeutuu kun fokus siirtyy pois hakukentästä. Valikon voi myös näyttää tai piilottaa siihen tarkoitetun painikkeen avulla, mutta tämä toiminnallisuus ei ole käytettävissä näppäimistöllä. Valikossa näytettäviä vaihtoehtoja rajataan hakukentän tekstin mukaisesti."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Yksittäiset valinnat voivat olla poistettuna käytöstä, milloin niitä ei voi valita. Valitun vaihtoehdon voi poistaa tyhjennyspainikkeen avulla."
         }
       ],
       "links": [
@@ -31,33 +36,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Kirjoitettu hakuteksti on mahdollista poistaa kokonaan käyttämällä poistopainiketta. Hakupainikkeen painaminen tai hakusanan valitseminen näppäimistön enter-painikkeella vie käyttäjän hakusivulle, jossa näytetään hakutulokset. Mahdollinen uusi haku voidaan tehdä hakusivulla."
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Hakukentän tulee olla leveydeltään minimissään 320 px. Hakukentän tekstialueen suositusleveys on minimissään 230 px, joka toteutuu komponentin 320 px kokonaisleveydellä. Tähän kokoon mahtuu hyvin yleisimpiin hakutilanteisiin riittävät hakuehdot. Kapeimmilla mobiilinäytöillä leveyttä rajoittavat sivumarginaalit, jolloin komponentin minimileveys on 290px."
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Pienikokoisilla näytöillä hakukomponentin tulee aueta koko header-palkin päälle peittäen alleen muun headersisällön. Hakukomponentin tulee tällöin olla pienennettävissä erillisestä \"Sulje\" -painikkeesta. Mobiililaitteilla hakupalkki pysyy näkyvissä, vaikka käyttäjä klikkaa/täppää sisältöalueelle."
-        }
-      ],
-      "links": [
-        {
-          "text": "",
-          "url": ""
-        }
-      ]
-    },
-    {
-      "title": "Komponentti käyttöliittymässä",
-      "paragraphs": [
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Suomi.fi:n sivustohakukomponentti sijaitsee ylätunnisteessa kaikkialla verkkopalvelussa. On suositeltavaa asettaa hakukenttä sivuston yläreunaan tai osaksi ylätunnistetta. Useimmiten hakukenttä sijaitsee ylätunnisteen oikean laidan puolella."
+          "text": "Yksittäisvalintaa käytetään tilanteissa, missä käyttäjä voi valita yhden vaihtoehdon ennaltamääritellyistä vaihtoehdoista ja erityisesti tilanteissa, missä vaihtoehtoja on paljon ja niiden rajaaminen helpottaa valinnan tekemistä."
         }
       ],
       "links": [
@@ -68,7 +47,7 @@
       ]
     }
   ],
-  "exampleRegular.label": "Hakukenttä",
+  "exampleRegular.label": "Yksittäisvalinta",
   "exampleRegular.clearButtonLabel": "Tyhjennä haku",
   "exampleRegular.searchButtonLabel": "Hae"
 }

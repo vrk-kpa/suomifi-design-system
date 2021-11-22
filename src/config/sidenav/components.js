@@ -2,7 +2,7 @@ import React from 'react';
 import { StaticIcon } from 'suomifi-ui-components';
 
 import componentsSideNavContent from '../../../locale/fi/components.json';
-import singleSelectContent from '../../../locale/fi/singleSelect.json';
+import singleSelectContent from '../../../locale/fi/singleselect.json';
 import modalContent from '../../../locale/fi/modal.json';
 import searchinputContent from '../../../locale/fi/searchinput.json';
 import iconContent from '../../../locale/fi/icon.json';
@@ -31,7 +31,6 @@ export default {
       showAsTo: '/components/info/',
       label: componentsSideNavContent['info.title'],
     },
-    { to: '/components/singleselect/', label: singleSelectContent.title },
     { to: '/components/modal/', label: modalContent.title },
     { to: '/components/searchinput/', label: searchinputContent.title },
     { to: '/components/icon/', label: iconContent.title },
@@ -50,5 +49,6 @@ export default {
     { to: '/components/toggle/', label: toggleContent.title },
     { to: '/components/radiobutton/', label: radiobuttonContent.title },
     { to: '/components/checkbox/', label: checkboxContent.title },
+    { to: '/components/singleselect/', label: singleSelectContent.title },
   ],
 };

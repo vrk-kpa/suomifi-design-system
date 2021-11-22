@@ -11,36 +11,81 @@ import Section from 'components/Section';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
+const tools = [
+  {
+    name: 'Ammattiliikenne',
+    labelText: 'Ammattiliikenne',
+    uniqueItemId: 'jh2435626',
+  },
+  {
+    name: 'Ansiotulot',
+    labelText: 'Ansiotulot',
+    uniqueItemId: 'h9823523',
+  },
+  {
+    name: 'Asiakirja-_ja_tietopyynnöt',
+    labelText: 'Asiakirja- ja tietopyynnöt',
+    uniqueItemId: 'sh908293482',
+  },
+  {
+    name: 'asiakkuuden_hallinta',
+    labelText: 'Asiakkuuden hallinta',
+    uniqueItemId: 's82502335',
+  },
+  {
+    name: 'asuminen_ja_rakentaminen',
+    labelText: 'Asuminen ja rakentaminen',
+    disabled: true,
+    uniqueItemId: 'ps9081231',
+  },
+  {
+    name: 'asunto_osakkeet',
+    labelText: 'Shovel',
+    uniqueItemId: 'Asunto-osakkeet',
+  },
+];
 
-const Page = (): JSX.Element => (
-  <Layout sideNavData={sideNavData}>
-    <SEO title={singleSelectContent.title} />
-    <Heading variant="h1">{singleSelectContent.title}</Heading>
+const Page = (): JSX.Element => {
+  return (
+    <Layout sideNavData={sideNavData}>
+      <SEO title={singleSelectContent.title} />
+      <Heading variant="h1">{singleSelectContent.title}</Heading>
 
-    <Paragraph variant="lead">
-      <Text variant="lead">{singleSelectContent.intro}</Text>
-    </Paragraph>
+      <Paragraph variant="lead">
+        <Text variant="lead">{singleSelectContent.intro}</Text>
+      </Paragraph>
 
-    <ComponentDescription>
-      <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        test
-      </ComponentExample>
-    </ComponentDescription>
+      <ComponentDescription>
+        <ComponentExample
+          style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+        >
+          <SingleSelect
+            labelText="Tool"
+            hintText="Voit rajata tuloksia kirjoittamalla kenttään."
+            clearButtonLabel="Poista valinta"
+            items={tools}
+            visualPlaceholder="Valitse asiakategoria"
+            noItemsText="Haku valinnalla ei löytynyt tuloksia"
+            ariaOptionsAvailableText="Valinnat ovat saatavilla"
+          />
+        </ComponentExample>
+      </ComponentDescription>
 
-    <NoteBox
-      title={singleSelectContent['note.title']}
-      items={singleSelectContent['note.items']}
-    />
-
-    {singleSelectContent.sections.map((section, index) => (
-      <Section
-        key={index}
-        mainTitle={section.title}
-        paragraphs={section.paragraphs}
-        links={section.links}
+      <NoteBox
+        title={singleSelectContent['note.title']}
+        items={singleSelectContent['note.items']}
       />
-    ))}
-  </Layout>
-);
+
+      {singleSelectContent.sections.map((section, index) => (
+        <Section
+          key={index}
+          mainTitle={section.title}
+          paragraphs={section.paragraphs}
+          links={section.links}
+        />
+      ))}
+    </Layout>
+  );
+};
 
 export default Page;

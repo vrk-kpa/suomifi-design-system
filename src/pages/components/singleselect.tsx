@@ -61,7 +61,7 @@ const Page = (): JSX.Element => {
         >
           <SingleSelect
             labelText="Valitse asiakategoria"
-            hintText="Voit rajata tuloksia kirjoittamalla kenttään."
+            hintText="Rajaa tuloksia kirjoittamalla kenttään tai valitse valikosta."
             clearButtonLabel="Poista valinta"
             items={tools}
             visualPlaceholder="Kirjoita asiakategorian nimi"

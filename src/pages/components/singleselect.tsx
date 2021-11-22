@@ -60,11 +60,11 @@ const Page = (): JSX.Element => {
           style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
         >
           <SingleSelect
-            labelText="Tool"
+            labelText="Valitse asiakategoria"
             hintText="Voit rajata tuloksia kirjoittamalla kenttään."
             clearButtonLabel="Poista valinta"
             items={tools}
-            visualPlaceholder="Valitse asiakategoria"
+            visualPlaceholder="Kirjoita asiakategorian nimi"
             noItemsText="Haku valinnalla ei löytynyt tuloksia"
             ariaOptionsAvailableText="Valinnat ovat saatavilla"
           />

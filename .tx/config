@@ -2,9 +2,9 @@
 host = https://www.transifex.com
 
 [suomifi-design-system.singleSelect-json]
-file_filter = locale/<lang>/singleSelect.json
+file_filter = locale/<lang>/singleselect.json
 minimum_perc = 0
-source_file = locale/af/singleSelect.json
+source_file = locale/af/singleselect.json
 source_lang = af
 type = KEYVALUEJSON
 

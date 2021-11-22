@@ -1,1 +1,5 @@
-{"componentChunkName":"component---cache-wapps-redirect-js","path":"/components/heading/","result":{"pageContext":{"availableLngs":["fi"],"fallbackLng":"fi","lng":null,"routed":false,"redirectPage":"/components/heading/","i18nextOptions":{"returnObjects":true}}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-components-heading-tsx",
+    "path": "/components/heading/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["3759154878"]}

@@ -1,1 +1,5 @@
-{"componentChunkName":"component---cache-wapps-redirect-js","path":"/styles/icons/","result":{"pageContext":{"availableLngs":["fi"],"fallbackLng":"fi","lng":null,"routed":false,"redirectPage":"/styles/icons/","i18nextOptions":{"returnObjects":true}}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-styles-icons-tsx",
+    "path": "/styles/icons/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": []}

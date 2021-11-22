@@ -1,1 +1,5 @@
-{"componentChunkName":"component---cache-wapps-redirect-js","path":"/components/modal/","result":{"pageContext":{"availableLngs":["fi"],"fallbackLng":"fi","lng":null,"routed":false,"redirectPage":"/components/modal/","i18nextOptions":{"returnObjects":true}}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-components-modal-tsx",
+    "path": "/components/modal/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["3759154878"]}

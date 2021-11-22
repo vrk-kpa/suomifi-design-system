@@ -1,1 +1,5 @@
-{"componentChunkName":"component---cache-wapps-redirect-js","path":"/components/textarea/","result":{"pageContext":{"availableLngs":["fi"],"fallbackLng":"fi","lng":null,"routed":false,"redirectPage":"/components/textarea/","i18nextOptions":{"returnObjects":true}}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-components-textarea-tsx",
+    "path": "/components/textarea/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["3759154878"]}

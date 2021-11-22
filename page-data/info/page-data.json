@@ -1,1 +1,5 @@
-{"componentChunkName":"component---cache-wapps-redirect-js","path":"/info/","result":{"pageContext":{"availableLngs":["fi"],"fallbackLng":"fi","lng":null,"routed":false,"redirectPage":"/info/","i18nextOptions":{"returnObjects":true}}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-info-index-tsx",
+    "path": "/info/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["3759154878"]}

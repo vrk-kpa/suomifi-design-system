@@ -1,1 +1,5 @@
-{"componentChunkName":"component---cache-wapps-redirect-js","path":"/styles/typography/","result":{"pageContext":{"availableLngs":["fi"],"fallbackLng":"fi","lng":null,"routed":false,"redirectPage":"/styles/typography/","i18nextOptions":{"returnObjects":true}}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-styles-typography-tsx",
+    "path": "/styles/typography/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["3759154878"]}

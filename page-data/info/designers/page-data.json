@@ -1,1 +1,5 @@
-{"componentChunkName":"component---cache-wapps-redirect-js","path":"/info/designers/","result":{"pageContext":{"availableLngs":["fi"],"fallbackLng":"fi","lng":null,"routed":false,"redirectPage":"/info/designers/","i18nextOptions":{"returnObjects":true}}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-info-designers-tsx",
+    "path": "/info/designers/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["3759154878"]}

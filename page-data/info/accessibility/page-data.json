@@ -1,1 +1,5 @@
-{"componentChunkName":"component---cache-wapps-redirect-js","path":"/info/accessibility/","result":{"pageContext":{"availableLngs":["fi"],"fallbackLng":"fi","lng":null,"routed":false,"redirectPage":"/info/accessibility/","i18nextOptions":{"returnObjects":true}}},"staticQueryHashes":[]}
+{
+    "componentChunkName": "component---src-pages-info-accessibility-tsx",
+    "path": "/info/accessibility/",
+    "result": {"pageContext":{}},
+    "staticQueryHashes": ["3759154878"]}

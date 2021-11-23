@@ -2,6 +2,7 @@ import React from 'react';
 import { StaticIcon } from 'suomifi-ui-components';
 
 import componentsSideNavContent from '../../../locale/fi/components.json';
+import alertContent from '../../../locale/fi/alert.json';
 import singleSelectContent from '../../../locale/fi/singleselect.json';
 import modalContent from '../../../locale/fi/modal.json';
 import searchinputContent from '../../../locale/fi/searchinput.json';
@@ -33,6 +34,7 @@ export default {
     },
     { to: '/components/modal/', label: modalContent.title },
     { to: '/components/searchinput/', label: searchinputContent.title },
+    { to: '/components/alert/', label: alertContent.title },
     { to: '/components/icon/', label: iconContent.title },
     { to: '/components/languagemenu/', label: languagemenuContent.title },
     { to: '/components/expander/', label: expanderContent.title },

@@ -1,5 +1,5 @@
 {
-  "title": "Yksittäisvalinta (SingleSelect)",
+  "title": "Yksittäisvalinta (Single Select)",
   "intro": "Yksittäisvalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijlla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromium-pohjaisilla selaimilla, kuten Chromella tai Edgellä.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [

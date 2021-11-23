@@ -40,8 +40,8 @@ const tools = [
   },
   {
     name: 'asunto_osakkeet',
-    labelText: 'Shovel',
-    uniqueItemId: 'Asunto-osakkeet',
+    labelText: 'Asunto-osakkeet',
+    uniqueItemId: 'ps9081298',
   },
 ];
 
@@ -65,8 +65,8 @@ const Page = (): JSX.Element => {
             clearButtonLabel="Poista valinta"
             items={tools}
             visualPlaceholder="Kirjoita asiakategorian nimi"
-            noItemsText="Haku valinnalla ei löytynyt tuloksia"
-            ariaOptionsAvailableText="Valinnat ovat saatavilla"
+            noItemsText="Hakusanalla ei löytynyt tuloksia"
+            ariaOptionsAvailableText="vaihtoehtoa saatavilla"
           />
         </ComponentExample>
       </ComponentDescription>

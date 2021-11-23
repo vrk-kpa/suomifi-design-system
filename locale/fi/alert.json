@@ -1,8 +1,7 @@
 {
   "title": "Heräte (Alert)",
   "intro": "Heräte-komponentin avulla voidaan antaa käyttäjälle tietoa palvelun tilasta. Tällaista tietoa voi olla esimerkiksi häiriötilanteet tai ongelmat sivuston tai sen osan toiminnassa sekä tiedot tulevista käyttökatkoista.",
-  "alertHeading": "Alert version koodi-esimerkit",
-  "inlineAlertHeading": "InlineAlert version koodi-esimerkit",
+  "inlineAlertHeading": "Inline Alert",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Käytä komponentista aina asiaankuuluvaa varianttia (Alert tai InlineAlert). Ks. 'Koko ja käyttö'.",
@@ -11,6 +10,9 @@
   ],
   "contentParagrah": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
   "closeButton": "Sulje",
+  "inlineAlertWarningParagrah": "status='warning' Voidaan myös käyttää Alertin kanssa, eikä vain Inline Alertin kanssa.",
+  "inlineAlertErrorParagrah": "status='Error' Voidaan myös käyttää Alertin kanssa, eikä vain Inline Alertin kanssa.",
+
   "sections": [
     {
       "title": "Mistä komponentti koostuu",

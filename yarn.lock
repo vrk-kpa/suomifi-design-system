@@ -13902,7 +13902,7 @@ suomifi-icons@^5.0.0:
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-5.0.0.tgz#8e4c3e9535065c32de757d3e6a75393a70414e73"
   integrity sha512-tqLU2lfh9EyEgXCYeSYhJEhBUgc0nOlvs4e7TBLWMvTTnPPa14VCWSK1DL7HPHuwy95VODjjiHg1Y9B+vzoccA==
 
-suomifi-ui-components@^6.5.0:
+suomifi-ui-components@^6.1.0-beta.2:
   version "6.1.0-beta.2"
   resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-6.1.0-beta.2.tgz#2795d9f498ad65224230434457878fa9e750a9b6"
   integrity sha512-rf4yYnIURBbOtCAD17Biw+rgeAEqjt8OqYBSkMMQofOiOiuS4mo7PesevUBM9AGyZZD1LaLtBGt+kbMucT/czQ==

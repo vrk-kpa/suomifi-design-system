@@ -20,24 +20,9 @@ const Page = (): JSX.Element => (
     <Paragraph variant="lead">
       <Text variant="lead">{alertContent.intro}</Text>
     </Paragraph>
-    <Heading variant="h2">{alertContent.alertHeading}</Heading>
     <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <Alert smallScreen closeText={alertContent.closeButton}>
-          {alertContent.contentParagrah}
-        </Alert>
-      </ComponentExample>
-    </ComponentDescription>
-    <ComponentDescription>
-      <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <Alert status="warning" closeText={alertContent.closeButton}>
-          {alertContent.contentParagrah}
-        </Alert>
-      </ComponentExample>
-    </ComponentDescription>
-    <ComponentDescription>
-      <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <Alert status="error" closeText={alertContent.closeButton}>
           {alertContent.contentParagrah}
         </Alert>
       </ComponentExample>
@@ -48,14 +33,22 @@ const Page = (): JSX.Element => (
         <InlineAlert smallScreen>{alertContent.contentParagrah}</InlineAlert>
       </ComponentExample>
     </ComponentDescription>
-    <ComponentDescription>
+
+    <ComponentDescription
+      exampleFirst
+      description={alertContent.inlineAlertWarningParagrah}
+    >
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <InlineAlert status="warning">
           {alertContent.contentParagrah}
         </InlineAlert>
       </ComponentExample>
     </ComponentDescription>
-    <ComponentDescription>
+    <Paragraph style={{ margin: '0 0 30px 0' }}></Paragraph>
+    <ComponentDescription
+      exampleFirst
+      description={alertContent.inlineAlertErrorParagrah}
+    >
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <InlineAlert status="error">{alertContent.contentParagrah}</InlineAlert>
       </ComponentExample>

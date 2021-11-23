@@ -1,7 +1,7 @@
 {
   "title": "Yksittäisvalinta (Single Select)",
   "intro": "Yksittäisvalinta-komponentin avulla käyttäjä voi valita yhden vaihtoehdon listalta.",
-  "accessibility": "Yksittäisvalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijlla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromium-pohjaisilla selaimilla, kuten Chromella tai Edgellä.",
+  "accessibility": "Yksittäisvalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijalla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromium-pohjaisilla selaimilla, kuten Chromella tai Edgellä.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
@@ -50,9 +50,9 @@
     }
   ],
   "exampleRegular.labelText": "Valitse asiakategoria",
-  "exampleRegular.hintText": "Rajaa tuloksia kirjoittamalla kenttään tai valitse valikosta.",
-  "exampleRegular.clearButtonLabel": "Poista valinta.",
-  "exampleRegular.visualPlaceholder": "Kirjoita asiakategorian nimi.",
+  "exampleRegular.hintText": "Rajaa tuloksia kirjoittamalla kenttään tai valitse valikosta",
+  "exampleRegular.clearButtonLabel": "Poista valinta",
+  "exampleRegular.visualPlaceholder": "Kirjoita asiakategorian nimi",
   "exampleRegular.noItemsText": "Hakusanalla ei löytynyt tuloksia.",
-  "exampleRegular.ariaOptionsAvailableText": "Vaihtoehtoa saatavilla."
+  "exampleRegular.ariaOptionsAvailableText": "Vaihtoehtoa saatavilla"
 }

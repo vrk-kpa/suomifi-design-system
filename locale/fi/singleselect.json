@@ -1,6 +1,7 @@
 {
   "title": "Yksittäisvalinta (Single Select)",
-  "intro": "Yksittäisvalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijlla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromium-pohjaisilla selaimilla, kuten Chromella tai Edgellä.",
+  "intro": "Yksittäisvalinta-komponentin avulla käyttäjä voi valita yhden vaihtoehdon listalta.",
+  "accessibility": "Yksittäisvalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijlla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromium-pohjaisilla selaimilla, kuten Chromella tai Edgellä.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
@@ -8,6 +9,7 @@
     "Ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa.",
     "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi."
   ],
+
   "sections": [
     {
       "title": "Mistä komponentti koostuu",
@@ -47,7 +49,10 @@
       ]
     }
   ],
-  "exampleRegular.label": "Yksittäisvalinta",
-  "exampleRegular.clearButtonLabel": "Tyhjennä haku",
-  "exampleRegular.searchButtonLabel": "Hae"
+  "exampleRegular.labelText": "Valitse asiakategoria",
+  "exampleRegular.hintText": "Rajaa tuloksia kirjoittamalla kenttään tai valitse valikosta.",
+  "exampleRegular.clearButtonLabel": "Poista valinta.",
+  "exampleRegular.visualPlaceholder": "Kirjoita asiakategorian nimi.",
+  "exampleRegular.noItemsText": "Hakusanalla ei löytynyt tuloksia.",
+  "exampleRegular.ariaOptionsAvailableText": "Vaihtoehtoa saatavilla."
 }

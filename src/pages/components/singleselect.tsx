@@ -10,6 +10,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import Section from 'components/Section';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
+import NotificationBox from 'components/NotificationBox';
 import { defaultSuomifiTheme } from 'suomifi-ui-components';
 const tools = [
   {
@@ -50,7 +51,7 @@ const Page = (): JSX.Element => {
     <Layout sideNavData={sideNavData}>
       <SEO title={singleSelectContent.title} />
       <Heading variant="h1">{singleSelectContent.title}</Heading>
-
+      <NotificationBox notificationText={singleSelectContent.accessibility} />
       <Paragraph variant="lead">
         <Text variant="lead">{singleSelectContent.intro}</Text>
       </Paragraph>
@@ -60,13 +61,19 @@ const Page = (): JSX.Element => {
           style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
         >
           <SingleSelect
-            labelText="Valitse asiakategoria"
-            hintText="Rajaa tuloksia kirjoittamalla kenttään tai valitse valikosta."
-            clearButtonLabel="Poista valinta"
+            labelText={singleSelectContent['exampleRegular.labelText']}
+            hintText={singleSelectContent['exampleRegular.hintText']}
+            clearButtonLabel={
+              singleSelectContent['exampleRegular.clearButtonLabel']
+            }
             items={tools}
-            visualPlaceholder="Kirjoita asiakategorian nimi"
-            noItemsText="Hakusanalla ei löytynyt tuloksia"
-            ariaOptionsAvailableText="vaihtoehtoa saatavilla"
+            visualPlaceholder={
+              singleSelectContent['exampleRegular.visualPlaceholder']
+            }
+            noItemsText={singleSelectContent['exampleRegular.noItemsText']}
+            ariaOptionsAvailableText={
+              singleSelectContent['exampleRegular.ariaOptionsAvailableText']
+            }
           />
         </ComponentExample>
       </ComponentDescription>

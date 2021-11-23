@@ -48,6 +48,7 @@ import {
   RadioButtonProps,
   RadioButtonGroup as OrigRadioButtonGroup,
   RadioButtonGroupProps,
+  SingleSelect as OrigSingleSelect,
   SearchInput as OrigSearchInput,
   StaticIcon as OrigStaticIcon,
   Text as OrigText,
@@ -229,6 +230,11 @@ addDisplayNames(RadioButtonGroup, OrigRadioButtonGroup, 'RadioButtonGroup');
 
 export class SearchInput extends OrigSearchInput {}
 addDisplayNames(SearchInput, OrigSearchInput, 'SearchInput');
+
+export const SingleSelect = (props: any): JSX.Element => (
+  <OrigSingleSelect {...props} />
+);
+addDisplayNames(SingleSelect, OrigSingleSelect, 'SingleSelect');
 
 export class StaticIcon extends OrigStaticIcon {}
 addDisplayNames(StaticIcon, OrigStaticIcon, 'StaticIcon');

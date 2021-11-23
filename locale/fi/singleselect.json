@@ -1,0 +1,58 @@
+{
+  "title": "Yksittäisvalinta (Single Select)",
+  "intro": "Yksittäisvalinta-komponentin avulla käyttäjä voi valita yhden vaihtoehdon listalta.",
+  "accessibility": "Yksittäisvalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijalla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromium-pohjaisilla selaimilla, kuten Chromella tai Edgellä.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
+    "Yksittäisvalinnan kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
+    "Ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa.",
+    "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi."
+  ],
+
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Yksittäisvalinta koostuu otsakkeesta, hakukentästä, valikosta, tilatekstistä, valinnan poistamiseen tarkoitetusta tyhjennyspainikkeesta sekä valikon näyttämiseen ja piilottamiseen tarkoitetusta painikkeesta. Valikko aukeaa automaattisesti kun fokus siirtyy hakukenttään ja sulkeutuu kun fokus siirtyy pois hakukentästä. Valikon voi myös näyttää tai piilottaa siihen tarkoitetun painikkeen avulla, mutta tämä toiminnallisuus ei ole käytettävissä näppäimistöllä. Valikossa näytettäviä vaihtoehtoja rajataan hakukentän tekstin mukaisesti."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Yksittäiset valinnat voivat olla poistettuna käytöstä, milloin niitä ei voi valita. Valitun vaihtoehdon voi poistaa tyhjennyspainikkeen avulla."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Yksittäisvalintaa käytetään tilanteissa, missä käyttäjä voi valita yhden vaihtoehdon ennaltamääritellyistä vaihtoehdoista ja erityisesti tilanteissa, missä vaihtoehtoja on paljon ja niiden rajaaminen helpottaa valinnan tekemistä."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "exampleRegular.labelText": "Valitse asiakategoria",
+  "exampleRegular.hintText": "Rajaa tuloksia kirjoittamalla kenttään tai valitse valikosta",
+  "exampleRegular.clearButtonLabel": "Poista valinta",
+  "exampleRegular.visualPlaceholder": "Kirjoita asiakategorian nimi",
+  "exampleRegular.noItemsText": "Hakusanalla ei löytynyt tuloksia.",
+  "exampleRegular.ariaOptionsAvailableText": "Vaihtoehtoa saatavilla"
+}

@@ -22,11 +22,25 @@ const Page = (): JSX.Element => (
     </Paragraph>
     <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <Alert smallScreen closeText={alertContent.closeButton}>
+        <Alert closeText={alertContent.closeButton}>
           {alertContent.contentParagrah}
         </Alert>
       </ComponentExample>
     </ComponentDescription>
+
+    <NoteBox
+      title={alertContent['note.title']}
+      items={alertContent['note.items']}
+    />
+
+    {alertContent.sections.map((section, index) => (
+      <Section
+        key={index}
+        mainTitle={section.title}
+        paragraphs={section.paragraphs}
+        links={section.links}
+      />
+    ))}
     <Heading variant="h2">{alertContent.inlineAlertHeading}</Heading>
     <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
@@ -53,20 +67,6 @@ const Page = (): JSX.Element => (
         <InlineAlert status="error">{alertContent.contentParagrah}</InlineAlert>
       </ComponentExample>
     </ComponentDescription>
-
-    <NoteBox
-      title={alertContent['note.title']}
-      items={alertContent['note.items']}
-    />
-
-    {alertContent.sections.map((section, index) => (
-      <Section
-        key={index}
-        mainTitle={section.title}
-        paragraphs={section.paragraphs}
-        links={section.links}
-      />
-    ))}
   </Layout>
 );
 

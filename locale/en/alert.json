@@ -42,13 +42,13 @@
       ]
     }
   ],
+  "example.alertInfoParagraph": "",
   "example.inlineAlertHeading": "",
   "example.inlineParagraph": "",
-  "example.infoAlertParagraph": "",
-  "example.infoHeading": "",
-  "example.infoParagraph": "",
-  "example.warningParagraph": "",
-  "example.errorHeading": "",
-  "example.errorParagraph": "",
+  "example.inlineAlertInfoHeading": "",
+  "example.inlineAlertInfoParagraph": "",
+  "example.inlineAlertWarningParagraph": "",
+  "example.inlineAlertErrorHeading": "",
+  "example.inlineAlertErrorParagraph": "",
   "example.closeButton": ""
 }

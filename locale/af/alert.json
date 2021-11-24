@@ -2,7 +2,7 @@
   "title": "title",
   "intro": "intro",
   "note.title": "note.title",
-  "note.items": ["note.item", "note.item", "note.item"],
+  "note.items": ["note.items", "note.items", "note.items"],
   "sections": [
     {
       "title": "sections.title",
@@ -16,7 +16,7 @@
       "links": [
         {
           "text": "sections.links.text",
-          "url": "sections.links.text"
+          "url": "sections.links.url"
         }
       ]
     },
@@ -42,13 +42,13 @@
       ]
     }
   ],
-  "inlineAlertHeading": "inlineAlertHeading",
-  "inlineParagraph": "inlineParagraph",
-  "infoAlertParagraph": "infoAlertParagraph",
-  "infoHeading": "infoHeader",
-  "infoParagraph": "infoParagraph",
-  "warningParagraph": "warningParagraph",
-  "errorHeading": "errorHeader",
-  "errorParagraph": "errorParagraph",
-  "closeButton": "closeButton"
+  "example.alertInfoParagraph": "example.alertInfoParagraph",
+  "example.inlineAlertHeading": "example.inlineAlertHeading",
+  "example.inlineParagraph": "example.inlineParagraph",
+  "example.inlineAlertInfoHeading": "example.inlineAlertInfoHeading",
+  "example.inlineAlertInfoParagraph": "example.inlineAlertInfoParagraph",
+  "example.inlineAlertWarningParagraph": "example.inlineAlertWarningParagraph",
+  "example.inlineAlertErrorHeading": "example.inlineAlertErrorHeading",
+  "example.inlineAlertErrorParagraph": "example.inlineAlertErrorParagraph",
+  "example.closeButton": "example.closeButton"
 }

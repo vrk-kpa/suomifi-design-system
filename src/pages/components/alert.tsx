@@ -23,7 +23,7 @@ const Page = (): JSX.Element => (
     <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <Alert closeText={alertContent['example.closeButton']}>
-          {alertContent['example.infoAlertParagraph']}
+          {alertContent['example.alertInfoParagraph']}
         </Alert>
       </ComponentExample>
     </ComponentDescription>
@@ -46,21 +46,21 @@ const Page = (): JSX.Element => (
       description={alertContent['example.inlineParagraph']}
     >
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <InlineAlert labelText={alertContent['example.infoHeading']}>
-          {alertContent['example.infoParagraph']}
+        <InlineAlert labelText={alertContent['example.inlineAlertInfoHeading']}>
+          {alertContent['example.inlineAlertInfoParagraph']}
         </InlineAlert>
       </ComponentExample>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <InlineAlert status="warning">
-          {alertContent['example.warningParagraph']}
+          {alertContent['example.inlineAlertWarningParagraph']}
         </InlineAlert>
       </ComponentExample>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <InlineAlert
-          labelText={alertContent['example.errorHeading']}
+          labelText={alertContent['example.inlineAlertErrorHeading']}
           status="error"
         >
-          {alertContent['example.errorParagraph']}
+          {alertContent['example.inlineAlertErrorParagraph']}
         </InlineAlert>
       </ComponentExample>
     </ComponentDescription>

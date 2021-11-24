@@ -45,10 +45,10 @@
   "example.inlineAlertHeading": "",
   "example.inlineParagraph": "",
   "example.infoAlertParagraph": "",
-  "example.infoHeader": "",
+  "example.infoHeading": "",
   "example.infoParagraph": "",
   "example.warningParagraph": "",
-  "example.errorHeader": "",
+  "example.errorHeading": "",
   "example.errorParagraph": "",
   "example.closeButton": ""
 }

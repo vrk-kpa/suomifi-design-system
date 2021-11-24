@@ -45,10 +45,10 @@
   "inlineAlertHeading": "inlineAlertHeading",
   "inlineParagraph": "inlineParagraph",
   "infoAlertParagraph": "infoAlertParagraph",
-  "infoHeader": "infoHeader",
+  "infoHeading": "infoHeader",
   "infoParagraph": "infoParagraph",
   "warningParagraph": "warningParagraph",
-  "errorHeader": "errorHeader",
+  "errorHeading": "errorHeader",
   "errorParagraph": "errorParagraph",
   "closeButton": "closeButton"
 }

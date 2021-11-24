@@ -49,10 +49,10 @@
   "example.inlineAlertHeading": "Sisältöheräte (Inline Alert)",
   "example.inlineParagraph": "Sisältöherätettä käytetään sivun sisällön seassa ilmaisemaan huomioita, varoituksia tai virhetilanteita.",
   "example.infoAlertParagraph": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
-  "example.infoHeader": "Vahvista valtuus omalta osaltasi",
+  "example.infoHeading": "Vahvista valtuus omalta osaltasi",
   "example.infoParagraph": "Vahvistamisen jälkeen muut vahvistajat näkevät Omat vahvistettavat -sivulla valtuuden, joka heidän tulee vahvistaa. Valtuus on voimassa vasta, kun kaikki ovat sen vahvistaneet.",
   "example.warningParagraph": "Tekstissä on virheitä",
-  "example.errorHeader": "Allekirjoittaminen ei ole mahdollista",
+  "example.errorHeading": "Allekirjoittaminen ei ole mahdollista",
   "example.errorParagraph": "Hakemusta ei voi allekirjoittaa henkilö, jonka ulkomaalainen henkilöasiakirja ei ole voimassa, koska hän ei voi todistaa henkilöllisyyttään.",
   "example.closeButton": "Sulje"
 }

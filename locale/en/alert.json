@@ -1,17 +1,8 @@
 {
   "title": "",
   "intro": "",
-  "inlineAlertHeading": "",
   "note.title": "",
   "note.items": ["", "", ""],
-  "infoAlertParagraph": "",
-  "infoHeader": "",
-  "infoParagraph": "",
-  "warningParagraph": "",
-  "errorHeader": "",
-  "errorParagraph": "",
-
-  "closeButton": "",
   "sections": [
     {
       "title": "",
@@ -50,5 +41,14 @@
         }
       ]
     }
-  ]
+  ],
+  "example.inlineAlertHeading": "",
+  "example.inlineParagraph": "",
+  "example.infoAlertParagraph": "",
+  "example.infoHeader": "",
+  "example.infoParagraph": "",
+  "example.warningParagraph": "",
+  "example.errorHeader": "",
+  "example.errorParagraph": "",
+  "example.closeButton": ""
 }

@@ -22,8 +22,8 @@ const Page = (): JSX.Element => (
     </Paragraph>
     <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <Alert closeText={alertContent.closeButton}>
-          {alertContent.infoAlertParagraph}
+        <Alert closeText={alertContent['example.closeButton']}>
+          {alertContent['example.infoAlertParagraph']}
         </Alert>
       </ComponentExample>
     </ComponentDescription>
@@ -41,26 +41,26 @@ const Page = (): JSX.Element => (
         links={section.links}
       />
     ))}
-    <Heading variant="h2">{alertContent.inlineAlertHeading}</Heading>
-    <ComponentDescription>
+    <ComponentDescription
+      mainTitle={alertContent['example.inlineAlertHeading']}
+      description={alertContent['example.inlineParagraph']}
+    >
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <InlineAlert labelText={alertContent.infoHeader}>
-          {alertContent.infoParagraph}
+        <InlineAlert labelText={alertContent['example.infoHeader']}>
+          {alertContent['example.infoParagraph']}
         </InlineAlert>
       </ComponentExample>
-    </ComponentDescription>
-
-    <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <InlineAlert status="warning">
-          {alertContent.warningParagraph}
+          {alertContent['example.warningParagraph']}
         </InlineAlert>
       </ComponentExample>
-    </ComponentDescription>
-    <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <InlineAlert labelText={alertContent.errorHeader} status="error">
-          {alertContent.errorParagraph}
+        <InlineAlert
+          labelText={alertContent['example.errorHeader']}
+          status="error"
+        >
+          {alertContent['example.errorParagraph']}
         </InlineAlert>
       </ComponentExample>
     </ComponentDescription>

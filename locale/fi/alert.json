@@ -1,21 +1,12 @@
 {
   "title": "Heräte (Alert)",
   "intro": "Heräte-komponentin avulla voidaan antaa käyttäjälle tietoa palvelun tilasta. Tällaista tietoa voi olla esimerkiksi häiriötilanteet tai ongelmat sivuston tai sen osan toiminnassa sekä tiedot tulevista käyttökatkoista.",
-  "inlineAlertHeading": "Inline Alert",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Käytä komponentista aina asiaankuuluvaa varianttia (Alert tai InlineAlert). Ks. 'Koko ja käyttö'.",
     "Alert komponentti on myös semanttisesti alert, joka tarkoittaa, että sen sisällön muuttuessa komponentin sisältö luetaan välittömästi ruudunlukijakäyttäjille.",
     "InlineAlert komponentissa ruudunlukijakäyttäytyminen on säädettävissä, mutta sitä ei tule kytkeä kokonaan pois päältä."
   ],
-  "infoAlertParagraph": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
-  "infoHeader": "Vahvista valtuus omalta osaltasi",
-  "infoParagraph": "Vahvistamisen jälkeen muut vahvistajat näkevät Omat vahvistettavat -sivulla valtuuden, joka heidän tulee vahvistaa. Valtuus on voimassa vasta, kun kaikki ovat sen vahvistaneet.",
-  "warningParagraph": "Tekstissä on virheitä",
-  "errorHeader": "Allekirjoittaminen ei ole mahdollista",
-  "errorParagraph": "Hakemusta ei voi allekirjoittaa henkilö, jonka ulkomaalainen henkilöasiakirja ei ole voimassa, koska hän ei voi todistaa henkilöllisyyttään.",
-
-  "closeButton": "Sulje",
   "sections": [
     {
       "title": "Mistä komponentti koostuu",
@@ -54,5 +45,14 @@
         }
       ]
     }
-  ]
+  ],
+  "example.inlineAlertHeading": "Sisältöheräte (Inline Alert)",
+  "example.inlineParagraph": "Sisältöherätettä käytetään sivun sisällön seassa ilmaisemaan huomioita, varoituksia tai virhetilanteita.",
+  "example.infoAlertParagraph": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
+  "example.infoHeader": "Vahvista valtuus omalta osaltasi",
+  "example.infoParagraph": "Vahvistamisen jälkeen muut vahvistajat näkevät Omat vahvistettavat -sivulla valtuuden, joka heidän tulee vahvistaa. Valtuus on voimassa vasta, kun kaikki ovat sen vahvistaneet.",
+  "example.warningParagraph": "Tekstissä on virheitä",
+  "example.errorHeader": "Allekirjoittaminen ei ole mahdollista",
+  "example.errorParagraph": "Hakemusta ei voi allekirjoittaa henkilö, jonka ulkomaalainen henkilöasiakirja ei ole voimassa, koska hän ei voi todistaa henkilöllisyyttään.",
+  "example.closeButton": "Sulje"
 }

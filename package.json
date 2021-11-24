@@ -31,7 +31,7 @@
     "react-syntax-highlighter": "^15.4.5",
     "styled-components": "^5.3.3",
     "suomifi-icons": "^5.0.0",
-    "suomifi-ui-components": "^6.1.0-beta.1"
+    "suomifi-ui-components": "^6.1.0-beta.2"
   },
   "license": "MIT",
   "scripts": {

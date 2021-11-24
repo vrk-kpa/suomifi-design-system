@@ -238,3 +238,10 @@ minimum_perc = 0
 source_file = locale/af/multiselect.json
 source_lang = af
 type = KEYVALUEJSON
+
+[suomifi-design-system.alert-json]
+file_filter = locale/<lang>/alert.json
+minimum_perc = 0
+source_file = locale/af/alert.json
+source_lang = af
+type = KEYVALUEJSON

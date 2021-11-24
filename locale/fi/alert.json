@@ -10,9 +10,6 @@
   ],
   "contentParagrah": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
   "closeButton": "Sulje",
-  "inlineAlertWarningParagrah": "status='warning' Voidaan myös käyttää Alertin kanssa, eikä vain Inline Alertin kanssa.",
-  "inlineAlertErrorParagrah": "status='Error' Voidaan myös käyttää Alertin kanssa, eikä vain Inline Alertin kanssa.",
-
   "sections": [
     {
       "title": "Mistä komponentti koostuu",

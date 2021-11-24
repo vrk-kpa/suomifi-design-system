@@ -48,10 +48,7 @@ const Page = (): JSX.Element => (
       </ComponentExample>
     </ComponentDescription>
 
-    <ComponentDescription
-      exampleFirst
-      description={alertContent.inlineAlertWarningParagrah}
-    >
+    <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <InlineAlert status="warning">
           {alertContent.contentParagrah}
@@ -59,10 +56,7 @@ const Page = (): JSX.Element => (
       </ComponentExample>
     </ComponentDescription>
     <Paragraph style={{ margin: '0 0 30px 0' }}></Paragraph>
-    <ComponentDescription
-      exampleFirst
-      description={alertContent.inlineAlertErrorParagrah}
-    >
+    <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <InlineAlert status="error">{alertContent.contentParagrah}</InlineAlert>
       </ComponentExample>

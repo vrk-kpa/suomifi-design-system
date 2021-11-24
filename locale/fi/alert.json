@@ -8,7 +8,13 @@
     "Alert komponentti on myös semanttisesti alert, joka tarkoittaa, että sen sisällön muuttuessa komponentin sisältö luetaan välittömästi ruudunlukijakäyttäjille.",
     "InlineAlert komponentissa ruudunlukijakäyttäytyminen on säädettävissä, mutta sitä ei tule kytkeä kokonaan pois päältä."
   ],
-  "contentParagrah": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
+  "infoAlertParagraph": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
+  "infoHeader": "Vahvista valtuus omalta osaltasi",
+  "infoParagraph": "Vahvistamisen jälkeen muut vahvistajat näkevät Omat vahvistettavat -sivulla, joka heidän tulee vahvistaa. Valtuus on voimassa vasta, kun kaikki ovat sen vahvistaneet.",
+  "warningParagraph": "Tekstissä on virheitä",
+  "errorHeader": "Allekirjoittaminen ei ole mahdollista",
+  "errorParagraph": "Hakemusta ei voi allekirjoittaa henkilö, jonka ulkomaalainen asiakirja ei ole voimassa, koska hän ei voi todistaa henkilöllisyyttään.",
+
   "closeButton": "Sulje",
   "sections": [
     {

@@ -1,0 +1,53 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "inlineAlertHeading": "inlineAlertHeading",
+  "note.title": "note.title",
+  "note.items": ["note.item", "note.item", "note.item"],
+  "infoAlertParagraph": "infoAlertParagraph",
+  "infoHeader": "infoHeader",
+  "infoParagraph": "infoParagraph",
+  "warningParagraph": "warningParagraph",
+  "errorHeader": "errorHeader",
+  "errorParagraph": "errorParagraph",
+  "closeButton": "closeButton",
+  "sections": [
+    {
+      "title": "sections.title",
+      "paragraphs": [
+        {
+          "image.key": "sections.paragraphs.image.key",
+          "image.alt": "sections.paragraphs.image.alt",
+          "text": "sections.paragraphs.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "sections.links.text",
+          "url": "sections.links.text"
+        }
+      ]
+    },
+    {
+      "title": "sections.title",
+      "paragraphs": [
+        {
+          "image.key": "sections.paragraphs.image.key",
+          "image.alt": "sections.paragraphs.image.alt",
+          "text": "sections.paragraphs.text"
+        },
+        {
+          "image.key": "sections.paragraphs.image.key",
+          "image.alt": "sections.paragraphs.image.alt",
+          "text": "sections.paragraphs.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "sections.links.text",
+          "url": "sections.links.url"
+        }
+      ]
+    }
+  ]
+}

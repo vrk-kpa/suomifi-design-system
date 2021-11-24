@@ -1,4 +1,5 @@
 import React from 'react';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import alertContent from '../../../locale/fi/alert.json';
 import Layout from 'components/layout';
@@ -10,7 +11,6 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import Section from 'components/Section';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>
@@ -23,7 +23,7 @@ const Page = (): JSX.Element => (
     <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <Alert closeText={alertContent.closeButton}>
-          {alertContent.contentParagrah}
+          {alertContent.infoAlertParagraph}
         </Alert>
       </ComponentExample>
     </ComponentDescription>
@@ -44,21 +44,24 @@ const Page = (): JSX.Element => (
     <Heading variant="h2">{alertContent.inlineAlertHeading}</Heading>
     <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <InlineAlert smallScreen>{alertContent.contentParagrah}</InlineAlert>
+        <InlineAlert labelText={alertContent.infoHeader}>
+          {alertContent.infoParagraph}
+        </InlineAlert>
       </ComponentExample>
     </ComponentDescription>
 
     <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
         <InlineAlert status="warning">
-          {alertContent.contentParagrah}
+          {alertContent.warningParagraph}
         </InlineAlert>
       </ComponentExample>
     </ComponentDescription>
-    <Paragraph style={{ margin: '0 0 30px 0' }}></Paragraph>
     <ComponentDescription>
       <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <InlineAlert status="error">{alertContent.contentParagrah}</InlineAlert>
+        <InlineAlert labelText={alertContent.errorHeader} status="error">
+          {alertContent.errorParagraph}
+        </InlineAlert>
       </ComponentExample>
     </ComponentDescription>
   </Layout>

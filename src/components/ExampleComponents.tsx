@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {
   Alert as OrigAlert,
+  AlertProps,
   InlineAlert as OrigInlineAlert,
+  InlineAlertProps,
   Block as OrigBlock,
   Button as OrigButton,
   ButtonProps,
@@ -67,12 +69,14 @@ import {
 } from 'suomifi-ui-components';
 import { addDisplayNames } from 'components/ExampleComponentUtil';
 
-export const InlineAlert = (props: any): JSX.Element => (
+export const InlineAlert = (props: InlineAlertProps): JSX.Element => (
   <OrigInlineAlert {...props} />
 );
 addDisplayNames(InlineAlert, OrigInlineAlert, 'InlineAlert');
 
-export const Alert = (props: any): JSX.Element => <OrigAlert {...props} />;
+export const Alert = (props: AlertProps): JSX.Element => (
+  <OrigAlert {...props} />
+);
 addDisplayNames(Alert, OrigAlert, 'Alert');
 
 export class Block extends OrigBlock {}

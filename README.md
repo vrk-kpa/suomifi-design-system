@@ -1,12 +1,12 @@
 # Suomi.fi Design System
 
-Documentation website for the [Suomi.fi Design System](https://vrk-kpa.github.io/suomifi-design-system/fi/)
+Documentation website for the [Suomi.fi Design System](https://vrk-kpa.github.io/suomifi-design-system/)
 
 Built using [suomifi-ui-components](https://github.com/vrk-kpa/suomifi-ui-components)
 
-You can see the current development build at (https://vrk-kpa.github.io/suomifi-design-system/fi/)
+You can see the current development build at (https://vrk-kpa.github.io/suomifi-design-system/)
 
-The site presents the elements, features and possibilities of the [Suomi.fi Design System](https://vrk-kpa.github.io/suomifi-design-system/fi/).
+The site presents the elements, features and possibilities of the [Suomi.fi Design System](https://vrk-kpa.github.io/suomifi-design-system/).
 
 Contents of the site:
 

@@ -5,7 +5,8 @@
   "note.items": [
     "Käytä komponentista aina asiaankuuluvaa varianttia (Alert tai InlineAlert). Ks. 'Koko ja käyttö'.",
     "Alert komponentti on myös semanttisesti alert, joka tarkoittaa, että sen sisällön muuttuessa komponentin sisältö luetaan välittömästi ruudunlukijakäyttäjille.",
-    "InlineAlert komponentissa ruudunlukijakäyttäytyminen on säädettävissä, mutta sitä ei tule kytkeä kokonaan pois päältä."
+    "Sisältöherätteessä ruudunlukijakäyttäytyminen on säädettävissä, mutta sitä ei tule kytkeä kokonaan pois päältä.",
+    "Mikäli sisältöheräte liittyy selkeästi tiettyyn interaktiiviseen elementtiin sivulla, informoi yhteys myös ruudunlukijakäyttäjille käyttäen esimerkiksi 'aria-describedby' attribuuttia"
   ],
   "sections": [
     {

@@ -2,7 +2,7 @@
   "title": "title",
   "intro": "intro",
   "note.title": "note.title",
-  "note.items": ["note.items", "note.items", "note.items"],
+  "note.items": ["note.item", "note.item", "note.item", "note.item"],
   "sections": [
     {
       "title": "sections.title",

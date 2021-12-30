@@ -47,6 +47,8 @@ import {
   MultiSelect as OrigMultiSelect,
   MultiSelectProps,
   MultiSelectData,
+  Notification as OrigNotification,
+  NotificationProps,
   Paragraph as OrigParagraph,
   RadioButton as OrigRadioButton,
   RadioButtonProps,
@@ -78,6 +80,11 @@ export const Alert = (props: AlertProps): JSX.Element => (
   <OrigAlert {...props} />
 );
 addDisplayNames(Alert, OrigAlert, 'Alert');
+
+export const Notification = (props: NotificationProps): JSX.Element => (
+  <OrigNotification {...props} />
+);
+addDisplayNames(Notification, OrigNotification, 'Notification');
 
 export class Block extends OrigBlock {}
 addDisplayNames(Block, OrigBlock, 'Block');

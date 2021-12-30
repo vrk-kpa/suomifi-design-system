@@ -1,0 +1,59 @@
+{
+  "title": "Ilmoitus (Notification)",
+  "intro": "Ilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää olennaista palvelun osaan ja käyttäjän toimintaan liittyvää palautetta ja tietoa. ",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Mikäli ilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region, jonka sisään ilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ilmoituksesta.",
+    "Ilmoituksen otsikkotaso on määriteltävissä käyttötapauksen mukaan. Käytä ilmoituksessa otsikkotasoa, joka ei riko näkymän otsikkojärjestystä.",
+    "Sivulla voi olla yhtä aikaa useita ilmoituksia näkyvissä.",
+    ""
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Komponentti koostuu ilmoituksen tyyppiä kuvaavasta ikonista, otsikosta ja pääsisällöstä sekä \"sulje\" painikkeesta. Ilmoituksen pääsisällön alle on myös mahdollista lisätä lisäelementtejä, kuten painikkeita tarpeen vaatiessa."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Ilmoituksia voidaan käyttää joko näkymän pääsisällön alussa tai relevantissa paikassa sisällön seassa. Ilmoituksesta on olemassa kaksi eri tyyppiä:"
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.error.heading": "Et voi muokata tätä versiosta",
+  "example.error.paragraph": "Sisällöstä on olemassa uudempi versio (28.12.2021)",
+  "example.error.closeButton": "Sulje",
+  "example.info.sectionHeading": "Ilmoitus toimintoelementeillä",
+  "example.info.description": "Ilmoitukseen voidaan tarvittaessa lisätä toimintoelementtejä, jotka näytetään pääsisällön alla.",
+  "example.info.heading": "Käännös saapunut (ruotsi)",
+  "example.info.paragraph": "Tarkista käännös ja muokkaa sitä tarvittaessa",
+  "example.info.actionLink": "Siirry tarkastelemaan käännöstä",
+  "example.info.closeButton": "Sulje"
+}

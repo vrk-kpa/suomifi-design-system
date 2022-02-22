@@ -7,6 +7,7 @@ import singleSelectContent from '../../../locale/fi/singleselect.json';
 import modalContent from '../../../locale/fi/modal.json';
 import searchinputContent from '../../../locale/fi/searchinput.json';
 import iconContent from '../../../locale/fi/icon.json';
+import toastContent from '../../../locale/fi/toast.json';
 import languagemenuContent from '../../../locale/fi/languagemenu.json';
 import expanderContent from '../../../locale/fi/expander.json';
 import linkContent from '../../../locale/fi/link.json';
@@ -38,6 +39,7 @@ export default {
     { to: '/components/alert/', label: alertContent.title },
     { to: '/components/icon/', label: iconContent.title },
     { to: '/components/notification/', label: notificationContent.title },
+    { to: '/components/toast/', label: toastContent.title },
     { to: '/components/languagemenu/', label: languagemenuContent.title },
     { to: '/components/expander/', label: expanderContent.title },
     { to: '/components/link/', label: linkContent.title },

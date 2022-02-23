@@ -2255,10 +2255,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-helmet@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.4.tgz#3e54a3eb37ba7fb34ffafc64f425be4e68df03b9"
-  integrity sha512-jyx50RNZXVaTGHY3MsoRPNpeiVk8b0XTPgD/O6KHF6COTDnG/+lRjPYvTK5nfWtR3xDOux0w6bHLAsaHo2ZLTA==
+"@types/react-helmet@^6.1.5":
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-6.1.5.tgz#35f89a6b1646ee2bc342a33a9a6c8777933f9083"
+  integrity sha512-/ICuy7OHZxR0YCAZLNg9r7I9aijWUWvxaPR6uTuyxe8tAj5RL4Sw1+R6NhXUtOsarkGYPmaHdBDvuXh2DIN/uA==
   dependencies:
     "@types/react" "*"
 
@@ -2269,10 +2269,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-responsive@^8.0.4":
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/@types/react-responsive/-/react-responsive-8.0.4.tgz#13fe66fcecc23eb96d14ffcb90abdcee81d3619e"
-  integrity sha512-/IrXSbm5aeSvtAD2vFGgPpQsHRQEJ2eWr6EdPEBPlTvad/qJYjXZax4CfOi5xCM5fjq/xpNW3WIHwKOrcdIGcA==
+"@types/react-responsive@^8.0.5":
+  version "8.0.5"
+  resolved "https://registry.yarnpkg.com/@types/react-responsive/-/react-responsive-8.0.5.tgz#77769862d2a0711434feb972be08e3e6c334440a"
+  integrity sha512-k3gQJgI87oP5IrVZe//3LKJFnAeFaqqWmmtl5eoYL2H3HqFcIhUaE30kRK1CsW3DHdojZxcVj4ZNc2ClsEu2PA==
   dependencies:
     "@types/react" "*"
 
@@ -2285,10 +2285,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^17.0.35":
-  version "17.0.35"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.35.tgz#217164cf830267d56cd1aec09dcf25a541eedd4c"
-  integrity sha512-r3C8/TJuri/SLZiiwwxQoLAoavaczARfT9up9b4Jr65+ErAUX3MIkU0oMOQnrpfgHme8zIqZLX7O5nnjm5Wayw==
+"@types/react@^17.0.39":
+  version "17.0.39"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.39.tgz#d0f4cde092502a6db00a1cded6e6bf2abb7633ce"
+  integrity sha512-UVavlfAxDd/AgAacMa60Azl7ygyQNRwC/DsHZmKgNvPmRR5p70AJ5Q9EAmL2NWOJmeV+vVUI4IAP7GZrN8h8Ug==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -14232,10 +14232,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^4.5.2:
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
-  integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
+typescript@^4.5.5:
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
+  integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
 
 unbox-primitive@^1.0.1:
   version "1.0.1"

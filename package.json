@@ -6,7 +6,7 @@
   "author": "Jari Porola <jari.porola@gmail.com>",
   "dependencies": {
     "@csstools/normalize.css": "^12.0.0",
-    "babel-plugin-styled-components": "^1.13.3",
+    "babel-plugin-styled-components": "^2.0.5",
     "gatsby": "^4.8.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-manifest": "^4.8.0",

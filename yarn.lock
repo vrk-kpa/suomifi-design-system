@@ -6665,7 +6665,7 @@ gatsby-page-utils@^2.8.0:
     lodash "^4.17.21"
     micromatch "^4.0.4"
 
-gatsby-plugin-manifest@^4.8.0:
+gatsby-plugin-manifest@4.8.0:
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.8.0.tgz#16c19545684b8fd4dc0af74016a2a131ed294ab4"
   integrity sha512-Ygh0Tu2g1+qflx0Q5AnGOL8oH82n9bSHZF51mJ6OSlipPkdEZc/DXvhhIKR7yvlWxxge6WxIOEkIaan0zORv8Q==

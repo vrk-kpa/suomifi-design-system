@@ -75,7 +75,7 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
     "prettier": "^2.5.1",
-    "prettier-stylelint": "^0.4.2",
+    "prettier-stylelint": "0.4.2",
     "rimraf": "^3.0.2",
     "stylelint": "^13.3.0",
     "stylelint-config-prettier": "^8.0.1",

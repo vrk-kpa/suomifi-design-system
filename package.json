@@ -29,7 +29,7 @@
     "react-motion": "0.5.2",
     "react-responsive": "8.2.0",
     "react-syntax-highlighter": "15.4.5",
-    "styled-components": "^5.3.3",
+    "styled-components": "5.3.3",
     "suomifi-icons": "^5.0.0",
     "suomifi-ui-components": "^6.2.0"
   },
@@ -71,17 +71,17 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-standard": "^5.0.0",
     "gatsby-plugin-s3": "0.3.8",
-    "gh-pages": "^3.2.3",
-    "husky": "^7.0.4",
+    "gh-pages": "3.2.3",
+    "husky": "7.0.4",
     "lint-staged": "^12.3.4",
     "prettier": "^2.5.1",
     "prettier-stylelint": "0.4.2",
-    "rimraf": "^3.0.2",
+    "rimraf": "3.0.2",
     "stylelint": "^13.3.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-config-standard": "^20.0.0",
-    "typescript": "^4.5.5"
+    "typescript": "4.5.5"
   },
   "repository": {
     "type": "git",

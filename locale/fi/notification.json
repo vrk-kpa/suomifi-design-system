@@ -15,7 +15,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Komponentti koostuu ilmoituksen tyyppiä kuvaavasta ikonista, otsikosta ja pääsisällöstä sekä \"sulje\" painikkeesta. Ilmoituksen pääsisällön alle on myös mahdollista lisätä lisäelementtejä, kuten painikkeita tarpeen vaatiessa."
+          "text": "Komponentti koostuu ilmoituksen tyyppiä kuvaavasta ikonista, otsikosta ja pääsisällöstä sekä \"sulje\" painikkeesta. Ilmoituksen pääsisällön alle on myös mahdollista lisätä toimintoelementtejä, kuten painikkeita tarpeen vaatiessa."
         }
       ],
       "links": [
@@ -31,7 +31,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Ilmoituksia voidaan käyttää joko näkymän pääsisällön alussa tai relevantissa paikassa sisällön seassa. Ilmoituksesta on olemassa kaksi eri tyyppiä:"
+          "text": "Ilmoituksia voidaan käyttää joko näkymän pääsisällön alussa tai relevantissa paikassa sisällön seassa, ja siitä on olemassa kaksi eri varianttia. Huomioilmoitus kertoo, että palvelussa on jotain huomioitavaa. Huomioilmoituksen tunnisteväri on sininen ja sitä käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Virheilmoitus viestii käyttäjälle merkittävästä virhetilanteesta tai poikkeuksesta tietyssä näkymässä. Virheilmoituksen tunnisteväri on punainen. Kapeilla näytöillä, kuten mobiilissa käytetään lisäksi pienille ruuduille tarkoitettuja tyylejä."
         },
         {
           "image.key": "",

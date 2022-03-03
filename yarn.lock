@@ -1081,7 +1081,14 @@
     core-js-pure "^3.16.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.14.0", "@babel/runtime@^7.14.6", "@babel/runtime@^7.15.4":
+"@babel/runtime@7.16.7":
+  version "7.16.7"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.7.tgz#03ff99f64106588c9c403c6ecb8c3bafbbdff1fa"
+  integrity sha512-9E9FJowqAsytyOY6LG+1KuueckRL+aQW+mKvXRXnuFGyRAyepJPmEo9vgMfXUA6O9u3IeEdv9MAkppFcaQwogQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.14.6", "@babel/runtime@^7.15.4":
   version "7.15.4"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.4.tgz#fd17d16bfdf878e6dd02d19753a39fa8a8d9c84a"
   integrity sha512-99catp6bHCaxr4sJ/DbTGgHS4+Rs2RVd2g7iOap6SLGPDknRK9ztKNsE/Fg6QhSeh1FGE5f6gHGQmvvn3I3xhw==
@@ -1092,6 +1099,13 @@
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.14.0", "@babel/runtime@^7.16.7", "@babel/runtime@^7.17.2":
+  version "7.17.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.2.tgz#66f68591605e59da47523c631416b18508779941"
+  integrity sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -1837,10 +1851,10 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@popperjs/core@2.10.2":
-  version "2.10.2"
-  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.10.2.tgz#0798c03351f0dea1a5a4cabddf26a55a7cbee590"
-  integrity sha512-IXf3XA7+XyN7CP9gGh/XB0UxVMlvARGEgGXLubFICsUMGz6Q+DU+i4gGlpOxTjKvXjkJDJC8YdqdKkDj9qZHEQ==
+"@popperjs/core@2.11.2":
+  version "2.11.2"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.2.tgz#830beaec4b4091a9e9398ac50f865ddea52186b9"
+  integrity sha512-92FRmppjjqz29VMJ2dn+xdyXZBrMlE42AV6Kq6BwjWV7CNUW1hs2FtxSNLQE+gJhaZ6AAmYuO9y8dshhcBl7vA==
 
 "@reach/auto-id@0.16.0":
   version "0.16.0"
@@ -2018,12 +2032,12 @@
   dependencies:
     defer-to-connect "^2.0.0"
 
-"@tanem/svg-injector@^10.1.7":
-  version "10.1.11"
-  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-10.1.11.tgz#10ee47473a7b7f24b0eb622adfc24bbc07ae7222"
-  integrity sha512-sRGAfVLpmxOwshsYU5adaatSgGxHHxRLH4Zk3q9TPs5l4Ah3tqsAprXuAKyQ3y7ELADifwMnDF6xi6ntHbi1CA==
+"@tanem/svg-injector@^10.1.14":
+  version "10.1.18"
+  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-10.1.18.tgz#50206e1be01fff1a265e70d74eea191fd28da3fa"
+  integrity sha512-XvF7aZU5QfzjOiN4OPGleCCOkTUskuqWQkFqMpgQ4P6ZruraOLQFF2zdvwTFVgJIiUUNUFE6jE2yj823W3qlkg==
   dependencies:
-    "@babel/runtime" "^7.16.3"
+    "@babel/runtime" "^7.17.2"
     content-type "^1.0.4"
     tslib "^2.3.1"
 
@@ -11712,6 +11726,15 @@ prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.7.2:
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
+prop-types@^15.8.1:
+  version "15.8.1"
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
+  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.13.1"
+
 proper-lockfile@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/proper-lockfile/-/proper-lockfile-4.1.2.tgz#c8b9de2af6b2f1601067f98e01ac66baa223141f"
@@ -11996,7 +12019,7 @@ react-is@17.0.2:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
-react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
+react-is@^16.12.0, react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
@@ -12006,10 +12029,10 @@ react-lifecycles-compat@^3.0.0, react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-modal@3.14.3:
-  version "3.14.3"
-  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.14.3.tgz#7eb7c5ec85523e5843e2d4737cc17fc3f6aeb1c0"
-  integrity sha512-+C2KODVKyu20zHXPJxfOOcf571L1u/EpFlH+oS/3YDn8rgVE51QZuxuuIwabJ8ZFnOEHaD+r6XNjqwtxZnXO0g==
+react-modal@3.14.4:
+  version "3.14.4"
+  resolved "https://registry.yarnpkg.com/react-modal/-/react-modal-3.14.4.tgz#2ca7e8e9a180955e5c9508c228b73167c1e6f6a3"
+  integrity sha512-8surmulejafYCH9wfUmFyj4UfbSJwjcgbS9gf3oOItu4Hwd6ivJyVBETI0yHRhpJKCLZMUtnhzk76wXTsNL6Qg==
   dependencies:
     exenv "^1.2.0"
     prop-types "^15.7.2"
@@ -12053,15 +12076,15 @@ react-side-effect@^2.1.0:
   resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha512-2FoTQzRNTncBVtnzxFOk2mCpcfxQpenBMbk5kSVBg5UcPqV9fRbgY2zhb7GTWWOlpFmAxhClBDlIq8Rsubz1yQ==
 
-react-svg@14.0.16:
-  version "14.0.16"
-  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-14.0.16.tgz#312b323bf3e4fd66370e6f9cfbb6d15275539770"
-  integrity sha512-alGqI6fxVEZ+t2gQQm8EjjUomuid7WYdosDf6g7euBBVrsbuanaj/8i4PH+3aWKdeYtHZZstFAlg30DDiug7Pw==
+react-svg@14.1.8:
+  version "14.1.8"
+  resolved "https://registry.yarnpkg.com/react-svg/-/react-svg-14.1.8.tgz#6fb731854ac7f71806faf3a19c8132281a9eee02"
+  integrity sha512-YqiiPmCDH4fUH1hj9UehcE8EpTxo2O8zLwhDlmntxQN/KhdLNo3v2944j2K3WrlRms2RPPw9YO7e8+OJ/tVsjg==
   dependencies:
-    "@babel/runtime" "^7.15.4"
-    "@tanem/svg-injector" "^10.1.7"
+    "@babel/runtime" "^7.16.7"
+    "@tanem/svg-injector" "^10.1.14"
     "@types/prop-types" "^15.7.4"
-    prop-types "^15.7.2"
+    prop-types "^15.8.1"
 
 react-syntax-highlighter@^15.4.5:
   version "15.4.5"
@@ -13892,33 +13915,39 @@ sugarss@^2.0.0:
   dependencies:
     postcss "^7.0.2"
 
-suomifi-design-tokens@3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/suomifi-design-tokens/-/suomifi-design-tokens-3.1.1.tgz#5df2372d484152b4d361f656cfeefa1bdca4af55"
-  integrity sha512-74RX9W99Hruk464ga11Fi+MaUYaQm5bLg8YI+kneGP9YktOXHtjgeQx75iDAqpNsXNBVnkQ/JjCfNsEX9hDz9g==
+suomifi-design-tokens@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/suomifi-design-tokens/-/suomifi-design-tokens-3.2.0.tgz#62e8dcef327a1dca080cef0ceadd39196bdf5d66"
+  integrity sha512-M/bFDY1DpogqwDQ80SL6RnCp+k2gd8wcti06eoW4ql3G1zVPxCX2YFBcDvG8p84agXNzxJWASkM0Qy1pi+/SWQ==
 
 suomifi-icons@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-5.0.0.tgz#8e4c3e9535065c32de757d3e6a75393a70414e73"
   integrity sha512-tqLU2lfh9EyEgXCYeSYhJEhBUgc0nOlvs4e7TBLWMvTTnPPa14VCWSK1DL7HPHuwy95VODjjiHg1Y9B+vzoccA==
 
-suomifi-ui-components@^6.1.0-beta.2:
-  version "6.1.0-beta.2"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-6.1.0-beta.2.tgz#2795d9f498ad65224230434457878fa9e750a9b6"
-  integrity sha512-rf4yYnIURBbOtCAD17Biw+rgeAEqjt8OqYBSkMMQofOiOiuS4mo7PesevUBM9AGyZZD1LaLtBGt+kbMucT/czQ==
+suomifi-icons@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-6.0.0.tgz#7a2b95ecb7221a650fbbd471b83c5c1ec08233b9"
+  integrity sha512-IeXJ67qpgSK259T9V7ytHRhD+bKsYIIugK6YG5hWVSQMLjhOroXYCLm6ptNtgKRRPJUJRkj1EaRQGDdOgRVP3A==
+
+suomifi-ui-components@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-6.2.0.tgz#336859158fcdb0850cffb12233ba1e23a34f721e"
+  integrity sha512-JgGnXKCTbpo8Nd6bWeEXFbfPOSRwKRPC0esKdHy/WY4nLVJR3KVAgwHhXmfDHL2NkJ/G8nsYVu+aF8/4Z3IiEw==
   dependencies:
-    "@popperjs/core" "2.10.2"
+    "@babel/runtime" "7.16.7"
+    "@popperjs/core" "2.11.2"
     "@reach/listbox" "0.16.2"
     "@reach/menu-button" "0.16.2"
     "@reach/popover" "0.16.2"
     "@types/react-modal" "3.13.1"
     classnames "2.3.1"
     polished "4.1.3"
-    react-modal "3.14.3"
+    react-modal "3.14.4"
     react-popper "2.2.5"
-    react-svg "14.0.16"
-    suomifi-design-tokens "3.1.1"
-    suomifi-icons "^5.0.0"
+    react-svg "14.1.8"
+    suomifi-design-tokens "3.2.0"
+    suomifi-icons "^6.0.0"
 
 supports-color@^2.0.0:
   version "2.0.0"

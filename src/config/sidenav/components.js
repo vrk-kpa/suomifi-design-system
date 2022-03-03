@@ -22,6 +22,7 @@ import textinputContent from '../../../locale/fi/textinput.json';
 import toggleContent from '../../../locale/fi/toggle.json';
 import radiobuttonContent from '../../../locale/fi/radiobutton.json';
 import checkboxContent from '../../../locale/fi/checkbox.json';
+import notificationContent from '../../../locale/fi/notification.json';
 
 export default {
   title: componentsSideNavContent.title,
@@ -36,6 +37,7 @@ export default {
     { to: '/components/searchinput/', label: searchinputContent.title },
     { to: '/components/alert/', label: alertContent.title },
     { to: '/components/icon/', label: iconContent.title },
+    { to: '/components/notification/', label: notificationContent.title },
     { to: '/components/languagemenu/', label: languagemenuContent.title },
     { to: '/components/expander/', label: expanderContent.title },
     { to: '/components/link/', label: linkContent.title },

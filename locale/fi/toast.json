@@ -1,11 +1,11 @@
 {
-  "title": "Ilmoitus (Toast)",
-  "intro": "Ilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää tietoa käyttäjän toimintaan liittyvää palautetta. Käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Toast-ilmoitus kertoo, että käyttäjän suorittama toimenpide onnistui.",
+  "title": "Ponnahdusilmoitus (Toast)",
+  "intro": "Ponnahdusilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää tietoa käyttäjän toimintaan liittyvää palautetta. Käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Ponnahdusilmoitus kertoo, että käyttäjän suorittama toimenpide onnistui.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Mikäli ilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region(ulkoinen linkki sivun alaraunasssa), jonka sisään ilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ilmoituksesta.",
-    "Ilmoituksen otsikkotaso on määriteltävissä käyttötapauksen mukaan.",
-    "Sivulla voi olla yhtä aikaa useita Toast-ilmoituksia näkyvissä."
+    "Mikäli ponnahdusilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region(ulkoinen linkki sivun alaraunasssa), jonka sisään ilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ponnahdusilmoituksesta.",
+    "Ponnahdusilmoituksen otsikkotaso on määriteltävissä käyttötapauksen mukaan.",
+    "Sivulla voi olla yhtä aikaa useita ponnahdusilmoituksi näkyvissä."
   ],
   "sections": [
     {
@@ -30,12 +30,12 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Toast-ilmoitukset pysyvät näkyvissä joko 10 sekunttia tai niin kauan kuin käyttäjä pitää hiirtä ilmoituksen päällä. Ilmoitukset poistuvat näkyvistä liukumalla ylös."
+          "text": "Ponnahdusilmoitukset pysyvät näkyvissä joko 10 sekunttia tai niin kauan kuin käyttäjä pitää hiirtä ilmoituksen päällä. Ponnahdusilmoitukset poistuvat näkyvistä liukumalla ylös."
         },
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Desktopissa, kun sivu on scrollattu ylös, ilmoitus näkyy sivun ylälaitaan kiinnittyneenä. Kun käyttäjä scrollaa sivulla alaspäin niin, että sivu ylälaita peittyy, liukuu ilmoitus näkyviin oikeaan ylälaitaan. Ilmoitus siis kelluu mukana, kun sivua scrollataan alas."
+          "text": "Desktopissa, kun sivu on scrollattu ylös, ponnahdusilmoitus näkyy sivun ylälaitaan kiinnittyneenä. Kun käyttäjä scrollaa sivulla alaspäin niin, että sivu ylälaita peittyy, liukuu ponnahdusilmoitus näkyviin oikeaan ylälaitaan. Ponnahdusilmoitus siis kelluu mukana, kun sivua scrollataan alas."
         }
       ],
       "links": [

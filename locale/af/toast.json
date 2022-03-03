@@ -1,46 +1,46 @@
 {
-  "title": "",
-  "intro": "",
-  "note.title": "",
-  "note.items": ["", "", ""],
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": ["note.item", "note.item", "note.item"],
   "sections": [
     {
-      "title": "",
+      "title": "sections.title",
       "paragraphs": [
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": ""
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
         }
       ],
       "links": [
         {
-          "text": "",
-          "url": ""
+          "text": "section.link.text",
+          "url": "section.link.url"
         }
       ]
     },
     {
-      "title": "",
+      "title": "sections.title",
       "paragraphs": [
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": ""
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
         },
         {
-          "image.key": "",
-          "image.alt": "",
-          "text": ""
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
         }
       ],
       "links": [
         {
-          "text": "",
-          "url": ""
+          "text": "section.link.text",
+          "url": "section.link.url"
         }
       ]
     }
   ],
-  "exampleRegular.content": ""
+  "exampleRegular.content": "exampleRegular.content"
 }

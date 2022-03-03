@@ -15,7 +15,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Komponentti koostuu ilmoituksen tyyppiä kuvaavasta ikonista, otsikosta ja pääsisällöstä sekä \"sulje\" painikkeesta. Ilmoituksen pääsisällön alle on myös mahdollista lisätä toimintoelementtejä, kuten painikkeita tarpeen vaatiessa."
+          "text": "Komponentti koostuu ilmoituksen tyyppiä kuvaavasta ikonista, otsikosta ja pääsisällöstä sekä \"sulje\" painikkeesta. Ilmoituksen pääsisällön alle on myös mahdollista lisätä toimintoelementtejä, kuten painikkeita."
         }
       ],
       "links": [
@@ -47,7 +47,7 @@
       ]
     }
   ],
-  "example.error.heading": "Et voi muokata tätä versiosta",
+  "example.error.heading": "Et voi muokata tätä versiota",
   "example.error.paragraph": "Sisällöstä on olemassa uudempi versio (28.12.2021)",
   "example.error.closeButton": "Sulje",
   "example.info.sectionHeading": "Ilmoitus toimintoelementeillä",

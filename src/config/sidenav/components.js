@@ -48,6 +48,7 @@ export default {
     { to: '/components/breadcrumb/', label: breadcrumbContent.title },
     { to: '/components/heading/', label: headingContent.title },
     { to: '/components/button/', label: buttonContent.title },
+    { to: '/components/toast/', label: toastContent.title },
     { to: '/components/dropdown/', label: dropdownContent.title },
     { to: '/components/text/', label: textContent.title },
     { to: '/components/textarea/', label: textareaContent.title },

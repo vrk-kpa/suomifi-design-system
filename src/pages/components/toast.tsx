@@ -1,4 +1,5 @@
 import React from 'react';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import toastContent from '../../../locale/fi/toast.json';
 import Layout from 'components/layout';
@@ -10,7 +11,6 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import Section from 'components/Section';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => {
   return (
@@ -25,7 +25,7 @@ const Page = (): JSX.Element => {
         <ComponentExample
           style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
         >
-          <Toast>{toastContent['exampleRegular.content']}</Toast>
+          <Toast>{toastContent['example.content']}</Toast>
         </ComponentExample>
       </ComponentDescription>
 

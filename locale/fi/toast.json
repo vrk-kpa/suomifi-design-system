@@ -1,6 +1,6 @@
 {
   "title": "Ponnahdusilmoitus (Toast)",
-  "intro": "Ponnahdusilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää tietoa käyttäjän toimintaan liittyvää palautetta. Käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Ponnahdusilmoitus kertoo, että käyttäjän suorittama toimenpide onnistui.",
+  "intro": "Ponnahdusilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää käyttäjän toimintaan liittyvää palautetta. Käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Ponnahdusilmoitus kertoo, että käyttäjän suorittama toimenpide onnistui.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Mikäli ponnahdusilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region(ulkoinen linkki sivun alaraunasssa), jonka sisään ilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ponnahdusilmoituksesta.",
@@ -14,7 +14,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Komponentti koostuu kuvaavasta ikonista, otsikosta ja pääsisällöstä. Komponentissa ei ole eri tiloja (status variant)."
+          "text": "Komponentti koostuu kuvaavasta ikonista, otsikosta ja pääsisällöstä."
         }
       ],
       "links": [
@@ -30,12 +30,12 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Ponnahdusilmoitukset pysyvät näkyvissä joko 10 sekunttia tai niin kauan kuin käyttäjä pitää hiirtä ilmoituksen päällä. Ponnahdusilmoitukset poistuvat näkyvistä liukumalla ylös."
+          "text": "Ponnahdusilmoitukset tulee pitää näkyvissä joko 10 sekunttia tai niin kauan kuin käyttäjä pitää hiirtä ilmoituksen päällä. Ponnahdusilmoitukset tulee poistaa näkyvistä liukumalla ylös."
         },
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Desktopissa, kun sivu on scrollattu ylös, ponnahdusilmoitus näkyy sivun ylälaitaan kiinnittyneenä. Kun käyttäjä scrollaa sivulla alaspäin niin, että sivu ylälaita peittyy, liukuu ponnahdusilmoitus näkyviin oikeaan ylälaitaan. Ponnahdusilmoitus siis kelluu mukana, kun sivua scrollataan alas."
+          "text": "Työpöytänäkymässä, kun sivu on scrollattu ylös, ponnahdusilmoitus tulee olla sivun ylälaitaan kiinnittyneenä. Kun käyttäjä scrollaa sivulla alaspäin niin, että sivu ylälaita peittyy, tulee ponnahdusilmoitus liukua näkyviin oikeaan ylälaitaan. Ponnahdusilmoitus siis kelluu mukana, kun sivua scrollataan alas."
         }
       ],
       "links": [
@@ -46,5 +46,5 @@
       ]
     }
   ],
-  "exampleRegular.content": "Tallentaminen onnistui"
+  "example.content": "Tallentaminen onnistui"
 }

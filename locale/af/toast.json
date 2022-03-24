@@ -5,7 +5,7 @@
   "note.items": ["note.item", "note.item", "note.item"],
   "sections": [
     {
-      "title": "sections.title",
+      "title": "section.title",
       "paragraphs": [
         {
           "image.key": "section.paragraph.image.key",
@@ -21,7 +21,7 @@
       ]
     },
     {
-      "title": "sections.title",
+      "title": "section.title",
       "paragraphs": [
         {
           "image.key": "section.paragraph.image.key",
@@ -42,5 +42,5 @@
       ]
     }
   ],
-  "example.content": "exampleRegular.content"
+  "example.content": "example.content"
 }

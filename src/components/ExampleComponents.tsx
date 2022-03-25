@@ -62,6 +62,8 @@ import {
   TextareaProps,
   TextInput as OrigTextInput,
   TextInputProps,
+  Toast as OrigToast,
+  ToastProps,
   ToggleButton as OrigToggleButton,
   ToggleButtonProps,
   ToggleInput as OrigToggleInput,
@@ -272,6 +274,11 @@ export const TextInput = (props: TextInputProps): JSX.Element => (
   <OrigTextInput {...props} />
 );
 addDisplayNames(TextInput, OrigTextInput, 'TextInput');
+
+export const Toast = (props: ToastProps): JSX.Element => (
+  <OrigToast {...props} />
+);
+addDisplayNames(Toast, OrigToast, 'Toast');
 
 export const ToggleButton = (props: ToggleButtonProps): JSX.Element => (
   <OrigToggleButton {...props} />

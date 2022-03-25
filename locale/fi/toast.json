@@ -1,0 +1,50 @@
+{
+  "title": "Ponnahdusilmoitus (Toast)",
+  "intro": "Ponnahdusilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää käyttäjän toimintaan liittyvää palautetta. Käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Ponnahdusilmoitus kertoo, että käyttäjän suorittama toimenpide onnistui.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Mikäli ponnahdusilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region (kts. linkki sivun alalaidassa), jonka sisään ponnahdusilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ponnahdusilmoituksesta.",
+    "Ponnahdusilmoituksen otsikkotaso on määriteltävissä tarvittaessa, ja komponenttia voidaan käyttää myös ilman otsikkoa.",
+    "Sivulla voi olla yhtä aikaa useita ponnahdusilmoituksia näkyvissä."
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Komponentti koostuu ikonista, vaihtoehtoisesta otsikosta ja pääsisällöstä."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Ponnahdusilmoitukset tulee pitää näkyvissä joko 10 sekuntia tai niin kauan kuin käyttäjä pitää kursoria ilmoituksen päällä. Ponnahdusilmoitukset tulee poistaa näkyvistä liu'uttamalla ne ulos sivun ylälaidasta."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Työpöytänäkymässä, kun sivu on vieritetty ylös, ponnahdusilmoitus tulee olla sivun ylälaitaan kiinnittyneenä. Kun käyttäjä vierittää sivua alaspäin niin, että sivu ylälaita peittyy, tulee ponnahdusilmoitus liukua näkyviin oikeaan ylälaitaan. Ponnahdusilmoitus siis kelluu mukana, kun sivua vieritetään alaspäin."
+        }
+      ],
+      "links": [
+        {
+          "text": "Lisätietoa live regioneista",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
+        }
+      ]
+    }
+  ],
+  "example.content": "Tallentaminen onnistui"
+}

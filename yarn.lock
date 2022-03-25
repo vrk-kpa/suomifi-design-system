@@ -997,10 +997,24 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.14.0", "@babel/runtime@^7.14.6", "@babel/runtime@^7.15.4", "@babel/runtime@^7.16.3", "@babel/runtime@^7.16.7", "@babel/runtime@^7.17.2", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.14.0", "@babel/runtime@^7.14.6", "@babel/runtime@^7.15.4", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.1", "@babel/runtime@^7.3.4", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.17.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.7.tgz#a5f3328dc41ff39d803f311cfe17703418cf9825"
   integrity sha512-L6rvG9GDxaLgFjg41K+5Yv9OMrU98sWe+Ykmc6FDJW/+vYZMhdOMKkISgzptMaERHvS2Y2lw9MDRm2gHhlQQoA==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.16.3", "@babel/runtime@^7.9.2":
+  version "7.16.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.3.tgz#b86f0db02a04187a3c17caa77de69840165d42d5"
+  integrity sha512-WBwekcqacdY2e9AF/Q7WLFUWmdJGJTkbjqTjoMDgXkVZ3ZRUvOPsLb5KdwISoQVsbP+DQzVZW4Zhci0DvpbNTQ==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.16.7", "@babel/runtime@^7.17.0":
+  version "7.17.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.2.tgz#66f68591605e59da47523c631416b18508779941"
+  integrity sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -2381,11 +2395,11 @@
     defer-to-connect "^2.0.0"
 
 "@tanem/svg-injector@^10.1.14":
-  version "10.1.20"
-  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-10.1.20.tgz#c79510f18f5e8326bffbd60779cebe5ce1a0767a"
-  integrity sha512-oCvOchFxRPel4CAew6GA5nQxi0jpbH367wztrjcAVx8eQhpptGiyuESON3maZg5k8TCOHGn9n8Y+0AKxlH4bIg==
+  version "10.1.17"
+  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-10.1.17.tgz#d5ee932e9f2fd59ce4bde12c4b41529d3ba79d04"
+  integrity sha512-neSC9kZ0pjOJ7y7Gcm3PbbMnElTHMZSjbFscDXqvmQNQsRQARRN3R9cTy7D7a7nN1Pao69v524Gt2fOvj5QkVQ==
   dependencies:
-    "@babel/runtime" "^7.17.2"
+    "@babel/runtime" "^7.17.0"
     content-type "^1.0.4"
     tslib "^2.3.1"
 
@@ -13585,14 +13599,14 @@ suomifi-icons@^5.0.0:
   integrity sha512-tqLU2lfh9EyEgXCYeSYhJEhBUgc0nOlvs4e7TBLWMvTTnPPa14VCWSK1DL7HPHuwy95VODjjiHg1Y9B+vzoccA==
 
 suomifi-icons@^6.0.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-6.1.0.tgz#9232473a7896818a67d1fbac3e68775d260c4cb3"
-  integrity sha512-plJc4nG8DR8Rv7dnZFvIgbX0GrnG3GWBMXCbd/yd54o76cmgAJfRZARziqCXqKwx13i8YmejdCJEgrFgHBW/CA==
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-6.0.0.tgz#7a2b95ecb7221a650fbbd471b83c5c1ec08233b9"
+  integrity sha512-IeXJ67qpgSK259T9V7ytHRhD+bKsYIIugK6YG5hWVSQMLjhOroXYCLm6ptNtgKRRPJUJRkj1EaRQGDdOgRVP3A==
 
-suomifi-ui-components@^6.2.0:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-6.2.1.tgz#8746765db1f5b945b6cb4a5452ae49e0561bbd15"
-  integrity sha512-VJnFseyK8ySfH/F866jRtNY8kV3Ni4WEi9VH6fIe9goASd9QmN436uVnTgeedT81hy+YbBwfwuGIoBfYI2j32A==
+suomifi-ui-components@^6.2.0-beta.2:
+  version "6.2.0-beta.2"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-6.2.0-beta.2.tgz#79f2dea4951d584f1d320327b72ead5a457b01df"
+  integrity sha512-cu1gBRUr40vsRyC+kkUvXpzE4d0nwOT3gPfeLnJuqtoJOo3djKMoDy6StNBqT1LJfbI9qZ3PZihMsvTWN1S0gA==
   dependencies:
     "@babel/runtime" "7.16.7"
     "@popperjs/core" "2.11.2"

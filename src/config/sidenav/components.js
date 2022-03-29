@@ -39,7 +39,6 @@ export default {
     { to: '/components/alert/', label: alertContent.title },
     { to: '/components/icon/', label: iconContent.title },
     { to: '/components/notification/', label: notificationContent.title },
-    { to: '/components/toast/', label: toastContent.title },
     { to: '/components/languagemenu/', label: languagemenuContent.title },
     { to: '/components/expander/', label: expanderContent.title },
     { to: '/components/link/', label: linkContent.title },

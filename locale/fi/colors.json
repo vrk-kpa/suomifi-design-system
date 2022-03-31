@@ -118,7 +118,7 @@
   "brandColors.title": "Brändiväri",
   "brandColors.description": "Brändiväriä (brandBase) käytetään suomi.fi palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa.",
   "controlColors.title": "Linkit, painikkeet ja valinnat",
-  "controlColors.description": "Sinistä (highlightBase) sekä siitä johdettuja vaalempia sävyä (highlightLight) käytetään interaktiivisissa elementeissä ja valittujen elementtien korostamisessa. Violettia (accentTertiaryDark1) käytetään linkkien vierailun jälkeisessä tilassa (visited state). Estetyissä tiloissa käytetään harmaata (depthBase). Sinisestä johdettua tummempaa sävyä (highlightDark1) käytetään esim. painikkeiden hovertilassa (hover state). Oranssia (accentBase) väriä käytetään kaikkien komponenttien fokustilassa (focus state). ",
+  "controlColors.description": "Sinistä (highlightBase) sekä siitä johdettuja vaalempia sävyä (highlightLight) käytetään interaktiivisissa elementeissä ja valittujen elementtien korostamisessa. Violettia (accentTertiaryDark1) käytetään linkkien vierailun jälkeisessä tilassa (visited state). Estetyissä tiloissa käytetään harmaata (depthBase). Sinisestä johdettua tummempaa sävyä (highlightDark1) käytetään esim. painikkeiden hovertilassa (hover state). Sinistä korostusväriä (accentSecondary) käytetään kaikkien komponenttien fokustilassa (focus state).",
   "iconColors.title": "Ikonit",
   "iconColors.description": "Kuvitusikoneissa käytetään harmaata (depthBase) sekä oranssia (accentBase) korostevärinä. Toiminnallisissa ikoneissa käytetään toiminnallisten elementtien sinistä (highlightBase) väriä sekä tummaa harmaata (depthDark1).",
   "backgroundColors.title": "Taustat ja reunukset",
@@ -156,3 +156,4 @@
   "alertLight1.label": "Traffic Red Light",
   "whiteBase.label": "Snow"
 }
+

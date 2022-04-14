@@ -117,6 +117,7 @@ const colorCategories: ColorCategory[] = [
  * @param hsla
  */
 export const hslaToHex = (hsla: string): string => {
+  // eslint-disable-next-line no-useless-escape
   const values = hsla.replace(/(hsla\(|hsl\(|\)|\%|\s)/g, '').split(',');
   const hue = parseInt(values[0], 10);
   const saturationPercentage = parseInt(values[1], 10);

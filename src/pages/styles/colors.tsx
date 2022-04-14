@@ -1,6 +1,6 @@
 import React, { CSSProperties } from 'react';
 import { defaultSuomifiTheme, ColorDesignTokens } from 'suomifi-ui-components';
-import { getLuminance } from 'polished';
+import { getLuminance, hslToColorString } from 'polished';
 
 import colorsContent from '../../../locale/fi/colors.json';
 import Layout from 'components/layout';
@@ -112,6 +112,32 @@ const colorCategories: ColorCategory[] = [
   },
 ];
 
+/**
+ * Convert HSLA or HSL to hex, does not take account the alpha value
+ * @param hsla
+ */
+export const hslaToHex = (hsla: string): string => {
+  // eslint-disable-next-line no-useless-escape
+  const values = hsla.replace(/(hsla\(|hsl\(|\)|\%|\s)/g, '').split(',');
+  const hue = parseInt(values[0], 10);
+  const saturationPercentage = parseInt(values[1], 10);
+  const lightnessPercentage = parseInt(values[2], 10);
+  const saturation = saturationPercentage / 100;
+  const lightness = lightnessPercentage / 100;
+  if (
+    !Number.isInteger(hue) ||
+    !Number.isInteger(saturationPercentage) ||
+    !Number.isInteger(lightnessPercentage)
+  ) {
+    return '';
+  }
+  return hslToColorString({
+    hue,
+    saturation,
+    lightness,
+  });
+};
+
 const getExampleColor = (
   id: string,
   name: string,
@@ -137,6 +163,7 @@ const getExampleColor = (
     />
     <div style={{ fontSize: '.8rem' }}>{label}</div>
     <div style={{ fontSize: '.8rem' }}>{value}</div>
+    <div style={{ fontSize: '.8rem' }}>{hslaToHex(value)}</div>
     <div style={{ fontSize: '.8rem' }}>{name}</div>
   </div>
 );

@@ -94,7 +94,9 @@ const Page = (): JSX.Element => (
     <Paragraph variant="lead">
       <Text variant="lead">{iconsContent.intro}</Text>
     </Paragraph>
-    <Link href="../components/icon/">{iconsContent['iconPageLink.title']}</Link>
+    <Link href="../../components/icon/">
+      {iconsContent['iconPageLink.title']}
+    </Link>
 
     {iconCategories.map((item) => (
       <ComponentDescription

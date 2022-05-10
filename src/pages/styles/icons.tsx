@@ -8,6 +8,8 @@ import {
   BaseIconKeys,
   IllustrativeIconKeys,
   DoctypeIconKeys,
+  Link,
+  ExternalLink,
 } from 'suomifi-ui-components';
 
 import iconsContent from '../../../locale/fi/icons.json';
@@ -23,16 +25,25 @@ const iconCategories = [
     id: 'baseIcons',
     title: iconsContent['baseIcons.title'],
     icons: baseIcons,
+    linkTitle: iconsContent['baseIcons.link.title'],
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/src/baseIcons',
   },
   {
     id: 'illustrativeIcons',
     title: iconsContent['illustrativeIcons.title'],
     icons: illustrativeIcons,
+    linkTitle: iconsContent['illustrativeIcons.link.title'],
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/src/illustrativeIcons',
   },
   {
     id: 'doctypeIcons',
     title: iconsContent['doctypeIcons.title'],
     icons: doctypeIcons,
+    linkTitle: iconsContent['doctypeIcons.link.title'],
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/src/doctypeIcons',
   },
 ];
 
@@ -83,6 +94,9 @@ const Page = (): JSX.Element => (
     <Paragraph variant="lead">
       <Text variant="lead">{iconsContent.intro}</Text>
     </Paragraph>
+    <Link href="../../components/icon/">
+      {iconsContent['iconPageLink.title']}
+    </Link>
 
     {iconCategories.map((item) => (
       <ComponentDescription
@@ -92,6 +106,12 @@ const Page = (): JSX.Element => (
         exampleFirst={false}
         noCode
       >
+        <ExternalLink
+          labelNewWindow={iconsContent['link.labelNewWindow']}
+          href={item.linkUrl}
+        >
+          {item.linkTitle}
+        </ExternalLink>
         <ComponentExample
           style={{
             padding: 0,

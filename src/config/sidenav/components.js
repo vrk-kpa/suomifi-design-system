@@ -24,6 +24,7 @@ import toggleContent from '../../../locale/fi/toggle.json';
 import radiobuttonContent from '../../../locale/fi/radiobutton.json';
 import checkboxContent from '../../../locale/fi/checkbox.json';
 import notificationContent from '../../../locale/fi/notification.json';
+import loadingspinnerContent from '../../../locale/fi/loadingspinner.json';
 
 export default {
   title: componentsSideNavContent.title,
@@ -41,6 +42,7 @@ export default {
     { to: '/components/notification/', label: notificationContent.title },
     { to: '/components/languagemenu/', label: languagemenuContent.title },
     { to: '/components/expander/', label: expanderContent.title },
+    { to: '/components/loadingspinner/', label: loadingspinnerContent.title },
     { to: '/components/link/', label: linkContent.title },
     { to: '/components/block/', label: blockContent.title },
     { to: '/components/multiselect/', label: multiselectContent.title },

@@ -1,48 +1,41 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path');
+
 module.exports = {
   pathPrefix: '/suomifi-design-system',
   plugins: [
-    `gatsby-plugin-typescript`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: 'images',
+        path: path.join(__dirname, 'src', 'images'),
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/locale`,
-        name: `locale`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/examples`,
-        name: `examples`,
+        path: path.join(__dirname, 'locale'),
+        name: 'locale',
       },
     },
     {
-      resolve: `gatsby-transformer-code`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `examples`,
+        path: path.join(__dirname, 'src', 'examples'),
+        name: 'examples',
       },
     },
     {
-      resolve: `@wapps/gatsby-plugin-i18next`,
+      resolve: 'gatsby-transformer-code',
       options: {
-        availableLngs: ['fi'],
-        fallbackLng: 'fi',
-        i18nextOptions: {
-          returnObjects: true,
-        },
+        name: 'examples',
       },
     },
-    `gatsby-plugin-styled-components`,
+    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -65,7 +58,7 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-s3`,
+      resolve: 'gatsby-plugin-s3',
       options: {
         bucketName: 'designsystem.suomi.fi',
         protocol: 'https',
@@ -73,9 +66,18 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: `src/staticIcons/SuomiFi.svg`,
+        icon: 'src/staticIcons/SuomiFi.svg',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /(staticIcons|icons)/,
+          omitKeys: ['id'],
+        },
       },
     },
   ],

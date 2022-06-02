@@ -1,0 +1,59 @@
+{
+  "title": "Heräte (Alert)",
+  "intro": "Heräte-komponentin avulla voidaan antaa käyttäjälle tietoa palvelun tilasta. Tällaista tietoa voi olla esimerkiksi häiriötilanteet tai ongelmat sivuston tai sen osan toiminnassa sekä tiedot tulevista käyttökatkoista.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Käytä komponentista aina asiaankuuluvaa varianttia (Alert tai InlineAlert). Ks. 'Koko ja käyttö'.",
+    "Alert komponentti on myös semanttisesti alert, joka tarkoittaa, että sen sisällön muuttuessa komponentin sisältö luetaan välittömästi ruudunlukijakäyttäjille.",
+    "Sisältöherätteessä ruudunlukijakäyttäytyminen on säädettävissä, mutta sitä ei tule kytkeä kokonaan pois päältä.",
+    "Mikäli sisältöheräte liittyy selkeästi tiettyyn interaktiiviseen elementtiin sivulla, informoi yhteys myös ruudunlukijakäyttäjille käyttäen esimerkiksi 'aria-describedby' attribuuttia"
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Heräte on jaettu kahteen eri komponenttiin (Alert ja InlineAlert). Komponentti koostuu herätteen tyyppiä kuvaavasta ikonista, sisältöalueesta sekä Alert komponentin tapauksessa 'sulje' -painikkeesta. Komponentin taustaväri sekä InlineAlert tapauksessa vasemman reunuksen väri muuttuu käytettävän herätetyypin mukaan."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Käyttötapa vaihtelee käytettävän komponentin mukaan. Alert komponenttia käytetään sivun pääsisällön ylälaidassa otsikon yläpuolella ilmaisemaan sivua tai sivustoa koskevia virhe- ja häiriötiedotteita. Alert komponenttia käytetään koko sisältöalueen levyisenä. Tulevia käyttökatkoja ilmaisemaan käytetään neutraalia varianttia, ja akuutteja häiriötilanteita varten 'error' varianttia."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "InlineAlert komponenttia puolestaan käytetään sivun sisällön seassa toimintokohtaisiin ilmoituksiin ilmaisemaan esimerkiksi virhettä lomakkeen toiminnassa tai tärkeää lisäohjetta lomakkeen täyttämiseen liittyen."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.alertInfoParagraph": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
+  "example.inlineAlertHeading": "Sisältöheräte (Inline Alert)",
+  "example.inlineParagraph": "Sisältöherätettä käytetään sivun sisällön seassa ilmaisemaan huomioita, varoituksia tai virhetilanteita.",
+  "example.inlineAlertInfoHeading": "Vahvista valtuus omalta osaltasi",
+  "example.inlineAlertInfoParagraph": "Vahvistamisen jälkeen muut vahvistajat näkevät Omat vahvistettavat -sivulla valtuuden, joka heidän tulee vahvistaa. Valtuus on voimassa vasta, kun kaikki ovat sen vahvistaneet.",
+  "example.inlineAlertWarningParagraph": "Tekstissä on virheitä",
+  "example.inlineAlertErrorHeading": "Allekirjoittaminen ei ole mahdollista",
+  "example.inlineAlertErrorParagraph": "Hakemusta ei voi allekirjoittaa henkilö, jonka ulkomaalainen henkilöasiakirja ei ole voimassa, koska hän ei voi todistaa henkilöllisyyttään.",
+  "example.closeButton": "Sulje"
+}

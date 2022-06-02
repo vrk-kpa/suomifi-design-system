@@ -1,6 +1,13 @@
 [main]
 host = https://www.transifex.com
 
+[suomifi-design-system.singleSelect-json]
+file_filter = locale/<lang>/singleselect.json
+minimum_perc = 0
+source_file = locale/af/singleselect.json
+source_lang = af
+type = KEYVALUEJSON
+
 [suomifi-design-system.button-json]
 file_filter = locale/<lang>/button.json
 minimum_perc = 0
@@ -197,6 +204,13 @@ source_file = locale/af/checkbox.json
 source_lang = af
 type = KEYVALUEJSON
 
+[suomifi-design-system.modal-json]
+file_filter = locale/<lang>/modal.json
+minimum_perc = 0
+source_file = locale/af/modal.json
+source_lang = af
+type = KEYVALUEJSON
+
 [suomifi-design-system.radiobutton-json]
 file_filter = locale/<lang>/radiobutton.json
 minimum_perc = 0
@@ -222,5 +236,12 @@ type = KEYVALUEJSON
 file_filter = locale/<lang>/multiselect.json
 minimum_perc = 0
 source_file = locale/af/multiselect.json
+source_lang = af
+type = KEYVALUEJSON
+
+[suomifi-design-system.alert-json]
+file_filter = locale/<lang>/alert.json
+minimum_perc = 0
+source_file = locale/af/alert.json
 source_lang = af
 type = KEYVALUEJSON

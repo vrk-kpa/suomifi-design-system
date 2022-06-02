@@ -2,8 +2,6 @@ import React from 'react';
 import { Button } from 'suomifi-ui-components';
 import styled from 'styled-components';
 
-import { customTheme } from './customTheme';
-
 /**
 .fi-button.button--custom {
   background: #09ae88;
@@ -25,7 +23,6 @@ const CustomButton = styled(Button)({
 
 export const Example = () => (
   <>
-    <Button theme={customTheme}>Theme</Button>
     <CustomButton>Styled</CustomButton>
     <Button className="button--custom">Classname</Button>
   </>

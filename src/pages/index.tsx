@@ -1,40 +1,28 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
-
+import homeContent from '../../locale/fi/home.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import ContentBoxes, {
-  Props as ContentBoxProps,
-} from 'components/ContentBoxes';
+import ContentBoxes from 'components/ContentBoxes';
 import Hero from 'components/Hero';
 
 const Page = (): JSX.Element => (
-  <Translation ns={['home']}>
-    {(t) => (
-      <Layout hasFrame={false}>
-        <SEO title={t('title')} />
+  <Layout hasFrame={false}>
+    <SEO title={homeContent.title} />
 
-        <Hero title={t('intro.title')} description={t('intro.description')} />
+    <Hero
+      title={homeContent['intro.title']}
+      description={homeContent['intro.description']}
+    />
 
-        {t<ContentBoxProps[]>('sections').map((section, index) => (
-          <ContentBoxes
-            key={index}
-            wrapAll
-            mainTitle={section.mainTitle}
-            blocks={section.blocks}
-          />
-        ))}
-      </Layout>
-    )}
-  </Translation>
+    {homeContent.sections.map((section, index) => (
+      <ContentBoxes
+        key={index}
+        wrapAll
+        mainTitle={section.mainTitle}
+        blocks={section.blocks as any}
+      />
+    ))}
+  </Layout>
 );
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

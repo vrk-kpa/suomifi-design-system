@@ -1,37 +1,39 @@
 import React, { ReactNode } from 'react';
-import { Link } from '@wapps/gatsby-plugin-i18next';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 import { focusOutline } from './utils/outline';
 import { isFrontPage } from 'components/LinkUtil';
 
+const StyledLink = styled(Link)`
+  padding: ${defaultSuomifiTheme.spacing.insetM};
+  line-height: 2.8rem;
+  white-space: nowrap;
+  color: ${defaultSuomifiTheme.colors.blackBase};
+  text-decoration: none;
+  &:hover {
+    border-bottom: 4px solid ${defaultSuomifiTheme.colors.highlightBase};
+  }
+  &:focus {
+    ${focusOutline};
+  }
+`;
+
 const NavItem = ({ to, children }: Props): JSX.Element => (
-  <Link
+  <StyledLink
     to={to}
-    css={[
-      {
-        padding: suomifiDesignTokens.spacing.insetM,
-        lineHeight: '2.8rem',
-        whiteSpace: 'nowrap',
-        color: suomifiDesignTokens.colors.blackBase,
-        textDecoration: 'none',
-        '&:hover': {
-          borderBottom: `4px solid ${suomifiDesignTokens.colors.highlightBase}`,
-        },
-      },
-      `&:focus { ${focusOutline} }`,
-    ]}
     getProps={({ isCurrent, isPartiallyCurrent }) => {
       if (isCurrent || (!isFrontPage(to) && isPartiallyCurrent)) {
         return {
           style: {
-            borderBottom: `4px solid ${suomifiDesignTokens.colors.highlightBase}`,
+            borderBottom: `4px solid ${defaultSuomifiTheme.colors.highlightBase}`,
           },
         };
       }
     }}
   >
     {children}
-  </Link>
+  </StyledLink>
 );
 
 interface Props {

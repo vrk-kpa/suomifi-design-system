@@ -1,35 +1,34 @@
 import React, { Component, ReactNode } from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
-import { Link } from '@wapps/gatsby-plugin-i18next';
+import styled from 'styled-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { Link } from 'gatsby';
 import { isFrontPage } from 'components/LinkUtil';
 import { focusOutline } from './utils/outline';
 
+const StyledLink = styled(Link)`
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'space-between';
+  height: '3.2rem';
+  padding-left: ${defaultSuomifiTheme.spacing.s};
+  padding-right: ${defaultSuomifiTheme.spacing.s};
+  border-bottom: 1px solid ${defaultSuomifiTheme.colors.depthSecondary};
+  color: ${defaultSuomifiTheme.colors.highlightBase};
+  text-decoration: 'none';
+  white-space: 'nowrap';
+  &:hover {
+    background: ${defaultSuomifiTheme.colors.depthSecondary};
+    color: ${defaultSuomifiTheme.colors.brandBase};
+    ${focusOutline}
+  }
+`;
 class MainMenuItem extends Component<Props> {
   public render(): JSX.Element {
     const { to, children } = this.props;
 
     return (
-      <Link
+      <StyledLink
         to={to}
-        css={[
-          {
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            height: '3.2rem',
-            paddingLeft: suomifiDesignTokens.spacing.s,
-            paddingRight: suomifiDesignTokens.spacing.s,
-            borderBottom: `1px solid ${suomifiDesignTokens.colors.depthSecondary}`,
-            color: suomifiDesignTokens.colors.highlightBase,
-            textDecoration: 'none',
-            whiteSpace: 'nowrap',
-            '&:hover': {
-              background: suomifiDesignTokens.colors.depthSecondary,
-              color: suomifiDesignTokens.colors.brandBase,
-            },
-          },
-          `&:focus { ${focusOutline} }`,
-        ]}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           if (!isFrontPage(to) && isPartiallyCurrent && !isCurrent) {
             return {
@@ -42,8 +41,8 @@ class MainMenuItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: suomifiDesignTokens.colors.depthSecondary,
-                color: suomifiDesignTokens.colors.brandBase,
+                background: defaultSuomifiTheme.colors.depthSecondary,
+                color: defaultSuomifiTheme.colors.brandBase,
                 fontWeight: 600,
               },
             };
@@ -51,7 +50,7 @@ class MainMenuItem extends Component<Props> {
         }}
       >
         {children}
-      </Link>
+      </StyledLink>
     );
   }
 }

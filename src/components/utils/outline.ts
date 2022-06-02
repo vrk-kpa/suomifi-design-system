@@ -1,4 +1,4 @@
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 export const focusOutline = `
   outline: 0;
@@ -16,7 +16,7 @@ export const focusOutline = `
       border-radius: 4px;
       border-width: 3px;
       border-style: solid;
-      border-color: ${suomifiDesignTokens.colors.accentSecondary} ;
+      border-color: ${defaultSuomifiTheme.colors.accentSecondary} ;
       border-image: initial;
     }
   `;

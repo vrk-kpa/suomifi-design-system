@@ -1,6 +1,7 @@
 {
   "title": "title",
   "intro": "intro",
+  "note.accessibility": "note.accessibility",
   "note.title": "note.title",
   "note.items": ["note.item", "note.item", "note.item", "note.item"],
   "sections": [
@@ -37,8 +38,12 @@
     }
   ],
   "example.label": "example.label",
+  "example.hintText": "example.hintText",
   "example.visualPlaceholder": "example.visualPlaceholder",
   "example.removeAllSelections": "example.removeAllSelections",
+  "example.selectedAmountText": "example.ariaSelectedAmountText",
+  "example.optionsAvailableText": "example.optionsAvailableText",
+  "example.optionChipRemovedText": "example.ariaOptionChipRemovedText",
   "example.noItems": "example.noItems",
   "example.chipActionLabel": "example.chipActionLabel",
   "example.tools.jackhammer": "example.tools.jackhammer",

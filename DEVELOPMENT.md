@@ -48,16 +48,11 @@ When you're done, simply open the site on the specified localhost port and you'r
 
 - [React](https://reactjs.org/)
 - [Gatsby](https://www.gatsbyjs.org/)
-- [i18Next](https://www.i18next.com/)
 - [Suomi.fi UI-components](https://github.com/vrk-kpa/suomifi-ui-components)
-
-## Implementation
-
-- `gatsby-plugin-i18next` handles page creation for each locale and provides components for handling localized urls
 
 ## Resources
 
-- JSON resources for `i18next` are under `locale/<lang>/`
+- JSON resources for translations are in `locale/<lang>/`
 - Separate resources logically for page/context so that one file doesn't grow too big
 - Role of resource is just to provide translation, no HTML or styling allowed
 

@@ -1,0 +1,54 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": ["note.item", "note.item", "note.item", "note.item"],
+  "sections": [
+    {
+      "title": "sections.title",
+      "paragraphs": [
+        {
+          "image.key": "sections.paragraphs.image.key",
+          "image.alt": "sections.paragraphs.image.alt",
+          "text": "sections.paragraphs.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "sections.links.text",
+          "url": "sections.links.url"
+        }
+      ]
+    },
+    {
+      "title": "sections.title",
+      "paragraphs": [
+        {
+          "image.key": "sections.paragraphs.image.key",
+          "image.alt": "sections.paragraphs.image.alt",
+          "text": "sections.paragraphs.text"
+        },
+        {
+          "image.key": "sections.paragraphs.image.key",
+          "image.alt": "sections.paragraphs.image.alt",
+          "text": "sections.paragraphs.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "sections.links.text",
+          "url": "sections.links.url"
+        }
+      ]
+    }
+  ],
+  "example.alertInfoParagraph": "example.alertInfoParagraph",
+  "example.inlineAlertHeading": "example.inlineAlertHeading",
+  "example.inlineParagraph": "example.inlineParagraph",
+  "example.inlineAlertInfoHeading": "example.inlineAlertInfoHeading",
+  "example.inlineAlertInfoParagraph": "example.inlineAlertInfoParagraph",
+  "example.inlineAlertWarningParagraph": "example.inlineAlertWarningParagraph",
+  "example.inlineAlertErrorHeading": "example.inlineAlertErrorHeading",
+  "example.inlineAlertErrorParagraph": "example.inlineAlertErrorParagraph",
+  "example.closeButton": "example.closeButton"
+}

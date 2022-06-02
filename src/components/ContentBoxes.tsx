@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  suomifiDesignTokens,
+  defaultSuomifiTheme,
   StaticIcon,
   IllustrativeIconKeys,
   DoctypeIconKeys,
@@ -10,7 +10,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import LinkList from 'components/LinkList';
 import { Props as LinkProps } from 'components/Link';
 
-const Block = ({ block }: { block: Block }): JSX.Element => (
+const BlockComponent = ({ block }: { block: Block }): JSX.Element => (
   <>
     {!!block.icon && (
       <div
@@ -20,8 +20,8 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
           justifyContent: 'center',
           width: '70px',
           height: '70px',
-          marginBottom: suomifiDesignTokens.spacing.xl,
-          border: `1px solid ${suomifiDesignTokens.colors.depthLight1}`,
+          marginBottom: defaultSuomifiTheme.spacing.xl,
+          border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
           borderRadius: '50%',
           fontSize: '50px',
         }}
@@ -39,7 +39,7 @@ const Block = ({ block }: { block: Block }): JSX.Element => (
         )}
       </div>
     ))}
-    <div style={{ margin: `${suomifiDesignTokens.spacing.s} 0` }}>
+    <div style={{ margin: `${defaultSuomifiTheme.spacing.s} 0` }}>
       <LinkList links={block.links} />
     </div>
   </>
@@ -53,8 +53,8 @@ const ContentBoxes = ({
 }: Props): JSX.Element => (
   <section
     style={{
-      background: hasFrame ? suomifiDesignTokens.colors.whiteBase : 'none',
-      padding: `${suomifiDesignTokens.spacing.xl} ${suomifiDesignTokens.spacing.s} 0`,
+      background: hasFrame ? defaultSuomifiTheme.colors.whiteBase : 'none',
+      padding: `${defaultSuomifiTheme.spacing.xl} ${defaultSuomifiTheme.spacing.s} 0`,
       display: 'flex',
       justifyContent: 'center',
     }}
@@ -64,7 +64,7 @@ const ContentBoxes = ({
         variant="h1"
         style={{
           textAlign: 'left',
-          margin: `0 0 0 ${suomifiDesignTokens.spacing.s}`,
+          margin: `0 0 0 ${defaultSuomifiTheme.spacing.s}`,
         }}
       >
         {mainTitle}
@@ -74,7 +74,7 @@ const ContentBoxes = ({
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          margin: `${suomifiDesignTokens.spacing.xl} 0 0 0`,
+          margin: `${defaultSuomifiTheme.spacing.xl} 0 0 0`,
         }}
       >
         <div
@@ -91,10 +91,10 @@ const ContentBoxes = ({
               key={index}
               style={{
                 flex: wrapAll ? '100%' : '30%',
-                margin: suomifiDesignTokens.spacing.s,
+                margin: defaultSuomifiTheme.spacing.s,
               }}
             >
-              <Block block={block} />
+              <BlockComponent block={block} />
             </article>
           ))}
         </div>

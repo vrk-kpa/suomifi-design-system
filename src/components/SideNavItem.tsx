@@ -1,11 +1,36 @@
-import React, { Component, ReactNode, MouseEvent } from 'react';
-import { suomifiDesignTokens, Icon, Button } from 'suomifi-ui-components';
-import { Link } from '@wapps/gatsby-plugin-i18next';
+import React, { Component, ReactNode } from 'react';
+import styled, { css } from 'styled-components';
+import { defaultSuomifiTheme, Icon, Button } from 'suomifi-ui-components';
+import { Link } from 'gatsby';
 import { focusOutline } from './utils/outline';
 import { isFrontPage } from 'components/LinkUtil';
 
+const StyledLink = styled(({ level, ...passProps }) => <Link {...passProps} />)`
+  ${({ level }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.2rem;
+    padding-left: ${level + 0.2}rem;
+    padding-right: ${defaultSuomifiTheme.spacing.xs};
+    border-bottom: 1px solid ${defaultSuomifiTheme.colors.depthSecondary};
+    color: ${defaultSuomifiTheme.colors.highlightBase};
+    text-decoration: none;
+    text-transform: ${level === 1 ? 'uppercase' : 'none'};
+    &:hover {
+      background: ${defaultSuomifiTheme.colors.depthSecondary};
+      color: ${defaultSuomifiTheme.colors.brandBase};
+    }
+    &:focus {
+      ${focusOutline}
+      &::after {
+        left: 0;
+      }
+    }
+  `}
+`;
 class SideNavItem extends Component<Props> {
-  private toggleOpen = (event: MouseEvent) => {
+  private toggleOpen = (event: MouseEvent | KeyboardEvent): void => {
     event.preventDefault();
     const { to, handleToggle } = this.props;
     handleToggle(to);
@@ -23,27 +48,9 @@ class SideNavItem extends Component<Props> {
     } = this.props;
 
     return (
-      <Link
+      <StyledLink
         to={to}
-        css={[
-          {
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            height: '3.2rem',
-            paddingLeft: level + '.2rem',
-            paddingRight: suomifiDesignTokens.spacing.xs,
-            borderBottom: `1px solid ${suomifiDesignTokens.colors.depthSecondary}`,
-            color: suomifiDesignTokens.colors.highlightBase,
-            textDecoration: 'none',
-            textTransform: level === 1 ? 'uppercase' : 'none',
-            '&:hover': {
-              background: suomifiDesignTokens.colors.depthSecondary,
-              color: suomifiDesignTokens.colors.brandBase,
-            },
-          },
-          `&:focus { ${focusOutline} }`,
-        ]}
+        level={level}
         getProps={({ isCurrent, isPartiallyCurrent }) => {
           const isPartiallyCurrentPage = showAsTo
             ? isPartialMatch(showAsTo)
@@ -60,8 +67,8 @@ class SideNavItem extends Component<Props> {
           if (isCurrent) {
             return {
               style: {
-                background: suomifiDesignTokens.colors.depthSecondary,
-                color: suomifiDesignTokens.colors.brandBase,
+                background: defaultSuomifiTheme.colors.depthSecondary,
+                color: defaultSuomifiTheme.colors.brandBase,
                 fontWeight: 600,
               },
             };
@@ -88,11 +95,11 @@ class SideNavItem extends Component<Props> {
           >
             <Icon
               icon="chevronDown"
-              color={suomifiDesignTokens.colors.depthDark1}
+              color={defaultSuomifiTheme.colors.depthDark1}
             />
           </Button>
         )}
-      </Link>
+      </StyledLink>
     );
   }
 }

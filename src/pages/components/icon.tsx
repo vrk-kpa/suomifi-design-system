@@ -1,14 +1,18 @@
 import React from 'react';
+import {
+  defaultSuomifiTheme,
+  Link,
+  IconProps,
+  StaticIconProps,
+  ExternalLink,
+} from 'suomifi-ui-components';
 
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
-
+import iconContent from '../../../locale/fi/icon.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 import NoteBox from 'components/NoteBox';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Paragraph, Text } from 'components/ResponsiveComponents';
@@ -16,12 +20,6 @@ import {
   Icon as SuomifiIcon,
   StaticIcon as SuomifiStaticIcon,
 } from 'components/ExampleComponents';
-import {
-  suomifiDesignTokens,
-  Link,
-  IconProps,
-  StaticIconProps,
-} from 'suomifi-ui-components';
 
 /**
  * Wrapper to show all icons as bigger for better visiblity
@@ -40,176 +38,171 @@ StaticIcon.displayName = 'StaticIcon';
 
 const Page: React.FC = (): React.ReactElement => {
   return (
-    <Translation ns={['icon']}>
-      {(t) => (
-        <Layout sideNavData={sideNavData(t)}>
-          <SEO title={t('title')} />
-          <Heading variant="h1">{t('title')}</Heading>
+    <Layout sideNavData={sideNavData}>
+      <SEO title={iconContent.title} />
+      <Heading variant="h1">{iconContent.title}</Heading>
 
-          <Paragraph.lead>
-            <Text.lead>{t('intro')}</Text.lead>
-          </Paragraph.lead>
+      <Paragraph variant="lead">
+        <Text variant="lead">{iconContent.intro}</Text>
+      </Paragraph>
 
-          <Link href="../../styles/icons">{t('allIconsPageLink.title')}</Link>
+      <Link href="../../styles/icons">
+        {iconContent['allIconsPageLink.title']}
+      </Link>
 
-          <NoteBox title={t('note.title')} items={t('note.items')} />
+      <NoteBox
+        title={iconContent['note.title']}
+        items={iconContent['note.items']}
+      />
 
-          {t<SectionProps[]>('sections').map((section, index) => (
-            <Section
-              key={index}
-              mainTitle={section.title}
-              paragraphs={section.paragraphs}
-              links={section.links}
-            />
-          ))}
+      {iconContent.sections.map((section, index) => (
+        <Section
+          key={index}
+          mainTitle={section.title}
+          paragraphs={section.paragraphs}
+          links={(section as any).links}
+        />
+      ))}
 
-          <ComponentDescription
-            mainTitle={t('basicIcons.title')}
-            description={t('basicIcons.description')}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                justifyContent: 'flex-start',
-                padding: 0,
-                border: 'none',
-              }}
-            >
-              <Icon
-                icon="check"
-                ariaLabel={t('basicIcons.example.arialabel')}
-              />
-            </ComponentExample>
-          </ComponentDescription>
+      <ComponentDescription
+        mainTitle={iconContent['basicIcons.title']}
+        description={iconContent['basicIcons.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            justifyContent: 'flex-start',
+            padding: 0,
+            border: 'none',
+          }}
+        >
+          <Icon
+            icon="check"
+            ariaLabel={iconContent['basicIcons.example.arialabel']}
+          />
+        </ComponentExample>
+      </ComponentDescription>
 
-          <ComponentDescription
-            mainTitle={t('infoIcons.title')}
-            description={t('infoIcons.description')}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                justifyContent: 'flex-start',
-                padding: 0,
-                border: 'none',
-              }}
-            >
-              <Icon
-                icon="helpFilled"
-                color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
-                ariaLabel={t('infoIcons.example1.arialabel')}
-              />
-              <Icon
-                icon="help"
-                color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
-                ariaLabel={t('infoIcons.example2.arialabel')}
-              />
-            </ComponentExample>
-          </ComponentDescription>
+      <ComponentDescription
+        mainTitle={iconContent['infoIcons.title']}
+        description={iconContent['infoIcons.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            justifyContent: 'flex-start',
+            padding: 0,
+            border: 'none',
+          }}
+        >
+          <Icon
+            icon="helpFilled"
+            color={defaultSuomifiTheme.colors.highlightBase}
+            style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
+            ariaLabel={iconContent['infoIcons.example1.arialabel']}
+          />
+          <Icon
+            icon="help"
+            color={defaultSuomifiTheme.colors.highlightBase}
+            style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
+            ariaLabel={iconContent['infoIcons.example2.arialabel']}
+          />
+        </ComponentExample>
+      </ComponentDescription>
 
-          <ComponentDescription
-            mainTitle={t('additionalInfoIcons.title')}
-            description={t('additionalInfoIcons.description')}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                justifyContent: 'flex-start',
-                padding: 0,
-                border: 'none',
-              }}
-            >
-              <Icon
-                icon="errorFilled"
-                color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
-                ariaLabel={t('additionalInfoIcons.example1.arialabel')}
-              />
-              <Icon
-                icon="info"
-                color={suomifiDesignTokens.colors.highlightBase}
-                style={{ margin: `0 ${suomifiDesignTokens.spacing.xs}` }}
-                ariaLabel={t('additionalInfoIcons.example2.arialabel')}
-              />
-            </ComponentExample>
-          </ComponentDescription>
+      <ComponentDescription
+        mainTitle={iconContent['additionalInfoIcons.title']}
+        description={iconContent['additionalInfoIcons.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            justifyContent: 'flex-start',
+            padding: 0,
+            border: 'none',
+          }}
+        >
+          <Icon
+            icon="errorFilled"
+            color={defaultSuomifiTheme.colors.highlightBase}
+            style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
+            ariaLabel={iconContent['additionalInfoIcons.example1.arialabel']}
+          />
+          <Icon
+            icon="info"
+            color={defaultSuomifiTheme.colors.highlightBase}
+            style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
+            ariaLabel={iconContent['additionalInfoIcons.example2.arialabel']}
+          />
+        </ComponentExample>
+      </ComponentDescription>
 
-          <ComponentDescription
-            mainTitle={t('illustrativeIcons.title')}
-            description={t('illustrativeIcons.description')}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                justifyContent: 'flex-start',
-                padding: 0,
-                border: 'none',
-              }}
-            >
-              <StaticIcon
-                icon="collaboration"
-                ariaLabel={t('illustrativeIcons.example.arialabel')}
-              />
-            </ComponentExample>
-          </ComponentDescription>
+      <ComponentDescription
+        mainTitle={iconContent['illustrativeIcons.title']}
+        description={iconContent['illustrativeIcons.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            justifyContent: 'flex-start',
+            padding: 0,
+            border: 'none',
+          }}
+        >
+          <StaticIcon
+            icon="collaboration"
+            ariaLabel={iconContent['illustrativeIcons.example.arialabel']}
+          />
+        </ComponentExample>
+      </ComponentDescription>
 
-          <ComponentDescription
-            mainTitle={t('attachmentIcons.title')}
-            description={t('attachmentIcons.description')}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                justifyContent: 'flex-start',
-                padding: 0,
-                border: 'none',
-              }}
-            >
-              <StaticIcon
-                icon="doc"
-                ariaLabel={t('attachmentIcons.example.arialabel')}
-              />
-            </ComponentExample>
-          </ComponentDescription>
+      <ComponentDescription
+        mainTitle={iconContent['attachmentIcons.title']}
+        description={iconContent['attachmentIcons.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            justifyContent: 'flex-start',
+            padding: 0,
+            border: 'none',
+          }}
+        >
+          <StaticIcon
+            icon="doc"
+            ariaLabel={iconContent['attachmentIcons.example.arialabel']}
+          />
+        </ComponentExample>
+      </ComponentDescription>
 
-          <ComponentDescription
-            mainTitle={t('signLanguageIcons.title')}
-            description={t('signLanguageIcons.description')}
-            exampleFirst
-          >
-            <ComponentExample
-              style={{
-                justifyContent: 'flex-start',
-                padding: 0,
-                border: 'none',
-              }}
-            >
-              <Icon
-                icon="signLanguageContent"
-                color="#00B6EC"
-                ariaLabel={t('signLanguageIcons.example.arialabel')}
-              />
-            </ComponentExample>
-          </ComponentDescription>
-          <Link
-            variant="external"
-            href={t('signLanguageIconsLink.url')}
-            labelNewWindow={t('externalLink.label')}
-          >
-            {t('signLanguageIconsLink.title')}
-          </Link>
-        </Layout>
-      )}
-    </Translation>
+      <ComponentDescription
+        mainTitle={iconContent['signLanguageIcons.title']}
+        description={iconContent['signLanguageIcons.description']}
+        exampleFirst
+      >
+        <ComponentExample
+          style={{
+            justifyContent: 'flex-start',
+            padding: 0,
+            border: 'none',
+          }}
+        >
+          <Icon
+            icon="signLanguageContent"
+            color="#00B6EC"
+            ariaLabel={iconContent['signLanguageIcons.example.arialabel']}
+          />
+        </ComponentExample>
+      </ComponentDescription>
+      <ExternalLink
+        href={iconContent['signLanguageIconsLink.url']}
+        labelNewWindow={iconContent['externalLink.label']}
+        style={{ marginBottom: '30px', display: 'block' }}
+      >
+        {iconContent['signLanguageIconsLink.title']}
+      </ExternalLink>
+    </Layout>
   );
 };
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

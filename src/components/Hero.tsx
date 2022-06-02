@@ -1,9 +1,9 @@
 import React from 'react';
-import { suomifiDesignTokens } from 'suomifi-ui-components';
+import { defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import { Desktop, Mobile, Tablet } from 'components/Responsive';
-import { ReactComponent as SuomiFi } from 'icons/suomifi.svg';
+import SuomiFiLogo from 'icons/suomifi.svg';
 import Background from './Hero_bg.png';
 
 const Content = ({
@@ -16,7 +16,7 @@ const Content = ({
     style={{
       margin: 0,
       padding: compact ? '2rem 1rem 5rem 1rem' : '6rem 1rem 8rem 1rem',
-      background: `no-repeat center url(${Background}) ${suomifiDesignTokens.colors.brandBase}`,
+      background: `no-repeat center url(${Background}) ${defaultSuomifiTheme.colors.brandBase}`,
       backgroundSize: compact ? 'auto' : 'cover',
       display: 'flex',
       justifyContent: 'center',
@@ -32,9 +32,11 @@ const Content = ({
       }}
     >
       <div>
-        <SuomiFi
+        <SuomiFiLogo
           style={{
-            fill: suomifiDesignTokens.colors.whiteBase,
+            width: '1em',
+            height: '1em',
+            fill: defaultSuomifiTheme.colors.whiteBase,
             fontSize: compact ? '30px' : '64px',
             margin: center ? '0 0 1rem' : '0 2rem 1rem 0',
           }}
@@ -54,14 +56,17 @@ const Content = ({
           {title}
         </Heading>
         {description && (
-          <Paragraph.lead
+          <Paragraph
+            variant="lead"
             style={{
               margin: compact ? '1.5rem 0 0 0' : '3rem 0 0 0',
               textAlign: 'inherit',
             }}
           >
-            <Text.lead color="whiteBase">{description}</Text.lead>
-          </Paragraph.lead>
+            <Text variant="lead" color="whiteBase">
+              {description}
+            </Text>
+          </Paragraph>
         )}
       </div>
     </div>

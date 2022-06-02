@@ -1,6 +1,7 @@
 {
   "title": "Monivalinta (MultiSelect)",
   "intro": "Monivalinta-komponentin avulla käyttäjä voi valita yhden tai useamman vaihtoehdon listalta.",
+  "note.accessibility": "Monivalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijalla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromiumpohjaisilla selaimilla, kuten Chromella tai Edgellä.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
@@ -42,8 +43,12 @@
     }
   ],
   "example.label": "Työkalut",
-  "example.visualPlaceholder": "Valitse työkalu(t)",
+  "example.hintText": "Vaihtoehtoja voi rajata kirjoittamalla kenttään",
+  "example.visualPlaceholder": "Valitse työkalut",
   "example.removeAllSelections": "Poista kaikki valinnat",
+  "example.selectedAmountText": "työkalua valittu",
+  "example.optionsAvailableText": "vaihtoehtoa",
+  "example.optionChipRemovedText": "poistettu",
   "example.noItems": "Ei vaihtoehtoja",
   "example.chipActionLabel": "Poista",
   "example.tools.jackhammer": "Poravasara",

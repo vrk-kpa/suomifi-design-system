@@ -1,39 +1,49 @@
 import React, { CSSProperties } from 'react';
-import { graphql } from 'gatsby';
 import styled from 'styled-components';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
 import { baseIcons, illustrativeIcons, doctypeIcons } from 'suomifi-icons';
 import {
-  suomifiDesignTokens,
+  defaultSuomifiTheme,
   Icon,
   StaticIcon,
   BaseIconKeys,
   IllustrativeIconKeys,
   DoctypeIconKeys,
+  Link,
+  ExternalLink,
 } from 'suomifi-ui-components';
 
+import iconsContent from '../../../locale/fi/icons.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import Annotation from 'components/Annotation';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/styles';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import { ReactComponent as Slack } from 'icons/slack.svg';
 
 const iconCategories = [
   {
     id: 'baseIcons',
+    title: iconsContent['baseIcons.title'],
     icons: baseIcons,
+    linkTitle: iconsContent['baseIcons.link.title'],
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/src/baseIcons',
   },
   {
     id: 'illustrativeIcons',
+    title: iconsContent['illustrativeIcons.title'],
     icons: illustrativeIcons,
+    linkTitle: iconsContent['illustrativeIcons.link.title'],
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/src/illustrativeIcons',
   },
   {
     id: 'doctypeIcons',
+    title: iconsContent['doctypeIcons.title'],
     icons: doctypeIcons,
+    linkTitle: iconsContent['doctypeIcons.link.title'],
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/src/doctypeIcons',
   },
 ];
 
@@ -56,7 +66,7 @@ const getExampleIcon = (
   <div
     key={id}
     style={{
-      margin: `${suomifiDesignTokens.spacing.xs} ${suomifiDesignTokens.spacing.xxxl} ${suomifiDesignTokens.spacing.xl} 0`,
+      margin: `${defaultSuomifiTheme.spacing.xs} ${defaultSuomifiTheme.spacing.xxxl} ${defaultSuomifiTheme.spacing.xl} 0`,
       lineHeight: '1rem',
       display: 'flex',
       flexDirection: 'column',
@@ -68,78 +78,56 @@ const getExampleIcon = (
     }}
   >
     {itemId === 'baseIcons' ? (
-      <StyledIcon icon={(id as any) as BaseIconKeys} />
+      <StyledIcon icon={id as BaseIconKeys} />
     ) : (
-      <StyledStaticIcon
-        icon={(id as any) as IllustrativeIconKeys | DoctypeIconKeys}
-      />
+      <StyledStaticIcon icon={id as IllustrativeIconKeys | DoctypeIconKeys} />
     )}
     <div>{label}</div>
   </div>
 );
 
 const Page = (): JSX.Element => (
-  <Translation ns={['icons', 'static-icons']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+  <Layout sideNavData={sideNavData}>
+    <SEO title={iconsContent.title} />
+    <Heading variant="h1">{iconsContent.title}</Heading>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+    <Paragraph variant="lead">
+      <Text variant="lead">{iconsContent.intro}</Text>
+    </Paragraph>
+    <Link href="../../components/icon/">
+      {iconsContent['iconPageLink.title']}
+    </Link>
 
-        {iconCategories.map((item) => (
-          <ComponentDescription
-            key={item.id}
-            mainTitle={t(`${item.id}.title`)}
-            description=""
-            exampleFirst={false}
-            noCode
-          >
-            <ComponentExample
-              style={{
-                padding: 0,
-                justifyContent: 'flex-start',
-                background: 'none',
-                border: 'none',
-              }}
-            >
-              {item.icons.map((icon) => {
-                const label =
-                  item.id === 'baseIcons'
-                    ? t(`${icon}.label`)
-                    : t(`static-icons:${icon}.label`);
-                return getExampleIcon(icon, item.id, label);
-              })}
-            </ComponentExample>
-          </ComponentDescription>
-        ))}
-        <Annotation
-          title={t('note.title')}
-          description={t('note.description')}
-          link={{
-            icon: (
-              <Slack
-                style={{
-                  fill: suomifiDesignTokens.colors.whiteBase,
-                  fontSize: '16px',
-                }}
-              />
-            ),
-            text: t('note.link.text'),
-            url: t('note.link.url'),
+    {iconCategories.map((item) => (
+      <ComponentDescription
+        key={item.id}
+        mainTitle={item.title}
+        description=""
+        exampleFirst={false}
+        noCode
+      >
+        <ExternalLink
+          labelNewWindow={iconsContent['link.labelNewWindow']}
+          href={item.linkUrl}
+        >
+          {item.linkTitle}
+        </ExternalLink>
+        <ComponentExample
+          style={{
+            padding: 0,
+            justifyContent: 'flex-start',
+            background: 'none',
+            border: 'none',
+            paddingLeft: '60px',
           }}
-        />
-      </Layout>
-    )}
-  </Translation>
+        >
+          {item.icons.map((icon) => {
+            return getExampleIcon(icon, item.id, icon);
+          })}
+        </ComponentExample>
+      </ComponentDescription>
+    ))}
+  </Layout>
 );
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

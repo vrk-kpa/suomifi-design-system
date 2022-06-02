@@ -1,6 +1,7 @@
 {
   "title": "",
   "intro": "",
+  "note.accessibility": "",
   "note.title": "",
   "note.items": ["", "", "", ""],
   "sections": [
@@ -37,8 +38,12 @@
     }
   ],
   "example.label": "",
+  "example.hintText": "",
   "example.visualPlaceholder": "",
   "example.removeAllSelections": "",
+  "example.selectedAmountText": "",
+  "example.optionsAvailableText": "",
+  "example.optionChipRemovedText": "",
   "example.noItems": "",
   "example.chipActionLabel": "",
   "example.tools.jackhammer": "",

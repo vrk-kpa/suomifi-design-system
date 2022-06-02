@@ -1,63 +1,58 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import { Translation } from 'react-i18next';
-import { withI18next } from '@wapps/gatsby-plugin-i18next';
 
+import breadcrumbContent from '../../../locale/fi/breadcrumb.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import { Breadcrumb } from 'components/ExampleComponents';
+import { Breadcrumb, BreadcrumbLink } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import Section, { Props as SectionProps } from 'components/Section';
+import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 
 const Page = (): JSX.Element => (
-  <Translation ns={['breadcrumb']}>
-    {(t) => (
-      <Layout sideNavData={sideNavData(t)}>
-        <SEO title={t('title')} />
-        <Heading variant="h1">{t('title')}</Heading>
+  <Layout sideNavData={sideNavData}>
+    <SEO title={breadcrumbContent.title} />
+    <Heading variant="h1">{breadcrumbContent.title}</Heading>
 
-        <Paragraph.lead>
-          <Text.lead>{t('intro')}</Text.lead>
-        </Paragraph.lead>
+    <Paragraph variant="lead">
+      <Text variant="lead">{breadcrumbContent.intro}</Text>
+    </Paragraph>
 
-        <ComponentDescription
-          mainTitle={t('default.title')}
-          description={t('default.description')}
-        >
-          <ComponentExample>
-            <Breadcrumb aria-label="breadcrumb">
-              <Breadcrumb.link href="/">{t('default.link1')}</Breadcrumb.link>
-              <Breadcrumb.link href="/alasivu">
-                {t('default.link2')}
-              </Breadcrumb.link>
-              <Breadcrumb.link current>{t('default.link3')}</Breadcrumb.link>
-            </Breadcrumb>
-          </ComponentExample>
-        </ComponentDescription>
+    <ComponentDescription
+      mainTitle={breadcrumbContent['default.title']}
+      description={breadcrumbContent['default.description']}
+    >
+      <ComponentExample>
+        <Breadcrumb aria-label="breadcrumb">
+          <BreadcrumbLink href="/">
+            {breadcrumbContent['default.link1']}
+          </BreadcrumbLink>
+          <BreadcrumbLink href="/alasivu">
+            {breadcrumbContent['default.link2']}
+          </BreadcrumbLink>
+          <BreadcrumbLink current>
+            {breadcrumbContent['default.link3']}
+          </BreadcrumbLink>
+        </Breadcrumb>
+      </ComponentExample>
+    </ComponentDescription>
 
-        <NoteBox title={t('note.title')} items={t('note.items')} />
+    <NoteBox
+      title={breadcrumbContent['note.title']}
+      items={breadcrumbContent['note.items']}
+    />
 
-        {t<SectionProps[]>('sections').map((section, index) => (
-          <Section
-            key={index}
-            mainTitle={section.title}
-            paragraphs={section.paragraphs}
-            links={section.links}
-          />
-        ))}
-      </Layout>
-    )}
-  </Translation>
+    {breadcrumbContent.sections.map((section, index) => (
+      <Section
+        key={index}
+        mainTitle={section.title}
+        paragraphs={section.paragraphs}
+        links={section.links}
+      />
+    ))}
+  </Layout>
 );
 
-export default withI18next()(Page);
-
-export const query = graphql`
-  query($lng: String!) {
-    ...AllLocalesFragment
-  }
-`;
+export default Page;

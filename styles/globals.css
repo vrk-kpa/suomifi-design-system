@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
+@import 'suomifi-ui-components/dist/main.css';
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+}

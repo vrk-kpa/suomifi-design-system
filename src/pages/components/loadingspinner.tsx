@@ -110,6 +110,20 @@ const BasicExample = ({
           flexDirection: 'column',
         }}
       >
+        <Button
+          disabled={visible}
+          onClick={() => {
+            setStatus('loading');
+
+            if (!visible) {
+              runLoader();
+            }
+            setVisible(!visible);
+          }}
+        >
+          {content['example.startButton']}
+        </Button>
+
         <div
           aria-live="assertive"
           aria-busy={status === 'loading'}
@@ -117,9 +131,9 @@ const BasicExample = ({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            width: '130px',
+            width: '100%',
             height: '100px',
-            marginBottom: defaultSuomifiTheme.spacing.l,
+            marginTop: defaultSuomifiTheme.spacing.m,
             border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
           }}
         >
@@ -134,20 +148,6 @@ const BasicExample = ({
             />
           )}
         </div>
-
-        <Button
-          disabled={visible}
-          onClick={() => {
-            setStatus('loading');
-
-            if (!visible) {
-              runLoader();
-            }
-            setVisible(!visible);
-          }}
-        >
-          {content['example.startButton']}
-        </Button>
       </ComponentExample>
     </ComponentDescription>
   );
@@ -191,31 +191,6 @@ const SuccessExample = ({
           flexDirection: 'column',
         }}
       >
-        <div
-          aria-live="assertive"
-          aria-busy={status === 'loading'}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '130px',
-            height: '100px',
-            marginBottom: defaultSuomifiTheme.spacing.l,
-            border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
-          }}
-        >
-          {visible && (
-            <LoadingSpinner
-              status={status}
-              text={
-                status !== 'success'
-                  ? content['example.loading.active']
-                  : content['example.loading.success']
-              }
-            />
-          )}
-        </div>
-
         <Button
           onClick={() => {
             setStatus('loading');
@@ -230,6 +205,31 @@ const SuccessExample = ({
             ? content['example.closeButton']
             : content['example.startButton']}
         </Button>
+
+        <div
+          aria-live="assertive"
+          aria-busy={status === 'loading'}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '100%',
+            height: '100px',
+            marginTop: defaultSuomifiTheme.spacing.m,
+            border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
+          }}
+        >
+          {visible && (
+            <LoadingSpinner
+              status={status}
+              text={
+                status !== 'success'
+                  ? content['example.loading.active']
+                  : content['example.loading.success']
+              }
+            />
+          )}
+        </div>
       </ComponentExample>
     </ComponentDescription>
   );

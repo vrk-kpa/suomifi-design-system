@@ -34,6 +34,8 @@ import {
   LanguageMenuItem as OrigLanguageMenuItem,
   Link as OrigLink,
   LinkProps,
+  LoadingSpinner as OrigLoadingSpinner,
+  LoadingSpinnerProps,
   ExternalLink as OrigExternalLink,
   ExternalLinkProps,
   Modal as OrigModal,
@@ -250,6 +252,11 @@ export const RadioButtonGroup = (props: RadioButtonGroupProps): JSX.Element => (
   <OrigRadioButtonGroup {...props} />
 );
 addDisplayNames(RadioButtonGroup, OrigRadioButtonGroup, 'RadioButtonGroup');
+
+export const LoadingSpinner = (props: LoadingSpinnerProps): JSX.Element => (
+  <OrigLoadingSpinner {...props} />
+);
+addDisplayNames(LoadingSpinner, OrigLoadingSpinner, 'LoadingSpinner');
 
 export class SearchInput extends OrigSearchInput {}
 addDisplayNames(SearchInput, OrigSearchInput, 'SearchInput');

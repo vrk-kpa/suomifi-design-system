@@ -13598,15 +13598,15 @@ suomifi-icons@^5.0.0:
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-5.0.0.tgz#8e4c3e9535065c32de757d3e6a75393a70414e73"
   integrity sha512-tqLU2lfh9EyEgXCYeSYhJEhBUgc0nOlvs4e7TBLWMvTTnPPa14VCWSK1DL7HPHuwy95VODjjiHg1Y9B+vzoccA==
 
-suomifi-icons@^6.1.0:
+suomifi-icons@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-6.2.0.tgz#661fc2327a42dfa5e0cfc6d560d22c5caff1b122"
   integrity sha512-KrZTTm8+PqUaKOgGD5+SiWcE1XbSBw5EqKRitbPBxbDUT/a+1eywUM/6CBnPH4wjbkdlq75b2Z1ML19yuBGjMA==
 
-suomifi-ui-components@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-7.0.0.tgz#c64e0e31bdacd71441438388c26ff59e0e719355"
-  integrity sha512-fUW6RS/XKFPsQXbHLO/eDkdTmOo/loxiN6FI9WYLU6VPIMJ5/Qyp8yQsNiJ+2KOwXgxZZliIfzAeLzmUL8s8Yg==
+suomifi-ui-components@9.0.0-beta.0:
+  version "9.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-9.0.0-beta.0.tgz#0289673e5931af94937bd6f9536ec994a06c796b"
+  integrity sha512-qXe5Lujh8w+GbpOCDZwQ6tXp/mKSXUjebHFMbLTZjw4Gm9dgqjjXodAO6vWHZ20QTG3MRiqic2Cr53xgok/wCA==
   dependencies:
     "@babel/runtime" "7.17.7"
     "@popperjs/core" "2.11.4"
@@ -13620,7 +13620,7 @@ suomifi-ui-components@^7.0.0:
     react-popper "2.2.5"
     react-svg "14.1.14"
     suomifi-design-tokens "3.2.0"
-    suomifi-icons "^6.1.0"
+    suomifi-icons "^6.2.0"
 
 supports-color@^2.0.0:
   version "2.0.0"

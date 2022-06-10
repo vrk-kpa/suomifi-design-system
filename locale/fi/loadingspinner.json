@@ -60,7 +60,7 @@
   "example.success.description": "Tässä esimerkissä lataus valmistuu onnistuneesti.",
   "example.error.heading": "Epäonnistumista indikoiva tila",
   "example.error.description": "Tässä esimerkissä lataus päättyy epäonnistumiseen.",
-  "example.closeButton": "Peruuta lataus",
+  "example.closeButton": "Palauta alkutilaan",
   "example.startButton": "Simuloi lataus",
   "example.loading.error": "Lataus epäonnistui",
   "example.loading.success": "Lataus valmis",

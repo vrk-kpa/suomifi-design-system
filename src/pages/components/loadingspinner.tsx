@@ -165,7 +165,7 @@ const SuccessExample = ({
 }): JSX.Element => {
   const [visible, setVisible] = useState(false);
   const [loaded, setLoaded] = useState(0);
-  const [status, setStatus] = useState<LoadingSpinnerStatus>('loading');
+  const [status, setStatus] = useState<LoadingSpinnerStatus>('failed');
 
   const runLoader = (): void => {
     let progress = 0;
@@ -192,16 +192,18 @@ const SuccessExample = ({
         }}
       >
         <Button
+          disabled={status === 'loading'}
           onClick={() => {
-            setStatus('loading');
-
             if (!visible) {
+              setStatus('loading');
               runLoader();
+            } else {
+              setStatus('failed');
             }
             setVisible(!visible);
           }}
         >
-          {visible
+          {status === 'success'
             ? content['example.closeButton']
             : content['example.startButton']}
         </Button>
@@ -247,7 +249,7 @@ const FailingExample = ({
 }): JSX.Element => {
   const [visible, setVisible] = useState(false);
   const [loaded, setLoaded] = useState(0);
-  const [status, setStatus] = useState<LoadingSpinnerStatus>('loading');
+  const [status, setStatus] = useState<LoadingSpinnerStatus>('success');
 
   const runLoader = (): void => {
     let progress = 0;
@@ -274,16 +276,18 @@ const FailingExample = ({
         }}
       >
         <Button
+          disabled={status === 'loading'}
           onClick={() => {
-            setStatus('loading');
-
             if (!visible) {
+              setStatus('loading');
               runLoader();
+            } else {
+              setStatus('success');
             }
             setVisible(!visible);
           }}
         >
-          {visible
+          {status === 'failed'
             ? content['example.closeButton']
             : content['example.startButton']}
         </Button>

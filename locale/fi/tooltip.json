@@ -47,9 +47,9 @@
       ]
     }
   ],
-  "example.text": "Some text that requires a tooltip",
-  "example.aria.toggle": "Some text that requires a tooltip, additional information",
-  "example.aria.close": "Some text that requires a tooltip, close additional information",
-  "example.title": "Tooltip",
-  "example.description": "Tooltip text for a text that requires a tooltip"
+  "example.text": "Kutsumanimi",
+  "example.aria.toggle": "Kutsumanimi, lisää tietoa",
+  "example.aria.close": "Kutsumanimi, sulje lisätieto",
+  "example.title": "Kutsumanimi",
+  "example.description": "Virallinen etunimi jota käytetään kutsumanimenä"
 }

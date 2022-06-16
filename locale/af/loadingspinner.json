@@ -1,0 +1,68 @@
+{
+  "title": "title",
+  "intro": "intro",
+  "note.title": "note.title",
+  "note.items": [
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item",
+    "note.item"
+  ],
+  "sections": [
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    },
+    {
+      "title": "section.title",
+      "paragraphs": [
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        },
+        {
+          "image.key": "section.paragraph.image.key",
+          "image.alt": "section.paragraph.image.alt",
+          "text": "section.paragraph.text"
+        }
+      ],
+      "links": [
+        {
+          "text": "section.link.text",
+          "url": "section.link.url"
+        }
+      ]
+    }
+  ],
+  "example.basic.heading": "example.basic.heading",
+  "example.basic.description": "example.basic.description",
+  "example.success.heading": "example.success.heading",
+  "example.success.description": "example.success.description",
+  "example.error.heading": "example.error.heading",
+  "example.error.description": "example.error.description",
+  "example.closeButton": "example.closeButton",
+  "example.startButton": "example.startButton",
+  "example.loading.error": "example.loading.error",
+  "example.loading.success": "example.loading.success",
+  "example.loading.active": "example.loading.active"
+}

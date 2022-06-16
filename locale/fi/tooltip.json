@@ -1,0 +1,55 @@
+{
+  "title": "Lisätieto (Tooltip)",
+  "intro": "Lisätieto-komponentin avulla voidaan esittää tiettyyn sivun kohtaan tai elementtiin liittyvää lisätietoa. Komponentti avautuu painamalla infoikonipainiketta. ",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Lisätieto-komponenttia tulisi käyttää vain ns. viimeisenä keinona. Erillinen ohjeteksti on pääsääntöisesti parempi vaihtoehto.",
+    "Lisätiedon on syytä sisältää vain tekstiä; interaktiivisia elementtejä tulisi välttää.",
+    "Sisältöalueella tulisi olla otsikko, joka tiivistää lisätiedon sisällön.",
+    "Sisällön tulisi olla kohtuullisen lyhyt, sillä pienemmällä ruutukoolla käytettävyys kärsii."
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Lisätieto-komponentti koostuu infoikonin sisältävästä painikkeesta ja varsinaisen tiedon sisältävästä elementistä, joka aukeaa infoikonipainiketta painamalla. Aukeavassa elementissä on sisältöalue ja toinen ikonipainike, jolla lisätieto voidaan sulkea. Lisätieto voidaan sulkea myös samasta ikonipainikkeesta, jonka avulla se aukaistiin."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Lisätietoa on tarkoitus käyttää pääasiassa lomakkeissa. Niissä komponenttia voidaan käyttää kertomaan esimerkiksi jonkin kentän täyttöön liittyvä ohjeistus, mikäli se ei onnistu kentän pääasiallisella ohjetekstillä."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Lisätieto-komponentin sisältöön voidaan tarvittaessa lisätä esimerkiksi linkki, joka vie käyttäjän Ohjeet ja tuki -osioon (uudessa välilehdessä/ikkunassa)."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.text": "Kutsumanimi",
+  "example.aria.toggle": "Kutsumanimi, lisää tietoa",
+  "example.aria.close": "Kutsumanimi, sulje lisätieto",
+  "example.title": "Kutsumanimi",
+  "example.description": "Virallinen etunimi jota käytetään kutsumanimenä"
+}

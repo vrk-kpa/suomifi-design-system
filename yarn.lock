@@ -1011,7 +1011,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.17.2", "@babel/runtime@^7.17.9":
+"@babel/runtime@^7.17.2", "@babel/runtime@^7.18.3":
   version "7.18.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
   integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
@@ -2395,13 +2395,13 @@
     defer-to-connect "^2.0.0"
 
 "@tanem/svg-injector@^10.1.19":
-  version "10.1.22"
-  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-10.1.22.tgz#90b602025c0ba02d0dde0fb69f1a9bce824bda0c"
-  integrity sha512-sGI9c+BbDm00b651pSfSQSuaN9xqe3RmBD4tY+qsnYBaqh5agW6pn/CeCeju0tM5Fh7geEMg2PXUbOfxT88jjA==
+  version "10.1.23"
+  resolved "https://registry.yarnpkg.com/@tanem/svg-injector/-/svg-injector-10.1.23.tgz#f82dffcf2db5fb2224023bed3a8e7cac6d17606e"
+  integrity sha512-k7bvHX8aZFSTxZCMz76b2W++ntHAxn02c5MnTm8aUh22lYn/n9EuKUd9vH+o6KVygk3np+HF/C2cuFwgXhaO/A==
   dependencies:
-    "@babel/runtime" "^7.17.9"
+    "@babel/runtime" "^7.18.3"
     content-type "^1.0.4"
-    tslib "^2.3.1"
+    tslib "^2.4.0"
 
 "@tokenizer/token@^0.3.0":
   version "0.3.0"
@@ -13603,10 +13603,10 @@ suomifi-icons@^6.2.0:
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-6.2.0.tgz#661fc2327a42dfa5e0cfc6d560d22c5caff1b122"
   integrity sha512-KrZTTm8+PqUaKOgGD5+SiWcE1XbSBw5EqKRitbPBxbDUT/a+1eywUM/6CBnPH4wjbkdlq75b2Z1ML19yuBGjMA==
 
-suomifi-ui-components@9.0.0-beta.0:
-  version "9.0.0-beta.0"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-9.0.0-beta.0.tgz#0289673e5931af94937bd6f9536ec994a06c796b"
-  integrity sha512-qXe5Lujh8w+GbpOCDZwQ6tXp/mKSXUjebHFMbLTZjw4Gm9dgqjjXodAO6vWHZ20QTG3MRiqic2Cr53xgok/wCA==
+suomifi-ui-components@9.0.0-beta.1:
+  version "9.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-9.0.0-beta.1.tgz#f26bc05cfcb3c9caaac43a0b0af82b2d9d9bdc98"
+  integrity sha512-1vPYFv8HigjmN8XLZRwm03XI8l5+UMXg7WAo2MoX7KjCUHBu1fxU8fBgSWVmO3c+kBoNcI2/N4RO7ZJx7CjBYQ==
   dependencies:
     "@babel/runtime" "7.17.7"
     "@popperjs/core" "2.11.4"
@@ -14076,10 +14076,15 @@ tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2, tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.2.0, tslib@^2.3.0, tslib@^2.3.1, tslib@~2.3.0:
+tslib@^2, tslib@^2.0.1, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.2.0, tslib@^2.3.0, tslib@~2.3.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.3.1.tgz#e8a335add5ceae51aa261d32a490158ef042ef01"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
+
+tslib@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
 tslib@~2.0.1:
   version "2.0.3"

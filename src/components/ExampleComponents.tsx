@@ -70,6 +70,8 @@ import {
   ToggleButtonProps,
   ToggleInput as OrigToggleInput,
   ToggleInputProps,
+  Tooltip as OrigTooltip,
+  TooltipProps,
   VisuallyHidden as OrigVisuallyHidden,
   LanguageMenuItemProps,
 } from 'suomifi-ui-components';
@@ -297,6 +299,12 @@ export const ToggleInput = (props: ToggleInputProps): JSX.Element => (
 );
 
 addDisplayNames(ToggleInput, OrigToggleInput, 'ToggleInput');
+
+export const Tooltip = (props: TooltipProps): JSX.Element => (
+  <OrigTooltip {...props} />
+);
+
+addDisplayNames(Tooltip, OrigTooltip, 'Tooltip');
 
 export class VisuallyHidden extends Component<any> {
   displayName: 'Button';

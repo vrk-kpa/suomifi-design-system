@@ -1,23 +1,21 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
+import { Link as SuomiFiLink } from "suomifi-ui-components";
 
-import { Heading } from "suomifi-ui-components";
+import { Block, Heading, RouterLink } from "suomifi-ui-components";
 
-const Demo: NextPage = () => {
+const FrontPage: NextPage = () => {
   return (
-    <div className="container">
+    <Block className="container">
       <Head>
-        <title>DS site POC</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Etusivu | Suomi.fi Design System</title>
       </Head>
-
-      <main>
+      <Block style={{ padding: "50px 0" }}>
         <Heading variant="h1">Suomi.fi DS site revamp POC</Heading>
-      </main>
-
-      <footer></footer>
-    </div>
+      </Block>
+    </Block>
   );
 };
 
-export default Demo;
+export default FrontPage;

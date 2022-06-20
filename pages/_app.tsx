@@ -1,8 +1,24 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import { Block } from "suomifi-ui-components";
+import Head from "next/head";
+
 function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Block className="app">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <Block id="content">
+        <Component {...pageProps} />
+      </Block>
+      <Footer />
+    </Block>
+  );
 }
 
 export default SuomifiDesignSystemSiteApp;

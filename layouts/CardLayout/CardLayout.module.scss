@@ -1,0 +1,16 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.cardLayout {
+    background: $fi-color-white-base;
+    margin: $fi-spacing-xl 0;
+    border: 1px solid $fi-color-depth-light1;
+    display: flex;
+
+    .left {
+        width: 22rem;
+    }
+    .right {
+        flex: 1;
+        margin: $fi-spacing-m $fi-spacing-s;
+    }
+}

@@ -1,0 +1,34 @@
+@import 'suomifi-design-tokens/dist/tokens';
+
+$spacings:  (
+  'xxs': $fi-spacing-xxs,
+  'xs': $fi-spacing-xs,
+  's': $fi-spacing-s,
+  'm': $fi-spacing-m,
+  'l': $fi-spacing-l,
+  'xl': $fi-spacing-xl,
+  'xxl': $fi-spacing-xxl,
+  'xxxl': $fi-spacing-xxxl,
+  'xxxxl': $fi-spacing-xxxxl,
+);
+                
+@each $name, $value in $spacings {
+    .m-#{$name} {
+      margin: $value !important;
+    }
+    .mt-#{$name} {
+      margin-top: $value !important;
+    }
+    .mb-#{$name} {
+      margin-bottom: $value !important;
+    }
+    .p-#{$name} {
+      padding: $value !important;
+    }
+    .pt-#{$name} {
+      padding-top: $value !important;
+    }
+    .pb-#{$name} {
+      padding-bottom: $value !important;
+    }
+}

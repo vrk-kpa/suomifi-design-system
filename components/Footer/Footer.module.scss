@@ -1,0 +1,25 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.footer {
+    padding: 0 0 $fi-spacing-xl 0;
+
+    .suomifiLink {
+        display: inline-block;
+
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+    }
+    
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    .right {
+        display: flex;
+        width: 50%;
+    }
+}

@@ -1,0 +1,13 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.header {
+    border-top: 4px solid $fi-color-brand-base;
+    border-bottom: 1px solid $fi-color-depth-light1;
+}
+
+.logo {
+    height: 35px;
+    width: auto;
+    margin: $fi-spacing-m 0;
+    cursor: pointer;
+}

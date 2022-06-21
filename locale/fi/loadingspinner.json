@@ -4,7 +4,7 @@
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Latausindikaattoria tulee käyttää vain jos latausaika kestää yli sekunnin. Nopeasti näytöllä vilahtava animaatio on häiritsevä, koska käyttäjä ei ehdi havaitsemaan sitä kunnolla.",
-    "Jos latausaika kestää yli 10 sekuntia tilatekstin tulisi sisältää tarkempi tieto latauksen edistymisestä, esimerkiksi \"17 / 1024 valmiina\" tai \"57 % valmiina\".",
+    "Jos tiedetään, että latausaika kestää yli 10 sekuntia, tilatekstin tulisi sisältää tarkempi tieto latauksen edistymisestä. Esimerkiksi \"17 / 1024 valmiina\" tai \"57 % valmiina\".",
     "Hyvä tilateksti on selkeä ja ytimekäs, ja sen tulee sisältää riittävästi informaatiota, jotta myös ruudunlukijakäyttäjät saavat tiedon latauksen tilasta.",
     "Saavutettavuuden osalta toteutuksessa on huomioitava, että tieto indikaattorin tilamuutoksista ja ladattavan sisällön valmistumisesta, tai latauksen epäonnistumisesta välitetään ruudunlukijalle. Vaikka tilateksti piilotettaisiin näkyvistä, tulee sen olla kuvaava ja selkeä ruudunlukijakäyttäjiä varten.",
     "Erityisesti nopeasti tapahtuvan latauksen edistymistietoja, kuten valmistumisprosenttia, ei tarvitse välittää ruudunlukijalle. Tällöin mahdollisesti käytössä olevalle aria-live osiolle tulee latauksen ajaksi asettaa aria-busy attribuutti. Latauksen valmistuminen tai mahdollinen epäonnistuminen tulee tässäkin tapauksessa viestiä myös ruudunlukijakäyttäjille.",

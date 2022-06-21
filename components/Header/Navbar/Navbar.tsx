@@ -26,7 +26,6 @@ const Navbar: React.FunctionComponent = () => {
   ];
 
   const isRouteActive = (path: string): boolean => {
-    console.log(router.pathname);
     if (path === "/") {
       return router.pathname === "/";
     }

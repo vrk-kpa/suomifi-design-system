@@ -1,0 +1,29 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.frame {
+    width: 13rem;
+    border: .1rem solid $fi-color-depth-dark1;
+    border-bottom: 0;
+    border-radius: 1.5rem 1.5rem 0 0;
+    box-shadow: #29292924 0px 1px 2px 0px, #2929291f 0px 1px 5px 0px;
+    padding: 2.5rem 1rem 0 1rem;
+    margin: 0;
+    background: $fi-color-depth-light1
+}
+
+.microphone {
+    position: relative;
+    top: -1.25rem;
+    margin: 0 auto;
+    width: 3.5rem;
+    height: .25rem;
+    background: $fi-color-depth-dark1;
+    border-radius: .125rem;
+}
+
+.screen {
+    overflow: hidden;
+    height: 100%;
+    background: white;
+    padding: $fi-spacing-s;
+}

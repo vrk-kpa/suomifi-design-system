@@ -6,6 +6,8 @@ import Footer from "../components/Footer/Footer";
 import { Block } from "suomifi-ui-components";
 import Head from "next/head";
 
+import { appWithTranslation } from "next-i18next";
+
 function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
   return (
     <Block className="app">
@@ -21,4 +23,4 @@ function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default SuomifiDesignSystemSiteApp;
+export default appWithTranslation(SuomifiDesignSystemSiteApp);

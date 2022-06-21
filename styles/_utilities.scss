@@ -22,6 +22,14 @@ $spacings:  (
     .mb-#{$name} {
       margin-bottom: $value !important;
     }
+    .my-#{$name} {
+      margin-top: $value !important;
+      margin-bottom: $value !important;
+    }
+    .mx-#{$name} {
+      margin-right: $value !important;
+      margin-left: $value !important;
+    }
     .p-#{$name} {
       padding: $value !important;
     }
@@ -30,5 +38,13 @@ $spacings:  (
     }
     .pb-#{$name} {
       padding-bottom: $value !important;
+    }
+    .py-#{$name} {
+      padding-top: $value !important;
+      padding-bottom: $value !important;
+    }
+    .px-#{$name} {
+      padding-right: $value !important;
+      padding-left: $value !important;
     }
 }

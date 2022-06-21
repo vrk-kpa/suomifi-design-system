@@ -1,0 +1,15 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.infoBox {
+    border: 1px solid $fi-color-depth-light1;
+    padding: $fi-spacing-m;
+    background: $fi-color-highlight-light3;
+
+    ul {
+        margin: 0;
+        padding: 0 0 0 $fi-spacing-s;
+        li {
+            margin: $fi-spacing-m;
+        }
+    }
+}

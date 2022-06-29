@@ -13,6 +13,8 @@ import {
   BreadcrumbLinkProps,
   Checkbox as OrigCheckbox,
   CheckboxProps,
+  CheckboxGroup as OrigCheckboxGroup,
+  CheckboxGroupProps,
   Dropdown as OrigDropdown,
   DropdownProps,
   DropdownItem as OrigDropdownItem,
@@ -120,6 +122,13 @@ export class Checkbox extends Component<CheckboxProps> {
   }
 }
 addDisplayNames(Checkbox, OrigCheckbox, 'Checkbox');
+
+export class CheckboxGroup extends Component<Props> {
+  render(): JSX.Element {
+    return <OrigCheckboxGroup {...this.props} />;
+  }
+}
+addDisplayNames(CheckboxGroup, OrigCheckboxGroup, 'CheckboxGroup');
 
 export class Dropdown extends Component<DropdownProps> {
   render(): JSX.Element {

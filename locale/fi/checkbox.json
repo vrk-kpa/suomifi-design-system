@@ -51,7 +51,7 @@
   "example.large.title": "Valintaruudun mobiiliversio",
   "example.large.description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintaruudun mobiiliversiota (Checkbox.large)",
   "example.large.content": "Valinta",
-  "example.group.title": "Valintanappi ryhmässä",
+  "example.group.title": "Valintaruutu ryhmässä",
   "example.group.description": "Valintaruutu voidaan sijoittaa myös ryhmään (CheckboxGroup). Ryhmälle voidaan antaa tila, joka välitetään jokaiselle valintaruudulle ryhmän sisälle. Mikäli ryhmässä olevalle yksittäiselle valintaruudulle annetaan erikseen oma tila, se ajaa ryhmän antaman tilan ylitse. Ryhmän tilateksti ei välity yksittäisille valintaruuduille. Käytettäessä ryhmää, ei yksittäisille valintaruuduille tulisi antaa omaa tilatekstiä, sillä se saattaa sekoittaa käyttäjää.",
   "example.group.label": "Miten haluat, että sinuun otetaan yhteyttä",
   "example.group.hint": "Voit valita useamman kuin yhden",

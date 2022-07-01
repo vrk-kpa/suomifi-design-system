@@ -1,0 +1,7 @@
+{
+    "customizing_theme": {
+        "heading": "Teeman kustomoiminen",
+        "text": "Kirjaston käyttämää oletusteemaa voi myös tarvittaessa muokata. Teeman muokkaaminen vaikuttaa kaikkiin muokatun teeman sisältämiin komponentteihin.",
+        "buttonText": "Kustomoitu teema"
+    }
+}

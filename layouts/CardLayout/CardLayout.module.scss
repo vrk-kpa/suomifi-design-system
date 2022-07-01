@@ -1,4 +1,5 @@
 @import '~suomifi-design-tokens/dist/tokens';
+@import '../../styles/breakpoints';
 
 .cardLayout {
     background: $fi-color-white-base;
@@ -6,11 +7,32 @@
     border: 1px solid $fi-color-depth-light1;
     display: flex;
 
+    @include upto-md {
+        margin-left: -$fi-spacing-xs;
+        margin-right: -$fi-spacing-xs;
+    }
+
+    @include upto-lg {
+        flex-direction: column;
+    }
+
     .left {
-        width: 22rem;
+        @include upto-lg {
+            display: none;
+        }
+        width: 350px;
     }
     .right {
         flex: 1;
         margin: $fi-spacing-m $fi-spacing-s;
+    }
+}
+
+.smallScreenNavContainer {
+    background: $fi-color-white-base;
+    border: 1px solid $fi-color-depth-light1;
+    margin-top: $fi-spacing-m;
+    @include from-lg {
+        display: none;
     }
 }

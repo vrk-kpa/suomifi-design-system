@@ -1,4 +1,5 @@
 @import '~suomifi-design-tokens/dist/tokens';
+@import '../../styles/breakpoints';
 
 .header {
     border-top: 4px solid $fi-color-brand-base;
@@ -10,4 +11,11 @@
     width: auto;
     margin: $fi-spacing-m 0;
     cursor: pointer;
+}
+
+.desktopNavContainer {
+    display: none;
+    @include from-lg {
+        display: block;
+    }
 }

@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { Block } from "suomifi-ui-components";
 import { NavItem } from "../../interfaces/interfaces";
 import styles from "./CardLayout.module.scss";
-import SideNav from "./SideNav/SideNav";
+import SideNav from "../../components/SideNav/SideNav";
 
 interface CardLayoutProps {
   navItems: NavItem[];
@@ -15,6 +15,9 @@ const CardLayout: React.FunctionComponent<CardLayoutProps> = ({
 }: CardLayoutProps) => {
   return (
     <Block className="container">
+      <Block variant="section" className={styles.smallScreenNavContainer}>
+        <SideNav items={navItems} variant="smallScreen"></SideNav>
+      </Block>
       <Block variant="section" className={styles.cardLayout}>
         <Block className={styles.left}>
           <SideNav items={navItems}></SideNav>

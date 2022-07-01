@@ -15,14 +15,17 @@
     "next-i18next": "^11.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-element-to-jsx-string": "^15.0.0",
+    "react-syntax-highlighter": "^15.5.0",
     "sass": "^1.52.2",
     "styled-components": "^5.3.5",
-    "suomifi-ui-components": "9.0.0-poly5"
+    "suomifi-ui-components": "^8.0.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.19",
     "@types/react": "^17.0.30",
     "@types/react-dom": "17.0.2",
+    "@types/react-syntax-highlighter": "^15.5.2",
     "eslint": "8.17.0",
     "eslint-config-next": "12.1.6",
     "typescript": "4.7.3"

@@ -1,0 +1,104 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.sideNav {
+    .navHeader {
+        display: flex;
+        align-items: center;
+        padding: $fi-spacing-xs;
+
+        .navHeadertext {
+            font-weight: bold;
+            margin-left: $fi-spacing-xs;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            border-top: 1px solid $fi-color-depth-secondary;
+            
+            &.active {
+                background: $fi-color-depth-secondary;
+                border-left: 4px solid $fi-color-brand-base;
+
+                a {
+                    color: $fi-color-brand-base;
+                    font-weight: bold;
+                    padding-left: calc($fi-spacing-inset-xl - 4px);
+                }
+            }
+
+            &:hover, &:active {
+                background: $fi-color-depth-secondary;
+            }
+
+            a {
+                text-decoration: none;
+                color: $fi-color-highlight-base;
+                display: flex;
+                padding: $fi-spacing-inset-l $fi-spacing-inset-xl;
+                &:hover, &:active {
+                    text-decoration: none;
+                    color: $fi-color-brand-base;
+                }
+            }
+        }
+    }
+}
+
+.sideNavSmallScreen {
+    cursor: pointer;
+    .navHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $fi-spacing-m;
+
+        .icon {
+            width: 25px;
+            height: 25px;
+        }
+
+        .navHeadertext {
+            font-weight: bold;
+            margin-left: $fi-spacing-xs;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            border-top: 1px solid $fi-color-depth-secondary;
+            
+            &.active {
+                background: $fi-color-depth-secondary;
+                border-left: 4px solid $fi-color-brand-base;
+
+                a {
+                    color: $fi-color-brand-base;
+                    font-weight: bold;
+                    padding-left: calc($fi-spacing-inset-xl - 4px);
+                }
+            }
+
+            &:hover, &:active {
+                background: $fi-color-depth-secondary;
+            }
+
+            a {
+                text-decoration: none;
+                color: $fi-color-highlight-base;
+                display: flex;
+                padding: $fi-spacing-inset-l $fi-spacing-inset-xl;
+                &:hover, &:active {
+                    text-decoration: none;
+                    color: $fi-color-brand-base;
+                }
+            }
+        }
+    }
+}

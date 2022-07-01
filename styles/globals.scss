@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
 @import 'suomifi-ui-components/dist/main.css';
-@import './_utilities.scss';
+@import '~suomifi-design-tokens/dist/tokens';
+@import './_utilities';
+@import './_breakpoints';
 
 body {
   margin: 0;
@@ -15,10 +17,14 @@ body {
 .fi-block.container {
   width: 1140px;
   margin: 0 auto;
+  padding: 0 $fi-spacing-xs;
+  @include from-lg {
+    padding: 0 $fi-spacing-s;
+  }
 }
 
 #content {
-  background: #f7f7f8;
+  background: $fi-color-depth-light3;
   display: flex;
   flex: 1;
 }

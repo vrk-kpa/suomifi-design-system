@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # Features/ideas
 
-## Folder structure idea by Ilkka
+## Folder structure
 
 ### Components
 
@@ -24,6 +24,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - Contains global CSS classes which can be used anywhere (like `.container`)
 - Also contains utility CSS classes like margin helpers. Created from suomifi-tokens
+- Breakpoints and their helper mixins
 
 ### Utils
 
@@ -41,10 +42,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 # Development
 
-First, run the development server:
+Run the development server:
 
 ```bash
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser

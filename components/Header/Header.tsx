@@ -15,7 +15,9 @@ const Header: React.FunctionComponent = () => {
           />
         </Link>
       </Block>
-      <Navbar />
+      <div className={styles.desktopNavContainer}>
+        <Navbar />
+      </div>
     </Block>
   );
 };

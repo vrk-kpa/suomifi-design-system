@@ -1,32 +1,30 @@
 @import '~suomifi-design-tokens/dist/tokens';
 
 .navbar {
-    border-top: 1px solid $fi-color-depth-light1;
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
 
-    ul {
-        list-style-type: none;
-        display: flex;
-        padding: 0;
-        margin: 0;
+    li {
+      margin: 0 $fi-spacing-xl 0 $fi-spacing-xs;
+      padding: $fi-spacing-inset-s 0;
 
-        li {
-            margin: 0 $fi-spacing-xl 0 $fi-spacing-xs;
-            padding: $fi-spacing-inset-s 0;
+      &:hover {
+        border-bottom: 4px solid $fi-color-brand-base;
+      }
 
-            &:hover {
-                border-bottom: 4px solid $fi-color-brand-base;
-            }
-
-            a {
-                @include fi-text-body-text;
-                padding: $fi-spacing-inset-m;
-                color: $fi-color-black-base;
-                text-decoration: none;
-            }
-        }
+      a {
+        @include fi-text-body-text;
+        padding: $fi-spacing-inset-m;
+        color: $fi-color-black-base;
+        text-decoration: none;
+      }
     }
+  }
 }
 
 .active {
-    border-bottom: 4px solid $fi-color-brand-base;
+  border-bottom: 4px solid $fi-color-brand-base;
 }

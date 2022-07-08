@@ -4,6 +4,11 @@
 @import './_utilities';
 @import './_breakpoints';
 
+:root {
+  /* CSS properties */
+  --content-max-width: 1140px;
+}
+
 body {
   margin: 0;
 }

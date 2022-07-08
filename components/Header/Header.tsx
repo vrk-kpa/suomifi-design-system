@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Block, Icon } from 'suomifi-ui-components';
 import styles from './Header.module.scss';
 import Navbar from './Navbar/Navbar';
+import MobileNavMenuButton from './MobileNavMenuButton/MobileNavMenuButton';
 
 const Header: React.FunctionComponent = () => {
   return (
@@ -16,15 +17,7 @@ const Header: React.FunctionComponent = () => {
             />
           </Link>
           <div className={styles.mobileNavContainer}>
-            {/** TODO: Refactor to own component */}
-            <button className={styles.mobileMenuButton}>
-              <Icon
-                className={styles.mobileMenuIcon}
-                icon="menu"
-                variant="secondaryNoBorder"
-                aria-label="Avaa paanavigaatio"
-              />
-            </button>
+            <MobileNavMenuButton />
           </div>
         </Block>
       </Block>

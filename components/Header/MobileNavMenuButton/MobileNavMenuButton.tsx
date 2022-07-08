@@ -10,12 +10,14 @@ const MobileNavMenuButton: React.FunctionComponent = () => {
   };
 
   return (
-    <button className={styles.mobileMenuButton} onClick={clickHandler}>
+    <button
+      className={styles.mobileMenuButton}
+      onClick={clickHandler}
+      aria-label="Avaa paanavigaatio"
+    >
       <Icon
         className={styles.mobileMenuIcon}
         icon={menuOpen ? 'close' : 'menu'}
-        variant="secondaryNoBorder"
-        aria-label="Avaa paanavigaatio"
       />
     </button>
   );

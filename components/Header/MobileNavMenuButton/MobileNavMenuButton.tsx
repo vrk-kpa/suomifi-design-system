@@ -14,6 +14,8 @@ const MobileNavMenuButton: React.FunctionComponent = () => {
       className={styles.mobileMenuButton}
       onClick={clickHandler}
       aria-label="Avaa paanavigaatio"
+      aria-expanded={menuOpen}
+      aria-haspopup={true}
     >
       <Icon
         className={styles.mobileMenuIcon}

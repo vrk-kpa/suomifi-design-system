@@ -2,7 +2,16 @@ import React, { useState } from 'react';
 import { Icon } from 'suomifi-ui-components';
 import styles from './MobileNavMenuButton.module.scss';
 
-const MobileNavMenuButton: React.FunctionComponent = () => {
+interface MobileNavMenuButtonProps {
+  /** For screenreader to read */
+  ariaLabel: string;
+}
+
+/** TODO: Actually open the menu and show links */
+const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
+  props,
+) => {
+  const { ariaLabel } = props;
   const [menuOpen, setMenuOpen] = useState(false);
 
   const clickHandler = () => {
@@ -13,7 +22,7 @@ const MobileNavMenuButton: React.FunctionComponent = () => {
     <button
       className={styles.mobileMenuButton}
       onClick={clickHandler}
-      aria-label="Avaa paanavigaatio"
+      aria-label={ariaLabel}
       aria-expanded={menuOpen}
       aria-haspopup={true}
     >

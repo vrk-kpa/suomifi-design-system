@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Block, Icon } from 'suomifi-ui-components';
+import { Block } from 'suomifi-ui-components';
 import styles from './Header.module.scss';
 import Navbar from './Navbar/Navbar';
 import MobileNavMenuButton from './MobileNavMenuButton/MobileNavMenuButton';
@@ -17,7 +17,7 @@ const Header: React.FunctionComponent = () => {
             />
           </Link>
           <div className={styles.mobileNavContainer}>
-            <MobileNavMenuButton />
+            <MobileNavMenuButton ariaLabel={'Avaa päänavigaation'} />
           </div>
         </Block>
       </Block>

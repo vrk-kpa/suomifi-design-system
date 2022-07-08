@@ -2406,10 +2406,10 @@ suomifi-icons@^6.2.0:
   resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-6.3.0.tgz#830634a9221e54c743a35fb876e60a6b99db9fca"
   integrity sha512-8LCMUmcBncBnb7KhrwMLRxnKnAWFvVPWdiCk0s8xZpv+FJgyOqSjtzyHjaWXaQhyQOAG5QtRAsMO49t79cha4w==
 
-suomifi-ui-components@^8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-8.0.1.tgz#8cf18db7455dbb56a5df12ce3db6a50c7880512c"
-  integrity sha512-CeDOXScdcxfPYlXUHqLoRD1Q8HlsAKIaAu2nMCtbs/Yq9W03KRKBDySay80Ga+sK13qD/dsmJjgsRhsXER+C1A==
+suomifi-ui-components@9.0.0-beta.2:
+  version "9.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-9.0.0-beta.2.tgz#0beedf1432672553981d12f5b7d4f02db0fce4c8"
+  integrity sha512-7N0WdxT4XwpoPDDOYG5NiqEukng2HRiGsfRJuCLYgfbm4IqtN52r3pKehzMI4pPuYLur1OhISDw7kxGkw3v5iw==
   dependencies:
     "@babel/runtime" "7.17.7"
     "@popperjs/core" "2.11.4"

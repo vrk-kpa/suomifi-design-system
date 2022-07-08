@@ -1,6 +1,8 @@
 @import '~suomifi-design-tokens/dist/tokens';
 
 .navbar {
+  width: 100%;
+
   ul {
     list-style-type: none;
     display: flex;

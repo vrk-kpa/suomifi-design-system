@@ -58,7 +58,7 @@ const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
   return (
     <div className={styles.wrapper}>
       <button
-        className={styles.button}
+        className={classnames(styles.button, 'absoluteFocus')}
         onClick={clickHandler}
         aria-label={ariaLabel}
         aria-expanded={menuOpen}
@@ -86,7 +86,9 @@ const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
                     router.pathname === item.path ? 'page' : undefined
                   }
                 >
-                  <Link href={item.path}>{item.title.toUpperCase()}</Link>
+                  <Link href={item.path}>
+                    <a className="absoluteFocus">{item.title.toUpperCase()}</a>
+                  </Link>
                 </li>
               ))}
             </ul>

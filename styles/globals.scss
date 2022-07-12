@@ -33,3 +33,24 @@ body {
   display: flex;
   flex: 1;
 }
+
+/* TODO: Use exported focus from tokens/comps instead ??? */
+.absoluteFocus {
+  &:focus {
+    outline: none;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      inset: -2px;
+      border-radius: 2px;
+      background-color: transparent;
+      border: 0px solid rgb(255, 255, 255);
+      box-sizing: border-box;
+      box-shadow: rgb(26 153 199) 0px 0px 0px 2px;
+      z-index: 9999;
+    }
+  }
+}

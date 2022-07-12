@@ -50,8 +50,8 @@
       padding: 0;
 
       li {
-        padding: 0 15px;
         line-height: 40px;
+        position: relative;
 
         &.active {
           background: $fi-color-depth-secondary;
@@ -80,11 +80,28 @@
           text-decoration: none;
           color: $fi-color-highlight-base;
           display: flex;
+          padding: 0 15px;
 
           &:hover,
           &:active {
             text-decoration: none;
             color: $fi-color-brand-base;
+          }
+
+          &:focus {
+            outline: 0px;
+            position: relative;
+          }
+
+          &:focus::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            background-color: transparent;
+            box-sizing: border-box;
+            z-index: 9999;
+            border-radius: 4px;
+            border: 3px solid rgb(26, 153, 199);
           }
         }
       }

@@ -3,39 +3,20 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import classnames from 'classnames';
 import { Icon } from 'suomifi-ui-components';
+import { NavItem } from '../../../interfaces/interfaces';
 import styles from './MobileNavMenuButton.module.scss';
-
-/**
- * TODO: getting items from props etc.
- */
-const navItems = [
-  {
-    title: 'Etusivu',
-    path: '/',
-  },
-  {
-    title: 'Tyylit',
-    path: '/styles',
-  },
-  {
-    title: 'Komponentit',
-    path: '/components',
-  },
-  {
-    title: 'Info',
-    path: '/info',
-  },
-];
 
 interface MobileNavMenuButtonProps {
   /** For screenreader to read */
   ariaLabel: string;
+  /** Items for the menu */
+  navItems: NavItem[];
 }
 
 const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
   props,
 ) => {
-  const { ariaLabel } = props;
+  const { ariaLabel, navItems } = props;
   const [menuOpen, setMenuOpen] = React.useState(false);
   const router = useRouter();
 

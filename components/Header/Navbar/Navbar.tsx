@@ -1,33 +1,21 @@
-import styles from "./Navbar.module.scss";
-import { useRouter } from "next/router";
-import Link from "next/link";
-import { Block } from "suomifi-ui-components";
-import { NavItem } from "../../../interfaces/interfaces";
+import styles from './Navbar.module.scss';
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { Block } from 'suomifi-ui-components';
+import { NavItem } from '../../../interfaces/interfaces';
 
-const Navbar: React.FunctionComponent = () => {
+interface NavbarProps {
+  /** Items for the menu */
+  navItems: NavItem[];
+}
+
+const Navbar: React.FunctionComponent<NavbarProps> = (props) => {
+  const { navItems } = props;
   const router = useRouter();
-  const navItems: NavItem[] = [
-    {
-      title: "Etusivu",
-      path: "/",
-    },
-    {
-      title: "Tyylit",
-      path: "/styles",
-    },
-    {
-      title: "Komponentit",
-      path: "/components",
-    },
-    {
-      title: "Taustatietoa",
-      path: "/info",
-    },
-  ];
 
   const isRouteActive = (path: string): boolean => {
-    if (path === "/") {
-      return router.pathname === "/";
+    if (path === '/') {
+      return router.pathname === '/';
     }
     return router.pathname.includes(path);
   };
@@ -39,7 +27,7 @@ const Navbar: React.FunctionComponent = () => {
           <ul>
             {navItems.map((item) => (
               <li
-                className={isRouteActive(item.path) ? styles.active : ""}
+                className={isRouteActive(item.path) ? styles.active : ''}
                 key={item.title}
               >
                 <Link href={item.path}>{item.title}</Link>

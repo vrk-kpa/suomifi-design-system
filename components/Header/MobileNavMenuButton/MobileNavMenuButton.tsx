@@ -32,18 +32,12 @@ interface MobileNavMenuButtonProps {
   ariaLabel: string;
 }
 
-/** TODO: Actually open the menu and show links */
 const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
   props,
 ) => {
   const { ariaLabel } = props;
   const [menuOpen, setMenuOpen] = React.useState(false);
   const router = useRouter();
-
-  const clickHandler = () => {
-    console.log('mobileNaV clickandler:', menuOpen);
-    setMenuOpen(!menuOpen);
-  };
 
   // If the current path is only partially the current one. For e.g when at /components/button.
   const isPartiallyActive = (to: string, pathName: string) => {
@@ -59,7 +53,7 @@ const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
     <div className={styles.wrapper}>
       <button
         className={classnames(styles.button, 'absoluteFocus')}
-        onClick={clickHandler}
+        onClick={() => setMenuOpen(!menuOpen)}
         aria-label={ariaLabel}
         aria-expanded={menuOpen}
         aria-haspopup={true}

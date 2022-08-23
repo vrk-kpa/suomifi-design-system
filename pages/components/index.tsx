@@ -1,43 +1,32 @@
-import type { GetStaticProps, NextPage } from "next";
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Head from "next/head";
-
+import type { NextPage } from 'next';
+import { useTranslation } from 'next-export-i18n';
+import Head from 'next/head';
 import {
   Block,
   Button,
   Heading,
   Paragraph,
   SuomifiThemeProvider,
-} from "suomifi-ui-components";
-import ComponentExample from "../../components/ComponentExample/ComponentExample";
-import CardLayout from "../../layouts/CardLayout/CardLayout";
-import { navItems } from "../../utils/components-sidenav";
-import { themeExampleJSX } from "../../utils/complicatedCodeExamples";
-
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const localeToBeUsed = locale ? locale : "fi";
-  return {
-    props: {
-      ...(await serverSideTranslations(localeToBeUsed)),
-    },
-  };
-};
+} from 'suomifi-ui-components';
+import ComponentExample from '../../components/ComponentExample/ComponentExample';
+import CardLayout from '../../layouts/CardLayout/CardLayout';
+import { navItems } from '../../utils/components-sidenav';
+import { themeExampleJSX } from '../../utils/complicatedCodeExamples';
 
 const customTheme = {
   gradients: {
-    highlightBaseToHighlightDark1: "linear-gradient(to top, orange, red);",
-    highlightLight1ToHighlightBase: "linear-gradient(to top, crimson, red);",
+    highlightBaseToHighlightDark1: 'linear-gradient(to top, orange, red);',
+    highlightLight1ToHighlightBase: 'linear-gradient(to top, crimson, red);',
   },
   colors: {
-    highlightDark1: "darkred",
-    highlightBase: "blue",
-    highlightLight1: "green",
+    highlightDark1: 'darkred',
+    highlightBase: 'blue',
+    highlightLight1: 'green',
   },
 };
 
 const FrontPage: NextPage = () => {
-  const { t } = useTranslation(["common", "componentsMainPage"]);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -46,22 +35,21 @@ const FrontPage: NextPage = () => {
       </Head>
       <CardLayout navItems={navItems}>
         <Heading variant="h1" className="mb-xl">
-          {" "}
-          Komponenttien käyttöohje
+          {t('components_main_page.component_guide')}
         </Heading>
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t("componentsMainPage:customizing_theme.heading")}
+            {t('components_main_page.customizing_theme.heading')}
           </Heading>
           <ComponentExample codeString={themeExampleJSX}>
             <SuomifiThemeProvider theme={customTheme}>
               <Button>
-                {t("componentsMainPage:customizing_theme.buttonText")}
+                {t('components_main_page.customizing_theme.buttonText')}
               </Button>
             </SuomifiThemeProvider>
           </ComponentExample>
           <Paragraph className="mt-xl">
-            {t("componentsMainPage:customizing_theme.text")}
+            {t('components_main_page.customizing_theme.text')}
           </Paragraph>
         </Block>
       </CardLayout>

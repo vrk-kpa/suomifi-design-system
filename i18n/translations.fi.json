@@ -1,0 +1,35 @@
+{
+    "common": {
+        "accessibility_and_usability": "Saavutettavuus ja käytettävyys",
+        "see_technical_documentation_of_component": "Katso komponentin tekninen dokumentaatio",
+        "opens_in_a_new_tab": "Avautuu uudessa välilehdessä"
+    },
+    "components_main_page": {
+        "component_guide": "Komponenttien käyttöohje",
+        "customizing_theme": {
+            "heading": "Teeman kustomoiminen",
+            "text": "Kirjaston käyttämää oletusteemaa voi myös tarvittaessa muokata. Teeman muokkaaminen vaikuttaa kaikkiin muokatun teeman sisältämiin komponentteihin.",
+            "buttonText": "Kustomoitu teema"
+        }
+    },
+    "components": {
+        "component_usage_info": "Komponenttien käyttöohje",
+        "button": "Painike (Button)"
+    },
+    "button_page": {
+        "site_title": "Painike (Button) | Suomi.fi Design System",
+        "heading": "Painike (Button)",
+        "ingress": "Painike käynnistää toiminnon. Painiketta voidaan käyttää esimerkiksi siirtymiseen toiseen näkymään, tai painikkeella voidaan hyväksyä toiminto.",
+        "accessibility_list": {
+            "point_1": "Painike käynnistää yleensä toiminnon. Joissakin erityistapauksissa painiketta voidaan käyttää normaalin linkkityylin asemesta, kun käyttäjä ohjataan toiselle sivulle.",
+            "point_2": "Painikkeet korostuvat helposti käyttöliittymässä ja siksi painikkeiden määrä sivulla kannattaa pitää rajallisena."
+        },
+        "what_does_the_component_contain": {
+            "heading": "Mistä komponentti koostuu",
+            "text": "Teksti kertoo painikkeen toiminnon. Toimintopainike kertoo vain olennaisen toiminnon, jonka se toteuttaa, esimerkiksi \"Valitse\" tai \"Seuraava\". Jos toimintopainikkeen nimi on yli kolme sanaa pitkä, mieti miten sitä voidaan lyhentää. Painikkeen teksti alkaa verbillä sekä aina isolla alkukirjaimella."
+        },
+        "size_and_usage": {
+            "heading": "Koko ja käyttö"
+        }
+    }
+}

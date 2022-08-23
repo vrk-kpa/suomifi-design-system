@@ -1,12 +1,10 @@
-import "../styles/globals.scss";
-import type { AppProps } from "next/app";
+import '../styles/globals.scss';
+import type { AppProps } from 'next/app';
 
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
-import { Block } from "suomifi-ui-components";
-import Head from "next/head";
-
-import { appWithTranslation } from "next-i18next";
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import { Block } from 'suomifi-ui-components';
+import Head from 'next/head';
 
 function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
   return (
@@ -23,4 +21,4 @@ function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default appWithTranslation(SuomifiDesignSystemSiteApp);
+export default SuomifiDesignSystemSiteApp;

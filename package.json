@@ -74,7 +74,7 @@
     "gh-pages": "4.0.0",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
-    "prettier": "2.6.0",
+    "prettier": "2.7.1",
     "prettier-stylelint": "0.4.2",
     "rimraf": "3.0.2",
     "stylelint": "13.3.1",

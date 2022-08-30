@@ -8,8 +8,8 @@ import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
-import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import { Tooltip } from 'components/ExampleComponents';
+import { Paragraph } from 'components/ResponsiveComponents';
+import { Tooltip, Heading, Text } from 'components/ExampleComponents';
 
 const Page = (): React.ReactElement => {
   const [anchorElement, setAnchorElement] = useState(null);

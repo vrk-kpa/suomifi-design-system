@@ -2,7 +2,9 @@
     "common": {
         "accessibility_and_usability": "Saavutettavuus ja käytettävyys",
         "see_technical_documentation_of_component": "Katso komponentin tekninen dokumentaatio",
-        "opens_in_a_new_tab": "Avautuu uudessa välilehdessä"
+        "opens_in_a_new_tab": "Avautuu uudessa välilehdessä",
+        "skip_to_main_content": "Siirry pääsisältöön",
+        "skip_to_side_navigation": "Siirry sivunavigaatioon"
     },
     "components_main_page": {
         "component_guide": "Komponenttien käyttöohje",

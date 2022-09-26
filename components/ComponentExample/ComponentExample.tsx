@@ -1,29 +1,28 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 import {
-  Button,
   Expander,
   ExpanderContent,
   ExpanderTitleButton,
-} from "suomifi-ui-components";
-import MobileDevice from "../MobileDevice/MobileDevice";
-import ShowcaseBox from "../ShowcaseBox/ShowcaseBox";
-import React from "react";
-import ComponentCode from "./ComponentCode";
+} from 'suomifi-ui-components';
+import MobileDevice from '../MobileDevice/MobileDevice';
+import ShowcaseBox from '../ShowcaseBox/ShowcaseBox';
+import React from 'react';
+import ComponentCode from './ComponentCode';
 
-type ComponentExampleVariant = "normal" | "mobile_device";
+type ComponentExampleVariant = 'normal' | 'mobile_device';
 
 interface ComponentExampleProps {
   filterPropsInExample?: string[];
   variant?: ComponentExampleVariant;
-  children: ReactNode[] | ReactNode;
+  children: ReactNode;
   codeString?: string;
 }
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
   React.Children.map(children, (child) =>
-    !!child.type && (child.type === "div" || child.type.displayName === "div")
+    !!child.type && (child.type === 'div' || child.type.displayName === 'div')
       ? getWithoutWrappers(child.props.children)
-      : child
+      : child,
   );
 
 const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
@@ -33,7 +32,7 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
   codeString,
 }) => {
   const showcase =
-    variant === "mobile_device" ? (
+    variant === 'mobile_device' ? (
       <ShowcaseBox style={{ paddingBottom: 0 }}>
         <MobileDevice>{children}</MobileDevice>
       </ShowcaseBox>
@@ -54,7 +53,7 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
                 key={index}
                 filterProps={filterPropsInExample}
                 style={{
-                  paddingTop: index === 0 && !codeString ? "1rem" : 0,
+                  paddingTop: index === 0 && !codeString ? '1rem' : 0,
                 }}
               >
                 {child}

@@ -1,8 +1,8 @@
-import { ReactNode } from "react";
-import styles from "./InfoBox.module.scss";
+import { ReactNode } from 'react';
+import styles from './InfoBox.module.scss';
 
 interface InfoBoxProps {
-  children: ReactNode[];
+  children: ReactNode;
 }
 
 const InfoBox: React.FunctionComponent<InfoBoxProps> = ({ children }) => {

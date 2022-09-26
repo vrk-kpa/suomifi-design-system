@@ -12,6 +12,9 @@
     li {
       margin: 0 $fi-spacing-xl 0 $fi-spacing-xs;
       padding: $fi-spacing-inset-s 0;
+      display: block;
+      box-sizing: border-box;
+      min-height: 43px;
 
       &:hover {
         border-bottom: 4px solid $fi-color-brand-base;

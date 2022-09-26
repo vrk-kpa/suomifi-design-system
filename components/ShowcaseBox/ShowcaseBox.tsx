@@ -1,8 +1,8 @@
-import { CSSProperties, ReactNode } from "react";
-import styles from "./ShowCaseBox.module.scss";
+import { CSSProperties, ReactNode } from 'react';
+import styles from './ShowCaseBox.module.scss';
 
 interface ShowcaseBoxProps {
-  children: ReactNode | ReactNode[];
+  children: ReactNode;
   style?: CSSProperties;
 }
 

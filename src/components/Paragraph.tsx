@@ -1,4 +1,4 @@
-import React, { Component, CSSProperties } from 'react';
+import React, { Component, CSSProperties, ReactNode } from 'react';
 import {
   Paragraph as OrigParagraph,
   defaultSuomifiTheme,
@@ -44,6 +44,7 @@ interface Props {
   smallScreen?: boolean;
   style?: CSSProperties;
   variant?: 'lead' | 'secondary';
+  children: ReactNode;
 }
 
 export class Paragraph extends CustomParagraph {

@@ -9,7 +9,7 @@ import Section from 'components/Section';
 import {
   Link as ExampleLink,
   ExternalLink as ExampleExternalLink,
-} from 'components/ExampleComponents';
+} from 'suomifi-ui-components';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';

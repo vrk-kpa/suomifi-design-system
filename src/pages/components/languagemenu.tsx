@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 import languageMenuContent from '../../../locale/fi/languagemenu.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import { LanguageMenu, LanguageMenuItem } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+import { LanguageMenu, LanguageMenuItem } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => {
   const [language, setLanguage] = useState(

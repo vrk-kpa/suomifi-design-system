@@ -8,8 +8,12 @@ import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
-import { Paragraph } from 'components/ResponsiveComponents';
-import { Tooltip, Heading, Text } from 'components/ExampleComponents';
+import {
+  Paragraph,
+  Heading as ResponsiveHeading,
+  Text as ResponsiveText,
+} from 'components/ResponsiveComponents';
+import { Tooltip, Heading, Text } from 'suomifi-ui-components';
 
 const Page = (): React.ReactElement => {
   const [anchorElement, setAnchorElement] = useState(null);
@@ -18,10 +22,10 @@ const Page = (): React.ReactElement => {
   return (
     <Layout sideNavData={sideNavData}>
       <SEO title={tooltipContent.title} />
-      <Heading variant="h1">{tooltipContent.title}</Heading>
+      <ResponsiveHeading variant="h1">{tooltipContent.title}</ResponsiveHeading>
 
       <Paragraph variant="lead">
-        <Text variant="lead">{tooltipContent.intro}</Text>
+        <ResponsiveText variant="lead">{tooltipContent.intro}</ResponsiveText>
       </Paragraph>
 
       <ComponentDescription>

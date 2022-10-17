@@ -1,12 +1,11 @@
 import React from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, Alert, InlineAlert } from 'suomifi-ui-components';
 
 import alertContent from '../../../locale/fi/alert.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import { Alert, InlineAlert } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import Section from 'components/Section';
 import ComponentDescription from 'components/ComponentDescription';

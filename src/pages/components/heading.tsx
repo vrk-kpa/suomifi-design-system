@@ -13,8 +13,7 @@ import {
 } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import { Heading } from 'components/ExampleComponents';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, Heading } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>

@@ -3,13 +3,13 @@ import React from 'react';
 import breadcrumbContent from '../../../locale/fi/breadcrumb.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
-import { Breadcrumb, BreadcrumbLink } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
+import { Breadcrumb, BreadcrumbLink } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>

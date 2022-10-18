@@ -9,7 +9,7 @@ import NoteBox from 'components/NoteBox';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import { Dropdown, DropdownItem } from 'components/ExampleComponents';
+import { Dropdown, DropdownItem } from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>

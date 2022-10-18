@@ -1,5 +1,11 @@
 import React from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import {
+  defaultSuomifiTheme,
+  Expander,
+  ExpanderContent,
+  ExpanderGroup,
+  ExpanderTitleButton,
+} from 'suomifi-ui-components';
 
 import expanderContent from '../../../locale/fi/expander.json';
 import Layout from 'components/layout';
@@ -10,12 +16,6 @@ import NoteBox from 'components/NoteBox';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import {
-  Expander,
-  ExpanderGroup,
-  ExpanderTitleButton,
-  ExpanderContent,
-} from 'components/ExampleComponents';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>

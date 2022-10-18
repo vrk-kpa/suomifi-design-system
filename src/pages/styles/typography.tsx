@@ -1,5 +1,5 @@
 import React from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, Text, Heading } from 'suomifi-ui-components';
 
 import typographyContent from '../../../locale/fi/typography.json';
 import Layout from 'components/layout';
@@ -14,7 +14,6 @@ import {
 } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import { Text, Heading } from 'components/ExampleComponents';
 
 interface ExampleBlockProps {
   title: string;

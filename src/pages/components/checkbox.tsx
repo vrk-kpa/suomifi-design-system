@@ -6,11 +6,14 @@ import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import { Checkbox, CheckboxGroup } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import Section from 'components/Section';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import {
+  Checkbox,
+  CheckboxGroup,
+  defaultSuomifiTheme,
+} from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>
@@ -63,7 +66,7 @@ const Page = (): JSX.Element => (
       <ComponentExample>
         <CheckboxGroup
           labelText={checkboxContent['example.group.label']}
-          hintText={checkboxContent['example.group.hint']}
+          groupHintText={checkboxContent['example.group.hint']}
           groupStatus="error"
           groupStatusText={checkboxContent['example.group.status.text']}
         >

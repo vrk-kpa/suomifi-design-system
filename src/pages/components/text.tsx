@@ -7,8 +7,12 @@ import ComponentDescription from 'components/ComponentDescription';
 import sideNavData from 'config/sidenav/components';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
-import { Heading, Paragraph } from 'components/ResponsiveComponents';
-import { Text } from 'components/ExampleComponents';
+import {
+  Heading,
+  Paragraph,
+  Text as ResponsiveText,
+} from 'components/ResponsiveComponents';
+import { Text } from 'suomifi-ui-components';
 
 interface ExampleBlockProps {
   title: string;
@@ -45,7 +49,7 @@ const Page: React.FC = (): React.ReactElement => {
       <Heading variant="h1">{textContent.title}</Heading>
 
       <Paragraph variant="lead">
-        <Text variant="lead">{textContent.intro}</Text>
+        <ResponsiveText variant="lead">{textContent.intro}</ResponsiveText>
       </Paragraph>
 
       {textContent.sections.map((section, index) => (

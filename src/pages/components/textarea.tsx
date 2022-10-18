@@ -1,5 +1,5 @@
 import React from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, Textarea } from 'suomifi-ui-components';
 
 import textareaContent from '../../../locale/fi/textarea.json';
 import Layout from 'components/layout';
@@ -10,7 +10,6 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
-import { Textarea } from 'components/ExampleComponents';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>

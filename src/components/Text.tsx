@@ -1,12 +1,10 @@
-import React from 'react';
-import { Text as OrigText } from 'suomifi-ui-components';
+import { Component } from 'react';
+import { Text as OrigText, TextProps } from 'suomifi-ui-components';
 
-import { addResponsiveness } from 'components/ResponsiveComponentsUtil';
+import { getResponsiveComponent } from 'components/ResponsiveComponentsUtil';
 
-export class Text extends OrigText {
+export class Text extends Component<TextProps> {
   public render(): JSX.Element {
-    // TODO put back when smallScreen style updated in component: return getResponsiveComponent(OrigText)(this.props)
-    return <OrigText {...this.props} />;
+    return getResponsiveComponent(OrigText)(this.props);
   }
 }
-addResponsiveness(Text, OrigText);

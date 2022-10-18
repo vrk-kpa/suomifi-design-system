@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 
 import modalContent from '../../../locale/fi/modal.json';
-import { defaultSuomifiTheme, ModalProps } from 'suomifi-ui-components';
-import Layout from 'components/layout';
-import SEO from 'components/seo';
-import sideNavData from 'config/sidenav/components';
-import NoteBox from 'components/NoteBox';
 import {
+  defaultSuomifiTheme,
+  ModalProps,
   Text,
   Paragraph,
   Modal,
@@ -20,7 +17,11 @@ import {
   ExpanderTitle,
   Checkbox,
   VisuallyHidden,
-} from 'components/ExampleComponents';
+} from 'suomifi-ui-components';
+import Layout from 'components/layout';
+import SEO from 'components/seo';
+import sideNavData from 'config/sidenav/components';
+import NoteBox from 'components/NoteBox';
 import {
   Heading,
   Text as ResponsiveText,

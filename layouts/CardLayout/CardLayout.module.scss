@@ -21,6 +21,17 @@
             display: none;
         }
         width: 350px;
+
+        .navHeader {
+            display: flex;
+            align-items: center;
+            padding: $fi-spacing-xs;
+
+            .navHeadertext {
+                font-weight: bold;
+                margin-left: $fi-spacing-xs;
+            }
+        }
     }
     .right {
         flex: 1;
@@ -29,10 +40,22 @@
 }
 
 .smallScreenNavContainer {
-    background: $fi-color-white-base;
-    border: 1px solid $fi-color-depth-light1;
-    margin-top: $fi-spacing-m;
     @include from-lg {
         display: none;
     }
+
+    background: $fi-color-white-base;
+    border: 1px solid $fi-color-depth-light1;
+    margin-top: $fi-spacing-m;
+
+    .navHeadertext {
+        font-weight: bold;
+        margin-left: $fi-spacing-xs;
+    }
 }
+
+.navStaticIcon {
+    width: 40px !important; // This is in order to override styles from ServiceNavigation
+    height: 40px !important;
+}
+

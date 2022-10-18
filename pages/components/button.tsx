@@ -24,12 +24,14 @@ const ButtonPage: NextPage = () => {
       </Head>
       <CardLayout navItems={navItems}>
         <Heading variant="h1">{t('button_page.heading')}</Heading>
-        <ExternalLink
-          href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Button"
-          labelNewWindow={t('common.opens_in_a_new_tab')}
-        >
-          {t('common.see_technical_documentation_of_component')}
-        </ExternalLink>
+        <Block variant="div" mt="m">
+          <ExternalLink
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Button"
+            labelNewWindow={t('common.opens_in_a_new_tab')}
+          >
+            {t('common.see_technical_documentation_of_component')}
+          </ExternalLink>
+        </Block>
         <Paragraph className="my-xl">
           <Text variant="lead">{t('button_page.ingress')}</Text>
         </Paragraph>

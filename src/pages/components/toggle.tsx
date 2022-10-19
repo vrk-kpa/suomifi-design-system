@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import {
+  defaultSuomifiTheme,
+  ToggleButton,
+  ToggleInput,
+} from 'suomifi-ui-components';
 
 import toggleContent from '../../../locale/fi/toggle.json';
 import Layout from 'components/layout';
@@ -10,7 +14,6 @@ import NoteBox from 'components/NoteBox';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import { ToggleButton, ToggleInput } from 'components/ExampleComponents';
 
 const Page = (): React.ReactElement => {
   const [isButtonChecked, setButtonChecked] = useState(false);

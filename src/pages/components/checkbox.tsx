@@ -6,11 +6,14 @@ import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import { Checkbox } from 'components/ExampleComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import Section from 'components/Section';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import {
+  Checkbox,
+  CheckboxGroup,
+  defaultSuomifiTheme,
+} from 'suomifi-ui-components';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>
@@ -51,6 +54,32 @@ const Page = (): JSX.Element => (
         <Checkbox variant="large">
           {checkboxContent['example.large.content']}
         </Checkbox>
+      </ComponentExample>
+    </ComponentDescription>
+
+    <ComponentDescription
+      mainTitle={checkboxContent['example.group.title']}
+      description={checkboxContent['example.group.description']}
+      exampleFirst
+      filterProps={[]}
+    >
+      <ComponentExample>
+        <CheckboxGroup
+          labelText={checkboxContent['example.group.label']}
+          groupHintText={checkboxContent['example.group.hint']}
+          groupStatus="error"
+          groupStatusText={checkboxContent['example.group.status.text']}
+        >
+          <Checkbox>
+            {checkboxContent['example.group.content.label.email']}
+          </Checkbox>
+          <Checkbox>
+            {checkboxContent['example.group.content.label.phone']}
+          </Checkbox>
+          <Checkbox>
+            {checkboxContent['example.group.content.label.visit']}
+          </Checkbox>
+        </CheckboxGroup>
       </ComponentExample>
     </ComponentDescription>
 

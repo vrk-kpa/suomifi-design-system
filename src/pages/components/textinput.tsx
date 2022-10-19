@@ -1,5 +1,5 @@
 import React from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, TextInput } from 'suomifi-ui-components';
 
 import textInputContent from '../../../locale/fi/textinput.json';
 import Layout from 'components/layout';
@@ -10,7 +10,6 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
-import { TextInput } from 'components/ExampleComponents';
 
 const Page = (): React.ReactElement => {
   const [errorState, setErrorState] = React.useState(true);

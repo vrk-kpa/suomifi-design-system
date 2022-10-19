@@ -9,8 +9,8 @@ import Section from 'components/Section';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import { Block } from 'components/ExampleComponents';
 import NotificationBox from 'components/NotificationBox';
+import { Block } from 'suomifi-ui-components';
 
 const Page: React.FC = (): React.ReactElement => {
   return (

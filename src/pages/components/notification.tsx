@@ -1,17 +1,15 @@
 import React from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { defaultSuomifiTheme, Notification, Link } from 'suomifi-ui-components';
 
 import notificationContent from '../../../locale/fi/notification.json';
 import Layout from 'components/layout';
 import SEO from 'components/seo';
 import sideNavData from 'config/sidenav/components';
 import NoteBox from 'components/NoteBox';
-import { Notification, Link } from 'components/ExampleComponents';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import Section from 'components/Section';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
-import { Example } from 'examples/components';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>

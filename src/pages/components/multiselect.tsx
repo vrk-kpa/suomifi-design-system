@@ -10,7 +10,7 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import NotificationBox from 'components/NotificationBox';
-import { MultiSelect } from 'components/ExampleComponents';
+import { MultiSelect } from 'suomifi-ui-components';
 
 const Page: React.FC = (): React.ReactElement => {
   const tools = [

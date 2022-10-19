@@ -5,6 +5,8 @@ import {
   IconProps,
   StaticIconProps,
   ExternalLink,
+  Icon as SuomifiIcon,
+  StaticIcon as SuomifiStaticIcon,
 } from 'suomifi-ui-components';
 
 import iconContent from '../../../locale/fi/icon.json';
@@ -16,10 +18,6 @@ import Section from 'components/Section';
 import NoteBox from 'components/NoteBox';
 import ComponentExample from 'components/ComponentExample';
 import { Heading, Paragraph, Text } from 'components/ResponsiveComponents';
-import {
-  Icon as SuomifiIcon,
-  StaticIcon as SuomifiStaticIcon,
-} from 'components/ExampleComponents';
 
 /**
  * Wrapper to show all icons as bigger for better visiblity

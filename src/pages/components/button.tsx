@@ -1,5 +1,5 @@
 import React from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import { Button, defaultSuomifiTheme } from 'suomifi-ui-components';
 
 import buttonContent from '../../../locale/fi/button.json';
 import Layout from 'components/layout';
@@ -11,7 +11,6 @@ import Section from 'components/Section';
 import ComponentExample from 'components/ComponentExample';
 import MobileDevice from 'components/MobileDevice';
 import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
-import { Button } from 'components/ExampleComponents';
 
 const ExampleWrapper = ({
   children,

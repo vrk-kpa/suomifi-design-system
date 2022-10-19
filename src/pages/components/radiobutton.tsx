@@ -1,5 +1,9 @@
 import React from 'react';
-import { defaultSuomifiTheme } from 'suomifi-ui-components';
+import {
+  defaultSuomifiTheme,
+  RadioButton,
+  RadioButtonGroup,
+} from 'suomifi-ui-components';
 
 import radioButtonContent from '../../../locale/fi/radiobutton.json';
 import Layout from 'components/layout';
@@ -10,7 +14,6 @@ import { Heading, Text, Paragraph } from 'components/ResponsiveComponents';
 import ComponentDescription from 'components/ComponentDescription';
 import ComponentExample from 'components/ComponentExample';
 import Section from 'components/Section';
-import { RadioButton, RadioButtonGroup } from 'components/ExampleComponents';
 
 const Page = (): JSX.Element => (
   <Layout sideNavData={sideNavData}>
@@ -66,7 +69,7 @@ const Page = (): JSX.Element => (
           name="test-large-group"
           defaultValue="default-radio"
           labelText={radioButtonContent['example.default.title']}
-          hintText={radioButtonContent['example.large.groupHint']}
+          groupHintText={radioButtonContent['example.large.groupHint']}
         >
           <RadioButton variant="large" value="default-radio">
             {radioButtonContent['example.default.content']}

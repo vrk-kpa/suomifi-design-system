@@ -6,6 +6,11 @@
         "skip_to_main_content": "Siirry pääsisältöön",
         "skip_to_side_navigation": "Siirry sivunavigaatioon"
     },
+    "footer": {
+        "left_text": "Suomi.fi Design System -kirjaston kehittämisestä vastaa Digi- ja väestötietovirasto.",
+        "cookies": "Evästekäytännöt",
+        "accessibility": "Saavutettavuusseloste"
+    },
     "components_main_page": {
         "component_guide": "Komponenttien käyttöohje",
         "customizing_theme": {

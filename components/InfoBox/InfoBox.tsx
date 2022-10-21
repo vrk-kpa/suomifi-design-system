@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import { Block } from 'suomifi-ui-components';
 import styles from './InfoBox.module.scss';
 
 interface InfoBoxProps {
@@ -6,7 +7,11 @@ interface InfoBoxProps {
 }
 
 const InfoBox: React.FunctionComponent<InfoBoxProps> = ({ children }) => {
-  return <div className={styles.infoBox}>{children}</div>;
+  return (
+    <Block variant="div" className={styles.infoBox}>
+      {children}
+    </Block>
+  );
 };
 
 export default InfoBox;

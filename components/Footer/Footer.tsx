@@ -1,10 +1,11 @@
 import { useTranslation } from 'next-export-i18n';
-import style from 'react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark';
+import Link from 'next/link';
 import {
   Block,
   ExternalLink,
-  Link,
   LogoIcon,
+  RouterLink,
+  Link as SuomifiLink,
   Text,
 } from 'suomifi-ui-components';
 import GitHubLogo from '../../assets/icons/github.svg';
@@ -16,13 +17,13 @@ const Footer: React.FunctionComponent = () => {
     <Block variant="footer" className={styles.footer}>
       <Block className="container">
         <Block>
-          <Link href="https://suomi.fi" className={styles.suomifiLink}>
+          <SuomifiLink href="https://suomi.fi" className={styles.suomifiLink}>
             <LogoIcon
               icon="horizontal"
               alt="Suomi.fi"
               className={styles.logo}
             />
-          </Link>
+          </SuomifiLink>
         </Block>
         <Block>
           <Block variant="div" className={styles.texts}>
@@ -30,11 +31,15 @@ const Footer: React.FunctionComponent = () => {
               <Text>{t('footer.left_text')}</Text>
             </Block>
             <Block className={styles.links}>
-              <Link href="/">{t('footer.cookies')}</Link>
-              <Link href="/">{t('footer.accessibility')}</Link>
+              <Link href="/privacy-statement" passHref>
+                <RouterLink>{t('footer.cookies')}</RouterLink>
+              </Link>
+              <Link href="/accessibility-statement" passHref>
+                <RouterLink>{t('footer.accessibility')}</RouterLink>
+              </Link>
               <ExternalLink
                 href="https://github.com/vrk-kpa/suomifi-ui-components"
-                labelNewWindow="Avautuu uudessa välilehdessä"
+                labelNewWindow={t('common.opens_in_a_new_tab')}
                 className={styles.githubLink}
               >
                 <span className="flex align-center">

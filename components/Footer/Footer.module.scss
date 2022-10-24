@@ -36,6 +36,7 @@
         display: flex;
         gap: $fi-spacing-l;
         justify-content: flex-end;
+        align-items: flex-start;
         flex-wrap: wrap;
         @include upto-md {
             margin-top: $fi-spacing-xl;
@@ -46,11 +47,10 @@
     .githubLink {
         display: flex;
         align-items: center;
-        max-height: 18px;
 
         .githubLogo {
-            width: 2rem;
-            height: 2rem; 
+            width: 1.3rem;
+            height: 1.3rem; 
             margin-right: $fi-spacing-inset-m;
         }
     

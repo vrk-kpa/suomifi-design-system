@@ -7,9 +7,43 @@
         "skip_to_side_navigation": "Siirry sivunavigaatioon"
     },
     "footer": {
-        "left_text": "Suomi.fi Design System -kirjaston kehittämisestä vastaa Digi- ja väestötietovirasto.",
+        "left_text": "Suomi.fi Design Systemin kehittämisestä vastaa Digi- ja väestötietovirasto.",
         "cookies": "Evästekäytännöt",
         "accessibility": "Saavutettavuusseloste"
+    },
+    "privacy_statement": {
+        "heading": "Evästekäytännöt",
+        "paragraph_1": "Designsystem.suomi.fi -sivusto tallentaa käyttäjän vierailusta käyttäjän selaimen muistiin tietoja, joita se vaatii toimiakseen. Näitä tietoja ovat esimerkiksi käyttäjän sijainti sivustolla sekä kielivalinta.",
+        "paragraph_2": "Näitä tietoja ei lähetetä eteenpäin, eikä käsitellä tai talleteta siten, että yksittäinen käyttäjä olisi tunnistettavissa. Voit estää tietojen tallentamisen selaimesi evästeasetuksista tai asentamalla tähän tarkoitetun lisäosan selaimeesi. Evästeitä saatetaan käyttää välttämättömänä osana sähköisen palvelun tarjoamista. Tällaisten evästeiden estäminen saattaa estää samalla myös sähköisen palvelun käytön."
+    },
+    "accessibility_statement": {
+        "heading": "Suomi.fi Design Systemin saavutettavuusseloste",
+        "paragraph_1": "Tässä saavutettavuusselosteessa kerrotaan, miten Suomi.fi Design System -sivustolla noudatetaan lakia digitaalisten palvelujen tarjoamisesta, mitä puutteita sivuston saavutettavuudessa on ja miten voit antaa meille palautetta saavutettavuusongelmista. Seloste on laadittu 19.9.2019.",
+        "paragraph_2": "Tästä verkkopalvelusta vastaa Digi- ja väestötietovirasto. Haluamme, että mahdollisimman moni käyttäjä pystyy käyttämään digitaalisia palvelujamme. Otamme saavutettavuuden huomioon digitaalisten palvelujen kehityksessä. Palvelujen saavutettavuutta arvioidaan säännöllisesti osana suunnittelu- ja kehitystyötä.",
+        "how_accessible_are_pages": {
+            "heading": "Miten saavutettavia sivut ovat?",
+            "paragraph": "Tämä sivusto täyttää lain vaatimat A- ja AA-tason saavutettavuuskriteerit (WCAG-kriteeristö 2.1)."
+        },
+        "notice_problems": {
+            "heading": "Huomasitko puutteita saavutettavuudessa?",
+            "paragraph": "Pyrimme jatkuvasti huolehtimaan saavutettavuudesta. Jos löydät ongelmia, ilmoita niistä meille ja teemme parhaamme puutteiden korjaamiseksi. Vastaamme mahdollisimman pian tai viimeistään kahden viikon sisällä. Voit ottaa yhteyttä sähköpostitse osoitteella saavutettavuus(at)dvv.fi."
+        },
+        "supervision": {
+            "heading": "Saavutettavuuden valvonta",
+            "paragraph": "Etelä-Suomen aluehallintovirasto valvoo saavutettavuusvaatimusten toteutumista. Jos et ole tyytyväinen saamaasi vastaukseen tai et saa vastausta lainkaan kahden viikon aikana, voit antaa palautteen Etelä-Suomen aluehallintovirastoon. Etelä-Suomen aluehallintoviraston sivulla kerrotaan tarkasti, miten valituksen voi tehdä ja miten asia käsitellään."
+        },
+        "contacts": {
+            "heading": "Valvontaviranomaisen yhteystiedot",
+            "paragraph_1": "Etelä-Suomen aluehallintovirasto",
+            "paragraph_2": "Saavutettavuuden valvonnan yksikkö",
+            "paragraph_3": "www.saavutettavuusvaatimukset.fi",
+            "paragraph_4": "sähköposti: saavutettavuus(at)avi.fi",
+            "paragraph_5": "puhelin: vaihde 0295 016 000"
+        },
+        "testing": {
+            "heading": "Miten olemme testanneet saavutettavuutta?",
+            "paragraph": "Saavutettavuus on huomioitu Digi- ja väestötietoviraston digitaalisten palvelujen kehityksessä suunnittelusta toteutukseen kokonaisketterän mallin mukaisesti. Verkkosivuston saavutettavuutta on arvioinut Digi- ja väestötietoviraston hankkima saavutettavuusasiantuntija säännöllisesti osana suunnittelu- ja kehitysprosessia."
+        }
     },
     "components_main_page": {
         "component_guide": "Komponenttien käyttöohje",

@@ -29,6 +29,7 @@ import tooltipContent from '../../../locale/fi/tooltip.json';
 import servicenavigationContent from '../../../locale/fi/servicenavigation.json';
 import wizardnavigationContent from '../../../locale/fi/wizardnavigation.json';
 import sidenavigationContent from '../../../locale/fi/sidenavigation.json';
+import paginationContent from '../../../locale/fi/pagination.json';
 
 export default {
   title: componentsSideNavContent.title,
@@ -71,6 +72,7 @@ export default {
       to: '/components/wizardnavigation/',
       label: wizardnavigationContent.title,
     },
+    { to: '/components/pagination/', label: paginationContent.title },
     { to: '/components/toggle/', label: toggleContent.title },
     { to: '/components/radiobutton/', label: radiobuttonContent.title },
     { to: '/components/checkbox/', label: checkboxContent.title },

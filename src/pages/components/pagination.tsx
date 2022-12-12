@@ -29,16 +29,8 @@ const Page = (): JSX.Element => (
     <Paragraph variant="lead">
       <Text variant="lead">{content.intro}</Text>
     </Paragraph>
-    <ComponentDescription>
-      <ComponentExample style={{ marginBottom: defaultSuomifiTheme.spacing.s }}>
-        <LoadingSpinner
-          status="loading"
-          variant="normal"
-          textAlign="right"
-          text="Loading"
-        />
-      </ComponentExample>
-    </ComponentDescription>
+
+    <FirstExample />
 
     <NoteBox title={content['note.title']} items={content['note.items']} />
 
@@ -71,6 +63,59 @@ const Page = (): JSX.Element => (
   </Layout>
 );
 
+const FirstExample = ({
+  ...passProps
+}: Partial<PaginationProps> & {}): JSX.Element => {
+  const [current, setCurrent] = React.useState(2);
+  const lastPage = 8;
+
+  return (
+    <ComponentDescription noCode={false}>
+      <ComponentExample
+        style={{
+          marginBottom: defaultSuomifiTheme.spacing.s,
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <div style={{ width: '600px' }}>
+          <Block
+            padding="xl"
+            style={{ border: '1px solid rgb(200, 205, 208)' }}
+          >
+            <Heading variant="h3"> Page: {current}</Heading>
+          </Block>
+          <br />
+          <Pagination
+            currentPage={current}
+            lastPage={lastPage}
+            smallScreen={false}
+            nextButtonAriaLabel="Next page"
+            previousButtonAriaLabel="Previous page"
+            pageInput={true}
+            aria-label="Example A"
+            pageInputProps={{
+              invalidValueErrorText: (value) => `"${value}" is not allowed`,
+              inputPlaceholderText: 'Go to',
+              buttonText: 'Jump to page',
+              labelText: 'Page number',
+            }}
+            onChange={(page) => {
+              setCurrent(page);
+            }}
+            pageIndicatorText={(currentPage, lastPage) => {
+              return 'Page ' + currentPage + ' / ' + lastPage;
+            }}
+            ariaPageIndicatorText={(currentPage, lastPage) => {
+              return 'Showing page ' + currentPage + ' out of ' + lastPage;
+            }}
+          />
+        </div>
+      </ComponentExample>
+    </ComponentDescription>
+  );
+};
+
 const BasicExample = ({
   title,
   desc,
@@ -96,6 +141,7 @@ const BasicExample = ({
       <ComponentExample
         style={{
           marginBottom: defaultSuomifiTheme.spacing.s,
+          marginTop: defaultSuomifiTheme.spacing.s,
           display: 'flex',
           flexDirection: 'column',
         }}
@@ -158,27 +204,11 @@ const SuccessExample = ({
   desc: string;
   noCode: boolean;
 }): JSX.Element => {
-  const [visible, setVisible] = useState(false);
-  const [loaded, setLoaded] = useState(0);
-  const [status, setStatus] = useState<LoadingSpinnerStatus>('failed');
-
-  const runLoader = (): void => {
-    let progress = 0;
-    const id = setInterval(frame, 300);
-    function frame(): void {
-      if (progress >= 100) {
-        clearInterval(id);
-        setStatus('success');
-        progress = 0;
-      } else {
-        progress = progress + 10;
-      }
-      setLoaded(progress);
-    }
-  };
+  const [current, setCurrent] = React.useState(2);
+  const lastPage = 8;
 
   return (
-    <ComponentDescription mainTitle={title} description={desc} noCode={noCode}>
+    <ComponentDescription mainTitle={title} description={desc} noCode={false}>
       <ComponentExample
         style={{
           marginBottom: defaultSuomifiTheme.spacing.s,
@@ -186,46 +216,25 @@ const SuccessExample = ({
           flexDirection: 'column',
         }}
       >
-        <Button
-          disabled={status === 'loading'}
-          onClick={() => {
-            if (!visible) {
-              setStatus('loading');
-              runLoader();
-            } else {
-              setStatus('failed');
-            }
-            setVisible(!visible);
-          }}
-        >
-          {status === 'success'
-            ? content['example.closeButton']
-            : content['example.startButton']}
-        </Button>
-
-        <div
-          aria-live="assertive"
-          aria-busy={status === 'loading'}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '100%',
-            height: '100px',
-            marginTop: defaultSuomifiTheme.spacing.m,
-            border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
-          }}
-        >
-          {visible && (
-            <LoadingSpinner
-              status={status}
-              text={
-                status !== 'success'
-                  ? content['example.loading.active']
-                  : content['example.loading.success']
-              }
-            />
-          )}
+        <div style={{ width: '600px' }}>
+          <Pagination
+            currentPage={current}
+            lastPage={lastPage}
+            smallScreen={false}
+            nextButtonAriaLabel="Next page"
+            previousButtonAriaLabel="Previous page"
+            pageInput={false}
+            aria-label="Example A"
+            onChange={(page) => {
+              setCurrent(page);
+            }}
+            pageIndicatorText={(currentPage, lastPage) => {
+              return 'Page ' + currentPage + ' / ' + lastPage;
+            }}
+            ariaPageIndicatorText={(currentPage, lastPage) => {
+              return 'Showing page ' + currentPage + ' out of ' + lastPage;
+            }}
+          />
         </div>
       </ComponentExample>
     </ComponentDescription>
@@ -242,27 +251,11 @@ const FailingExample = ({
   desc: string;
   noCode: boolean;
 }): JSX.Element => {
-  const [visible, setVisible] = useState(false);
-  const [loaded, setLoaded] = useState(0);
-  const [status, setStatus] = useState<LoadingSpinnerStatus>('success');
-
-  const runLoader = (): void => {
-    let progress = 0;
-    const id = setInterval(frame, 300);
-    function frame(): void {
-      if (progress >= 100) {
-        clearInterval(id);
-        setStatus('failed');
-        progress = 0;
-      } else {
-        progress = progress + 10;
-      }
-      setLoaded(progress);
-    }
-  };
+  const [current, setCurrent] = React.useState(2);
+  const lastPage = 8;
 
   return (
-    <ComponentDescription mainTitle={title} description={desc} noCode={noCode}>
+    <ComponentDescription mainTitle={title} description={desc} noCode={false}>
       <ComponentExample
         style={{
           marginBottom: defaultSuomifiTheme.spacing.s,
@@ -270,46 +263,31 @@ const FailingExample = ({
           flexDirection: 'column',
         }}
       >
-        <Button
-          disabled={status === 'loading'}
-          onClick={() => {
-            if (!visible) {
-              setStatus('loading');
-              runLoader();
-            } else {
-              setStatus('success');
-            }
-            setVisible(!visible);
-          }}
-        >
-          {status === 'failed'
-            ? content['example.closeButton']
-            : content['example.startButton']}
-        </Button>
-
-        <div
-          aria-live="assertive"
-          aria-busy={status === 'loading'}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '100%',
-            height: '100px',
-            marginTop: defaultSuomifiTheme.spacing.m,
-            border: `1px solid ${defaultSuomifiTheme.colors.depthLight1}`,
-          }}
-        >
-          {visible && (
-            <LoadingSpinner
-              status={status}
-              text={
-                status !== 'failed'
-                  ? content['example.loading.active']
-                  : content['example.loading.error']
-              }
-            />
-          )}
+        <div style={{ width: '600px' }}>
+          <Pagination
+            currentPage={current}
+            lastPage={lastPage}
+            smallScreen={true}
+            nextButtonAriaLabel="Next page"
+            previousButtonAriaLabel="Previous page"
+            pageInput={true}
+            aria-label="Example A"
+            pageInputProps={{
+              invalidValueErrorText: (value) => `"${value}" is not allowed`,
+              inputPlaceholderText: 'Go to',
+              buttonText: 'Jump to page',
+              labelText: 'Page number',
+            }}
+            onChange={(page) => {
+              setCurrent(page);
+            }}
+            pageIndicatorText={(currentPage, lastPage) => {
+              return 'Page ' + currentPage + ' / ' + lastPage;
+            }}
+            ariaPageIndicatorText={(currentPage, lastPage) => {
+              return 'Showing page ' + currentPage + ' out of ' + lastPage;
+            }}
+          />
         </div>
       </ComponentExample>
     </ComponentDescription>

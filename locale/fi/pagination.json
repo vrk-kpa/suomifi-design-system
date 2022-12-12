@@ -1,13 +1,13 @@
 {
   "title": "Sivutus (Pagination)",
-  "intro": "Sivutus on komponentti jonka avulla käyttäjä voi navigoida sisältöä joka on jaettu useille sivuille.",
+  "intro": "Sivutus on komponentti jonka avulla käyttäjä voi navigoida useille sivuille jaettua sisältöä. Esimerkiksi hakutuloksia.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Latausindikaattoria tulee käyttää vain jos latausaika kestää yli sekunnin. Nopeasti näytöllä vilahtava animaatio on häiritsevä, koska käyttäjä ei ehdi havaitsemaan sitä kunnolla.",
-    "Jos tiedetään, että latausaika kestää yli 10 sekuntia, tilatekstin tulisi sisältää tarkempi tieto latauksen edistymisestä. Esimerkiksi \"17 / 1024 valmiina\" tai \"57 % valmiina\".",
-    "Hyvä tilateksti on selkeä ja ytimekäs, ja sen tulee sisältää riittävästi informaatiota, jotta myös ruudunlukijakäyttäjät saavat tiedon latauksen tilasta.",
-    "Saavutettavuuden osalta toteutuksessa on huomioitava, että tieto indikaattorin tilamuutoksista ja ladattavan sisällön valmistumisesta, tai latauksen epäonnistumisesta välitetään ruudunlukijalle. Vaikka tilateksti piilotettaisiin näkyvistä, tulee sen olla kuvaava ja selkeä ruudunlukijakäyttäjiä varten.",
-    "Erityisesti nopeasti tapahtuvan latauksen edistymistietoja, kuten valmistumisprosenttia, ei tarvitse välittää ruudunlukijalle. Tällöin mahdollisesti käytössä olevalle aria-live osiolle tulee latauksen ajaksi asettaa aria-busy attribuutti. Latauksen valmistuminen tai mahdollinen epäonnistuminen tulee tässäkin tapauksessa viestiä myös ruudunlukijakäyttäjille.",
+    "On hyvä harkita kannattaako sivutusta käyttää laisinkaan jos tiedetään, että sivuja on kolme tai vähemmän.",
+    "Ruudunlukijaa varten on erikseen oma teksti sivunumeron tietokenttää varten. Esimerkiksi näkyvän tekstin \"Sivu 1 / 20\" sijaan ruudunlukijalle on parempi antaa teksti \"Sivu 1 kautta 20\"",
+    "Ota huomioon yksittäisten sivujen pituus. Kätevä tapa mitata sivun kokoa on katsoa vierityspalkin korkeutta. Se ei saisi olla liian lyhyt eikä liian pitkä.",
+    "Huomioi, että tieto sivun vaihdosta välitetään ruudunlukijalle. Komponentissa on visuaalisesti piilotettu kenttä tätä tarkoitusta varten (aria-live aria-atomic).",
+    "Ota huomioon mihin fokus siirtyy sivun vaihdon jälkeen.",
     ""
   ],
   "sections": [
@@ -17,12 +17,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "LoadingSpinner koostuu ikonista ja tilatekstistä. Ikoni on tilasta riippuen animoitu tai staattinen. Tilateksti sijaitsee ikonin ala- tai oikealla puolella, ja se on mahdollista piilottaa näkeviltä käyttäjiltä tarvittaessa."
-        },
-        {
-          "image.key": "",
-          "image.alt": "",
-          "text": "Komponentilla on kolme havaittavaa tilaa: 1. lataus on käynnissä, 2. lataus epäonnistui, 3. lataus valmistui onnistuneesti. "
+          "text": "Sivutus koostuu kahdesta nuolinapista, tietokentästä sekä sivunumeron syötekentästä. Nuolinapeilla käyttäjä voi siirtyä yhden sivun kerrallaan joko eteen tai taaksepäin.  Tietokenttä on nuolinappien välissä ja sen tarkoitus on kertoa käyttäjälle nykyisen sekä viimeisen sivun numerot. Syötekentän avulla käyttäjä voi siirtyä suoraan haluamalleen sivulle."
         }
       ],
       "links": [
@@ -38,12 +33,12 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Latauksen käynnistyessä latausindikaattori tuodaan näkyviin käyttöliittymään siihen kohtaan, jossa varsinainen sisältö on tarkoitus esittää. Latauksen etenemistä ilmaistaan animaatiolla ja tilatekstillä (esimerkiksi latauksen prosentuaalinen edistyminen). Latauksen valmistuessa latausindikaattori katoaa käyttöliittymästä ja korvautuu varsinaisella sisällöllä automaattisesti."
+          "text": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot sivutuskomponentista. Mobiilinäytöille suunnitellussa versiossa syötekenttä on nuolinappien alapuolella. Komponentista on myös variaatio ilman syötekenttää."
         },
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Latausindikaattori voi koskea koko näkymää, tai sen osaa ja se näytetään käyttöliittymässä siinä kohdassa, jossa ladattava sisältö sijaitsee."
+          "text": "Komponentti sisältää myös visuaalisesti piilotetun kentän ruudunlukijakäyttäjiä varten. Sen tehtävä on välittää tieto sivun vaihtumisesta. "
         }
       ],
       "links": [
@@ -55,14 +50,9 @@
     }
   ],
   "example.basic.heading": "Normaali käyttötapaus",
-  "example.basic.description": "Latauksen päätyttyä indikaattori poistuu näkyvistä.",
-  "example.success.heading": "Onnistumista indikoiva tila",
-  "example.success.description": "Tässä esimerkissä lataus valmistuu onnistuneesti.",
-  "example.error.heading": "Epäonnistumista indikoiva tila",
-  "example.error.description": "Tässä esimerkissä lataus päättyy epäonnistumiseen.",
-  "example.closeButton": "Palauta alkutilaan",
-  "example.startButton": "Simuloi lataus",
-  "example.loading.error": "Lataus epäonnistui",
-  "example.loading.success": "Lataus valmis",
-  "example.loading.active": "Lataus käynnissä"
+  "example.basic.description": "Esimerkissä sivun vaihtuessa ruudunlukijalle annetaan tarkempaa tietoa sivun sisällöstä",
+  "example.success.heading": "Sivutus ilman syötekenttää",
+  "example.success.description": "",
+  "example.error.heading": "Sivutuksen mobiiliversio",
+  "example.error.description": ""
 }

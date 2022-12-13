@@ -105,7 +105,7 @@ const MainContent = ({
             <SideNav
               sideNavData={sideNavData}
               style={{
-                width: '22rem',
+                width: '23rem',
                 marginRight: defaultSuomifiTheme.spacing.s,
               }}
             />

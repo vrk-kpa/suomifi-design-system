@@ -1,0 +1,70 @@
+{
+    "title": "Vaihenavigaatio (WizardNavigation)",
+    "intro": "Vaihenavigaatiota käytetään vaihestetun lomakkeen tai muun vastaavan käyttöliittymän eri vaiheiden esittämiseen ja niiden välillä siirtymiseen.",
+    "note.title": "Saavutettavuus ja käytettävyys",
+    "note.items": [
+      "Komponentin otsikon ja navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä.",
+      "Ruudunlukijasaavutettavuuden varmistamiseksi tulee huolehtia, että yksittäisille navigaatioelementeille (linkit) asetetaan asianmukaiset aria-attribuutit: aria-current tällä hetkellä aktiiviselle vaiheelle, aria-label kertomaan mikäli vaihe on suoritettu ja aria-disabled mikäli linkki on estetty.",
+      "Komponentille tulee antaa ylätason aria-label, joka kertoo ruudunlukijalle vaihenavigaation kontekstin ja tarkoituksen.",
+      "Vaihenavigaatiolle on lisäksi hyvä antaa HTML-id, jotta siihen voidaan liikkua suoraa esimerkiksi SkipLink-navigaatioelementeistä."
+    ],
+    "sections": [
+      {
+        "title": "Mistä komponentti koostuu",
+        "paragraphs": [
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": "Vaihdenavigaatio on navigaatioelementti, jonka sisällä on lista. Komponentin tekninen toteutus mahdollistaa sen, että lista voi sisältää tavanomaisten linkkien lisäksi esimerkiksi painikkeita tai muita semanttisia elementtejä. Kaikki listan elementit ovat kuitenkin semantiikasta huolimatta visuaaliselta tyyliltään samanlaisia. Listan elementit esitetään vertikaalisena polkuna, jota käyttäjä kulkee ylhäältä alaspäin."
+          },
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": "Kapeille ruuduille suunnitellussa variantissaan komponentti sisältää painikkeen, josta varsinainen navigaatioelementti voidaan näyttää ja piilottaa. "
+          }
+        ],
+        "links": [
+          {
+            "text": "",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "title": "Koko ja käyttö",
+        "paragraphs": [
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": "Navigaatioelementtien sisällä on yllä olevan koodiesimerkin mukaisesti suunniteltu käytettävän RouterLink-komponenttia, joka voidaan semanttisesti renderöidä minä tahansa komponenttina kuten painikkeena tai jonkin kirjaston omana linkkikomponenttina. Tutustu komponentin tekniseen dokumentaatioon saadaksesi lisää esimerkkejä RouterLinkin käytöstä."
+          },
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": "Vaihenavigaatiota on tarkoitettu käytettäväksi yksinomaan vaiheistettujen lomakkeiden tai muiden vastaavien käyttöliittymien (englanniksi 'wizard') eri vaiheiden esittämiseen ja niiden välillä siirtymiseen. Vaihenavigaation jokaiselle vaiheelle voidaan määritellä tila, jonka perusteella vaihe on joko avoinna siirryttäväksi tai vielä toistaiseksi estetty. Lisäksi vaihe voidaan määritellä suoritetuksi, jolloin sen yhteydessä näytetään check-merkki."
+          },
+          {
+            "image.key": "",
+            "image.alt": "",
+            "text": "Vaihenavigaatio asemoidaan tavallisesti sivun vasempaan palstaan, lomakkeen ollessa sen oikealla puolella. Komponentti ottaa sivuttaissuunnassa kaiken se tilan, joka sille on tarjolla ja täten sen leveyttä kontrolloidaan ympäröivän elementin leveyttä säätämällä. Pienillä ruuduilla (mobiililaitteet) käytetään komponentista niille tarkoitettua varianttia ja asemoidaan komponentti sivun varsinaisen sisältöalueen yläpuolelle."
+          }
+        ],
+        "links": [
+          {
+            "text": "",
+            "url": ""
+          }
+        ]
+      }
+    ],
+    "example.arialabel": "Vaihenavigaatio",
+    "example.title": "Vaiheet",
+    "example.navitem1": "1. Organisaatiotiedot",
+    "example.navitem1.arialabel": "1. Organisaatiotiedot. Tämä vaihe on valmis.",
+    "example.navitem2": "2. Yhteystiedot",
+    "example.navitem3": "3. Haettavat tiedot",
+    "example.navitem4": "4. Selvitys tietojen suojauksesta",
+    "example.navitem5": "5. Hyväksy ehdot",
+    "example.smallscreen.title": "Pienen ruutukoon variantti",
+    "example.smallscreen.paragraph": "Mobiililaitteilla vaihenavigaatio voidaan avata ja sulkea painiketta painamalla"
+  }

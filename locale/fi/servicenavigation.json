@@ -1,12 +1,12 @@
 {
-  "title": "Palvelunavigaatio (ServiceNavigation)",
-  "intro": "Palvelunavigaatiota käytetään jonkin sivusto-osion eri alasivujen/-näkymien välillä liikkumiseen.",
+  "title": "Palvelunavigaatio (Service navigation)",
+  "intro": "Palvelunavigaatiota käytetään jonkin sivusto-osion eri alasivujen tai alanäkymien välillä liikkumiseen.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä. Kapean ruudun varianttia käytettäessä navigaation avaavan/sulkevan painikkeen tekstin tulee niin ikään olla kuvaava ja ytimekäs.",
     "Ruudunlukijasaavutettavuuden varmistamiseksi tulee huolehtia, että yksittäisille navigaatioelementeille (linkit) asetetaan asianmukaiset aria-attribuutit: aria-current tällä hetkellä aktiiviselle sivulle, aria-label mikäli halutaan välittää linkin tekstisisällön ulkopuolista informaatiota ja aria-disabled mikäli linkki on estetty.",
     "Komponentille tulee antaa ylätason aria-label, joka kertoo ruudunlukijalle navigaation kontekstin ja tarkoituksen.",
-    "Palvelunavigaatiolle on lisäksi hyvä antaa HTML-id, jotta siihen voidaan liikkua suoraa esimerkiksi SkipLink-navigaatioelementeistä."
+    "Palvelunavigaatiolle on lisäksi hyvä antaa HTML-id, jotta siihen voidaan liikkua suoraan esimerkiksi SkipLink-navigaatioelementeistä."
   ],
   "sections": [
     {
@@ -46,7 +46,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Palvelunavigaatio soveltuu käyttöön hyvin silloin, kun navigaation linkit ovat hierarkisesti kaikki samalla tasolla ja navigoitava sivusto on tyyliltään sovellusmainen (ks. sähköpostiohjelman tyylinen esimerkki yllä). Sivunavigaatio-komponentti puolestaan on tarkoitettu käytettäväksi silloin, kun navigaatio sisältää alakategorioita. "
+          "text": "Palvelunavigaatio soveltuu käyttöön hyvin silloin, kun navigaation linkit ovat hierarkisesti kaikki samalla tasolla ja navigoitava sivusto on tyyliltään sovellusmainen (ks. sähköpostiohjelman tyylinen esimerkki yllä). Jos navigaation on tarpeen sisältää alasivuja- tai kategorioita, tulee käyttää sivunavigaatio-komponenttia."
         }
       ],
       "links": [

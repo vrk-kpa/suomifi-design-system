@@ -1,12 +1,12 @@
 {
-    "title": "Vaihenavigaatio (WizardNavigation)",
-    "intro": "Vaihenavigaatiota käytetään vaihestetun lomakkeen tai muun vastaavan käyttöliittymän eri vaiheiden esittämiseen ja niiden välillä siirtymiseen.",
+    "title": "Vaihenavigaatio (Wizard navigation)",
+    "intro": "Vaihenavigaatiota käytetään vaiheistetun lomakkeen tai muun vastaavan käyttöliittymän eri vaiheiden esittämiseen ja niiden välillä siirtymiseen.",
     "note.title": "Saavutettavuus ja käytettävyys",
     "note.items": [
       "Komponentin otsikon ja navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä.",
       "Ruudunlukijasaavutettavuuden varmistamiseksi tulee huolehtia, että yksittäisille navigaatioelementeille (linkit) asetetaan asianmukaiset aria-attribuutit: aria-current tällä hetkellä aktiiviselle vaiheelle, aria-label kertomaan mikäli vaihe on suoritettu ja aria-disabled mikäli linkki on estetty.",
       "Komponentille tulee antaa ylätason aria-label, joka kertoo ruudunlukijalle vaihenavigaation kontekstin ja tarkoituksen.",
-      "Vaihenavigaatiolle on lisäksi hyvä antaa HTML-id, jotta siihen voidaan liikkua suoraa esimerkiksi SkipLink-navigaatioelementeistä."
+      "Vaihenavigaatiolle on lisäksi hyvä antaa HTML-id, jotta siihen voidaan liikkua suoraan esimerkiksi SkipLink-navigaatioelementeistä."
     ],
     "sections": [
       {

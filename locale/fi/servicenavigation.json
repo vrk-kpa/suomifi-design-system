@@ -46,7 +46,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Palvelunavigaatio soveltuu käyttöön hyvin silloin, kun navigaation linkit ovat hierarkisesti kaikki samalla tasolla ja navigoitava sivusto on tyyliltään sovellusmainen (ks. sähköpostiohjelman tyylinen esimerkki yllä). Jos navigaation on tarpeen sisältää alasivuja- tai kategorioita, tulee käyttää sivunavigaatio-komponenttia."
+          "text": "Palvelunavigaatio soveltuu käyttöön hyvin silloin, kun navigaation linkit ovat hierarkisesti kaikki samalla tasolla ja navigoitava sivusto on tyyliltään sovellusmainen (ks. sähköpostiohjelman tyylinen esimerkki yllä). Jos navigaation on tarpeen sisältää alasivuja tai -kategorioita, tulee käyttää sivunavigaatio-komponenttia."
         }
       ],
       "links": [

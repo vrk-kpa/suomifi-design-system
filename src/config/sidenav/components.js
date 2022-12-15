@@ -26,6 +26,9 @@ import checkboxContent from '../../../locale/fi/checkbox.json';
 import notificationContent from '../../../locale/fi/notification.json';
 import loadingspinnerContent from '../../../locale/fi/loadingspinner.json';
 import tooltipContent from '../../../locale/fi/tooltip.json';
+import servicenavigationContent from '../../../locale/fi/servicenavigation.json';
+import wizardnavigationContent from '../../../locale/fi/wizardnavigation.json';
+import sidenavigationContent from '../../../locale/fi/sidenavigation.json';
 
 export default {
   title: componentsSideNavContent.title,
@@ -51,11 +54,23 @@ export default {
     { to: '/components/breadcrumb/', label: breadcrumbContent.title },
     { to: '/components/heading/', label: headingContent.title },
     { to: '/components/button/', label: buttonContent.title },
+    {
+      to: '/components/servicenavigation/',
+      label: servicenavigationContent.title,
+    },
     { to: '/components/toast/', label: toastContent.title },
     { to: '/components/dropdown/', label: dropdownContent.title },
+    {
+      to: '/components/sidenavigation/',
+      label: sidenavigationContent.title,
+    },
     { to: '/components/text/', label: textContent.title },
     { to: '/components/textarea/', label: textareaContent.title },
     { to: '/components/textinput/', label: textinputContent.title },
+    {
+      to: '/components/wizardnavigation/',
+      label: wizardnavigationContent.title,
+    },
     { to: '/components/toggle/', label: toggleContent.title },
     { to: '/components/radiobutton/', label: radiobuttonContent.title },
     { to: '/components/checkbox/', label: checkboxContent.title },

@@ -3,11 +3,9 @@
   "intro": "Sivutus on komponentti jonka avulla käyttäjä voi navigoida useille sivuille jaettua sisältöä. Esimerkiksi hakutuloksia.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "On hyvä harkita kannattaako sivutusta käyttää laisinkaan jos tiedetään, että sivuja on kolme tai vähemmän.",
     "Ruudunlukijaa varten on erikseen oma teksti sivunumeron tietokenttää varten. Esimerkiksi näkyvän tekstin \"Sivu 1 / 20\" sijaan ruudunlukijalle on parempi antaa teksti \"Sivu 1 kautta 20\"",
-    "Ota huomioon yksittäisten sivujen pituus. Kätevä tapa mitata sivun kokoa on katsoa vierityspalkin korkeutta. Se ei saisi olla liian lyhyt eikä liian pitkä.",
-    "Huomioi, että tieto sivun vaihdosta välitetään ruudunlukijalle. Komponentissa on visuaalisesti piilotettu kenttä tätä tarkoitusta varten (aria-live aria-atomic).",
-    "Ota huomioon mihin fokus siirtyy sivun vaihdon jälkeen.",
+    "Tieto sivun vaihdosta välitetään ruudunlukijalle. Komponentissa on visuaalisesti piilotettu kenttä tätä tarkoitusta varten.",
+    "Mikäli sivuja on paljon, käyttäjälle voidaan tarjota mahdollisuus sivunumeron syöttämiseen erilliseen sivunumerokenttään.",
     ""
   ],
   "sections": [
@@ -17,7 +15,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Sivutus koostuu kahdesta nuolinapista, tietokentästä sekä sivunumeron syötekentästä. Nuolinapeilla käyttäjä voi siirtyä yhden sivun kerrallaan joko eteen tai taaksepäin.  Tietokenttä on nuolinappien välissä ja sen tarkoitus on kertoa käyttäjälle nykyisen sekä viimeisen sivun numerot. Syötekentän avulla käyttäjä voi siirtyä suoraan haluamalleen sivulle."
+          "text": "Sivutus koostuu kahdesta nuolipainikkeesa, tietokentästä sekä valinnaisesta sivunumeron syötekentästä. Nuolinpainikkeilla käyttäjä voi siirtyä yhden sivun kerrallaan joko eteen tai taaksepäin. Tietokenttä on nuolipainikkeiden välissä ja sen tarkoitus on kertoa käyttäjälle nykyisen sekä viimeisen sivun numerot. Syötekentän avulla käyttäjä voi siirtyä suoraan haluamalleen sivulle."
         }
       ],
       "links": [

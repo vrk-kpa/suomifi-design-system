@@ -3,9 +3,10 @@
   "intro": "Sivutus on komponentti, jonka avulla käyttäjä voi navigoida useille sivuille jaettua sisältöä. Sivustusta käytetään esimerkiksi hakutulosten näyttämiseen.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
-    "Ruudunlukijaa varten on erikseen oma teksti sivunumeron tietokenttää varten. Esimerkiksi näkyvän tekstin \"Sivu 1 / 20\" sijaan ruudunlukijalle on parempi antaa teksti \"Sivu 1 kautta 20\"",
     "Tieto sivun vaihdosta välitetään ruudunlukijalle. Komponentissa on visuaalisesti piilotettu kenttä tätä tarkoitusta varten.",
     "Mikäli sivuja on paljon, käyttäjälle voidaan tarjota mahdollisuus sivunumeron syöttämiseen erilliseen sivunumerokenttään.",
+    "Komponentti ilmaisee tiedon sivun vaihtumisesta myös ruudunlukijakäyttäjille visuaalisesti piilotettua tekstisisältöä käyttäen.",
+    "Ruudunlukijalle sivunumeron tietokentän informaatio kannattaa antaa puhtaasti tekstimuodossa, esimerkiksi \"Sivu 1 kautta 20\", sillä erikoismerkkien lukutapa saattaa vaihdella.",
     ""
   ],
   "sections": [
@@ -36,7 +37,12 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Komponentti sisältää myös visuaalisesti piilotetun kentän ruudunlukijakäyttäjiä varten. Sen tehtävä on välittää tieto sivun vaihtumisesta. "
+          "text": "Komponentti tulee sijoittaa sivutettavan sisällön alapuolelle."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Sivun vaihtuessa voi ruudunlukijalle antaa sisällöstä lisätietoa, esimerkiksi \"Sivu 2 kautta 5. Näytetään tulokset 10 viiva 20.\"."
         }
       ],
       "links": [

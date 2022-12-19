@@ -93,8 +93,8 @@ const FirstExample = ({
             pageInputProps={{
               invalidValueErrorText: (value) =>
                 `"${value}" ei ole sallittu arvo`,
-              inputPlaceholderText: 'Mene',
-              buttonText: 'Mene sivulle',
+              inputPlaceholderText: 'Siirry sivulle',
+              buttonText: 'Siirry sivulle',
               labelText: 'Sivun numero',
             }}
             onChange={(page) => {
@@ -149,7 +149,7 @@ const BasicExample = ({
             style={{ border: '1px solid rgb(200, 205, 208)' }}
           >
             {currentItems.map((post, id) => (
-              <div key={id}>Item: {post}</div>
+              <div key={id}>Tulos: {post}</div>
             ))}
           </Block>
           <br />
@@ -163,8 +163,8 @@ const BasicExample = ({
             pageInputProps={{
               invalidValueErrorText: (value) =>
                 `"${value}" ei ole sallittu arvo`,
-              inputPlaceholderText: 'Mene',
-              buttonText: 'Mene sivulle',
+              inputPlaceholderText: 'Siirry sivulle',
+              buttonText: 'Siirry sivulle',
               labelText: 'Sivun numero',
             }}
             onChange={(page) => {
@@ -273,8 +273,8 @@ const FailingExample = ({
             pageInputProps={{
               invalidValueErrorText: (value) =>
                 `"${value}" ei ole sallittu arvo`,
-              inputPlaceholderText: 'Mene',
-              buttonText: 'Mene sivulle',
+              inputPlaceholderText: 'Siirry sivulle',
+              buttonText: 'Siirry sivulle',
               labelText: 'Sivun numero',
             }}
             onChange={(page) => {

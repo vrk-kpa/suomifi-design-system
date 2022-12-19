@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   defaultSuomifiTheme,
   Pagination,
   PaginationProps,
-  PageInputProps,
   Block,
   LoadingSpinnerProps,
-  LoadingSpinnerStatus,
-  LoadingSpinner,
-  Button,
 } from 'suomifi-ui-components';
 
 import content from '../../../locale/fi/pagination.json';
@@ -83,31 +79,32 @@ const FirstExample = ({
             padding="xl"
             style={{ border: '1px solid rgb(200, 205, 208)' }}
           >
-            <Heading variant="h3"> Page: {current}</Heading>
+            <Heading variant="h3"> Sivu: {current}</Heading>
           </Block>
           <br />
           <Pagination
             currentPage={current}
             lastPage={lastPage}
             smallScreen={false}
-            nextButtonAriaLabel="Next page"
-            previousButtonAriaLabel="Previous page"
+            nextButtonAriaLabel="Seuraava sivu"
+            previousButtonAriaLabel="Edellinen sivu"
             pageInput={true}
-            aria-label="Example A"
+            aria-label="Esimerkki A"
             pageInputProps={{
-              invalidValueErrorText: (value) => `"${value}" is not allowed`,
-              inputPlaceholderText: 'Go to',
-              buttonText: 'Jump to page',
-              labelText: 'Page number',
+              invalidValueErrorText: (value) =>
+                `"${value}" ei ole sallittu arvo`,
+              inputPlaceholderText: 'Mene',
+              buttonText: 'Mene sivulle',
+              labelText: 'Sivun numero',
             }}
             onChange={(page) => {
               setCurrent(page);
             }}
             pageIndicatorText={(currentPage, lastPage) => {
-              return 'Page ' + currentPage + ' / ' + lastPage;
+              return 'Sivu ' + currentPage + ' / ' + lastPage;
             }}
             ariaPageIndicatorText={(currentPage, lastPage) => {
-              return 'Showing page ' + currentPage + ' out of ' + lastPage;
+              return 'Näytetään sivu ' + currentPage + ' kautta ' + lastPage;
             }}
           />
         </div>
@@ -159,31 +156,32 @@ const BasicExample = ({
           <Pagination
             lastPage={lastPage}
             smallScreen={false}
-            nextButtonAriaLabel="Next page"
-            previousButtonAriaLabel="Previous page"
+            nextButtonAriaLabel="Seuraava sivu"
+            previousButtonAriaLabel="Edellinen sivu"
             pageInput={true}
-            aria-label="Example B"
+            aria-label="Esimerkki B"
             pageInputProps={{
-              invalidValueErrorText: (value) => `"${value}" is not allowed`,
-              inputPlaceholderText: 'Go to',
-              buttonText: 'Jump to page',
-              labelText: 'Page number',
+              invalidValueErrorText: (value) =>
+                `"${value}" ei ole sallittu arvo`,
+              inputPlaceholderText: 'Mene',
+              buttonText: 'Mene sivulle',
+              labelText: 'Sivun numero',
             }}
             onChange={(page) => {
               setCurrent(page);
             }}
             pageIndicatorText={(currentPage, lastPage) => {
-              return 'Page ' + currentPage + ' / ' + lastPage;
+              return 'Sivu ' + currentPage + ' / ' + lastPage;
             }}
             ariaPageIndicatorText={(currentPage, lastPage) => {
               return (
-                'Page ' +
+                'Sivu ' +
                 currentPage +
-                ' out of ' +
+                ' kautta ' +
                 lastPage +
-                '. Showing items from ' +
+                '. Näytetään tulokset ' +
                 firstShown +
-                ' to ' +
+                ' viiva ' +
                 lastShown
               );
             }}
@@ -221,18 +219,18 @@ const SuccessExample = ({
             currentPage={current}
             lastPage={lastPage}
             smallScreen={false}
-            nextButtonAriaLabel="Next page"
-            previousButtonAriaLabel="Previous page"
+            nextButtonAriaLabel="Seuraava sivu"
+            previousButtonAriaLabel="Edellinen sivu"
             pageInput={false}
-            aria-label="Example A"
+            aria-label="Esimerkki C"
             onChange={(page) => {
               setCurrent(page);
             }}
             pageIndicatorText={(currentPage, lastPage) => {
-              return 'Page ' + currentPage + ' / ' + lastPage;
+              return 'Sivu ' + currentPage + ' / ' + lastPage;
             }}
             ariaPageIndicatorText={(currentPage, lastPage) => {
-              return 'Showing page ' + currentPage + ' out of ' + lastPage;
+              return 'Näytetään sivu ' + currentPage + ' kautta ' + lastPage;
             }}
           />
         </div>
@@ -268,24 +266,25 @@ const FailingExample = ({
             currentPage={current}
             lastPage={lastPage}
             smallScreen={true}
-            nextButtonAriaLabel="Next page"
-            previousButtonAriaLabel="Previous page"
+            nextButtonAriaLabel="Seuraava sivu"
+            previousButtonAriaLabel="Edellinen sivu"
             pageInput={true}
-            aria-label="Example A"
+            aria-label="Esimerkki D"
             pageInputProps={{
-              invalidValueErrorText: (value) => `"${value}" is not allowed`,
-              inputPlaceholderText: 'Go to',
-              buttonText: 'Jump to page',
-              labelText: 'Page number',
+              invalidValueErrorText: (value) =>
+                `"${value}" ei ole sallittu arvo`,
+              inputPlaceholderText: 'Mene',
+              buttonText: 'Mene sivulle',
+              labelText: 'Sivun numero',
             }}
             onChange={(page) => {
               setCurrent(page);
             }}
             pageIndicatorText={(currentPage, lastPage) => {
-              return 'Page ' + currentPage + ' / ' + lastPage;
+              return 'Sivu ' + currentPage + ' / ' + lastPage;
             }}
             ariaPageIndicatorText={(currentPage, lastPage) => {
-              return 'Showing page ' + currentPage + ' out of ' + lastPage;
+              return 'Näytetään sivu ' + currentPage + ' kautta ' + lastPage;
             }}
           />
         </div>

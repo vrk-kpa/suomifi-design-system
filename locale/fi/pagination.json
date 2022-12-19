@@ -1,6 +1,6 @@
 {
   "title": "Sivutus (Pagination)",
-  "intro": "Sivutus on komponentti jonka avulla käyttäjä voi navigoida useille sivuille jaettua sisältöä. Esimerkiksi hakutuloksia.",
+  "intro": "Sivutus on komponentti, jonka avulla käyttäjä voi navigoida useille sivuille jaettua sisältöä. Sivustusta käytetään esimerkiksi hakutulosten näyttämiseen.",
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Ruudunlukijaa varten on erikseen oma teksti sivunumeron tietokenttää varten. Esimerkiksi näkyvän tekstin \"Sivu 1 / 20\" sijaan ruudunlukijalle on parempi antaa teksti \"Sivu 1 kautta 20\"",

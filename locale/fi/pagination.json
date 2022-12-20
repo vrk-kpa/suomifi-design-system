@@ -32,7 +32,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot sivutuskomponentista. Mobiilinäytöille suunnitellussa versiossa syötekenttä on nuolipainikkeiden alapuolella. Komponentin oletusvariaatio on ilman syötekenttää."
+          "text": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot sivutuskomponentista. Mobiilinäytöille suunnitellussa versiossa syötekenttä on nuolipainikkeiden alapuolella. Komponentin oletusvariaatio on ilman syötekenttää, mutta sitä on voidaan käyttää varsinkin jos sivuja on paljon."
         },
         {
           "image.key": "",

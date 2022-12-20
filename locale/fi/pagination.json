@@ -5,7 +5,6 @@
   "note.items": [
     "Tieto sivun vaihdosta välitetään ruudunlukijalle. Komponentissa on visuaalisesti piilotettu kenttä tätä tarkoitusta varten.",
     "Mikäli sivuja on paljon, käyttäjälle voidaan tarjota mahdollisuus sivunumeron syöttämiseen erilliseen sivunumerokenttään.",
-    "Komponentti ilmaisee tiedon sivun vaihtumisesta myös ruudunlukijakäyttäjille visuaalisesti piilotettua tekstisisältöä käyttäen.",
     "Ruudunlukijalle sivunumeron tietokentän teksti kannattaa antaa ilman erikoismerkkejä, esimerkiksi \"Sivu 1 kautta 20\", sillä erikoismerkkien lukutapa saattaa vaihdella.",
     ""
   ],

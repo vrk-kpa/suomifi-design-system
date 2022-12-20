@@ -16,7 +16,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Sivutus koostuu kahdesta nuolipainikkeesa, tietokentästä sekä valinnaisesta sivunumeron syötekentästä. Nuolinpainikkeilla käyttäjä voi siirtyä yhden sivun kerrallaan joko eteen tai taaksepäin. Tietokenttä on nuolipainikkeiden välissä ja sen tarkoitus on kertoa käyttäjälle nykyisen sekä viimeisen sivun numerot. Syötekentän avulla käyttäjä voi siirtyä suoraan haluamalleen sivulle."
+          "text": "Sivutus koostuu kahdesta nuolipainikkeesta, tietokentästä sekä valinnaisesta sivunumeron syötekentästä. Nuolinpainikkeilla käyttäjä voi siirtyä yhden sivun kerrallaan joko eteen- tai taaksepäin. Tietokenttä on nuolipainikkeiden välissä ja sen tarkoitus on kertoa käyttäjälle nykyisen sekä viimeisen sivun numerot. Syötekentän avulla käyttäjä voi siirtyä suoraan haluamalleen sivulle."
         }
       ],
       "links": [
@@ -32,7 +32,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot sivutuskomponentista. Mobiilinäytöille suunnitellussa versiossa syötekenttä on nuolinappien alapuolella. Komponentista on myös variaatio ilman syötekenttää."
+          "text": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot sivutuskomponentista. Mobiilinäytöille suunnitellussa versiossa syötekenttä on nuolipainikkeiden alapuolella. Komponentin oletusvariaatio on ilman syötekenttää."
         },
         {
           "image.key": "",

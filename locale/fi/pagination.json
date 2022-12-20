@@ -6,7 +6,7 @@
     "Tieto sivun vaihdosta välitetään ruudunlukijalle. Komponentissa on visuaalisesti piilotettu kenttä tätä tarkoitusta varten.",
     "Mikäli sivuja on paljon, käyttäjälle voidaan tarjota mahdollisuus sivunumeron syöttämiseen erilliseen sivunumerokenttään.",
     "Komponentti ilmaisee tiedon sivun vaihtumisesta myös ruudunlukijakäyttäjille visuaalisesti piilotettua tekstisisältöä käyttäen.",
-    "Ruudunlukijalle sivunumeron tietokentän informaatio kannattaa antaa puhtaasti tekstimuodossa, esimerkiksi \"Sivu 1 kautta 20\", sillä erikoismerkkien lukutapa saattaa vaihdella.",
+    "Ruudunlukijalle sivunumeron tietokentän teksti kannattaa antaa ilman erikoismerkkejä, esimerkiksi \"Sivu 1 kautta 20\", sillä erikoismerkkien lukutapa saattaa vaihdella.",
     ""
   ],
   "sections": [
@@ -16,7 +16,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Sivutus koostuu kahdesta nuolipainikkeesta, tietokentästä sekä valinnaisesta sivunumeron syötekentästä. Nuolinpainikkeilla käyttäjä voi siirtyä yhden sivun kerrallaan joko eteen- tai taaksepäin. Tietokenttä on nuolipainikkeiden välissä ja sen tarkoitus on kertoa käyttäjälle nykyisen sekä viimeisen sivun numerot. Syötekentän avulla käyttäjä voi siirtyä suoraan haluamalleen sivulle."
+          "text": "Sivutus koostuu kahdesta nuolipainikkeesta, tietokentästä sekä valinnaisesta sivunumeron syötekentästä. Nuolinpainikkeilla käyttäjä voi siirtyä yhden sivun kerrallaan eteen- tai taaksepäin. Tietokenttä on nuolipainikkeiden välissä ja sen tarkoitus on kertoa käyttäjälle nykyisen sekä viimeisen sivun numerot. Syötekentän avulla käyttäjä voi siirtyä suoraan haluamalleen sivulle."
         }
       ],
       "links": [
@@ -32,7 +32,7 @@
         {
           "image.key": "",
           "image.alt": "",
-          "text": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot sivutuskomponentista. Mobiilinäytöille suunnitellussa versiossa syötekenttä on nuolipainikkeiden alapuolella. Komponentin oletusvariaatio on ilman syötekenttää, mutta sitä on voidaan käyttää varsinkin jos sivuja on paljon."
+          "text": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot sivutuskomponentista. Mobiilinäytöille suunnitellussa versiossa syötekenttä on nuolipainikkeiden alapuolella. Komponentin oletusvariaatio ei sisällä syötekenttää. Syötekenttää voidaan käyttää, jos sivuja on paljon."
         },
         {
           "image.key": "",

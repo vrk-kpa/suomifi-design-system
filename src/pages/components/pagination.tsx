@@ -42,19 +42,19 @@ const Page = (): JSX.Element => (
     <BasicExample
       title={content['example.basic.heading']}
       desc={content['example.basic.description']}
-      noCode={true}
+      noCode={false}
     />
 
     <SuccessExample
       title={content['example.success.heading']}
       desc={content['example.success.description']}
-      noCode={true}
+      noCode={false}
     />
 
     <FailingExample
       title={content['example.error.heading']}
       desc={content['example.error.description']}
-      noCode={true}
+      noCode={false}
     />
   </Layout>
 );
@@ -206,7 +206,7 @@ const SuccessExample = ({
   const lastPage = 8;
 
   return (
-    <ComponentDescription mainTitle={title} description={desc} noCode={false}>
+    <ComponentDescription mainTitle={title} description={desc} noCode={noCode}>
       <ComponentExample
         style={{
           marginBottom: defaultSuomifiTheme.spacing.s,

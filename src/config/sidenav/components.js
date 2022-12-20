@@ -29,6 +29,7 @@ import tooltipContent from '../../../locale/fi/tooltip.json';
 import servicenavigationContent from '../../../locale/fi/servicenavigation.json';
 import wizardnavigationContent from '../../../locale/fi/wizardnavigation.json';
 import sidenavigationContent from '../../../locale/fi/sidenavigation.json';
+import paginationContent from '../../../locale/fi/pagination.json';
 
 export default {
   title: componentsSideNavContent.title,
@@ -64,6 +65,7 @@ export default {
       to: '/components/sidenavigation/',
       label: sidenavigationContent.title,
     },
+    { to: '/components/pagination/', label: paginationContent.title },
     { to: '/components/text/', label: textContent.title },
     { to: '/components/textarea/', label: textareaContent.title },
     { to: '/components/textinput/', label: textinputContent.title },

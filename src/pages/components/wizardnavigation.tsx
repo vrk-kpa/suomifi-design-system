@@ -61,12 +61,12 @@ const Page = (): React.ReactElement => {
                 </RouterLink>
               </WizardNavigationItem>
               <WizardNavigationItem status="coming">
-                <RouterLink aria-disabled role="link">
+                <RouterLink aria-disabled role="link" tabIndex={0}>
                   {wizardnavigationContent['example.navitem4']}
                 </RouterLink>
               </WizardNavigationItem>
               <WizardNavigationItem status="coming">
-                <RouterLink aria-disabled role="link">
+                <RouterLink aria-disabled role="link" tabIndex={0}>
                   {wizardnavigationContent['example.navitem5']}
                 </RouterLink>
               </WizardNavigationItem>
@@ -120,12 +120,12 @@ const Page = (): React.ReactElement => {
                 </RouterLink>
               </WizardNavigationItem>
               <WizardNavigationItem status="coming">
-                <RouterLink aria-disabled role="link">
+                <RouterLink aria-disabled role="link" tabIndex={0}>
                   {wizardnavigationContent['example.navitem4']}
                 </RouterLink>
               </WizardNavigationItem>
               <WizardNavigationItem status="coming">
-                <RouterLink aria-disabled role="link">
+                <RouterLink aria-disabled role="link" tabIndex={0}>
                   {wizardnavigationContent['example.navitem5']}
                 </RouterLink>
               </WizardNavigationItem>

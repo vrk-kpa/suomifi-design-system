@@ -4,28 +4,29 @@ import styles from './Header.module.scss';
 import { NavItem } from '../../interfaces/interfaces';
 import Navbar from './Navbar/Navbar';
 import MobileNavMenuButton from './MobileNavMenuButton/MobileNavMenuButton';
-
-// TODO: Get translated titles based on current locale
-const navItems: NavItem[] = [
-  {
-    title: 'Etusivu',
-    path: '/',
-  },
-  {
-    title: 'Tyylit',
-    path: '/styles',
-  },
-  {
-    title: 'Komponentit',
-    path: '/components',
-  },
-  {
-    title: 'Taustatietoa',
-    path: '/info',
-  },
-];
+import { useTranslation } from 'next-export-i18n';
 
 const Header: React.FunctionComponent = () => {
+  const { t } = useTranslation();
+  const navItems: NavItem[] = [
+    {
+      title: t('main_nav.home'),
+      path: '/',
+    },
+    {
+      title: t('main_nav.styles'),
+      path: '/styles',
+    },
+    {
+      title: t('main_nav.components'),
+      path: '/components',
+    },
+    {
+      title: t('main_nav.info'),
+      path: '/info',
+    },
+  ];
+
   return (
     <Block variant="header" className={styles.header}>
       <Block className={styles.upper}>

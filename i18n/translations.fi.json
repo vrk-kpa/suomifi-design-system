@@ -6,6 +6,28 @@
         "skip_to_main_content": "Siirry pääsisältöön",
         "skip_to_side_navigation": "Siirry sivunavigaatioon"
     },
+    "front_page": {
+        "front_page": "Etusivu",
+        "hero_heading": "Suomi.fi Design System – digipalvelujen yhteiset rakennuspalikat",
+        "hero_text": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Kaikki komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti.",
+        "heading": "Mitä Suomi.fi Design System sisältää?",
+        "sub_heading_1": "Design System -sivusto",
+        "paragraph_1": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto.",
+        "link_1": "Lue taustatietoja Suomi.fi Design Systemistä",
+        "sub_heading_2": "Käyttöliittymäkomponenttien kirjasto",
+        "paragraph_2": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti.",
+        "paragraph_3": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa ja julkaistava kirjasto noudattaa semanttista versiointia.",
+        "link_2": "Tutustu komponentteihin",
+        "link_3": "Komponenttikirjaston tekninen dokumentaatio",
+        "paragraph_4": "Onko sinulla ehdotuksia tai muuta palautetta?",
+        "link_4": "Yhteystiedot"
+    },
+    "main_nav": {
+        "home": "Etusivu",
+        "styles": "Tyylit",
+        "components": "Komponentit",
+        "info": "Taustatietoa"
+    },
     "footer": {
         "left_text": "Suomi.fi Design Systemin kehittämisestä vastaa Digi- ja väestötietovirasto.",
         "cookies": "Evästekäytännöt",
@@ -45,21 +67,68 @@
             "paragraph": "Saavutettavuus on huomioitu Digi- ja väestötietoviraston digitaalisten palvelujen kehityksessä suunnittelusta toteutukseen kokonaisketterän mallin mukaisesti. Verkkosivuston saavutettavuutta on arvioinut Digi- ja väestötietoviraston hankkima saavutettavuusasiantuntija säännöllisesti osana suunnittelu- ja kehitysprosessia."
         }
     },
+    "styles": {
+        "styles_usage_info": "Tyylien käyttöohje",
+        "colors": "Värit",
+        "icons": "Ikonit"
+    },
+    "styles_main_page": {
+        "ingress": "Design system tarjoaa Suomi.fi-identiteetin mukaisia, valmiiksi paketoituja tyylimäärittelyjä eli tokeneita. Design systemiin kuuluvan komponenttikirjaston tyylit pohjautuvat näihin tokeneihin.",
+        "paragraph_1": "Suomi.fi design tokenit löytyvät erillisenä pakettina yhdestä npm-moduulista. Tokeneiden tekninen ohjeistus ja käyttöönotto löytyy GitHub-dokumentaatiosta.",
+        "style_usage": "Tyylien käyttö",
+        "style_usage_paragraph_1": "Tokeneita hyödyntämällä voi oman sivustonsa tyylit pitää linjassa Suomi.fi-teeman kanssa. Tokeneita voi käyttää suoraa omasta npm-moduulistaan.",
+        "style_usage_paragraph_2": "Vaihtoehtoisesti tokenit ovat käytettävissä myös komponenttikirjaston teemaobjektin kautta alla olevan esimerkin mukaisesti.",
+        "styled_element": "Tyylitelty elementti"
+    },
+    "colors": {
+        "heading": "Värit",
+        "ingress": "Pääväreihin kuuluvat sininen (brandBase) sekä (highlightBase), valkoinen (whiteBase) ja harmaa (depthBase). Tekstien päävärinä käytetään mustaa (blackBase). Korosteväreinä käytetään oranssia (accentBase) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali, ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
+        "accessibility_list": {
+            "point_1": "Kun käytät komponenttien tarjoamaa valmista Suomi.fi-väriteemaa käyttöohjeistuksien mukaisesti, täyttyvät saavutettavuuskriteeristön (WCAG) kontrastivaatimukset ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
+            "point_2": "Jos haluat modifioida värit sopimaan erilaiseen visuaaliseen ilmeeseen, muista varmistaa, että valitsemasi väriyhdistelmien kontrastit täyttävät saavutettavuuskriteeristön (WCAG) asettamat vaatimukset.",
+            "point_3": "Huomioi, että saavutettavuuskriteeristön (WCAG) kontrastivaatimukset eivät koske komponentteja, joiden käyttö on estetty. On kuitenkin tärkeää varmistaa, että estetty sävy eroaa kontrastiltaan tarpeeksi aktiivisen tilan väristä. Suomi.fi-komponentteihin on toteutettu valmiiksi estetty-tila oikeaoppisesti.",
+            "point_4": "Tutustu näihin kohtiin tarkemmin saavutettavuuskriteeristön ohjeistuksessa: WCAG 2.1., onnistumiskriteeri 1.4.3 Kontrasti (minimi)."
+        },
+        "contrast_link": "WCAG 2.1 kontrastivaatimukset",
+        "texts": {
+            "heading": "Tekstit",
+            "paragraph": "Tekstien pääväri on musta (blackBase). Mustaa käytetään myös joidenkin komponenttien yhteydessä olevissa vihjeteksteissä. Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Paikanvaraajanteksteissä käytetään tummanharmaata (depthDark2)."
+        },
+        "brand": {
+            "heading": "Brändi",
+            "paragraph": "Brändiväriä (brandBase) käytetään Suomi.fi-palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa."
+        }
+    },
+    "icons": {
+        "heading": "Ikonit",
+        "ingress": "Tältä sivulla löydät kaikki ikonit jotka ovat käytössä suomi.fi palveluissa. Ikonien käyttöohjeistukset löydät ikonikomponentin sivulta.",
+        "base_icons": {
+            "title": "Perusikonit (base icons)",
+            "link_title": "Perusikonit GitHubissa SVG muodossa"
+        },
+        "illustrative_icons": {
+            "title": "Kuvitusikonit (illustrative icons)",
+            "link_title": "Kuvitusikonit GitHubissa SVG muodossa"
+        },
+        "doctype_icons": {
+            "title": "Liitetiedostoikonit (doctype icons)",
+            "link_title": "Liitetiedostoikonit GitHubissa SVG muodossa"
+        }
+    },
+    "components": {
+        "component_usage_info": "Komponenttien käyttöohje",
+        "button": "Button (Painike)"
+    },
     "components_main_page": {
-        "component_guide": "Komponenttien käyttöohje",
         "customizing_theme": {
             "heading": "Teeman kustomoiminen",
             "text": "Kirjaston käyttämää oletusteemaa voi myös tarvittaessa muokata. Teeman muokkaaminen vaikuttaa kaikkiin muokatun teeman sisältämiin komponentteihin.",
             "buttonText": "Kustomoitu teema"
         }
     },
-    "components": {
-        "component_usage_info": "Komponenttien käyttöohje",
-        "button": "Painike (Button)"
-    },
     "button_page": {
-        "site_title": "Painike (Button) | Suomi.fi Design System",
-        "heading": "Painike (Button)",
+        "site_title": "Button (Painike) | Suomi.fi Design System",
+        "heading": "Button (Painike)",
         "ingress": "Painike käynnistää toiminnon. Painiketta voidaan käyttää esimerkiksi siirtymiseen toiseen näkymään, tai painikkeella voidaan hyväksyä toiminto.",
         "accessibility_list": {
             "point_1": "Painike käynnistää yleensä toiminnon. Joissakin erityistapauksissa painiketta voidaan käyttää normaalin linkkityylin asemesta, kun käyttäjä ohjataan toiselle sivulle.",

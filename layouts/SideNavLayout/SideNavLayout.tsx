@@ -4,30 +4,30 @@ import {
   RouterLink,
   ServiceNavigation,
   ServiceNavigationItem,
-  SkipLink,
   StaticIcon,
+  IllustrativeIconKeys,
 } from 'suomifi-ui-components';
 import { NavItem } from '../../interfaces/interfaces';
-import styles from './CardLayout.module.scss';
-import { useTranslation } from 'next-export-i18n';
+import styles from './SideNavLayout.module.scss';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-interface CardLayoutProps {
+interface SideNavLayoutProps {
   navItems: NavItem[];
   children?: ReactNode;
+  navIcon: IllustrativeIconKeys;
+  navHeaderText: string;
 }
 
-const CardLayout: React.FunctionComponent<CardLayoutProps> = ({
+const SideNavLayout: React.FunctionComponent<SideNavLayoutProps> = ({
   navItems,
   children,
-}: CardLayoutProps) => {
-  const { t } = useTranslation();
+  navIcon,
+  navHeaderText,
+}: SideNavLayoutProps) => {
   const router = useRouter();
   return (
     <>
-      <SkipLink href="#main">{t('common.skip_to_main_content')}</SkipLink>
-      <SkipLink href="#sidenav">{t('common.skip_to_side_navigation')}</SkipLink>
       <Block className="container">
         <Block variant="section" className={styles.smallScreenNavContainer}>
           <ServiceNavigation
@@ -36,8 +36,8 @@ const CardLayout: React.FunctionComponent<CardLayoutProps> = ({
             variant="smallScreen"
             smallScreenExpandButtonText={
               <Block variant="div" className="flex align-center">
-                <StaticIcon className={styles.navStaticIcon} icon="puzzle" />
-                <Block className={styles.navHeadertext}>Komponentit</Block>
+                <StaticIcon className={styles.navStaticIcon} icon={navIcon} />
+                <Block className={styles.navHeadertext}>{navHeaderText}</Block>
               </Block>
             }
             initiallyExpanded={false}
@@ -60,11 +60,11 @@ const CardLayout: React.FunctionComponent<CardLayoutProps> = ({
             ))}
           </ServiceNavigation>
         </Block>
-        <Block variant="section" className={styles.cardLayout}>
+        <Block variant="section" className={styles.SideNavLayout}>
           <Block className={styles.left}>
             <Block variant="div" className={styles.navHeader}>
-              <StaticIcon className={styles.navStaticIcon} icon="puzzle" />
-              <Block className={styles.navHeadertext}>Komponentit</Block>
+              <StaticIcon className={styles.navStaticIcon} icon={navIcon} />
+              <Block className={styles.navHeadertext}>{navHeaderText}</Block>
             </Block>
             <ServiceNavigation aria-label="Sivunavigaatio" id="sidenav">
               {navItems.map((ni) => (
@@ -94,4 +94,4 @@ const CardLayout: React.FunctionComponent<CardLayoutProps> = ({
   );
 };
 
-export default CardLayout;
+export default SideNavLayout;

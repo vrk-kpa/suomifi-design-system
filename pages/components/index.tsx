@@ -9,7 +9,7 @@ import {
   SuomifiThemeProvider,
 } from 'suomifi-ui-components';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
-import CardLayout from '../../layouts/CardLayout/CardLayout';
+import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/components-sidenav';
 import { themeExampleJSX } from '../../utils/complicatedCodeExamples';
 
@@ -25,17 +25,21 @@ const customTheme = {
   },
 };
 
-const FrontPage: NextPage = () => {
+const ComponentsIndexPage: NextPage = () => {
   const { t } = useTranslation();
 
   return (
     <>
       <Head>
-        <title>Komponentit | Suomi.fi Design System</title>
+        <title>{t('main_nav.components')} | Suomi.fi Design System</title>
       </Head>
-      <CardLayout navItems={navItems}>
+      <SideNavLayout
+        navItems={navItems}
+        navHeaderText={t('main_nav.components')}
+        navIcon="puzzle"
+      >
         <Heading variant="h1" className="mb-xl">
-          {t('components_main_page.component_guide')}
+          {t('components.component_usage_info')}
         </Heading>
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
@@ -52,9 +56,9 @@ const FrontPage: NextPage = () => {
             {t('components_main_page.customizing_theme.text')}
           </Paragraph>
         </Block>
-      </CardLayout>
+      </SideNavLayout>
     </>
   );
 };
 
-export default FrontPage;
+export default ComponentsIndexPage;

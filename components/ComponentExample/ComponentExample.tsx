@@ -14,7 +14,7 @@ type ComponentExampleVariant = 'normal' | 'mobile_device';
 interface ComponentExampleProps {
   filterPropsInExample?: string[];
   variant?: ComponentExampleVariant;
-  children: ReactNode;
+  children?: ReactNode;
   codeString?: string;
 }
 
@@ -36,9 +36,9 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
       <ShowcaseBox style={{ paddingBottom: 0 }}>
         <MobileDevice>{children}</MobileDevice>
       </ShowcaseBox>
-    ) : (
+    ) : !!children ? (
       <ShowcaseBox>{children}</ShowcaseBox>
-    );
+    ) : null;
   return (
     <>
       {showcase}

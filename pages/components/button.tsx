@@ -9,7 +9,7 @@ import {
   Button,
   ExternalLink,
 } from 'suomifi-ui-components';
-import CardLayout from '../../layouts/CardLayout/CardLayout';
+import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
@@ -22,7 +22,11 @@ const ButtonPage: NextPage = () => {
       <Head>
         <title>{t('button_page.heading')} | Suomi.fi Design System</title>
       </Head>
-      <CardLayout navItems={navItems}>
+      <SideNavLayout
+        navItems={navItems}
+        navHeaderText={t('main_nav.components')}
+        navIcon="puzzle"
+      >
         <Heading variant="h1">{t('button_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
@@ -71,7 +75,7 @@ const ButtonPage: NextPage = () => {
             </Button>
           </ComponentExample>
         </Block>
-      </CardLayout>
+      </SideNavLayout>
     </>
   );
 };

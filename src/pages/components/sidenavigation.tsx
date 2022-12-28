@@ -45,7 +45,7 @@ const Page = (): React.ReactElement => {
               <SideNavigationItem
                 subLevel={1}
                 content={
-                  <RouterLink href="/" aria-current="location">
+                  <RouterLink href="/">
                     {sidenavigationContent['example.navitem1']}
                   </RouterLink>
                 }
@@ -53,7 +53,7 @@ const Page = (): React.ReactElement => {
                 <SideNavigationItem
                   subLevel={2}
                   content={
-                    <RouterLink href="/" aria-current="location">
+                    <RouterLink href="/">
                       {sidenavigationContent['example.navitem1-2-1']}
                     </RouterLink>
                   }
@@ -158,7 +158,7 @@ const Page = (): React.ReactElement => {
               <SideNavigationItem
                 subLevel={1}
                 content={
-                  <RouterLink href="/" aria-current="location">
+                  <RouterLink href="/">
                     {sidenavigationContent['example.navitem1']}
                   </RouterLink>
                 }
@@ -166,7 +166,7 @@ const Page = (): React.ReactElement => {
                 <SideNavigationItem
                   subLevel={2}
                   content={
-                    <RouterLink href="/" aria-current="location">
+                    <RouterLink href="/">
                       {sidenavigationContent['example.navitem1-2-1']}
                     </RouterLink>
                   }

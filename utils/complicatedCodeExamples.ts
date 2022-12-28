@@ -38,7 +38,6 @@ export const Example = () => (
       margin: suomifiDesignTokens.spacing.xl,
       padding: suomifiDesignTokens.spacing.s,
       background: suomifiDesignTokens.colors.highlightBase,
-      boxShadow: suomifiDesignTokens.shadows.panelShadow,
       fontSize:
         suomifiDesignTokens.values.typography.bodyText.fontSize
           .value +

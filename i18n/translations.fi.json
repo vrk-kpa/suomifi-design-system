@@ -74,7 +74,7 @@
     },
     "styles_main_page": {
         "ingress": "Design system tarjoaa Suomi.fi-identiteetin mukaisia, valmiiksi paketoituja tyylimäärittelyjä eli tokeneita. Design systemiin kuuluvan komponenttikirjaston tyylit pohjautuvat näihin tokeneihin.",
-        "paragraph_1": "Suomi.fi design tokenit löytyvät erillisenä pakettina yhdestä npm-moduulista. Tokeneiden tekninen ohjeistus ja käyttöönotto löytyy GitHub-dokumentaatiosta.",
+        "paragraph_1": "Suomi.fi design tokenit löytyvät erillisenä pakettina yhdestä npm-moduulista. Tokeneiden tekninen ja käyttöönottoohjeistus löytyy GitHub-dokumentaatiosta.",
         "style_usage": "Tyylien käyttö",
         "style_usage_paragraph_1": "Tokeneita hyödyntämällä voi oman sivustonsa tyylit pitää linjassa Suomi.fi-teeman kanssa. Tokeneita voi käyttää suoraa omasta npm-moduulistaan.",
         "style_usage_paragraph_2": "Vaihtoehtoisesti tokenit ovat käytettävissä myös komponenttikirjaston teemaobjektin kautta alla olevan esimerkin mukaisesti.",
@@ -104,15 +104,15 @@
         "ingress": "Tältä sivulla löydät kaikki ikonit jotka ovat käytössä suomi.fi palveluissa. Ikonien käyttöohjeistukset löydät ikonikomponentin sivulta.",
         "base_icons": {
             "title": "Perusikonit (base icons)",
-            "link_title": "Perusikonit GitHubissa SVG muodossa"
+            "link_title": "Perusikonit GitHubissa SVG-muodossa"
         },
         "illustrative_icons": {
             "title": "Kuvitusikonit (illustrative icons)",
-            "link_title": "Kuvitusikonit GitHubissa SVG muodossa"
+            "link_title": "Kuvitusikonit GitHubissa SVG-muodossa"
         },
         "doctype_icons": {
             "title": "Liitetiedostoikonit (doctype icons)",
-            "link_title": "Liitetiedostoikonit GitHubissa SVG muodossa"
+            "link_title": "Liitetiedostoikonit GitHubissa SVG-muodossa"
         }
     },
     "components": {

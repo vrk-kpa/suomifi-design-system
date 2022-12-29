@@ -46,6 +46,7 @@ const Footer: React.FunctionComponent = () => {
                   <img
                     src="/github.svg"
                     aria-hidden
+                    alt=""
                     className={styles.githubLogo}
                   />
                   suomifi-ui-components

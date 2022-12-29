@@ -70,7 +70,8 @@
     "styles": {
         "styles_usage_info": "Tyylien käyttöohje",
         "colors": "Värit",
-        "icons": "Ikonit"
+        "icons": "Ikonit",
+        "spacing": "Välistys"
     },
     "styles_main_page": {
         "ingress": "Design system tarjoaa Suomi.fi-identiteetin mukaisia, valmiiksi paketoituja tyylimäärittelyjä eli tokeneita. Design systemiin kuuluvan komponenttikirjaston tyylit pohjautuvat näihin tokeneihin.",
@@ -114,6 +115,10 @@
             "title": "Liitetiedostoikonit (doctype icons)",
             "link_title": "Liitetiedostoikonit GitHubissa SVG-muodossa"
         }
+    },
+    "spacing": {
+        "heading": "Välistys",
+        "ingress": "Lorem ipsum asdasd"
     },
     "components": {
         "component_usage_info": "Komponenttien käyttöohje",

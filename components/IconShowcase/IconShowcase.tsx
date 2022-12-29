@@ -44,7 +44,7 @@ const IconShowcase: React.FunctionComponent<IconShowcaseProps> = ({
   return (
     <Block>
       {iconCategories.map((cat, index) => (
-        <Block mb="l">
+        <Block mb="l" key={index}>
           <Block>
             <Heading variant="h2" className="mb-l">
               {cat.title}

@@ -16,4 +16,8 @@ export const navItems: NavItem[] = [
         title: translations.styles.icons,
         path: "/styles/icons",
     },
+    {
+        title: translations.styles.spacing,
+        path: "/styles/spacing",
+    },
 ]

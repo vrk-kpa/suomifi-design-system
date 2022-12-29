@@ -1,26 +1,11 @@
 import { NextPage } from 'next';
 import { useTranslation } from 'next-export-i18n';
 import Head from 'next/head';
-import {
-  Heading,
-  Block,
-  Paragraph,
-  Text,
-  ExternalLink,
-} from 'suomifi-ui-components';
-import { suomifiDesignTokens } from 'suomifi-design-tokens';
-import { getLuminance } from 'polished';
+import { Heading, Block, Text } from 'suomifi-ui-components';
 
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/styles-sidenav';
-import ColorShowcase from '../../components/ColorShowcase/ColorShowcase';
-import {
-  ColorItem,
-  ColorTypes,
-  IconCategories,
-} from '../../interfaces/interfaces';
-import InfoBox from '../../components/InfoBox/InfoBox';
-import Divider from '../../components/Divider/Divider';
+import { IconCategories } from '../../interfaces/interfaces';
 
 import { baseIcons, illustrativeIcons, doctypeIcons } from 'suomifi-icons';
 import IconShowcase from '../../components/IconShowcase/IconShowcase';

@@ -33,6 +33,10 @@ export const navItems: NavItem[] = [
     path: '/components/dropdown',
   },
   {
+    title: translations.components.expander,
+    path: '/components/expander',
+  },
+  {
     title: translations.components.modal,
     path: '/components/modal',
   },

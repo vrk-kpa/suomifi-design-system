@@ -6,6 +6,7 @@ import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
 import {
+  defaultSuomifiTheme,
   Block,
   Heading,
   Text,
@@ -13,6 +14,10 @@ import {
   ExternalLink,
   Dropdown,
   DropdownItem,
+  Expander,
+  ExpanderTitleButton,
+  ExpanderContent,
+  ExpanderGroup,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -20,7 +25,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('dropdown_page.heading')} | Suomi.fi Design System</title>
+        <title>{t('expander_page.heading')} | Suomi.fi Design System</title>
       </Head>
 
       <SideNavLayout
@@ -28,36 +33,29 @@ const Page: NextPage = () => {
         navHeaderText={t('main_nav.components')}
         navIcon="puzzle"
       >
-        <Heading variant="h1">{t('dropdown_page.heading')}</Heading>
+        <Heading variant="h1">{t('expander_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Dropdown"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Expander"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}
           </ExternalLink>
         </Block>
         <Paragraph className="my-xl">
-          <Text variant="lead">{t('dropdown_page.ingress')}</Text>
+          <Text variant="lead">{t('expander_page.ingress')}</Text>
         </Paragraph>
 
         <Block variant="section">
           <ComponentExample>
-            <Dropdown
-              alwaysShowVisualPlaceholder
-              labelText={t('dropdown_page.example.label')}
-              onChange={(action) => console.log(action, 'selected')}
-            >
-              <DropdownItem value="Toiminto1">
-                {t('dropdown_page.example.option1')}
-              </DropdownItem>
-              <DropdownItem value="Toiminto2">
-                {t('dropdown_page.example.option2')}
-              </DropdownItem>
-              <DropdownItem value="Toiminto2">
-                {t('dropdown_page.example.option2')}
-              </DropdownItem>
-            </Dropdown>
+            <Expander>
+              <ExpanderTitleButton>
+                {t('expander_page.example.expander.title')}
+              </ExpanderTitleButton>
+              <ExpanderContent>
+                {t('expander_page.example.expander.content')}
+              </ExpanderContent>
+            </Expander>
           </ComponentExample>
         </Block>
 
@@ -67,58 +65,117 @@ const Page: NextPage = () => {
               {t('common.accessibility_and_usability')}
             </Heading>
             <ul>
-              <li>{t('dropdown_page.accessibility_list.point_1')}</li>
-              <li>{t('dropdown_page.accessibility_list.point_2')}</li>
-              <li>{t('dropdown_page.accessibility_list.point_3')}</li>
-              <li>{t('dropdown_page.accessibility_list.point_4')}</li>
-              <li>{t('dropdown_page.accessibility_list.point_5')}</li>
-              <li>{t('dropdown_page.accessibility_list.point_6')}</li>
-              <li>{t('dropdown_page.accessibility_list.point_7')}</li>
+              <li>{t('expander_page.accessibility_list.point_1')}</li>
+              <li>{t('expander_page.accessibility_list.point_2')}</li>
+              <li>{t('expander_page.accessibility_list.point_3')}</li>
+              <li>{t('expander_page.accessibility_list.point_4')}</li>
+              <li>{t('expander_page.accessibility_list.point_5')}</li>
+              <li>{t('expander_page.accessibility_list.point_6')}</li>
             </ul>
           </InfoBox>
         </Block>
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('dropdown_page.what_does_the_component_contain.heading')}
+            {t('expander_page.what_does_the_component_contain.heading')}
           </Heading>
           <Paragraph className="my-xl">
-            {t('dropdown_page.what_does_the_component_contain.text')}
+            {t('expander_page.what_does_the_component_contain.text')}
           </Paragraph>
         </Block>
 
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('dropdown_page.size_and_usage.heading')}
+            {t('expander_page.size_and_usage.heading')}
           </Heading>
           <Paragraph className="my-xl">
-            {t('dropdown_page.size_and_usage.text_1')}
+            {t('expander_page.size_and_usage.text_1')}
           </Paragraph>
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('dropdown_page.example.example1.title')}
-          </Heading>
           <Paragraph className="my-xl">
-            {t('dropdown_page.example.example1.description')}
+            {t('expander_page.example.nopadding.description')}
           </Paragraph>
 
           <ComponentExample>
-            <Dropdown
-              visualPlaceholder={t(
-                'dropdown_page.example.example1.placeholder',
-              )}
-              alwaysShowVisualPlaceholder
-              labelText={t('dropdown_page.example.example1.label')}
-              onChange={(action) => console.log(action, 'selected')}
+            <Expander>
+              <ExpanderTitleButton>
+                {t('expander_page.example.expander.title')}
+              </ExpanderTitleButton>
+              <ExpanderContent noPadding>
+                <p
+                  style={{
+                    margin: 0,
+                    padding: defaultSuomifiTheme.spacing.s,
+                    background: defaultSuomifiTheme.colors.brandBase,
+                    color: defaultSuomifiTheme.colors.whiteBase,
+                  }}
+                >
+                  {t('expander_page.example.expander.content')}
+                </p>
+              </ExpanderContent>
+            </Expander>
+          </ComponentExample>
+        </Block>
+
+        <Block variant="section">
+          <Heading variant="h2" className="mb-xl">
+            {t('expander_page.example.single.title')}
+          </Heading>
+          <Paragraph className="my-xl">
+            {t('expander_page.example.single.description')}
+          </Paragraph>
+
+          <ComponentExample>
+            <Expander>
+              <ExpanderTitleButton>
+                {t('expander_page.example.expander.title')}
+              </ExpanderTitleButton>
+              <ExpanderContent>
+                {t('expander_page.example.expander.content')}
+              </ExpanderContent>
+            </Expander>
+          </ComponentExample>
+        </Block>
+
+        <Block variant="section">
+          <Heading variant="h2" className="mb-xl">
+            {t('expander_page.example.group.title')}
+          </Heading>
+          <Paragraph className="my-xl">
+            {t('expander_page.example.group.description')}
+          </Paragraph>
+
+          <ComponentExample>
+            <ExpanderGroup
+              openAllText={t('expander_page.example.group.open')}
+              closeAllText={t('expander_page.example.group.close')}
             >
-              <DropdownItem value="Toiminto1">
-                {t('dropdown_page.example.example1.option1')}
-              </DropdownItem>
-              <DropdownItem value="Toiminto2">
-                {t('dropdown_page.example.example1.option2')}
-              </DropdownItem>
-            </Dropdown>
+              <Expander>
+                <ExpanderTitleButton>
+                  {t('expander_page.example.group.title')}
+                </ExpanderTitleButton>
+                <ExpanderContent>
+                  {t('expander_page.example.expander.content')}
+                </ExpanderContent>
+              </Expander>
+              <Expander>
+                <ExpanderTitleButton>
+                  {t('expander_page.example.expander.title')}
+                </ExpanderTitleButton>
+                <ExpanderContent>
+                  {t('expander_page.example.expander.content')}
+                </ExpanderContent>
+              </Expander>
+              <Expander>
+                <ExpanderTitleButton>
+                  {t('expander_page.example.expander.title')}
+                </ExpanderTitleButton>
+                <ExpanderContent>
+                  {t('expander_page.example.expander.content')}
+                </ExpanderContent>
+              </Expander>
+            </ExpanderGroup>
           </ComponentExample>
         </Block>
       </SideNavLayout>

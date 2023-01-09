@@ -9,8 +9,32 @@ export const navItems: NavItem[] = [
     path: '/components',
   },
   {
+    title: translations.components.alert,
+    path: '/components/alert',
+  },
+  {
+    title: translations.components.block,
+    path: '/components/block',
+  },
+  {
+    title: translations.components.breadcrumb,
+    path: '/components/breadcrumb',
+  },
+  {
     title: translations.components.button,
     path: '/components/button',
+  },
+  {
+    title: translations.components.checkbox,
+    path: '/components/checkbox',
+  },
+  {
+    title: translations.components.dropdown,
+    path: '/components/dropdown',
+  },
+  {
+    title: translations.components.modal,
+    path: '/components/modal',
   },
   {
     title: translations.components.wizard_navigation,

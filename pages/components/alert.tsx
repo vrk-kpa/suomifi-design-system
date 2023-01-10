@@ -72,6 +72,13 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('alert_page.size_and_usage.text_2')}
           </Paragraph>
+
+          <Heading variant="h2" className="mb-xl">
+            {t('alert_page.example.inline_alert_heading')}
+          </Heading>
+          <Paragraph className="my-xl">
+            {t('alert_page.example.inline_paragraph')}
+          </Paragraph>
         </Block>
 
         <Block variant="section">

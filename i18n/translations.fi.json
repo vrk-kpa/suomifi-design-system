@@ -383,6 +383,83 @@
     }
   },
 
+  "heading_page": {
+    "site_title": "Heading (Otsikko)| Suomi.fi Design System",
+    "heading": "Heading (Otsikko)",
+    "ingress": "Otsikot auttavat luomaan sivun sisällölle selkeän rakenteen, jonka avulla käyttäjä muodostaa kokonaiskäsityksen sivun sisällöstä.",
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Otsikoiden koot on määritelty erikseen sekä desktop- että mobiilinäytöille. Otsikot vaihtuvat normaalikoosta (Normal) pieneen kokoon (Small). Small-tyyppiset otsikkotyylit on määritelty erikokoisiksi kaikille muille otsikoille paitsi h5-otsikolle. Etusivun pääotsikolle on määritelty myös erillinen Hero-tyyli, jota käytetään erottamaan otsikkotyyli muiden sivujen pääotsikoista."
+    },
+    "accessibility_list": {
+      "point_1": "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
+      "point_2": "Otsikointihierarkian tulee olla yhtenäinen (h1, h2, h3, h4, h5), eikä välistä saa puuttua otsikkotasoja. Oikea otsikkotasojen hierarkia tukee rakenteen hahmottamista.",
+      "point_3": "Otsikkotasojen puuttuminen välistä tai otsikkotasojen epäjärjestys vaikeuttaa sisällön hahmottamista ruudunlukijaa käytettäessä. Ruudunlukija tulkitsee vain heading-merkityt komponentit otsikoiksi.",
+      "point_4": "Huomioi tekstiä koskevat saavutettavuusohjeistukset (WCAG 2.1): 1.4.3 Kontrasti (minimi), 1.4.4 Tekstin koon muuttaminen, 1.4.12 Tekstin välistys."
+    },
+
+    "link_1": "Verkkosisällön saavutettavuusohjeet (WCAG) 2.1",
+    "link_2": "Lisätietoa typografiamäärittelyistä Tyylit-osiosta",
+
+    "example": {
+      "title": "Suomi.fi-teeman tukemat otsikkotyylit"
+    }
+  },
+
+  "icon_page": {
+    "site_title": "Icon (Ikoni)| Suomi.fi Design System",
+    "heading": "Icon (Ikoni)",
+    "ingress": "Ikonit ovat visuaalisia symboleja, jotka tukevat toimintojen ja aiheiden ilmaisemista. Ikonien avulla käyttäjän huomiota voidaan kiinnittää haluttuun informaatioon tai toimintoon. Ikonien käyttäminen voi myös parantaa laajojen sisältöjen hahmottamista ja ryhmittämistä. Suomi.fi-teemassa on sekä käyttöliittymäikoneita että kuvitusikoneita.",
+    "all_icons_page_link_title": "Katso kaikki Suomi.fi-ikonit",
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Jos ikoneita käytetään tekstin yhteydessä, tekstin koko määrittelee ikonin koon."
+    },
+    "accessibility_list": {
+      "point_1": "Jos ikoni on informatiivinen tai toiminnallinen, kuvalle on luotava tekstivastine käyttämällä WAI-ARIA-määritettä \"aria-label\" tai \"aria-labelledby\".",
+      "point_2": "Jos ikoni on tarkoitettu vain visuaaliseksi tehosteeksi, käytetään sitä varten WAI-ARIA-määritettä role='presentation' (ei role='img'). Tällöin avustavat tekniikat ohittavat kuvan.",
+      "point_3": "Kuvitusikonien käytössä tulee huomioida ikonille looginen käyttötarkoitus. Jos ikoni on ristiriidassa sisällön kanssa, tämä voi heikentää käytettävyyttä ja kognitiivista saavutettavuutta.",
+      "point_4": "Ikonit ovat harvoin yksiselitteisiä kaikille käyttäjille. Ikoni esitetään siksi yleensä tekstin kanssa, jolloin käyttäjän ymmärrys ei jää pelkän ikonin varaan. Poikkeuksena info-ikoni, jonka käyttö on yleisesti vakiintunut."
+    },
+
+    "basic_icons": {
+      "title": "Perusikonit",
+      "description": "Perusikonien oletusväri on harmaa (depthDark1). Jos ikonissa on mukana jokin toiminto, siinä käytetään sinistä väriä (highlightBase) klikattavuuden indikoimiseksi. Notifikaatioikoneissa käytetään liikennevalovärejä (successBase, warningBase, alertBase) sekä sinistä korosteväriä (accentSecondaryBase). Huomaa, että värit ovat ikoneissa ainoastaan hahmottamisen tukena. Pelkkä visuaalinen korostus ei ole saavutettavuuskriteereiden mukainen riittävä toiminnan kuvaustapa. Jos muokkaat ikonien värityksiä, on hyvä valita toimintaa kuvaaville ikoneille muista ikoneista erottuva sävy. ",
+      "example_arialabel": "Checkmark-ikoni"
+    },
+
+    "info_icons": {
+      "title": "Ohjeikoni",
+      "description": "Ohjeet ovat esim. käyttöliittymässä näytettäviä kontekstiohjeita, joita käyttäjä tarvitsee tietääkseen mitä tehdä tai miten toimia. Ikonin taakse piilotettujen ohjeiden lukeminen ei ole milloinkaan välttämätöntä. Suomi.fi-teemassa ohjeikoni on sininen (highlightBase) ja tummalla taustalla käytetään valkoista (whiteBase) ikonia. Ohjeikonista on Suomi.fi-teemassa kaksi erillistä versiota, täytetty versio sekä ääriviivaversio. Täytettyä ohjeikonia käytetään silloin, kun sitä klikkaamalla käyttäjälle aukeaa/tarjotaan lisää ohjeistusta. Ääriviivaversiota ohjeikonista käytetään visuaalisena tukena. Ohjeikonilla ei ole selittävää tekstiä, koska teksti häiritsisi varsinaisen sisällön lukemista. Ohjeikoni on ikoneista helpoiten ymmärrettävä, ja siksi se toimii myös ilman selittävää tekstiä.",
+      "example1_arialabel": "Kysymysmerkki-ikoni tummalla pohjalla",
+      "example2_arialabel": "Kysymysmerkki-ikoni vaalealla pohjalla"
+    },
+
+    "additional_info_icons": {
+      "title": "Lisätietoikoni",
+      "description": "Lisätieto on asiaa, jonka käyttäjän täytyy lukea ja ymmärtää toimiakseen oikein. Lisätietoikoni on huomioarvoltaan suurempi kuin ohjeikoni. Tummalla pohjalla käytetään valkoista (whiteBase) ikonia. Lisätietoikonista on Suomi.fi-teemassa kaksi erillistä versiota, täytetty sekä ääriviivaversio. Täytettyä lisätietoikonia käytetään silloin, kun sitä klikkaamalla käyttäjälle aukeaa lisätietoa. Ääriviivaversio lisätietoikonista käytetään visuaalisena tukena esimerkiksi modaaleissa.",
+      "example1_arialabel": "Tumma ympyrän muotoinen huomioikoni",
+      "example2_arialabel": "Informaatioikoni vaalealla pohjalla"
+    },
+    "illustrative_icons": {
+      "title": "Kuvitusikonit",
+      "description": "Kuvitusikonit kuvaavat sisällössä esitettäviä elämäntilanteita ja aihealueita. Ikoneissa käytetyt värit ovat vaaleanharmaa (depthBase) ja oranssi (accentBase). Myös kuvitusikonit pyritään pitämään yksinkertaisina, jotta vältyttäisiin luomasta ylimääräistä kognitiivista rasitetta. Suomi.fi-palveluissa jokaisella kuvitusikonilla on teema, joka antaa osviittaa käyttötarkoituksesta.",
+      "example_arialabel": "Neljä kättä pitävät toisistaan kiinni"
+    },
+    "attachment_icons": {
+      "title": "Liitetiedosto-ikonit",
+      "description": "",
+      "example_arialabel": "Tekstitiedostoikoni"
+    },
+
+    "sign_language_icons": {
+      "title": "Viittomakielipalvelut",
+      "description": "Suomi.fi-verkkopalveluissa käytetään Kuurojen liiton viittomakielen palveluiden symbolia.",
+      "link_title": "Viittomakielen ikoni Kuurojen liiton sivulla",
+      "example_arialabel": "Viittomakielen ikoni"
+    }
+  },
+
   "modal_page": {
     "site_title": "Modal (Dialogi) | Suomi.fi Design System",
     "heading": "Modal (Dialogi)",

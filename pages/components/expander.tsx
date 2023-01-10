@@ -12,8 +12,6 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Dropdown,
-  DropdownItem,
   Expander,
   ExpanderTitleButton,
   ExpanderContent,

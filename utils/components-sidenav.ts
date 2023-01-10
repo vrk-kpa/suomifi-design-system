@@ -37,6 +37,14 @@ export const navItems: NavItem[] = [
     path: '/components/expander',
   },
   {
+    title: translations.components.heading,
+    path: '/components/heading',
+  },
+  {
+    title: translations.components.icon,
+    path: '/components/icon',
+  },
+  {
     title: translations.components.modal,
     path: '/components/modal',
   },

@@ -7,14 +7,11 @@ import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
 import {
-  Alert,
   Block,
   Heading,
-  InlineAlert,
   Text,
   Paragraph,
   ExternalLink,
-  defaultSuomifiTheme,
   ModalProps,
   Modal,
   ModalContent,
@@ -34,7 +31,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('site_title')}</title>
+        <title>{t('modal_page.site_title')}</title>
       </Head>
 
       <SideNavLayout

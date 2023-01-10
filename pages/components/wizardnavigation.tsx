@@ -43,7 +43,7 @@ const WizardNavigationPage: NextPage = () => {
         </Paragraph>
         <ComponentExample
           variant="normal"
-          justifyContent="left"
+          style={{ justifyContent: 'left' }}
           filterPropsInExample={['className']}
         >
           <WizardNavigation

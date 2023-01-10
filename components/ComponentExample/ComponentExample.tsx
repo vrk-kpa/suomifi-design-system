@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import {
   Expander,
   ExpanderContent,
@@ -17,7 +17,7 @@ interface ComponentExampleProps {
   variant?: ComponentExampleVariant;
   children?: ReactNode;
   codeString?: string;
-  justifyContent?: 'center' | 'left';
+  style?: CSSProperties;
 }
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
@@ -32,17 +32,15 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
   variant,
   filterPropsInExample,
   codeString,
-  justifyContent = 'center',
+  style,
 }) => {
   const showcase =
     variant === 'mobile_device' ? (
-      <ShowcaseBox style={{ paddingBottom: 0, justifyContent: justifyContent }}>
+      <ShowcaseBox style={{ ...style, paddingBottom: 0 }}>
         <MobileDevice>{children}</MobileDevice>
       </ShowcaseBox>
     ) : !!children ? (
-      <ShowcaseBox style={{ justifyContent: justifyContent }}>
-        {children}
-      </ShowcaseBox>
+      <ShowcaseBox style={style}>{children}</ShowcaseBox>
     ) : null;
   return (
     <>

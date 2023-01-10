@@ -275,27 +275,37 @@
       "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla notifikaatioteksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Notifikaatiotekstin lisäksi tilaa viestitään käyttäjälle myös värien sekä valintaruudun reunuksen paksuuden avulla. "
     },
     "example": {
-      "default.title": "Tavallinen valintaruutu",
-      "default.content": "Valinta",
-      "large.title": "Valintaruudun mobiiliversio",
-      "large.description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintaruudun mobiiliversiota (Checkbox.large)",
-      "large.content": "Valinta",
-      "group.title": "Valintaruutu ryhmässä",
-      "group.description": "Valintaruutu voidaan sijoittaa myös ryhmään (CheckboxGroup). Ryhmälle voidaan antaa tila, joka välitetään jokaiselle valintaruudulle ryhmän sisälle. Mikäli ryhmässä olevalle yksittäiselle valintaruudulle annetaan erikseen oma tila, se ajaa ryhmän antaman tilan ylitse. Ryhmän tilateksti ei välity yksittäisille valintaruuduille. Käytettäessä ryhmää, ei yksittäisille valintaruuduille tulisi antaa omaa tilatekstiä, sillä se saattaa sekoittaa käyttäjää.",
-      "group.label": "Miten haluat, että sinuun otetaan yhteyttä",
-      "group.hint": "Voit valita useamman kuin yhden",
-      "group.status.text": "Valitse vähintään yksi",
-      "group.content.label.email": "Sähköpostilla",
-      "group.content.label.phone": "Puhelimella",
-      "group.content.label.visit": "Henkilökohtaisella vierailulla",
-      "hintstate.title": "Ohje- ja notifikaatiotekstit",
-      "hintstate.description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit, jotka näytetään komponentin alla. Komponentin ja notifikaatiotekstin ulkonäkö muuttuu komponentin tilan (status) mukana.",
-      "hintstate.content": "Valinta",
-      "hintstate.hintText": "Ohjeteksti valinnan tueksi",
-      "hintstate.statusText": "Notifikaatioteksti",
-      "disabled.title": "Estetty valintaruutu (Disabled Checkbox)",
-      "disabled.description": "Estetty valintaruutu ei ole käyttäjän valittavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
-      "disabled.content": "Valinta"
+      "default": {
+        "title": "Tavallinen valintaruutu",
+        "content": "Valinta"
+      },
+      "large": {
+        "title": "Valintaruudun mobiiliversio",
+        "description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintaruudun mobiiliversiota (Checkbox.large)",
+        "content": "Valinta"
+      },
+      "group": {
+        "title": "Valintaruutu ryhmässä",
+        "description": "Valintaruutu voidaan sijoittaa myös ryhmään (CheckboxGroup). Ryhmälle voidaan antaa tila, joka välitetään jokaiselle valintaruudulle ryhmän sisälle. Mikäli ryhmässä olevalle yksittäiselle valintaruudulle annetaan erikseen oma tila, se ajaa ryhmän antaman tilan ylitse. Ryhmän tilateksti ei välity yksittäisille valintaruuduille. Käytettäessä ryhmää, ei yksittäisille valintaruuduille tulisi antaa omaa tilatekstiä, sillä se saattaa sekoittaa käyttäjää.",
+        "label": "Miten haluat, että sinuun otetaan yhteyttä",
+        "hint": "Voit valita useamman kuin yhden",
+        "status_text": "Valitse vähintään yksi",
+        "content_label_email": "Sähköpostilla",
+        "content_label_phone": "Puhelimella",
+        "content_label_visit": "Henkilökohtaisella vierailulla"
+      },
+      "hintstate": {
+        "title": "Ohje- ja notifikaatiotekstit",
+        "description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit, jotka näytetään komponentin alla. Komponentin ja notifikaatiotekstin ulkonäkö muuttuu komponentin tilan (status) mukana.",
+        "content": "Valinta",
+        "hint_text": "Ohjeteksti valinnan tueksi",
+        "status_text": "Notifikaatioteksti"
+      },
+      "disabled": {
+        "title": "Estetty valintaruutu (Disabled Checkbox)",
+        "description": "Estetty valintaruutu ei ole käyttäjän valittavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
+        "content": "Valinta"
+      }
     }
   },
 

@@ -11,8 +11,9 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Breadcrumb,
-  BreadcrumbLink,
+  defaultSuomifiTheme,
+  Checkbox,
+  CheckboxGroup,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -20,7 +21,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('checkbox_page.heading')} | Suomi.fi Design System</title>
+        <title>{t('checkbox_page.site_title')}</title>
       </Head>
 
       <SideNavLayout
@@ -31,7 +32,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('checkbox_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Breadcrumb"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Checkbox"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}
@@ -41,21 +42,11 @@ const Page: NextPage = () => {
           <Text variant="lead">{t('checkbox_page.ingress')}</Text>
         </Paragraph>
 
-        <Block variant="section">
-          <ComponentExample filterPropsInExample={['className']}>
-            <Breadcrumb aria-label="breadcrumb">
-              <BreadcrumbLink href="/">
-                {t('breadcrumb_page.example.default.link1')}
-              </BreadcrumbLink>
-              <BreadcrumbLink href="/alasivu">
-                {t('breadcrumb_page.example.default.link2')}
-              </BreadcrumbLink>
-              <BreadcrumbLink current>
-                {t('breadcrumb_page.example.default.link3')}
-              </BreadcrumbLink>
-            </Breadcrumb>
-          </ComponentExample>
-        </Block>
+        <ComponentExample
+          style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+        >
+          <Checkbox>{t('checkbox_page.example.default.content')}</Checkbox>
+        </ComponentExample>
 
         <Block variant="section" className="my-xl">
           <InfoBox>
@@ -89,6 +80,75 @@ const Page: NextPage = () => {
             {t('checkbox_page.size_and_usage.text_1')}
           </Paragraph>
         </Block>
+
+        <Heading variant="h2" className="mb-xl">
+          {t('checkbox_page.example.large.title')}
+        </Heading>
+        <Paragraph className="my-xl">
+          {t('checkbox_page.example.large.description')}
+        </Paragraph>
+
+        <ComponentExample>
+          <Checkbox variant="large">
+            {t('checkbox_page.example.large.content')}
+          </Checkbox>
+        </ComponentExample>
+
+        <Heading variant="h2" className="mb-xl">
+          {t('checkbox_page.example.group.title')}
+        </Heading>
+        <Paragraph className="my-xl">
+          {t('checkbox_page.example.group.description')}
+        </Paragraph>
+
+        <ComponentExample>
+          <CheckboxGroup
+            labelText={t('checkbox_page.example.group.label')}
+            groupHintText={t('checkbox_page.example.group.hint')}
+            groupStatus="error"
+            groupStatusText={t('checkbox_page.example.group.status_text')}
+          >
+            <Checkbox>
+              {t('checkbox_page.example.group.content_label_email')}
+            </Checkbox>
+            <Checkbox>
+              {t('checkbox_page.example.group.content_label_phone')}
+            </Checkbox>
+            <Checkbox>
+              {t('checkbox_page.example.group.content_label_visit')}
+            </Checkbox>
+          </CheckboxGroup>
+        </ComponentExample>
+
+        <Heading variant="h2" className="mb-xl">
+          {t('checkbox_page.example.hintstate.title')}
+        </Heading>
+        <Paragraph className="my-xl">
+          {t('checkbox_page.example.hintstate.description')}
+        </Paragraph>
+
+        <ComponentExample>
+          <Checkbox
+            hintText={t('checkbox_page.example.hintstate.hint_text')}
+            status="error"
+            statusText={t('checkbox_page.example.hintstate.status_text')}
+          >
+            {t('checkbox_page.example.hintstate.content')}
+          </Checkbox>
+        </ComponentExample>
+
+        <Heading variant="h2" className="mb-xl">
+          {t('checkbox_page.example.disabled.title')}
+        </Heading>
+        <Paragraph className="my-xl">
+          {t('checkbox_page.example.disabled.description')}
+        </Paragraph>
+
+        <ComponentExample>
+          <Checkbox disabled>
+            {t('checkbox_page.example.disabled.content')}
+          </Checkbox>
+        </ComponentExample>
       </SideNavLayout>
     </>
   );

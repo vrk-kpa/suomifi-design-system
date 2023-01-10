@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { CSSProperties, ReactNode } from 'react';
 import {
   Expander,
   ExpanderContent,
@@ -8,6 +8,7 @@ import MobileDevice from '../MobileDevice/MobileDevice';
 import ShowcaseBox from '../ShowcaseBox/ShowcaseBox';
 import React from 'react';
 import ComponentCode from './ComponentCode';
+import styles from './ComponentExample.module.scss';
 
 type ComponentExampleVariant = 'normal' | 'mobile_device';
 
@@ -16,6 +17,7 @@ interface ComponentExampleProps {
   variant?: ComponentExampleVariant;
   children?: ReactNode;
   codeString?: string;
+  style?: CSSProperties;
 }
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
@@ -30,19 +32,20 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
   variant,
   filterPropsInExample,
   codeString,
+  style,
 }) => {
   const showcase =
     variant === 'mobile_device' ? (
-      <ShowcaseBox style={{ paddingBottom: 0 }}>
+      <ShowcaseBox style={{ ...style, paddingBottom: 0 }}>
         <MobileDevice>{children}</MobileDevice>
       </ShowcaseBox>
     ) : !!children ? (
-      <ShowcaseBox>{children}</ShowcaseBox>
+      <ShowcaseBox style={style}>{children}</ShowcaseBox>
     ) : null;
   return (
     <>
       {showcase}
-      <Expander className="mt-l">
+      <Expander className="mt-l mb-l">
         <ExpanderTitleButton>Koodiesimerkki (React)</ExpanderTitleButton>
         <ExpanderContent>
           {codeString ? (
@@ -62,6 +65,7 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
           )}
         </ExpanderContent>
       </Expander>
+      <div className={styles.divider}></div>
     </>
   );
 };

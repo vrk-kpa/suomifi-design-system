@@ -20,7 +20,7 @@ const ButtonPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('button_page.heading')} | Suomi.fi Design System</title>
+        <title>{t('button_page.site_title')}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

@@ -23,7 +23,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('expander_page.heading')} | Suomi.fi Design System</title>
+        <title>{t('expander_page.site_title')}</title>
       </Head>
 
       <SideNavLayout

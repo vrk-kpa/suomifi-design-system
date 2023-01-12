@@ -45,6 +45,18 @@ export const navItems: NavItem[] = [
     path: '/components/icon',
   },
   {
+    title: translations.components.language_menu,
+    path: '/components/languagemenu',
+  },
+  {
+    title: translations.components.link,
+    path: '/components/link',
+  },
+  {
+    title: translations.components.loading_spinner,
+    path: '/components/loadingspinner',
+  },
+  {
     title: translations.components.modal,
     path: '/components/modal',
   },

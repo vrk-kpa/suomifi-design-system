@@ -131,7 +131,7 @@
     "expander": "Expander (Laajennuspaneeli)",
     "heading": "Heading (Otsikko)",
     "icon": "Icon (Ikoni)",
-    "language_menu": "(Language Menu) (Kielivalikko)",
+    "language_menu": "Language Menu (Kielivalikko)",
     "link": "Link (Linkki)",
     "loading_spinner": "LoadingSpinner (Latausindikaattori)",
     "modal": "Modal (Dialogi)",
@@ -470,6 +470,127 @@
     }
   },
 
+  "language_menu_page": {
+    "site_title": "Language Menu (Kielivalikko) | Suomi.fi Design System",
+    "heading": "Language Menu (Kielivalikko)",
+    "ingress": "Kielivalikkoa käytetään, kun palvelua voidaan käyttää useilla kielillä, eli sillä on useita kieliversioita. Kielen vaihtaminen vaihtaa käyttöliittymässä käytetyn kielen.",
+    "accessibility_list": {
+      "point_1": "Suomi.fi kielivalintakomponentissa otsake (label) on rakennettu komponenttiin, mutta teksti on visuaalisesti piilotettu näkyvistä tyylisyistä. Otsakkeen (label) käyttäminen pudotusvalikon yhteydessä on muuten aina suositeltavaa.",
+      "point_2": "Huomioi, että viittomakieli ei ole kielivalinta vastaavasti kuin puhutut kielet, joten käyttäjää ei ohjata viittomakielisiin sisältöihin kielivalikosta. Suomi.fi palvelussa ohjataan viittomakielisiin sisältöihin etusivun nostolaatikosta, alatunnisteesta, sekä hakusivun kautta."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text": "Kielivalikossa näkyy palvelun eri kieliversiot. Suomi.fi verkkopalvelussa vaihtoehdot ovat suomi, ruotsi ja englanti."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Klikkaamalla avautuu kielivalintamahdollisuudet ja valitsemalla haluttu kieli, Suomi.fi palvelu muuttuu valitulle kielelle."
+    },
+
+    "in_ui": {
+      "heading": "Kielivalikko käyttöliittymässä",
+      "text": "Kielivalikko kannattaa sijoittaa sivuston tai palvelun ylätunnisteeseen (Header). Suomi.fi palvelussa kielivalikko sijaitsee ylätunnisteessa (Header). Pienillä näytöillä kielivalintaan käytetään linkkejä, jotka sijoitetaan osaksi navigointiin käytettävää valikkoa."
+    },
+
+    "example": {
+      "menuitem1": "Suomeksi (FI)",
+      "menuitem1short": "FI",
+      "menuitem2": "På Svenska (SV)",
+      "menuitem2short": "SV",
+      "menuitem3": "In English (EN)",
+      "menuitem3short": "EN"
+    }
+  },
+
+  "link_page": {
+    "site_title": "Link (Linkki) | Suomi.fi Design System",
+    "heading": "Link (Linkki)",
+    "ingress": "Linkkiä käytetään pääsääntöisesti navigaatioelementtinä.",
+    "accessibility_list": {
+      "point_1": "Linkin tulee olla kuvaava ja sen tarkoituksen ymmärrettävissä pelkästä linkin nimestä.",
+      "point_2": "Linkin nimen on hyvä vastata sen sivun otsikkoa, jonne linkki käyttäjän ohjaa.",
+      "point_3": "Vältä yleisluontoisia \"Lue lisää\"-tyyppisiä linkkejä. Jos linkki kuitenkin halutaan esittää yleisluontoisena, voidaan ruudunlukijaa varten lisätä Aria-teknologialla lisätieto kohdesivusta tyyliin: \"Lue lisää aiheesta Vanhemmuuden tuki\".",
+      "point_4": "Linkkityylin tulee olla yhtenäinen. Suomi.fi Design Systemissä päädyttiin kuitenkin selkeyden vuoksi esittämään leipätekstin ulkopuoliset linkit ilman alleviivausta, koska jokaisen kohdan alleviivaus teki listoista vaikealukuisia. Poikkeuksena tähän luetaan myös navigaatiot, joissa ei käytetä linkkityylejä.",
+      "point_5": "Yleensä heading-luokituksen mukainen otsikko ei ole linkki, vaan linkki esitetään erillisenä komponenttina. Poikkeuksena kuitenkin listaukset, jolloin linkin toistaminen jokaisen yksikön yhteydessä lisäisi listauksen pituutta.",
+      "point_6": "Vältä saman linkin toistumista näkymässä samalla tai eri nimellä.",
+      "point_7": "Mikäli linkki avaa tiedoston tai ohjaa käyttäjän pois sivustolta, täytyy tämän tiedon olla linkin yhteydessä sekä näkeville ja ruudunlukijakäyttäjille."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Linkkien väri on Suomi.fi-teemassa on sininen (highlightBase). Jos linkki on estetty, käytetään harmaata (depthBase). Suomi.fi Design Systemissä linkit on esitetty ilman alleviivausta, mutta hover-tilassa (hiiren kohdistimen siirtämisessä painikkeen päälle) linkki on alleviivattu. Leipätekstin joukossa linkkitekstit alleviivataan, jotta ne erottuvat muusta tekstistä. Alleviivatut linkit ovat hover-tilassa ilman alleviivausta.",
+      "text_2": "Vierailun jälkeisessä tilassa (visited state) linkin väri on violetti (accentTertiaryDark1). Tila indikoidaan kaikissa linkeissä lukuunottamatta päänavigaation linkkejä ja käänteisiä linkkejä. Huomioi, että jos muokkaat linkkien tilojen värejä, on hyvä valita värit, jotka erottuvat riittävästi toisistaan. Linkeissä ei ole välttämätöntä käyttää vierailun jälkeiselle tilalle eri väriä, mutta sen käytön on todettu parantavan huomattavasti tekstiä sisältävien näkymien luettavuutta. Lisäksi näin pystytään indikoimaan selkeämmin listanäkymissä käyttäjän jo vierailemat sivut."
+    },
+    "size_and_usage": {
+      "heading": "Komponentin koko, käyttö ja variaatiot",
+      "text_1": "Linkit eroavat painikkeista siinä, että ne eivät muokkaa tietoa tai käynnistä toimintoa. Linkit vievät käyttäjän uuteen paikkaan käyttöliittymässä tai kokonaan pois sivustolta (External Link)."
+    },
+
+    "in_ui": {
+      "heading": "Komponentti käyttöliittymässä",
+      "text_1": "Suomi.fi-palveluissa käytetään eri käyttötarkoituksiin erilaisia variaatioita linkistä."
+    },
+
+    "example": {
+      "regular": {
+        "title": "Linkki (Link)",
+        "description": "Kirjasinkoko ja leikkaus on tasapainossa muun sisällön kanssa.",
+        "link_text": "Esimerkkilinkki"
+      },
+      "external": {
+        "title": "Ulkoinen linkki (External link)",
+        "description": "Ulkoiset linkit ovat linkkejä, jotka ohjaavat käyttäjän pois sivustolta. Ulkoiset linkit avataan uuteen välilehteen/ikkunaan. Linkeissä käytetään aina ulkoisen linkin symboloivaa ikonia sekä ruudunlukijakäyttäjille myös sanallista tietoa \"Avautuu uuteen ikkunaan\". ",
+        "link_text": "Ulkoinen linkki",
+        "label": "Avautuu uuteen ikkunaan"
+      }
+    }
+  },
+
+  "loading_spinner_page": {
+    "site_title": "LoadingSpinner (Latausindikaattori) | Suomi.fi Design System",
+    "heading": "LoadingSpinner (Latausindikaattori)",
+    "ingress": "Latausindikaattori on varsinaisen sisällön tilalla esitettävä latauksen ilmaisin, joka kertoo käyttäjälle näkymän, sen osan, tai muun taustalle käynnistetyn latausprosessin tilasta. Komponentilla voidaan ilmaista latauksen käynnissä oleminen sekä tarvittaessa latauksen valmistuminen tai epäonnistuminen. ",
+    "accessibility_list": {
+      "point_1": "Latausindikaattoria tulee käyttää vain jos latausaika kestää yli sekunnin. Nopeasti näytöllä vilahtava animaatio on häiritsevä, koska käyttäjä ei ehdi havaitsemaan sitä kunnolla.",
+      "point_2": "Jos tiedetään, että latausaika kestää yli 10 sekuntia, tilatekstin tulisi sisältää tarkempi tieto latauksen edistymisestä. Esimerkiksi \"17 / 1024 valmiina\" tai \"57 % valmiina\".",
+      "point_3": "Hyvä tilateksti on selkeä ja ytimekäs, ja sen tulee sisältää riittävästi informaatiota, jotta myös ruudunlukijakäyttäjät saavat tiedon latauksen tilasta.",
+      "point_4": "Saavutettavuuden osalta toteutuksessa on huomioitava, että tieto indikaattorin tilamuutoksista ja ladattavan sisällön valmistumisesta, tai latauksen epäonnistumisesta välitetään ruudunlukijalle. Vaikka tilateksti piilotettaisiin näkyvistä, tulee sen olla kuvaava ja selkeä ruudunlukijakäyttäjiä varten.",
+      "point_5": "Erityisesti nopeasti tapahtuvan latauksen edistymistietoja, kuten valmistumisprosenttia, ei tarvitse välittää ruudunlukijalle. Tällöin mahdollisesti käytössä olevalle aria-live osiolle tulee latauksen ajaksi asettaa aria-busy attribuutti. Latauksen valmistuminen tai mahdollinen epäonnistuminen tulee tässäkin tapauksessa viestiä myös ruudunlukijakäyttäjille."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "LoadingSpinner koostuu ikonista ja tilatekstistä. Ikoni on tilasta riippuen animoitu tai staattinen. Tilateksti sijaitsee ikonin ala- tai oikealla puolella, ja se on mahdollista piilottaa näkeviltä käyttäjiltä tarvittaessa.",
+      "text_2": "Komponentilla on kolme havaittavaa tilaa: 1. lataus on käynnissä, 2. lataus epäonnistui, 3. lataus valmistui onnistuneesti. "
+    },
+    "size_and_usage": {
+      "heading": "Komponentin koko, käyttö ja variaatiot",
+      "text_1": "Latauksen käynnistyessä latausindikaattori tuodaan näkyviin käyttöliittymään siihen kohtaan, jossa varsinainen sisältö on tarkoitus esittää. Latauksen etenemistä ilmaistaan animaatiolla ja tilatekstillä (esimerkiksi latauksen prosentuaalinen edistyminen). Latauksen valmistuessa latausindikaattori katoaa käyttöliittymästä ja korvautuu varsinaisella sisällöllä automaattisesti.",
+      "text_2": "Latausindikaattori voi koskea koko näkymää, tai sen osaa ja se näytetään käyttöliittymässä siinä kohdassa, jossa ladattava sisältö sijaitsee."
+    },
+
+    "example": {
+      "basic": {
+        "heading": "Normaali käyttötapaus",
+        "description": "Latauksen päätyttyä indikaattori poistuu näkyvistä."
+      },
+      "success": {
+        "heading": "Onnistumista indikoiva tila",
+        "description": "Tässä esimerkissä lataus valmistuu onnistuneesti."
+      },
+      "error": {
+        "heading": "Epäonnistumista indikoiva tila",
+        "description": "Tässä esimerkissä lataus päättyy epäonnistumiseen."
+      },
+      "close_button": "Palauta alkutilaan",
+      "start_button": "Simuloi lataus",
+
+      "loading": {
+        "error": "Lataus epäonnistui",
+        "success": "Lataus valmis",
+        "active": "Lataus käynnissä"
+      }
+    }
+  },
+
   "modal_page": {
     "site_title": "Modal (Dialogi) | Suomi.fi Design System",
     "heading": "Modal (Dialogi)",
@@ -542,7 +663,177 @@
       }
     }
   },
+  "multiselect_page": {
+    "site_title": "MultiSelect (Monivalinta) | Suomi.fi Design System",
+    "heading": "MultiSelect (Monivalinta)",
+    "ingress": "Monivalinta-komponentin avulla käyttäjä voi valita yhden tai useamman vaihtoehdon listalta.",
+    "note_accessibility": "Monivalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijalla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromiumpohjaisilla selaimilla, kuten Chromella tai Edgellä.",
 
+    "accessibility_list": {
+      "point_1": "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
+      "point_2": "Monivalinnan kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
+      "point_3": "Ohjeistava kenttäteksti (visualPlaceholder) auttaa hahmottamaan syötteen paikan. Sen ei tule sisältää käyttötilanteen kannalta olennaista tietoa.",
+      "point_4": "Komponentille voidaan asettaa virhetila, jolla voidaan indikoida esimerkiksi virheellistä tai puuttuvaa syötettä. Virhetilassa komponentin reunukset sekä komponentin alla näytettävä tilateksti muuttuvat punaiseksi."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Monivalinta koostuu otsakkeesta, hakukentästä, valikosta, tilatekstistä, tehtyjen valintojen listasta sekä tehtyjen valintojen poistamiseen tarkoitetusta tyhjennyspainikkeesta. Valikko aukeaa kun fokus siirtyy hakukenttään. Valikossa näytettäviä vaihtoehtoja rajataan hakukentän tekstin mukaisesti.",
+      "text_2": "Valinnat voivat olla pakollisia, milloin niitä ei voi muokata. Valikosta valitut ja pakolliset vaihtoehdot näytetään listana hakukentän alla. Valitut vaihtoehdot, pakollisia lukuunottamatta, voi poistaa tyhjennyspainikkeen avulla."
+    },
+    "size_and_usage": {
+      "heading": "Komponentin koko, käyttö ja variaatiot",
+      "text_1": "Monivalintaa käytetään tilanteissa, missä käyttäjä voi valita useita vaihtoehtoja ennaltamääritellyistä vaihtoehdoista ja erityisesti tilanteissa, missä vaihtoehtoja on paljon ja niiden rajaaminen helpottaa valinnan tekemistä."
+    },
+
+    "example": {
+      "label": "Työkalut",
+      "hint_text": "Vaihtoehtoja voi rajata kirjoittamalla kenttään",
+      "visual_placeholder": "Valitse työkalut",
+      "remove_all_selections": "Poista kaikki valinnat",
+      "selected_amount_text": "työkalua valittu",
+      "options_available_text": "vaihtoehtoa",
+      "option_chip_removed_text": "poistettu",
+      "no_items": "Ei vaihtoehtoja",
+      "chip_action_label": "Poista",
+
+      "tools": {
+        "jackhammer": "Poravasara",
+        "hammer": "Vasara",
+        "sledgehammer": "Moukari",
+        "spade": "Lapio",
+        "powersaw": "Käsisirkkeli",
+        "shovel": "Kauha",
+        "ironStick": "Rautakanki",
+        "rake": "Harava",
+        "motorsaw": "Moottorisaha"
+      }
+    }
+  },
+
+  "notification_page": {
+    "site_title": "Notification (Ilmoitus) | Suomi.fi Design System",
+    "heading": "Notification (Ilmoitus)",
+    "ingress": "Ilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää olennaista palvelun osaan ja käyttäjän toimintaan liittyvää palautetta ja tietoa. ",
+    "accessibility_list": {
+      "point_1": "Mikäli ilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region, jonka sisään ilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ilmoituksesta.",
+      "point_2": "Ilmoituksen otsikkotaso on määriteltävissä käyttötapauksen mukaan. Käytä ilmoituksessa otsikkotasoa, joka ei riko näkymän otsikkojärjestystä.",
+      "point_3": "Sivulla voi olla yhtä aikaa useita ilmoituksia näkyvissä."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "LoadingSpinner koostuu ikonista ja tilatekstistä. Ikoni on tilasta riippuen animoitu tai staattinen. Tilateksti sijaitsee ikonin ala- tai oikealla puolella, ja se on mahdollista piilottaa näkeviltä käyttäjiltä tarvittaessa.",
+      "text_2": "Komponentilla on kolme havaittavaa tilaa: 1. lataus on käynnissä, 2. lataus epäonnistui, 3. lataus valmistui onnistuneesti. "
+    },
+    "size_and_usage": {
+      "heading": "Komponentin koko, käyttö ja variaatiot",
+      "text_1": "Ilmoituksia voidaan käyttää joko näkymän pääsisällön alussa tai relevantissa paikassa sisällön seassa, ja siitä on olemassa kaksi eri varianttia. Huomioilmoitus kertoo, että palvelussa on jotain huomioitavaa. Huomioilmoituksen tunnisteväri on sininen ja sitä käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Virheilmoitus viestii käyttäjälle merkittävästä virhetilanteesta tai poikkeuksesta tietyssä näkymässä. Virheilmoituksen tunnisteväri on punainen. Kapeilla näytöillä, kuten mobiilissa käytetään lisäksi pienille ruuduille tarkoitettuja tyylejä."
+    },
+
+    "example": {
+      "error": {
+        "heading": "Et voi muokata tätä versiota",
+        "paragraph": "Sisällöstä on olemassa uudempi versio (28.12.2021)",
+        "close_button": "Sulje"
+      },
+
+      "info": {
+        "section_heading": "Ilmoitus toimintoelementeillä",
+        "description": "Ilmoitukseen voidaan tarvittaessa lisätä toimintoelementtejä, jotka näytetään pääsisällön alla.",
+        "heading": "Käännös saapunut (ruotsi)",
+        "paragraph": "Tarkista käännös ja muokkaa sitä tarvittaessa",
+        "action_link": "Siirry tarkastelemaan käännöstä",
+        "close_button": "Sulje"
+      }
+    }
+  },
+  "pagination_page": {
+    "site_title": "Pagination (Sivutus) | Suomi.fi Design System",
+    "heading": "Pagination (Sivutus)",
+    "ingress": "Sivutus on komponentti, jonka avulla käyttäjä voi navigoida useille sivuille jaettua sisältöä. Sivustusta käytetään esimerkiksi hakutulosten näyttämiseen.",
+    "accessibility_list": {
+      "point_1": "Tieto sivun vaihdosta välitetään ruudunlukijalle. Komponentissa on visuaalisesti piilotettu kenttä tätä tarkoitusta varten.",
+      "point_2": "Mikäli sivuja on paljon, käyttäjälle voidaan tarjota mahdollisuus sivunumeron syöttämiseen erilliseen sivunumerokenttään.",
+      "point_3": "Ruudunlukijalle sivunumeron tietokentän teksti kannattaa antaa ilman erikoismerkkejä, esimerkiksi \"Sivu 1 kautta 20\", sillä erikoismerkkien lukutapa saattaa vaihdella.",
+      "point_4": "Näppäimistökäyttäjiä varten sivutuskomponentin yhteyteen on hyvä lisätä sisältöön vievä linkki."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Sivutus koostuu kahdesta nuolipainikkeesta, tietokentästä sekä valinnaisesta sivunumeron syötekentästä. Nuolinpainikkeilla käyttäjä voi siirtyä yhden sivun kerrallaan eteen- tai taaksepäin. Tietokenttä on nuolipainikkeiden välissä ja sen tarkoitus on kertoa käyttäjälle nykyisen sekä viimeisen sivun numerot. Syötekentän avulla käyttäjä voi siirtyä suoraan haluamalleen sivulle."
+    },
+    "size_and_usage": {
+      "heading": "Komponentin koko, käyttö ja variaatiot",
+      "text_1": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot sivutuskomponentista. Mobiilinäytöille suunnitellussa versiossa syötekenttä on nuolipainikkeiden alapuolella. Komponentin oletusvariaatio ei sisällä syötekenttää. Syötekenttää voidaan käyttää, jos sivuja on paljon.",
+      "text_2": "Komponentti tulee sijoittaa sivutettavan sisällön alapuolelle.",
+      "text_3": "Sivun vaihtuessa voi ruudunlukijalle antaa sisällöstä lisätietoa, esimerkiksi \"Sivu 2 kautta 5. Näytetään tulokset 10 viiva 20.\"."
+    },
+
+    "example": {
+      "basic": {
+        "heading": "Normaali käyttötapaus",
+        "description": "Esimerkissä sivun vaihtuessa ruudunlukijalle annetaan tarkempaa tietoa sivun sisällöstä"
+      },
+
+      "success": {
+        "heading": "Sivutus ilman syötekenttää"
+      },
+
+      "error": {
+        "heading": "Sivutuksen mobiiliversio"
+      }
+    }
+  },
+  "radiobutton_page": {
+    "site_title": "Radio Button (Valintanappi) | Suomi.fi Design System",
+    "heading": "Radio Button (Valintanappi)",
+    "ingress": "Valintanappi on lomakekomponentti, jolla voi valita yhden vaihtoehdon useammasta valintanapista koostuvasta valintanappiryhmästä. Käyttäjä voi valita kerrallaan vain yhden vaihtoehdon. Kun käyttäjä tekee uuden valinnan, aiemmin tehty valinta poistuu ja korvautuu uudella valinnalla.",
+    "accessibility_list": {
+      "point_1": "Pyri kuvaaviin, lyhyisiin ja ytimekkäisiin otsakkeisiin (label).",
+      "point_2": "Sijoita saman aihealueen valintanapit ryhmiin asemoimalla ne päällekkäin.",
+      "point_3": "Käytä valintanappia, kun käyttäjän halutaan valitsevan yksi annetuista vaihtoehdoista.",
+      "point_4": "Älä käytä valintanappia tilanteissa, joissa käyttäjän on määrä valita useita vaihtoehtoja. Käytä tällöin valintaruutua (checkbox).",
+      "point_5": "Älä käytä valintanappia tilan muutokseen. Käytä tähän tarkoitukseen valintakytkintä (toggle).",
+      "point_6": "Käytä ohjetekstiä tilanteissa, joissa käyttäjälle on tarpeen antaa lisäohjeistusta valinnan suhteen. Yksinkertaisissa tapauksissa ohjetekstiä ei tarvita.",
+      "point_7": "Valittuun valintanappiin voi liittyä lisävalintoja, kuten esimerkiksi tekstikenttiä tai valintakytkimiä.",
+      "point_8": "Lisävalinnat ovat piilotettuina oletustilassa ja ne näytetään vasta, kun valintanappi valitaan.",
+      "point_9": "Lisävalinnat asetellaan suoraan valitun valintanapin alle sisennettynä."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Valintanappi koostuu pyöreästä painikkeesta ja sen oikealla puolella olevasta label-tekstistä. Valintanapin alla voidaan näyttää valintanappiin liittyvä ohjeteksti. "
+    },
+    "size_and_usage": {
+      "heading": "Komponentin koko ja käyttö",
+      "text_1": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot valintanapista. Oletuksena käytetään pienempää valintanappia (default), mobiilinäytöillä niille suunniteltua kokoa (large)."
+    },
+
+    "example": {
+      "default": {
+        "title": "Toimitustapa",
+        "content": "Sähköposti",
+        "content2": "Tekstiviesti",
+        "content3": "Paperiposti"
+      },
+
+      "large": {
+        "title": "Valintanapin mobiiliversio (Large Radio Button)",
+        "group_hint": "Valittua toimitustapaa ei voi muuttaa lomakkeen lähetyksen jälkeen",
+        "description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintanapin mobiiliversiota."
+      },
+      "hint": {
+        "title": "Valintanappi ohjetekstillä (Radio Button + Hint Text)",
+        "description": "Komponentille voidaan antaa ohjeteksti, joka näytetään komponentin alla.",
+        "content": "Sähköisesti",
+        "hint_text": "Saan päätökset Suomi.fi viesteihin",
+        "content2": "Paperipostilla",
+        "hint_text2": "Saan päätökset postitse kotiosoitteeseeni"
+      },
+
+      "disabled": {
+        "title": "Estetty valintanappi (Disabled Radio Button)",
+        "description": "Estetty valintanappi ei ole käyttäjän valittavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen."
+      }
+    }
+  },
   "wizard_navigation_page": {
     "site_title": "Wizard navigation (Vaihenavigaatio) | Suomi.fi Design System",
     "heading": "Wizard navigation (Vaihenavigaatio)",

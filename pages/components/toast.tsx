@@ -11,8 +11,8 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Link as ExampleLink,
-  ExternalLink as ExampleExternalLink,
+  Toast,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -31,7 +31,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('toast_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Link"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Toast"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}
@@ -40,6 +40,12 @@ const Page: NextPage = () => {
         <Paragraph className="my-xl">
           <Text variant="lead">{t('toast_page.ingress')}</Text>
         </Paragraph>
+
+        <ComponentExample
+          style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+        >
+          <Toast>{t('toast_page.example.content')}</Toast>
+        </ComponentExample>
 
         <Block variant="section" className="my-xl">
           <InfoBox>
@@ -50,10 +56,6 @@ const Page: NextPage = () => {
               <li>{t('toast_page.accessibility_list.point_1')}</li>
               <li>{t('toast_page.accessibility_list.point_2')}</li>
               <li>{t('toast_page.accessibility_list.point_3')}</li>
-              <li>{t('toast_page.accessibility_list.point_4')}</li>
-              <li>{t('toast_page.accessibility_list.point_5')}</li>
-              <li>{t('toast_page.accessibility_list.point_6')}</li>
-              <li>{t('toast_page.accessibility_list.point_7')}</li>
             </ul>
           </InfoBox>
         </Block>
@@ -64,10 +66,6 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('toast_page.what_does_the_component_contain.text_1')}
           </Paragraph>
-
-          <Paragraph className="my-xl">
-            {t('toast_page.what_does_the_component_contain.text_2')}
-          </Paragraph>
         </Block>
 
         <Block variant="section">
@@ -77,49 +75,18 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('toast_page.size_and_usage.text_1')}
           </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('toast_page.in_ui.heading')}
-          </Heading>
           <Paragraph className="my-xl">
-            {t('toast_page.in_ui.text_1')}
+            {t('toast_page.size_and_usage.text_2')}
           </Paragraph>
         </Block>
 
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('toast_page.example.regular.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('toast_page.example.regular.description')}
-          </Paragraph>
-
-          <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('toast_page.example.regular.link_text')}
-            </ExampleLink>
-          </ComponentExample>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('toast_page.example.external.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('toast_page.example.external.description')}
-          </Paragraph>
-
-          <ComponentExample>
-            <ExampleExternalLink
-              className="test-classname"
-              href="https://github.com/vrk-kpa/suomifi-ui-components"
-              labelNewWindow={t('toast_page.example.external.label')}
-            >
-              {t('toast_page.example.external.link_text')}
-            </ExampleExternalLink>
-          </ComponentExample>
+        <Block variant="div" mt="m" mb="l">
+          <ExternalLink
+            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
+            labelNewWindow={t('common.opens_in_a_new_tab')}
+          >
+            {t('toast_page.link_text')}
+          </ExternalLink>
         </Block>
       </SideNavLayout>
     </>

@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import { useState } from 'react';
 import Head from 'next/head';
 import { useTranslation } from 'next-export-i18n';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
@@ -11,12 +12,15 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Link as ExampleLink,
-  ExternalLink as ExampleExternalLink,
+  TextInput,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
+  const [errorState, setErrorState] = useState(true);
+  const status = errorState ? 'error' : 'default';
+
   return (
     <>
       <Head>
@@ -31,7 +35,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('text_input_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Link"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/TextInput"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}
@@ -40,6 +44,12 @@ const Page: NextPage = () => {
         <Paragraph className="my-xl">
           <Text variant="lead">{t('text_input_page.ingress')}</Text>
         </Paragraph>
+
+        <ComponentExample
+          style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+        >
+          <TextInput labelText={t('text_input_page.example.regular.label')} />
+        </ComponentExample>
 
         <Block variant="section" className="my-xl">
           <InfoBox>
@@ -51,9 +61,6 @@ const Page: NextPage = () => {
               <li>{t('text_input_page.accessibility_list.point_2')}</li>
               <li>{t('text_input_page.accessibility_list.point_3')}</li>
               <li>{t('text_input_page.accessibility_list.point_4')}</li>
-              <li>{t('text_input_page.accessibility_list.point_5')}</li>
-              <li>{t('text_input_page.accessibility_list.point_6')}</li>
-              <li>{t('text_input_page.accessibility_list.point_7')}</li>
             </ul>
           </InfoBox>
         </Block>
@@ -81,46 +88,61 @@ const Page: NextPage = () => {
 
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('text_input_page.in_ui.heading')}
+            {t('text_input_page.example.success.title')}
           </Heading>
-          <Paragraph className="my-xl">
-            {t('text_input_page.in_ui.text_1')}
-          </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('text_input_page.example.regular.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('text_input_page.example.regular.description')}
-          </Paragraph>
 
           <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('text_input_page.example.regular.link_text')}
-            </ExampleLink>
+            <TextInput
+              labelText={t('text_input_page.example.success.label')}
+              status="success"
+            />
           </ComponentExample>
         </Block>
 
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('text_input_page.example.external.title')}
+            {t('text_input_page.example.error.title')}
           </Heading>
-          <Paragraph className="my-xl">
-            {t('text_input_page.example.external.description')}
-          </Paragraph>
 
           <ComponentExample>
-            <ExampleExternalLink
-              className="test-classname"
-              href="https://github.com/vrk-kpa/suomifi-ui-components"
-              labelNewWindow={t('text_input_page.example.external.label')}
-            >
-              {t('text_input_page.example.external.link_text')}
-            </ExampleExternalLink>
+            <TextInput
+              labelText={t('text_input_page.example.error.label')}
+              {...(errorState
+                ? { statusText: t('text_input_page.example.error.status_text') }
+                : {})}
+              status={status}
+              debounce={300}
+              onChange={(value) => {
+                setErrorState(!value);
+              }}
+            />
           </ComponentExample>
         </Block>
+        <Heading variant="h2" className="mb-xl">
+          {t('text_input_page.example.disabled.title')}
+        </Heading>
+        <Paragraph className="my-xl">
+          {t('text_input_page.example.disabled.description')}
+        </Paragraph>
+
+        <ComponentExample>
+          <TextInput
+            labelText={t('text_input_page.example.disabled.label')}
+            disabled
+          />
+        </ComponentExample>
+
+        <Heading variant="h2" className="mb-xl">
+          {t('text_input_page.example.optional.title')}
+        </Heading>
+
+        <ComponentExample>
+          <TextInput
+            labelText={t('text_input_page.example.optional.label')}
+            icon="mapLocation"
+            optionalText={t('text_input_page.example.optional.optional_text')}
+          />
+        </ComponentExample>
       </SideNavLayout>
     </>
   );

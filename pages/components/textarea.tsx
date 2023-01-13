@@ -11,8 +11,8 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Link as ExampleLink,
-  ExternalLink as ExampleExternalLink,
+  Textarea,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -31,7 +31,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('textarea_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Link"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/TextArea"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}
@@ -41,7 +41,17 @@ const Page: NextPage = () => {
           <Text variant="lead">{t('textarea_page.ingress')}</Text>
         </Paragraph>
 
-        <Block variant="section" className="my-xl">
+        <ComponentExample
+          style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+        >
+          <Textarea
+            labelText={t('textarea_page.example.regular.label')}
+            hintText={t('textarea_page.example.regular.hint_text')}
+            visualPlaceholder={t('textarea_page.example.regular.placeholder')}
+          />
+        </ComponentExample>
+
+        <Block variant="section" mt="l">
           <InfoBox>
             <Heading variant="h3" as="h2">
               {t('common.accessibility_and_usability')}
@@ -51,27 +61,20 @@ const Page: NextPage = () => {
               <li>{t('textarea_page.accessibility_list.point_2')}</li>
               <li>{t('textarea_page.accessibility_list.point_3')}</li>
               <li>{t('textarea_page.accessibility_list.point_4')}</li>
-              <li>{t('textarea_page.accessibility_list.point_5')}</li>
-              <li>{t('textarea_page.accessibility_list.point_6')}</li>
-              <li>{t('textarea_page.accessibility_list.point_7')}</li>
             </ul>
           </InfoBox>
         </Block>
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+        <Block variant="section" mt="xl">
+          <Heading variant="h2">
             {t('textarea_page.what_does_the_component_contain.heading')}
           </Heading>
           <Paragraph className="my-xl">
             {t('textarea_page.what_does_the_component_contain.text_1')}
           </Paragraph>
-
-          <Paragraph className="my-xl">
-            {t('textarea_page.what_does_the_component_contain.text_2')}
-          </Paragraph>
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2">
             {t('textarea_page.size_and_usage.heading')}
           </Heading>
           <Paragraph className="my-xl">
@@ -80,45 +83,37 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('textarea_page.in_ui.heading')}
+          <Heading variant="h2">
+            {t('textarea_page.example.error.title')}
           </Heading>
           <Paragraph className="my-xl">
-            {t('textarea_page.in_ui.text_1')}
-          </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('textarea_page.example.regular.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('textarea_page.example.regular.description')}
+            {t('textarea_page.example.error.description')}
           </Paragraph>
 
           <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('textarea_page.example.regular.link_text')}
-            </ExampleLink>
+            <Textarea
+              labelText={t('textarea_page.example.error.label')}
+              status="error"
+              hintText={t('textarea_page.example.error.hint_text')}
+              visualPlaceholder={t('textarea_page.example.error.placeholder')}
+              statusText={t('textarea_page.example.error.status_text')}
+            />
           </ComponentExample>
         </Block>
 
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('textarea_page.example.external.title')}
+        <Block variant="section" mt="xl">
+          <Heading variant="h2">
+            {t('textarea_page.example.disabled.title')}
           </Heading>
           <Paragraph className="my-xl">
-            {t('textarea_page.example.external.description')}
+            {t('textarea_page.example.disabled.description')}
           </Paragraph>
 
           <ComponentExample>
-            <ExampleExternalLink
-              className="test-classname"
-              href="https://github.com/vrk-kpa/suomifi-ui-components"
-              labelNewWindow={t('textarea_page.example.external.label')}
-            >
-              {t('textarea_page.example.external.link_text')}
-            </ExampleExternalLink>
+            <Textarea
+              labelText={t('textarea_page.example.disabled.label')}
+              disabled
+            />
           </ComponentExample>
         </Block>
       </SideNavLayout>

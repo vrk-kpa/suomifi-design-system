@@ -6,16 +6,11 @@ import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
 import {
-  defaultSuomifiTheme,
   Block,
   Heading,
   Text,
   Paragraph,
   ExternalLink,
-  Expander,
-  ExpanderTitleButton,
-  ExpanderContent,
-  ExpanderGroup,
   Link as ExampleLink,
   ExternalLink as ExampleExternalLink,
 } from 'suomifi-ui-components';

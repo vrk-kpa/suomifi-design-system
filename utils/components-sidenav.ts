@@ -61,6 +61,10 @@ export const navItems: NavItem[] = [
     path: '/components/modal',
   },
   {
+    title: translations.components.multiselect,
+    path: '/components/multiselect',
+  },
+  {
     title: translations.components.wizard_navigation,
     path: '/components/wizardnavigation',
   },

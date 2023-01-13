@@ -17,7 +17,9 @@ import {
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
-  const [anchorElement, setAnchorElement] = useState(null);
+  const [anchorElement, setAnchorElement] = useState<HTMLDivElement | null>(
+    null,
+  );
   const [open, setOpen] = useState(false);
   return (
     <>

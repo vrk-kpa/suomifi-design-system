@@ -65,6 +65,63 @@ export const navItems: NavItem[] = [
     path: '/components/multiselect',
   },
   {
+    title: translations.components.notification,
+    path: '/components/notification',
+  },
+  {
+    title: translations.components.pagination,
+    path: '/components/pagination',
+  },
+  {
+    title: translations.components.radio_button,
+    path: '/components/radiobutton',
+  },
+  {
+    title: translations.components.search_input,
+    path: '/components/searchinput',
+  },
+
+  {
+    title: translations.components.service_navigation,
+    path: '/components/servicenavigation',
+  },
+  {
+    title: translations.components.side_navigation,
+    path: '/components/sidenavigation',
+  },
+  {
+    title: translations.components.singleselect,
+    path: '/components/singleselect',
+  },
+  {
+    title: translations.components.text,
+    path: '/components/text',
+  },
+  {
+    title: translations.components.textarea,
+    path: '/components/textarea',
+  },
+  {
+    title: translations.components.text_input,
+    path: '/components/textinput',
+  },
+
+  {
+    title: translations.components.toast,
+    path: '/components/toast',
+  },
+
+  {
+    title: translations.components.toggle,
+    path: '/components/toggle',
+  },
+
+  {
+    title: translations.components.tooltip,
+    path: '/components/tooltip',
+  },
+
+  {
     title: translations.components.wizard_navigation,
     path: '/components/wizardnavigation',
   },

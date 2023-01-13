@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import { useState } from 'react';
 import Head from 'next/head';
 import { useTranslation } from 'next-export-i18n';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
@@ -11,12 +12,13 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Link as ExampleLink,
-  ExternalLink as ExampleExternalLink,
+  Tooltip,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
+  const [anchorElement, setAnchorElement] = useState(null);
+  const [open, setOpen] = useState(false);
   return (
     <>
       <Head>
@@ -31,7 +33,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('tooltip_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Link"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Tooltip"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}
@@ -40,6 +42,34 @@ const Page: NextPage = () => {
         <Paragraph className="my-xl">
           <Text variant="lead">{t('tooltip_page.ingress')}</Text>
         </Paragraph>
+
+        <ComponentExample
+          style={{
+            flexDirection: 'column',
+            alignItems: 'flex-start',
+            justifyContent: 'space-between',
+            height: 180,
+          }}
+        >
+          <div ref={(ref) => setAnchorElement(ref)}>
+            <Text style={{ verticalAlign: 'middle' }}>
+              {t('tooltip_page.example.text')}
+            </Text>
+            <Tooltip
+              anchorElement={anchorElement}
+              ariaToggleButtonLabelText={t('tooltip_page.example.aria.toggle')}
+              ariaCloseButtonLabelText={t('tooltip_page.example.aria.close')}
+              open={open}
+              onToggleButtonClick={() => setOpen(!open)}
+              onCloseButtonClick={() => setOpen(false)}
+            >
+              <Heading variant="h5" as="h2">
+                {t('tooltip_page.example.title')}
+              </Heading>
+              <Text>{t('tooltip_page.example.description')}</Text>
+            </Tooltip>
+          </div>
+        </ComponentExample>
 
         <Block variant="section" className="my-xl">
           <InfoBox>
@@ -51,9 +81,6 @@ const Page: NextPage = () => {
               <li>{t('tooltip_page.accessibility_list.point_2')}</li>
               <li>{t('tooltip_page.accessibility_list.point_3')}</li>
               <li>{t('tooltip_page.accessibility_list.point_4')}</li>
-              <li>{t('tooltip_page.accessibility_list.point_5')}</li>
-              <li>{t('tooltip_page.accessibility_list.point_6')}</li>
-              <li>{t('tooltip_page.accessibility_list.point_7')}</li>
             </ul>
           </InfoBox>
         </Block>
@@ -64,10 +91,6 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('tooltip_page.what_does_the_component_contain.text_1')}
           </Paragraph>
-
-          <Paragraph className="my-xl">
-            {t('tooltip_page.what_does_the_component_contain.text_2')}
-          </Paragraph>
         </Block>
 
         <Block variant="section">
@@ -77,49 +100,6 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('tooltip_page.size_and_usage.text_1')}
           </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('tooltip_page.in_ui.heading')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('tooltip_page.in_ui.text_1')}
-          </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('tooltip_page.example.regular.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('tooltip_page.example.regular.description')}
-          </Paragraph>
-
-          <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('tooltip_page.example.regular.link_text')}
-            </ExampleLink>
-          </ComponentExample>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('tooltip_page.example.external.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('tooltip_page.example.external.description')}
-          </Paragraph>
-
-          <ComponentExample>
-            <ExampleExternalLink
-              className="test-classname"
-              href="https://github.com/vrk-kpa/suomifi-ui-components"
-              labelNewWindow={t('tooltip_page.example.external.label')}
-            >
-              {t('tooltip_page.example.external.link_text')}
-            </ExampleExternalLink>
-          </ComponentExample>
         </Block>
       </SideNavLayout>
     </>

@@ -1,0 +1,12 @@
+.smallBox {
+  width: 100%;
+  background: #fff;;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .smallBox {
+    flex: 1;
+  }
+}

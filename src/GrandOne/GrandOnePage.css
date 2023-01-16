@@ -1,0 +1,105 @@
+:root {
+  --section-spacing: 90px;
+  --section-spacing-small: 50px;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f7f8;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.half-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-direction: column;
+}
+.half {
+  width: 100%;
+}
+.boxes {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#header {
+  border-top: 4px solid #00357a;
+  border-bottom: 1px solid #c8cdd0;
+  padding: 25px 0;
+}
+.suomifi-logo {
+  height: 35px;
+  width: auto;
+}
+#hero {
+  width: 100%;
+  background: #c8cdd0;
+  padding: 136px 0;
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+#section1 {
+  padding: var(--section-spacing-small) 0;
+}
+#section2 {
+  background: #f0f6ff;
+  padding: var(--section-spacing-small) 0;
+}
+#section3 {
+  padding: var(--section-spacing-small) 0;
+}
+#section4 {
+  padding: var(--section-spacing-small) 0;
+  background: #c8cdd0
+}
+#section5 {
+  padding: var(--section-spacing-small) 0;
+}
+#section6 {
+  padding: var(--section-spacing-small) 0;
+  background: #f0f6ff;
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  #section1, #section2, #section3, #section4, #section5, #section6 {
+    padding: var(--section-spacing) 0;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+  .half-container {
+    flex-direction: row;
+    gap: 60px;
+  }
+  .half {
+    flex: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    padding: 0;
+  }
+}

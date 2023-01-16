@@ -13,6 +13,7 @@ import {
   Paragraph,
   ExternalLink,
   MultiSelect,
+  InlineAlert,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -99,7 +100,7 @@ const Page: NextPage = () => {
         navIcon="puzzle"
       >
         <Heading variant="h1">{t('multiselect_page.heading')}</Heading>
-        <Block variant="div" mt="m">
+        <Block variant="div" mt="m" mb="m">
           <ExternalLink
             href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/MultiSelect"
             labelNewWindow={t('common.opens_in_a_new_tab')}
@@ -107,6 +108,9 @@ const Page: NextPage = () => {
             {t('common.see_technical_documentation_of_component')}
           </ExternalLink>
         </Block>
+
+        <InlineAlert>{t('multiselect_page.note_accessibility')}</InlineAlert>
+
         <Paragraph className="my-xl">
           <Text variant="lead">{t('multiselect_page.ingress')}</Text>
         </Paragraph>

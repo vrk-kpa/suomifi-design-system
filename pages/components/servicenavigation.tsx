@@ -13,6 +13,10 @@ import {
   ExternalLink,
   Link as ExampleLink,
   ExternalLink as ExampleExternalLink,
+  ServiceNavigation,
+  ServiceNavigationItem,
+  RouterLink,
+  StaticChip,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -41,6 +45,48 @@ const Page: NextPage = () => {
           <Text variant="lead">{t('service_navigation_page.ingress')}</Text>
         </Paragraph>
 
+        <ComponentExample style={{ justifyContent: 'flex-start' }}>
+          <div style={{ width: '300px' }}>
+            <ServiceNavigation
+              aria-label={t('service_navigation_page.example.arialabel')}
+            >
+              <ServiceNavigationItem>
+                <RouterLink
+                  href="#"
+                  aria-label={t(
+                    'service_navigation_page.example.navitem1.arialabel',
+                  )}
+                >
+                  {t('service_navigation_page.example.navitem1')}
+                  <StaticChip style={{ marginLeft: '15px' }} aria-hidden>
+                    16
+                  </StaticChip>
+                </RouterLink>
+              </ServiceNavigationItem>
+              <ServiceNavigationItem>
+                <RouterLink href="#">
+                  {t('service_navigation_page.example.navitem2')}
+                </RouterLink>
+              </ServiceNavigationItem>
+              <ServiceNavigationItem selected>
+                <RouterLink href="#" aria-current="page">
+                  {t('service_navigation_page.example.navitem3')}
+                </RouterLink>
+              </ServiceNavigationItem>
+              <ServiceNavigationItem>
+                <RouterLink asComponent="button">
+                  {t('service_navigation_page.example.navitem4')}
+                </RouterLink>
+              </ServiceNavigationItem>
+              <ServiceNavigationItem>
+                <RouterLink href="#">
+                  {t('service_navigation_page.example.navitem5')}
+                </RouterLink>
+              </ServiceNavigationItem>
+            </ServiceNavigation>
+          </div>
+        </ComponentExample>
+
         <Block variant="section" className="my-xl">
           <InfoBox>
             <Heading variant="h3" as="h2">
@@ -51,9 +97,6 @@ const Page: NextPage = () => {
               <li>{t('service_navigation_page.accessibility_list.point_2')}</li>
               <li>{t('service_navigation_page.accessibility_list.point_3')}</li>
               <li>{t('service_navigation_page.accessibility_list.point_4')}</li>
-              <li>{t('service_navigation_page.accessibility_list.point_5')}</li>
-              <li>{t('service_navigation_page.accessibility_list.point_6')}</li>
-              <li>{t('service_navigation_page.accessibility_list.point_7')}</li>
             </ul>
           </InfoBox>
         </Block>
@@ -83,50 +126,67 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('service_navigation_page.size_and_usage.text_1')}
           </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('service_navigation_page.in_ui.heading')}
-          </Heading>
           <Paragraph className="my-xl">
-            {t('service_navigation_page.in_ui.text_1')}
+            {t('service_navigation_page.size_and_usage.text_2')}
+          </Paragraph>
+          <Paragraph className="my-xl">
+            {t('service_navigation_page.size_and_usage.text_3')}
           </Paragraph>
         </Block>
 
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('service_navigation_page.example.regular.title')}
+            {t('service_navigation_page.example.smallscreen.title')}
           </Heading>
           <Paragraph className="my-xl">
-            {t('service_navigation_page.example.regular.description')}
+            {t('service_navigation_page.example.smallscreen.paragraph')}
           </Paragraph>
 
-          <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('service_navigation_page.example.regular.link_text')}
-            </ExampleLink>
-          </ComponentExample>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('service_navigation_page.example.external.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('service_navigation_page.example.external.description')}
-          </Paragraph>
-
-          <ComponentExample>
-            <ExampleExternalLink
-              className="test-classname"
-              href="https://github.com/vrk-kpa/suomifi-ui-components"
-              labelNewWindow={t(
-                'service_navigation_page.example.external.label',
-              )}
-            >
-              {t('service_navigation_page.example.external.link_text')}
-            </ExampleExternalLink>
+          <ComponentExample style={{ justifyContent: 'flex-start' }}>
+            <div style={{ width: '300px' }}>
+              <ServiceNavigation
+                aria-label={t('service_navigation_page.example.arialabel')}
+                variant="smallScreen"
+                smallScreenExpandButtonText={t(
+                  'service_navigation_page.example.smallscreen.buttontext',
+                )}
+                initiallyExpanded={false}
+              >
+                <ServiceNavigationItem>
+                  <RouterLink
+                    href="#"
+                    aria-label={t(
+                      'service_navigation_page.example.navitem1.arialabel',
+                    )}
+                  >
+                    {t('service_navigation_page.example.navitem1')}
+                    <StaticChip style={{ marginLeft: '15px' }} aria-hidden>
+                      16
+                    </StaticChip>
+                  </RouterLink>
+                </ServiceNavigationItem>
+                <ServiceNavigationItem>
+                  <RouterLink href="#">
+                    {t('service_navigation_page.example.navitem2')}
+                  </RouterLink>
+                </ServiceNavigationItem>
+                <ServiceNavigationItem selected>
+                  <RouterLink href="#" aria-current="page">
+                    {t('service_navigation_page.example.navitem3')}
+                  </RouterLink>
+                </ServiceNavigationItem>
+                <ServiceNavigationItem>
+                  <RouterLink href="#">
+                    {t('service_navigation_page.example.navitem4')}
+                  </RouterLink>
+                </ServiceNavigationItem>
+                <ServiceNavigationItem>
+                  <RouterLink href="#">
+                    {t('service_navigation_page.example.navitem5')}
+                  </RouterLink>
+                </ServiceNavigationItem>
+              </ServiceNavigation>
+            </div>
           </ComponentExample>
         </Block>
       </SideNavLayout>

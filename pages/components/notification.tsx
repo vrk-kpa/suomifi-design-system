@@ -12,80 +12,13 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  MultiSelect,
+  Link,
+  Notification,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
-
-  const tools = [
-    {
-      price: 230,
-      tax: false,
-      labelText: t('notification_page.example.tools.jackhammer'),
-      uniqueItemId: 'jh2435626',
-    },
-    {
-      price: 15,
-      tax: true,
-      labelText: t('notification_page.example.tools.hammer'),
-      uniqueItemId: 'h9823523',
-    },
-    {
-      price: 36,
-      tax: false,
-      labelText: t('notification_page.example.tools.sledgehammer'),
-      uniqueItemId: 'sh908293482',
-    },
-    {
-      price: 50,
-      tax: true,
-      labelText: t('notification_page.example.tools.spade'),
-      uniqueItemId: 's82502335',
-    },
-    {
-      price: 150,
-      tax: false,
-      labelText: t('notification_page.example.tools.powersaw'),
-      disabled: true,
-      uniqueItemId: 'ps9081231',
-    },
-    {
-      price: 115,
-      tax: true,
-      labelText: t('notification_page.example.tools.shovel'),
-      uniqueItemId: 's05111511',
-    },
-    {
-      price: 85,
-      tax: false,
-      labelText: t('notification_page.example.tools.ironstick'),
-      uniqueItemId: 'is3451261',
-    },
-    {
-      price: 50,
-      tax: true,
-      labelText: t('notification_page.example.tools.rake'),
-      uniqueItemId: 'r09282626',
-    },
-    {
-      price: 450,
-      tax: false,
-      labelText: t('notification_page.example.tools.motorsaw'),
-      disabled: true,
-      uniqueItemId: 'ms6126266',
-    },
-  ];
-
-  const defaultSelectedTools = [
-    {
-      price: 150,
-      tax: false,
-      labelText: t('notification_page.example.tools.powersaw'),
-      disabled: true,
-      uniqueItemId: 'ps9081231',
-    },
-  ];
 
   return (
     <>
@@ -112,33 +45,16 @@ const Page: NextPage = () => {
         </Paragraph>
 
         <Block variant="section">
-          <ComponentExample>
-            <MultiSelect
-              labelText={t('notification_page.example.label')}
-              hintText={t('notification_page.example.hint_text')}
-              items={tools}
-              defaultSelectedItems={defaultSelectedTools}
-              chipListVisible
-              ariaChipActionLabel={t(
-                'notification_page.example.chip_action_label',
-              )}
-              removeAllButtonLabel={t(
-                'notification_page.example.remove_all_selections',
-              )}
-              visualPlaceholder={t(
-                'notification_page.example.visual_placeholder',
-              )}
-              noItemsText={t('notification_page.example.no_items')}
-              ariaSelectedAmountText={t(
-                'notification_page.example.selected_amount_text',
-              )}
-              ariaOptionsAvailableText={t(
-                'notification_page.example.options_available_text',
-              )}
-              ariaOptionChipRemovedText={t(
-                'notification_page.example.option_chip_removed_text',
-              )}
-            />
+          <ComponentExample
+            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+          >
+            <Notification
+              status="error"
+              closeText={t('notification_page.example.error.close_button')}
+              headingText={t('notification_page.example.error.heading')}
+            >
+              {t('notification_page.example.error.paragraph')}
+            </Notification>
           </ComponentExample>
         </Block>
 
@@ -161,9 +77,6 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('notification_page.what_does_the_component_contain.text_1')}
           </Paragraph>
-          <Paragraph className="my-xl">
-            {t('notification_page.what_does_the_component_contain.text_2')}
-          </Paragraph>
         </Block>
 
         <Block variant="section">
@@ -173,6 +86,31 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('notification_page.size_and_usage.text_1')}
           </Paragraph>
+        </Block>
+
+        <Block variant="section">
+          <Heading variant="h2" className="mb-xl">
+            {t('notification_page.example.info.heading')}
+          </Heading>
+          <Paragraph className="my-xl">
+            {t('notification_page.example.info.description')}
+          </Paragraph>
+
+          <ComponentExample
+            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+          >
+            <Notification
+              closeText={t('notification_page.example.info.close_button')}
+              headingText={t('notification_page.example.info.heading')}
+              actionElements={
+                <Link href="#">
+                  {t('notification_page.example.info.action_link')}
+                </Link>
+              }
+            >
+              {t('notification_page.example.info.paragraph')}
+            </Notification>
+          </ComponentExample>
         </Block>
       </SideNavLayout>
     </>

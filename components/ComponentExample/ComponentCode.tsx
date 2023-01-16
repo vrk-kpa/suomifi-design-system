@@ -18,11 +18,11 @@ const Highlighter = ({
       fontSize: '0.85rem',
       whiteSpace: 'pre-wrap',
       wordBreak: 'break-word',
-      overflow: 'hidden',
+      overflow: 'scroll',
       ...style,
     }}
     // clear default styles to allow e.g. wrap
-    codeTagProps={{ style: {} }}
+    codeTagProps={{ className: 'code-example' }}
   >
     {children}
   </SyntaxHighlighter>

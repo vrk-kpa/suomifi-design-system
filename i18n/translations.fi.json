@@ -50,9 +50,9 @@
         "heading": "Huomasitko puutteita saavutettavuudessa?",
         "paragraph": "Pyrimme jatkuvasti huolehtimaan saavutettavuudesta. Jos löydät ongelmia, ilmoita niistä meille ja teemme parhaamme puutteiden korjaamiseksi. Vastaamme mahdollisimman pian tai viimeistään kahden viikon sisällä. Voit ottaa yhteyttä sähköpostitse osoitteella saavutettavuus(at)dvv.fi."
     },
-    "supervision": {
-        "heading": "Saavutettavuuden valvonta",
-        "paragraph": "Etelä-Suomen aluehallintovirasto valvoo saavutettavuusvaatimusten toteutumista. Jos et ole tyytyväinen saamaasi vastaukseen tai et saa vastausta lainkaan kahden viikon aikana, voit antaa palautteen Etelä-Suomen aluehallintovirastoon. Etelä-Suomen aluehallintoviraston sivulla kerrotaan tarkasti, miten valituksen voi tehdä ja miten asia käsitellään."
+    "testing": {
+      "heading": "Miten olemme testanneet saavutettavuutta?",
+      "paragraph": "Saavutettavuus on huomioitu Digi- ja väestötietoviraston digitaalisten palvelujen kehityksessä suunnittelusta toteutukseen kokonaisketterän mallin mukaisesti. Verkkosivuston saavutettavuutta on arvioinut Digi- ja väestötietoviraston hankkima saavutettavuusasiantuntija säännöllisesti osana suunnittelu- ja kehitysprosessia."
     },
     "contacts": {
         "heading": "Valvontaviranomaisen yhteystiedot",
@@ -61,10 +61,6 @@
         "paragraph_3": "www.saavutettavuusvaatimukset.fi",
         "paragraph_4": "sähköposti: saavutettavuus(at)avi.fi",
         "paragraph_5": "puhelin: vaihde 0295 016 000"
-    },
-    "testing": {
-        "heading": "Miten olemme testanneet saavutettavuutta?",
-        "paragraph": "Saavutettavuus on huomioitu Digi- ja väestötietoviraston digitaalisten palvelujen kehityksessä suunnittelusta toteutukseen kokonaisketterän mallin mukaisesti. Verkkosivuston saavutettavuutta on arvioinut Digi- ja väestötietoviraston hankkima saavutettavuusasiantuntija säännöllisesti osana suunnittelu- ja kehitysprosessia."
     }
   },
  "styles": {

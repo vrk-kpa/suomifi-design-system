@@ -11,8 +11,8 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Link as ExampleLink,
-  ExternalLink as ExampleExternalLink,
+  SearchInput,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -41,6 +41,20 @@ const Page: NextPage = () => {
           <Text variant="lead">{t('search_input_page.ingress')}</Text>
         </Paragraph>
 
+        <ComponentExample
+          style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+        >
+          <SearchInput
+            labelText={t('search_input_page.example.regular.label')}
+            clearButtonLabel={t(
+              'search_input_page.example.regular.clear_button_label',
+            )}
+            searchButtonLabel={t(
+              'search_input_page.example.regular.search_button_label',
+            )}
+          />
+        </ComponentExample>
+
         <Block variant="section" className="my-xl">
           <InfoBox>
             <Heading variant="h3" as="h2">
@@ -51,9 +65,6 @@ const Page: NextPage = () => {
               <li>{t('search_input_page.accessibility_list.point_2')}</li>
               <li>{t('search_input_page.accessibility_list.point_3')}</li>
               <li>{t('search_input_page.accessibility_list.point_4')}</li>
-              <li>{t('search_input_page.accessibility_list.point_5')}</li>
-              <li>{t('search_input_page.accessibility_list.point_6')}</li>
-              <li>{t('search_input_page.accessibility_list.point_7')}</li>
             </ul>
           </InfoBox>
         </Block>
@@ -64,10 +75,6 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('search_input_page.what_does_the_component_contain.text_1')}
           </Paragraph>
-
-          <Paragraph className="my-xl">
-            {t('search_input_page.what_does_the_component_contain.text_2')}
-          </Paragraph>
         </Block>
 
         <Block variant="section">
@@ -76,6 +83,14 @@ const Page: NextPage = () => {
           </Heading>
           <Paragraph className="my-xl">
             {t('search_input_page.size_and_usage.text_1')}
+          </Paragraph>
+
+          <Paragraph className="my-xl">
+            {t('search_input_page.size_and_usage.text_2')}
+          </Paragraph>
+
+          <Paragraph className="my-xl">
+            {t('search_input_page.size_and_usage.text_3')}
           </Paragraph>
         </Block>
 
@@ -86,40 +101,6 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('search_input_page.in_ui.text_1')}
           </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('search_input_page.example.regular.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('search_input_page.example.regular.description')}
-          </Paragraph>
-
-          <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('search_input_page.example.regular.link_text')}
-            </ExampleLink>
-          </ComponentExample>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('search_input_page.example.external.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('search_input_page.example.external.description')}
-          </Paragraph>
-
-          <ComponentExample>
-            <ExampleExternalLink
-              className="test-classname"
-              href="https://github.com/vrk-kpa/suomifi-ui-components"
-              labelNewWindow={t('search_input_page.example.external.label')}
-            >
-              {t('search_input_page.example.external.link_text')}
-            </ExampleExternalLink>
-          </ComponentExample>
         </Block>
       </SideNavLayout>
     </>

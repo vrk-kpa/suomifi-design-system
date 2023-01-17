@@ -32,7 +32,7 @@ const WizardNavigationPage: NextPage = () => {
         <Heading variant="h1">{t('wizard_navigation_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-design-system/components/wizardnavigation/"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/WizardNavigation"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}

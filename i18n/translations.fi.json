@@ -760,7 +760,7 @@
       "text_1": "Sivutus koostuu kahdesta nuolipainikkeesta, tietokentästä sekä valinnaisesta sivunumeron syötekentästä. Nuolinpainikkeilla käyttäjä voi siirtyä yhden sivun kerrallaan eteen- tai taaksepäin. Tietokenttä on nuolipainikkeiden välissä ja sen tarkoitus on kertoa käyttäjälle nykyisen sekä viimeisen sivun numerot. Syötekentän avulla käyttäjä voi siirtyä suoraan haluamalleen sivulle."
     },
     "size_and_usage": {
-      "heading": "Komponentin koko, käyttö ja variaatiot",
+      "heading": "Koko, käyttö ja variaatiot",
       "text_1": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot sivutuskomponentista. Mobiilinäytöille suunnitellussa versiossa syötekenttä on nuolipainikkeiden alapuolella. Komponentin oletusvariaatio ei sisällä syötekenttää. Syötekenttää voidaan käyttää, jos sivuja on paljon.",
       "text_2": "Komponentti tulee sijoittaa sivutettavan sisällön alapuolelle.",
       "text_3": "Sivun vaihtuessa voi ruudunlukijalle antaa sisällöstä lisätietoa, esimerkiksi \"Sivu 2 kautta 5. Näytetään tulokset 10 viiva 20.\"."
@@ -946,7 +946,7 @@
 
       "smallscreen": {
         "title": "Pienen ruutukoon variantti",
-        "paragraph": "Mobiililaitteilla sivunavigaatio voidaan avata ja sulkea painiketta painamalla"
+        "description": "Mobiililaitteilla sivunavigaatio voidaan avata ja sulkea painiketta painamalla"
       }
     }
   },
@@ -994,9 +994,9 @@
     "title_body": "Leipäteksti (Body)",
     "text_1": "Suomi.fi-teemassa leipätekstin oletuskoko on 18px sekä mobiili- että desktop-näkymissä. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Suomi.fi-teemassa leipäteksti on oletuksena sävyltään musta (blackBase) ja variaatiota luomassa käytetään tumman harmaata (depthDark1).",
     "text_2": "Lihavoitua leikkausta käytetään leipätekstissä, kun halutaan korostaa käyttäjälle erityisen huomioitavaa tietoa. Lihavoitua tekstiä tulee käyttää harkiten. Jos lihavointia on käytetty liikaa, on käyttäjän vaikea ymmärtää, mihin hänen tulisi erityisesti kiinnittää huomiota sisällössä. ",
-    "body.description": "Suomi.fi-teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold -fonttia.",
-    "lead.title": "Ingressi (Lead)",
-    "lead.description": "Ingressi on sivun alussa esiintyvä tiivistelmä sivun sisällöstä. Ingressiä käytetään vain kerran yhdessä näkymässä. Suomi.fi-teemassa ingressitekstin koko on 22 px ja pienellä näytöllä 20 px."
+    "body_description": "Suomi.fi-teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold -fonttia.",
+    "lead_title": "Ingressi (Lead)",
+    "lead_description": "Ingressi on sivun alussa esiintyvä tiivistelmä sivun sisällöstä. Ingressiä käytetään vain kerran yhdessä näkymässä. Suomi.fi-teemassa ingressitekstin koko on 22 px ja pienellä näytöllä 20 px."
   },
 
   "textarea_page": {

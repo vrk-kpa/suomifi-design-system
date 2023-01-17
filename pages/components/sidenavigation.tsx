@@ -13,6 +13,9 @@ import {
   ExternalLink,
   Link as ExampleLink,
   ExternalLink as ExampleExternalLink,
+  SideNavigation,
+  SideNavigationItem,
+  RouterLink,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -31,7 +34,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('side_navigation_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Link"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/SideNavigation"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}
@@ -40,6 +43,100 @@ const Page: NextPage = () => {
         <Paragraph className="my-xl">
           <Text variant="lead">{t('side_navigation_page.ingress')}</Text>
         </Paragraph>
+
+        <ComponentExample style={{ justifyContent: 'flex-start' }}>
+          <div style={{ width: '350px' }}>
+            <SideNavigation
+              heading={t('side_navigation_page.example.title')}
+              icon="piggyBank"
+              aria-label={t('side_navigation_page.example.arialabel')}
+            >
+              <SideNavigationItem
+                subLevel={1}
+                content={
+                  <RouterLink href="/" aria-current="location">
+                    {t('side_navigation_page.example.navitem1')}
+                  </RouterLink>
+                }
+              >
+                <SideNavigationItem
+                  subLevel={2}
+                  content={
+                    <RouterLink href="/" aria-current="location">
+                      {t('side_navigation_page.example.navitem1-2-1')}
+                    </RouterLink>
+                  }
+                >
+                  <SideNavigationItem
+                    subLevel={3}
+                    content={
+                      <RouterLink href="/">
+                        {t('side_navigation_page.example.navitem1-2-1-1')}
+                      </RouterLink>
+                    }
+                  />
+                  <SideNavigationItem
+                    subLevel={3}
+                    selected
+                    content={
+                      <RouterLink href="/" aria-current="page">
+                        {t('side_navigation_page.example.navitem1-2-1-2')}
+                      </RouterLink>
+                    }
+                  />
+                  <SideNavigationItem
+                    subLevel={3}
+                    content={
+                      <RouterLink href="/">
+                        {t('side_navigation_page.example.navitem1-2-1-3')}
+                      </RouterLink>
+                    }
+                  />
+                </SideNavigationItem>
+                <SideNavigationItem
+                  subLevel={2}
+                  content={
+                    <RouterLink href="/">
+                      {t('side_navigation_page.example.navitem1-2-2')}
+                    </RouterLink>
+                  }
+                />
+              </SideNavigationItem>
+              <SideNavigationItem
+                subLevel={1}
+                content={
+                  <RouterLink href="#">
+                    {t('side_navigation_page.example.navitem2')}
+                  </RouterLink>
+                }
+              />
+              <SideNavigationItem
+                content={
+                  <RouterLink href="#">
+                    {t('side_navigation_page.example.navitem3')}
+                  </RouterLink>
+                }
+                subLevel={1}
+              />
+              <SideNavigationItem
+                subLevel={1}
+                content={
+                  <RouterLink href="#">
+                    {t('side_navigation_page.example.navitem4')}
+                  </RouterLink>
+                }
+              />
+              <SideNavigationItem
+                subLevel={1}
+                content={
+                  <RouterLink href="#">
+                    {t('side_navigation_page.example.navitem5')}
+                  </RouterLink>
+                }
+              />
+            </SideNavigation>
+          </div>
+        </ComponentExample>
 
         <Block variant="section" className="my-xl">
           <InfoBox>
@@ -51,9 +148,6 @@ const Page: NextPage = () => {
               <li>{t('side_navigation_page.accessibility_list.point_2')}</li>
               <li>{t('side_navigation_page.accessibility_list.point_3')}</li>
               <li>{t('side_navigation_page.accessibility_list.point_4')}</li>
-              <li>{t('side_navigation_page.accessibility_list.point_5')}</li>
-              <li>{t('side_navigation_page.accessibility_list.point_6')}</li>
-              <li>{t('side_navigation_page.accessibility_list.point_7')}</li>
             </ul>
           </InfoBox>
         </Block>
@@ -68,6 +162,9 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('side_navigation_page.what_does_the_component_contain.text_2')}
           </Paragraph>
+          <Paragraph className="my-xl">
+            {t('side_navigation_page.what_does_the_component_contain.text_3')}
+          </Paragraph>
         </Block>
 
         <Block variant="section">
@@ -77,48 +174,113 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('side_navigation_page.size_and_usage.text_1')}
           </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('side_navigation_page.in_ui.heading')}
-          </Heading>
           <Paragraph className="my-xl">
-            {t('side_navigation_page.in_ui.text_1')}
+            {t('side_navigation_page.size_and_usage.text_2')}
           </Paragraph>
         </Block>
 
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('side_navigation_page.example.regular.title')}
+            {t('side_navigation_page.example.smallscreen.title')}
           </Heading>
           <Paragraph className="my-xl">
-            {t('side_navigation_page.example.regular.description')}
+            {t('side_navigation_page.example.smallscreen.description')}
           </Paragraph>
 
-          <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('side_navigation_page.example.regular.link_text')}
-            </ExampleLink>
-          </ComponentExample>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('side_navigation_page.example.external.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('side_navigation_page.example.external.description')}
-          </Paragraph>
-
-          <ComponentExample>
-            <ExampleExternalLink
-              className="test-classname"
-              href="https://github.com/vrk-kpa/suomifi-ui-components"
-              labelNewWindow={t('side_navigation_page.example.external.label')}
-            >
-              {t('side_navigation_page.example.external.link_text')}
-            </ExampleExternalLink>
+          <ComponentExample style={{ justifyContent: 'flex-start' }}>
+            <div style={{ width: '350px' }}>
+              <SideNavigation
+                heading={t('side_navigation_page.example.title')}
+                icon="piggyBank"
+                aria-label={t('side_navigation_page.example.arialabel')}
+                variant="smallScreen"
+                initiallyExpanded={false}
+              >
+                <SideNavigationItem
+                  subLevel={1}
+                  content={
+                    <RouterLink href="/" aria-current="location">
+                      {t('side_navigation_page.example.navitem1')}
+                    </RouterLink>
+                  }
+                >
+                  <SideNavigationItem
+                    subLevel={2}
+                    content={
+                      <RouterLink href="/" aria-current="location">
+                        {t('side_navigation_page.example.navitem1-2-1')}
+                      </RouterLink>
+                    }
+                  >
+                    <SideNavigationItem
+                      subLevel={3}
+                      content={
+                        <RouterLink href="/">
+                          {t('side_navigation_page.example.navitem1-2-1-1')}
+                        </RouterLink>
+                      }
+                    />
+                    <SideNavigationItem
+                      subLevel={3}
+                      selected
+                      content={
+                        <RouterLink href="/" aria-current="page">
+                          {t('side_navigation_page.example.navitem1-2-1-2')}
+                        </RouterLink>
+                      }
+                    />
+                    <SideNavigationItem
+                      subLevel={3}
+                      content={
+                        <RouterLink href="/">
+                          {t('side_navigation_page.example.navitem1-2-1-3')}
+                        </RouterLink>
+                      }
+                    />
+                  </SideNavigationItem>
+                  <SideNavigationItem
+                    subLevel={2}
+                    content={
+                      <RouterLink href="/">
+                        {t('side_navigation_page.example.navitem1-2-2')}
+                      </RouterLink>
+                    }
+                  />
+                </SideNavigationItem>
+                <SideNavigationItem
+                  subLevel={1}
+                  content={
+                    <RouterLink href="#">
+                      {t('side_navigation_page.example.navitem2')}
+                    </RouterLink>
+                  }
+                />
+                <SideNavigationItem
+                  content={
+                    <RouterLink href="#">
+                      {t('side_navigation_page.example.navitem3')}
+                    </RouterLink>
+                  }
+                  subLevel={1}
+                />
+                <SideNavigationItem
+                  subLevel={1}
+                  content={
+                    <RouterLink href="#">
+                      {t('side_navigation_page.example.navitem4')}
+                    </RouterLink>
+                  }
+                />
+                <SideNavigationItem
+                  subLevel={1}
+                  content={
+                    <RouterLink href="#">
+                      {t('side_navigation_page.example.navitem5')}
+                    </RouterLink>
+                  }
+                />
+              </SideNavigation>
+            </div>
           </ComponentExample>
         </Block>
       </SideNavLayout>

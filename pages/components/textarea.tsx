@@ -31,7 +31,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('textarea_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/TextArea"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Textarea"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}

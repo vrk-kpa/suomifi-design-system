@@ -12,8 +12,6 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Link as ExampleLink,
-  ExternalLink as ExampleExternalLink,
   defaultSuomifiTheme,
   ToggleInput,
   ToggleButton,

@@ -13,6 +13,9 @@ import {
   ExternalLink,
   Link as ExampleLink,
   ExternalLink as ExampleExternalLink,
+  defaultSuomifiTheme,
+  RadioButton,
+  RadioButtonGroup,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -41,6 +44,26 @@ const Page: NextPage = () => {
           <Text variant="lead">{t('radiobutton_page.ingress')}</Text>
         </Paragraph>
 
+        <ComponentExample
+          style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+        >
+          <RadioButtonGroup
+            name="test-default-group"
+            defaultValue="default-radio"
+            labelText={t('radiobutton_page.example.default.title')}
+          >
+            <RadioButton value="default-radio">
+              {t('radiobutton_page.example.default.content')}
+            </RadioButton>
+            <RadioButton value="default-radio2">
+              {t('radiobutton_page.example.default.content2')}
+            </RadioButton>
+            <RadioButton value="default-radio3">
+              {t('radiobutton_page.example.default.content3')}
+            </RadioButton>
+          </RadioButtonGroup>
+        </ComponentExample>
+
         <Block variant="section" className="my-xl">
           <InfoBox>
             <Heading variant="h3" as="h2">
@@ -54,6 +77,8 @@ const Page: NextPage = () => {
               <li>{t('radiobutton_page.accessibility_list.point_5')}</li>
               <li>{t('radiobutton_page.accessibility_list.point_6')}</li>
               <li>{t('radiobutton_page.accessibility_list.point_7')}</li>
+              <li>{t('radiobutton_page.accessibility_list.point_8')}</li>
+              <li>{t('radiobutton_page.accessibility_list.point_9')}</li>
             </ul>
           </InfoBox>
         </Block>
@@ -63,10 +88,6 @@ const Page: NextPage = () => {
           </Heading>
           <Paragraph className="my-xl">
             {t('radiobutton_page.what_does_the_component_contain.text_1')}
-          </Paragraph>
-
-          <Paragraph className="my-xl">
-            {t('radiobutton_page.what_does_the_component_contain.text_2')}
           </Paragraph>
         </Block>
 
@@ -81,44 +102,86 @@ const Page: NextPage = () => {
 
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('radiobutton_page.in_ui.heading')}
+            {t('radiobutton_page.example.large.title')}
           </Heading>
           <Paragraph className="my-xl">
-            {t('radiobutton_page.in_ui.text_1')}
-          </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('radiobutton_page.example.regular.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('radiobutton_page.example.regular.description')}
+            {t('radiobutton_page.example.large.description')}
           </Paragraph>
 
           <ComponentExample>
-            <ExampleLink className="test-classname" href="#">
-              {t('radiobutton_page.example.regular.link_text')}
-            </ExampleLink>
+            <RadioButtonGroup
+              name="test-large-group"
+              defaultValue="default-radio"
+              labelText={t('radiobutton_page.example.default.title')}
+              groupHintText={t('radiobutton_page.example.large.group_hint')}
+            >
+              <RadioButton variant="large" value="default-radio">
+                {t('radiobutton_page.example.default.content')}
+              </RadioButton>
+              <RadioButton variant="large" value="default-radio2">
+                {t('radiobutton_page.example.default.content2')}
+              </RadioButton>
+              <RadioButton variant="large" value="default-radio3">
+                {t('radiobutton_page.example.default.content3')}
+              </RadioButton>
+            </RadioButtonGroup>
           </ComponentExample>
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('radiobutton_page.example.external.title')}
+          <Heading variant="h2" className="my-xl">
+            {t('radiobutton_page.example.hint.title')}
           </Heading>
-          <Paragraph className="my-xl">
-            {t('radiobutton_page.example.external.description')}
+          <Paragraph className="my-l">
+            {t('radiobutton_page.example.hint.description')}
           </Paragraph>
 
           <ComponentExample>
-            <ExampleExternalLink
-              className="test-classname"
-              href="https://github.com/vrk-kpa/suomifi-ui-components"
-              labelNewWindow={t('radiobutton_page.example.external.label')}
+            <RadioButtonGroup
+              name="test-hint-group"
+              defaultValue="default-radio"
+              labelText={t('radiobutton_page.example.default.title')}
             >
-              {t('radiobutton_page.example.external.link_text')}
-            </ExampleExternalLink>
+              <RadioButton
+                value="default-radio"
+                hintText={t('radiobutton_page.example.hint.hint_text')}
+              >
+                {t('radiobutton_page.example.hint.content')}
+              </RadioButton>
+              <RadioButton
+                value="default-radio2"
+                hintText={t('radiobutton_page.example.hint.hint_text2')}
+              >
+                {t('radiobutton_page.example.hint.content2')}
+              </RadioButton>
+            </RadioButtonGroup>
+          </ComponentExample>
+        </Block>
+
+        <Block variant="section">
+          <Heading variant="h2" className="my-xl">
+            {t('radiobutton_page.example.disabled.title')}
+          </Heading>
+          <Paragraph className="my-l">
+            {t('radiobutton_page.example.disabled.description')}
+          </Paragraph>
+
+          <ComponentExample>
+            <RadioButtonGroup
+              name="test-disabled-group"
+              defaultValue="default-radio"
+              labelText={t('radiobutton_page.example.default.title')}
+            >
+              <RadioButton value="default-radio" disabled>
+                {t('radiobutton_page.example.default.content')}
+              </RadioButton>
+              <RadioButton value="default-radio2" disabled>
+                {t('radiobutton_page.example.default.content2')}
+              </RadioButton>
+              <RadioButton value="default-radio3" disabled>
+                {t('radiobutton_page.example.default.content3')}
+              </RadioButton>
+            </RadioButtonGroup>
           </ComponentExample>
         </Block>
       </SideNavLayout>

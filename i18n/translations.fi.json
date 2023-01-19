@@ -152,10 +152,23 @@
     "wizard_navigation": "Wizard navigation (Vaihenavigaatio)"
   },
   "components_main_page": {
-    "customizing_theme": {
-      "heading": "Teeman kustomoiminen",
-      "text": "Kirjaston käyttämää oletusteemaa voi myös tarvittaessa muokata. Teeman muokkaaminen vaikuttaa kaikkiin muokatun teeman sisältämiin komponentteihin.",
-      "buttonText": "Kustomoitu teema"
+    "ingress": "Suomi.fi Design System tarjoaa kokoelman saavutettavia, uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Komponentit on toteutettu Suomi.fi-identiteetin mukaisina React-komponentteina.",
+    "text": "Komponenttikirjasto tarjoaa kaikki komponentit samasta npm-moduulista. Kirjaston tekninen ohjeistus ja käyttöönotto löytyy GitHub-dokumentaatiosta.",
+    "link_text": "GitHub",
+    "usage": {
+      "title": "Komponenttien käyttö",
+      "description": "Kirjastosta voi valita käyttöön haluamiaan komponentteja. Komponentit ovat avointa lähdekoodia.",
+      "button_text": "Esimerkki"
+    },
+    "theme": {
+      "title": "Teeman muokkaaminen",
+      "description": "Kirjaston käyttämää oletusteemaa voi myös tarvittaessa muokata. Teeman muokkaaminen vaikuttaa kaikkiin muokatun teeman sisältämiin komponentteihin."
+    },
+    "advanced_usage": {
+      "title": "Komponenttien vaativampi muokkaaminen",
+      "description": "Jos komponentin tyylejä tarvitsee täydentää tai muokata se onnistuu usealla eri tavalla.",
+      "button_styled": "Tyyli",
+      "button_class": "Luokka nimi"
     }
   },
 
@@ -219,7 +232,56 @@
       "text": "Teksti kertoo painikkeen toiminnon. Toimintopainike kertoo vain olennaisen toiminnon, jonka se toteuttaa, esimerkiksi \"Valitse\" tai \"Seuraava\". Jos toimintopainikkeen nimi on yli kolme sanaa pitkä, mieti miten sitä voidaan lyhentää. Painikkeen teksti alkaa verbillä sekä aina isolla alkukirjaimella."
     },
     "size_and_usage": {
-      "heading": "Koko ja käyttö"
+      "heading": "Koko ja käyttö",
+      "description": "Mobiilikoossa käytetään täysleveää painiketta, joka skaalautuu näytön leveyden mukaan. Desktop-koossa käytetään kapeaa painiketta, joka skaalautuu painikkeen sisällön mukaan."
+    },
+
+    "example": {
+      "primary": {
+        "title": "Ensisijainen painike (Primary Button)",
+        "description": "Ensisijaista painiketta käytetään, kun toiminto on ensisijainen, pakollinen tai olennainen prosessin tai muun toiminnon kannalta. Ensisijainen painike on yleisimmin käytetty painike. Painiketta käytetään erityisesti korostamaan pakollisia tai huomionarvoisia toimintoja, jotka ovat käyttäjälle keskeisiä. Usean ensisijaisen painikkeen käyttöä yhdessä näkymässä tulisi välttää.",
+        "label": "Ensisijainen",
+        "label_disabled": "Estetty ensisijainen"
+      },
+
+      "secondary": {
+        "title": "Toissijainen painike (Secondary Button)",
+        "description": "Toissijaista painiketta käytetään, jos painike ei ole olennainen esimerkiksi prosessin läpäisemisen kannalta tai toiminto on käyttäjän kannalta toissijainen. Jos toiminto ei ole pakollinen, esimerkiksi \"paluu edelliselle sivulle\" toimintapolussa (wizard), valitaan käyttöön toissijainen painike. ",
+        "label": "Toissijainen ",
+        "label_disabled": "Estetty toissijainen"
+      },
+      "link": {
+        "title": "Linkkipainike (Link Button)",
+        "description": "Linkkipainiketta käytetään tärkeän huomionarvoisen toiminnon esittämiseen, mutta toiminto ei ole käyttäjälle välttämättä pakollinen. Painiketta voidaan käyttää esimerkiksi taulukossa, jossa sama painike toistuu riveittäin.",
+        "label": "Linkki",
+        "label_disabled": "Estetty linkki"
+      },
+      "secondary_no_border": {
+        "title": "Reunukseton painike (Borderless Button)",
+        "description": "Reunuksetonta painiketta käytetään silloin, kun toiminnon huomioarvoa halutaan alentaa muihin nähden. Reunuksetonta painiketta voidaan käyttää toissijaisen painikkeen kaltaisesti esimerkiksi dialogin \"Keskeytä\"-painikkeena. Huomioi, että tekstipainikkeen taustaväri on oletuksena valkoinen, mutta on myös määriteltävissä käyttötapauksen mukaisesti.",
+        "label": "Reunukseton painike",
+        "label_disabled": "Estetty reunukseton painike"
+      },
+      "negative": {
+        "title": "Käänteinen painike (Inverted Button)",
+        "description": "Käänteistä painiketta käytetään erivärisillä taustoilla. Painikkeen käyttäminen kuvan päällä ei ole saavutettavuuden kannalta suositeltavaa. Jos painiketta käyttää kuvan tai kuvituksen päällä, tulee huomioida kuvan ja painikkeen välinen riittävä kontrasti.",
+        "label": "Käänteinen",
+        "label_disabled": "Estetty käänteinen"
+      },
+      "with_icon": {
+        "title": "Painike ikonilla (Button with Icon)",
+        "description": "Ikonillista painiketta käytetään selkeyttämään toimintoa tai erottamaan tärkeä toiminto muista painikkeista. Ikoni korostaa painikkeen roolia ja auttaa painikkeen tunnistamisessa. Kuvaava ikoni myös helpottaa ymmärtämään, mitä painikkeesta tapahtuu. Jos käytetään painiketta, jossa on pelkkä ikoni ilman visuaalista tekstiä, tuetaan saavutettavuutta käyttämällä aria-label attribuuttia. Tyypillinen esimerkki on sulje-painike (X), jolloin luettava nimi annetaan aria-label=\"Sulje\"."
+      },
+      "disabled": {
+        "title": "Estetty painike (Disabled Button)",
+        "description": "Estettyä painiketta käytetään silloin, kun toiminto ei ole jostain syystä klikattava. Painike voi olla estettynä esimerkiksi silloin, jos käyttäjä ei ole täyttänyt tarvittavia tietoja edetäkseen toiminnossa tai prosessissa eteenpäin. Estetty painike ei reagoi hover-toimintoon (hiiren kohdistimen siirtämistä painikkeen päälle). Vaikka estetty painike ei täytä saavutettavuuden kontrastivaatimusta, sitä on suositeltavaa käyttää, jos sen avulla voidaan parantaa käyttöliittymän ymmärrettävyyttä. Näin voidaan toimia, koska painikkeeseen ei kuitenkaan liity varsinaista toiminnallisuutta. "
+      },
+
+      "button": {
+        "label_icon": "{{name}} ikoni vasen",
+        "label_icon_right": "{{name}} ikoni oikea",
+        "label_clicked": "{{name}}, painettu {{count}} kertaa"
+      }
     }
   },
 
@@ -801,7 +863,7 @@
       "text_1": "Valintanappi koostuu pyöreästä painikkeesta ja sen oikealla puolella olevasta label-tekstistä. Valintanapin alla voidaan näyttää valintanappiin liittyvä ohjeteksti. "
     },
     "size_and_usage": {
-      "heading": "Komponentin koko ja käyttö",
+      "heading": "Koko ja käyttö",
       "text_1": "Työpöytä- ja mobiilikäyttöön on määritelty erikseen omat koot valintanapista. Oletuksena käytetään pienempää valintanappia (default), mobiilinäytöillä niille suunniteltua kokoa (large)."
     },
 

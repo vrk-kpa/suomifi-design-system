@@ -8,6 +8,7 @@ import {
   Block,
   Button,
   ExternalLink,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/components-sidenav';
@@ -62,6 +63,9 @@ const ButtonPage: NextPage = () => {
           <Heading variant="h2" className="mb-xl">
             {t('button_page.size_and_usage.heading')}
           </Heading>
+          <Paragraph className="my-xl">
+            {t('button_page.size_and_usage.description')}
+          </Paragraph>
           <ComponentExample
             variant="mobile_device"
             filterPropsInExample={['className']}
@@ -73,6 +77,315 @@ const ButtonPage: NextPage = () => {
             <Button fullWidth variant="secondary" className="mt-l">
               Toissijainen
             </Button>
+          </ComponentExample>
+        </Block>
+
+        <Block>
+          <Heading variant="h2" className="mb-xl">
+            {t('button_page.example.primary.title')}
+          </Heading>
+          <Paragraph className="my-xl">
+            {t('button_page.example.primary.description')}
+          </Paragraph>
+
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.whiteBase,
+            }}
+          >
+            <Block>
+              <Button onClick={() => undefined}>
+                {t('button_page.example.primary.label')}
+              </Button>
+            </Block>
+            <Block>
+              <Button disabled onClick={() => undefined}>
+                {t('button_page.example.primary.label_disabled')}
+              </Button>
+            </Block>
+          </ComponentExample>
+        </Block>
+
+        <Block>
+          {t('button_page.example.link.title')}
+          {t('button_page.example.link.description')}
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.whiteBase,
+            }}
+          >
+            <Block>
+              <Button variant="link" onClick={() => undefined}>
+                {t('button_page.example.link.label')}
+              </Button>
+            </Block>
+            <Block>
+              <Button variant="link" disabled onClick={() => undefined}>
+                {t('button_page.example.link.labelDisabled')}
+              </Button>
+            </Block>
+          </ComponentExample>
+        </Block>
+
+        <Block>
+          {t('button_page.example.negative.title')}
+          {t('button_page.example.negative.description')}
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.highlightBase,
+            }}
+          >
+            <Block>
+              <Button variant="inverted" onClick={() => undefined}>
+                {t('button_page.example.negative.label')}
+              </Button>
+            </Block>
+            <Block>
+              <Button variant="inverted" disabled onClick={() => undefined}>
+                {t('button_page.example.negative.label_disabled')}
+              </Button>
+            </Block>
+          </ComponentExample>
+        </Block>
+
+        <Block>
+          {t('button_page.example.secondary.title')}
+          {t('button_page.example.secondary.description')}
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.whiteBase,
+            }}
+          >
+            <Block>
+              <Button variant="secondary" onClick={() => undefined}>
+                {t('button_page.example.secondary.label')}
+              </Button>
+            </Block>
+            <Block>
+              <Button variant="secondary" disabled onClick={() => undefined}>
+                {t('button_page.example.secondary.label_disabled')}
+              </Button>
+            </Block>
+          </ComponentExample>
+        </Block>
+
+        <Block>
+          {t('button_page.example.secondary_no_border.title')}
+          {t('button_page.example.secondary_no_border.description')}
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.whiteBase,
+            }}
+          >
+            <Block>
+              <Button variant="secondaryNoBorder" onClick={() => undefined}>
+                {t('button_page.example.secondary_no_border.label')}
+              </Button>
+            </Block>
+            <Block>
+              <Button
+                variant="secondaryNoBorder"
+                disabled
+                onClick={() => undefined}
+              >
+                {t('button_page.example.secondary_no_border.label_disabled')}
+              </Button>
+            </Block>
+          </ComponentExample>
+        </Block>
+
+        <Block>
+          {t('button_page.example.with_icon.title')}
+          {t('button_page.example.with_icon.description')}
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.whiteBase,
+            }}
+          >
+            <Block>
+              <Button icon="login" onClick={() => undefined}>
+                {t('button_page.example.button.label_icon').replace(
+                  '{{name}}',
+                  t('button_page.example.primary.label'),
+                )}
+              </Button>
+            </Block>
+            <Block>
+              <Button iconRight="login" onClick={() => undefined}>
+                {t('button_page.example.button.label_icon_right').replace(
+                  '{{name}}',
+                  t('button_page.example.primary.label'),
+                )}
+              </Button>
+            </Block>
+          </ComponentExample>
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.whiteBase,
+            }}
+          >
+            <Block>
+              <Button icon="login" variant="link" onClick={() => undefined}>
+                {t('button_page.example.button.label_icon').replace(
+                  '{{name}}',
+                  t('button_page.example.link.label'),
+                )}
+              </Button>
+            </Block>
+            <Block>
+              <Button
+                iconRight="login"
+                variant="link"
+                onClick={() => undefined}
+              >
+                {t('button_page.example.button.label_icon_right').replace(
+                  '{{name}}',
+                  t('button_page.example.link.label'),
+                )}
+              </Button>
+            </Block>
+          </ComponentExample>
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.highlightBase,
+            }}
+          >
+            <Block>
+              <Button icon="login" variant="inverted" onClick={() => undefined}>
+                {t('button_page.example.button.label_icon').replace(
+                  '{{name}}',
+                  t('button_page.example.negative.label'),
+                )}
+              </Button>
+            </Block>
+            <Block>
+              <Button
+                iconRight="login"
+                variant="inverted"
+                onClick={() => undefined}
+              >
+                {t('button_page.example.button.label_icon_right').replace(
+                  '{{name}}',
+                  t('button_page.example.negative.label'),
+                )}
+              </Button>
+            </Block>
+          </ComponentExample>
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.whiteBase,
+            }}
+          >
+            <Block>
+              <Button
+                icon="login"
+                variant="secondary"
+                onClick={() => undefined}
+              >
+                {t('button_page.example.button.label_icon').replace(
+                  '{{name}}',
+                  t('button_page.example.secondary.label'),
+                )}
+              </Button>
+            </Block>
+            <Block>
+              <Button
+                iconRight="login"
+                variant="secondary"
+                onClick={() => undefined}
+              >
+                {t('button_page.example.button.label_icon_right').replace(
+                  '{{name}}',
+                  t('button_page.example.secondary.label'),
+                )}
+              </Button>
+            </Block>
+          </ComponentExample>
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.whiteBase,
+            }}
+          >
+            <Block>
+              <Button
+                icon="login"
+                variant="secondaryNoBorder"
+                onClick={() => undefined}
+              >
+                {t('button_page.example.button.label_icon').replace(
+                  '{{name}}',
+                  t('button_page.example.secondary_no_border.label'),
+                )}
+              </Button>
+            </Block>
+            <Block>
+              <Button
+                iconRight="login"
+                variant="secondaryNoBorder"
+                onClick={() => undefined}
+              >
+                {t('button_page.example.button.label_icon_right').replace(
+                  '{{name}}',
+                  t('button_page.example.secondary_no_border.label'),
+                )}
+              </Button>
+            </Block>
+          </ComponentExample>
+        </Block>
+
+        <Block>
+          {t('button_page.example.disabled.title')}
+          {t('button_page.example.disabled.description')}
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.xs,
+              background: defaultSuomifiTheme.colors.whiteBase,
+            }}
+          >
+            <Block>
+              <Button disabled onClick={() => undefined}>
+                {t('button_page.example.primary.label_disabled')}
+              </Button>
+            </Block>
+            <Block>
+              <Button disabled variant="link" onClick={() => undefined}>
+                {t('button_page.example.link.label_disabled')}
+              </Button>
+            </Block>
+            <div
+              style={{
+                padding: 15,
+                background: defaultSuomifiTheme.colors.highlightBase,
+              }}
+            >
+              <Button disabled variant="inverted" onClick={() => undefined}>
+                {t('button_page.example.negative.label_disabled')}
+              </Button>
+            </div>
+            <Block>
+              <Button disabled variant="secondary" onClick={() => undefined}>
+                {t('button_page.example.secondary.label_disabled')}
+              </Button>
+            </Block>
+            <Block>
+              <Button
+                disabled
+                variant="secondaryNoBorder"
+                onClick={() => undefined}
+              >
+                {t('button_page.example.secondary_no_border.label_disabled')}
+              </Button>
+            </Block>
           </ComponentExample>
         </Block>
       </SideNavLayout>

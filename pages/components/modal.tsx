@@ -102,7 +102,7 @@ const Page: NextPage = () => {
         <ConfirmExample title="" desc="" noCode={false} />
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('modal_page.example.default.heading')}
           </Heading>
           <Paragraph className="my-xl">
@@ -113,7 +113,7 @@ const Page: NextPage = () => {
         <DefaultExample />
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('modal_page.example.small_screen.heading')}
           </Heading>
           <Paragraph className="my-xl">

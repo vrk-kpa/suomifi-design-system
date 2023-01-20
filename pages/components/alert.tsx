@@ -13,6 +13,7 @@ import {
   Text,
   Paragraph,
   ExternalLink,
+  defaultSuomifiTheme,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -82,7 +83,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <ComponentExample filterPropsInExample={['className']}>
+          <ComponentExample>
             <InlineAlert
               labelText={t('alert_page.example.inline_alert_info_heading')}
             >
@@ -90,13 +91,21 @@ const Page: NextPage = () => {
             </InlineAlert>
           </ComponentExample>
 
-          <ComponentExample filterPropsInExample={['className']}>
+          <ComponentExample
+            style={{
+              marginTop: defaultSuomifiTheme.spacing.m,
+            }}
+          >
             <InlineAlert status="warning">
               {t('alert_page.example.inline_alert_warning_paragraph')}
             </InlineAlert>
           </ComponentExample>
 
-          <ComponentExample filterPropsInExample={['className']}>
+          <ComponentExample
+            style={{
+              marginTop: defaultSuomifiTheme.spacing.m,
+            }}
+          >
             <InlineAlert
               labelText={t('alert_page.example.inline_alert_error_heading')}
               status="error"

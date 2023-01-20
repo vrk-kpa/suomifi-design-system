@@ -65,7 +65,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('heading_page.size_and_usage.heading')}
           </Heading>
           <Paragraph className="my-xl">
@@ -78,7 +78,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('heading_page.example.title')}
           </Heading>
 
@@ -127,7 +127,7 @@ const Page: NextPage = () => {
           </ComponentExample>
         </Block>
 
-        <Block variant="section">
+        <Block variant="section" mt="l">
           <ComponentExample
             style={{
               flexFlow: 'column',

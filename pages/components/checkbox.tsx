@@ -84,7 +84,7 @@ const Page: NextPage = () => {
         <Heading variant="h2" className="mb-xl">
           {t('checkbox_page.example.large.title')}
         </Heading>
-        <Paragraph className="my-xl">
+        <Paragraph className="my-l">
           {t('checkbox_page.example.large.description')}
         </Paragraph>
 
@@ -94,7 +94,7 @@ const Page: NextPage = () => {
           </Checkbox>
         </ComponentExample>
 
-        <Heading variant="h2" className="mb-xl">
+        <Heading variant="h2" className="my-xl">
           {t('checkbox_page.example.group.title')}
         </Heading>
         <Paragraph className="my-xl">
@@ -120,7 +120,7 @@ const Page: NextPage = () => {
           </CheckboxGroup>
         </ComponentExample>
 
-        <Heading variant="h2" className="mb-xl">
+        <Heading variant="h2" className="my-xl">
           {t('checkbox_page.example.hintstate.title')}
         </Heading>
         <Paragraph className="my-xl">
@@ -137,7 +137,7 @@ const Page: NextPage = () => {
           </Checkbox>
         </ComponentExample>
 
-        <Heading variant="h2" className="mb-xl">
+        <Heading variant="h2" className="my-xl">
           {t('checkbox_page.example.disabled.title')}
         </Heading>
         <Paragraph className="my-xl">

@@ -117,10 +117,10 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('expander_page.example.single.title')}
           </Heading>
-          <Paragraph className="my-xl">
+          <Paragraph className="mb-xl">
             {t('expander_page.example.single.description')}
           </Paragraph>
 
@@ -137,7 +137,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('expander_page.example.group.title')}
           </Heading>
           <Paragraph className="my-xl">

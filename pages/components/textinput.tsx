@@ -100,7 +100,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('text_input_page.example.error.title')}
           </Heading>
 
@@ -118,7 +118,7 @@ const Page: NextPage = () => {
             />
           </ComponentExample>
         </Block>
-        <Heading variant="h2" className="mb-xl">
+        <Heading variant="h2" className="my-xl">
           {t('text_input_page.example.disabled.title')}
         </Heading>
         <Paragraph className="my-xl">
@@ -132,7 +132,7 @@ const Page: NextPage = () => {
           />
         </ComponentExample>
 
-        <Heading variant="h2" className="mb-xl">
+        <Heading variant="h2" className="my-xl">
           {t('text_input_page.example.optional.title')}
         </Heading>
 

@@ -13,9 +13,26 @@ import {
   Paragraph,
   ExternalLink,
   Link,
-  StaticIcon,
-  Icon,
+  IconProps,
+  StaticIconProps,
+  Icon as SuomifiIcon,
+  StaticIcon as SuomifiStaticIcon,
 } from 'suomifi-ui-components';
+
+/**
+ * Wrapper to show all icons as bigger for better visiblity
+ */
+const Icon = (props: IconProps): JSX.Element => {
+  const newProps = { ...props, width: '2em', height: '2em' };
+  return <SuomifiIcon {...newProps} />;
+};
+Icon.displayName = 'Icon';
+
+const StaticIcon = (props: StaticIconProps): JSX.Element => {
+  const newProps = { ...props, width: '4em', height: '4em' };
+  return <SuomifiStaticIcon {...newProps} />;
+};
+StaticIcon.displayName = 'StaticIcon';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
@@ -90,7 +107,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('icon_page.info_icons.title')}
           </Heading>
           <Paragraph className="my-xl">
@@ -120,7 +137,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('icon_page.additional_info_icons.title')}
           </Heading>
           <Paragraph className="my-xl">
@@ -154,7 +171,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('icon_page.illustrative_icons.title')}
           </Heading>
           <Paragraph className="my-xl">
@@ -176,7 +193,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('icon_page.attachment_icons.title')}
           </Heading>
 
@@ -195,7 +212,7 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('icon_page.sign_language_icons.title')}
           </Heading>
           <Paragraph className="my-xl">
@@ -219,7 +236,7 @@ const Page: NextPage = () => {
         <ExternalLink
           href="https://www.kuurojenliitto.fi/fi/artikkelit/viittomakieliset-palvelut-symboli"
           labelNewWindow={t('common.opens_in_a_new_tab')}
-          style={{ marginBottom: '30px', display: 'block' }}
+          style={{ marginBottom: '30px', marginTop: '30px', display: 'block' }}
         >
           {t('icon_page.sign_language_icons.link_title')}
         </ExternalLink>

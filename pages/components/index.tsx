@@ -72,10 +72,10 @@ const ComponentsIndexPage: NextPage = () => {
         </ExternalLink>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('components_main_page.usage.title')}
           </Heading>
-          <Paragraph className="my-xl">
+          <Paragraph className="mb-xl">
             {t('components_main_page.usage.description')}
           </Paragraph>
 
@@ -85,7 +85,7 @@ const ComponentsIndexPage: NextPage = () => {
         </Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('components_main_page.theme.title')}
           </Heading>
 
@@ -103,18 +103,19 @@ const ComponentsIndexPage: NextPage = () => {
         <Block variant="section"></Block>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('components_main_page.advanced_usage.title')}
           </Heading>
 
           <Paragraph className="my-xl">
             <Text>{t('components_main_page.advanced_usage.description')}</Text>
           </Paragraph>
-          <ComponentExample codeString={advancedExample}>
-            <SuomifiThemeProvider theme={defaultSuomifiTheme}>
-              <CustomButton>Styled</CustomButton>
-              <Button className="button--custom">Classname</Button>
-            </SuomifiThemeProvider>
+          <ComponentExample
+            codeString={advancedExample}
+            style={{ gap: defaultSuomifiTheme.spacing.m }}
+          >
+            <CustomButton>Styled</CustomButton>
+            <Button className="button--custom">Classname</Button>
           </ComponentExample>
         </Block>
       </SideNavLayout>

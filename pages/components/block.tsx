@@ -61,10 +61,8 @@ const Page: NextPage = () => {
           <Heading variant="h2" className="mb-xl">
             {t('block_page.size_and_usage.heading')}
           </Heading>
-          <Paragraph className="my-xl">
-            {t('block_page.size_and_usage.text_1')}
-          </Paragraph>
-          <Paragraph className="my-xl">
+          <Paragraph>{t('block_page.size_and_usage.text_1')}</Paragraph>
+          <Paragraph className="my-l">
             {t('block_page.size_and_usage.text_2')}
           </Paragraph>
         </Block>

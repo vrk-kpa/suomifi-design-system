@@ -14,6 +14,7 @@ import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
+import { buttonsIconExample } from '../../utils/complicatedCodeExamples';
 
 const ButtonPage: NextPage = () => {
   const { t } = useTranslation();
@@ -81,7 +82,7 @@ const ButtonPage: NextPage = () => {
         </Block>
 
         <Block>
-          <Heading variant="h2" className="mb-xl">
+          <Heading variant="h2" className="my-xl">
             {t('button_page.example.primary.title')}
           </Heading>
           <Paragraph className="my-xl">
@@ -90,8 +91,9 @@ const ButtonPage: NextPage = () => {
 
           <ComponentExample
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
               background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -108,12 +110,19 @@ const ButtonPage: NextPage = () => {
         </Block>
 
         <Block>
-          {t('button_page.example.link.title')}
-          {t('button_page.example.link.description')}
+          <Heading variant="h2" className="my-xl">
+            {t('button_page.example.link.title')}
+          </Heading>
+
+          <Paragraph className="mb-l">
+            {t('button_page.example.link.description')}
+          </Paragraph>
+
           <ComponentExample
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
               background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -123,19 +132,26 @@ const ButtonPage: NextPage = () => {
             </Block>
             <Block>
               <Button variant="link" disabled onClick={() => undefined}>
-                {t('button_page.example.link.labelDisabled')}
+                {t('button_page.example.link.label_disabled')}
               </Button>
             </Block>
           </ComponentExample>
         </Block>
 
         <Block>
-          {t('button_page.example.negative.title')}
-          {t('button_page.example.negative.description')}
+          <Heading variant="h2" className="my-xl">
+            {t('button_page.example.negative.title')}
+          </Heading>
+
+          <Paragraph className="mb-l">
+            {t('button_page.example.negative.description')}
+          </Paragraph>
+
           <ComponentExample
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
               background: defaultSuomifiTheme.colors.highlightBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -152,12 +168,19 @@ const ButtonPage: NextPage = () => {
         </Block>
 
         <Block>
-          {t('button_page.example.secondary.title')}
-          {t('button_page.example.secondary.description')}
+          <Heading variant="h2" className="my-xl">
+            {t('button_page.example.secondary.title')}
+          </Heading>
+
+          <Paragraph className="mb-l">
+            {t('button_page.example.secondary.description')}
+          </Paragraph>
+
           <ComponentExample
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
               background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -174,12 +197,19 @@ const ButtonPage: NextPage = () => {
         </Block>
 
         <Block>
-          {t('button_page.example.secondary_no_border.title')}
-          {t('button_page.example.secondary_no_border.description')}
+          <Heading variant="h2" className="my-xl">
+            {t('button_page.example.secondary_no_border.title')}
+          </Heading>
+
+          <Paragraph className="mb-l">
+            {t('button_page.example.secondary_no_border.description')}
+          </Paragraph>
+
           <ComponentExample
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
               background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -200,12 +230,21 @@ const ButtonPage: NextPage = () => {
         </Block>
 
         <Block>
-          {t('button_page.example.with_icon.title')}
-          {t('button_page.example.with_icon.description')}
+          <Heading variant="h2" className="my-xl">
+            {t('button_page.example.with_icon.title')}
+          </Heading>
+
+          <Paragraph className="mb-l">
+            {t('button_page.example.with_icon.description')}
+          </Paragraph>
+
           <ComponentExample
+            noCode
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
+              marginBottom: defaultSuomifiTheme.spacing.s,
               background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -226,9 +265,12 @@ const ButtonPage: NextPage = () => {
             </Block>
           </ComponentExample>
           <ComponentExample
+            noCode
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
+              marginBottom: defaultSuomifiTheme.spacing.s,
               background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -253,9 +295,12 @@ const ButtonPage: NextPage = () => {
             </Block>
           </ComponentExample>
           <ComponentExample
+            noCode
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
+              marginBottom: defaultSuomifiTheme.spacing.s,
               background: defaultSuomifiTheme.colors.highlightBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -280,9 +325,12 @@ const ButtonPage: NextPage = () => {
             </Block>
           </ComponentExample>
           <ComponentExample
+            noCode
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
+              marginBottom: defaultSuomifiTheme.spacing.s,
               background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -311,9 +359,11 @@ const ButtonPage: NextPage = () => {
             </Block>
           </ComponentExample>
           <ComponentExample
+            noCode
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
               background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
             }}
           >
             <Block>
@@ -341,15 +391,25 @@ const ButtonPage: NextPage = () => {
               </Button>
             </Block>
           </ComponentExample>
+
+          <ComponentExample codeString={buttonsIconExample}></ComponentExample>
         </Block>
 
         <Block>
-          {t('button_page.example.disabled.title')}
-          {t('button_page.example.disabled.description')}
+          <Heading variant="h2" className="my-xl">
+            {t('button_page.example.disabled.title')}
+          </Heading>
+
+          <Paragraph className="mb-l">
+            {t('button_page.example.disabled.description')}
+          </Paragraph>
+
           <ComponentExample
             style={{
-              padding: defaultSuomifiTheme.spacing.xs,
+              padding: defaultSuomifiTheme.spacing.m,
               background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
+              flexWrap: 'wrap',
             }}
           >
             <Block>

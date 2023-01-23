@@ -2,277 +2,322 @@ import SEO from 'components/seo';
 import React from 'react';
 import {
   Block,
-  Button,
   ExternalLink,
   Heading,
   Paragraph,
   Text,
   suomifiDesignTokens,
+  Icon,
+  StaticIcon,
 } from 'suomifi-ui-components';
-import InfoBox from '../GrandOne/InfoBox/InfoBox';
-import SmallBox from '../GrandOne/SmallBox/SmallBox';
 import '../GrandOne/GrandOnePage.css';
+import BoxWithIcon from '../GrandOne/BoxWithIcon/BoxWithIcon';
+import suomifiFlag from '../GrandOne/suomifi_flag.png';
+import dsProcess from '../GrandOne/DS_process.png';
+import mobileImg from '../GrandOne/nimenmuutoshakemus-mobile 1.png';
 
 const Page = (): JSX.Element => (
   <>
     <SEO title="Grand One" />
 
     <Block variant="main">
-      <Block variant="div" id="header">
-        <Block variant="div" className="container">
-          <img
-            src="/grand_one/suomifi-logo.svg"
-            alt="Suomi.fi logo"
-            className="suomifi-logo"
-          />
-        </Block>
-      </Block>
-
       <Block variant="div" id="hero">
-        <Block variant="div" className="container">
-          <Heading variant="h1hero">
-            Suomi.fi Design System - raflaava otsikko
-          </Heading>
-          <Block mt="xxl">
-            <Text variant="lead">Lorem ipsum dolor sit amet</Text>
-          </Block>
-          <Block variant="div" mt="xxl" className="buttons">
-            <Button
-              variant="link"
-              icon="linkExternal"
-              className="homepage-link"
-            >
-              Suomi.fi Design System
-            </Button>
-            <Button variant="link" icon="linkExternal">
-              Github
-            </Button>
-          </Block>
-        </Block>
+        <Block variant="div" className="container"></Block>
       </Block>
 
       <Block variant="div" id="section1">
         <Block variant="div" className="container">
-          <Heading variant="h2">Tarinamme alku ja muut taustat</Heading>
-          <Block mt="l">
+          <Block style={{ textAlign: 'center' }}>
+            <img src={suomifiFlag} alt="Suomi.fi logo" />
+          </Block>
+          <Block mt="xl">
+            <Heading
+              variant="h1hero"
+              style={{
+                color: suomifiDesignTokens.colors.brandBase,
+                textAlign: 'center',
+              }}
+            >
+              Suomi.fi - koko kansan Design System
+            </Heading>
+          </Block>
+          <Block mt="xxl">
+            <Heading variant="h2">
+              “Kuinka monta erilaista OK-painiketta julkishallinnon sähköisiin
+              asiointipalveluihin kannattaa eri virastoissa oikein suunnitella?”
+            </Heading>
+          </Block>
+        </Block>
+        <Block variant="div" className="container half-container" mt="xl">
+          <Block variant="div" className="half">
+            <Paragraph marginBottomSpacing="l">
+              Oli kysymys, joka vuonna 2020 löi lukkoon päätöksen koko
+              julkishallinnolle avoimen Suomi.fi Design Systemin rakentamisesta
+              silloisessa Väestörekisterikeskuksessa (nykyinen Digi- ja
+              väestötietovirasto).
+            </Paragraph>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Ennen Design System -työn aloittamista yksittäisiä kansalaisten
+              asiointipalveluja kehitettiin kyllä samoilla teknologioilla, mutta
+              erityisesti saavutettavuuden huomioiminen vaati työtä jokaisessa
+              tiimissä erikseen. Lisäksi toteutukset eri palveluissa erosivat
+              toisistaan ja käyttöliittymäkomponenttien ylläpito vaati paljon
+              ylimääräistä ja turhaa työtä. Viraston UX- ja
+              palvelumuotoilutiimin vetäjä esitti tuolloin ratkaisuksi yhteisen
+              Design Systemin kehittämistä, käyttöönottoa ja työn rahoittamista.
+              Pitkäjänteisen hyötyjen perustelutyön jälkeen ehdotus hyväksyttiin
+              ja samalla päätettiin, että Design System ja sen
+              käyttöliittymäkomponentit julkaistaan avoimesti kaikkien käyttöön.
+              Keskeiseksi mittariksi asetettiin jokaisen elementin
+              saavutettavuuden varmistaminen. Samalla päätettiin, että Design
+              Systemin ulkoasu tulisi olla tarpeeksi neutraali, jotta eri
+              toimijoiden myös DVV:n ulkopuolella olisi mahdollisimman helppoa
+              omaksua se omaan käyttöönsä ja muokata tarvittaessa.
             </Paragraph>
           </Block>
-          <Block variant="div" mt="xxxl" className="boxes">
-            <InfoBox heading="Saavutettavuus" icon="collaboration">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </InfoBox>
-            <InfoBox heading="Avoimuus" icon="webDevelopment">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </InfoBox>
-            <InfoBox heading="Helppokäyttöisyys" icon="touch">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </InfoBox>
+          <Block variant="div" className="half">
+            <Paragraph marginBottomSpacing="l">
+              Digi- ja väestötietoviraston yhtenä tehtävänä on edesauttaa
+              julkishallinnon digitalisaation etenemistä, ja korkealaatuinen ja
+              kaikille avoin Suomi.fi Design System on yksi monista keinoista,
+              joilla virasto tehtäväänsä edistää. Viraston omat sähköiset
+              palvelut huomasivat myös tarpeen Design Systemille: DVV:llä on
+              Suomi.fi-palvelujen lisäksi lukuisia muita sähköisiä
+              asiointipalveluja, jotka hyötyvät yhteiskäyttöisistä
+              käyttöliittymäkomponenteista ja niiden taustalla tehdystä
+              suunnittelu- ja ajattelutyöstä.
+            </Paragraph>
+            <Paragraph>
+              Työ polkaistiin käyntiin alkuvuodesta 2020 ja Suomi.fi Design
+              Systemille koottiin kolmen ohjelmistokehittäjän tiimi ja oma
+              UX/UI-suunnittelija. Työtä ohjasi viraston UX- ja palvelumuotoilu
+              –tiimin vetäjä. Suunnittelutyöhön sekä tyylioppaan ja
+              komponenttien muodostamiseen osallistui tiimin oman
+              UX/UI-suunnittelijan lisäksi heti myös muita DVV:llä
+              työskenteleviä suunnittelijoita.
+            </Paragraph>
           </Block>
         </Block>
       </Block>
 
       <Block variant="div" id="section2">
-        <Block variant="div" className="container half-container">
-          <Block variant="div" className="half">
-            <Block mb="l">
-              <Heading variant="h2">
-                Patterneita, tyyliopasfiilistelyä tai muuta kivaa
-              </Heading>
-            </Block>
-            <Block>
-              <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </Paragraph>
-            </Block>
-          </Block>
-          <Block variant="div" className="half">
-            <Block
-              style={{
-                background: 'white',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '200px',
-              }}
-            >
-              Kuva placeholder
-            </Block>
-          </Block>
+        <Block variant="div" className="container boxes">
+          <BoxWithIcon
+            variant="simple"
+            icon={<Icon icon="settings" className="icon" />}
+          >
+            661 viikottaista komponenttikirjaston latausta
+          </BoxWithIcon>
+          <BoxWithIcon
+            variant="simple"
+            icon={<Icon icon="authorise" className="icon" />}
+          >
+            5 577 064 käyttäjää
+          </BoxWithIcon>
+          <BoxWithIcon
+            variant="simple"
+            icon={<Icon icon="heart" className="icon" />}
+          >
+            Suomi.fi -visuaalisen ilmeen tunnettuus 90%
+          </BoxWithIcon>
         </Block>
-        <Block
-          variant="div"
-          className="container half-container"
-          style={{ marginTop: '90px' }}
-        >
+        <Block variant="div" className="container half-container" mt="xxxl">
           <Block variant="div" className="half">
-            <Block mb="l">
-              <Heading variant="h2">Joku siisti juttu tähän</Heading>
-            </Block>
-            <Block>
-              <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </Paragraph>
-            </Block>
+            <Paragraph>
+              Tänään Suomi.fi Design System on julkisen hallinnon jokaisen
+              asiointipalvelun osa. Kaikki Suomessa asuvat ovat nähneet SFI DS
+              -komponentteja jossain elämänsä vaiheessa tai tulevat niitä vielä
+              näkemään (esimerkiksi vahvan tunnistautumisen yhteydessä). SFI DS
+              näkyy muun muassa seuraavissa asioinnin tukipalveluissa:
+              Suomi.fi-verkkopalvelu, Palvelutietovaranto, Tunnistus, Viestit,
+              Valtuudet, Kartat, Maksut, Palveluhallinta ja palveluväylän
+              Liityntäkatalogi. Lisäksi Työ- ja elinkeinoministeriön
+              yrityslupahakemusten digitalisointiin tähtäävä luvat ja valvonta
+              -hanke hyödyntää Suomi.fi Design Systemiä.
+            </Paragraph>
           </Block>
           <Block variant="div" className="half">
-            <Block
-              style={{
-                background: 'white',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '400px',
-              }}
-            >
-              Kuva placeholder
-            </Block>
+            <Paragraph>
+              “Koko kansan Design System” on osa jokaisen suomalaisen arkea ja
+              edistää osaltaan kansalaisten asiointipalvelujen yhtenäistä ja
+              sujuvaa käyttökokemusta. Tämä myös näkyy ja tuntuu: Suomi.fi:n
+              visuaalisella ilmeellä on tutkitusti 90% tunnettuus suomalaisten
+              keskuudessa (Lähde: DVV tunnettuustutkimus 2022).
+            </Paragraph>
           </Block>
         </Block>
       </Block>
 
       <Block variant="div" id="section3">
-        <Block variant="div" className="container half-container">
-          <Block variant="div" className="half">
-            <Block
-              style={{
-                background: 'white',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '400px',
-              }}
-            >
-              Kuva placeholder
-            </Block>
-          </Block>
-          <Block variant="div" className="half">
-            <Block mb="l">
-              <Heading variant="h2">
-                Pääasia, että tiimi toimii ja saadaan palautetta -
-                prosessikuvaus tähän?
-              </Heading>
-            </Block>
-            <Block>
-              <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </Paragraph>
-            </Block>
-          </Block>
+        <Block variant="div" className="container" mb="xxxl">
+          <Heading variant="h2">
+            Suomi.fi Design Systemin pääperiaatteet
+          </Heading>
         </Block>
-        <Block
-          variant="div"
-          className="container half-container"
-          style={{ marginTop: '90px' }}
-        >
+        <Block variant="div" className="container half-container ">
           <Block variant="div" className="half">
-            <Block mb="l">
-              <Heading variant="h2">
-                Jotain kivaa jalkauttamisesta ja sen sellaista?
-              </Heading>
-            </Block>
-            <Block>
-              <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </Paragraph>
-            </Block>
+            <BoxWithIcon
+              icon={<Icon icon="signLanguageContent" className="icon" />}
+              style={{ marginBottom: suomifiDesignTokens.spacing.xl }}
+            >
+              Saavutettavuus
+            </BoxWithIcon>
+            <BoxWithIcon
+              icon={<StaticIcon icon="collaboration" className="icon" />}
+              style={{ marginBottom: suomifiDesignTokens.spacing.xl }}
+            >
+              Avoimuus
+            </BoxWithIcon>
+            <BoxWithIcon
+              icon={<StaticIcon icon="webDevelopment" className="icon" />}
+            >
+              Helppokäyttöisyys
+            </BoxWithIcon>
           </Block>
           <Block variant="div" className="half">
-            <Block
-              style={{
-                background: 'white',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '600px',
-              }}
-            >
-              Kuva placeholder
-            </Block>
+            <Paragraph marginBottomSpacing="l">
+              Koska Suomi.fi Design System on rakennettu palvelemaan kaikkia
+              vauvasta vaariin, on yksi sen tärkeimmistä tavoitteista ollut
+              saavutettavuuden edistäminen sähköisissä asiointipalveluissa jo
+              kauan ennen kuin saavutettavuuslainsäädäntö on siihen
+              velvoittanut.
+            </Paragraph>
+            <Paragraph marginBottomSpacing="l">
+              Konkreettinen keino tähän pääsemiseksi on ollut saavutettavuustyön
+              tekeminen muille tiimeille mahdollisimman helpoksi: SFI DS –tiimi
+              ratkoo vaikeita asioita muiden puolesta ja jakaa ratkaisunsa
+              avoimesti kaikkien hyödynnettäväksi.
+            </Paragraph>
+            <Paragraph>
+              Kaikki SFI DS -ratkaisut ovat avointa lähdekoodia, löydettävissä
+              ja hyvin dokumentoitu eri kohderyhmät (ohjelmistokehittäjät,
+              tuoteomistajat ja UX/UI-suunnittelijat) huomioiden. Kehitystiimit
+              voivat käyttää Design Systemiä joko kokonaisuudessaan tai
+              hyödyntää tilanteensa mukaan vain osia siitä. Erikseen käytettäviä
+              osia voivat olla esimerkiksi ikonit, tyylitokenit ja tyyliopas.
+              Komponenttikirjasto puolestaan yhdistää edellä mainitut osat
+              valmiiksi käyttöliittymäkomponenteiksi ja patterneiksi
+              ohjeistuksineen.
+            </Paragraph>
           </Block>
         </Block>
       </Block>
 
       <Block variant="div" id="section4">
-        <Block variant="div" className="container">
-          <Heading variant="h2">
-            Tulokset ja hyödyt - nostoja tai numeroita jne
-          </Heading>
-          <Block variant="div" className="boxes" mt="xl">
-            <SmallBox>Jotain</SmallBox>
-            <SmallBox>Jotain</SmallBox>
-            <SmallBox>Jotain</SmallBox>
-            <SmallBox>Jotain</SmallBox>
+        <Block variant="div" className="container half-container">
+          <Block variant="div" className="half left"></Block>
+          <Block variant="div" className="half right">
+            <Block className="text-container">
+              <Block mb="xl">
+                <Heading
+                  style={{ color: suomifiDesignTokens.colors.whiteBase }}
+                  variant="h2"
+                >
+                  Käyttöliittymäkomponentit
+                </Heading>
+              </Block>
+              <Paragraph
+                marginBottomSpacing="l"
+                style={{ color: suomifiDesignTokens.colors.whiteBase }}
+              >
+                Suomi.fi Design Systemin kaikki elementit on suunniteltu ja
+                kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1
+                -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS
+                (Javascript & Typescript) ‑muodossa ja julkaistava kirjasto
+                noudattaa semanttista versiointia.
+              </Paragraph>
+              <Paragraph
+                style={{ color: suomifiDesignTokens.colors.whiteBase }}
+              >
+                Avoimen dokumentaation kautta pyritään tarjoamaan selkeitä
+                käyttöesimerkkejä sekä ohjeistusta saavutettavien ja
+                yhdenmukaisten ratkaisujen luomiseen. Kaikki komponentit ja
+                dokumentaatio ovat julkisesti tarkasteltavissa Design Systemin
+                omalla sivulla sekä GitHubissa. UX/UI-suunnittelijoiden ja
+                ohjelmistokehittäjien arjen helpottamiseksi dokumentaatio on
+                myös leivottu osaksi Figmasta löytyvän tyylioppaan
+                komponentteja.
+              </Paragraph>
+              <Block variant="div" mt="xxl">
+                <Block mb="l">
+                  <ExternalLink
+                    href="https://designsystem.suomi.fi"
+                    labelNewWindow="Avautuu uudessa välilehdessä"
+                    style={{ color: suomifiDesignTokens.colors.whiteBase }}
+                    underline="initial"
+                  >
+                    Suomi.fi Design System
+                  </ExternalLink>
+                </Block>
+                <Block>
+                  <ExternalLink
+                    href="https://github.com/vrk-kpa/suomifi-ui-components"
+                    labelNewWindow="Avautuu uudessa välilehdessä"
+                    style={{ color: suomifiDesignTokens.colors.whiteBase }}
+                    underline="initial"
+                  >
+                    GitHub
+                  </ExternalLink>
+                </Block>
+              </Block>
+            </Block>
           </Block>
         </Block>
       </Block>
 
       <Block variant="div" id="section5">
+        <Block variant="div" className="container">
+          <Block mb="xl">
+            <Heading variant="h2">Laatu varmistetaan yhdessä oppien</Heading>
+          </Block>
+        </Block>
         <Block variant="div" className="container half-container">
           <Block variant="div" className="half">
-            <Block mb="l">
-              <Heading variant="h2">
-                Suomi.fi Design Systemin tulevaisuus
-              </Heading>
-            </Block>
-            <Block>
-              <Paragraph>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </Paragraph>
-            </Block>
+            <Paragraph marginBottomSpacing="l">
+              Suomi.fi Design Systemin tekemisen filosofiana on alusta asti
+              ollut pyrkimys korkeaan laatuun ja edelläkävijyyteen: on haluttu
+              näyttää hyvää esimerkkiä siitä, miten tehdä alusta asti
+              saavutettavaa Design Systemiä eikä vain tyydytä kopioimaan
+              valmiita ratkaisuja.
+            </Paragraph>
+            <Paragraph>
+              Jo konseptitason suunnitteluvaiheessa mukana on
+              saavutettavuusasiantuntija, joka myös validoi valmiit
+              ratkaisuehdotukset. Kaikille tekijöille pyritään saamaan myös
+              mahdollisimman hyvä saavutettavuusosaaminen, ja jokainen SFI DS:n
+              parissa työskentelevä on saanut saavutettavuuskoulutuksen. Tietoa
+              hyvistä ratkaisuista jaetaan aktiivisesti erilaisissa
+              keskeneräisten UX/UI-konseptien sparraussessioissa, joka toinen
+              viikko pidettävässä UX/UI-suunnittelutiimin yhteisessä
+              katselmoinnissa sekä Slackissa päivän polttavia kysymyksiä
+              ohjelmistokehittäjien ja UX/UI-suunnittelijoiden välillä
+              kiivaastikin pallotellen.
+            </Paragraph>
           </Block>
           <Block variant="div" className="half">
-            <Block
-              style={{
-                background: 'white',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '500px',
-              }}
-            >
-              Kuva placeholder
-            </Block>
+            <Paragraph>
+              Tällä hetkellä SFI DS:n kehittämisestä vastaa neljän hengen
+              täysiaikainen ohjelmistokehittäjien tiimi. UX/UI-suunnittelu
+              toimii jaetun vastuun periaatteella DVV:n eri palveluihin
+              jalkautuneen 13 hengen konsulteista koostuvan suunnittelutiimin
+              kesken: jokainen saa osallistua SFI DS:n kehitykseen oman
+              mielenkiintonsa ja käytössä olevan ajan mukaan – toiset jo pitkään
+              ja vakiintuneina, toiset enemmänkin vierailevina tähtinä. Näin
+              jokaista komponenttia katsoo monta asiaansa vihkiytynyttä
+              silmäparia ja uudet komponentit, patternit ja muut elementit
+              välittyvät suunnittelijoiden mukana suorinta reittiä palveluihin.
+              Palveluista nousevia tarpeita puolestaan pallotellaan viikoittain
+              suunnittelijoiden ja SFI DS -tiimin ohjelmistokehittäjien kesken.
+            </Paragraph>
+          </Block>
+        </Block>
+        <Block variant="div" className="container">
+          <Block mt="xl">
+            <img
+              src={dsProcess}
+              alt="Suomi.fi Design Systemin kehittämisprosessi"
+              style={{ maxWidth: '100%' }}
+            />
           </Block>
         </Block>
       </Block>
@@ -280,61 +325,164 @@ const Page = (): JSX.Element => (
       <Block variant="div" id="section6">
         <Block variant="div" className="container half-container">
           <Block variant="div" className="half">
+            <Block mb="xl">
+              <Heading variant="h2">
+                Kehittäminen on avointa ja palaute tervetullutta
+              </Heading>
+            </Block>
+            <Paragraph marginBottomSpacing="l">
+              Heti Suomi.fi Design Systemin alkutaipaleelta lähtien palautteen
+              antaminen ja kerääminen on haluttu saada mahdollisimman helpoksi.
+              Prosessia on iteroitu moniammatillisesti matkan varrella useaan
+              otteeseen, jotta erilaiset tarpeet, hyödynnettävyys ja näkökulmat
+              tulevat varmasti huomioitua.
+            </Paragraph>
+            <Paragraph>
+              Kehitys pyritään pitämään läpinäkyvänä, ja tekemisessä
+              ensisijaisena on aina kehittäjien, UX/UI-suunnittelijoiden ja
+              käyttäjien palveleminen mahdollisimman hyvin. Läpinäkyvyys näkyy
+              muun muassa kirjaston Open Source -luonteena sekä tiiviinä
+              kommunikaationa Suomi.fi-palvelujen kehittäjien suuntaan: Design
+              Systemin -kehittäjät tukevat palvelujen kehittäjiä käyttöönotossa
+              tarvittaessa myös henkilökohtaisesti. Palaute käyttöönotoista ja
+              Design Systemin käytöstä kehitystyössä on ollut erittäin
+              positiivista.
+            </Paragraph>
+          </Block>
+          <Block variant="div" className="half">
+            <Block variant="div" className="quotebox" mb="xl">
+              <Block mb="m" style={{ textAlign: 'center' }}>
+                <Text smallScreen className="quote">
+                  &quot;Saavutettavuus on hyvin toteutettu ja vähentää
+                  merkittävästi komponenttien käyttäjän työmäärää. Varmaan myös
+                  hyvin kuvaa esimerkkien ja komponenttien toimivuutta se, että
+                  aika harvoin tarvitsee kysyä miten joku toimii tai miksi ei
+                  toimi oletetulla tavalla.&quot;
+                </Text>
+              </Block>
+              <Text smallScreen>
+                – Ohjelmistokehittäjä, Suomi.fi-palvelutietovaranto
+              </Text>
+            </Block>
+            <Block variant="div" className="quotebox">
+              <Block mb="m" style={{ textAlign: 'center' }}>
+                <Text smallScreen className="quote">
+                  &quot;Design Systemin käyttöönotto on ollut todella helppoa ja
+                  onnistuu asteittain vanhan toteutuksen rinnalla. Komponenttien
+                  release changelogit on hyvin dokumentoitu, niiden
+                  saavutettavuuteen panostetaan paljon ja design tokenit ovat
+                  saatavilla omiin tyyleihin hyödynnettäviksi. Myös
+                  kommunikointiyhteys tiimiin toimii hyvin ja tarpeisiin on
+                  reagoitu nopeasti.&quot;
+                </Text>
+              </Block>
+              <Text smallScreen>– Ohjelmistokehittäjä, Suomi.fi-valtuudet</Text>
+            </Block>
+          </Block>
+        </Block>
+      </Block>
+
+      <Block variant="div" id="section7">
+        <Block variant="div" className="container">
+          <Block mb="xl">
+            <Heading variant="h2">Suomi.fi Design Systemin tulevaisuus</Heading>
+          </Block>
+        </Block>
+        <Block variant="div" className="container half-container">
+          <Block variant="div" className="half">
+            <Paragraph marginBottomSpacing="l">
+              Design Systemin kehittäminen ja uusien komponenttien luominen on
+              jatkuvaa työtä. Lähitulevaisuudessa pyritään tarjoamaan valmiita
+              suunnittelu- ja toteutusmalleja yhä laajemmista kokonaisuuksista,
+              kuten lomakkeista ja niiden osista. Myös uusia komponentteja
+              lisätään jatkuvan tarpeen mukaan.
+            </Paragraph>
+            <Paragraph>
+              Pitkällä aikavälillä pyöritään löytämään lisää mahdollisuuksia
+              tehdyn työn hyödyntämiseen myös muualla kuin
+              Suomi.fi-kontekstissa. Tavoitteena on, että julkisten palveluiden
+              toimijat tiivistäisivät yhteistyötään digitaalisten palveluiden
+              osalta vielä aiempaa enemmän, jotta jokainen toimija ei päätyisi
+              rakentamaan samoja asioita uudelleen alusta lähtien. Digi- ja
+              väestötietovirastolla on aktiivinen rooli etsiä yhtymäkohtia ja
+              yhteistyömahdollisuuksia digitaalisten palveluiden rakentamisessa
+              muiden isojen julkisten toimijoiden kanssa. Suomi.fi Design System
+              toimii tämän työn kärkenä. Avoimuudella ja muokattavuudellaan SFI
+              DS pyrkii varmistamaan helpon käyttöönoton myös muissa
+              organisaatioissa ja palveluissa, jotta ensimmäiset askeleet
+              parempaan yhteistyöhön olisivat mahdollisimman helppoja.
+            </Paragraph>
+          </Block>
+          <Block variant="div" className="half">
+            <Block style={{ textAlign: 'center' }}>
+              <img
+                src={mobileImg}
+                alt="Suomi.fi komponentteja mobiilinäytöllä"
+                style={{ maxWidth: '245px' }}
+              />
+            </Block>
+          </Block>
+        </Block>
+      </Block>
+
+      <Block variant="div" id="section8">
+        <Block variant="div" className="container half-container">
+          <Block variant="div" className="half">
             <Block mb="l">
-              <Heading variant="h2">Tiimi ja tekijät</Heading>
+              <Heading
+                variant="h3"
+                style={{ color: suomifiDesignTokens.colors.whiteBase }}
+              >
+                Tekijät
+              </Heading>
+            </Block>
+            <Block mb="l">
+              <Text style={{ color: suomifiDesignTokens.colors.whiteBase }}>
+                Suomi.fi Design Systemin kehittämisestä vastaa Digi- ja
+                väestötietovirasto
+              </Text>
+            </Block>
+            <Block mb="l">
+              <Text
+                variant="bold"
+                style={{ color: suomifiDesignTokens.colors.whiteBase }}
+              >
+                UI/UX-suunnittelu ja ohjelmistokehitys
+              </Text>
             </Block>
             <Block>
-              <Block mb="m">
-                <Heading variant="h3">DVV</Heading>
-              </Block>
-              <Paragraph marginBottomSpacing="l">
-                DVV Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </Paragraph>
-              <Block mb="m">
-                <Heading variant="h3">Gofore</Heading>
-              </Block>
-              <Paragraph>
-                Gofore Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua.
-              </Paragraph>
+              <Text style={{ color: suomifiDesignTokens.colors.whiteBase }}>
+                Gofore
+              </Text>
             </Block>
           </Block>
           <Block variant="div" className="half">
-            <Block
-              style={{
-                background: 'white',
-                padding: suomifiDesignTokens.spacing.m,
-              }}
-            >
-              <Block mb="l">
-                <Heading variant="h3">Teknologiaa</Heading>
-              </Block>
-              <Paragraph marginBottomSpacing="l">
-                Reacti pyörii ja Lorem Ipsum ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua
-              </Paragraph>
+            <Block mb="l">
+              <Text
+                smallScreen
+                style={{ color: suomifiDesignTokens.colors.whiteBase }}
+              >
+                GRAND ONE 2023 - PARAS DESIGN SYSTEM
+              </Text>
+            </Block>
+            <Block mb="l">
               <ExternalLink
+                href="https://designsystem.suomi.fi"
                 labelNewWindow="Avautuu uudessa välilehdessä"
+                style={{ color: suomifiDesignTokens.colors.whiteBase }}
+                underline="initial"
+              >
+                Suomi.fi Design System
+              </ExternalLink>
+            </Block>
+            <Block>
+              <ExternalLink
                 href="https://github.com/vrk-kpa/suomifi-ui-components"
-              >
-                suomifi-ui-components
-              </ExternalLink>
-              <br />
-              <ExternalLink
                 labelNewWindow="Avautuu uudessa välilehdessä"
-                href="https://github.com/vrk-kpa/suomifi-design-tokens"
+                style={{ color: suomifiDesignTokens.colors.whiteBase }}
+                underline="initial"
               >
-                suomifi-design-tokens
-              </ExternalLink>
-              <br />
-              <ExternalLink
-                labelNewWindow="Avautuu uudessa välilehdessä"
-                href="https://github.com/vrk-kpa/suomifi-icons"
-              >
-                suomifi-icons
+                GitHub
               </ExternalLink>
             </Block>
           </Block>

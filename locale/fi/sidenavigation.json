@@ -4,9 +4,10 @@
   "note.title": "Saavutettavuus ja käytettävyys",
   "note.items": [
     "Komponentin otsikon ja navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä.",
-    "Ruudunlukijasaavutettavuuden varmistamiseksi tulee huolehtia, että yksittäisille navigaatioelementeille (linkit) asetetaan asianmukaiset aria-attribuutit: aria-current=page tällä hetkellä aktiiviselle sivulle, aria-current=location aktiivisen sivun yläsivulle, aria-label mikäli halutaan välittää linkin tekstisisällön ulkopuolista informaatiota ja aria-disabled mikäli linkki on estetty.",
+    "Ruudunlukijasaavutettavuuden varmistamiseksi tulee huolehtia, että yksittäisille navigaatioelementeille (linkit) asetetaan asianmukaiset aria-attribuutit: aria-current=page tällä hetkellä aktiiviselle sivulle, aria-label mikäli halutaan välittää linkin tekstisisällön ulkopuolista informaatiota ja aria-disabled mikäli linkki on estetty. Estettyjen linkkien tulee kuitenkin olla näppäimistökäyttäjien saavutettavissa.",
     "Komponentille tulee antaa ylätason aria-label, joka kertoo ruudunlukijalle navigaation kontekstin ja tarkoituksen.",
-    "Sivunavigaatiolle on lisäksi hyvä antaa HTML-id, jotta siihen voidaan liikkua suoraan esimerkiksi SkipLink-navigaatioelementeistä."
+    "Sivunavigaatiolle on lisäksi hyvä antaa HTML-id, jotta siihen voidaan liikkua suoraan esimerkiksi SkipLink-navigaatioelementeistä.",
+    "Linkkejä klikattaessa sivunavigaatiota käyttävän sovelluksen on huolehdittava ruudunlukijan saavan täsmällisen tiedon siitä, että siirryttiin uuteen näkymään."
   ],
   "sections": [
     {

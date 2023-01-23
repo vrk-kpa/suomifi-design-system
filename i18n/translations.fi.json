@@ -743,7 +743,7 @@
       "text_2": "Valinnat voivat olla pakollisia, milloin niitä ei voi muokata. Valikosta valitut ja pakolliset vaihtoehdot näytetään listana hakukentän alla. Valitut vaihtoehdot, pakollisia lukuunottamatta, voi poistaa tyhjennyspainikkeen avulla."
     },
     "size_and_usage": {
-      "heading": "Komponentin koko ja käyttö",
+      "heading": "Koko ja käyttö",
       "text_1": "Monivalintaa käytetään tilanteissa, missä käyttäjä voi valita useita vaihtoehtoja ennaltamääritellyistä vaihtoehdoista ja erityisesti tilanteissa, missä vaihtoehtoja on paljon ja niiden rajaaminen helpottaa valinnan tekemistä."
     },
 

@@ -9,6 +9,7 @@ import {
   suomifiDesignTokens,
   Icon,
   StaticIcon,
+  VisuallyHidden,
 } from 'suomifi-ui-components';
 import '../GrandOne/GrandOnePage.css';
 import BoxWithIcon from '../GrandOne/BoxWithIcon/BoxWithIcon';
@@ -51,7 +52,7 @@ const Page = (): JSX.Element => (
         <Block variant="div" className="container half-container" mt="xl">
           <Block variant="div" className="half">
             <Paragraph marginBottomSpacing="l">
-              Oli kysymys, joka vuonna 2020 löi lukkoon päätöksen koko
+              Tämä oli se kysymys, joka vuonna 2020 löi lukkoon päätöksen koko
               julkishallinnolle avoimen Suomi.fi Design Systemin rakentamisesta
               silloisessa Väestörekisterikeskuksessa (nykyinen Digi- ja
               väestötietovirasto).
@@ -101,25 +102,33 @@ const Page = (): JSX.Element => (
       </Block>
 
       <Block variant="div" id="section2">
-        <Block variant="div" className="container boxes">
-          <BoxWithIcon
-            variant="simple"
-            icon={<Icon icon="settings" className="icon" />}
-          >
-            661 viikottaista komponenttikirjaston latausta
-          </BoxWithIcon>
-          <BoxWithIcon
-            variant="simple"
-            icon={<Icon icon="authorise" className="icon" />}
-          >
-            5 577 064 käyttäjää
-          </BoxWithIcon>
-          <BoxWithIcon
-            variant="simple"
-            icon={<Icon icon="heart" className="icon" />}
-          >
-            Suomi.fi -visuaalisen ilmeen tunnettuus 90%
-          </BoxWithIcon>
+        <Block variant="div" className="container">
+          <ul className="boxes">
+            <li>
+              <BoxWithIcon
+                variant="simple"
+                icon={<Icon icon="settings" className="icon" />}
+              >
+                661 viikottaista komponenttikirjaston latausta
+              </BoxWithIcon>
+            </li>
+            <li>
+              <BoxWithIcon
+                variant="simple"
+                icon={<Icon icon="authorise" className="icon" />}
+              >
+                5 577 064 käyttäjää
+              </BoxWithIcon>
+            </li>
+            <li>
+              <BoxWithIcon
+                variant="simple"
+                icon={<Icon icon="heart" className="icon" />}
+              >
+                Suomi.fi -visuaalisen ilmeen tunnettuus 90%
+              </BoxWithIcon>
+            </li>
+          </ul>
         </Block>
         <Block variant="div" className="container half-container" mt="xxxl">
           <Block variant="div" className="half">
@@ -156,23 +165,31 @@ const Page = (): JSX.Element => (
         </Block>
         <Block variant="div" className="container half-container ">
           <Block variant="div" className="half">
-            <BoxWithIcon
-              icon={<Icon icon="signLanguageContent" className="icon" />}
-              style={{ marginBottom: suomifiDesignTokens.spacing.xl }}
-            >
-              Saavutettavuus
-            </BoxWithIcon>
-            <BoxWithIcon
-              icon={<StaticIcon icon="collaboration" className="icon" />}
-              style={{ marginBottom: suomifiDesignTokens.spacing.xl }}
-            >
-              Avoimuus
-            </BoxWithIcon>
-            <BoxWithIcon
-              icon={<StaticIcon icon="webDevelopment" className="icon" />}
-            >
-              Helppokäyttöisyys
-            </BoxWithIcon>
+            <ul className="boxes-2">
+              <li>
+                <BoxWithIcon
+                  icon={<Icon icon="signLanguageContent" className="icon" />}
+                  style={{ marginBottom: suomifiDesignTokens.spacing.xl }}
+                >
+                  Saavutettavuus
+                </BoxWithIcon>
+              </li>
+              <li>
+                <BoxWithIcon
+                  icon={<StaticIcon icon="collaboration" className="icon" />}
+                  style={{ marginBottom: suomifiDesignTokens.spacing.xl }}
+                >
+                  Avoimuus
+                </BoxWithIcon>
+              </li>
+              <li>
+                <BoxWithIcon
+                  icon={<StaticIcon icon="webDevelopment" className="icon" />}
+                >
+                  Helppokäyttöisyys
+                </BoxWithIcon>
+              </li>
+            </ul>
           </Block>
           <Block variant="div" className="half">
             <Paragraph marginBottomSpacing="l">
@@ -317,7 +334,31 @@ const Page = (): JSX.Element => (
               src={dsProcess}
               alt="Suomi.fi Design Systemin kehittämisprosessi"
               style={{ maxWidth: '100%' }}
+              aria-describedby="imagedescripion"
             />
+            <VisuallyHidden id="imagedescripion">
+              Design Systemin kehitystarpeet, esimerkiksi uudet
+              käyttöliittymäkomponentit, syntyvät Design Systemiä käyttävissä
+              palveluissa. Tarpeet priorisoidaan yhteistyössä Design Systemin
+              tuoteomistajan, ohjelmistokehittäjien ja muotoilijoiden kesken.
+              Priorisoinnin jälkeen tunnistettu kehitystarve siirtyy
+              muotoiluvaiheeseen, johon osallistuvat UX/UI-suunnittelijoiden ja
+              ohjelmistokehittäjien lisäksi saavutettavuusasiantuntija.
+              Muotoiluvaiheen tuloksena syntyy esimerkiksi uuden komponentin
+              visuaalinen toteutus, joka otetaan osaksi muotoilijoiden
+              tyyliopasta. Muotoiluratkaisun hyväksymisen jälkeen siirrytään
+              kehitysvaiheeseen, jossa ohjelmistokehittäjät tuottavat uuden
+              elementin osaksi Design Systemin komponenttikirjastoa. Kuten
+              muotoiluvaiheessakin, myös ohjelmistokehitysvaiheessa
+              osallistetaan sidosryhmiä eli eri DVV:n palveluissa työskenteleviä
+              kehittäjiä sekä saavutettavuusasiantuntijaa. Kehityksen
+              valmistuttua työn alla olleen komponentin saavutettavuus vielä
+              validoidaan erikseen asiantuntijan kanssa, ja julkaistaan
+              virallisesti vasta sen jälkeen. Uusi komponentti otetaan käyttöön
+              Suomi.fi -palveluissa ja käyttäjät antavat jatkuvaa palautetta
+              Design System -tiimille. Komponenttia jatkokehitetään ja
+              ylläpidetään palautteen perusteella.
+            </VisuallyHidden>
           </Block>
         </Block>
       </Block>
@@ -352,13 +393,13 @@ const Page = (): JSX.Element => (
           <Block variant="div" className="half">
             <Block variant="div" className="quotebox" mb="xl">
               <Block mb="m" style={{ textAlign: 'center' }}>
-                <Text smallScreen className="quote">
+                <blockquote className="quote">
                   &quot;Saavutettavuus on hyvin toteutettu ja vähentää
                   merkittävästi komponenttien käyttäjän työmäärää. Varmaan myös
                   hyvin kuvaa esimerkkien ja komponenttien toimivuutta se, että
                   aika harvoin tarvitsee kysyä miten joku toimii tai miksi ei
                   toimi oletetulla tavalla.&quot;
-                </Text>
+                </blockquote>
               </Block>
               <Text smallScreen>
                 – Ohjelmistokehittäjä, Suomi.fi-palvelutietovaranto
@@ -366,7 +407,7 @@ const Page = (): JSX.Element => (
             </Block>
             <Block variant="div" className="quotebox">
               <Block mb="m" style={{ textAlign: 'center' }}>
-                <Text smallScreen className="quote">
+                <blockquote className="quote">
                   &quot;Design Systemin käyttöönotto on ollut todella helppoa ja
                   onnistuu asteittain vanhan toteutuksen rinnalla. Komponenttien
                   release changelogit on hyvin dokumentoitu, niiden
@@ -374,7 +415,7 @@ const Page = (): JSX.Element => (
                   saatavilla omiin tyyleihin hyödynnettäviksi. Myös
                   kommunikointiyhteys tiimiin toimii hyvin ja tarpeisiin on
                   reagoitu nopeasti.&quot;
-                </Text>
+                </blockquote>
               </Block>
               <Text smallScreen>– Ohjelmistokehittäjä, Suomi.fi-valtuudet</Text>
             </Block>
@@ -431,6 +472,7 @@ const Page = (): JSX.Element => (
             <Block mb="l">
               <Heading
                 variant="h3"
+                as="h2"
                 style={{ color: suomifiDesignTokens.colors.whiteBase }}
               >
                 Tekijät

@@ -11,7 +11,6 @@
 }
 .box-with-icon_icon {
     line-height: 0;
-    margin-right: 50px;
     z-index: 3;
 }
 
@@ -21,7 +20,9 @@
 }
 
 .box-with-icon_text {
-    flex: 1
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .box-with-icon_text h3 {

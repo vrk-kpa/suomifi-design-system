@@ -26,7 +26,23 @@ body {
   justify-content: flex-start;
   gap: 20px;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
+
+.boxes li {
+  list-style-type: none;
+  display: flex;
+}
+
+.boxes-2 {
+  padding: 0;
+  margin: 0;
+}
+.boxes-2 li {
+  list-style-type: none;
+}
+
 #hero {
   width: 100%;
   background-image: url("./grand-one-banner.png");
@@ -152,6 +168,9 @@ body {
 }
 
 @media (max-width: 991px) {
+  .boxes li{
+    width: 100%;
+  }
   #section4 {
     background: #235a9a;
     padding-bottom: var(--section-spacing-small) 0;

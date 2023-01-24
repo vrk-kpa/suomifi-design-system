@@ -29,7 +29,9 @@ const BoxWithIcon: React.FunctionComponent<BoxWithIconProps> = ({
         {icon}
       </Block>
       <Block variant="div" className="box-with-icon_text">
-        <Heading variant="h3">{children}</Heading>
+        <Heading variant="h3" as="div">
+          {children}
+        </Heading>
       </Block>
     </Block>
   ) : (
@@ -38,7 +40,9 @@ const BoxWithIcon: React.FunctionComponent<BoxWithIconProps> = ({
         {icon}
       </Block>
       <Block variant="div" className="simplebox-with-icon_text">
-        <Heading variant="h4">{children}</Heading>
+        <Heading variant="h4" as="div">
+          {children}
+        </Heading>
       </Block>
     </Block>
   );

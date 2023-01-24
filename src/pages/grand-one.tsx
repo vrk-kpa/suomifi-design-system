@@ -355,7 +355,7 @@ const Page = (): JSX.Element => (
               valmistuttua työn alla olleen komponentin saavutettavuus vielä
               validoidaan erikseen asiantuntijan kanssa, ja julkaistaan
               virallisesti vasta sen jälkeen. Uusi komponentti otetaan käyttöön
-              Suomi.fi -palveluissa ja käyttäjät antavat jatkuvaa palautetta
+              Suomi.fi-palveluissa ja käyttäjät antavat jatkuvaa palautetta
               Design System -tiimille. Komponenttia jatkokehitetään ja
               ylläpidetään palautteen perusteella.
             </VisuallyHidden>

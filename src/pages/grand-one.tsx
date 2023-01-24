@@ -125,7 +125,7 @@ const Page = (): JSX.Element => (
                 variant="simple"
                 icon={<Icon icon="heart" className="icon" />}
               >
-                Suomi.fi -visuaalisen ilmeen tunnettuus 90%
+                Suomi.fi visuaalisen ilmeen tunnettuus 90%
               </BoxWithIcon>
             </li>
           </ul>
@@ -439,7 +439,7 @@ const Page = (): JSX.Element => (
               lisätään jatkuvan tarpeen mukaan.
             </Paragraph>
             <Paragraph>
-              Pitkällä aikavälillä pyöritään löytämään lisää mahdollisuuksia
+              Pitkällä aikavälillä pyritään löytämään lisää mahdollisuuksia
               tehdyn työn hyödyntämiseen myös muualla kuin
               Suomi.fi-kontekstissa. Tavoitteena on, että julkisten palveluiden
               toimijat tiivistäisivät yhteistyötään digitaalisten palveluiden

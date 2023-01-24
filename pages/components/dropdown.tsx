@@ -44,18 +44,17 @@ const Page: NextPage = () => {
         <Block variant="section">
           <ComponentExample>
             <Dropdown
-              alwaysShowVisualPlaceholder
+              name="Dropdown"
               labelText={t('dropdown_page.example.label')}
-              onChange={(action) => console.log(action, 'selected')}
             >
-              <DropdownItem value="Toiminto1">
+              <DropdownItem value="1">
                 {t('dropdown_page.example.option1')}
               </DropdownItem>
-              <DropdownItem value="Toiminto2">
+              <DropdownItem value="2">
                 {t('dropdown_page.example.option2')}
               </DropdownItem>
-              <DropdownItem value="Toiminto2">
-                {t('dropdown_page.example.option2')}
+              <DropdownItem value="3">
+                {t('dropdown_page.example.option3')}
               </DropdownItem>
             </Dropdown>
           </ComponentExample>

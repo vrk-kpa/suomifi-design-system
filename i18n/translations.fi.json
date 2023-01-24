@@ -621,7 +621,12 @@
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
       "text_1": "LoadingSpinner koostuu ikonista ja tilatekstistä. Ikoni on tilasta riippuen animoitu tai staattinen. Tilateksti sijaitsee ikonin ala- tai oikealla puolella, ja se on mahdollista piilottaa näkeviltä käyttäjiltä tarvittaessa.",
-      "text_2": "Komponentilla on kolme havaittavaa tilaa: 1. lataus on käynnissä, 2. lataus epäonnistui, 3. lataus valmistui onnistuneesti. "
+      "text_2": {
+        "heading": "Komponentilla on kolme havaittavaa tilaa:",
+        "state1": "lataus on käynnissä",
+        "state2": "lataus epäonnistui",
+        "state3": "lataus valmistui onnistuneesti"
+      }
     },
     "size_and_usage": {
       "heading": "Komponentin koko, käyttö ja variaatiot",

@@ -80,7 +80,26 @@ const Page: NextPage = () => {
             {t('loading_spinner_page.what_does_the_component_contain.text_1')}
           </Paragraph>
           <Paragraph className="my-xl">
-            {t('loading_spinner_page.what_does_the_component_contain.text_2')}
+            {t(
+              'loading_spinner_page.what_does_the_component_contain.text_2.heading',
+            )}
+            <ol type="1">
+              <li>
+                {t(
+                  'loading_spinner_page.what_does_the_component_contain.text_2.state1',
+                )}
+              </li>
+              <li>
+                {t(
+                  'loading_spinner_page.what_does_the_component_contain.text_2.state2',
+                )}
+              </li>
+              <li>
+                {t(
+                  'loading_spinner_page.what_does_the_component_contain.text_2.state3',
+                )}
+              </li>
+            </ol>
           </Paragraph>
         </Block>
 
@@ -92,7 +111,7 @@ const Page: NextPage = () => {
             {t('loading_spinner_page.size_and_usage.text_1')}
           </Paragraph>
           <Paragraph className="my-xl">
-            {t('loading_spinner_page.what_does_the_component_contain.text_2')}
+            {t('loading_spinner_page.size_and_usage.text_2')}
           </Paragraph>
         </Block>
 

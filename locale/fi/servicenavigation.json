@@ -1,0 +1,71 @@
+{
+  "title": "Palvelunavigaatio (Service navigation)",
+  "intro": "Palvelunavigaatiota käytetään jonkin sivusto-osion eri alasivujen tai alanäkymien välillä liikkumiseen.",
+  "note.title": "Saavutettavuus ja käytettävyys",
+  "note.items": [
+    "Navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä. Kapean ruudun varianttia käytettäessä navigaation avaavan/sulkevan painikkeen tekstin tulee niin ikään olla kuvaava ja ytimekäs.",
+    "Ruudunlukijasaavutettavuuden varmistamiseksi tulee huolehtia, että yksittäisille navigaatioelementeille (linkit) asetetaan asianmukaiset aria-attribuutit: aria-current tällä hetkellä aktiiviselle sivulle, aria-label mikäli halutaan välittää linkin tekstisisällön ulkopuolista informaatiota ja aria-disabled mikäli linkki on estetty. Estettyjen linkkien tulee kuitenkin olla näppäimistökäyttäjien saavutettavissa.",
+    "Komponentille tulee antaa ylätason aria-label, joka kertoo ruudunlukijalle navigaation kontekstin ja tarkoituksen.",
+    "Palvelunavigaatiolle on lisäksi hyvä antaa HTML-id, jotta siihen voidaan liikkua suoraan esimerkiksi SkipLink-navigaatioelementeistä.",
+    "Linkkejä klikattaessa palveluavigaatiota käyttävän sovelluksen on huolehdittava ruudunlukijan saavan täsmällisen tiedon siitä, että siirryttiin uuteen näkymään."
+  ],
+  "sections": [
+    {
+      "title": "Mistä komponentti koostuu",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Palvelunavigaatio on navigaatioelementti, jonka sisällä on lista. Komponentin tekninen toteutus mahdollistaa sen, että lista voi sisältää tavanomaisten linkkien lisäksi esimerkiksi painikkeita tai muita semanttisia elementtejä. Kaikki listan elementit ovat kuitenkin semantiikasta huolimatta visuaaliselta tyyliltään samanlaisia. Listan elementit eivät ole toisilleen hierarkisesti alisteisia vaan ne kaikki ovat samalla tasolla."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Kapeille ruuduille suunnitellussa variantissaan komponentti sisältää painikkeen, josta varsinainen navigaatioelementti voidaan näyttää ja piilottaa. "
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    },
+    {
+      "title": "Koko ja käyttö",
+      "paragraphs": [
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Navigaatioelementtien sisällä on yllä olevan koodiesimerkin mukaisesti suunniteltu käytettävän RouterLink-komponenttia, joka voidaan semanttisesti renderöidä minä tahansa komponenttina kuten painikkeena tai jonkin kirjaston omana linkkikomponenttina. Tutustu komponentin tekniseen dokumentaatioon saadaksesi lisää esimerkkejä RouterLinkin käytöstä."
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Palvelunavigaatio asemoidaan tavallisesti sivun vasempaan palstaan, sisältöalueen ollessa sen oikealla puolella. Se ottaa sivuttaissuunnassa kaiken se tilan, joka sille on tarjolla ja täten sen leveyttä kontrolloidaan ympäröivän elementin leveyttä säätämällä. Pienillä ruuduilla (mobiililaitteet) käytetään komponentista niille tarkoitettua varianttia ja asemoidaan komponentti sivun varsinaisen sisältöalueen yläpuolelle. "
+        },
+        {
+          "image.key": "",
+          "image.alt": "",
+          "text": "Palvelunavigaatio soveltuu käyttöön hyvin silloin, kun navigaation linkit ovat hierarkisesti kaikki samalla tasolla ja navigoitava sivusto on tyyliltään sovellusmainen (ks. sähköpostiohjelman tyylinen esimerkki yllä). Jos navigaation on tarpeen sisältää alasivuja tai -kategorioita, tulee käyttää sivunavigaatio-komponenttia."
+        }
+      ],
+      "links": [
+        {
+          "text": "",
+          "url": ""
+        }
+      ]
+    }
+  ],
+  "example.arialabel": "Päänavigaatio",
+  "example.navitem1": "Saapuneet",
+  "example.navitem1.arialabel": "Saapuneet. 16 lukematonta viestiä.",
+  "example.navitem2": "Lähetetyt",
+  "example.navitem3": "Luonnokset",
+  "example.navitem4": "Asetukset",
+  "example.navitem5": "Laitteet",
+  "example.smallscreen.title": "Pienen ruutukoon variantti",
+  "example.smallscreen.paragraph": "Mobiililaitteilla palvelunavigaatio voidaan avata ja sulkea painiketta painamalla",
+  "example.smallscreen.buttontext": "Valikko"
+}

@@ -1,0 +1,190 @@
+:root {
+  --section-spacing: 90px;
+  --section-spacing-small: 50px;
+}
+
+body {
+  margin: 0;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.half-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-direction: column;
+}
+.half {
+  width: 100%;
+}
+.boxes {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.boxes li {
+  list-style-type: none;
+  display: flex;
+}
+
+.boxes-2 {
+  padding: 0;
+  margin: 0;
+}
+.boxes-2 li {
+  list-style-type: none;
+}
+
+#hero {
+  width: 100%;
+  background-image: url("./grand-one-banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.quotebox {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 1px rgb(41 41 41 / 20%);
+  padding: 30px 40px;
+  text-align: center;
+}
+
+.quotebox .quote {
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+#section1 {
+  padding: var(--section-spacing-small) 0;
+}
+#section2 {
+  background: #F0F6FF;
+  padding: var(--section-spacing-small) 0;
+}
+#section3 {
+  padding: var(--section-spacing-small) 0;
+}
+
+#section4 .left {
+  background: url('./SFI-tabletti.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#section4 .text-container {
+  max-width: 550px;
+}
+
+#section5 {
+  padding: var(--section-spacing-small) 0;
+}
+
+#section6 {
+  background: #F0F6FF;
+  padding: var(--section-spacing-small) 0;
+}
+
+#section7 {
+  padding: var(--section-spacing-small) 0;
+}
+
+#section8 {
+  padding: var(--section-spacing-small) 0;
+  background-image: url('../components/Hero_bg.png');
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+  #section1, #section2, #section3, #section5, #section6, #section7, #section8 {
+    padding: var(--section-spacing) 0;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+  .half-container {
+    flex-direction: row;
+    gap: 60px;
+  }
+  .half {
+    flex: 1;
+  }
+
+  #section4 .half-container {
+    background: #235a9a;
+    padding: 0;
+    width: 100%;
+    gap: 90px;
+  }
+
+  #section4 .right {
+    padding: 65px 35px 65px 0;
+  }
+}
+@media (min-width: 1200px) {
+  #hero {
+    height: 520px;
+  }
+  .container {
+    width: 1140px;
+    padding: 0;
+  }
+  .boxes {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 574px) {
+  #section4 .half-container .text-container{
+    padding: 20px 20px 60px 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .boxes li{
+    width: 100%;
+  }
+  #section4 {
+    background: #235a9a;
+    padding-bottom: var(--section-spacing-small) 0;
+  }
+  #section4 .left {
+    height: 400px;
+  }
+  #section4 .half-container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 991px) {
+  #section4 .half-container {
+    padding: var(--section-spacing) 0;
+  }
+}

@@ -218,11 +218,8 @@ export const MultiInsert: React.FC = () => {
                 <HintText>Voit lisätä useita verkkosivuja</HintText>
               </Block>
               {websites.map((website) => (
-                <Block
-                  className={styles['multi-insert_label']}
-                  key={website.id}
-                >
-                  <Block className={styles['multi-insert_label']}>
+                <Block className={styles['multi-insert_box']} key={website.id}>
+                  <Block className={styles['multi-insert_content']}>
                     <Block>
                       <TextInput
                         fullWidth

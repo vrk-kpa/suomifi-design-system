@@ -39,7 +39,7 @@ const Page = (): JSX.Element => (
                 textAlign: 'center',
               }}
             >
-              Suomi.fi - koko kansan Design System
+              Suomi.fi – koko kansan Design System
             </Heading>
           </Block>
           <Block mt="xxl">
@@ -63,17 +63,15 @@ const Page = (): JSX.Element => (
               erityisesti saavutettavuuden huomioiminen vaati työtä jokaisessa
               tiimissä erikseen. Lisäksi toteutukset eri palveluissa erosivat
               toisistaan ja käyttöliittymäkomponenttien ylläpito vaati paljon
-              ylimääräistä ja turhaa työtä. Viraston UX- ja
-              palvelumuotoilutiimin vetäjä esitti tuolloin ratkaisuksi yhteisen
-              Design Systemin kehittämistä, käyttöönottoa ja työn rahoittamista.
-              Pitkäjänteisen hyötyjen perustelutyön jälkeen ehdotus hyväksyttiin
-              ja samalla päätettiin, että Design System ja sen
-              käyttöliittymäkomponentit julkaistaan avoimesti kaikkien käyttöön.
-              Keskeiseksi mittariksi asetettiin jokaisen elementin
-              saavutettavuuden varmistaminen. Samalla päätettiin, että Design
-              Systemin ulkoasu tulisi olla tarpeeksi neutraali, jotta eri
-              toimijoiden myös DVV:n ulkopuolella olisi mahdollisimman helppoa
-              omaksua se omaan käyttöönsä ja muokata tarvittaessa.
+              ylimääräistä työtä. Viraston UX- ja palvelumuotoilutiimin vetäjä
+              esitti tuolloin ratkaisuksi yhteisen Design Systemin kehittämistä,
+              käyttöönottoa ja työn rahoittamista. Pitkäjänteisen hyötyjen
+              perustelutyön jälkeen ehdotus hyväksyttiin ja samalla päätettiin,
+              että Design System ja sen käyttöliittymäkomponentit julkaistaan
+              avoimesti kaikkien käyttöön. Keskeiseksi mittariksi asetettiin
+              saavutettavuuden varmistaminen ja päätettiin, että Design Systemin
+              ulkoasun tulisi olla tarpeeksi neutraali, jotta eri toimijoiden
+              olisi mahdollisimman helppo omaksua se käyttöönsä.
             </Paragraph>
           </Block>
           <Block variant="div" className="half">
@@ -176,7 +174,13 @@ const Page = (): JSX.Element => (
               </li>
               <li>
                 <BoxWithIcon
-                  icon={<StaticIcon icon="collaboration" className="icon" />}
+                  icon={
+                    <StaticIcon
+                      icon="collaboration"
+                      baseColor={suomifiDesignTokens.colors.blackBase}
+                      className="icon"
+                    />
+                  }
                   style={{ marginBottom: suomifiDesignTokens.spacing.xl }}
                 >
                   Avoimuus
@@ -184,7 +188,13 @@ const Page = (): JSX.Element => (
               </li>
               <li>
                 <BoxWithIcon
-                  icon={<StaticIcon icon="webDevelopment" className="icon" />}
+                  icon={
+                    <StaticIcon
+                      icon="webDevelopment"
+                      baseColor={suomifiDesignTokens.colors.blackBase}
+                      className="icon"
+                    />
+                  }
                 >
                   Helppokäyttöisyys
                 </BoxWithIcon>
@@ -201,9 +211,9 @@ const Page = (): JSX.Element => (
             </Paragraph>
             <Paragraph marginBottomSpacing="l">
               Konkreettinen keino tähän pääsemiseksi on ollut saavutettavuustyön
-              tekeminen muille tiimeille mahdollisimman helpoksi: SFI DS –tiimi
-              ratkoo vaikeita asioita muiden puolesta ja jakaa ratkaisunsa
-              avoimesti kaikkien hyödynnettäväksi.
+              tekeminen muille mahdollisimman helpoksi: SFI DS –tiimi ratkoo
+              vaikeita asioita muiden puolesta ja jakaa ratkaisunsa avoimesti
+              kaikkien hyödynnettäväksi.
             </Paragraph>
             <Paragraph>
               Kaikki SFI DS -ratkaisut ovat avointa lähdekoodia, löydettävissä
@@ -438,20 +448,22 @@ const Page = (): JSX.Element => (
               kuten lomakkeista ja niiden osista. Myös uusia komponentteja
               lisätään jatkuvan tarpeen mukaan.
             </Paragraph>
-            <Paragraph>
+            <Paragraph marginBottomSpacing="l">
               Pitkällä aikavälillä pyritään löytämään lisää mahdollisuuksia
               tehdyn työn hyödyntämiseen myös muualla kuin
               Suomi.fi-kontekstissa. Tavoitteena on, että julkisten palveluiden
               toimijat tiivistäisivät yhteistyötään digitaalisten palveluiden
               osalta vielä aiempaa enemmän, jotta jokainen toimija ei päätyisi
-              rakentamaan samoja asioita uudelleen alusta lähtien. Digi- ja
-              väestötietovirastolla on aktiivinen rooli etsiä yhtymäkohtia ja
-              yhteistyömahdollisuuksia digitaalisten palveluiden rakentamisessa
-              muiden isojen julkisten toimijoiden kanssa. Suomi.fi Design System
-              toimii tämän työn kärkenä. Avoimuudella ja muokattavuudellaan SFI
-              DS pyrkii varmistamaan helpon käyttöönoton myös muissa
-              organisaatioissa ja palveluissa, jotta ensimmäiset askeleet
-              parempaan yhteistyöhön olisivat mahdollisimman helppoja.
+              rakentamaan samoja asioita uudelleen alusta lähtien.
+            </Paragraph>
+            <Paragraph>
+              Digi- ja väestötietovirastolla on aktiivinen rooli etsiä
+              yhtymäkohtia ja yhteistyömahdollisuuksia digitaalisten palveluiden
+              rakentamisessa muiden isojen julkisten toimijoiden kanssa.
+              Suomi.fi Design System toimii tämän työn kärkenä. Avoimuudella ja
+              muokattavuudellaan SFI DS pyrkii varmistamaan helpon käyttöönoton
+              myös muissa organisaatioissa ja palveluissa, jotta ensimmäiset
+              askeleet parempaan yhteistyöhön olisivat mahdollisimman helppoja.
             </Paragraph>
           </Block>
           <Block variant="div" className="half">
@@ -489,7 +501,7 @@ const Page = (): JSX.Element => (
                 variant="bold"
                 style={{ color: suomifiDesignTokens.colors.whiteBase }}
               >
-                UI/UX-suunnittelu ja ohjelmistokehitys
+                UX/UI-suunnittelu ja ohjelmistokehitys
               </Text>
             </Block>
             <Block>

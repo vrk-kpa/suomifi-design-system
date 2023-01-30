@@ -2,6 +2,10 @@ import { suomifiDesignTokens, ValueUnit } from 'suomifi-design-tokens';
 import styled from 'styled-components';
 import { Text } from 'suomifi-ui-components';
 
+interface SpacingShowcaseProps {
+  values: 'normal' | 'inset';
+}
+
 /**
  * Return CSS compatible string
  * @param cssValue number, string or {value: number, unit: string | null}
@@ -99,11 +103,15 @@ const Name = styled(({ name, value, ...passProps }) => (
 `,
 );
 
-const SpacingShowcase: React.FunctionComponent = () => {
+const SpacingShowcase: React.FunctionComponent<SpacingShowcaseProps> = ({
+  values,
+}) => {
   return (
     <>
       {Object.entries(suomifiDesignTokens.spacing).map(([key, value]) => {
         const spacingValue = cssValueToString(value);
+        if (values === 'inset' && !key.startsWith('inset')) return;
+        if (values !== 'inset' && key.startsWith('inset')) return;
         return (
           <Container size={spacingValue} key={key}>
             <Name name={key} value={spacingValue} />

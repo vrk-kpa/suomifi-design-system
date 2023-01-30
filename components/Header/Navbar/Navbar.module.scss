@@ -17,7 +17,7 @@
       min-height: 43px;
 
       &:hover {
-        border-bottom: 4px solid $fi-color-brand-base;
+        border-bottom: 4px solid $fi-color-highlight-base;
       }
 
       a {
@@ -31,5 +31,5 @@
 }
 
 .active {
-  border-bottom: 4px solid $fi-color-brand-base;
+  border-bottom: 4px solid $fi-color-highlight-base;
 }

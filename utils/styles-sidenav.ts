@@ -9,15 +9,15 @@ export const navItems: NavItem[] = [
         path: "/styles",
     },
     {
-        title: translations.styles.colors,
-        path: "/styles/colors",
-    },
-    {
         title: translations.styles.icons,
         path: "/styles/icons",
     },
     {
         title: translations.styles.spacing,
         path: "/styles/spacing",
+    },
+    {
+        title: translations.styles.colors,
+        path: "/styles/colors",
     },
 ]

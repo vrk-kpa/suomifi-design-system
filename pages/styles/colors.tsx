@@ -39,13 +39,50 @@ const colors: any = Object.entries(colorTokens).reduce(
   },
   {},
 );
-
+const brandColors: ColorItem[] | undefined[] = [colors.brandBase];
 const textColors: ColorItem[] | undefined[] = [
   colors.blackBase,
   colors.depthBase,
   colors.depthDark2,
 ];
-const brandColors: ColorItem[] | undefined[] = [colors.brandBase];
+const functionalColors: ColorItem[] | undefined[] = [
+  colors.highlightBase,
+  colors.highlightLight1,
+  colors.highlightLight2,
+  colors.highlightLight3,
+  colors.highlightDark1,
+  colors.depthBase,
+  colors.accentSecondary,
+  colors.accentTertiaryDark1,
+];
+const iconColors: ColorItem[] | undefined[] = [
+  colors.depthBase,
+  colors.accentBase,
+  colors.highlightBase,
+  colors.depthDark1,
+];
+const borderColors: ColorItem[] | undefined[] = [
+  colors.whiteBase,
+  colors.depthLight3,
+  colors.depthLight1,
+  colors.highlightLight2,
+  colors.highlightLight3,
+  colors.highlightLight4,
+  colors.depthSecondary,
+];
+const trafficlightColors: ColorItem[] | undefined[] = [
+  colors.successBase,
+  colors.successSecondary,
+  colors.warningBase,
+  colors.alertBase,
+  colors.alertLight1,
+];
+const accentColors: ColorItem[] | undefined[] = [
+  colors.accentBase,
+  colors.accentSecondary,
+  colors.accentSecondaryLight1,
+  colors.accentTertiary,
+];
 
 const ColorsPage: NextPage = () => {
   const { t } = useTranslation();
@@ -87,6 +124,16 @@ const ColorsPage: NextPage = () => {
             </ExternalLink>
           </Block>
         </Block>
+
+        <Heading variant="h2" className="mb-l">
+          {t('colors.brand.heading')}
+        </Heading>
+        <Paragraph>{t('colors.brand.paragraph')}</Paragraph>
+        <Block my="l">
+          <ColorShowcase colors={brandColors}></ColorShowcase>
+        </Block>
+        <Divider />
+
         <Heading variant="h2" className="mb-l">
           {t('colors.texts.heading')}
         </Heading>
@@ -95,12 +142,49 @@ const ColorsPage: NextPage = () => {
           <ColorShowcase colors={textColors}></ColorShowcase>
         </Block>
         <Divider />
+
         <Heading variant="h2" className="mb-l">
-          {t('colors.brand.heading')}
+          {t('colors.functionals.heading')}
         </Heading>
-        <Paragraph>{t('colors.brand.paragraph')}</Paragraph>
-        <Block my="l">
-          <ColorShowcase colors={brandColors}></ColorShowcase>
+        <Paragraph>{t('colors.functionals.paragraph')}</Paragraph>
+        <Block mt="l">
+          <ColorShowcase colors={functionalColors}></ColorShowcase>
+        </Block>
+        <Divider />
+
+        <Heading variant="h2" className="mb-l">
+          {t('colors.icons.heading')}
+        </Heading>
+        <Paragraph>{t('colors.icons.paragraph')}</Paragraph>
+        <Block mt="l">
+          <ColorShowcase colors={iconColors}></ColorShowcase>
+        </Block>
+        <Divider />
+
+        <Heading variant="h2" className="mb-l">
+          {t('colors.borders.heading')}
+        </Heading>
+        <Paragraph>{t('colors.borders.paragraph')}</Paragraph>
+        <Block mt="l">
+          <ColorShowcase colors={borderColors}></ColorShowcase>
+        </Block>
+        <Divider />
+
+        <Heading variant="h2" className="mb-l">
+          {t('colors.trafficlights.heading')}
+        </Heading>
+        <Paragraph>{t('colors.trafficlights.paragraph')}</Paragraph>
+        <Block mt="l">
+          <ColorShowcase colors={trafficlightColors}></ColorShowcase>
+        </Block>
+        <Divider />
+
+        <Heading variant="h2" className="mb-l">
+          {t('colors.accents.heading')}
+        </Heading>
+        <Paragraph>{t('colors.accents.paragraph')}</Paragraph>
+        <Block mt="l">
+          <ColorShowcase colors={accentColors}></ColorShowcase>
         </Block>
       </SideNavLayout>
     </>

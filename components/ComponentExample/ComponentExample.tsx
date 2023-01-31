@@ -18,11 +18,14 @@ interface ComponentExampleProps {
   children?: ReactNode;
   codeString?: string;
   style?: CSSProperties;
+  noCode?: boolean;
 }
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
   React.Children.map(children, (child) =>
-    !!child.type && (child.type === 'div' || child.type.displayName === 'div')
+    child &&
+    !!child.type &&
+    (child.type === 'div' || child.type.displayName === 'div')
       ? getWithoutWrappers(child.props.children)
       : child,
   );
@@ -33,6 +36,7 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
   filterPropsInExample,
   codeString,
   style,
+  noCode,
 }) => {
   const showcase =
     variant === 'mobile_device' ? (
@@ -45,27 +49,33 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
   return (
     <>
       {showcase}
-      <Expander className="mt-l mb-l">
-        <ExpanderTitleButton>Koodiesimerkki (React)</ExpanderTitleButton>
-        <ExpanderContent>
-          {codeString ? (
-            <ComponentCode codeString={codeString} />
-          ) : (
-            getWithoutWrappers(children).map((child, index) => (
-              <ComponentCode
-                key={index}
-                filterProps={filterPropsInExample}
-                style={{
-                  paddingTop: index === 0 && !codeString ? '1rem' : 0,
-                }}
-              >
-                {child}
-              </ComponentCode>
-            ))
-          )}
-        </ExpanderContent>
-      </Expander>
-      <div className={styles.divider}></div>
+      {!noCode && (
+        <>
+          <Expander className="mt-l mb-l">
+            <ExpanderTitleButton>Koodiesimerkki (React)</ExpanderTitleButton>
+            <ExpanderContent>
+              {codeString ? (
+                <ComponentCode codeString={codeString} />
+              ) : (
+                getWithoutWrappers(children).map((child, index) => (
+                  <ComponentCode
+                    key={index}
+                    filterProps={filterPropsInExample}
+                    style={{
+                      paddingTop: index === 0 && !codeString ? '1rem' : 0,
+                      maxWidth: '700px',
+                    }}
+                  >
+                    {child}
+                  </ComponentCode>
+                ))
+              )}
+            </ExpanderContent>
+          </Expander>
+
+          <div className={styles.divider}></div>
+        </>
+      )}
     </>
   );
 };

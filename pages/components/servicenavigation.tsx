@@ -142,51 +142,49 @@ const Page: NextPage = () => {
             {t('service_navigation_page.example.smallscreen.paragraph')}
           </Paragraph>
 
-          <ComponentExample style={{ justifyContent: 'flex-start' }}>
-            <div style={{ width: '300px' }}>
-              <ServiceNavigation
-                aria-label={t('service_navigation_page.example.arialabel')}
-                variant="smallScreen"
-                smallScreenExpandButtonText={t(
-                  'service_navigation_page.example.smallscreen.buttontext',
-                )}
-                initiallyExpanded={false}
-              >
-                <ServiceNavigationItem>
-                  <RouterLink
-                    href="#"
-                    aria-label={t(
-                      'service_navigation_page.example.navitem1.arialabel',
-                    )}
-                  >
-                    {t('service_navigation_page.example.navitem1')}
-                    <StaticChip style={{ marginLeft: '15px' }} aria-hidden>
-                      16
-                    </StaticChip>
-                  </RouterLink>
-                </ServiceNavigationItem>
-                <ServiceNavigationItem>
-                  <RouterLink href="#">
-                    {t('service_navigation_page.example.navitem2')}
-                  </RouterLink>
-                </ServiceNavigationItem>
-                <ServiceNavigationItem selected>
-                  <RouterLink href="#" aria-current="page">
-                    {t('service_navigation_page.example.navitem3')}
-                  </RouterLink>
-                </ServiceNavigationItem>
-                <ServiceNavigationItem>
-                  <RouterLink href="#">
-                    {t('service_navigation_page.example.navitem4')}
-                  </RouterLink>
-                </ServiceNavigationItem>
-                <ServiceNavigationItem>
-                  <RouterLink href="#">
-                    {t('service_navigation_page.example.navitem5')}
-                  </RouterLink>
-                </ServiceNavigationItem>
-              </ServiceNavigation>
-            </div>
+          <ComponentExample variant="mobile_device">
+            <ServiceNavigation
+              aria-label={t('service_navigation_page.example.arialabel')}
+              variant="smallScreen"
+              smallScreenExpandButtonText={t(
+                'service_navigation_page.example.smallscreen.buttontext',
+              )}
+              initiallyExpanded={false}
+            >
+              <ServiceNavigationItem>
+                <RouterLink
+                  href="#"
+                  aria-label={t(
+                    'service_navigation_page.example.navitem1.arialabel',
+                  )}
+                >
+                  {t('service_navigation_page.example.navitem1')}
+                  <StaticChip style={{ marginLeft: '15px' }} aria-hidden>
+                    16
+                  </StaticChip>
+                </RouterLink>
+              </ServiceNavigationItem>
+              <ServiceNavigationItem>
+                <RouterLink href="#">
+                  {t('service_navigation_page.example.navitem2')}
+                </RouterLink>
+              </ServiceNavigationItem>
+              <ServiceNavigationItem selected>
+                <RouterLink href="#" aria-current="page">
+                  {t('service_navigation_page.example.navitem3')}
+                </RouterLink>
+              </ServiceNavigationItem>
+              <ServiceNavigationItem>
+                <RouterLink href="#">
+                  {t('service_navigation_page.example.navitem4')}
+                </RouterLink>
+              </ServiceNavigationItem>
+              <ServiceNavigationItem>
+                <RouterLink href="#">
+                  {t('service_navigation_page.example.navitem5')}
+                </RouterLink>
+              </ServiceNavigationItem>
+            </ServiceNavigation>
           </ComponentExample>
         </Block>
       </SideNavLayout>

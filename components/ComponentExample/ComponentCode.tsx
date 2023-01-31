@@ -23,6 +23,7 @@ const Highlighter = ({
     }}
     // clear default styles to allow e.g. wrap
     codeTagProps={{ style: {} }}
+    wrapLongLines={true}
   >
     {children}
   </SyntaxHighlighter>

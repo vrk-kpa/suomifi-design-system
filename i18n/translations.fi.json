@@ -83,7 +83,7 @@
  },
  "colors": {
      "heading": "Värit",
-     "ingress": "Pääväreihin kuuluvat sininen (brandBase ja highlightBase), valkoinen (whiteBase) ja harmaa (depthBase). Tekstien päävärinä käytetään mustaa (blackBase). Korosteväreinä käytetään oranssia (accentBase) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali, ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
+     "ingress": "Suomi.fi-väriteeman pääväreihin kuuluu sininen (brandBase ja highlightBase), valkoinen (whiteBase) ja harmaa (depthBase). Tekstien päävärinä käytetään mustaa (blackBase). Korosteväreinä käytetään oranssia (accentBase) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali, ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
      "accessibility_list": {
          "point_1": "Kun käytät komponenttien tarjoamaa valmista Suomi.fi-väriteemaa käyttöohjeistuksien mukaisesti, täyttyvät saavutettavuuskriteeristön (WCAG) kontrastivaatimukset ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
          "point_2": "Jos haluat modifioida värit sopimaan erilaiseen visuaaliseen ilmeeseen, muista varmistaa, että valitsemasi väriyhdistelmien kontrastit täyttävät saavutettavuuskriteeristön (WCAG) asettamat vaatimukset.",

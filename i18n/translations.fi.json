@@ -141,7 +141,7 @@
      "heading": "Välistys",
      "ingress": "Suomi.fi Design System sisältää valmiiksi määriteltyjä arvoja tilankäytölle. Näitä välistystokeneita käyttämällä verkkosivun asettelu pysyy yhtenäisenä ja harmonisena.",
      "paragraph_1": "Seuraavia välistyksiä käytetään sivulla olevien elementtien välisen tilan luomiseen.",
-     "paragraph_2": "Design Systemiin kuuluvaa lohkokomponenttia voidaan käyttää tilan luomiseen hyödyntämällä sen marginaali- ja täyteominaisuuksia.",
+     "paragraph_2": "Design Systemiin kuuluvaa lohkokomponenttia voidaan käyttää tilan luomiseen hyödyntämällä sen marginaali- ja täyteominaisuuksia (padding).",
      "block_text_1": "Lohko, jossa on eri määrä tilaa eri reunoilla",
      "block_text_2": "Lohko, jolla on yläpuolen marginaalia",
      "inset_heading": "Inset-välistykset",

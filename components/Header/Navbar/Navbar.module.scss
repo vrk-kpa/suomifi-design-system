@@ -25,6 +25,15 @@
         padding: $fi-spacing-inset-m;
         color: $fi-color-black-base;
         text-decoration: none;
+
+        &:focus-visible {
+          outline: 0;
+          position: relative;
+      
+          &:after {
+            @include fi-focus-absolute-focus;
+          }
+        }
       }
     }
   }

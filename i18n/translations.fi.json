@@ -26,7 +26,7 @@
         "home": "Etusivu",
         "styles": "Tyylit",
         "components": "Komponentit",
-        "patterns": "Suunnittelumallit",
+        "patterns": "Patternit",
         "info": "Taustatietoa"
     },
     "footer": {
@@ -122,33 +122,59 @@
         "ingress": "Lorem ipsum asdasd"
     },
     "patterns": {
-        "general": "Yleistä suunnittelumalleista",
+        "general": "Yleistä patterneista",
         "multi_insert": "Multi-insert"
     },
     "patterns_main_page": {
-
+        "ingress": "Patternit eli suunnittelumallit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
+        "paragraph_1": "Patterneissa on kuvattu, kuinka erillisiä Design Systemin komponentteja käytetään yhdessä luomaan ratkaisuja, jotka on ovat käytettävyydeltään, visuaaliselta ilmeeltään ja saavutettavuudeltaan sujuvia ja parhaiden käytänteiden mukaisia.",
+        "paragraph_2": "Jokaisen patternin yhteydessä on esitelty referenssitoteutus, jota mukailemalla vastaava toiminnalisuus on helppo toteuttaa omaan palveluun. Referenssitoteutuksen lähdekoodi on myös saatavilla."
     },
     "multi-insert": {
         "heading": "Multi-insert",
         "ingress": "Lomakkeissa on toisinaan tarpeen lisätä sama moduuli eli tietokenttä tai tietokenttien yhdistelmä useaan kertaan. Tämän kaltaisen dynaamisen toiminnallisuuden toteuttamisessa on kiinnitettävä erityistä huomiota käytettävyyteen ja saavutettavuuteen.",
+        "and_other_needed_components": "sekä varsinaisista moduulin sisältämistä lomakekomponenteista",
         "accessibility_list": {
             "point_1": "Multi-insert-suunnittelumalli vaatii erityistä huomiota fokuksen oikean siirtymisen suhteen. Fokuksen siirtyminen on kuvattu erikseen jäljempänä tällä sivulla.",
-            "point_2": "Jokaisen moduulin yhteydessä olevaan poista-painikkeeseen tulee liittää ruudunlukijaa varten uniikki tieto siitä tiedosta, jota ollaan poistamassa. Referenssitoteutuksessa on esitetty, miten painikkeen aria-label muuttuu dynaamisesti moduulin tärkeimmän tietokentän arvon mukaan.",
-            "point_3": "Moduulin poistamisen jälkeen näytetään ponnahdusilmoitus (toast), jolle on asetettu rooliksi alert. Tämän johdosta myös ruudunlukijakäyttäjät saavat tiedon poistamisesta.",
-            "point_4": "Mikäli lomaketta tallennettaessa moduuleita on jäänyt kokonaan tyhjäksi, ei niitä huomioida, vaan ne poistetaan tallennetusta versiosta. Jos pakollisia tietoja on jäänyt puuttumaan moduulin sisällä, ne indikoidaan kuten muutkin pakolliset tiedot."
+            "point_2": "On hyvä tuoda selkeällä tekstillä ilmi, että moduuleita (referenssitoteutuksessa verkkosivuja) voi lisätä useita.",
+            "point_3": "Jokaisen moduulin yhteydessä olevaan poista-painikkeeseen tulee liittää ruudunlukijaa varten uniikki tieto siitä tiedosta, jota ollaan poistamassa. Referenssitoteutuksessa on esitetty, miten painikkeen aria-label muuttuu dynaamisesti moduulin tärkeimmän tietokentän arvon mukaan.",
+            "point_4": "Moduulin poistamisen jälkeen näytetään ponnahdusilmoitus (toast), jolle on asetettu rooliksi alert. Tämän johdosta myös ruudunlukijakäyttäjät saavat tiedon poistamisesta.",
+            "point_5": "Mikäli lomaketta tallennettaessa moduuleita on jäänyt kokonaan tyhjäksi, ei niitä huomioida, vaan ne poistetaan tallennetusta versiosta. Jos yksittäisiä pakollisia tietoja on jäänyt puuttumaan moduulin sisällä, ne indikoidaan tavalliseen tapaan komponenttien statustekstien avulla."
         },
         "components_text": "Malli rakentuu seuraavista komponenteista:",
         "focus": {
             "heading": "Fokuksen siirtäminen",
-            "point_1": "Moduuleita lisättäessä fokus siirtyy juuri lisätyn moduulin ensimmäiseen tietokenttään.",
-            "point_2": "Moduuleita poistettaessa fokus siirtyy \"Lisää uusi\" -painikkeeseen mikäli moduuleita oli vain yksi.",
-            "point_3": "Moduuleita poistettaessa fokus seuraavan moduulin ensimmäiseen tietokenttään mikäli poistettiin joku muu kuin viimeinen moduuli.",
-            "point_4": "Moduuleita poistettaessa fokus siirtyy edellisen moduulin ensimmäiseen tietokenttään mikäli poistettiin viimeinen moduuli."
+            "point_1": "Moduulia lisättäessä fokus siirtyy juuri lisätyn moduulin ensimmäiseen tietokenttään.",
+            "point_2": "Moduulia poistettaessa",
+            "point_2-1": "Mikäli moduuleita oli vain yksi, fokus siirtyy \"Lisää uusi\" -painikkeeseen",
+            "point_2-2": "Mikäli moduuleita oli useita ja muu kuin viimeinen moduuli poistetaan, fokus siirtyy seuraavan moduulin ensimmäiseen tietokenttään.",
+            "point_2-3": "Mikäli moduuleita oli useita ja viimeinen moduuli poistetaan, fokus siirtyy edellisen moduulin ensimmäiseen tietokenttään."
         },
         "reference_implementation": {
             "heading": "Referenssitoteutus",
-            "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen multi-insert -suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
-            "link_text": "Lähdekoodi Githubissa"
+            "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen multi-insert-suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
+            "link_text": "Lähdekoodi GitHubissa",
+            "add_at_least_one_website": "Lisää vähintään yksi verkkosivu",
+            "named_website_removed": "Verkkosivu {{website_name}} poistettiin",
+            "nameless_website_removed": "Nimetön verkkosivu poistettiin",
+            "website": "Verkkosivu",
+            "you_can_add_multiple_websites": "Voit lisätä useita verkkosivuja",
+            "website_name": "Verkkosivun nimi",
+            "website_name_hint_text": "Anna verkkosivulle kuvaava yleispätevä nimi",
+            "website_name_placeholder": "Kirjoita verkkosivun nimi",
+            "website_name_is_required": "Verkkosivun nimi on pakollinen tieto",
+            "website_address": "Verkko-osoite",
+            "website_address_hint_text": "Huolehdi, että verkko-osoitteen alussa on protokollatunniste https:// HUOM: Tee linkki aina verkkoasiointikanavan omaan osoitteeseen, ei esimerkiksi Suomi.fi-tunnistautumiseen.",
+            "website_address_placeholder": "Kirjoita verkko-osoite",
+            "website_address_is_required": "Verkko-osoite on pakollinen tieto",
+            "website_description": "Kuvaus",
+            "website_description_hint_text": "Anna tarvittaessa verkkosivua täsmentävä tieto",
+            "website_description_placeholder": "Kirjoita kuvaus",
+            "optional": "valinnainen",
+            "remove_named_website": "Poista verkkosivu {{website_name}}",
+            "remove_nameless_website": "Poista nimetön verkkosivu",
+            "remove": "Poista",
+            "add_new_website": "Lisää uusi verkkosivu"
         }
     },
     "components": {

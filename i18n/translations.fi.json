@@ -74,7 +74,7 @@
      "spacing": "Välistys"
  },
  "styles_main_page": {
-     "ingress": "Design System tarjoaa Suomi.fi-identiteetin mukaisia, valmiiksi paketoituja tyylimäärittelyjä eli tokeneita. Design Systemiin kuuluvan komponenttikirjaston tyylit pohjautuvat näihin tokeneihin.",
+     "ingress": "Design System tarjoaa Suomi.fi-identiteetin mukaisia tyylimäärittelyjä eli tokeneita. Design Systemiin kuuluvan komponenttikirjaston tyylit pohjautuvat näihin tokeneihin.",
      "paragraph_1": "Suomi.fi design tokenit löytyvät erillisenä pakettina yhdestä npm-moduulista. Niitä voi käyttää joko Javascript-muodossa (CSS-in-JS) tai SCSS-muodossa. Tokeneiden tarkempi käyttöohjeistus löytyy GitHub-dokumentaatiosta.",
      "style_usage": "Tyylitokeneiden käyttö",
      "style_usage_paragraph_1": "Tokeneita hyödyntämällä voi oman sivustonsa tyylit pitää linjassa Suomi.fi-teeman kanssa. Tokeneita voi käyttää suoraan omasta npm-moduulistaan kuten seuraavassa koodiesimerkissä.",

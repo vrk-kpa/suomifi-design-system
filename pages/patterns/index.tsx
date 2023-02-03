@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { useTranslation } from 'next-export-i18n';
 import Head from 'next/head';
-import { Block, Heading, Text } from 'suomifi-ui-components';
+import { Block, Heading, Paragraph, Text } from 'suomifi-ui-components';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/patterns-sidenav';
 
@@ -22,8 +22,14 @@ const ComponentsIndexPage: NextPage = () => {
           {t('patterns.general')}
         </Heading>
         <Block my="l">
-          <Text variant="lead">Lorem ipsum dolor sit amet</Text>
+          <Text variant="lead">{t('patterns_main_page.ingress')}</Text>
         </Block>
+        <Paragraph marginBottomSpacing="l">
+          {t('patterns_main_page.paragraph_1')}
+        </Paragraph>
+        <Paragraph marginBottomSpacing="l">
+          {t('patterns_main_page.paragraph_2')}
+        </Paragraph>
       </SideNavLayout>
     </>
   );

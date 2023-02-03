@@ -9,6 +9,7 @@ import {
   Toast,
 } from 'suomifi-ui-components';
 import styles from './MultiInsert.module.scss';
+import { useTranslation } from 'next-export-i18n';
 
 interface MultiInsertItem {
   id: number;
@@ -35,11 +36,11 @@ const usePrevious = <T extends unknown>(value: T): T | undefined => {
 };
 
 export const MultiInsert: React.FC = () => {
+  const { t } = useTranslation();
   const [websites, setWebsites] = useState<MultiInsertItem[]>([]);
   const [multiInsertItemID, setMultiInsertItemID] = useState(1);
   const [formInvalid, setFormInvalid] = useState(false);
   const [toasts, setToasts] = useState<ToastText[]>([]);
-  // const toastsRef = useRef(new Array());
   const addNewButtonRef = useRef<HTMLButtonElement>(null);
   let prevWebsites = usePrevious(websites);
 
@@ -162,7 +163,9 @@ export const MultiInsert: React.FC = () => {
         website.descriptionInputRef.current?.value !== '',
     );
     if (validWebsites.length === 0) {
-      alert('Lisää vähintään yksi verkkosivu!');
+      alert(
+        t('multi-insert.reference_implementation.add_at_least_one_website'),
+      );
       return;
     }
 
@@ -183,13 +186,22 @@ export const MultiInsert: React.FC = () => {
         {toasts.map((toast) =>
           // Removed websites are preferably announced with their title
           isNaN(+toast.text) ? (
-            <Block mb="s" role="alert">
-              <Toast key={toast.id}>Verkkosivu {toast.text} poistettiin</Toast>
+            <Block mb="s" role="alert" key={toast.id}>
+              <Toast>
+                {t(
+                  'multi-insert.reference_implementation.named_website_removed',
+                  { website_name: toast.text },
+                )}
+              </Toast>
             </Block>
           ) : (
             // Websites without a title are announced more generally
-            <Block mb="s" role="alert">
-              <Toast key={toast.id}>Nimetön verkkosivu poistettiin</Toast>
+            <Block mb="s" role="alert" key={toast.id}>
+              <Toast>
+                {t(
+                  'multi-insert.reference_implementation.nameless_website_removed',
+                )}
+              </Toast>
             </Block>
           ),
         )}
@@ -212,10 +224,14 @@ export const MultiInsert: React.FC = () => {
                 className={styles['multi-insert_label']}
                 id="websites-heading"
               >
-                Verkkosivu
+                {t('multi-insert.reference_implementation.website')}
               </Label>
               <Block mb="s">
-                <HintText>Voit lisätä useita verkkosivuja</HintText>
+                <HintText>
+                  {t(
+                    'multi-insert.reference_implementation.you_can_add_multiple_websites',
+                  )}
+                </HintText>
               </Block>
               {websites.map((website) => (
                 <Block className={styles['multi-insert_box']} key={website.id}>
@@ -223,15 +239,23 @@ export const MultiInsert: React.FC = () => {
                     <Block>
                       <TextInput
                         fullWidth
-                        labelText="Verkkosivun nimi"
-                        hintText="Anna verkkosivulle kuvaava yleispätevä nimi"
-                        visualPlaceholder="Kirjoita verkkosivun nimi"
+                        labelText={t(
+                          'multi-insert.reference_implementation.website_name',
+                        )}
+                        hintText={t(
+                          'multi-insert.reference_implementation.website_name_hint_text',
+                        )}
+                        visualPlaceholder={t(
+                          'multi-insert.reference_implementation.website_name_placeholder',
+                        )}
                         className={styles['multi-insert-input']}
                         ref={website.nameInputRef}
                         status={website.nameError ? 'error' : 'default'}
                         statusText={
                           website.nameError
-                            ? 'Verkkosivun nimi on pakollinen tieto'
+                            ? t(
+                                'multi-insert.reference_implementation.website_name_is_required',
+                              )
                             : ''
                         }
                         onBlur={(event) => {
@@ -247,18 +271,26 @@ export const MultiInsert: React.FC = () => {
                         }}
                       />
                     </Block>
-                    <Block mt="xxl">
+                    <Block mt="l">
                       <Textarea
                         fullWidth
-                        hintText="Huolehdi, että verkko-osoitteen alussa on protokollatunniste https:// HUOM: Tee linkki aina verkkoasiointikanavan omaan osoitteeseen, ei esimerkiksi Suomi.fi-tunnistautumiseen."
-                        labelText="Verkko-osoite"
-                        visualPlaceholder="Kirjoita verkko-osoite"
+                        labelText={t(
+                          'multi-insert.reference_implementation.website_address',
+                        )}
+                        hintText={t(
+                          'multi-insert.reference_implementation.website_address_hint_text',
+                        )}
+                        visualPlaceholder={t(
+                          'multi-insert.reference_implementation.website_address_placeholder',
+                        )}
                         className={styles['multi-insert-input']}
                         ref={website.addressInputRef}
                         status={website.addressError ? 'error' : 'default'}
                         statusText={
                           website.addressError
-                            ? 'Verkko-osoite on pakollinen tieto'
+                            ? t(
+                                'multi-insert.reference_implementation.website_address_is_required',
+                              )
                             : ''
                         }
                         onBlur={(event) => {
@@ -277,14 +309,22 @@ export const MultiInsert: React.FC = () => {
                         }}
                       ></Textarea>
                     </Block>
-                    <Block mt="xxl">
+                    <Block mt="l">
                       <Textarea
                         fullWidth
-                        hintText="Anna tarvittaessa osoitetta täsmentävä tieto"
-                        labelText="Kuvaus"
-                        visualPlaceholder="Kirjoita kuvaus"
+                        labelText={t(
+                          'multi-insert.reference_implementation.website_description',
+                        )}
+                        hintText={t(
+                          'multi-insert.reference_implementation.website_description_hint_text',
+                        )}
+                        visualPlaceholder={t(
+                          'multi-insert.reference_implementation.website_description_placeholder',
+                        )}
                         className={styles['multi-insert-input']}
-                        optionalText="valinnainen"
+                        optionalText={t(
+                          'multi-insert.reference_implementation.optional',
+                        )}
                         ref={website.descriptionInputRef}
                       ></Textarea>
                     </Block>
@@ -297,11 +337,19 @@ export const MultiInsert: React.FC = () => {
                       ref={website.removeButtonRef}
                       aria-label={
                         website.nameInputRef.current?.value !== ''
-                          ? `Poista verkkosivu ${website.nameInputRef.current?.value}`
-                          : 'Poista nimetön verkkosivu'
+                          ? t(
+                              'multi-insert.reference_implementation.remove_named_website',
+                              {
+                                website_name:
+                                  website.nameInputRef.current?.value,
+                              },
+                            )
+                          : t(
+                              'multi-insert.reference_implementation.remove_nameless_website',
+                            )
                       }
                     >
-                      Poista
+                      {t('multi-insert.reference_implementation.remove')}
                     </Button>
                   </Block>
                 </Block>
@@ -312,7 +360,7 @@ export const MultiInsert: React.FC = () => {
                 onClick={() => addWebsite()}
                 ref={addNewButtonRef}
               >
-                Lisää uusi verkkosivu
+                {t('multi-insert.reference_implementation.add_new_website')}
               </Button>
             </Block>
           </section>

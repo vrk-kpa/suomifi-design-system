@@ -60,6 +60,7 @@ const MultiInsertPage: NextPage = () => {
                 <RouterLink>{t('components.toast')}</RouterLink>
               </Link>
             </li>
+            <li>{t('multi-insert.and_other_needed_components')}</li>
           </ul>
         </Block>
         <Block variant="section" my="xl">
@@ -72,6 +73,7 @@ const MultiInsertPage: NextPage = () => {
               <li>{t('multi-insert.accessibility_list.point_2')}</li>
               <li>{t('multi-insert.accessibility_list.point_3')}</li>
               <li>{t('multi-insert.accessibility_list.point_4')}</li>
+              <li>{t('multi-insert.accessibility_list.point_5')}</li>
             </ul>
           </InfoBox>
         </Block>
@@ -80,9 +82,14 @@ const MultiInsertPage: NextPage = () => {
           <Block mt="l">
             <ul>
               <li>{t('multi-insert.focus.point_1')}</li>
-              <li>{t('multi-insert.focus.point_2')}</li>
-              <li>{t('multi-insert.focus.point_3')}</li>
-              <li>{t('multi-insert.focus.point_4')}</li>
+              <li>
+                {t('multi-insert.focus.point_2')}
+                <ul>
+                  <li>{t('multi-insert.focus.point_2-1')}</li>
+                  <li>{t('multi-insert.focus.point_2-2')}</li>
+                  <li>{t('multi-insert.focus.point_2-3')}</li>
+                </ul>
+              </li>
             </ul>
           </Block>
         </Block>

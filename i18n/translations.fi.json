@@ -50,17 +50,229 @@
         "heading": "Huomasitko puutteita saavutettavuudessa?",
         "paragraph": "Pyrimme jatkuvasti huolehtimaan saavutettavuudesta. Jos löydät ongelmia, ilmoita niistä meille ja teemme parhaamme puutteiden korjaamiseksi. Vastaamme mahdollisimman pian tai viimeistään kahden viikon sisällä. Voit ottaa yhteyttä sähköpostitse osoitteella saavutettavuus(at)dvv.fi."
     },
-    "testing": {
-      "heading": "Miten olemme testanneet saavutettavuutta?",
-      "paragraph": "Saavutettavuus on huomioitu Digi- ja väestötietoviraston digitaalisten palvelujen kehityksessä suunnittelusta toteutukseen kokonaisketterän mallin mukaisesti. Verkkosivuston saavutettavuutta on arvioinut Digi- ja väestötietoviraston hankkima saavutettavuusasiantuntija säännöllisesti osana suunnittelu- ja kehitysprosessia."
+    "main_nav": {
+        "home": "Etusivu",
+        "styles": "Tyylit",
+        "components": "Komponentit",
+        "patterns": "Patternit",
+        "info": "Taustatietoa"
     },
-    "contacts": {
-        "heading": "Valvontaviranomaisen yhteystiedot",
-        "paragraph_1": "Etelä-Suomen aluehallintovirasto",
-        "paragraph_2": "Saavutettavuuden valvonnan yksikkö",
-        "paragraph_3": "www.saavutettavuusvaatimukset.fi",
-        "paragraph_4": "sähköposti: saavutettavuus(at)avi.fi",
-        "paragraph_5": "puhelin: vaihde 0295 016 000"
+    "footer": {
+        "left_text": "Suomi.fi Design Systemin kehittämisestä vastaa Digi- ja väestötietovirasto.",
+        "cookies": "Evästekäytännöt",
+        "accessibility": "Saavutettavuusseloste"
+    },
+    "privacy_statement": {
+        "heading": "Evästekäytännöt",
+        "paragraph_1": "Designsystem.suomi.fi -sivusto tallentaa käyttäjän vierailusta käyttäjän selaimen muistiin tietoja, joita se vaatii toimiakseen. Näitä tietoja ovat esimerkiksi käyttäjän sijainti sivustolla sekä kielivalinta.",
+        "paragraph_2": "Näitä tietoja ei lähetetä eteenpäin, eikä käsitellä tai talleteta siten, että yksittäinen käyttäjä olisi tunnistettavissa. Voit estää tietojen tallentamisen selaimesi evästeasetuksista tai asentamalla tähän tarkoitetun lisäosan selaimeesi. Evästeitä saatetaan käyttää välttämättömänä osana sähköisen palvelun tarjoamista. Tällaisten evästeiden estäminen saattaa estää samalla myös sähköisen palvelun käytön."
+    },
+    "accessibility_statement": {
+        "heading": "Suomi.fi Design Systemin saavutettavuusseloste",
+        "paragraph_1": "Tässä saavutettavuusselosteessa kerrotaan, miten Suomi.fi Design System -sivustolla noudatetaan lakia digitaalisten palvelujen tarjoamisesta, mitä puutteita sivuston saavutettavuudessa on ja miten voit antaa meille palautetta saavutettavuusongelmista. Seloste on laadittu 19.9.2019.",
+        "paragraph_2": "Tästä verkkopalvelusta vastaa Digi- ja väestötietovirasto. Haluamme, että mahdollisimman moni käyttäjä pystyy käyttämään digitaalisia palvelujamme. Otamme saavutettavuuden huomioon digitaalisten palvelujen kehityksessä. Palvelujen saavutettavuutta arvioidaan säännöllisesti osana suunnittelu- ja kehitystyötä.",
+        "how_accessible_are_pages": {
+            "heading": "Miten saavutettavia sivut ovat?",
+            "paragraph": "Tämä sivusto täyttää lain vaatimat A- ja AA-tason saavutettavuuskriteerit (WCAG-kriteeristö 2.1)."
+        },
+        "notice_problems": {
+            "heading": "Huomasitko puutteita saavutettavuudessa?",
+            "paragraph": "Pyrimme jatkuvasti huolehtimaan saavutettavuudesta. Jos löydät ongelmia, ilmoita niistä meille ja teemme parhaamme puutteiden korjaamiseksi. Vastaamme mahdollisimman pian tai viimeistään kahden viikon sisällä. Voit ottaa yhteyttä sähköpostitse osoitteella saavutettavuus(at)dvv.fi."
+        },
+        "supervision": {
+            "heading": "Saavutettavuuden valvonta",
+            "paragraph": "Etelä-Suomen aluehallintovirasto valvoo saavutettavuusvaatimusten toteutumista. Jos et ole tyytyväinen saamaasi vastaukseen tai et saa vastausta lainkaan kahden viikon aikana, voit antaa palautteen Etelä-Suomen aluehallintovirastoon. Etelä-Suomen aluehallintoviraston sivulla kerrotaan tarkasti, miten valituksen voi tehdä ja miten asia käsitellään."
+        },
+        "contacts": {
+            "heading": "Valvontaviranomaisen yhteystiedot",
+            "paragraph_1": "Etelä-Suomen aluehallintovirasto",
+            "paragraph_2": "Saavutettavuuden valvonnan yksikkö",
+            "paragraph_3": "www.saavutettavuusvaatimukset.fi",
+            "paragraph_4": "sähköposti: saavutettavuus(at)avi.fi",
+            "paragraph_5": "puhelin: vaihde 0295 016 000"
+        },
+        "testing": {
+            "heading": "Miten olemme testanneet saavutettavuutta?",
+            "paragraph": "Saavutettavuus on huomioitu Digi- ja väestötietoviraston digitaalisten palvelujen kehityksessä suunnittelusta toteutukseen kokonaisketterän mallin mukaisesti. Verkkosivuston saavutettavuutta on arvioinut Digi- ja väestötietoviraston hankkima saavutettavuusasiantuntija säännöllisesti osana suunnittelu- ja kehitysprosessia."
+        }
+    },
+    "styles": {
+        "styles_usage_info": "Tyylien käyttöohje",
+        "colors": "Värit",
+        "icons": "Ikonit",
+        "spacing": "Välistys"
+    },
+    "styles_main_page": {
+        "ingress": "Design system tarjoaa Suomi.fi-identiteetin mukaisia, valmiiksi paketoituja tyylimäärittelyjä eli tokeneita. Design systemiin kuuluvan komponenttikirjaston tyylit pohjautuvat näihin tokeneihin.",
+        "paragraph_1": "Suomi.fi design tokenit löytyvät erillisenä pakettina yhdestä npm-moduulista. Tokeneiden tekninen ja käyttöönottoohjeistus löytyy GitHub-dokumentaatiosta.",
+        "style_usage": "Tyylien käyttö",
+        "style_usage_paragraph_1": "Tokeneita hyödyntämällä voi oman sivustonsa tyylit pitää linjassa Suomi.fi-teeman kanssa. Tokeneita voi käyttää suoraa omasta npm-moduulistaan.",
+        "style_usage_paragraph_2": "Vaihtoehtoisesti tokenit ovat käytettävissä myös komponenttikirjaston teemaobjektin kautta alla olevan esimerkin mukaisesti.",
+        "styled_element": "Tyylitelty elementti"
+    },
+    "colors": {
+        "heading": "Värit",
+        "ingress": "Pääväreihin kuuluvat sininen (brandBase) sekä (highlightBase), valkoinen (whiteBase) ja harmaa (depthBase). Tekstien päävärinä käytetään mustaa (blackBase). Korosteväreinä käytetään oranssia (accentBase) ja harmaan eri sävyjä. Yleisilme on vaalean neutraali, ja väriä käytetään harkiten korostamaan keskeisiä toimintoja ja sisältöjä.",
+        "accessibility_list": {
+            "point_1": "Kun käytät komponenttien tarjoamaa valmista Suomi.fi-väriteemaa käyttöohjeistuksien mukaisesti, täyttyvät saavutettavuuskriteeristön (WCAG) kontrastivaatimukset ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
+            "point_2": "Jos haluat modifioida värit sopimaan erilaiseen visuaaliseen ilmeeseen, muista varmistaa, että valitsemasi väriyhdistelmien kontrastit täyttävät saavutettavuuskriteeristön (WCAG) asettamat vaatimukset.",
+            "point_3": "Huomioi, että saavutettavuuskriteeristön (WCAG) kontrastivaatimukset eivät koske komponentteja, joiden käyttö on estetty. On kuitenkin tärkeää varmistaa, että estetty sävy eroaa kontrastiltaan tarpeeksi aktiivisen tilan väristä. Suomi.fi-komponentteihin on toteutettu valmiiksi estetty-tila oikeaoppisesti.",
+            "point_4": "Tutustu näihin kohtiin tarkemmin saavutettavuuskriteeristön ohjeistuksessa: WCAG 2.1., onnistumiskriteeri 1.4.3 Kontrasti (minimi)."
+        },
+        "contrast_link": "WCAG 2.1 kontrastivaatimukset",
+        "texts": {
+            "heading": "Tekstit",
+            "paragraph": "Tekstien pääväri on musta (blackBase). Mustaa käytetään myös joidenkin komponenttien yhteydessä olevissa vihjeteksteissä. Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Paikanvaraajanteksteissä käytetään tummanharmaata (depthDark2)."
+        },
+        "brand": {
+            "heading": "Brändi",
+            "paragraph": "Brändiväriä (brandBase) käytetään Suomi.fi-palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa."
+        }
+    },
+    "icons": {
+        "heading": "Ikonit",
+        "ingress": "Tältä sivulla löydät kaikki ikonit jotka ovat käytössä suomi.fi palveluissa. Ikonien käyttöohjeistukset löydät ikonikomponentin sivulta.",
+        "base_icons": {
+            "title": "Perusikonit (base icons)",
+            "link_title": "Perusikonit GitHubissa SVG-muodossa"
+        },
+        "illustrative_icons": {
+            "title": "Kuvitusikonit (illustrative icons)",
+            "link_title": "Kuvitusikonit GitHubissa SVG-muodossa"
+        },
+        "doctype_icons": {
+            "title": "Liitetiedostoikonit (doctype icons)",
+            "link_title": "Liitetiedostoikonit GitHubissa SVG-muodossa"
+        }
+    },
+    "spacing": {
+        "heading": "Välistys",
+        "ingress": "Lorem ipsum asdasd"
+    },
+    "patterns": {
+        "general": "Yleistä patterneista",
+        "multi_insert": "Multi-insert"
+    },
+    "patterns_main_page": {
+        "ingress": "Patternit eli suunnittelumallit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
+        "paragraph_1": "Patterneissa on kuvattu, kuinka erillisiä Design Systemin komponentteja käytetään yhdessä luomaan ratkaisuja, jotka on ovat käytettävyydeltään, visuaaliselta ilmeeltään ja saavutettavuudeltaan sujuvia ja parhaiden käytänteiden mukaisia.",
+        "paragraph_2": "Jokaisen patternin yhteydessä on esitelty referenssitoteutus, jota mukailemalla vastaava toiminnalisuus on helppo toteuttaa omaan palveluun. Referenssitoteutuksen lähdekoodi on myös saatavilla."
+    },
+    "multi-insert": {
+        "heading": "Multi-insert",
+        "ingress": "Lomakkeissa on toisinaan tarpeen lisätä sama moduuli eli tietokenttä tai tietokenttien yhdistelmä useaan kertaan. Tämän kaltaisen dynaamisen toiminnallisuuden toteuttamisessa on kiinnitettävä erityistä huomiota käytettävyyteen ja saavutettavuuteen.",
+        "and_other_needed_components": "sekä varsinaisista moduulin sisältämistä lomakekomponenteista",
+        "accessibility_list": {
+            "point_1": "Multi-insert-suunnittelumalli vaatii erityistä huomiota fokuksen oikean siirtymisen suhteen. Fokuksen siirtyminen on kuvattu erikseen jäljempänä tällä sivulla.",
+            "point_2": "On hyvä tuoda selkeällä tekstillä ilmi, että moduuleita (referenssitoteutuksessa verkkosivuja) voi lisätä useita.",
+            "point_3": "Jokaisen moduulin yhteydessä olevaan poista-painikkeeseen tulee liittää ruudunlukijaa varten uniikki tieto siitä tiedosta, jota ollaan poistamassa. Referenssitoteutuksessa on esitetty, miten painikkeen aria-label muuttuu dynaamisesti moduulin tärkeimmän tietokentän arvon mukaan.",
+            "point_4": "Moduulin poistamisen jälkeen näytetään ponnahdusilmoitus (toast), jolle on asetettu rooliksi alert. Tämän johdosta myös ruudunlukijakäyttäjät saavat tiedon poistamisesta.",
+            "point_5": "Mikäli lomaketta tallennettaessa moduuleita on jäänyt kokonaan tyhjäksi, ei niitä huomioida, vaan ne poistetaan tallennetusta versiosta. Jos yksittäisiä pakollisia tietoja on jäänyt puuttumaan moduulin sisällä, ne indikoidaan tavalliseen tapaan komponenttien statustekstien avulla."
+        },
+        "components_text": "Malli rakentuu seuraavista komponenteista:",
+        "focus": {
+            "heading": "Fokuksen siirtäminen",
+            "point_1": "Moduulia lisättäessä fokus siirtyy juuri lisätyn moduulin ensimmäiseen tietokenttään.",
+            "point_2": "Moduulia poistettaessa",
+            "point_2-1": "Mikäli moduuleita oli vain yksi, fokus siirtyy \"Lisää uusi\" -painikkeeseen",
+            "point_2-2": "Mikäli moduuleita oli useita ja muu kuin viimeinen moduuli poistetaan, fokus siirtyy seuraavan moduulin ensimmäiseen tietokenttään.",
+            "point_2-3": "Mikäli moduuleita oli useita ja viimeinen moduuli poistetaan, fokus siirtyy edellisen moduulin ensimmäiseen tietokenttään."
+        },
+        "reference_implementation": {
+            "heading": "Referenssitoteutus",
+            "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen multi-insert-suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
+            "link_text": "Lähdekoodi GitHubissa",
+            "add_at_least_one_website": "Lisää vähintään yksi verkkosivu",
+            "named_website_removed": "Verkkosivu {{website_name}} poistettiin",
+            "nameless_website_removed": "Nimetön verkkosivu poistettiin",
+            "website": "Verkkosivu",
+            "you_can_add_multiple_websites": "Voit lisätä useita verkkosivuja",
+            "website_name": "Verkkosivun nimi",
+            "website_name_hint_text": "Anna verkkosivulle kuvaava yleispätevä nimi",
+            "website_name_placeholder": "Kirjoita verkkosivun nimi",
+            "website_name_is_required": "Verkkosivun nimi on pakollinen tieto",
+            "website_address": "Verkko-osoite",
+            "website_address_hint_text": "Huolehdi, että verkko-osoitteen alussa on protokollatunniste https:// HUOM: Tee linkki aina verkkoasiointikanavan omaan osoitteeseen, ei esimerkiksi Suomi.fi-tunnistautumiseen.",
+            "website_address_placeholder": "Kirjoita verkko-osoite",
+            "website_address_is_required": "Verkko-osoite on pakollinen tieto",
+            "website_description": "Kuvaus",
+            "website_description_hint_text": "Anna tarvittaessa verkkosivua täsmentävä tieto",
+            "website_description_placeholder": "Kirjoita kuvaus",
+            "optional": "valinnainen",
+            "remove_named_website": "Poista verkkosivu {{website_name}}",
+            "remove_nameless_website": "Poista nimetön verkkosivu",
+            "remove": "Poista",
+            "add_new_website": "Lisää uusi verkkosivu"
+        }
+    },
+    "components": {
+        "component_usage_info": "Komponenttien käyttöohje",
+        "button": "Button (Painike)",
+        "wizard_navigation": "Wizard navigation (Vaihenavigaatio)",
+        "block": "Block (Lohko)",
+        "label": "Label (Otsake)",
+        "hint_text": "Hint text (Vihjeteksti)",
+        "text_input": "Text input (Tekstikenttä)",
+        "text_area": "Textarea (Tekstialue)",
+        "toast": "Toast (Ponnahdusilmoitus)"
+    },
+    "components_main_page": {
+        "customizing_theme": {
+            "heading": "Teeman kustomoiminen",
+            "text": "Kirjaston käyttämää oletusteemaa voi myös tarvittaessa muokata. Teeman muokkaaminen vaikuttaa kaikkiin muokatun teeman sisältämiin komponentteihin.",
+            "buttonText": "Kustomoitu teema"
+        }
+    },
+    "button_page": {
+        "site_title": "Button (Painike) | Suomi.fi Design System",
+        "heading": "Button (Painike)",
+        "ingress": "Painike käynnistää toiminnon. Painiketta voidaan käyttää esimerkiksi siirtymiseen toiseen näkymään, tai painikkeella voidaan hyväksyä toiminto.",
+        "accessibility_list": {
+            "point_1": "Painike käynnistää yleensä toiminnon. Joissakin erityistapauksissa painiketta voidaan käyttää normaalin linkkityylin asemesta, kun käyttäjä ohjataan toiselle sivulle.",
+            "point_2": "Painikkeet korostuvat helposti käyttöliittymässä ja siksi painikkeiden määrä sivulla kannattaa pitää rajallisena."
+        },
+        "what_does_the_component_contain": {
+            "heading": "Mistä komponentti koostuu",
+            "text": "Teksti kertoo painikkeen toiminnon. Toimintopainike kertoo vain olennaisen toiminnon, jonka se toteuttaa, esimerkiksi \"Valitse\" tai \"Seuraava\". Jos toimintopainikkeen nimi on yli kolme sanaa pitkä, mieti miten sitä voidaan lyhentää. Painikkeen teksti alkaa verbillä sekä aina isolla alkukirjaimella."
+        },
+        "size_and_usage": {
+            "heading": "Koko ja käyttö"
+        }
+    },
+    "wizard_navigation_page": {
+        "site_title": "Wizard navigation (Vaihenavigaatio) | Suomi.fi Design System",
+        "heading": "Wizard navigation (Vaihenavigaatio)",
+        "ingress": "Vaihenavigaatiota käytetään vaiheistetun lomakkeen tai muun vastaavan käyttöliittymän eri vaiheiden esittämiseen ja niiden välillä siirtymiseen.",
+        "accessibility_list": {
+            "point_1": "Komponentin otsikon ja navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä.",
+            "point_2": "Ruudunlukijasaavutettavuuden varmistamiseksi tulee huolehtia, että yksittäisille navigaatioelementeille (linkit) asetetaan asianmukaiset aria-attribuutit: aria-current tällä hetkellä aktiiviselle vaiheelle, aria-label kertomaan mikäli vaihe on suoritettu ja aria-disabled mikäli linkki on estetty. Estettyjen linkkien tulee kuitenkin olla näppäimistökäyttäjien saavutettavissa.",
+            "point_3": "Komponentille tulee antaa ylätason aria-label, joka kertoo ruudunlukijalle vaihenavigaation kontekstin ja tarkoituksen.",
+            "point_4": "Vaihenavigaatiolle on lisäksi hyvä antaa HTML-id, jotta siihen voidaan liikkua suoraan esimerkiksi SkipLink-navigaatioelementeistä.",
+            "point_5": "Linkkejä klikattaessa vaihenavigaatiota käyttävän sovelluksen on huolehdittava ruudunlukijan saavan täsmällisen tiedon siitä, että siirryttiin uuteen näkymään."
+        },
+        "what_does_the_component_contain": {
+            "heading": "Mistä komponentti koostuu",
+            "text_1": "Vaihenavigaatio on navigaatioelementti, jonka sisällä on lista. Komponentin tekninen toteutus mahdollistaa sen, että lista voi sisältää tavanomaisten linkkien lisäksi esimerkiksi painikkeita tai muita semanttisia elementtejä. Kaikki listan elementit ovat kuitenkin semantiikasta huolimatta visuaaliselta tyyliltään samanlaisia. Listan elementit esitetään vertikaalisena polkuna, jota käyttäjä kulkee ylhäältä alaspäin.",
+            "text_2": "Kapeille ruuduille suunnitellussa variantissaan komponentti sisältää painikkeen, josta varsinainen navigaatioelementti voidaan näyttää ja piilottaa."
+        },
+        "usage_and_positioning": {
+            "heading": "Käyttö ja asemointi",
+            "text_1": "Navigaatioelementtien sisällä on suunniteltu käytettävän RouterLink-komponenttia, joka voidaan semanttisesti renderöidä minä tahansa komponenttina kuten painikkeena tai jonkin kirjaston omana linkkikomponenttina. Tutustu komponentin tekniseen dokumentaatioon saadaksesi lisää esimerkkejä RouterLinkin käytöstä.",
+            "text_2": "Vaihenavigaatiota on tarkoitettu käytettäväksi yksinomaan vaiheistettujen lomakkeiden tai muiden vastaavien käyttöliittymien (englanniksi 'wizard') eri vaiheiden esittämiseen ja niiden välillä siirtymiseen. Vaihenavigaation jokaiselle vaiheelle voidaan määritellä tila, jonka perusteella vaihe on joko avoinna siirryttäväksi tai vielä toistaiseksi estetty. Lisäksi vaihe voidaan määritellä suoritetuksi, jolloin sen yhteydessä näytetään check-merkki.",
+            "text_3": "Vaihenavigaatio asemoidaan tavallisesti sivun vasempaan palstaan, lomakkeen ollessa sen oikealla puolella. Komponentti ottaa sivuttaissuunnassa kaiken se tilan, joka sille on tarjolla ja täten sen leveyttä kontrolloidaan ympäröivän elementin leveyttä säätämällä. Pienillä ruuduilla (mobiililaitteet) käytetään komponentista niille tarkoitettua varianttia ja asemoidaan komponentti sivun varsinaisen sisältöalueen yläpuolelle."
+        },
+        "component_example": {
+            "title": "Vaiheet",
+            "step_1": "1. Organisaatiotiedot",
+            "step_2": "2. Yhteystiedot",
+            "step_3": "3. Haettavat tiedot",
+            "step_4": "4. Selvitys tietojen suojauksesta",
+            "step_5": "5. Hyväksy ehdot"
+        },
+        "small_screen": {
+            "heading": "Vaihenavigaatio pienillä näytöillä",
+            "text_1": "Mobiililaitteilla vaihenavigaatio voidaan avata ja sulkea painikkeesta."
+        }
     }
   },
  "styles": {

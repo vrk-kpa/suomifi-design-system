@@ -175,7 +175,7 @@
             "point_1": "Moduulia lisättäessä fokus siirtyy juuri lisätyn moduulin ensimmäiseen tietokenttään.",
             "point_2": "Moduulia poistettaessa",
             "point_2-1": "Mikäli moduuleita on vain yksi, fokus siirtyy \"Lisää uusi\" -painikkeeseen.",
-            "point_2-2": "Mikäli moduuleita oli useita ja muu kuin viimeinen moduuli poistetaan, fokus siirtyy seuraavan moduulin ensimmäiseen tietokenttään.",
+            "point_2-2": "Mikäli moduuleita on useita ja muu kuin viimeinen moduuli poistetaan, fokus siirtyy seuraavan moduulin ensimmäiseen tietokenttään.",
             "point_2-3": "Mikäli moduuleita oli useita ja viimeinen moduuli poistetaan, fokus siirtyy edellisen moduulin ensimmäiseen tietokenttään."
         },
         "reference_implementation": {

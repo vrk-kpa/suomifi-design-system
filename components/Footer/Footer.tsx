@@ -31,7 +31,7 @@ const Footer: React.FunctionComponent = () => {
               <Text>{t('footer.left_text')}</Text>
             </Block>
             <Block className={styles.links}>
-              <Link href="/info" passHref>
+              <Link href="/privacy-statement" passHref>
                 <RouterLink>{t('footer.cookies')}</RouterLink>
               </Link>
               <Link href="/accessibility-statement" passHref>

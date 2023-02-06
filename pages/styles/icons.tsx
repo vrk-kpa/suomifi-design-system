@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import { useTranslation } from 'next-export-i18n';
 import Head from 'next/head';
-import { Heading, Block, Text } from 'suomifi-ui-components';
+import { Heading, Block, Text, RouterLink } from 'suomifi-ui-components';
 
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/styles-sidenav';
@@ -9,6 +9,7 @@ import { IconCategories } from '../../interfaces/interfaces';
 
 import { baseIcons, illustrativeIcons, doctypeIcons } from 'suomifi-icons';
 import IconShowcase from '../../components/IconShowcase/IconShowcase';
+import Link from 'next/link';
 
 const IconsPage: NextPage = () => {
   const { t } = useTranslation();
@@ -55,6 +56,11 @@ const IconsPage: NextPage = () => {
         </Heading>
         <Block my="l">
           <Text variant="lead">{t('icons.ingress')}</Text>
+        </Block>
+        <Block mb="l">
+          <Link href="/components/icon" passHref>
+            <RouterLink>{t('icons.icon_component_link_text')}</RouterLink>
+          </Link>
         </Block>
         <IconShowcase iconCategories={iconCategories} />
       </SideNavLayout>

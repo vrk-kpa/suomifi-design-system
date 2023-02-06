@@ -187,100 +187,98 @@ const Page: NextPage = () => {
             {t('side_navigation_page.example.smallscreen.description')}
           </Paragraph>
 
-          <ComponentExample style={{ justifyContent: 'flex-start' }}>
-            <div style={{ width: '350px' }}>
-              <SideNavigation
-                heading={t('side_navigation_page.example.title')}
-                icon="piggyBank"
-                aria-label={t('side_navigation_page.example.arialabel')}
-                variant="smallScreen"
-                initiallyExpanded={false}
+          <ComponentExample variant="mobile_device">
+            <SideNavigation
+              heading={t('side_navigation_page.example.title')}
+              icon="piggyBank"
+              aria-label={t('side_navigation_page.example.arialabel')}
+              variant="smallScreen"
+              initiallyExpanded={false}
+            >
+              <SideNavigationItem
+                subLevel={1}
+                content={
+                  <RouterLink href="/" aria-current="location">
+                    {t('side_navigation_page.example.navitem1')}
+                  </RouterLink>
+                }
               >
                 <SideNavigationItem
-                  subLevel={1}
+                  subLevel={2}
                   content={
                     <RouterLink href="/" aria-current="location">
-                      {t('side_navigation_page.example.navitem1')}
+                      {t('side_navigation_page.example.navitem1-2-1')}
                     </RouterLink>
                   }
                 >
                   <SideNavigationItem
-                    subLevel={2}
-                    content={
-                      <RouterLink href="/" aria-current="location">
-                        {t('side_navigation_page.example.navitem1-2-1')}
-                      </RouterLink>
-                    }
-                  >
-                    <SideNavigationItem
-                      subLevel={3}
-                      content={
-                        <RouterLink href="/">
-                          {t('side_navigation_page.example.navitem1-2-1-1')}
-                        </RouterLink>
-                      }
-                    />
-                    <SideNavigationItem
-                      subLevel={3}
-                      selected
-                      content={
-                        <RouterLink href="/" aria-current="page">
-                          {t('side_navigation_page.example.navitem1-2-1-2')}
-                        </RouterLink>
-                      }
-                    />
-                    <SideNavigationItem
-                      subLevel={3}
-                      content={
-                        <RouterLink href="/">
-                          {t('side_navigation_page.example.navitem1-2-1-3')}
-                        </RouterLink>
-                      }
-                    />
-                  </SideNavigationItem>
-                  <SideNavigationItem
-                    subLevel={2}
+                    subLevel={3}
                     content={
                       <RouterLink href="/">
-                        {t('side_navigation_page.example.navitem1-2-2')}
+                        {t('side_navigation_page.example.navitem1-2-1-1')}
+                      </RouterLink>
+                    }
+                  />
+                  <SideNavigationItem
+                    subLevel={3}
+                    selected
+                    content={
+                      <RouterLink href="/" aria-current="page">
+                        {t('side_navigation_page.example.navitem1-2-1-2')}
+                      </RouterLink>
+                    }
+                  />
+                  <SideNavigationItem
+                    subLevel={3}
+                    content={
+                      <RouterLink href="/">
+                        {t('side_navigation_page.example.navitem1-2-1-3')}
                       </RouterLink>
                     }
                   />
                 </SideNavigationItem>
                 <SideNavigationItem
-                  subLevel={1}
+                  subLevel={2}
                   content={
-                    <RouterLink href="#">
-                      {t('side_navigation_page.example.navitem2')}
+                    <RouterLink href="/">
+                      {t('side_navigation_page.example.navitem1-2-2')}
                     </RouterLink>
                   }
                 />
-                <SideNavigationItem
-                  content={
-                    <RouterLink href="#">
-                      {t('side_navigation_page.example.navitem3')}
-                    </RouterLink>
-                  }
-                  subLevel={1}
-                />
-                <SideNavigationItem
-                  subLevel={1}
-                  content={
-                    <RouterLink href="#">
-                      {t('side_navigation_page.example.navitem4')}
-                    </RouterLink>
-                  }
-                />
-                <SideNavigationItem
-                  subLevel={1}
-                  content={
-                    <RouterLink href="#">
-                      {t('side_navigation_page.example.navitem5')}
-                    </RouterLink>
-                  }
-                />
-              </SideNavigation>
-            </div>
+              </SideNavigationItem>
+              <SideNavigationItem
+                subLevel={1}
+                content={
+                  <RouterLink href="#">
+                    {t('side_navigation_page.example.navitem2')}
+                  </RouterLink>
+                }
+              />
+              <SideNavigationItem
+                content={
+                  <RouterLink href="#">
+                    {t('side_navigation_page.example.navitem3')}
+                  </RouterLink>
+                }
+                subLevel={1}
+              />
+              <SideNavigationItem
+                subLevel={1}
+                content={
+                  <RouterLink href="#">
+                    {t('side_navigation_page.example.navitem4')}
+                  </RouterLink>
+                }
+              />
+              <SideNavigationItem
+                subLevel={1}
+                content={
+                  <RouterLink href="#">
+                    {t('side_navigation_page.example.navitem5')}
+                  </RouterLink>
+                }
+              />
+            </SideNavigation>
           </ComponentExample>
         </Block>
       </SideNavLayout>

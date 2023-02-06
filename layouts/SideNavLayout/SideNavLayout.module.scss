@@ -20,7 +20,7 @@
         @include upto-lg {
             display: none;
         }
-        width: 350px;
+        min-width: 370px;
 
         .navHeader {
             display: flex;

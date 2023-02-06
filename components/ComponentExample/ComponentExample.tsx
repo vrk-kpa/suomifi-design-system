@@ -49,33 +49,26 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
   return (
     <>
       {showcase}
-      {!noCode && (
-        <>
-          <Expander className="mt-l mb-l">
-            <ExpanderTitleButton>Koodiesimerkki (React)</ExpanderTitleButton>
-            <ExpanderContent>
-              {codeString ? (
-                <ComponentCode codeString={codeString} />
-              ) : (
-                getWithoutWrappers(children).map((child, index) => (
-                  <ComponentCode
-                    key={index}
-                    filterProps={filterPropsInExample}
-                    style={{
-                      paddingTop: index === 0 && !codeString ? '1rem' : 0,
-                      maxWidth: '700px',
-                    }}
-                  >
-                    {child}
-                  </ComponentCode>
-                ))
-              )}
-            </ExpanderContent>
-          </Expander>
-
-          <div className={styles.divider}></div>
-        </>
-      )}
+      <Expander className="mt-l mb-l">
+        <ExpanderTitleButton>Koodiesimerkki (React)</ExpanderTitleButton>
+        <ExpanderContent>
+          {codeString ? (
+            <ComponentCode codeString={codeString} />
+          ) : (
+            getWithoutWrappers(children).map((child, index) => (
+              <ComponentCode
+                key={index}
+                filterProps={filterPropsInExample}
+                style={{
+                  paddingTop: index === 0 && !codeString ? '1rem' : 0,
+                }}
+              >
+                {child}
+              </ComponentCode>
+            ))
+          )}
+        </ExpanderContent>
+      </Expander>
     </>
   );
 };

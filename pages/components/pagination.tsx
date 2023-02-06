@@ -282,37 +282,35 @@ const FailingExample = ({
   return (
     <ComponentExample
       style={{
-        marginBottom: defaultSuomifiTheme.spacing.s,
         display: 'flex',
-        flexDirection: 'column',
+        justifyContent: 'center',
       }}
+      variant="mobile_device"
     >
-      <div style={{ width: '600px' }}>
-        <Pagination
-          currentPage={current}
-          lastPage={lastPage}
-          smallScreen={true}
-          nextButtonAriaLabel="Seuraava sivu"
-          previousButtonAriaLabel="Edellinen sivu"
-          pageInput={true}
-          aria-label="Esimerkki D"
-          pageInputProps={{
-            invalidValueErrorText: (value) => `"${value}" ei ole sallittu arvo`,
-            inputPlaceholderText: 'Siirry sivulle',
-            buttonText: 'Siirry sivulle',
-            labelText: 'Sivun numero',
-          }}
-          onChange={(page) => {
-            setCurrent(page);
-          }}
-          pageIndicatorText={(currentPage, lastPage) => {
-            return 'Sivu ' + currentPage + ' / ' + lastPage;
-          }}
-          ariaPageIndicatorText={(currentPage, lastPage) => {
-            return 'Näytetään sivu ' + currentPage + ' kautta ' + lastPage;
-          }}
-        />
-      </div>
+      <Pagination
+        currentPage={current}
+        lastPage={lastPage}
+        smallScreen={true}
+        nextButtonAriaLabel="Seuraava sivu"
+        previousButtonAriaLabel="Edellinen sivu"
+        pageInput={true}
+        aria-label="Esimerkki D"
+        pageInputProps={{
+          invalidValueErrorText: (value) => `"${value}" ei ole sallittu arvo`,
+          inputPlaceholderText: 'Siirry sivulle',
+          buttonText: 'Siirry sivulle',
+          labelText: 'Sivun numero',
+        }}
+        onChange={(page) => {
+          setCurrent(page);
+        }}
+        pageIndicatorText={(currentPage, lastPage) => {
+          return 'Sivu ' + currentPage + ' / ' + lastPage;
+        }}
+        ariaPageIndicatorText={(currentPage, lastPage) => {
+          return 'Näytetään sivu ' + currentPage + ' kautta ' + lastPage;
+        }}
+      />
     </ComponentExample>
   );
 };

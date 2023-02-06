@@ -39,8 +39,7 @@ export const Example = () => (
       padding: suomifiDesignTokens.spacing.s,
       background: suomifiDesignTokens.colors.highlightBase,
       fontSize:
-        suomifiDesignTokens.values.typography.bodyText.fontSize
-          .value +
+        suomifiDesignTokens.values.typography.bodyText.fontSize.value +
         suomifiDesignTokens.values.typography.bodyText.fontSize.unit,
       color: suomifiDesignTokens.colors.whiteBase,
     }}

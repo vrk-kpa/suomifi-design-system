@@ -185,7 +185,7 @@ export const MultiInsert: React.FC = () => {
       <div className={styles['toast-container']}>
         {toasts.map((toast) =>
           // Removed websites are preferably announced with their title
-          isNaN(+toast.text) ? (
+          Number(toast.text) !== toast.id ? (
             <Block mb="s" role="alert" key={toast.id}>
               <Toast>
                 {t(

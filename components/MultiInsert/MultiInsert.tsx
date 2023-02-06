@@ -22,7 +22,7 @@ interface MultiInsertItem {
 }
 
 interface ToastText {
-  text: string;
+  text?: string;
   id: number;
 }
 
@@ -101,11 +101,9 @@ export const MultiInsert: React.FC = () => {
     }
 
     // Removed websites are preferably announced with their title
-    // If title is not present, pass the ID of the element to the list of toasts
-    let toastText = websites[indexOfRemovedItem].nameInputRef.current?.value;
-    if (!toastText) {
-      toastText = String(websites[indexOfRemovedItem].id);
-    }
+    // If title is not present, pass text as undefined
+    let toastText: string | undefined =
+      websites[indexOfRemovedItem].nameInputRef.current?.value;
     flashToast(toastText, websites[indexOfRemovedItem].id);
     setWebsites(websites.filter((website) => website.id !== id));
   };
@@ -145,7 +143,7 @@ export const MultiInsert: React.FC = () => {
     );
   };
 
-  const flashToast = (toastName: string, id: number) => {
+  const flashToast = (toastName: string | undefined, id: number) => {
     setToasts((current) => [...current, { text: toastName, id: id }]);
     setTimeout(() => {
       setToasts((current) => {
@@ -185,7 +183,8 @@ export const MultiInsert: React.FC = () => {
       <div className={styles['toast-container']}>
         {toasts.map((toast) =>
           // Removed websites are preferably announced with their title
-          Number(toast.text) !== toast.id ? (
+          // If module had any text in the "Website name" field, toast.text value is present
+          toast.text ? (
             <Block mb="s" role="alert" key={toast.id}>
               <Toast>
                 {t(

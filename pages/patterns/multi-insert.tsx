@@ -36,29 +36,44 @@ const MultiInsertPage: NextPage = () => {
           <Paragraph>{t('multi-insert.components_text')}</Paragraph>
           <ul>
             <li>
-              <Link href="/components/block" passHref>
-                <RouterLink>{t('components.block')}</RouterLink>
-              </Link>
+              <ExternalLink
+                href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Block"
+                labelNewWindow={t('common.opens_in_a_new_tab')}
+              >
+                {t('components.block')}
+              </ExternalLink>
             </li>
             <li>
-              <Link href="/components/button" passHref>
-                <RouterLink>{t('components.button')}</RouterLink>
-              </Link>
+              <ExternalLink
+                href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/button"
+                labelNewWindow={t('common.opens_in_a_new_tab')}
+              >
+                {t('components.button')}
+              </ExternalLink>
             </li>
             <li>
-              <Link href="/components/label" passHref>
-                <RouterLink>{t('components.label')}</RouterLink>
-              </Link>
+              <ExternalLink
+                href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Label"
+                labelNewWindow={t('common.opens_in_a_new_tab')}
+              >
+                {t('components.label')}
+              </ExternalLink>
             </li>
             <li>
-              <Link href="/components/hint_text" passHref>
-                <RouterLink>{t('components.hint_text')}</RouterLink>
-              </Link>
+              <ExternalLink
+                href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/HintText"
+                labelNewWindow={t('common.opens_in_a_new_tab')}
+              >
+                {t('components.hint_text')}
+              </ExternalLink>
             </li>
             <li>
-              <Link href="/components/toast" passHref>
-                <RouterLink>{t('components.toast')}</RouterLink>
-              </Link>
+              <ExternalLink
+                href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Toast"
+                labelNewWindow={t('common.opens_in_a_new_tab')}
+              >
+                {t('components.toast')}
+              </ExternalLink>
             </li>
             <li>{t('multi-insert.and_other_needed_components')}</li>
           </ul>
@@ -102,7 +117,7 @@ const MultiInsertPage: NextPage = () => {
           </Paragraph>
           <ExternalLink
             labelNewWindow={t('common.opens_in_a_new_tab')}
-            href="https://github.com/vrk-kpa/suomifi-design-system"
+            href="https://github.com/vrk-kpa/suomifi-design-system/tree/develop/components/MultiInsert/MultiInsert.tsx"
           >
             {t('multi-insert.reference_implementation.link_text')}
           </ExternalLink>

@@ -31,7 +31,7 @@
 		"home": "Etusivu",
 		"styles": "Tyylit",
 		"components": "Komponentit",
-		"patterns": "Patternit",
+		"patterns": "Suunnittelumallit",
 		"info": "Taustatietoa"
 	},
 	"privacy_statement": {
@@ -69,13 +69,13 @@
 		}
 	},
 	"patterns": {
-		"general": "Yleistä patterneista",
+		"general": "Yleistä suunnittelumalleista",
 		"multi_insert": "Multi-insert"
 	},
 	"patterns_main_page": {
-		"ingress": "Patternit eli suunnittelumallit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
-		"paragraph_1": "Patterneissa on kuvattu, kuinka erillisiä Design Systemin komponentteja käytetään yhdessä luomaan ratkaisuja, jotka on ovat käytettävyydeltään, visuaaliselta ilmeeltään ja saavutettavuudeltaan sujuvia ja parhaiden käytänteiden mukaisia.",
-		"paragraph_2": "Jokaisen patternin yhteydessä on esitelty referenssitoteutus, jota mukailemalla vastaava toiminnalisuus on helppo toteuttaa omaan palveluun. Referenssitoteutuksen lähdekoodi on myös saatavilla."
+		"ingress": "Suunnittelumallit eli patternit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
+		"paragraph_1": "Suunnittelumalleissa on kuvattu, kuinka erillisiä Design Systemin komponentteja käytetään yhdessä luomaan ratkaisuja, jotka on ovat käytettävyydeltään, visuaaliselta ilmeeltään ja saavutettavuudeltaan sujuvia ja parhaiden käytänteiden mukaisia.",
+		"paragraph_2": "Jokaisen suunnittelumallin yhteydessä on esitelty referenssitoteutus, jota mukailemalla vastaava toiminnalisuus on helppo toteuttaa omaan palveluun. Referenssitoteutuksen lähdekoodi on myös saatavilla."
 	},
 	"multi-insert": {
 		"heading": "Multi-insert",
@@ -154,7 +154,7 @@
 		},
 		"texts": {
 			"heading": "Tekstit",
-			"paragraph": "Tekstien pääväri on musta (blackBase). Mustaa käytetään myös joidenkin komponenttien yhteydessä olevissa vihjeteksteissä. Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Paikanvaraajanteksteissä käytetään tummanharmaata (depthDark2)."
+			"paragraph": "Tekstien pääväri on musta (blackBase). Mustaa käytetään myös joidenkin komponenttien yhteydessä olevissa ohjeteksteissä. Estetyissä (disabled) teksteissä käytetään vaalean harmaata (depthBase). Paikanvaraajanteksteissä käytetään tummanharmaata (depthDark2)."
 		},
 		"functionals": {
 			"heading": "Linkit, painikkeet ja valinnat",
@@ -256,7 +256,9 @@
 		"dropdown": "Dropdown (Pudotusvalikko)",
 		"expander": "Expander (Laajennuspaneeli)",
 		"heading": "Heading (Otsikko)",
+    "hint_text": "Hint text (Ohjeteksti)",
 		"icon": "Icon (Ikoni)",
+    "label": "Label (Otsake)",
 		"language_menu": "Language Menu (Kielivalikko)",
 		"link": "Link (Linkki)",
 		"loading_spinner": "LoadingSpinner (Latausindikaattori)",

@@ -5,11 +5,11 @@ import translations from '../i18n/translations.fi.json';
 
 export const navItems: NavItem[] = [
     {
-        title: translations.info.info,
-        path: "/info",
+        title: translations.patterns.general,
+        path: "/patterns",
     },
     {
-        title: translations.info.accessibility,
-        path: "/info/accessibility",
-    }
+        title: translations.patterns.multi_insert,
+        path: "/patterns/multi-insert",
+    },
 ]

@@ -22,6 +22,10 @@ const Header: React.FunctionComponent = () => {
       path: '/components',
     },
     {
+      title: t('main_nav.patterns'),
+      path: '/patterns',
+    },
+    {
       title: t('main_nav.info'),
       path: '/info',
     },

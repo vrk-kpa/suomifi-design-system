@@ -12,7 +12,6 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Link,
   defaultSuomifiTheme,
   Pagination,
   PaginationProps,
@@ -227,9 +226,6 @@ const BasicExample = ({
             );
           }}
         />
-        <Link href="#page-content" underline="initial">
-          Tulokset
-        </Link>
       </div>
     </ComponentExample>
   );

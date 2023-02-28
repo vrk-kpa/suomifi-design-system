@@ -1,4 +1,5 @@
 import '../styles/globals.scss';
+import '../GrandOne/GrandOnePage.scss';
 import type { AppProps } from 'next/app';
 
 import Header from '../components/Header/Header';
@@ -27,11 +28,19 @@ function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
           {t('common.skip_to_side_navigation')}
         </SkipLink>
       )}
-      <Header />
-      <Block id="content">
-        <Component {...pageProps} />
-      </Block>
-      <Footer />
+      {!path.startsWith('/grand-one') ? (
+        <>
+          <Header />
+          <Block id="content">
+            <Component {...pageProps} />
+          </Block>
+          <Footer />
+        </>
+      ) : (
+        <Block>
+          <Component {...pageProps} />
+        </Block>
+      )}
     </Block>
   );
 }

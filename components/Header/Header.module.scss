@@ -27,6 +27,7 @@
 
       .mobileNavContainer {
         display: none;
+
         @include upto-lg {
           display: block;
         }
@@ -36,6 +37,7 @@
 
   .desktopNavContainer {
     display: none;
+
     @include from-lg {
       display: flex;
       justify-content: center;

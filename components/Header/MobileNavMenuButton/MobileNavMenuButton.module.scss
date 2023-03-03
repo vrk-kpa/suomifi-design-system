@@ -7,8 +7,8 @@
     height: 40px;
     width: 40px;
     border: none;
-    background-color: transparent;
     background: none;
+    background-color: transparent;
 
     .icon {
       color: $fi-color-black-base;
@@ -23,7 +23,7 @@
     right: -3px;
     z-index: 10000;
     width: 320px;
-    background-color: #ffffff;
+    background-color: white;
     border: 1px solid $fi-color-depth-light1;
 
     ul {
@@ -34,6 +34,19 @@
       li {
         line-height: 40px;
         position: relative;
+
+        a {
+          text-decoration: none;
+          color: $fi-color-highlight-base;
+          display: flex;
+          padding: 0 15px;
+
+          &:hover,
+          &:active {
+            text-decoration: none;
+            color: $fi-color-brand-base;
+          }
+        }
 
         &.active {
           background: $fi-color-depth-secondary;
@@ -56,19 +69,6 @@
         &:hover,
         &:active {
           background: $fi-color-depth-secondary;
-        }
-
-        a {
-          text-decoration: none;
-          color: $fi-color-highlight-base;
-          display: flex;
-          padding: 0 15px;
-
-          &:hover,
-          &:active {
-            text-decoration: none;
-            color: $fi-color-brand-base;
-          }
         }
       }
     }

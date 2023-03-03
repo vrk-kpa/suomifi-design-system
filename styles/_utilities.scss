@@ -1,6 +1,6 @@
 @import 'suomifi-design-tokens/dist/tokens';
 
-$spacings:  (
+$spacings: (
   'xxs': $fi-spacing-xxs,
   'xs': $fi-spacing-xs,
   's': $fi-spacing-s,
@@ -11,7 +11,7 @@ $spacings:  (
   'xxxl': $fi-spacing-xxxl,
   'xxxxl': $fi-spacing-xxxxl,
 );
-                
+
 @each $name, $value in $spacings {
   .m-#{$name} {
     margin: $value !important;
@@ -49,12 +49,13 @@ $spacings:  (
   }
 }
 
-
 .flex {
   display: flex;
+
   &.align-center {
     align-items: center;
   }
+
   &.justify-center {
     justify-content: center;
   }

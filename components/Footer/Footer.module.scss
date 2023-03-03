@@ -2,58 +2,58 @@
 @import '../../styles/breakpoints';
 
 .footer {
-    padding: 0 0 $fi-spacing-xl 0;
+  padding: 0 0 $fi-spacing-xl 0;
 
-    .suomifiLink {
-        display: inline-block;
+  .suomifiLink {
+    display: inline-block;
 
-        .logo {
-            height: 120px;
-            width: auto;
-        }
+    .logo {
+      height: 120px;
+      width: auto;
     }
+  }
 
-    .texts {
-        display: flex;
+  .texts {
+    display: flex;
 
-        @include upto-md {
-            flex-direction: column  ;
-        }
+    @include upto-md {
+      flex-direction: column;
     }
-    
-    .left {
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        margin-right: $fi-spacing-xl;
-        @include upto-md {
-            width: 100%;
-        }
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-right: $fi-spacing-xl;
+
+    @include upto-md {
+      width: 100%;
     }
+  }
 
-    .links {
-        flex: 1;
-        display: flex;
-        gap: $fi-spacing-l;
-        justify-content: flex-end;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        @include upto-md {
-            margin-top: $fi-spacing-xl;
-            justify-content: flex-start;;
-        }
+  .links {
+    flex: 1;
+    display: flex;
+    gap: $fi-spacing-l;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    @include upto-md {
+      margin-top: $fi-spacing-xl;
+      justify-content: flex-start;
     }
+  }
 
-    .githubLink {
-        display: flex;
-        align-items: center;
+  .githubLink {
+    display: flex;
+    align-items: center;
 
-        .githubLogo {
-            width: 1.3rem;
-            height: 1.3rem; 
-            margin-right: $fi-spacing-inset-m;
-        }
-    
+    .githubLogo {
+      width: 1.3rem;
+      height: 1.3rem;
+      margin-right: $fi-spacing-inset-m;
     }
-
+  }
 }

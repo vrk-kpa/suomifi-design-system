@@ -1,6 +1,17 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "next/core-web-vitals",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
-    "@next/next/no-img-element": "off"
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unnecessary-type-constraint": "off",
+    "@typescript-eslint/ban-types": ["off", { "types": ["{}", "object"] }],
+    "@next/next/no-img-element": "off",
+    "prettier/prettier": "error"
   }
 }

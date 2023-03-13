@@ -3,10 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
+    "pre-commit": "lint-staged",
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
+  },
+  "lint-staged": {
+    "**/*.scss": [
+      "stylelint"
+    ],
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ]
   },
   "dependencies": {
     "@types/styled-components": "^5.1.25",
@@ -35,6 +45,8 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.1.2",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "stylelint": "^15.2.0",

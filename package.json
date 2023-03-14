@@ -8,7 +8,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint --dir components --dir interfaces --dir layouts --dir pages --dir styles --dir utils"
   },
   "lint-staged": {
     "**/*.scss": [

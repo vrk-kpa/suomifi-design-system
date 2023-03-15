@@ -1,5 +1,5 @@
 import { CSSProperties, ReactNode } from 'react';
-import styles from './ShowCaseBox.module.scss';
+import styles from './ShowcaseBox.module.scss';
 
 interface ShowcaseBoxProps {
   children: ReactNode;

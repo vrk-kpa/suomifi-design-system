@@ -1,62 +1,63 @@
 .box-with-icon {
-    align-items: center;
-    display: flex;
-    overflow: hidden;
-    padding: 20px;
-    position: relative;
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px 1px rgb(41 41 41 / 20%);
-    max-width: 420px;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 1px rgb(41 41 41 / 20%);
+  max-width: 420px;
 }
+
 .box-with-icon_icon-container {
-    line-height: 0;
-    z-index: 3;
+  line-height: 0;
+  z-index: 3;
 }
 
 .box-with-icon_text {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .box-with-icon_h3 {
-    text-align: center;
+  text-align: center;
 }
 
 .box-with-icon::before {
-    background: #f0f6ff;
-    border-radius: 50%;
-    content: "";
-    display: block;
-    height: 210px;
-    left: -90px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 210px;
-    z-index: 2;
+  background: #f0f6ff;
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 210px;
+  left: -90px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 210px;
+  z-index: 2;
 }
 
 .simplebox-with-icon {
-    align-items: center;
-    display: flex;
-    overflow: hidden;
-    padding: 20px;
-    background: #fff;
-    border-radius: 2px;
-    box-shadow: 0 2px 4px 1px rgb(41 41 41 / 20%);
-    width: 320px;
-}
-.simplebox-with-icon_icon-container {
-    line-height: 0;
-    margin-right: 20px;
-    z-index: 3;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  padding: 20px;
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 1px rgb(41 41 41 / 20%);
+  width: 320px;
 }
 
+.simplebox-with-icon_icon-container {
+  line-height: 0;
+  margin-right: 20px;
+  z-index: 3;
+}
 
 @media (max-width: 991px) {
-    .simplebox-with-icon {
-        width: 100%;
-    }
+  .simplebox-with-icon {
+    width: 100%;
+  }
 }

@@ -2,26 +2,25 @@
 @import '../../styles/breakpoints';
 
 .heroBlock {
-    background-image: url("/hero_bg.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    // width: 100%;
-    padding: $fi-spacing-xxxxl 0;
+  background-image: url('/hero_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: $fi-spacing-xxxxl 0;
+
+  @include upto-lg {
+    padding: $fi-spacing-xxl 0;
+  }
+
+  .heroContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: $fi-spacing-xxl;
 
     @include upto-lg {
-        padding: $fi-spacing-xxl 0;
+      flex-direction: column;
+      gap: $fi-spacing-l;
     }
-
-    .heroContainer {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: $fi-spacing-xxl;
-
-        @include upto-lg {
-            flex-direction: column;
-            gap: $fi-spacing-l;
-        }
-    }
+  }
 }

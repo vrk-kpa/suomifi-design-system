@@ -42,7 +42,7 @@ export const MultiInsert: React.FC = () => {
   const [formInvalid, setFormInvalid] = useState(false);
   const [toasts, setToasts] = useState<ToastText[]>([]);
   const addNewButtonRef = useRef<HTMLButtonElement>(null);
-  let prevWebsites = usePrevious(websites);
+  const prevWebsites = usePrevious(websites);
 
   // When a new MultiInsert item is added, this hook is used to set focus to it
   useEffect(() => {
@@ -53,7 +53,7 @@ export const MultiInsert: React.FC = () => {
     ) {
       websites[websites.length - 1].nameInputRef.current?.focus();
     }
-  }, [websites]);
+  }, [prevWebsites, websites]);
   // When a website is removed, check if the form has become valid
   useEffect(() => {
     if (
@@ -69,7 +69,7 @@ export const MultiInsert: React.FC = () => {
     ) {
       setFormInvalid(true);
     }
-  }, [websites]);
+  }, [prevWebsites, websites]);
 
   const addWebsite = () => {
     const newWebsite = {
@@ -102,7 +102,7 @@ export const MultiInsert: React.FC = () => {
 
     // Removed websites are preferably announced with their title
     // If title is not present, pass text as undefined
-    let toastText: string | undefined =
+    const toastText: string | undefined =
       websites[indexOfRemovedItem].nameInputRef.current?.value;
     flashToast(toastText, websites[indexOfRemovedItem].id);
     setWebsites(websites.filter((website) => website.id !== id));

@@ -22,9 +22,7 @@ const colorTokens = suomifiDesignTokens.colors;
 const borderForLightColor = `1px solid ${colorTokens.depthLight1}`;
 
 const colors: any = Object.entries(colorTokens).reduce(
-  // @ts-ignore
-  // TODO: Figure out why Typescript complains here
-  (obj: ColorTypes, [key, value]: [ColorKeys, string]) => {
+  (obj: ColorTypes, [key, value]: [string, string]) => {
     return {
       ...obj,
       [key]: {

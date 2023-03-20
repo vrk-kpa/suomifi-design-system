@@ -1,0 +1,16 @@
+{
+  "plugins": ["stylelint-prettier"],
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+    "scss/at-import-no-partial-leading-underscore": null,
+    "length-zero-no-unit": null,
+    "shorthand-property-no-redundant-values": null,
+    "selector-class-pattern": [
+      "^[a-zA-Z][a-zA-Z0-9-_]+$",
+      {
+        "message": "Expected selector to be camelCase or  kebab-case"
+      }
+    ],
+    "prettier/prettier": true
+  }
+}

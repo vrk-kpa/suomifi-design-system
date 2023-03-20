@@ -113,9 +113,7 @@ const Page: NextPage = () => {
   );
 };
 
-const FirstExample = ({
-  ...passProps
-}: Partial<PaginationProps> & {}): JSX.Element => {
+const FirstExample = ({}: Partial<PaginationProps> & {}): JSX.Element => {
   const [current, setCurrent] = useState(2);
   const lastPage = 8;
 
@@ -161,9 +159,7 @@ const FirstExample = ({
   );
 };
 
-const BasicExample = ({
-  ...passProps
-}: Partial<PaginationProps> & {}): JSX.Element => {
+const BasicExample = ({}: Partial<PaginationProps> & {}): JSX.Element => {
   const arrLength = 100;
   const step = 5;
 
@@ -231,9 +227,7 @@ const BasicExample = ({
   );
 };
 
-const SuccessExample = ({
-  ...passProps
-}: Partial<PaginationProps> & {}): JSX.Element => {
+const SuccessExample = ({}: Partial<PaginationProps> & {}): JSX.Element => {
   const [current, setCurrent] = useState(2);
   const lastPage = 8;
 
@@ -269,9 +263,7 @@ const SuccessExample = ({
   );
 };
 
-const FailingExample = ({
-  ...passProps
-}: Partial<PaginationProps> & {}): JSX.Element => {
+const FailingExample = ({}: Partial<PaginationProps> & {}): JSX.Element => {
   const [current, setCurrent] = useState(2);
   const lastPage = 8;
 

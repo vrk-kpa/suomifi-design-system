@@ -6,13 +6,11 @@ import {
   Text,
   Paragraph,
   Block,
-  RouterLink,
   ExternalLink,
 } from 'suomifi-ui-components';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/patterns-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
-import Link from 'next/link';
 import { MultiInsert } from '../../components/MultiInsert/MultiInsert';
 
 const MultiInsertPage: NextPage = () => {

@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { useTranslation } from 'next-export-i18n';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/components-sidenav';
-import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
 import {
   Block,
@@ -11,8 +10,6 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Link as ExampleLink,
-  ExternalLink as ExampleExternalLink,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {

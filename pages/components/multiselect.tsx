@@ -5,7 +5,6 @@ import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
-import { useState } from 'react';
 import {
   Block,
   Heading,

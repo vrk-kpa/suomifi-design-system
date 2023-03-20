@@ -8,7 +8,6 @@ import {
   Link as SuomifiLink,
   Text,
 } from 'suomifi-ui-components';
-import GitHubLogo from '../../assets/icons/github.svg';
 import styles from './Footer.module.scss';
 
 const Footer: React.FunctionComponent = () => {

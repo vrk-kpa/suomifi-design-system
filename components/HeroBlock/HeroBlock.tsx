@@ -1,6 +1,8 @@
 import { Block, Heading, Text } from 'suomifi-ui-components';
 import { useTranslation } from 'next-export-i18n';
+import Image from 'next/image';
 import styles from './HeroBlock.module.scss';
+import suomifiIcon from '/public/icons/suomifi.svg';
 
 const InfoBox: React.FunctionComponent = () => {
   const { t } = useTranslation();
@@ -8,7 +10,9 @@ const InfoBox: React.FunctionComponent = () => {
     <Block variant="div" className={styles.heroBlock}>
       <Block variant="div" className="container">
         <Block variant="div" className={styles.heroContainer}>
-          <img src="icons/suomifi.svg" alt="Suomi.fi" />
+          <div className={styles.heroLogoContainer}>
+            <Image src={suomifiIcon} alt="Suomi.fi" />
+          </div>
           <Block variant="div">
             <Heading variant="h1hero" color="whiteBase">
               {t('front_page.hero_heading')}

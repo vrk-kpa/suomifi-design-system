@@ -2,7 +2,7 @@
 @import '../../styles/breakpoints';
 
 .heroBlock {
-  background-image: url('/hero_bg.png');
+  background-image: url('~/public/hero_bg.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,5 +22,11 @@
       flex-direction: column;
       gap: $fi-spacing-l;
     }
+  }
+
+  .heroLogoContainer {
+    width: 100%;
+    max-width: 63px;
+    height: 100%;
   }
 }

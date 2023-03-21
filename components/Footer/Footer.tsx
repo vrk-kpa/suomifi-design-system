@@ -1,5 +1,6 @@
 import { useTranslation } from 'next-export-i18n';
 import Link from 'next/link';
+import Image from 'next/image';
 import {
   Block,
   ExternalLink,
@@ -8,6 +9,7 @@ import {
   Link as SuomifiLink,
   Text,
 } from 'suomifi-ui-components';
+import gitHubLogo from '/public/github.svg';
 import styles from './Footer.module.scss';
 
 const Footer: React.FunctionComponent = () => {
@@ -41,13 +43,10 @@ const Footer: React.FunctionComponent = () => {
                 labelNewWindow={t('common.opens_in_a_new_tab')}
                 className={styles.githubLink}
               >
-                <span className="flex align-center">
-                  <img
-                    src="/github.svg"
-                    aria-hidden
-                    alt=""
-                    className={styles.githubLogo}
-                  />
+                <span className={'flex align-center'}>
+                  <div className={styles.githubLogo}>
+                    <Image src={gitHubLogo} aria-hidden alt="" />
+                  </div>
                   suomifi-ui-components
                 </span>
               </ExternalLink>

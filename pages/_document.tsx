@@ -9,7 +9,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap"
             rel="stylesheet"
           />
-          <link rel="shortcut icon" href="/favicon.svg" />
+          <link rel="shortcut icon" href="favicon.svg" />
         </Head>
         <body>
           <Main />

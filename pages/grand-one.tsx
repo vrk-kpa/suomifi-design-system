@@ -12,7 +12,11 @@ import {
   StaticIcon,
   VisuallyHidden,
 } from 'suomifi-ui-components';
+import Image from 'next/image';
 import BoxWithIcon from '../GrandOne/BoxWithIcon/BoxWithIcon';
+import suomifiLogo from '/public/grand-one/suomifi_flag.png';
+import dsProcessImg from '/public/grand-one/DS_process.png';
+import dsMobileImg from '/public/grand-one/nimenmuutoshakemus-mobile.png';
 
 const Page: NextPage = () => (
   <>
@@ -28,7 +32,7 @@ const Page: NextPage = () => (
       <Block variant="div" id="section1">
         <Block variant="div" className="container">
           <Block style={{ textAlign: 'center' }}>
-            <img src="/grand-one/suomifi_flag.png" alt="Suomi.fi logo" />
+            <Image src={suomifiLogo} alt="Suomi.fi logo" />
           </Block>
           <Block mt="xl">
             <Heading
@@ -341,10 +345,9 @@ const Page: NextPage = () => (
         </Block>
         <Block variant="div" className="container">
           <Block mt="xl">
-            <img
-              src="/grand-one/DS_process.png"
+            <Image
+              src={dsProcessImg}
               alt="Suomi.fi Design Systemin kehittämisprosessi"
-              style={{ maxWidth: '100%' }}
               aria-describedby="imagedescripion"
             />
             <VisuallyHidden id="imagedescripion">
@@ -468,12 +471,18 @@ const Page: NextPage = () => (
             </Paragraph>
           </Block>
           <Block variant="div" className="half">
-            <Block style={{ textAlign: 'center' }}>
-              <img
-                src="grand-one/nimenmuutoshakemus-mobile.png"
-                alt="Suomi.fi komponentteja mobiilinäytöllä"
-                style={{ maxWidth: '245px' }}
-              />
+            <Block>
+              <div
+                style={{
+                  maxWidth: '245px',
+                  margin: '0 auto',
+                }}
+              >
+                <Image
+                  src={dsMobileImg}
+                  alt="Suomi.fi komponentteja mobiilinäytöllä"
+                />
+              </div>
             </Block>
           </Block>
         </Block>

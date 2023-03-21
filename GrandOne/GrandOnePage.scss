@@ -58,7 +58,7 @@
 
   #hero {
     width: 100%;
-    background-image: url('/grand-one/grand-one-banner.png');
+    background-image: url('~/public/grand-one/grand-one-banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -100,7 +100,7 @@
   }
 
   #section4 .left {
-    background: url('/grand-one/SFI-tabletti.jpg');
+    background: url('~/public/grand-one/SFI-tabletti.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -124,7 +124,7 @@
 
   #section8 {
     padding: var(--grand-one-section-spacing-small) 0;
-    background-image: url('/hero_bg.png');
+    background-image: url('~/public/hero_bg.png');
   }
 
   @media (min-width: 576px) {

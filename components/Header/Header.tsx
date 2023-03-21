@@ -1,10 +1,12 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Block } from 'suomifi-ui-components';
 import styles from './Header.module.scss';
 import { NavItem } from '../../interfaces/interfaces';
 import Navbar from './Navbar/Navbar';
 import MobileNavMenuButton from './MobileNavMenuButton/MobileNavMenuButton';
 import { useTranslation } from 'next-export-i18n';
+import designSystemLogo from '/public/designSystemLogo.svg';
 
 const Header: React.FunctionComponent = () => {
   const { t } = useTranslation();
@@ -36,11 +38,9 @@ const Header: React.FunctionComponent = () => {
       <Block className={styles.upper}>
         <Block className={styles.container}>
           <Link href="/">
-            <img
-              src="/designSystemLogo.svg"
-              alt="Suomi.fi Design System"
-              className={styles.logo}
-            />
+            <div className={styles.logo}>
+              <Image src={designSystemLogo} alt="Suomi.fi Design System" />
+            </div>
           </Link>
           <div className={styles.mobileNavContainer}>
             <MobileNavMenuButton

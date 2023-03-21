@@ -239,7 +239,6 @@ const ButtonPage: NextPage = () => {
           </Paragraph>
 
           <ComponentExample
-            noCode
             style={{
               padding: defaultSuomifiTheme.spacing.m,
               marginBottom: defaultSuomifiTheme.spacing.s,
@@ -265,7 +264,6 @@ const ButtonPage: NextPage = () => {
             </Block>
           </ComponentExample>
           <ComponentExample
-            noCode
             style={{
               padding: defaultSuomifiTheme.spacing.m,
               marginBottom: defaultSuomifiTheme.spacing.s,
@@ -295,7 +293,6 @@ const ButtonPage: NextPage = () => {
             </Block>
           </ComponentExample>
           <ComponentExample
-            noCode
             style={{
               padding: defaultSuomifiTheme.spacing.m,
               marginBottom: defaultSuomifiTheme.spacing.s,
@@ -325,7 +322,6 @@ const ButtonPage: NextPage = () => {
             </Block>
           </ComponentExample>
           <ComponentExample
-            noCode
             style={{
               padding: defaultSuomifiTheme.spacing.m,
               marginBottom: defaultSuomifiTheme.spacing.s,
@@ -359,7 +355,6 @@ const ButtonPage: NextPage = () => {
             </Block>
           </ComponentExample>
           <ComponentExample
-            noCode
             style={{
               padding: defaultSuomifiTheme.spacing.m,
               background: defaultSuomifiTheme.colors.whiteBase,

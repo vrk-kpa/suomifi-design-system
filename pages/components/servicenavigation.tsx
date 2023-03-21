@@ -11,8 +11,6 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  Link as ExampleLink,
-  ExternalLink as ExampleExternalLink,
   ServiceNavigation,
   ServiceNavigationItem,
   RouterLink,

@@ -19,9 +19,7 @@ export const cssValueToString = (cssValue: number | string | ValueUnit) => {
   return typeof cssValue === 'number' ? cssValue.toString(10) : cssValue;
 };
 
-const Container = styled(({ size, name, ...passProps }) => (
-  <div {...passProps} />
-))(
+const Container = styled(({ ...passProps }) => <div {...passProps} />)(
   ({ size }) => `
   min-height: calc(${size} + 2em);
   max-width: 420px;

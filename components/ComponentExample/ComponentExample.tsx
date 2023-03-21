@@ -8,7 +8,6 @@ import MobileDevice from '../MobileDevice/MobileDevice';
 import ShowcaseBox from '../ShowcaseBox/ShowcaseBox';
 import React from 'react';
 import ComponentCode from './ComponentCode';
-import styles from './ComponentExample.module.scss';
 
 type ComponentExampleVariant = 'normal' | 'mobile_device';
 
@@ -18,7 +17,6 @@ interface ComponentExampleProps {
   children?: ReactNode;
   codeString?: string;
   style?: CSSProperties;
-  noCode?: boolean;
 }
 
 const getWithoutWrappers = (children: any): ReactNode[] =>
@@ -36,7 +34,6 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
   filterPropsInExample,
   codeString,
   style,
-  noCode,
 }) => {
   const showcase =
     variant === 'mobile_device' ? (

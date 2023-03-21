@@ -152,9 +152,7 @@ const Page: NextPage = () => {
   );
 };
 
-const BasicExample = ({
-  ...passProps
-}: Partial<LoadingSpinnerProps>): JSX.Element => {
+const BasicExample = ({}: Partial<LoadingSpinnerProps>): JSX.Element => {
   const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
   const [status, setStatus] = useState<LoadingSpinnerStatus>('loading');
@@ -175,7 +173,6 @@ const BasicExample = ({
 
   return (
     <ComponentExample
-      noCode
       style={{
         marginBottom: defaultSuomifiTheme.spacing.s,
         display: 'flex',
@@ -224,9 +221,7 @@ const BasicExample = ({
   );
 };
 
-const SuccessExample = ({
-  ...passProps
-}: Partial<LoadingSpinnerProps>): JSX.Element => {
+const SuccessExample = ({}: Partial<LoadingSpinnerProps>): JSX.Element => {
   const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
   const [status, setStatus] = useState<LoadingSpinnerStatus>('failed');
@@ -247,7 +242,6 @@ const SuccessExample = ({
 
   return (
     <ComponentExample
-      noCode
       style={{
         marginBottom: defaultSuomifiTheme.spacing.s,
         display: 'flex',
@@ -299,9 +293,7 @@ const SuccessExample = ({
   );
 };
 
-const FailingExample = ({
-  ...passProps
-}: Partial<LoadingSpinnerProps>): JSX.Element => {
+const FailingExample = ({}: Partial<LoadingSpinnerProps>): JSX.Element => {
   const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
   const [status, setStatus] = useState<LoadingSpinnerStatus>('success');
@@ -322,7 +314,6 @@ const FailingExample = ({
 
   return (
     <ComponentExample
-      noCode
       style={{
         marginBottom: defaultSuomifiTheme.spacing.s,
         display: 'flex',

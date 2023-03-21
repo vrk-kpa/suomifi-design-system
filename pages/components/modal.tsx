@@ -53,7 +53,7 @@ const Page: NextPage = () => {
         </Paragraph>
 
         <Block variant="section">
-          <ConfirmExample title="" desc="" noCode />
+          <ConfirmExample />
         </Block>
 
         <Block variant="section" className="my-xl">
@@ -99,7 +99,7 @@ const Page: NextPage = () => {
           </Paragraph>
         </Block>
 
-        <ConfirmExample title="" desc="" noCode={false} />
+        <ConfirmExample />
 
         <Block variant="section">
           <Heading variant="h2" className="my-xl">
@@ -268,16 +268,7 @@ const DefaultExample = ({ ...passProps }: Partial<ModalProps>): JSX.Element => {
   );
 };
 
-const ConfirmExample = ({
-  title,
-  desc,
-  noCode,
-  ...passProps
-}: Partial<ModalProps> & {
-  title: string;
-  desc: string;
-  noCode: boolean;
-}): JSX.Element => {
+const ConfirmExample = ({ ...passProps }: Partial<ModalProps>): JSX.Element => {
   const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
   return (

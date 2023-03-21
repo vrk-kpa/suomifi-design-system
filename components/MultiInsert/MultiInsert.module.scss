@@ -1,0 +1,45 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.multi-insert {
+  .multi-insert_box {
+    background: $fi-color-highlight-light4;
+    border: 1px solid $fi-color-depth-light1;
+    padding: $fi-spacing-m;
+    margin-bottom: $fi-spacing-m;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 570px) {
+      flex-direction: column;
+    }
+  }
+
+  .multi-insert_label {
+    margin-bottom: $fi-spacing-xs;
+  }
+
+  .multi-insert_content {
+    flex: 1;
+    padding-right: $fi-spacing-m;
+
+    @media screen and (max-width: 570px) {
+      padding-right: 0;
+      padding-bottom: $fi-spacing-m;
+    }
+  }
+
+  .multi-insert_remove-button-container {
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: 570px) {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}

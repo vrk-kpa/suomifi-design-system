@@ -1,0 +1,62 @@
+@import '~suomifi-design-tokens/dist/tokens';
+@import '../../styles/breakpoints';
+
+.smallScreenNavContainer {
+  @include from-lg {
+    display: none;
+  }
+
+  background: $fi-color-white-base;
+  border: 1px solid $fi-color-depth-light1;
+  margin-top: $fi-spacing-m;
+
+  .navHeadertext {
+    font-weight: bold;
+    margin-left: $fi-spacing-xs;
+  }
+}
+
+.SideNavLayout {
+  background: $fi-color-white-base;
+  margin: $fi-spacing-xl 0;
+  border: 1px solid $fi-color-depth-light1;
+  display: flex;
+
+  @include upto-md {
+    margin-left: -$fi-spacing-xs;
+    margin-right: -$fi-spacing-xs;
+  }
+
+  @include upto-lg {
+    flex-direction: column;
+  }
+
+  .left {
+    @include upto-lg {
+      display: none;
+    }
+
+    min-width: 370px;
+
+    .navHeader {
+      display: flex;
+      align-items: center;
+      padding: $fi-spacing-xs;
+
+      .navHeadertext {
+        font-weight: bold;
+        margin-left: $fi-spacing-xs;
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+    margin: $fi-spacing-m $fi-spacing-s;
+  }
+}
+
+.navStaticIcon {
+  width: 40px !important; // This is in order to easily override .fi-icon styles from ServiceNavigation
+  height: 40px !important;
+}

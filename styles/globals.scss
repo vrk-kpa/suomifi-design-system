@@ -1,0 +1,81 @@
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
+@import 'suomifi-ui-components/dist/main.css';
+@import '~suomifi-design-tokens/dist/tokens';
+@import './_utilities';
+@import './_breakpoints';
+
+:root {
+  /* CSS properties */
+  --content-max-width: 1140px;
+}
+
+body {
+  margin: 0;
+}
+
+.fi-block.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.fi-block.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@include from-sm {
+  .fi-block.container {
+    width: 540px;
+  }
+}
+
+@include from-md {
+  .fi-block.container {
+    width: 720px;
+  }
+}
+
+@include from-lg {
+  .fi-block.container {
+    width: 960px;
+  }
+}
+
+@include from-xl {
+  .fi-block.container {
+    width: 1140px;
+    padding: 0;
+  }
+}
+
+#content {
+  background: $fi-color-depth-light3;
+  display: flex;
+  flex: 1;
+}
+
+.absoluteFocus {
+  &:focus {
+    outline: 0;
+    position: relative;
+
+    &::after {
+      @include fi-focus-absolute-focus;
+    }
+  }
+}
+
+.fi-button.button--custom {
+  background: #09ae88;
+}
+
+.fi-button.button--custom:hover {
+  background: #e97025;
+}
+
+.fi-button.button--custom:active {
+  background: #faaf00;
+}

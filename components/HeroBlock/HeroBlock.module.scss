@@ -1,0 +1,32 @@
+@import '~suomifi-design-tokens/dist/tokens';
+@import '../../styles/breakpoints';
+
+.heroBlock {
+  background-image: url('~/public/hero_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: $fi-spacing-xxxxl 0;
+
+  @include upto-lg {
+    padding: $fi-spacing-xxl 0;
+  }
+
+  .heroContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: $fi-spacing-xxl;
+
+    @include upto-lg {
+      flex-direction: column;
+      gap: $fi-spacing-l;
+    }
+  }
+
+  .heroLogoContainer {
+    width: 100%;
+    max-width: 63px;
+    height: 100%;
+  }
+}

@@ -1,0 +1,18 @@
+@import '~suomifi-design-tokens/dist/tokens';
+@import '../../styles/breakpoints';
+
+.infopageLayout {
+  background: $fi-color-white-base;
+  margin: $fi-spacing-xl 0;
+  padding: $fi-spacing-xl;
+  border: 1px solid $fi-color-depth-light1;
+
+  @include upto-md {
+    margin-left: -$fi-spacing-xs;
+    margin-right: -$fi-spacing-xs;
+  }
+
+  @include upto-lg {
+    flex-direction: column;
+  }
+}

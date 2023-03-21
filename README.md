@@ -1,51 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Suomi.fi Design System
 
-# Features/ideas
+Documentation website for the [Suomi.fi Design System](https://vrk-kpa.github.io/suomifi-design-system/)
 
-## Folder structure
+Built using [suomifi-ui-components](https://github.com/vrk-kpa/suomifi-ui-components)
 
-### Components
+You can see the current development build at (https://vrk-kpa.github.io/suomifi-design-system/)
 
-- Non-page level React components and their stylesheets live here
+The site presents the elements, features and possibilities of the [Suomi.fi Design System](https://vrk-kpa.github.io/suomifi-design-system/).
 
-### Interfaces
+Contents of the site:
 
-- Common place to store general interfaces
+- General description of the project and its goals
+- Examples of components and styles
+- Instructions and guidelines for using the design system
+- General information on accessibility
 
-### Layouts
+For more detailed information check out the site itself from the above link.
 
-- Components for NextJS layout pattern
+## Development
 
-### Pages
-
-- NextJS pages folder for routing, works like magic!
-
-### Styles
-
-- Contains global CSS classes which can be used anywhere (like `.container`)
-- Also contains utility CSS classes like margin helpers. Created from suomifi-tokens
-- Breakpoints and their helper mixins
-
-### Utils
-
-- Misc stuff
-
----
-
-## Patterns
-
-- CSS Modules and utility classes for component styling (no CSS-in-JS)
-- Use suomifi-ui-components wherever possible, even use `<Block>` instead of `<div>`
-  - Caveat: Because of styled-components specificty issues, `<div>` is preferable in high lever wrappers
-
----
-
-# Development
-
-Run the development server:
-
-```bash
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser
+For development related info, read the [Development.md](DEVELOPMENT.md)

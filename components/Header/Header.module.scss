@@ -1,0 +1,47 @@
+@import '~suomifi-design-tokens/dist/tokens';
+@import '../../styles/breakpoints';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  border-top: 4px solid $fi-color-brand-base;
+  border-bottom: 1px solid $fi-color-depth-light1;
+
+  .upper {
+    display: flex;
+    justify-content: center;
+    padding: 15px 15px 0 15px;
+
+    .container {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      max-width: var(--content-max-width);
+      padding-bottom: 15px;
+
+      .logo {
+        height: 32px;
+        width: auto;
+        cursor: pointer;
+      }
+
+      .mobileNavContainer {
+        display: none;
+
+        @include upto-lg {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .desktopNavContainer {
+    display: none;
+
+    @include from-lg {
+      display: flex;
+      justify-content: center;
+      border-top: 1px solid $fi-color-depth-light1;
+    }
+  }
+}

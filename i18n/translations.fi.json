@@ -253,6 +253,7 @@
     "breadcrumb": "Breadcrumb (Murupolku)",
     "button": "Button (Painike)",
     "checkbox": "Checkbox (Valintaruutu)",
+    "date_input": "Date input (Päivämääräkenttä)",
     "dropdown": "Dropdown (Pudotusvalikko)",
     "expander": "Expander (Laajennuspaneeli)",
     "heading": "Heading (Otsikko)",
@@ -499,8 +500,59 @@
     }
   },
 
+  "date_input_page": {
+    "site_title": "Date input (Päivämääräkenttä) | Suomi.fi Design System",
+    "heading": "Date input (Päivämääräkenttä)",
+    "ingress": "Päivämääräkenttä on komponentti, johon käyttäjä voi syöttää päivämäärätiedon valitsemalla sen kalenterista tai kirjoittamalla päivämäärän syöttökenttään. Päivämääräkenttä ohjaa käyttäjää syöttämään päivämäärän oikeassa muodossa muotoiluohjeen ja kalenterin avulla.",
+    "accessibility_list": {
+      "point_1": "Päivämääräkentän kanssa tulee käyttää otsaketta (label), joka kuvaa päivämääräkentän tarkoituksen. Otsake on osa päivämääräkomponenttia.",
+      "point_2": "Käyttäjälle tulee esittää ohje päivämäärän muotoiluun. Ohjeen tulisi olla aina näkyvissä joko ohjetekstissä tai otsakkeessa. Ohjetekstin käyttö muotoiluohjeen esittämisessä on suositeltavaa.",
+      "point_3": "Muotoiluohjetta ei tule ilmoittaa ainoastaan päivämääräkentän placeholder-attribuutissa, koska tieto katoaa näkyvistä käyttäjän kirjoittaessa kenttään.",
+      "point_4": "Kalenteria voi käyttää päivän valitsemiseen näppäimistön avulla. Focuksen siirtyminen pois kalenterin sisältä on estetty kalenterin ollessa auki."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Päivämääräkenttä koostuu otsakkeesta, tekstin syöttökentästä, sekä valinnaisesta kalenteristapainikkeesta. Päivämääräkenttään voidaan lisäksi antaa ohjeteksti, joka näkyy otsakkeen ja syöttökentän välissä. Päivämäärän muotoiluohje on suositeltava antaa ohjetekstinä.",
+      "text_2": "Lomakkeessa olevat kentät ovat oletusarvoisesti pakollisia, ja valinnaiset kentät ilmoitetaan valinnaisuustekstillä. Valinnaisuusteksti näytetään suluissa otsakkeen lopussa. Päivämääräkentälle voidaan lisäksi antaa tila ja tilateksi, jotka ilmaisevat hyväksyttyä tai virheellistä tilaa.",
+      "text_3": "Kalenteripainike avaa dialogin, josta käyttäjä voi valita päivämäärän kalenterinäkymässä. Dialogi sisältää lisäksi painikkeen valitun päivän vahvistamiseen. Valittu päivä vahvistetaan erikseen, jotta dialogi ei sulkeudu vahingossa tai ennalta-arvaamattomasti päivämäärää valitessa."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Käyttäjälle tulee aina antaa mahdollisuus kirjoittaa päivämäärä suoraan tekstin syöttökenttään. Päivämäärän valinta kalenterinäkymästä on käyttäjälle valinnainen toiminto. Selkeissä päivämäärävalinnoissa, kuten syntymäpäivässä, on hyvä käyttää pelkkää syöttökenttää. Kalenteri helpottaa päivämäärän valintaa silloin, kun halutaan nähdä päivämäärä suhteessa viikonpäiviin.",
+      "text_2": "Päivämääräkenttää ei tule käyttää yksittäisen kuukausi-, vuosi- tai kellonaikatiedon valitsemiseen. Näissä tapauksissa voidaan käyttää päivämääräkentän sijaan esimerkiksi alasvetovalikkoa.",
+      "text_3": "Päivämääräkenttä sisältää kalenterista versiot työpöytäkäyttöön ja mobiilikäyttöön. Oletusarvoisesti käytössä on työpöytäversio, joka avaa kalenterin joko syöttökentän ala- ta yläpuolelle käytettävissä olevan tilan mukaan. Mobiilikäyttöön tarkoitettu versio avaa kalenterin selaimen alalaitaan.",
+      "text_4": "Kalenterinäkymä tukee erilaisia näppäimistön pikakomentoja kuukausien ja vuosien välillä liikkumiseen. Lisäksi kalenterin mobiiliversio tukee pyyhkäisyeleitä edelliseen ja seuraavaan kuukauteen siirtymiseen."
+    },
+    "shortcuts": {
+      "shortcut_1_description": "Siirry päivien välillä käyttämällä nuolinäppäimiä",
+      "shortcut_2_description": "Siirry viikon alkuun painikkeella ",
+      "shortcut_3_description": " ja viikon loppuun painikkeella ",
+      "shortcut_4_description": "Siirry kuukausi taaksepäin painikkeella ",
+      "shortcut_5_description": " ja kuukausi eteenpäin painikkeella ",
+      "shortcut_6_description": "Siirry edelliseen vuoteen painikkeilla ",
+      "shortcut_7_description": " ja seuraavaan vuoteen painikkeilla "
+    },
+    "example": {
+      "common": {
+        "label": "Ajastettu julkaisupäivä",
+        "hint_text": "Kirjoita muodossa P.KK.VVVV. Ajastettu sisältö julkaistaan julkaisupäivänä."
+      },
+      "error": {
+        "title": "Virheellinen päivämääräkenttä",
+        "status_text": "Vaadittu tieto"
+      },
+      "optional": {
+        "title": "Valinnainen päivämääräkenttä",
+        "optional_text": "valinnainen"
+      },
+      "smallscreen": {
+        "title": "Kalenterin mobiiliversio"
+      }
+    }
+  },
+
   "dropdown_page": {
-    "site_title": " Dropdown (Pudotusvalikko)| Suomi.fi Design System",
+    "site_title": "Dropdown (Pudotusvalikko) | Suomi.fi Design System",
     "heading": "Dropdown (Pudotusvalikko)",
     "ingress": "Pudotusvalikko kokoaa sisältölistan monesta valittavasta vaihtoehdosta joista käyttäjä voi valita yhden. Pudotusvalikosta voidaan myös aktivoida toimintoja.",
     "size_and_usage": {

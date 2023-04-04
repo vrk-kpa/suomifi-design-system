@@ -29,6 +29,10 @@ export const navItems: NavItem[] = [
     path: '/components/checkbox',
   },
   {
+    title: translations.components.date_input,
+    path: '/components/dateinput',
+  },
+  {
     title: translations.components.dropdown,
     path: '/components/dropdown',
   },
@@ -80,7 +84,6 @@ export const navItems: NavItem[] = [
     title: translations.components.search_input,
     path: '/components/searchinput',
   },
-
   {
     title: translations.components.service_navigation,
     path: '/components/servicenavigation',
@@ -105,22 +108,18 @@ export const navItems: NavItem[] = [
     title: translations.components.text_input,
     path: '/components/textinput',
   },
-
   {
     title: translations.components.toast,
     path: '/components/toast',
   },
-
   {
     title: translations.components.toggle,
     path: '/components/toggle',
   },
-
   {
     title: translations.components.tooltip,
     path: '/components/tooltip',
   },
-
   {
     title: translations.components.wizard_navigation,
     path: '/components/wizardnavigation',

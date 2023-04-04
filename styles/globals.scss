@@ -79,3 +79,15 @@ body {
 .fi-button.button--custom:active {
   background: #faaf00;
 }
+
+kbd.keyboard-button {
+  @include fi-text-body-text-small;
+
+  background-color: $fi-color-depth-light3;
+  border-radius: $fi-radius-basic;
+  border: 1px solid $fi-color-depth-light1;
+  box-shadow: $fi-shadow-panel-shadow;
+  display: inline-block;
+  line-height: 1;
+  padding: 2px 4px;
+}

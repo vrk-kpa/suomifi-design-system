@@ -35,7 +35,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('date_input_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/dev/#/Components/DateInput"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/DateInput"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}

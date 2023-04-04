@@ -503,16 +503,16 @@
   "date_input_page": {
     "site_title": "Date input (Päivämääräkenttä) | Suomi.fi Design System",
     "heading": "Date input (Päivämääräkenttä)",
-    "ingress": "Päivämääräkenttä on komponentti, johon käyttäjä voi syöttää päivämäärätiedon valitsemalla sen kalenterista tai kirjoittamalla päivämäärän syöttökenttään. Päivämääräkenttä ohjaa käyttäjää syöttämään päivämäärän oikeassa muodossa muotoiluohjeen ja kalenterin avulla.",
+    "ingress": "Päivämääräkenttä on komponentti, johon käyttäjä voi syöttää päivämäärätiedon valitsemalla sen kalenterista tai kirjoittamalla päivämäärän syöttökenttään. Päivämääräkenttä ohjaa käyttäjää syöttämään päivämäärän oikeassa muodossa muoto-ohjeen ja kalenterin avulla.",
     "accessibility_list": {
       "point_1": "Päivämääräkentän kanssa tulee käyttää otsaketta (label), joka kuvaa päivämääräkentän tarkoituksen. Otsake on osa päivämääräkomponenttia.",
-      "point_2": "Käyttäjälle tulee esittää ohje päivämäärän muotoiluun. Ohjeen tulisi olla aina näkyvissä joko ohjetekstissä tai otsakkeessa. Ohjetekstin käyttö muotoiluohjeen esittämisessä on suositeltavaa.",
-      "point_3": "Muotoiluohjetta ei tule ilmoittaa ainoastaan päivämääräkentän placeholder-attribuutissa, koska tieto katoaa näkyvistä käyttäjän kirjoittaessa kenttään.",
+      "point_2": "Käyttäjälle tulee esittää ohje päivämäärän muodosta. Ohjeen tulee olla aina näkyvissä joko ohjetekstissä tai otsakkeessa. Suositeltu paikka päivämäärän muoto-ohjeelle on komponentin ohjeteksti.",
+      "point_3": "Muoto-ohjetta ei tule ilmoittaa ainoastaan päivämääräkentän placeholder-attribuutissa, koska tieto katoaa näkyvistä käyttäjän kirjoittaessa kenttään.",
       "point_4": "Kalenteria voi käyttää päivän valitsemiseen näppäimistön avulla. Focuksen siirtyminen pois kalenterin sisältä on estetty kalenterin ollessa auki."
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text_1": "Päivämääräkenttä koostuu otsakkeesta, tekstin syöttökentästä, sekä valinnaisesta kalenteristapainikkeesta. Päivämääräkenttään voidaan lisäksi antaa ohjeteksti, joka näkyy otsakkeen ja syöttökentän välissä. Päivämäärän muotoiluohje on suositeltava antaa ohjetekstinä.",
+      "text_1": "Päivämääräkenttä koostuu otsakkeesta, tekstin syöttökentästä, sekä valinnaisesta kalenteristapainikkeesta. Päivämääräkenttään voidaan lisäksi antaa ohjeteksti, joka näkyy otsakkeen ja syöttökentän välissä. Päivämäärän muoto-ohje on suositeltava antaa ohjetekstinä.",
       "text_2": "Lomakkeessa olevat kentät ovat oletusarvoisesti pakollisia, ja valinnaiset kentät ilmoitetaan valinnaisuustekstillä. Valinnaisuusteksti näytetään suluissa otsakkeen lopussa. Päivämääräkentälle voidaan lisäksi antaa tila ja tilateksi, jotka ilmaisevat hyväksyttyä tai virheellistä tilaa.",
       "text_3": "Kalenteripainike avaa dialogin, josta käyttäjä voi valita päivämäärän kalenterinäkymässä. Dialogi sisältää lisäksi painikkeen valitun päivän vahvistamiseen. Valittu päivä vahvistetaan erikseen, jotta dialogi ei sulkeudu vahingossa tai ennalta-arvaamattomasti päivämäärää valitessa."
     },
@@ -535,7 +535,7 @@
     "example": {
       "common": {
         "label": "Ajastettu julkaisupäivä",
-        "hint_text": "Kirjoita muodossa P.KK.VVVV. Ajastettu sisältö julkaistaan julkaisupäivänä."
+        "hint_text": "Kirjoita muodossa PP.KK.VVVV. Ajastettu sisältö julkaistaan julkaisupäivänä."
       },
       "error": {
         "title": "Virheellinen päivämääräkenttä",

@@ -252,6 +252,7 @@
   },
   "components": {
     "component_usage_info": "Komponenttien käyttöohje",
+    "actionmenu": "ActionMenu (Toimintovalikko)",
     "alert": "Alert (Heräte)",
     "block": "Block (Lohko)",
     "breadcrumb": "Breadcrumb (Murupolku)",
@@ -302,6 +303,46 @@
       "description": "Jos komponentin tyylejä tarvitsee täydentää tai muokata se onnistuu usealla eri tavalla.",
       "button_styled": "Tyyli",
       "button_class": "Luokka nimi"
+    }
+  },
+
+  "actionmenu_page": {
+    "site_title": "ActionMenu (Toimintovalikko) | Suomi.fi Design System",
+    "heading": "ActionMenu (Toimintovalikko)",
+    "ingress": "Toimintovalikko kokoaa sisältölistan monesta valittavasta vaihtoehdosta joista käyttäjä voi valita yhden. Pudotusvalikosta voidaan myös aktivoida toimintoja.",
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Toimintovalikko säästää tilaa käyttöliittymässä sekä vähentää valinta- ja tekstinsyöttövirheitä tarjoamalla käyttäjälle listan valmiiksi valituista vaihtoehdoista. Pudotusvalikkon avulla käyttäjä valitsee listasta yhden vaihtoehdon. Pudotusvalikolle voidaan antaa oletusarvo tai näyttää oletuksena haluttu täyteteksti (visual placeholder) valikkopainikkeessa. Täyteteksti katoaa käyttäjän tehtyä valinnan."
+    },
+    "accessibility_list": {
+      "point_1": "Huomioi pudotusvalikon asettamat mahdolliset kognitiiviset saavutettavuushaasteet. Käytä komponenttia harkiten ja mieti tarkoin pudotusvalikon sisältö.",
+      "point_2": "Yhdellä silmäyksellä hahmotettava valintalista tukee kognitiivista saavutettavuutta. Mieti, olisiko pudotusvalikon yhteydessä mahdollista tarjota edeltävä rajaus, joka vähentäisi pudotusvalikon valintavaihtoehtoja.",
+      "point_3": "Pyri välttämään kaiken ylimääräisen lisäinformaation esittämistä pudotusvalikon yhteydessä.",
+      "point_4": "Jos valintavaihtoehtoja on vain muutama, hyvä vaihtoehto pudotusvalikolle voi olla valintaruutu- tai valintanappikomponentti.",
+      "point_5": "Järjestä pudotusvalikon sisältö aakkosjärjestykseen tai relevanssin mukaan.",
+      "point_6": "Pudotusvalikon yhteydessä tulee aina käyttää otsaketta (label)",
+      "point_7": "Ruudunlukijat eivät lue täytetekstiä (visual placeholder). Täyteteksti myös katoaa käyttäjän tehtyä valinnan, joten sitä ei tule käyttää ohjeistukseen"
+    },
+
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text": "Pudotusvalikko koostuu otsakkeesta, valikkopainikkeesta sekä valikosta, joka aukeaa valikkopainiketta painamalla. Pudostusvalikon otsake (label) ilmaisee selkeästi ja lyhyesti mitä pudotusvalikko sisältää. Kun käyttäjä tekee valinnan, valikko sulkeutuu ja valittu arvo näkyy valikkopainikkeessa. "
+    },
+
+    "example": {
+      "label": "Esimerkki 1",
+      "option1": "Vaihtoehto 1",
+      "option2": "Vaihtoehto 2",
+      "option3": "Vaihtoehto 3",
+
+      "example1": {
+        "title": "Toimintovalikko (Action Menu)",
+        "description": "Pudotusvalikkoa voidaan käyttää myös toimintojen aktivoimiseen, jolloin komponenttia kutsutaan toimintovalikoksi. Tällöin annettu täyteteksti on aina näkyvissä eivätkä tehdyt valinnat muuta komponentin tilaa.",
+        "label": "Valitse toiminto",
+        "placeholder": "Toimintovalikko",
+        "option1": "Toiminto 1",
+        "option2": "Toiminto 2"
+      }
     }
   },
 

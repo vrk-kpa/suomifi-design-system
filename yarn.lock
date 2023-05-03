@@ -3816,20 +3816,15 @@ suomifi-design-tokens@5.0.0:
   resolved "https://registry.yarnpkg.com/suomifi-design-tokens/-/suomifi-design-tokens-5.0.0.tgz#773de7faeb3136387587bbc3151e65b6201a77ad"
   integrity sha512-hdDFKkiXNV0n1WvozR3ELTmMUoRaG8Wn6Jsg2SM5HzhwDx5MyBbDuuYGujuepCCsI6bp1P9c6TIb22H6w1/szA==
 
-suomifi-design-tokens@^4.1.3:
-  version "4.1.3"
-  resolved "https://registry.npmjs.org/suomifi-design-tokens/-/suomifi-design-tokens-4.1.3.tgz"
-  integrity sha512-0xLkownz07zkQFSDHDZuwFeWz3LLA6qfpUbNyHOYmwgBEgA8sHmHD4dso/Af9d67X2e1RhEW1A4TiL8hCZ8f8g==
+suomifi-icons@6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/suomifi-icons/-/suomifi-icons-6.5.0.tgz#ab0c66be180154e953b12c6dfc36f424e2845934"
+  integrity sha512-k8E2OfF7ZUvOgGnqeEg5PpBhpEwx3lkXv9SE6gZY5x9rP5KTXY2eVLjJLuWRx35/+q2orVjmkwuyC34zWe9XvA==
 
-suomifi-icons@6.3.0:
-  version "6.3.0"
-  resolved "https://registry.npmjs.org/suomifi-icons/-/suomifi-icons-6.3.0.tgz"
-  integrity sha512-8LCMUmcBncBnb7KhrwMLRxnKnAWFvVPWdiCk0s8xZpv+FJgyOqSjtzyHjaWXaQhyQOAG5QtRAsMO49t79cha4w==
-
-suomifi-ui-components@10.0.0-beta.1:
-  version "10.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-10.0.0-beta.1.tgz#34822963d169e66d6f7addd32d7c82a76c30d91d"
-  integrity sha512-mqzir5M0K1ryXB/KqelWrKp/Zi2cD6aq6ZFZNhZM2wMyIb1CDX7tqrfZ9ir2KUl3S3ZyxDIGhBXyOPNdYcRSkw==
+suomifi-ui-components@10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/suomifi-ui-components/-/suomifi-ui-components-10.0.0.tgz#20e431fd146a119d4601a67d86061744200e5e43"
+  integrity sha512-KXwhPTDke5TEzwNkWxrsDrCByfVKdrYTdMFIM8H3BRYXnLGQOteMxFHASEtP/2e8J095jmEbhETDZXU01WdqMQ==
   dependencies:
     "@babel/runtime" "7.18.9"
     "@popperjs/core" "2.11.5"
@@ -3844,7 +3839,7 @@ suomifi-ui-components@10.0.0-beta.1:
     react-popper "2.3.0"
     react-svg "15.1.3"
     suomifi-design-tokens "5.0.0"
-    suomifi-icons "6.3.0"
+    suomifi-icons "6.5.0"
 
 supports-color@^5.3.0, supports-color@^5.5.0:
   version "5.5.0"

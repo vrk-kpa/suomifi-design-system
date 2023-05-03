@@ -514,7 +514,7 @@
       "heading": "Mistä komponentti koostuu",
       "text_1": "Päivämääräkenttä koostuu otsakkeesta, tekstin syöttökentästä, sekä valinnaisesta kalenteristapainikkeesta. Päivämääräkenttään voidaan lisäksi antaa ohjeteksti, joka näkyy otsakkeen ja syöttökentän välissä. Päivämäärän muoto-ohje on suositeltava antaa ohjetekstinä.",
       "text_2": "Lomakkeessa olevat kentät ovat oletusarvoisesti pakollisia, ja valinnaiset kentät ilmoitetaan valinnaisuustekstillä. Valinnaisuusteksti näytetään suluissa otsakkeen lopussa. Päivämääräkentälle voidaan lisäksi antaa tila ja tilateksi, jotka ilmaisevat hyväksyttyä tai virheellistä tilaa.",
-      "text_3": "Kalenteripainike avaa dialogin, josta käyttäjä voi valita päivämäärän kalenterinäkymässä. Dialogi sisältää lisäksi painikkeen valitun päivän vahvistamiseen. Valittu päivä vahvistetaan erikseen, jotta dialogi ei sulkeudu vahingossa tai ennalta-arvaamattomasti päivämäärää valitessa."
+      "text_3": "Kalenteripainike avaa dialogin, josta käyttäjä voi valita päivämäärän kalenterinäkymässä."
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",

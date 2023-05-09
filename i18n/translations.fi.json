@@ -575,11 +575,12 @@
     },
 
     "example": {
-      "label": "Esimerkki 1",
-      "option1": "Vaihtoehto 1",
-      "option2": "Vaihtoehto 2",
-      "option3": "Vaihtoehto 3",
-
+      "label": "Seurantajakso",
+      "placeholder": "Valitse seurantajakso",
+      "option1": "7 vrk",
+      "option2": "30 vrk",
+      "option3": "6 kk",
+      "option4": "Vuosi",
       "example1": {
         "title": "Toimintovalikko (Action Menu)",
         "description": "Pudotusvalikkoa voidaan käyttää myös toimintojen aktivoimiseen, jolloin komponenttia kutsutaan toimintovalikoksi. Tällöin annettu täyteteksti on aina näkyvissä eivätkä tehdyt valinnat muuta komponentin tilaa.",

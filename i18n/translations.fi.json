@@ -1312,6 +1312,13 @@
       "regular": {
         "label": "Normaali tekstikenttä"
       },
+      "hint_text": {
+        "title": "Tekstikenttä ohjetekstillä",
+        "label": "Uusi sukunimi",
+        "hint_text": "Kirjoita kenttään hakemasi sukunimi. Sukunimi voi olla yksi- tai kaksiosainen.",
+        "placeholder": "Kirjoita sukunimi",
+        "error_text": "Sukunimi ei voi sisältää numeroita"
+      },
       "success": {
         "title": "Tekstikenttä hyväksytty (Success Text Input)",
         "label": "Hyväksytty tekstikenttä"
@@ -1326,9 +1333,15 @@
         "description": "Disabloitu tekstikenttä estää kentän täyttämisen, kunnes käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
         "label": "Estetty tekstikenttä"
       },
+      "icon": {
+        "title": "Tekstikenttä ikonilla",
+        "label": "Palvelupaikka",
+        "placeholder": "Valitse palvelupaikka"
+      },
       "optional": {
         "title": "Valinnainen tekstikenttä ikonilla (Optional Text Input)",
-        "label": "Tekstikenttä ikonilla",
+        "label": "Palvelupaikka",
+        "placeholder": "Valitse palvelupaikka",
         "optional_text": "valinnainen"
       }
     }

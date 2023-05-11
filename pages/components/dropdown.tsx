@@ -45,6 +45,7 @@ const Page: NextPage = () => {
           <ComponentExample>
             <Dropdown
               name="Dropdown"
+              visualPlaceholder={t('dropdown_page.example.placeholder')}
               labelText={t('dropdown_page.example.label')}
             >
               <DropdownItem value="1">
@@ -55,6 +56,9 @@ const Page: NextPage = () => {
               </DropdownItem>
               <DropdownItem value="3">
                 {t('dropdown_page.example.option3')}
+              </DropdownItem>
+              <DropdownItem value="4">
+                {t('dropdown_page.example.option4')}
               </DropdownItem>
             </Dropdown>
           </ComponentExample>

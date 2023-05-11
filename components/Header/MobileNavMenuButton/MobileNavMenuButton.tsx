@@ -62,7 +62,11 @@ const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
                   }
                 >
                   <Link href={item.path}>
-                    <a className="absoluteFocus" href={item.path}>
+                    <a
+                      className="absoluteFocus"
+                      href={item.path}
+                      onClick={() => setMenuOpen(false)}
+                    >
                       {item.title.toUpperCase()}
                     </a>
                   </Link>

@@ -18,7 +18,6 @@ const Highlighter = ({
       fontSize: '0.85rem',
       whiteSpace: 'pre-wrap',
       wordBreak: 'break-word',
-      overflow: 'scroll',
       ...style,
     }}
     // clear default styles to allow e.g. wrap

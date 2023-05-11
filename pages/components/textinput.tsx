@@ -19,7 +19,16 @@ import {
 const Page: NextPage = () => {
   const { t } = useTranslation();
   const [errorState, setErrorState] = useState(true);
+  const [nameHasNumber, setNameHasNumber] = useState(false);
   const status = errorState ? 'error' : 'default';
+
+  const validateName = (value: any) => {
+    if (value === undefined || value === '' || /^([^0-9]*)$/.test(value)) {
+      setNameHasNumber(false);
+    } else {
+      setNameHasNumber(true);
+    }
+  };
 
   return (
     <>
@@ -88,6 +97,56 @@ const Page: NextPage = () => {
 
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
+            {t('text_input_page.example.hint_text.title')}
+          </Heading>
+
+          <ComponentExample>
+            <TextInput
+              labelText={t('text_input_page.example.hint_text.label')}
+              hintText={t('text_input_page.example.hint_text.hint_text')}
+              visualPlaceholder={t(
+                'text_input_page.example.hint_text.placeholder',
+              )}
+              onChange={(value) => validateName(value)}
+              status={(nameHasNumber && 'error') || 'default'}
+              statusText={
+                (nameHasNumber &&
+                  t('text_input_page.example.hint_text.error_text')) ||
+                ''
+              }
+            />
+          </ComponentExample>
+        </Block>
+
+        <Heading variant="h2" className="my-xl">
+          {t('text_input_page.example.icon.title')}
+        </Heading>
+
+        <ComponentExample>
+          <TextInput
+            labelText={t('text_input_page.example.icon.label')}
+            visualPlaceholder={t('text_input_page.example.icon.placeholder')}
+            icon="mapLocation"
+          />
+        </ComponentExample>
+
+        <Heading variant="h2" className="my-xl">
+          {t('text_input_page.example.optional.title')}
+        </Heading>
+
+        <ComponentExample>
+          <TextInput
+            labelText={t('text_input_page.example.optional.label')}
+            visualPlaceholder={t(
+              'text_input_page.example.optional.placeholder',
+            )}
+            icon="mapLocation"
+            optionalText={t('text_input_page.example.optional.optional_text')}
+          />
+        </ComponentExample>
+
+        <Block variant="section">
+          <Heading variant="h2" className="mb-xl">
             {t('text_input_page.example.success.title')}
           </Heading>
 
@@ -129,18 +188,6 @@ const Page: NextPage = () => {
           <TextInput
             labelText={t('text_input_page.example.disabled.label')}
             disabled
-          />
-        </ComponentExample>
-
-        <Heading variant="h2" className="my-xl">
-          {t('text_input_page.example.optional.title')}
-        </Heading>
-
-        <ComponentExample>
-          <TextInput
-            labelText={t('text_input_page.example.optional.label')}
-            icon="mapLocation"
-            optionalText={t('text_input_page.example.optional.optional_text')}
           />
         </ComponentExample>
       </SideNavLayout>

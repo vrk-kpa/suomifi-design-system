@@ -179,7 +179,7 @@
   },
   "icons": {
     "heading": "Ikonit",
-    "ingress": "Tältä sivulla löydät kaikki Suomi.fi Design Systemin sisältämät ikonit. Ikonien käyttöohjeistukset löydät ikonikomponentin sivulta.",
+    "ingress": "Tältä sivulla löydät kaikki Suomi.fi Design Systemin sisältämät ikonit. Ikonien käyttöohjeet löydät ikonikomponentin sivulta.",
     "icon_component_link_text": "Ikonikomponentti",
     "base_icons": {
       "title": "Perusikonit (base icons)",
@@ -258,7 +258,7 @@
     "expander": "Expander (Laajennuspaneeli)",
     "heading": "Heading (Otsikko)",
     "hint_text": "Hint text (Ohjeteksti)",
-    "icon": "Icon (Ikoni)",
+    "icon": "Icons (Ikonit)",
     "label": "Label (Otsake)",
     "language_menu": "Language Menu (Kielivalikko)",
     "link": "Link (Linkki)",
@@ -660,8 +660,8 @@
   },
 
   "icon_page": {
-    "site_title": "Icon (Ikoni)| Suomi.fi Design System",
-    "heading": "Icon (Ikoni)",
+    "site_title": "Icons (Ikonit)| Suomi.fi Design System",
+    "heading": "Icons (Ikonit)",
     "ingress": "Ikonit ovat visuaalisia symboleja, jotka tukevat toimintojen ja aiheiden ilmaisemista. Ikonien avulla käyttäjän huomiota voidaan kiinnittää haluttuun informaatioon tai toimintoon. Ikonien käyttäminen voi myös parantaa laajojen sisältöjen hahmottamista ja ryhmittämistä. Suomi.fi-teemassa on sekä käyttöliittymäikoneita että kuvitusikoneita.",
     "all_icons_page_link_title": "Katso kaikki Suomi.fi-ikonit",
     "size_and_usage": {
@@ -700,7 +700,7 @@
       "example_arialabel": "Neljä kättä pitävät toisistaan kiinni"
     },
     "attachment_icons": {
-      "title": "Liitetiedosto-ikonit",
+      "title": "Liitetiedostoikonit",
       "description": "",
       "example_arialabel": "Tekstitiedostoikoni"
     },

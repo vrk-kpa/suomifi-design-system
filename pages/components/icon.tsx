@@ -4,7 +4,6 @@ import { useTranslation } from 'next-export-i18n';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
-import ComponentExample from '../../components/ComponentExample/ComponentExample';
 import {
   defaultSuomifiTheme,
   Block,
@@ -13,26 +12,15 @@ import {
   Paragraph,
   ExternalLink,
   Link,
-  IconProps,
-  StaticIconProps,
-  Icon as SuomifiIcon,
-  StaticIcon as SuomifiStaticIcon,
+  IconCheck,
+  IconCollaboration,
+  IconDoc,
+  IconErrorFilled,
+  IconHelp,
+  IconHelpFilled,
+  IconInfo,
+  IconSignLanguageContent,
 } from 'suomifi-ui-components';
-
-/**
- * Wrapper to show all icons as bigger for better visiblity
- */
-const Icon = (props: IconProps): JSX.Element => {
-  const newProps = { ...props, width: '2em', height: '2em' };
-  return <SuomifiIcon {...newProps} />;
-};
-Icon.displayName = 'Icon';
-
-const StaticIcon = (props: StaticIconProps): JSX.Element => {
-  const newProps = { ...props, width: '4em', height: '4em' };
-  return <SuomifiStaticIcon {...newProps} />;
-};
-StaticIcon.displayName = 'StaticIcon';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
@@ -50,7 +38,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('icon_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Icon"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Introduction/Icons"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('common.see_technical_documentation_of_component')}
@@ -94,16 +82,13 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('icon_page.basic_icons.description')}
           </Paragraph>
-
-          <ComponentExample
+          <IconCheck
+            ariaLabel={t('basic_icons.example.arialabel')}
             style={{
-              justifyContent: 'flex-start',
-              padding: 0,
-              border: 'none',
+              width: '2em',
+              height: '2em',
             }}
-          >
-            <Icon icon="check" ariaLabel={t('basic_icons.example.arialabel')} />
-          </ComponentExample>
+          />
         </Block>
 
         <Block variant="section">
@@ -114,26 +99,24 @@ const Page: NextPage = () => {
             {t('icon_page.info_icons.description')}
           </Paragraph>
 
-          <ComponentExample
+          <IconHelpFilled
+            color={defaultSuomifiTheme.colors.highlightBase}
             style={{
-              justifyContent: 'flex-start',
-              padding: 0,
-              border: 'none',
+              margin: `0 ${defaultSuomifiTheme.spacing.xs}`,
+              width: '2em',
+              height: '2em',
             }}
-          >
-            <Icon
-              icon="helpFilled"
-              color={defaultSuomifiTheme.colors.highlightBase}
-              style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
-              ariaLabel={t('icon_page.info_icons.example1_arialabel')}
-            />
-            <Icon
-              icon="help"
-              color={defaultSuomifiTheme.colors.highlightBase}
-              style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
-              ariaLabel={t('icon_page.info_icons.example2_arialabel')}
-            />
-          </ComponentExample>
+            ariaLabel={t('icon_page.info_icons.example1_arialabel')}
+          />
+          <IconHelp
+            color={defaultSuomifiTheme.colors.highlightBase}
+            style={{
+              margin: `0 ${defaultSuomifiTheme.spacing.xs}`,
+              width: '2em',
+              height: '2em',
+            }}
+            ariaLabel={t('icon_page.info_icons.example2_arialabel')}
+          />
         </Block>
 
         <Block variant="section">
@@ -144,30 +127,24 @@ const Page: NextPage = () => {
             {t('icon_page.additional_info_icons.description')}
           </Paragraph>
 
-          <ComponentExample
+          <IconErrorFilled
+            color={defaultSuomifiTheme.colors.highlightBase}
             style={{
-              justifyContent: 'flex-start',
-              padding: 0,
-              border: 'none',
+              margin: `0 ${defaultSuomifiTheme.spacing.xs}`,
+              width: '2em',
+              height: '2em',
             }}
-          >
-            <Icon
-              icon="errorFilled"
-              color={defaultSuomifiTheme.colors.highlightBase}
-              style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
-              ariaLabel={t(
-                'icon_page.additional_info_icons.example1_arialabel',
-              )}
-            />
-            <Icon
-              icon="info"
-              color={defaultSuomifiTheme.colors.highlightBase}
-              style={{ margin: `0 ${defaultSuomifiTheme.spacing.xs}` }}
-              ariaLabel={t(
-                'icon_page.additional_info_icons.example2_arialabel',
-              )}
-            />
-          </ComponentExample>
+            ariaLabel={t('icon_page.additional_info_icons.example1_arialabel')}
+          />
+          <IconInfo
+            color={defaultSuomifiTheme.colors.highlightBase}
+            style={{
+              margin: `0 ${defaultSuomifiTheme.spacing.xs}`,
+              width: '2em',
+              height: '2em',
+            }}
+            ariaLabel={t('icon_page.additional_info_icons.example2_arialabel')}
+          />
         </Block>
 
         <Block variant="section">
@@ -177,19 +154,10 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('icon_page.illustrative_icons.description')}
           </Paragraph>
-
-          <ComponentExample
-            style={{
-              justifyContent: 'flex-start',
-              padding: 0,
-              border: 'none',
-            }}
-          >
-            <StaticIcon
-              icon="collaboration"
-              ariaLabel={t('icon_page.illustrative_icons.example_arialabel')}
-            />
-          </ComponentExample>
+          <IconCollaboration
+            ariaLabel={t('icon_page.illustrative_icons.example_arialabel')}
+            style={{ width: '4em', height: '4em' }}
+          />
         </Block>
 
         <Block variant="section">
@@ -197,18 +165,10 @@ const Page: NextPage = () => {
             {t('icon_page.attachment_icons.title')}
           </Heading>
 
-          <ComponentExample
-            style={{
-              justifyContent: 'flex-start',
-              padding: 0,
-              border: 'none',
-            }}
-          >
-            <StaticIcon
-              icon="doc"
-              ariaLabel={t('icon_page.attachment_icons.example_arialabel')}
-            />
-          </ComponentExample>
+          <IconDoc
+            ariaLabel={t('icon_page.attachment_icons.example_arialabel')}
+            style={{ width: '4em', height: '4em' }}
+          />
         </Block>
 
         <Block variant="section">
@@ -218,20 +178,11 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('icon_page.sign_language_icons.description')}
           </Paragraph>
-
-          <ComponentExample
-            style={{
-              justifyContent: 'flex-start',
-              padding: 0,
-              border: 'none',
-            }}
-          >
-            <Icon
-              icon="signLanguageContent"
-              color="#00B6EC"
-              ariaLabel={t('icon_page.sign_language_icons.example_arialabel')}
-            />
-          </ComponentExample>
+          <IconSignLanguageContent
+            color="#00B6EC"
+            ariaLabel={t('icon_page.sign_language_icons.example_arialabel')}
+            style={{ width: '2em', height: '2em' }}
+          />
         </Block>
         <ExternalLink
           href="https://www.kuurojenliitto.fi/fi/artikkelit/viittomakieliset-palvelut-symboli"

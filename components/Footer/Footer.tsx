@@ -4,10 +4,10 @@ import Image from 'next/image';
 import {
   Block,
   ExternalLink,
-  LogoIcon,
   RouterLink,
   Link as SuomifiLink,
   Text,
+  IconLogoHorizontal,
 } from 'suomifi-ui-components';
 import gitHubLogo from '/public/github.svg';
 import styles from './Footer.module.scss';
@@ -19,11 +19,7 @@ const Footer: React.FunctionComponent = () => {
       <Block className="container">
         <Block>
           <SuomifiLink href="https://suomi.fi" className={styles.suomifiLink}>
-            <LogoIcon
-              icon="horizontal"
-              alt="Suomi.fi"
-              className={styles.logo}
-            />
+            <IconLogoHorizontal alt="Suomi.fi" className={styles.logo} />
           </SuomifiLink>
         </Block>
         <Block>

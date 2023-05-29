@@ -14,6 +14,7 @@ import {
   SideNavigation,
   SideNavigationItem,
   RouterLink,
+  IconPiggyBank,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -46,7 +47,7 @@ const Page: NextPage = () => {
           <div style={{ width: '350px' }}>
             <SideNavigation
               heading={t('side_navigation_page.example.title')}
-              icon="piggyBank"
+              icon={<IconPiggyBank />}
               aria-label={t('side_navigation_page.example.arialabel')}
             >
               <SideNavigationItem
@@ -188,7 +189,7 @@ const Page: NextPage = () => {
           <ComponentExample variant="mobile_device">
             <SideNavigation
               heading={t('side_navigation_page.example.title')}
-              icon="piggyBank"
+              icon={<IconPiggyBank />}
               aria-label={t('side_navigation_page.example.arialabel')}
               variant="smallScreen"
               initiallyExpanded={false}

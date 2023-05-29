@@ -8,10 +8,15 @@ import {
   Paragraph,
   Text,
   suomifiDesignTokens,
-  Icon,
-  StaticIcon,
   VisuallyHidden,
+  IconSettings,
+  IconAuthorise,
+  IconHeart,
+  IconSignLanguageContent,
+  IconCollaboration,
+  IconWebDevelopment,
 } from 'suomifi-ui-components';
+
 import Image from 'next/image';
 import BoxWithIcon from '../GrandOne/BoxWithIcon/BoxWithIcon';
 import suomifiLogo from '/public/grand-one/suomifi_flag.png';
@@ -108,7 +113,7 @@ const Page: NextPage = () => (
             <li>
               <BoxWithIcon
                 variant="simple"
-                icon={<Icon icon="settings" className="simplebox-icon" />}
+                icon={<IconSettings className="simplebox-icon" />}
               >
                 661 viikottaista komponenttikirjaston latausta
               </BoxWithIcon>
@@ -116,7 +121,7 @@ const Page: NextPage = () => (
             <li>
               <BoxWithIcon
                 variant="simple"
-                icon={<Icon icon="authorise" className="simplebox-icon" />}
+                icon={<IconAuthorise className="simplebox-icon" />}
               >
                 5 577 064 käyttäjää
               </BoxWithIcon>
@@ -124,7 +129,7 @@ const Page: NextPage = () => (
             <li>
               <BoxWithIcon
                 variant="simple"
-                icon={<Icon icon="heart" className="simplebox-icon" />}
+                icon={<IconHeart className="simplebox-icon" />}
               >
                 Suomi.fi visuaalisen ilmeen tunnettuus 90%
               </BoxWithIcon>
@@ -169,9 +174,7 @@ const Page: NextPage = () => (
             <ul className="boxes-2">
               <li>
                 <BoxWithIcon
-                  icon={
-                    <Icon icon="signLanguageContent" className="box-icon" />
-                  }
+                  icon={<IconSignLanguageContent className="box-icon" />}
                   style={{ marginBottom: suomifiDesignTokens.spacing.xl }}
                 >
                   Saavutettavuus
@@ -180,8 +183,7 @@ const Page: NextPage = () => (
               <li>
                 <BoxWithIcon
                   icon={
-                    <StaticIcon
-                      icon="collaboration"
+                    <IconCollaboration
                       baseColor={suomifiDesignTokens.colors.blackBase}
                       className="box-icon"
                     />
@@ -194,8 +196,7 @@ const Page: NextPage = () => (
               <li>
                 <BoxWithIcon
                   icon={
-                    <StaticIcon
-                      icon="webDevelopment"
+                    <IconWebDevelopment
                       baseColor={suomifiDesignTokens.colors.blackBase}
                       className="box-icon"
                     />

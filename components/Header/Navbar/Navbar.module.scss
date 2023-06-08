@@ -1,0 +1,45 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.navbar {
+  width: 100%;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 0 $fi-spacing-xl 0 $fi-spacing-xs;
+      padding: $fi-spacing-inset-s 0;
+      display: block;
+      box-sizing: border-box;
+      min-height: 43px;
+
+      &:hover {
+        border-bottom: 4px solid $fi-color-highlight-base;
+      }
+
+      a {
+        @include fi-text-body-text;
+
+        padding: $fi-spacing-inset-m;
+        color: $fi-color-black-base;
+        text-decoration: none;
+
+        &:focus-visible {
+          outline: 0;
+          position: relative;
+
+          &::after {
+            @include fi-focus-absolute-focus;
+          }
+        }
+      }
+    }
+  }
+}
+
+.active {
+  border-bottom: 4px solid $fi-color-highlight-base;
+}

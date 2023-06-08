@@ -1,0 +1,9 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.showcaseBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $fi-spacing-s;
+  border: 1px solid $fi-color-depth-light1;
+}

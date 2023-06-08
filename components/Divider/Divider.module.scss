@@ -1,0 +1,7 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.divider {
+  border-bottom: 1px solid $fi-color-depth-light1;
+  height: 1px;
+  width: 100%;
+}

@@ -1,0 +1,76 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.wrapper {
+  position: relative;
+
+  .button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background: none;
+    background-color: transparent;
+
+    .icon {
+      color: $fi-color-black-base;
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 50px;
+    right: -3px;
+    z-index: 10000;
+    width: 320px;
+    background-color: white;
+    border: 1px solid $fi-color-depth-light1;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        line-height: 40px;
+        position: relative;
+
+        a {
+          text-decoration: none;
+          color: $fi-color-highlight-base;
+          display: flex;
+          padding: 0 15px;
+
+          &:hover,
+          &:active {
+            text-decoration: none;
+            color: $fi-color-brand-base;
+          }
+        }
+
+        &.active {
+          background: $fi-color-depth-secondary;
+          border-left: 4px solid $fi-color-brand-base;
+
+          a {
+            color: $fi-color-brand-base;
+            font-weight: bold;
+            margin-left: -4px;
+          }
+        }
+
+        &.partiallyActive {
+          a {
+            color: $fi-color-brand-base;
+            font-weight: bold;
+          }
+        }
+
+        &:hover,
+        &:active {
+          background: $fi-color-depth-secondary;
+        }
+      }
+    }
+  }
+}

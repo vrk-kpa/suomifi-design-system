@@ -677,7 +677,7 @@
 
     "basic_icons": {
       "title": "Perusikonit",
-      "description": "Perusikonien oletusväri on harmaa (depthDark1). Jos ikonissa on mukana jokin toiminto, siinä käytetään sinistä väriä (highlightBase) klikattavuuden indikoimiseksi. Notifikaatioikoneissa käytetään liikennevalovärejä (successBase, warningBase, alertBase) sekä sinistä korosteväriä (accentSecondaryBase). Huomaa, että värit ovat ikoneissa ainoastaan hahmottamisen tukena. Pelkkä visuaalinen korostus ei ole saavutettavuuskriteereiden mukainen riittävä toiminnan kuvaustapa. Jos muokkaat ikonien värityksiä, on hyvä valita toimintaa kuvaaville ikoneille muista ikoneista erottuva sävy. ",
+      "description": "Perusikonien oletusväri on harmaa (depthDark1). Jos ikonissa on mukana jokin toiminto, siinä käytetään sinistä väriä (highlightBase) klikattavuuden indikoimiseksi. Notifikaatioikoneissa käytetään liikennevalovärejä (successBase, warningBase, alertBase) sekä sinistä korosteväriä (accentSecondaryBase). Huomaa, että värit ovat ikoneissa ainoastaan hahmottamisen tukena. Pelkkä visuaalinen korostus ei ole saavutettavuuskriteereiden mukainen riittävä toiminnan kuvaustapa. Jos muokkaat ikonien värityksiä, on hyvä valita toimintaa kuvaaville ikoneille muista ikoneista erottuva sävy.",
       "example_arialabel": "Checkmark-ikoni"
     },
 

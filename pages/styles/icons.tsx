@@ -1,14 +1,7 @@
 import { NextPage } from 'next';
 import { useTranslation } from 'next-export-i18n';
 import Head from 'next/head';
-import {
-  Heading,
-  Block,
-  Text,
-  RouterLink,
-  ExternalLink,
-} from 'suomifi-ui-components';
-
+import { Heading, Block, Text, RouterLink } from 'suomifi-ui-components';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/styles-sidenav';
 import IconShowcase from '../../components/IconShowcase/IconShowcase';

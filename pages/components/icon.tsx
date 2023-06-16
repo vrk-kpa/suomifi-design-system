@@ -185,7 +185,7 @@ const Page: NextPage = () => {
           />
         </Block>
         <ExternalLink
-          href="https://www.kuurojenliitto.fi/fi/artikkelit/viittomakieliset-palvelut-symboli"
+          href="https://kuurojenliitto.fi/logot-ja-tunnukset/"
           labelNewWindow={t('common.opens_in_a_new_tab')}
           style={{ marginBottom: '30px', marginTop: '30px', display: 'block' }}
         >

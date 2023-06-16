@@ -83,7 +83,7 @@ const Page: NextPage = () => {
             {t('icon_page.basic_icons.description')}
           </Paragraph>
           <IconCheck
-            ariaLabel={t('basic_icons.example.arialabel')}
+            ariaLabel={t('icon_page.basic_icons.example_arialabel')}
             style={{
               width: '2em',
               height: '2em',

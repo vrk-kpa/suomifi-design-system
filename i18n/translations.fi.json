@@ -9,10 +9,10 @@
   "front_page": {
     "front_page": "Etusivu",
     "hero_heading": "Suomi.fi Design System – digipalvelujen yhteiset rakennuspalikat",
-    "hero_text": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Kaikki komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti.",
+    "hero_text": "Suomi.fi Design System on kokoelma Digi- ja väestötietoviraston yhteisiä tyylejä, suunnittelumalleja ja suunnitteluohjeita. Design Systemiin kuuluu lisäksi suunnitteluohjeiden pohjalta toteutettu komponenttikirjasto. Kaikki suunnittelumallit ja komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti (WCAG 2.1).",
     "heading": "Mitä Suomi.fi Design System sisältää?",
     "sub_heading_1": "Design System -sivusto",
-    "paragraph_1": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto.",
+    "paragraph_1": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto.",
     "link_1": "Lue taustatietoja Suomi.fi Design Systemistä",
     "sub_heading_2": "Käyttöliittymäkomponenttien kirjasto",
     "paragraph_2": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti.",

@@ -7,6 +7,8 @@ import {
   Textarea,
   TextInput,
   Toast,
+  IconPlus,
+  IconRemove,
 } from 'suomifi-ui-components';
 import styles from './MultiInsert.module.scss';
 import { useTranslation } from 'next-export-i18n';
@@ -331,7 +333,7 @@ export const MultiInsert: React.FC = () => {
                   <Block className={styles['multi-insert-input']}>
                     <Button
                       variant="secondaryNoBorder"
-                      icon="remove"
+                      icon={<IconRemove />}
                       onClick={() => removeWebsite(website.id)}
                       ref={website.removeButtonRef}
                       aria-label={
@@ -355,7 +357,7 @@ export const MultiInsert: React.FC = () => {
               ))}
               <Button
                 variant="secondary"
-                icon="plus"
+                icon={<IconPlus />}
                 onClick={() => addWebsite()}
                 ref={addNewButtonRef}
               >

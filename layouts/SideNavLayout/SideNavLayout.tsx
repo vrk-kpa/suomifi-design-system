@@ -1,23 +1,39 @@
-import { ReactNode } from 'react';
+import { ReactNode, ReactElement } from 'react';
 import {
   Block,
   RouterLink,
   ServiceNavigation,
   ServiceNavigationItem,
-  StaticIcon,
-  IllustrativeIconKeys,
+  IconMagicWand,
+  IconBook,
+  IconPuzzle,
 } from 'suomifi-ui-components';
 import { NavItem } from '../../interfaces/interfaces';
 import styles from './SideNavLayout.module.scss';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
+type NavIcon = 'book' | 'puzzle' | 'magicWand';
+
 interface SideNavLayoutProps {
   navItems: NavItem[];
   children?: ReactNode;
-  navIcon: IllustrativeIconKeys;
+  navIcon: NavIcon;
   navHeaderText: string;
 }
+
+const getIcon = (icon: NavIcon, className: string): ReactElement | null => {
+  switch (icon) {
+    case 'book':
+      return <IconBook className={className} />;
+    case 'puzzle':
+      return <IconPuzzle className={className} />;
+    case 'magicWand':
+      return <IconMagicWand className={className} />;
+    default:
+      return null;
+  }
+};
 
 const SideNavLayout: React.FunctionComponent<SideNavLayoutProps> = ({
   navItems,
@@ -36,7 +52,7 @@ const SideNavLayout: React.FunctionComponent<SideNavLayoutProps> = ({
             variant="smallScreen"
             smallScreenExpandButtonText={
               <Block variant="div" className="flex align-center">
-                <StaticIcon className={styles.navStaticIcon} icon={navIcon} />
+                {getIcon(navIcon, styles.navStaticIcon)}
                 <Block className={styles.navHeadertext}>{navHeaderText}</Block>
               </Block>
             }
@@ -63,7 +79,7 @@ const SideNavLayout: React.FunctionComponent<SideNavLayoutProps> = ({
         <Block variant="section" className={styles.SideNavLayout}>
           <Block className={styles.left}>
             <Block variant="div" className={styles.navHeader}>
-              <StaticIcon className={styles.navStaticIcon} icon={navIcon} />
+              {getIcon(navIcon, styles.navStaticIcon)}
               <Block className={styles.navHeadertext}>{navHeaderText}</Block>
             </Block>
             <ServiceNavigation aria-label="Sivunavigaatio" id="sidenav">

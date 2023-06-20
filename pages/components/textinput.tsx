@@ -14,6 +14,7 @@ import {
   ExternalLink,
   TextInput,
   defaultSuomifiTheme,
+  IconMapLocation,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -126,7 +127,7 @@ const Page: NextPage = () => {
           <TextInput
             labelText={t('text_input_page.example.icon.label')}
             visualPlaceholder={t('text_input_page.example.icon.placeholder')}
-            icon="mapLocation"
+            icon={<IconMapLocation />}
           />
         </ComponentExample>
 
@@ -140,7 +141,7 @@ const Page: NextPage = () => {
             visualPlaceholder={t(
               'text_input_page.example.optional.placeholder',
             )}
-            icon="mapLocation"
+            icon={<IconMapLocation />}
             optionalText={t('text_input_page.example.optional.optional_text')}
           />
         </ComponentExample>

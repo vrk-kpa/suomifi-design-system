@@ -9,12 +9,12 @@ import {
   Button,
   ExternalLink,
   defaultSuomifiTheme,
+  IconLogin,
 } from 'suomifi-ui-components';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
-import { buttonsIconExample } from '../../utils/complicatedCodeExamples';
 
 const ButtonPage: NextPage = () => {
   const { t } = useTranslation();
@@ -247,7 +247,7 @@ const ButtonPage: NextPage = () => {
             }}
           >
             <Block>
-              <Button icon="login" onClick={() => undefined}>
+              <Button icon={<IconLogin />} onClick={() => undefined}>
                 {t('button_page.example.button.label_icon').replace(
                   '{{name}}',
                   t('button_page.example.primary.label'),
@@ -255,7 +255,7 @@ const ButtonPage: NextPage = () => {
               </Button>
             </Block>
             <Block>
-              <Button iconRight="login" onClick={() => undefined}>
+              <Button iconRight={<IconLogin />} onClick={() => undefined}>
                 {t('button_page.example.button.label_icon_right').replace(
                   '{{name}}',
                   t('button_page.example.primary.label'),
@@ -272,7 +272,11 @@ const ButtonPage: NextPage = () => {
             }}
           >
             <Block>
-              <Button icon="login" variant="link" onClick={() => undefined}>
+              <Button
+                icon={<IconLogin />}
+                variant="link"
+                onClick={() => undefined}
+              >
                 {t('button_page.example.button.label_icon').replace(
                   '{{name}}',
                   t('button_page.example.link.label'),
@@ -281,7 +285,7 @@ const ButtonPage: NextPage = () => {
             </Block>
             <Block>
               <Button
-                iconRight="login"
+                iconRight={<IconLogin />}
                 variant="link"
                 onClick={() => undefined}
               >
@@ -301,7 +305,11 @@ const ButtonPage: NextPage = () => {
             }}
           >
             <Block>
-              <Button icon="login" variant="inverted" onClick={() => undefined}>
+              <Button
+                icon={<IconLogin />}
+                variant="inverted"
+                onClick={() => undefined}
+              >
                 {t('button_page.example.button.label_icon').replace(
                   '{{name}}',
                   t('button_page.example.negative.label'),
@@ -310,7 +318,7 @@ const ButtonPage: NextPage = () => {
             </Block>
             <Block>
               <Button
-                iconRight="login"
+                iconRight={<IconLogin />}
                 variant="inverted"
                 onClick={() => undefined}
               >
@@ -331,7 +339,7 @@ const ButtonPage: NextPage = () => {
           >
             <Block>
               <Button
-                icon="login"
+                icon={<IconLogin />}
                 variant="secondary"
                 onClick={() => undefined}
               >
@@ -343,7 +351,7 @@ const ButtonPage: NextPage = () => {
             </Block>
             <Block>
               <Button
-                iconRight="login"
+                iconRight={<IconLogin />}
                 variant="secondary"
                 onClick={() => undefined}
               >
@@ -363,7 +371,7 @@ const ButtonPage: NextPage = () => {
           >
             <Block>
               <Button
-                icon="login"
+                icon={<IconLogin />}
                 variant="secondaryNoBorder"
                 onClick={() => undefined}
               >
@@ -375,7 +383,7 @@ const ButtonPage: NextPage = () => {
             </Block>
             <Block>
               <Button
-                iconRight="login"
+                iconRight={<IconLogin />}
                 variant="secondaryNoBorder"
                 onClick={() => undefined}
               >
@@ -386,8 +394,6 @@ const ButtonPage: NextPage = () => {
               </Button>
             </Block>
           </ComponentExample>
-
-          <ComponentExample codeString={buttonsIconExample}></ComponentExample>
         </Block>
 
         <Block>

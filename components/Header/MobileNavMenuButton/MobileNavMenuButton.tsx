@@ -2,9 +2,9 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import classnames from 'classnames';
-import { Icon } from 'suomifi-ui-components';
 import { NavItem } from '../../../interfaces/interfaces';
 import styles from './MobileNavMenuButton.module.scss';
+import { IconClose, IconMenu } from 'suomifi-ui-components';
 
 interface MobileNavMenuButtonProps {
   /** For screenreader to read */
@@ -39,7 +39,9 @@ const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
         aria-expanded={menuOpen}
         aria-haspopup={true}
       >
-        <Icon className={styles.icon} icon={menuOpen ? 'close' : 'menu'} />
+        {(menuOpen && <IconClose className={styles.icon} />) || (
+          <IconMenu className={styles.icon} />
+        )}
       </button>
       {menuOpen && (
         <div className={styles.menu}>

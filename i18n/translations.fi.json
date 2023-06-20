@@ -9,10 +9,10 @@
   "front_page": {
     "front_page": "Etusivu",
     "hero_heading": "Suomi.fi Design System – digipalvelujen yhteiset rakennuspalikat",
-    "hero_text": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Kaikki komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti.",
+    "hero_text": "Suomi.fi Design System on kokoelma Digi- ja väestötietoviraston yhteisiä tyylejä, suunnittelumalleja ja suunnitteluohjeita. Design Systemiin kuuluu lisäksi suunnitteluohjeiden pohjalta toteutettu komponenttikirjasto. Kaikki suunnittelumallit ja komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti (WCAG 2.1).",
     "heading": "Mitä Suomi.fi Design System sisältää?",
     "sub_heading_1": "Design System -sivusto",
-    "paragraph_1": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit, koodiesimerkit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto.",
+    "paragraph_1": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto.",
     "link_1": "Lue taustatietoja Suomi.fi Design Systemistä",
     "sub_heading_2": "Käyttöliittymäkomponenttien kirjasto",
     "paragraph_2": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti.",
@@ -179,7 +179,7 @@
   },
   "icons": {
     "heading": "Ikonit",
-    "ingress": "Tältä sivulla löydät kaikki Suomi.fi Design Systemin sisältämät ikonit. Ikonien käyttöohjeistukset löydät ikonikomponentin sivulta.",
+    "ingress": "Tältä sivulla löydät kaikki Suomi.fi Design Systemin sisältämät ikonit. Ikonien käyttöohjeet löydät ikonikomponentin sivulta.",
     "icon_component_link_text": "Ikonikomponentti",
     "base_icons": {
       "title": "Perusikonit (base icons)",
@@ -192,6 +192,10 @@
     "doctype_icons": {
       "title": "Liitetiedostoikonit (doctype icons)",
       "link_title": "Liitetiedostoikonit GitHubissa SVG-muodossa"
+    },
+    "logo_icons": {
+      "title": "Logoikonit (logo icons)",
+      "link_title": "Logoikonit GitHubissa SVG-muodossa"
     }
   },
   "spacing": {
@@ -258,7 +262,7 @@
     "expander": "Expander (Laajennuspaneeli)",
     "heading": "Heading (Otsikko)",
     "hint_text": "Hint text (Ohjeteksti)",
-    "icon": "Icon (Ikoni)",
+    "icon": "Icons (Ikonit)",
     "label": "Label (Otsake)",
     "language_menu": "Language Menu (Kielivalikko)",
     "link": "Link (Linkki)",
@@ -660,8 +664,8 @@
   },
 
   "icon_page": {
-    "site_title": "Icon (Ikoni)| Suomi.fi Design System",
-    "heading": "Icon (Ikoni)",
+    "site_title": "Icons (Ikonit)| Suomi.fi Design System",
+    "heading": "Icons (Ikonit)",
     "ingress": "Ikonit ovat visuaalisia symboleja, jotka tukevat toimintojen ja aiheiden ilmaisemista. Ikonien avulla käyttäjän huomiota voidaan kiinnittää haluttuun informaatioon tai toimintoon. Ikonien käyttäminen voi myös parantaa laajojen sisältöjen hahmottamista ja ryhmittämistä. Suomi.fi-teemassa on sekä käyttöliittymäikoneita että kuvitusikoneita.",
     "all_icons_page_link_title": "Katso kaikki Suomi.fi-ikonit",
     "size_and_usage": {
@@ -677,7 +681,7 @@
 
     "basic_icons": {
       "title": "Perusikonit",
-      "description": "Perusikonien oletusväri on harmaa (depthDark1). Jos ikonissa on mukana jokin toiminto, siinä käytetään sinistä väriä (highlightBase) klikattavuuden indikoimiseksi. Notifikaatioikoneissa käytetään liikennevalovärejä (successBase, warningBase, alertBase) sekä sinistä korosteväriä (accentSecondaryBase). Huomaa, että värit ovat ikoneissa ainoastaan hahmottamisen tukena. Pelkkä visuaalinen korostus ei ole saavutettavuuskriteereiden mukainen riittävä toiminnan kuvaustapa. Jos muokkaat ikonien värityksiä, on hyvä valita toimintaa kuvaaville ikoneille muista ikoneista erottuva sävy. ",
+      "description": "Perusikonien oletusväri on harmaa (depthDark1). Jos ikonissa on mukana jokin toiminto, siinä käytetään sinistä väriä (highlightBase) klikattavuuden indikoimiseksi. Notifikaatioikoneissa käytetään liikennevalovärejä (successBase, warningBase, alertBase) sekä sinistä korosteväriä (accentSecondaryBase). Huomaa, että värit ovat ikoneissa ainoastaan hahmottamisen tukena. Pelkkä visuaalinen korostus ei ole saavutettavuuskriteereiden mukainen riittävä toiminnan kuvaustapa. Jos muokkaat ikonien värityksiä, on hyvä valita toimintaa kuvaaville ikoneille muista ikoneista erottuva sävy.",
       "example_arialabel": "Checkmark-ikoni"
     },
 
@@ -700,7 +704,7 @@
       "example_arialabel": "Neljä kättä pitävät toisistaan kiinni"
     },
     "attachment_icons": {
-      "title": "Liitetiedosto-ikonit",
+      "title": "Liitetiedostoikonit",
       "description": "",
       "example_arialabel": "Tekstitiedostoikoni"
     },

@@ -24,32 +24,33 @@ const IconWrapper = styled.figure`
   figcaption {
     margin-top: 0;
     margin-bottom: ${suomifiDesignTokens.spacing.m};
+    font-size: ${suomifiDesignTokens.typography.bodyTextSmall};
   }
 `;
 
-const iconProps = {
-  height: '45px',
-  width: '45px',
-};
+const iconProps = (size: number) => ({
+  height: `${size}px`,
+  width: `${size}px`,
+});
 
-const iconStyles = {
+const iconStyles = (size: number) => ({
   margin: `${suomifiDesignTokens.spacing.xs} 0 0 0`,
   color: `${suomifiDesignTokens.colors.depthDark1}`,
-  width: '45px',
-  height: '45px',
-};
+  width: `${size}px`,
+  height: `${size}px`,
+});
 
-const getStyledIcon = (icon: string) => {
+const getStyledIcon = (icon: string, size: number) => {
   const iconName = `Icon${icon}`;
   const Icon = allIcons[iconName as keyof typeof allIcons];
-  return styled(() => <Icon {...iconProps} />)({
-    ...iconStyles,
+  return styled(() => <Icon {...iconProps(size)} />)({
+    ...iconStyles(size),
   });
 };
 
-const getIconsArray = (keys: string[]) =>
+const getIconsArray = (keys: string[], size: number) =>
   keys.map((icon) => {
-    const StyledIcon = getStyledIcon(icon);
+    const StyledIcon = getStyledIcon(icon, size);
     const iconName = `Icon${icon}`;
     return (
       <IconWrapper key={iconName}>
@@ -59,14 +60,14 @@ const getIconsArray = (keys: string[]) =>
     );
   });
 
-const baseIconsArray = getIconsArray(baseIconKeys);
+const baseIconsArray = getIconsArray(baseIconKeys, 27);
 
-const illustrativeIconsArray = getIconsArray(illustrativeIconKeys);
+const illustrativeIconsArray = getIconsArray(illustrativeIconKeys, 45);
 
-const doctypeIconsArray = getIconsArray(doctypeIconKeys);
+const doctypeIconsArray = getIconsArray(doctypeIconKeys, 32);
 
 const logoIconKeysArray = logoIconKeys.map((icon) => {
-  const StyledIcon = getStyledIcon(icon);
+  const StyledIcon = getStyledIcon(icon, 55);
   const iconName = `Icon${icon}`;
   const isInverted = icon.includes('Invert');
   const invertStyle = isInverted

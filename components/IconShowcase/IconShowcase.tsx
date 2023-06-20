@@ -1,64 +1,69 @@
 import { useTranslation } from 'next-export-i18n';
-import { CSSProperties } from 'react';
-import {
-  BaseIconKeys,
-  Block,
-  DoctypeIconKeys,
-  Heading,
-  Icon,
-  IllustrativeIconKeys,
-  StaticIcon,
-  ExternalLink,
-} from 'suomifi-ui-components';
-import { IconCategories } from '../../interfaces/interfaces';
+
+import { Block, ExternalLink, Heading } from 'suomifi-ui-components';
+
 import Divider from '../Divider/Divider';
+import {
+  BaseIcons,
+  IllustrativeIcons,
+  DoctypeIcons,
+  LogoIcons,
+} from '../../utils/icons';
 import styles from './IconShowcase.module.scss';
 
-interface IconShowcaseProps {
-  iconCategories: IconCategories[];
-}
+const iconCategories = [
+  {
+    id: 'baseIcons',
+    title: 'icons.base_icons.title',
+    icons: <BaseIcons />,
+    linkTitle: 'icons.base_icons.link_title',
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/assets/baseIcons',
+  },
+  {
+    id: 'illustrativeIcons',
+    title: 'icons.illustrative_icons.title',
+    icons: <IllustrativeIcons />,
+    linkTitle: 'icons.illustrative_icons.link_title',
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/assets/illustrativeIcons',
+  },
+  {
+    id: 'doctypeIcons',
+    title: 'icons.doctype_icons.title',
+    icons: <DoctypeIcons />,
+    linkTitle: 'icons.doctype_icons.link_title',
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/assets/doctypeIcons',
+  },
+  {
+    id: 'logoIcons',
+    title: 'icons.logo_icons.title',
+    icons: <LogoIcons />,
+    linkTitle: 'icons.logo_icons.link_title',
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/assets/logoIcons',
+  },
+];
 
-const getExampleIcon = (
-  id: string,
-  itemId: string,
-  label: string,
-  style?: CSSProperties,
-): JSX.Element => (
-  <div className={styles.iconItem} key={id} style={{ ...style }}>
-    {itemId === 'baseIcons' ? (
-      <Icon icon={id as BaseIconKeys} className={styles.icon} />
-    ) : (
-      <StaticIcon
-        icon={id as IllustrativeIconKeys | DoctypeIconKeys}
-        className={styles.staticIcon}
-      />
-    )}
-    <span>{label}</span>
-  </div>
-);
-
-const IconShowcase: React.FunctionComponent<IconShowcaseProps> = ({
-  iconCategories,
-}) => {
+const IconShowcase: React.FunctionComponent = () => {
   const { t } = useTranslation();
   return (
     <Block>
-      {iconCategories.map((cat, index) => (
+      {iconCategories.map((category, index) => (
         <Block mb="l" key={index}>
           <Block>
             <Heading variant="h2" className="mb-l">
-              {cat.title}
+              {t(category.title)}
             </Heading>
             <ExternalLink
               labelNewWindow={t('common.opens_in_a_new_tab')}
-              href={cat.linkUrl}
+              href={category.linkUrl}
             >
-              {cat.linkTitle}
+              {t(category.linkTitle)}
             </ExternalLink>
             <Block variant="div" mt="l" className={styles.iconsContainer}>
-              {cat.icons.map((icon) => {
-                return getExampleIcon(icon, cat.id, icon);
-              })}
+              {category.icons}
             </Block>
           </Block>
           {index !== 2 && <Divider />}

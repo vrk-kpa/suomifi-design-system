@@ -3,7 +3,12 @@ import { useTranslation } from 'next-export-i18n';
 import { Block, ExternalLink, Heading } from 'suomifi-ui-components';
 
 import Divider from '../Divider/Divider';
-import { BaseIcons, IllustrativeIcons, DoctypeIcons } from '../../utils/icons';
+import {
+  BaseIcons,
+  IllustrativeIcons,
+  DoctypeIcons,
+  LogoIcons,
+} from '../../utils/icons';
 import styles from './IconShowcase.module.scss';
 
 const iconCategories = [
@@ -30,6 +35,14 @@ const iconCategories = [
     linkTitle: 'icons.doctype_icons.link_title',
     linkUrl:
       'https://github.com/vrk-kpa/suomifi-icons/tree/master/assets/doctypeIcons',
+  },
+  {
+    id: 'logoIcons',
+    title: 'icons.logo_icons.title',
+    icons: <LogoIcons />,
+    linkTitle: 'icons.logo_icons.link_title',
+    linkUrl:
+      'https://github.com/vrk-kpa/suomifi-icons/tree/master/assets/logoIcons',
   },
 ];
 

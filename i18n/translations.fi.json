@@ -192,6 +192,10 @@
     "doctype_icons": {
       "title": "Liitetiedostoikonit (doctype icons)",
       "link_title": "Liitetiedostoikonit GitHubissa SVG-muodossa"
+    },
+    "logo_icons": {
+      "title": "Logoikonit (logo icons)",
+      "link_title": "Logoikonit GitHubissa SVG-muodossa"
     }
   },
   "spacing": {

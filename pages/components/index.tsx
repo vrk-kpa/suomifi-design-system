@@ -65,7 +65,7 @@ const ComponentsIndexPage: NextPage = () => {
         </Paragraph>
 
         <ExternalLink
-          href="https://github.com/vrk-kpa/suomifi-ui-components"
+          href="https://vrk-kpa.github.io/suomifi-ui-components/"
           labelNewWindow={t('common.opens_in_a_new_tab')}
         >
           {t('components_main_page.link_text')}
@@ -79,7 +79,7 @@ const ComponentsIndexPage: NextPage = () => {
             {t('components_main_page.usage.description')}
           </Paragraph>
 
-          <ComponentExample codeString={basicExample}>
+          <ComponentExample codeString={basicExample} showCode>
             <Button>Example</Button>
           </ComponentExample>
         </Block>
@@ -93,7 +93,7 @@ const ComponentsIndexPage: NextPage = () => {
             <Text>{t('components_main_page.theme.description')}</Text>
           </Paragraph>
 
-          <ComponentExample codeString={themeExampleJSX}>
+          <ComponentExample codeString={themeExampleJSX} showCode>
             <SuomifiThemeProvider theme={customTheme}>
               <Button>Theme</Button>
             </SuomifiThemeProvider>
@@ -113,8 +113,9 @@ const ComponentsIndexPage: NextPage = () => {
           <ComponentExample
             codeString={advancedExample}
             style={{ gap: defaultSuomifiTheme.spacing.m }}
+            showCode
           >
-            <CustomButton>Styled</CustomButton>
+            <CustomButton>Styled Components</CustomButton>
             <Button className="button--custom">Classname</Button>
           </ComponentExample>
         </Block>

@@ -286,8 +286,8 @@
   },
   "components_main_page": {
     "ingress": "Suomi.fi Design System tarjoaa kokoelman saavutettavia, uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Komponentit on toteutettu Suomi.fi-identiteetin mukaisina React-komponentteina.",
-    "text": "Komponenttikirjasto tarjoaa kaikki komponentit samasta npm-moduulista. Kirjaston tekninen ohjeistus ja käyttöönotto löytyy GitHub-dokumentaatiosta.",
-    "link_text": "GitHub",
+    "text": "Komponenttikirjasto tarjoaa kaikki komponentit samasta npm-moduulista. Kirjaston tekninen ohjeistus ja käyttöönotto-ohjeet löytyvät erillisestä teknisestä dokumentaatiosta.",
+    "link_text": "Tekninen dokumentaatio",
     "usage": {
       "title": "Komponenttien käyttö",
       "description": "Kirjastosta voi valita käyttöön haluamiaan komponentteja. Komponentit ovat avointa lähdekoodia.",

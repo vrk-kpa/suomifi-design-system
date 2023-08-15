@@ -5,5 +5,6 @@ out
 yarn-error.log
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+.idea
+.vscode
+

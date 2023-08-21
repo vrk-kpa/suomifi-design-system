@@ -425,17 +425,17 @@
         "label": "Toissijainen ",
         "label_disabled": "Estetty toissijainen"
       },
-      "link": {
-        "title": "Linkkipainike (Link Button)",
-        "description": "Linkkipainiketta käytetään tärkeän huomionarvoisen toiminnon esittämiseen, mutta toiminto ei ole käyttäjälle välttämättä pakollinen. Painiketta voidaan käyttää esimerkiksi taulukossa, jossa sama painike toistuu riveittäin.",
-        "label": "Linkki",
-        "label_disabled": "Estetty linkki"
+      "secondary_light": {
+        "title": "Toissijainen kevyt painike (Secondary Light Button)",
+        "description": "Toissijaista kevyt painiketta käytetään tärkeän huomionarvoisen toiminnon esittämiseen, mutta toiminto ei ole käyttäjälle välttämättä pakollinen. Painiketta voidaan käyttää esimerkiksi taulukossa, jossa sama painike toistuu riveittäin.",
+        "label": "Toissijainen kevyt",
+        "label_disabled": "Estetty toissijainen kevyt"
       },
       "secondary_no_border": {
         "title": "Reunukseton painike (Borderless Button)",
         "description": "Reunuksetonta painiketta käytetään silloin, kun toiminnon huomioarvoa halutaan alentaa muihin nähden. Reunuksetonta painiketta voidaan käyttää toissijaisen painikkeen kaltaisesti esimerkiksi dialogin \"Keskeytä\"-painikkeena. Huomioi, että tekstipainikkeen taustaväri on oletuksena valkoinen, mutta on myös määriteltävissä käyttötapauksen mukaisesti.",
-        "label": "Reunukseton painike",
-        "label_disabled": "Estetty reunukseton painike"
+        "label": "Reunukseton",
+        "label_disabled": "Estetty reunukseton"
       },
       "negative": {
         "title": "Käänteinen painike (Inverted Button)",

@@ -783,11 +783,11 @@
 
     "example": {
       "menuitem1": "Suomeksi (FI)",
-      "menuitem1short": "FI",
+      "menuitem1short": "fi",
       "menuitem2": "På Svenska (SV)",
-      "menuitem2short": "SV",
+      "menuitem2short": "sv",
       "menuitem3": "In English (EN)",
-      "menuitem3short": "EN"
+      "menuitem3short": "en"
     }
   },
 

@@ -111,39 +111,6 @@ const ButtonPage: NextPage = () => {
 
         <Block>
           <Heading variant="h2" className="my-xl">
-            {t('button_page.example.secondary_light.title')}
-          </Heading>
-
-          <Paragraph className="mb-l">
-            {t('button_page.example.secondary_light.description')}
-          </Paragraph>
-
-          <ComponentExample
-            style={{
-              padding: defaultSuomifiTheme.spacing.m,
-              background: defaultSuomifiTheme.colors.whiteBase,
-              gap: defaultSuomifiTheme.spacing.m,
-            }}
-          >
-            <Block>
-              <Button variant="secondaryLight" onClick={() => undefined}>
-                {t('button_page.example.secondary_light.label')}
-              </Button>
-            </Block>
-            <Block>
-              <Button
-                variant="secondaryLight"
-                disabled
-                onClick={() => undefined}
-              >
-                {t('button_page.example.secondary_light.label_disabled')}
-              </Button>
-            </Block>
-          </ComponentExample>
-        </Block>
-
-        <Block>
-          <Heading variant="h2" className="my-xl">
             {t('button_page.example.negative.title')}
           </Heading>
 
@@ -195,6 +162,39 @@ const ButtonPage: NextPage = () => {
             <Block>
               <Button variant="secondary" disabled onClick={() => undefined}>
                 {t('button_page.example.secondary.label_disabled')}
+              </Button>
+            </Block>
+          </ComponentExample>
+        </Block>
+
+        <Block>
+          <Heading variant="h2" className="my-xl">
+            {t('button_page.example.secondary_light.title')}
+          </Heading>
+
+          <Paragraph className="mb-l">
+            {t('button_page.example.secondary_light.description')}
+          </Paragraph>
+
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.m,
+              background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
+            }}
+          >
+            <Block>
+              <Button variant="secondaryLight" onClick={() => undefined}>
+                {t('button_page.example.secondary_light.label')}
+              </Button>
+            </Block>
+            <Block>
+              <Button
+                variant="secondaryLight"
+                disabled
+                onClick={() => undefined}
+              >
+                {t('button_page.example.secondary_light.label_disabled')}
               </Button>
             </Block>
           </ComponentExample>

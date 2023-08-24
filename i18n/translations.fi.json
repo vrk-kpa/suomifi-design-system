@@ -426,10 +426,10 @@
         "label_disabled": "Estetty toissijainen"
       },
       "secondary_light": {
-        "title": "Toissijainen kevyt painike (Secondary Light Button)",
-        "description": "Toissijaista kevyt painiketta käytetään tärkeän huomionarvoisen toiminnon esittämiseen, mutta toiminto ei ole käyttäjälle välttämättä pakollinen. Painiketta voidaan käyttää esimerkiksi taulukossa, jossa sama painike toistuu riveittäin.",
-        "label": "Toissijainen kevyt",
-        "label_disabled": "Estetty toissijainen kevyt"
+        "title": "Kevyt toissijainen painike (Light Secondary Button)",
+        "description": "Kevyttä toissijaista painiketta käytetään tärkeän huomionarvoisen toiminnon esittämiseen, mutta toiminto ei ole käyttäjälle välttämättä pakollinen. Painiketta voidaan käyttää esimerkiksi taulukossa, jossa sama painike toistuu riveittäin.",
+        "label": "Kevyt toissijainen",
+        "label_disabled": "Estetty kevyt toissijainen"
       },
       "secondary_no_border": {
         "title": "Reunukseton painike (Borderless Button)",

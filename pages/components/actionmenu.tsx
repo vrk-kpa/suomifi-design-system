@@ -113,6 +113,9 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('actionmenu_page.size_and_usage.text_2')}
           </Paragraph>
+          <Paragraph className="my-xl">
+            {t('actionmenu_page.size_and_usage.text_3')}
+          </Paragraph>
         </Block>
 
         <Block variant="section">

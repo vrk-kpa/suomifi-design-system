@@ -252,7 +252,7 @@
   },
   "components": {
     "component_usage_info": "Komponenttien käyttöohje",
-    "actionmenu": "ActionMenu (Toimintovalikko)",
+    "actionmenu": "Action Menu (Toimintovalikko)",
     "alert": "Alert (Heräte)",
     "block": "Block (Lohko)",
     "breadcrumb": "Breadcrumb (Murupolku)",
@@ -307,22 +307,23 @@
   },
 
   "actionmenu_page": {
-    "site_title": "ActionMenu (Toimintovalikko) | Suomi.fi Design System",
-    "heading": "ActionMenu (Toimintovalikko)",
-    "ingress": "Toimintovalikko kokoaa sisältölistan monesta valittavasta vaihtoehdosta joista käyttäjä voi valita yhden. Pudotusvalikosta voidaan myös aktivoida toimintoja.",
+    "site_title": "Action Menu (Toimintovalikko) | Suomi.fi Design System",
+    "heading": "Action Menu (Toimintovalikko)",
+    "ingress": "Toimintovalikkoa käytetään toimintojen käynnistämiseen silloin, kun toimintojen määrä on niin suurin, että tavalliset painikkeet veisivät liian paljon tilaa käyttöliittymässä.",
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Toimintovalikko säästää tilaa käyttöliittymässä kokoamalla toimintoja listaan, jonka voi avata ja sulkea. Toimintovalikon avulla käyttäjä voi valita yhden toiminnon listasta. Kun käyttäjä valitsee toiminnon, valikko sulkeutuu ja valittu toiminto suoritetaan. Valikko sulkeutuu myös valikkopainikkeesta tai jos käyttäjä klikkaa valikon ulkopuolelle.",
-      "text_2": "Yksittäiset toiminnot voivat olla poistettuna käytöstä, jolloin niitä ei voi valita. Visuaalisesti hieman samankaltaisia komponentteja Yksittäisvalinta, Monivalinta ja Pudotusvalikko käytetään yleensä tiedon syöttämiseen. Toimintovalikkoa taas käytetään toimintojen käynnistämiseen ja se toimii vaihtoehtona Painikkeille."
+      "text_2": "Yksittäiset toiminnot voivat olla poistettuna käytöstä, jolloin niitä ei voi valita.",
+      "text_3": "Visuaalisesti hieman samankaltaisia komponentteja Yksittäisvalinta, Monivalinta ja Pudotusvalikko käytetään yleensä tiedon syöttämiseen. Toimintovalikkoa taas käytetään toimintojen käynnistämiseen ja se toimii vaihtoehtona Painikkeille."
     },
     "accessibility_list": {
       "point_1": "Huomioi toimintovalikon asettamat mahdolliset kognitiiviset saavutettavuushaasteet. Käytä komponenttia harkiten ja mieti tarkoin valikon sisältö.",
       "point_2": "Jos valintavaihtoehtoja on vain muutama, hyvä vaihtoehto toimintovalikolle voi olla painike- tai linkkikomponentti.",
       "point_3": "Järjestä toimintovalikon sisältö aakkosjärjestykseen tai relevanssin mukaan.",
-      "point_4": "Jos valikkopainike sisältää vain ikonin ilman tekstiä, lisää valikkopainikkeeseen kuvaileva aria-label teksti ruudunlukijoita varten."
+      "point_4": "Jos valikkopainike sisältää vain ikonin ilman tekstiä, lisää valikkopainikkeeseen toimintoa kuvaava aria-label teksti ruudunlukijoita varten."
     },
     "what_does_the_component_contain": {
-      "heading": "Komponentin koostumus",
+      "heading": "Mistä komponentti koostuu",
       "text_1": "Valikkopainike.",
       "text_2": "Valikko, joka avautuu valikkopainiketta painamalla. Valikossa on toimintopainikkeita ja mahdollisesti jakoviivoja.",
       "text_3": "Toimintopainikkeet ovat semanttisesti painikkeita ja voivat sisältää tekstin lisäksi ikonin.",

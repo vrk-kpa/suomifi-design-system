@@ -309,7 +309,7 @@
   "actionmenu_page": {
     "site_title": "Action Menu (Toimintovalikko) | Suomi.fi Design System",
     "heading": "Action Menu (Toimintovalikko)",
-    "ingress": "Toimintovalikkoa käytetään toimintojen käynnistämiseen silloin, kun toimintojen määrä on niin suurin, että tavalliset painikkeet veisivät liian paljon tilaa käyttöliittymässä.",
+    "ingress": "Toimintovalikkoa käytetään toimintojen käynnistämiseen silloin, kun toimintojen määrä on niin suuri, että tavalliset painikkeet veisivät liian paljon tilaa käyttöliittymässä.",
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Toimintovalikko säästää tilaa käyttöliittymässä kokoamalla toimintoja listaan, jonka voi avata ja sulkea. Toimintovalikon avulla käyttäjä voi valita yhden toiminnon listasta. Kun käyttäjä valitsee toiminnon, valikko sulkeutuu ja valittu toiminto suoritetaan. Valikko sulkeutuu myös valikkopainikkeesta tai jos käyttäjä klikkaa valikon ulkopuolelle.",

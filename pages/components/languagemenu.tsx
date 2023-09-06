@@ -30,7 +30,7 @@ const Page: NextPage = () => {
     },
     {
       text: t('language_menu_page.example.menuitem3'),
-      lang: t('language_menu_page.example.menuitem1short'),
+      lang: t('language_menu_page.example.menuitem3short'),
     },
   ];
 

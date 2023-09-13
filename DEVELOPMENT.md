@@ -5,7 +5,7 @@
 Run the development server:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser
@@ -17,14 +17,14 @@ Staged files are linted with `lint-staged` when committing
 
 Lint files:
 ```bash
-yarn lint
+npm run lint
 ```
 
 ## Testing build
 
 Build and export:
 ```bash
-yarn build
+npm run build
 ```
 
 Serve folder out:

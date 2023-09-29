@@ -3,35 +3,22 @@
 
 .header {
   display: flex;
-  flex-direction: column;
-  border-top: 4px solid $fi-color-brand-base;
-  border-bottom: 1px solid $fi-color-depth-light1;
+  justify-content: space-between;
+  padding-top: 10px;
 
-  .upper {
-    display: flex;
-    justify-content: center;
-    padding: 15px 15px 0 15px;
+  @include upto-lg {
+    padding-bottom: 10px;
+  }
 
-    .container {
-      display: flex;
-      flex: 1;
-      justify-content: space-between;
-      max-width: var(--content-max-width);
-      padding-bottom: 15px;
+  .logo {
+    cursor: pointer;
+  }
 
-      .logo {
-        height: 32px;
-        width: auto;
-        cursor: pointer;
-      }
+  .mobileNavContainer {
+    display: none;
 
-      .mobileNavContainer {
-        display: none;
-
-        @include upto-lg {
-          display: block;
-        }
-      }
+    @include upto-lg {
+      display: block;
     }
   }
 
@@ -41,7 +28,6 @@
     @include from-lg {
       display: flex;
       justify-content: center;
-      border-top: 1px solid $fi-color-depth-light1;
     }
   }
 }

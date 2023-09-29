@@ -2,31 +2,37 @@
 @import '../../styles/breakpoints';
 
 .heroBlock {
-  background-image: url('~/public/hero_bg.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: $fi-spacing-xxxxl 0;
+  display: flex;
+  justify-content: center;
 
-  @include upto-lg {
-    padding: $fi-spacing-xxl 0;
-  }
-
-  .heroContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: $fi-spacing-xxl;
-
-    @include upto-lg {
-      flex-direction: column;
-      gap: $fi-spacing-l;
-    }
-  }
-
-  .heroLogoContainer {
+  .heroBlockImage {
+    height: 375px;
     width: 100%;
-    max-width: 63px;
-    height: 100%;
+    max-width: 1440px;
+    background-image: url('~/public/hero_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .heroBlockLine {
+      height: 4px;
+      width: 115px;
+      background: $fi-color-white-base;
+      margin-bottom: $fi-spacing-xl;
+      margin-top: 105px;
+    }
+
+    h1 {
+      color: $fi-color-white-base;
+      font-size: 55px;
+      font-weight: 600;
+      margin-bottom: $fi-spacing-m;
+    }
+
+    .heroBlockSubtitle {
+      font-size: 26px;
+      font-weight: 600;
+      color: $fi-color-white-base;
+    }
   }
 }

@@ -2,7 +2,20 @@
 @import '../../styles/breakpoints';
 
 .footer {
-  padding: 0 0 $fi-spacing-xl 0;
+  padding: $fi-spacing-xxl 0;
+  border-top: 2px solid $fi-color-brand-base;
+
+  .top {
+    display: flex;
+    align-items: center;
+    gap: $fi-spacing-m;
+    padding-bottom: $fi-spacing-m;
+
+    @include upto-md {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 
   .suomifiLink {
     display: inline-block;
@@ -13,22 +26,16 @@
     }
   }
 
-  .texts {
-    display: flex;
-
-    @include upto-md {
-      flex-direction: column;
-    }
-  }
-
-  .left {
-    display: flex;
-    flex-direction: column;
+  .text {
     width: 40%;
-    margin-right: $fi-spacing-xl;
 
     @include upto-md {
       width: 100%;
+    }
+
+    @include from-md {
+      border-left: 1px solid $fi-color-depth-base;
+      padding-left: $fi-spacing-m;
     }
   }
 
@@ -36,12 +43,10 @@
     flex: 1;
     display: flex;
     gap: $fi-spacing-l;
-    justify-content: flex-end;
     align-items: flex-start;
     flex-wrap: wrap;
 
     @include upto-md {
-      margin-top: $fi-spacing-xl;
       justify-content: flex-start;
     }
   }

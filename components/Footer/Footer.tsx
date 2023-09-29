@@ -7,26 +7,29 @@ import {
   RouterLink,
   Link as SuomifiLink,
   Text,
-  IconLogoHorizontal,
 } from 'suomifi-ui-components';
 import gitHubLogo from '/public/github.svg';
 import styles from './Footer.module.scss';
+import designSystemLogo from '/public/designSystemLogo.svg';
 
 const Footer: React.FunctionComponent = () => {
   const { t } = useTranslation();
   return (
     <Block variant="footer" className={styles.footer}>
       <Block className="container">
-        <Block>
-          <SuomifiLink href="https://suomi.fi" className={styles.suomifiLink}>
-            <IconLogoHorizontal alt="Suomi.fi" className={styles.logo} />
+        <Block className={styles.top}>
+          <SuomifiLink
+            href="https://designsystem.suomi.fi"
+            className={styles.suomifiLink}
+          >
+            <Image src={designSystemLogo} alt="Suomi.fi Design System" />
           </SuomifiLink>
+          <Block className={styles.text}>
+            <Text>{t('footer.left_text')}</Text>
+          </Block>
         </Block>
         <Block>
-          <Block variant="div" className={styles.texts}>
-            <Block className={styles.left}>
-              <Text>{t('footer.left_text')}</Text>
-            </Block>
+          <Block variant="div" className={styles.links}>
             <Block className={styles.links}>
               <Link href="/privacy-statement" passHref>
                 <RouterLink>{t('footer.cookies')}</RouterLink>

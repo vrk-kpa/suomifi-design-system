@@ -42,7 +42,9 @@ const getExampleColor = (
   <div key={id} className={styles.colorContainer}>
     <div className={styles.colorBox} style={{ background: value, ...style }} />
     <div className={styles.colorText}>{value}</div>
-    <div className={styles.colorText}>{hslaToHex(value)}</div>
+    <div className={styles.colorText}>
+      {name !== 'brandBase' ? hslaToHex(value) : '#003479'}
+    </div>
     <div className={styles.colorText}>{name}</div>
   </div>
 );

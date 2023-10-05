@@ -34,25 +34,23 @@ const Header: React.FunctionComponent = () => {
   ];
 
   return (
-    <Block variant="header" className={styles.header}>
-      <Block className={styles.upper}>
-        <Block className={styles.container}>
-          <Link href="/">
-            <div className={styles.logo}>
-              <Image src={designSystemLogo} alt="Suomi.fi Design System" />
-            </div>
-          </Link>
-          <div className={styles.mobileNavContainer}>
-            <MobileNavMenuButton
-              navItems={navItems}
-              ariaLabel={'Avaa päänavigaation'}
-            />
+    <Block className="container">
+      <Block variant="header" className={styles.header}>
+        <Link href="/">
+          <div className={styles.logo}>
+            <Image src={designSystemLogo} alt="Suomi.fi Design System" />
           </div>
-        </Block>
+        </Link>
+        <div className={styles.mobileNavContainer}>
+          <MobileNavMenuButton
+            navItems={navItems}
+            ariaLabel={'Avaa päänavigaation'}
+          />
+        </div>
+        <div className={styles.desktopNavContainer}>
+          <Navbar navItems={navItems} />
+        </div>
       </Block>
-      <div className={styles.desktopNavContainer}>
-        <Navbar navItems={navItems} />
-      </div>
     </Block>
   );
 };

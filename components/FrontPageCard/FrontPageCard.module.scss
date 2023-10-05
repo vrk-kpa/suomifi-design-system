@@ -1,0 +1,28 @@
+@import '~suomifi-design-tokens/dist/tokens';
+@import '../../styles/breakpoints';
+
+.frontPageCard {
+  width: 350px;
+
+  @include upto-lg {
+    width: 100%;
+  }
+
+  .upper {
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: $fi-radius-basic;
+    border-top-right-radius: $fi-radius-basic;
+    padding: $fi-spacing-xl;
+  }
+
+  .lower {
+    background-color: $fi-color-white-base;
+    box-shadow: $fi-shadow-panel-shadow;
+    padding: $fi-spacing-xs $fi-spacing-s $fi-spacing-m $fi-spacing-s;
+    border-bottom-left-radius: $fi-radius-basic;
+    border-bottom-right-radius: $fi-radius-basic;
+  }
+}

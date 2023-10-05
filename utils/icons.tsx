@@ -42,7 +42,7 @@ const iconStyles = (size: number) => ({
 
 const getStyledIcon = (icon: string, size: number) => {
   const iconName = `Icon${icon}`;
-  const Icon = allIcons[iconName as keyof typeof allIcons];
+  const Icon = allIcons[iconName as keyof typeof allIcons] as React.ElementType;
   return styled(() => <Icon {...iconProps(size)} />)({
     ...iconStyles(size),
   });

@@ -16,6 +16,7 @@ interface ComponentExampleProps {
   variant?: ComponentExampleVariant;
   children?: ReactNode;
   codeString?: string;
+  showCode?: boolean;
   style?: CSSProperties;
 }
 
@@ -33,6 +34,7 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
   variant,
   filterPropsInExample,
   codeString,
+  showCode = false,
   style,
 }) => {
   const showcase =
@@ -46,26 +48,28 @@ const ComponentExample: React.FunctionComponent<ComponentExampleProps> = ({
   return (
     <>
       {showcase}
-      <Expander className="mt-l mb-l">
-        <ExpanderTitleButton>Koodiesimerkki (React)</ExpanderTitleButton>
-        <ExpanderContent>
-          {codeString ? (
-            <ComponentCode codeString={codeString} />
-          ) : (
-            getWithoutWrappers(children).map((child, index) => (
-              <ComponentCode
-                key={index}
-                filterProps={filterPropsInExample}
-                style={{
-                  paddingTop: index === 0 && !codeString ? '1rem' : 0,
-                }}
-              >
-                {child}
-              </ComponentCode>
-            ))
-          )}
-        </ExpanderContent>
-      </Expander>
+      {showCode && (
+        <Expander className="mt-l mb-l">
+          <ExpanderTitleButton>Koodiesimerkki (React)</ExpanderTitleButton>
+          <ExpanderContent>
+            {codeString ? (
+              <ComponentCode codeString={codeString} />
+            ) : (
+              getWithoutWrappers(children).map((child, index) => (
+                <ComponentCode
+                  key={index}
+                  filterProps={filterPropsInExample}
+                  style={{
+                    paddingTop: index === 0 ? '1rem' : 0,
+                  }}
+                >
+                  {child}
+                </ComponentCode>
+              ))
+            )}
+          </ExpanderContent>
+        </Expander>
+      )}
     </>
   );
 };

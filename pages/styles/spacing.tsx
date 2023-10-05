@@ -40,6 +40,7 @@ const StylesIndexPage: NextPage = () => {
           <ComponentExample
             filterPropsInExample={['style', 'className']}
             style={{ flexDirection: 'column' }}
+            showCode
           >
             <Block
               className="flex justify-center align-center"

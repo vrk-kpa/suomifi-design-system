@@ -19,9 +19,23 @@ import {
 const Page: NextPage = () => {
   const { t } = useTranslation();
 
-  const [language, setLanguage] = useState(
-    t('language_menu_page.example.menuitem1short'),
-  );
+  const languages = [
+    {
+      text: t('language_menu_page.example.menuitem1'),
+      lang: t('language_menu_page.example.menuitem1short'),
+    },
+    {
+      text: t('language_menu_page.example.menuitem2'),
+      lang: t('language_menu_page.example.menuitem2short'),
+    },
+    {
+      text: t('language_menu_page.example.menuitem3'),
+      lang: t('language_menu_page.example.menuitem3short'),
+    },
+  ];
+
+  const [selectedLanguage, setSelectedLanguage] = useState(languages[2]);
+
   return (
     <>
       <Head>
@@ -48,37 +62,20 @@ const Page: NextPage = () => {
 
         <Block variant="section">
           <ComponentExample>
-            <LanguageMenu name={language}>
-              <LanguageMenuItem
-                onSelect={() =>
-                  setLanguage(t('language_menu_page.example.menuitem1short'))
-                }
-                selected={
-                  language === t('language_menu_page.example.menuitem1short')
-                }
-              >
-                {t('language_menu_page.example.menuitem1')}
-              </LanguageMenuItem>
-              <LanguageMenuItem
-                onSelect={() =>
-                  setLanguage(t('language_menu_page.example.menuitem2short'))
-                }
-                selected={
-                  language === t('language_menu_page.example.menuitem2short')
-                }
-              >
-                {t('language_menu_page.example.menuitem2')}
-              </LanguageMenuItem>
-              <LanguageMenuItem
-                onSelect={() =>
-                  setLanguage(t('language_menu_page.example.menuitem3short'))
-                }
-                selected={
-                  language === t('language_menu_page.example.menuitem3short')
-                }
-              >
-                {t('language_menu_page.example.menuitem3')}
-              </LanguageMenuItem>
+            <LanguageMenu
+              buttonText={selectedLanguage.text}
+              aria-label={`Change language, selected language: ${selectedLanguage.text}`}
+            >
+              {languages.map((item) => (
+                <LanguageMenuItem
+                  onSelect={() => setSelectedLanguage(item)}
+                  lang={item.lang}
+                  key={item.lang}
+                  selected={selectedLanguage.lang === item.lang}
+                >
+                  {item.text}
+                </LanguageMenuItem>
+              ))}
             </LanguageMenu>
           </ComponentExample>
         </Block>

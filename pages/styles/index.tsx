@@ -54,7 +54,7 @@ const StylesIndexPage: NextPage = () => {
           <Paragraph marginBottomSpacing="l">
             {t('styles_main_page.style_usage_paragraph_1')}
           </Paragraph>
-          <ComponentExample codeString={styleExampleFromTokens}>
+          <ComponentExample codeString={styleExampleFromTokens} showCode>
             <div
               style={{
                 margin: suomifiDesignTokens.spacing.xl,
@@ -74,7 +74,7 @@ const StylesIndexPage: NextPage = () => {
               {t('styles_main_page.style_usage_paragraph_2')}
             </Paragraph>
           </Block>
-          <ComponentExample codeString={styleExampleFromUIComps} />
+          <ComponentExample codeString={styleExampleFromUIComps} showCode />
         </Block>
       </SideNavLayout>
     </>

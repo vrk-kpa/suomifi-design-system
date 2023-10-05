@@ -9,6 +9,10 @@ export const navItems: NavItem[] = [
     path: '/components',
   },
   {
+    title: translations.components.actionmenu,
+    path: '/components/actionmenu',
+  },
+  {
     title: translations.components.alert,
     path: '/components/alert',
   },

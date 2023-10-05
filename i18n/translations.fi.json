@@ -252,6 +252,7 @@
   },
   "components": {
     "component_usage_info": "Komponenttien käyttöohje",
+    "actionmenu": "Action Menu (Toimintovalikko)",
     "alert": "Alert (Heräte)",
     "block": "Block (Lohko)",
     "breadcrumb": "Breadcrumb (Murupolku)",
@@ -286,8 +287,8 @@
   },
   "components_main_page": {
     "ingress": "Suomi.fi Design System tarjoaa kokoelman saavutettavia, uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Komponentit on toteutettu Suomi.fi-identiteetin mukaisina React-komponentteina.",
-    "text": "Komponenttikirjasto tarjoaa kaikki komponentit samasta npm-moduulista. Kirjaston tekninen ohjeistus ja käyttöönotto löytyy GitHub-dokumentaatiosta.",
-    "link_text": "GitHub",
+    "text": "Komponenttikirjasto tarjoaa kaikki komponentit samasta npm-moduulista. Kirjaston tekninen ohjeistus ja käyttöönotto-ohjeet löytyvät erillisestä teknisestä dokumentaatiosta.",
+    "link_text": "Tekninen dokumentaatio",
     "usage": {
       "title": "Komponenttien käyttö",
       "description": "Kirjastosta voi valita käyttöön haluamiaan komponentteja. Komponentit ovat avointa lähdekoodia.",
@@ -302,6 +303,48 @@
       "description": "Jos komponentin tyylejä tarvitsee täydentää tai muokata se onnistuu usealla eri tavalla.",
       "button_styled": "Tyyli",
       "button_class": "Luokka nimi"
+    }
+  },
+
+  "actionmenu_page": {
+    "site_title": "Action Menu (Toimintovalikko) | Suomi.fi Design System",
+    "heading": "Action Menu (Toimintovalikko)",
+    "ingress": "Toimintovalikkoa käytetään toimintojen käynnistämiseen silloin, kun toimintojen määrä on niin suuri, että tavalliset painikkeet veisivät liian paljon tilaa käyttöliittymässä.",
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Toimintovalikko säästää tilaa käyttöliittymässä kokoamalla toimintoja listaan, jonka voi avata ja sulkea. Toimintovalikon avulla käyttäjä voi valita yhden toiminnon listasta. Kun käyttäjä valitsee toiminnon, valikko sulkeutuu ja valittu toiminto suoritetaan. Valikko sulkeutuu myös valikkopainikkeesta tai jos käyttäjä klikkaa valikon ulkopuolelle.",
+      "text_2": "Yksittäiset toiminnot voivat olla poistettuna käytöstä, jolloin niitä ei voi valita.",
+      "text_3": "Visuaalisesti hieman samankaltaisia komponentteja Yksittäisvalinta, Monivalinta ja Pudotusvalikko käytetään yleensä tiedon syöttämiseen. Toimintovalikkoa taas käytetään toimintojen käynnistämiseen ja se toimii vaihtoehtona Painikkeille."
+    },
+    "accessibility_list": {
+      "point_1": "Huomioi toimintovalikon asettamat mahdolliset kognitiiviset saavutettavuushaasteet. Käytä komponenttia harkiten ja mieti tarkoin valikon sisältö.",
+      "point_2": "Jos valintavaihtoehtoja on vain muutama, hyvä vaihtoehto toimintovalikolle voi olla painike- tai linkkikomponentti.",
+      "point_3": "Järjestä toimintovalikon sisältö aakkosjärjestykseen tai relevanssin mukaan.",
+      "point_4": "Jos valikkopainike sisältää vain ikonin ilman tekstiä, lisää valikkopainikkeeseen toimintoa kuvaava aria-label teksti ruudunlukijoita varten."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Valikkopainike.",
+      "text_2": "Valikko, joka avautuu valikkopainiketta painamalla. Valikossa on toimintopainikkeita ja mahdollisesti jakoviivoja.",
+      "text_3": "Toimintopainikkeet ovat semanttisesti painikkeita ja voivat sisältää tekstin lisäksi ikonin.",
+      "text_4":  "Jakoviiva on visuaalinen elementti, jota ruudunlukija ei huomioi."
+       },
+
+    "example": {
+      "label": "Toiminnot",
+      "option1": "Kopioi",
+      "option2": "Muokkaa",
+      "option3": "Siirrä",
+      "option4": "Poista",
+
+      "example1": {
+        "title": "Ikonit ja jakoviivat",
+        "description": "Toimintopainike voi sisältää ikonin. Valikossa voi myös käyttää jakoviivoja erottamaan kokonaisuuksia toisistaan."
+      },
+      "example2": {
+        "title": "Valikkopainike ilman tekstiä",
+        "description": "Taulukoissa toimintovalikkoa käytettäessä valikkopainikkeen sisältönä voi käyttää pelkkää ikonia."
+      }
     }
   },
 
@@ -383,17 +426,17 @@
         "label": "Toissijainen ",
         "label_disabled": "Estetty toissijainen"
       },
-      "link": {
-        "title": "Linkkipainike (Link Button)",
-        "description": "Linkkipainiketta käytetään tärkeän huomionarvoisen toiminnon esittämiseen, mutta toiminto ei ole käyttäjälle välttämättä pakollinen. Painiketta voidaan käyttää esimerkiksi taulukossa, jossa sama painike toistuu riveittäin.",
-        "label": "Linkki",
-        "label_disabled": "Estetty linkki"
+      "secondary_light": {
+        "title": "Kevyt toissijainen painike (Light Secondary Button)",
+        "description": "Kevyttä toissijaista painiketta käytetään tärkeän huomionarvoisen toiminnon esittämiseen, mutta toiminto ei ole käyttäjälle välttämättä pakollinen. Painiketta voidaan käyttää esimerkiksi taulukossa, jossa sama painike toistuu riveittäin.",
+        "label": "Kevyt toissijainen",
+        "label_disabled": "Estetty kevyt toissijainen"
       },
       "secondary_no_border": {
         "title": "Reunukseton painike (Borderless Button)",
         "description": "Reunuksetonta painiketta käytetään silloin, kun toiminnon huomioarvoa halutaan alentaa muihin nähden. Reunuksetonta painiketta voidaan käyttää toissijaisen painikkeen kaltaisesti esimerkiksi dialogin \"Keskeytä\"-painikkeena. Huomioi, että tekstipainikkeen taustaväri on oletuksena valkoinen, mutta on myös määriteltävissä käyttötapauksen mukaisesti.",
-        "label": "Reunukseton painike",
-        "label_disabled": "Estetty reunukseton painike"
+        "label": "Reunukseton",
+        "label_disabled": "Estetty reunukseton"
       },
       "negative": {
         "title": "Käänteinen painike (Inverted Button)",
@@ -741,11 +784,11 @@
 
     "example": {
       "menuitem1": "Suomeksi (FI)",
-      "menuitem1short": "FI",
+      "menuitem1short": "fi",
       "menuitem2": "På Svenska (SV)",
-      "menuitem2short": "SV",
+      "menuitem2short": "sv",
       "menuitem3": "In English (EN)",
-      "menuitem3short": "EN"
+      "menuitem3short": "en"
     }
   },
 

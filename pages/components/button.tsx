@@ -72,8 +72,8 @@ const ButtonPage: NextPage = () => {
             filterPropsInExample={['className']}
           >
             <Button fullWidth>Ensisijainen</Button>
-            <Button fullWidth variant="link" className="mt-l">
-              Linkki
+            <Button fullWidth variant="secondaryLight" className="mt-l">
+              Toissijainen vaalea
             </Button>
             <Button fullWidth variant="secondary" className="mt-l">
               Toissijainen
@@ -104,35 +104,6 @@ const ButtonPage: NextPage = () => {
             <Block>
               <Button disabled onClick={() => undefined}>
                 {t('button_page.example.primary.label_disabled')}
-              </Button>
-            </Block>
-          </ComponentExample>
-        </Block>
-
-        <Block>
-          <Heading variant="h2" className="my-xl">
-            {t('button_page.example.link.title')}
-          </Heading>
-
-          <Paragraph className="mb-l">
-            {t('button_page.example.link.description')}
-          </Paragraph>
-
-          <ComponentExample
-            style={{
-              padding: defaultSuomifiTheme.spacing.m,
-              background: defaultSuomifiTheme.colors.whiteBase,
-              gap: defaultSuomifiTheme.spacing.m,
-            }}
-          >
-            <Block>
-              <Button variant="link" onClick={() => undefined}>
-                {t('button_page.example.link.label')}
-              </Button>
-            </Block>
-            <Block>
-              <Button variant="link" disabled onClick={() => undefined}>
-                {t('button_page.example.link.label_disabled')}
               </Button>
             </Block>
           </ComponentExample>
@@ -191,6 +162,39 @@ const ButtonPage: NextPage = () => {
             <Block>
               <Button variant="secondary" disabled onClick={() => undefined}>
                 {t('button_page.example.secondary.label_disabled')}
+              </Button>
+            </Block>
+          </ComponentExample>
+        </Block>
+
+        <Block>
+          <Heading variant="h2" className="my-xl">
+            {t('button_page.example.secondary_light.title')}
+          </Heading>
+
+          <Paragraph className="mb-l">
+            {t('button_page.example.secondary_light.description')}
+          </Paragraph>
+
+          <ComponentExample
+            style={{
+              padding: defaultSuomifiTheme.spacing.m,
+              background: defaultSuomifiTheme.colors.whiteBase,
+              gap: defaultSuomifiTheme.spacing.m,
+            }}
+          >
+            <Block>
+              <Button variant="secondaryLight" onClick={() => undefined}>
+                {t('button_page.example.secondary_light.label')}
+              </Button>
+            </Block>
+            <Block>
+              <Button
+                variant="secondaryLight"
+                disabled
+                onClick={() => undefined}
+              >
+                {t('button_page.example.secondary_light.label_disabled')}
               </Button>
             </Block>
           </ComponentExample>
@@ -274,24 +278,24 @@ const ButtonPage: NextPage = () => {
             <Block>
               <Button
                 icon={<IconLogin />}
-                variant="link"
+                variant="secondaryLight"
                 onClick={() => undefined}
               >
                 {t('button_page.example.button.label_icon').replace(
                   '{{name}}',
-                  t('button_page.example.link.label'),
+                  t('button_page.example.secondary_light.label'),
                 )}
               </Button>
             </Block>
             <Block>
               <Button
                 iconRight={<IconLogin />}
-                variant="link"
+                variant="secondaryLight"
                 onClick={() => undefined}
               >
                 {t('button_page.example.button.label_icon_right').replace(
                   '{{name}}',
-                  t('button_page.example.link.label'),
+                  t('button_page.example.secondary_light.label'),
                 )}
               </Button>
             </Block>
@@ -419,8 +423,12 @@ const ButtonPage: NextPage = () => {
               </Button>
             </Block>
             <Block>
-              <Button disabled variant="link" onClick={() => undefined}>
-                {t('button_page.example.link.label_disabled')}
+              <Button
+                disabled
+                variant="secondaryLight"
+                onClick={() => undefined}
+              >
+                {t('button_page.example.secondary_light.label_disabled')}
               </Button>
             </Block>
             <div

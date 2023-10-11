@@ -6,13 +6,17 @@
   justify-content: center;
 
   .heroBlockImage {
-    height: 375px;
+    height: 380px;
     width: 100%;
-    max-width: 1440px;
     background-image: url('~/public/hero_bg.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #002a60;
+
+    @include upto-xl {
+      background-size: cover;
+    }
 
     .heroBlockLine {
       height: 4px;

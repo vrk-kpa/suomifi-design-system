@@ -59,7 +59,7 @@ const Page: NextPage = () => (
         </Block>
         <Block variant="div" className="container half-container" mt="xl">
           <Block variant="div" className="half">
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               Tämä oli se kysymys, joka vuonna 2020 löi lukkoon päätöksen koko
               julkishallinnolle avoimen Suomi.fi Design Systemin rakentamisesta
               silloisessa Väestörekisterikeskuksessa (nykyinen Digi- ja
@@ -83,7 +83,7 @@ const Page: NextPage = () => (
             </Paragraph>
           </Block>
           <Block variant="div" className="half">
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               Digi- ja väestötietoviraston yhtenä tehtävänä on edesauttaa
               julkishallinnon digitalisaation etenemistä, ja korkealaatuinen ja
               kaikille avoin Suomi.fi Design System on yksi monista keinoista,
@@ -208,14 +208,14 @@ const Page: NextPage = () => (
             </ul>
           </Block>
           <Block variant="div" className="half">
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               Koska Suomi.fi Design System on rakennettu palvelemaan kaikkia
               vauvasta vaariin, on yksi sen tärkeimmistä tavoitteista ollut
               saavutettavuuden edistäminen sähköisissä asiointipalveluissa jo
               kauan ennen kuin saavutettavuuslainsäädäntö on siihen
               velvoittanut.
             </Paragraph>
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               Konkreettinen keino tähän pääsemiseksi on ollut saavutettavuustyön
               tekeminen muille mahdollisimman helpoksi: SFI DS –tiimi ratkoo
               vaikeita asioita muiden puolesta ja jakaa ratkaisunsa avoimesti
@@ -250,7 +250,7 @@ const Page: NextPage = () => (
                 </Heading>
               </Block>
               <Paragraph
-                marginBottomSpacing="l"
+                mb="l"
                 style={{ color: suomifiDesignTokens.colors.whiteBase }}
               >
                 Suomi.fi Design Systemin kaikki elementit on suunniteltu ja
@@ -306,7 +306,7 @@ const Page: NextPage = () => (
         </Block>
         <Block variant="div" className="container half-container">
           <Block variant="div" className="half">
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               Suomi.fi Design Systemin tekemisen filosofiana on alusta asti
               ollut pyrkimys korkeaan laatuun ja edelläkävijyyteen: on haluttu
               näyttää hyvää esimerkkiä siitä, miten tehdä alusta asti
@@ -386,7 +386,7 @@ const Page: NextPage = () => (
                 Kehittäminen on avointa ja palaute tervetullutta
               </Heading>
             </Block>
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               Heti Suomi.fi Design Systemin alkutaipaleelta lähtien palautteen
               antaminen ja kerääminen on haluttu saada mahdollisimman helpoksi.
               Prosessia on iteroitu moniammatillisesti matkan varrella useaan
@@ -446,14 +446,14 @@ const Page: NextPage = () => (
         </Block>
         <Block variant="div" className="container half-container">
           <Block variant="div" className="half">
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               Design Systemin kehittäminen ja uusien komponenttien luominen on
               jatkuvaa työtä. Lähitulevaisuudessa pyritään tarjoamaan valmiita
               suunnittelu- ja toteutusmalleja yhä laajemmista kokonaisuuksista,
               kuten lomakkeista ja niiden osista. Myös uusia komponentteja
               lisätään jatkuvan tarpeen mukaan.
             </Paragraph>
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               Pitkällä aikavälillä pyritään löytämään lisää mahdollisuuksia
               tehdyn työn hyödyntämiseen myös muualla kuin
               Suomi.fi-kontekstissa. Tavoitteena on, että julkisten palveluiden

@@ -27,15 +27,11 @@ const StylesIndexPage: NextPage = () => {
         <Block mb="xl">
           <Text variant="lead">{t('spacing.ingress')}</Text>
         </Block>
-        <Paragraph marginBottomSpacing="xl">
-          {t('spacing.paragraph_1')}
-        </Paragraph>
+        <Paragraph mb="xl">{t('spacing.paragraph_1')}</Paragraph>
         <Block mb="xxxl">
           <SpacingShowcase values="normal" />
         </Block>
-        <Paragraph marginBottomSpacing="l">
-          {t('spacing.paragraph_2')}
-        </Paragraph>
+        <Paragraph mb="l">{t('spacing.paragraph_2')}</Paragraph>
         <Block mb="xxl">
           <ComponentExample
             filterPropsInExample={['style', 'className']}
@@ -69,9 +65,7 @@ const StylesIndexPage: NextPage = () => {
         <Block mb="l">
           <Heading variant="h2">{t('spacing.inset_heading')}</Heading>
         </Block>
-        <Paragraph marginBottomSpacing="xl">
-          {t('spacing.paragraph_3')}
-        </Paragraph>
+        <Paragraph mb="xl">{t('spacing.paragraph_3')}</Paragraph>
         <SpacingShowcase values="inset" />
       </SideNavLayout>
     </>

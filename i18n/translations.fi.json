@@ -65,7 +65,8 @@
   },
   "patterns": {
     "general": "Yleistä suunnittelumalleista",
-    "multi_insert": "Multi-insert"
+    "multi_insert": "Multi-insert",
+    "datetime": "Päivämäärä ja kellonaika"
   },
   "patterns_main_page": {
     "ingress": "Suunnittelumallit eli patternit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
@@ -117,6 +118,33 @@
       "remove_nameless_website": "Poista nimetön verkkosivu",
       "remove": "Poista",
       "add_new_website": "Lisää uusi verkkosivu"
+    }
+  },
+  "datetime": {
+    "heading": "Päivämäärä ja kellonaika",
+    "ingress": "Ajankohdan eli päivämäärän ja kellonajan yhteinen lisääminen lomakkeissa vaatii erityistä huomiointia saavutettavuuden osalta",
+    "accessibility_list": {
+      
+    },
+    "components_text": "Malli rakentuu seuraavista komponenteista:",
+    "reference_implementation": {
+      "heading": "Referenssitoteutus",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen päivämäärän ja kellonajan sisältävästä suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
+      "link_text": "Lähdekoodi GitHubissa",
+      "errors": {
+        "date_is_mandatory": "Julkaisuajankohdan päivämäärä on pakollinen tieto",
+        "date_incorrect_format": "Kirjoita päivämäärä oikeassa muodossa",
+        "nonexistent_date": "Kirjoita olemassa oleva päivämäärä",
+        "time_is_mandatory": "Julkaisuajankohdan kellonaika on pakollinen tieto",
+        "time_incorrect_format": "Kirjoita kellonaika oikeassa muodossa"
+      },
+      "nonexistent_time": "Kirjoita olemassa oleva kellonaika",
+      "publishing_date": "Julkaisuajankohta",
+      "date_hint_text": "Kirjoita päivämäärä muodossa p.k.vvvv",
+      "time_hint_text": "Kirjoita kellonaika muodossa t.mm",
+      "date_label": "Päivämäärä",
+      "time_label": "Kellonaika",
+      "save": "Tallenna"
     }
   },
   "styles": {
@@ -287,9 +315,11 @@
     "service_navigation": "Service navigation (Palvelunavigaatio)",
     "side_navigation": "Side navigation (Sivunavigaatio)",
     "singleselect": "Single Select (Yksittäisvalinta)",
+    "status_text": "Status text (Tilateksti)",
     "text": "Text (Teksti)",
     "textarea": "Textarea (Tekstialue)",
     "text_input": "Text Input (Tekstikenttä)",
+    "time_input": "Time input (Aikakenttä)",
     "toast": "Toast (Ponnahdusilmoitus)",
     "toggle": "Toggle (Valintakytkin)",
     "tooltip": "Tooltip (Lisätieto)",

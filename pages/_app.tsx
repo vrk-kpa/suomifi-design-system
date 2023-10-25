@@ -14,7 +14,6 @@ function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
   const { t } = useTranslation();
   const router = useRouter();
   const path = router.pathname;
-  console.log(router.pathname);
   return (
     <Block className="app">
       <Head>

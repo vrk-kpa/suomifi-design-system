@@ -18,12 +18,19 @@ export const Datetime: React.FC = () => {
 
   const [dateValue, setDateValue] = useState('');
   const [timeValue, setTimeValue] = useState('');
+
+  /*
+   * These are used to store input values which produced an error
+   * so we can check if the value has changed when the input gets
+   * focused and blurred next time
+   */
   const [invalidDateValue, setInvalidDateValue] = useState('');
   const [invalidTimeValue, setInvalidTimeValue] = useState('');
 
   const [mobileWidth, setMobileWidth] = useState(false);
 
   const dateInputRef = useRef<HTMLInputElement>(null);
+  const timeInputRef = useRef<HTMLInputElement>(null);
 
   const fieldsetStyles = {
     padding: 0,
@@ -44,7 +51,7 @@ export const Datetime: React.FC = () => {
   }, []);
 
   const checkWindowWidth = () => {
-    setMobileWidth(window.innerWidth < 391);
+    setMobileWidth(window.innerWidth < 576);
   };
 
   const isValidTimeString = (timeStr: string) => {
@@ -60,43 +67,52 @@ export const Datetime: React.FC = () => {
   };
 
   const validateForm = () => {
+    let dateErrorMessage = '';
+    let timeErrorMessage = '';
+
     if (dateValue === '') {
-      setDateErrorText(
-        t('datetime.reference_implementation.errors.date_is_mandatory'),
+      dateErrorMessage = t(
+        'datetime.reference_implementation.errors.date_is_mandatory',
       );
     } else if (!dateValue.match(/^\d{1,2}\.\d{1,2}\.\d{4}$/)) {
-      setDateErrorText(
-        t('datetime.reference_implementation.errors.date_incorrect_format'),
+      dateErrorMessage = t(
+        'datetime.reference_implementation.errors.date_incorrect_format',
       );
     } else if (!isValid(parse(dateValue, 'd.M.yyyy', new Date()))) {
-      setDateErrorText(
-        t('datetime.reference_implementation.errors.nonexistent_date'),
+      dateErrorMessage = t(
+        'datetime.reference_implementation.errors.nonexistent_date',
       );
     } else {
-      setDateErrorText('');
+      dateErrorMessage = '';
     }
 
     if (timeValue === '') {
-      setTimeErrorText(
-        t('datetime.reference_implementation.errors.time_is_mandatory'),
+      timeErrorMessage = t(
+        'datetime.reference_implementation.errors.time_is_mandatory',
       );
     } else if (!timeValue.match(/^\d{1,2}\.\d{2}$/)) {
-      setTimeErrorText(
-        t('datetime.reference_implementation.errors.time_incorrect_format'),
+      timeErrorMessage = t(
+        'datetime.reference_implementation.errors.time_incorrect_format',
       );
     } else if (!isValidTimeString(timeValue)) {
-      setTimeErrorText(
-        t('datetime.reference_implementation.errors.nonexistent_time'),
+      timeErrorMessage = t(
+        'datetime.reference_implementation.errors.nonexistent_time',
       );
     } else {
-      setTimeErrorText('');
+      timeErrorMessage = '';
     }
 
-    if (dateErrorText !== '') {
+    if (dateErrorMessage !== '') {
+      setDateErrorText(dateErrorMessage);
       setInvalidDateValue(dateValue);
+      dateInputRef.current?.focus();
     }
-    if (timeErrorText !== '') {
+    if (timeErrorMessage !== '') {
+      setTimeErrorText(timeErrorMessage);
       setInvalidTimeValue(timeValue);
+      if (dateErrorMessage === '') {
+        timeInputRef.current?.focus();
+      }
     }
   };
 
@@ -117,10 +133,13 @@ export const Datetime: React.FC = () => {
           </>
         )}
         <Block
-          style={{ display: mobileWidth ? 'block' : 'flex' }}
+          style={{ display: mobileWidth ? 'block' : 'block' }}
           mt={mobileWidth ? 'xs' : 's'}
         >
           <DateInput
+            wrapperProps={{
+              style: { display: mobileWidth ? 'block' : 'inline-block' },
+            }}
             labelText={t('datetime.reference_implementation.date_label')}
             datePickerEnabled
             aria-describedby={
@@ -132,6 +151,7 @@ export const Datetime: React.FC = () => {
                 : undefined
             }
             statusText={mobileWidth ? dateErrorText : undefined}
+            statusTextAriaLiveMode="off"
             ref={dateInputRef}
             value={dateValue}
             onChange={(newValue) => setDateValue(newValue.value)}
@@ -150,6 +170,10 @@ export const Datetime: React.FC = () => {
             smallScreen={mobileWidth}
           />
           <TimeInput
+            wrapperProps={{
+              style: { display: mobileWidth ? 'block' : 'inline-block' },
+            }}
+            ref={timeInputRef}
             labelText={t('datetime.reference_implementation.time_label')}
             ml={mobileWidth ? undefined : 's'}
             mt={mobileWidth ? 's' : undefined}
@@ -162,6 +186,7 @@ export const Datetime: React.FC = () => {
                 : undefined
             }
             statusText={mobileWidth ? timeErrorText : undefined}
+            statusTextAriaLiveMode="off"
             value={timeValue}
             onChange={(newValue) => setTimeValue(newValue)}
             status={timeErrorText !== '' ? 'error' : 'default'}
@@ -178,10 +203,15 @@ export const Datetime: React.FC = () => {
         </Block>
         {!mobileWidth && (
           <>
-            <StatusText status="error" id="date-status-text" mt="xxs">
+            <StatusText
+              status="error"
+              id="date-status-text"
+              mt="xxs"
+              ariaLiveMode="off"
+            >
               {dateErrorText}
             </StatusText>
-            <StatusText status="error" id="time-status-text">
+            <StatusText status="error" id="time-status-text" ariaLiveMode="off">
               {timeErrorText}
             </StatusText>
           </>

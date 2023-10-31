@@ -44,6 +44,7 @@ const Page: NextPage = () => {
           <ExternalLink
             href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Modal"
             labelNewWindow={t('common.opens_in_a_new_tab')}
+            variant="accent"
           >
             {t('common.see_technical_documentation_of_component')}
           </ExternalLink>
@@ -183,8 +184,9 @@ const DefaultExample = ({ ...passProps }: Partial<ModalProps>): JSX.Element => {
           >
             <Expander>
               <ExpanderTitle
-                ariaOpenText={t('modal_page.example.default.aria_open')}
-                ariaCloseText={t('modal_page.example.default.aria_close')}
+                toggleButtonAriaLabel={t(
+                  'modal_page.example.default.expander_group_aria_label',
+                )}
                 toggleButtonAriaDescribedBy="checkbox-id-1"
               >
                 <Checkbox
@@ -201,8 +203,9 @@ const DefaultExample = ({ ...passProps }: Partial<ModalProps>): JSX.Element => {
             </Expander>
             <Expander>
               <ExpanderTitle
-                ariaOpenText={t('modal_page.example.default.aria_open')}
-                ariaCloseText={t('modal_page.example.default.aria_close')}
+                toggleButtonAriaLabel={t(
+                  'modal_page.example.default.expander_group_aria_label',
+                )}
                 toggleButtonAriaDescribedBy="checkbox-id-2"
               >
                 <Checkbox
@@ -222,8 +225,9 @@ const DefaultExample = ({ ...passProps }: Partial<ModalProps>): JSX.Element => {
             </Expander>
             <Expander>
               <ExpanderTitle
-                ariaOpenText={t('modal_page.example.default.aria_open')}
-                ariaCloseText={t('modal_page.example.default.aria_close')}
+                toggleButtonAriaLabel={t(
+                  'modal_page.example.default.expander_group_aria_label',
+                )}
                 toggleButtonAriaDescribedBy="checkbox-id-3"
               >
                 <Checkbox

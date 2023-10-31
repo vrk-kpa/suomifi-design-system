@@ -89,11 +89,18 @@ const MultiInsertPage: NextPage = () => {
               {t('common.accessibility_and_usability')}
             </Heading>
             <ul>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>{t('datetime.accessibility_list.point_1')}</li>
+              <li>{t('datetime.accessibility_list.point_2')}</li>
+              <li>{t('datetime.accessibility_list.point_3')}</li>
+              <li>{t('datetime.accessibility_list.point_4')}</li>
+              <li>
+                {t('datetime.accessibility_list.point_5')}
+                <ul>
+                  <li>{t('datetime.accessibility_list.point_5_1')}</li>
+                  <li>{t('datetime.accessibility_list.point_5_2')}</li>
+                </ul>
+              </li>
+              <li>{t('datetime.accessibility_list.point_6')}</li>
             </ul>
           </InfoBox>
         </Block>

@@ -1,7 +1,7 @@
 {
   "common": {
     "accessibility_and_usability": "Saavutettavuus ja käytettävyys",
-    "see_technical_documentation_of_component": "Katso komponentin tekninen dokumentaatio",
+    "see_technical_documentation_of_component": "Komponentin tekninen dokumentaatio ja käyttöesimerkit",
     "opens_in_a_new_tab": "Avautuu uudessa välilehdessä",
     "skip_to_main_content": "Siirry pääsisältöön",
     "skip_to_side_navigation": "Siirry sivunavigaatioon"
@@ -122,9 +122,16 @@
   },
   "datetime": {
     "heading": "Päivämäärä ja kellonaika",
-    "ingress": "Ajankohdan eli päivämäärän ja kellonajan yhteinen lisääminen lomakkeissa vaatii erityistä huomiointia saavutettavuuden osalta",
+    "ingress": "Ajankohdan eli päivämäärän ja kellonajan yhteinen lisääminen lomakkeissa vaatii erityistä huomiointia saavutettavuuden osalta.",
     "accessibility_list": {
-      
+      "point_1": "Päivämääräkentän ja kellonaikakentän yhdistelmä tulee asettaa HTML fieldset -elementin sisään ja antaa yhdistelmälle kuvaava legend-tieto (referenssitoteutuksessa Julkaisuajankohta)",
+      "point_2": "Työpöytäkoossa kenttien formaattiohjeet annetaan legendin alapuolelle erillisissä ohjetekstikomponenteissa (HintText). Näille elementeille tulee antaa id ja asettaa ne vastaavan input-kentän aria-describedby -attribuuttiin.",
+      "point_3": "Vastaavasti myös kenttien tilat ilmoitetaan erillisillä tilatekstikomponenteilla (StatusText) kenttien alapuolella. Myös näille elementeille tulee antaa id ja asettaa ne vastaavan input-kentän aria-describedby -attribuuttiin.",
+      "point_4": "Mobiilikoossa input-kentät näytetään allekkain, jolloin käytetään erillisten ohje- ja tilatekstikomponenttien sijaan komponenttien sisäänrakennettuja hintText- ja statusText-toimintoja.",
+      "point_5": "Päivämäärän ja kellonajan yhdistelmän sisältävä lomake on suositeltavaa validoida vasta lomakkeen lähettämisen yhteydessä (staattinen validointi).",
+      "point_5_1": "Mikäli kentissä on virheitä, siirretään selaimen kohdistus ohjelmallisesti ensimmäiseen virheelliseen kenttään tai erilliseen virhekoosteeseen.",
+      "point_5_2": "Stattista validointia käytettäessä tilatekstien aria-live -toiminnallisuus tulee kytkeä pois päältä.",
+      "point_6": "Tutustu tältä sivulta löytyvän referenssitoteutuksen lähdekoodiin, jossa saavutettavuus- ja käytettävyysasiat on demonstroitu."
     },
     "components_text": "Malli rakentuu seuraavista komponenteista:",
     "reference_implementation": {
@@ -319,7 +326,7 @@
     "text": "Text (Teksti)",
     "textarea": "Textarea (Tekstialue)",
     "text_input": "Text Input (Tekstikenttä)",
-    "time_input": "Time input (Aikakenttä)",
+    "time_input": "Time input (Kellonaikakenttä)",
     "toast": "Toast (Ponnahdusilmoitus)",
     "toggle": "Toggle (Valintakytkin)",
     "tooltip": "Tooltip (Lisätieto)",
@@ -962,8 +969,7 @@
         "content": "Valitse, mitkä kieliversiot haluat julkaista. Sisältö julkaistaan heti, ellet ajasta sisällölle julkaisuajankohtaa. Julkaisemasi sisältö näkyy Suomi.fi verkkopalvelussa noin 10-15 minuutin viiveellä. Jos jätät kieliversion luonnostilaan, se näkyy vain palvelutietovarannossa.",
         "group_open_all": "Avaa laajennuspaanelit",
         "group_close_all": "Sulje laajennuspaanelit",
-        "aria_open": "Avaa laajennuspaneeli",
-        "aria_close": "Sulje laajennuspaneeli",
+        "expander_group_aria_label": "Lisätietoja",
         "checkbox_content_edited": "Muokattu",
         "date": "16.4.2021 2.20",
         "checkbox_content_edited_by": "Muokkaaja",
@@ -1430,6 +1436,42 @@
         "placeholder": "Valitse palvelupaikka",
         "optional_text": "valinnainen"
       }
+    }
+  },
+
+  "time_input_page": {
+    "site_title": "Time Input (Kellonaikakenttä) | Suomi.fi Design System",
+    "heading": "Time Input (Kellonaikakenttä)",
+    "ingress": "Kellonaikakenttä on komponentti, johon käyttäjä täyttää kellonajan. Se muistuttaa tekstikenttäkomponenttia, mutta sisältää tiettyjä kellonajan syöttöön tarkoitettuja erityispiirteitä.",
+    "accessibility_list": {
+      "point_1": "Kellonaikakentän kanssa tulee aina käyttää otsaketta (label).",
+      "point_2": "Käyttäjälle tulee esittää ohje kellonajan muodosta (t.mm). Ohjeen tulee olla aina näkyvissä joko ohjetekstissä tai otsakkeessa. Suositeltu paikka kellonajan muoto-ohjeelle on komponentin ohjeteksti.",
+      "point_3": "Muoto-ohjetta ei tule ilmoittaa ainoastaan kellonaikakentän placeholder-attribuutissa, koska tieto katoaa näkyvistä käyttäjän kirjoittaessa kenttään.",
+      "point_4": "Komponentin kiinteä leveys toimii vihjeenä syötteen pituudesta ja erottaa sen visuaalisesti muista tekstikentistä.",
+      "point_5": "Kellonaikakenttä täydentää tai korjaa käyttäjän syötettä vastaamaan suomalaista kellonaikaformaattia tietyissä tilanteissa. Nämä tilanteet on esitelty jäljempänä tällä sivulla."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Kellonaikakenttä koostuu otsakkeesta ja varsinaiseta syötekentästä. Komponentille voidaan lisäksi antaa ohjeteksti, joka näkyy otsakkeen ja syöttökentän välissä. Kellonajan muoto-ohje on suositeltava antaa ohjetekstinä.",
+      "text_2": "Lähtökohtaisesti kaikki Suomi.fi -lomakekentät ovat pakollisia, ja valinnaiset kentät merkitään valinnaisuustekstillä (optionalText). Valinnaisuusteksti näytetään suluissa otsakkeen lopussa. Kellonaikakentälle voidaan lisäksi antaa tila ja tilateksi, jotka ilmaisevat hyväksyttyä tai virheellistä tilaa."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Kellonaikakentällä on kiinteä 60 pikselin leveys, joka toimii vihjeenä syötteen pituudesta ja erottaa komponentin visuaalisesti muista lomakekentistä.",
+      "text_2": "Kellonaikakenttää käytetään tyypillisesti yhdessä päivämääräkentän kanssa. Tämä yhdistelmä sisältää tärkeitä huomioitavia käytettävyys- ja saavutettavuusasioita, jotka on esitelty omassa suunnittelumallissaan.",
+      "pattern_link_text": "Päivämäärä ja kellonaika yhdessä"
+    },
+    "autocomplete": {
+      "heading": "Automaattinen syötteen täydentäminen/korjaaminen",
+      "text": "Jotta kellonajan syöttäminen olisi mahdollisimman vaivatonta, sisältää komponentti logiikkaa käyttäjän syötteen automaattiselle täydentämiselle tai korjaamiselle tietyissä tapauksissa. Syötteen automaattinen täydentäminen/korjaaminen tapahtuu selaimen kohdistuksen siirtyessä pois kentästä (onBlur event).",
+      "point_1": "Mikäli syöte on 1-2 merkkiä pitkä ja muodostaa validin kellonajan tuntiosan (0-24), täydennetään kellonaika loppuun. Esim:",
+      "point_2": "Mikäli syöte on 4 merkkiä pitkä ja muodostaa validin kellonajan ilman välimerkkiä, täydennetään välimerkki paikalleen. Esim:",
+      "point_3": "Etunolla poistetaan muutoin validista kellonajasta. Esim:",
+      "point_4": "Erotinmerkkinä toimiva kaksoispiste korjataan pisteeksi muutoin validissa kellonajassa. Piste on oikea kellonajan erotinmerkki suomen kielessä. Esim:"
+    },
+    "example": {
+      "label": "Tapahtuman alkamisaika",
+      "hint_text": "Kirjoita kellonaika muodossa t.mm"
     }
   },
 

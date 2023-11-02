@@ -125,12 +125,13 @@
     "ingress": "Ajankohdan eli päivämäärän ja kellonajan yhteinen lisääminen lomakkeissa vaatii erityistä huomiointia saavutettavuuden osalta.",
     "accessibility_list": {
       "point_1": "Päivämääräkentän ja kellonaikakentän yhdistelmä tulee asettaa HTML fieldset -elementin sisään ja antaa yhdistelmälle kuvaava legend-tieto (referenssitoteutuksessa Julkaisuajankohta)",
-      "point_2": "Työpöytäkoossa kenttien formaattiohjeet annetaan legendin alapuolelle erillisissä ohjetekstikomponenteissa (HintText). Näille elementeille tulee antaa id ja asettaa ne vastaavan input-kentän aria-describedby -attribuuttiin.",
-      "point_3": "Vastaavasti myös kenttien tilat ilmoitetaan erillisillä tilatekstikomponenteilla (StatusText) kenttien alapuolella. Myös näille elementeille tulee antaa id ja asettaa ne vastaavan input-kentän aria-describedby -attribuuttiin.",
+      "point_2": "Työpöytäkoossa kenttien formaattiohjeet annetaan legendin alapuolelle erillisissä ohjetekstikomponenteissa (HintText). Näille elementeille tulee antaa id:t, joihin viitataan vastaavan input-kentän aria-describedby -attribuutissa",
+      "point_3": "Vastaavasti myös kenttien tilat ilmoitetaan erillisillä tilatekstikomponenteilla (StatusText) kenttien alapuolella. Myös näille elementeille tulee antaa id:t, joihin viitataan vastaavan input-kentän aria-describedby -attribuutissa.",
       "point_4": "Mobiilikoossa input-kentät näytetään allekkain, jolloin käytetään erillisten ohje- ja tilatekstikomponenttien sijaan komponenttien sisäänrakennettuja hintText- ja statusText-toimintoja.",
       "point_5": "Päivämäärän ja kellonajan yhdistelmän sisältävä lomake on suositeltavaa validoida vasta lomakkeen lähettämisen yhteydessä (staattinen validointi).",
       "point_5_1": "Mikäli kentissä on virheitä, siirretään selaimen kohdistus ohjelmallisesti ensimmäiseen virheelliseen kenttään tai erilliseen virhekoosteeseen.",
       "point_5_2": "Stattista validointia käytettäessä tilatekstien aria-live -toiminnallisuus tulee kytkeä pois päältä.",
+      "point_5_3": "Vaihtoehtoisesti staattisen validoinnin voi suorittaa myös kohdistuksen siirtyessä pois kentästä (onBlur event)",
       "point_6": "Tutustu tältä sivulta löytyvän referenssitoteutuksen lähdekoodiin, jossa saavutettavuus- ja käytettävyysasiat on demonstroitu."
     },
     "components_text": "Malli rakentuu seuraavista komponenteista:",
@@ -1452,8 +1453,8 @@
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text_1": "Kellonaikakenttä koostuu otsakkeesta ja varsinaiseta syötekentästä. Komponentille voidaan lisäksi antaa ohjeteksti, joka näkyy otsakkeen ja syöttökentän välissä. Kellonajan muoto-ohje on suositeltava antaa ohjetekstinä.",
-      "text_2": "Lähtökohtaisesti kaikki Suomi.fi -lomakekentät ovat pakollisia, ja valinnaiset kentät merkitään valinnaisuustekstillä (optionalText). Valinnaisuusteksti näytetään suluissa otsakkeen lopussa. Kellonaikakentälle voidaan lisäksi antaa tila ja tilateksi, jotka ilmaisevat hyväksyttyä tai virheellistä tilaa."
+      "text_1": "Kellonaikakenttä koostuu otsakkeesta (labelText) ja varsinaiseta syötekentästä. Komponentille voidaan lisäksi antaa ohjeteksti (hintText), joka näkyy otsakkeen ja syöttökentän välissä. Kellonajan muoto-ohje on suositeltava antaa ohjetekstinä.",
+      "text_2": "Lähtökohtaisesti kaikki Suomi.fi -lomakekentät ovat pakollisia, ja valinnaiset kentät merkitään valinnaisuustekstillä (optionalText). Valinnaisuusteksti näytetään suluissa otsakkeen lopussa. Kellonaikakentälle voidaan lisäksi antaa tila (status) ja tilateksti (statusText), jotka ilmaisevat hyväksyttyä tai virheellistä tilaa."
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",

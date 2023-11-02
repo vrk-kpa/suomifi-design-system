@@ -98,6 +98,7 @@ const MultiInsertPage: NextPage = () => {
                 <ul>
                   <li>{t('datetime.accessibility_list.point_5_1')}</li>
                   <li>{t('datetime.accessibility_list.point_5_2')}</li>
+                  <li>{t('datetime.accessibility_list.point_5_3')}</li>
                 </ul>
               </li>
               <li>{t('datetime.accessibility_list.point_6')}</li>

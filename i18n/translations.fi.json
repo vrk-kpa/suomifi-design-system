@@ -123,7 +123,8 @@
     "styles_usage_info": "Tyylien käyttöohje",
     "colors": "Värit",
     "icons": "Ikonit",
-    "spacing": "Välistys"
+    "spacing": "Välistys",
+    "typography": "Typografia"
   },
   "styles_main_page": {
     "ingress": "Design System tarjoaa Suomi.fi-identiteetin mukaisia tyylimäärittelyjä eli tokeneita. Design Systemiin kuuluvan komponenttikirjaston tyylit pohjautuvat näihin tokeneihin.",
@@ -132,6 +133,20 @@
     "style_usage_paragraph_1": "Tokeneita hyödyntämällä voi oman sivustonsa tyylit pitää linjassa Suomi.fi-teeman kanssa. Tokeneita voi käyttää suoraan omasta npm-moduulistaan kuten seuraavassa koodiesimerkissä.",
     "style_usage_paragraph_2": "Vaihtoehtoisesti tokenit ovat käytettävissä myös komponenttikirjaston teemaobjektin kautta alla olevan esimerkin mukaisesti.",
     "styled_element": "Tyylitelty elementti"
+  },
+  "typography": {
+    "heading": "Typografia",
+    "ingress": "Suomi.fi:n typografiateema sisältää kooltaan ja tyyliltään määritellyt tekstikomponentit ja tekstitokenit.",
+    "font_title": "Kirjasintyyppi (fontti)",
+    "font_text_1": "Suomi.fi-tyyleissä ja -käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on open source -fontti, eli kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Suomi.fi Design System vastaa fontin jakelusta oman palvelimensa kautta.",
+    "font_link_text": "Lataa kirjasin Source Sans Pro omalle laitteellesi (TTF)",
+    "font_text_2": "Kun koodiprojektissa on käytössä Suomi.fi-komponenttikirjasto (suomifi-ui-components), on projektissa syytä olla mukana tarvittavat webfonttimääritteet. Tämä tapahtuu helpoiten lisäämällä seuraava linkki projektin globaaliin CSS:ään.",
+    "body_heading": "Leipäteksti",
+    "body_text": "Käytä leipäteksteissä niille erityisesti suunniteltuja tekstikomponentteja Text ja Paragraph",
+    "body_link_text": "Katso tekstikomponenttien dokumentaatio",
+    "heading_heading": "Otsikot",
+    "heading_text": "Käytä otsikoissa niille erityisesti suunniteltua Heading-komponenttia",
+    "heading_link_text": "Katso otsikkokomponentin dokumentaatio"
   },
   "colors": {
     "heading": "Värit",
@@ -1276,15 +1291,14 @@
   "text_page": {
     "site_title": "Text (Teksti) | Suomi.fi Design System",
     "heading": "Text (Teksti)",
-
-    "title": "Kirjasintyyppi (Font)",
-    "text": "Suomi.fi-tyyleissä ja -käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on Googlen välittämä open source -fontti, kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Kirjasimen voi ladata omalle työasemalle Google Fontsista.",
-    "link_text": "Lataa kirjasin (Google Fonts) Source Sans Pro",
-    "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwik2qOSkJ3iAhVDmYsKHfIiCX8QFjAAegQICBAC&url=https%3A%2F%2Ffonts.google.com%2Fspecimen%2FSource%2BSans%2BPro&usg=AOvVaw1C5bQ5gIVNkjiNqeXsAcB-",
+    "text_documentation_link_text": "Text-komponentin tekninen dokumentaatio ja käyttöesimerkit",
+    "paragraph_documentation_link_text": "Paragraph-komponentin tekninen dokumentaatio ja käyttöesimerkit",
     "title_body": "Leipäteksti (Body)",
     "text_1": "Suomi.fi-teemassa leipätekstin oletuskoko on 18px sekä mobiili- että desktop-näkymissä. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Suomi.fi-teemassa leipäteksti on oletuksena sävyltään musta (blackBase) ja variaatiota luomassa käytetään tumman harmaata (depthDark1).",
-    "text_2": "Lihavoitua leikkausta käytetään leipätekstissä, kun halutaan korostaa käyttäjälle erityisen huomioitavaa tietoa. Lihavoitua tekstiä tulee käyttää harkiten. Jos lihavointia on käytetty liikaa, on käyttäjän vaikea ymmärtää, mihin hänen tulisi erityisesti kiinnittää huomiota sisällössä. ",
-    "body_description": "Suomi.fi-teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold -fonttia.",
+    "text_2": "Lihavoitua leikkausta käytetään leipätekstissä, kun halutaan korostaa käyttäjälle erityisen huomioitavaa tietoa. Lihavoitua tekstiä tulee käyttää harkiten. Jos lihavointia on käytetty liikaa, on käyttäjän vaikea ymmärtää, mihin hänen tulisi erityisesti kiinnittää huomiota sisällössä.",
+    "text_3": "Suomi.fi-teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold -fonttia.",
+    "text_4": "Tavanomaisissa tekstikappaleissa on suositeltavaa käyttää Paragraph-komponenttia, joka takaa oikean visuaalisen tyylin ja semantiikan.",
+    "paragraph_example_text": "Tekstikappale, joka on luotu käyttämällä semanttista Paragraph-komponenttia",
     "lead_title": "Ingressi (Lead)",
     "lead_description": "Ingressi on sivun alussa esiintyvä tiivistelmä sivun sisällöstä. Ingressiä käytetään vain kerran yhdessä näkymässä. Suomi.fi-teemassa ingressitekstin koko on 22 px ja pienellä näytöllä 20 px."
   },

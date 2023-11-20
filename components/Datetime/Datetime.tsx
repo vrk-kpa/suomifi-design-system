@@ -132,14 +132,9 @@ export const Datetime: React.FC = () => {
             </HintText>
           </>
         )}
-        <Block
-          style={{ display: mobileWidth ? 'block' : 'block' }}
-          mt={mobileWidth ? 'xs' : 's'}
-        >
+        <Block mt={mobileWidth ? 'xs' : 's'}>
           <DateInput
-            wrapperProps={{
-              style: { display: mobileWidth ? 'block' : 'inline-block' },
-            }}
+            style={{ display: mobileWidth ? 'block' : 'inline-block' }}
             labelText={t('datetime.reference_implementation.date_label')}
             datePickerEnabled
             aria-describedby={
@@ -170,9 +165,7 @@ export const Datetime: React.FC = () => {
             smallScreen={mobileWidth}
           />
           <TimeInput
-            wrapperProps={{
-              style: { display: mobileWidth ? 'block' : 'inline-block' },
-            }}
+            style={{ display: mobileWidth ? 'block' : 'inline-block' }}
             ref={timeInputRef}
             labelText={t('datetime.reference_implementation.time_label')}
             ml={mobileWidth ? undefined : 's'}

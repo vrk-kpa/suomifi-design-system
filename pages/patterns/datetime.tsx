@@ -12,6 +12,7 @@ import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/patterns-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import { Datetime } from '../../components/Datetime/Datetime';
+import { DoubleDatetime } from '../../components/Datetime/DoubleDatetime';
 
 const MultiInsertPage: NextPage = () => {
   const { t } = useTranslation();
@@ -30,8 +31,68 @@ const MultiInsertPage: NextPage = () => {
         <Block my="xl">
           <Text variant="lead">{t('datetime.ingress')}</Text>
         </Block>
-        <Block mb="l">
-          <Paragraph>{t('datetime.components_text')}</Paragraph>
+
+        <Block mb="xxxl">
+          <Heading variant="h2" className="mb-l">
+            {t('datetime.reference_implementation.heading')}
+          </Heading>
+          <Paragraph mb="l">
+            {t('datetime.reference_implementation.paragraph')}
+          </Paragraph>
+          <ExternalLink
+            labelNewWindow={t('common.opens_in_a_new_tab')}
+            href="https://github.com/vrk-kpa/suomifi-design-system/tree/develop/components/Datetime/Datetime.tsx"
+          >
+            {t('datetime.reference_implementation.link_text')}
+          </ExternalLink>
+          <Block my="xxl">
+            <Datetime />
+          </Block>
+        </Block>
+
+        <Block mb="xxxl">
+          <Heading variant="h2" className="mb-l">
+            {t('datetime.reference_implementation.heading_complex')}
+          </Heading>
+          <Paragraph mb="l">
+            {t('datetime.reference_implementation.complex_paragraph')}
+          </Paragraph>
+          <ExternalLink
+            labelNewWindow={t('common.opens_in_a_new_tab')}
+            href="https://github.com/vrk-kpa/suomifi-design-system/tree/develop/components/Datetime/DoubleDatetime.tsx"
+          >
+            {t('datetime.reference_implementation.link_text')}
+          </ExternalLink>
+          <Block my="xxl">
+            <DoubleDatetime />
+          </Block>
+        </Block>
+
+        <Block variant="section" my="xl">
+          <InfoBox>
+            <Heading variant="h3" as="h2">
+              {t('common.accessibility_and_usability')}
+            </Heading>
+            <ul>
+              <li>{t('datetime.accessibility_list.point_1')}</li>
+              <li>{t('datetime.accessibility_list.point_2')}</li>
+              <li>{t('datetime.accessibility_list.point_3')}</li>
+              <li>{t('datetime.accessibility_list.point_4')}</li>
+              <li>
+                {t('datetime.accessibility_list.point_5')}
+                <ul>
+                  <li>{t('datetime.accessibility_list.point_5_1')}</li>
+                  <li>{t('datetime.accessibility_list.point_5_2')}</li>
+                  <li>{t('datetime.accessibility_list.point_5_3')}</li>
+                </ul>
+              </li>
+              <li>{t('datetime.accessibility_list.point_6')}</li>
+            </ul>
+          </InfoBox>
+        </Block>
+
+        <Block variant="section" mb="l">
+          <Heading variant="h2">{t('datetime.components_text')}</Heading>
           <ul>
             <li>
               <ExternalLink
@@ -82,45 +143,6 @@ const MultiInsertPage: NextPage = () => {
               </ExternalLink>
             </li>
           </ul>
-        </Block>
-        <Block variant="section" my="xl">
-          <InfoBox>
-            <Heading variant="h3" as="h2">
-              {t('common.accessibility_and_usability')}
-            </Heading>
-            <ul>
-              <li>{t('datetime.accessibility_list.point_1')}</li>
-              <li>{t('datetime.accessibility_list.point_2')}</li>
-              <li>{t('datetime.accessibility_list.point_3')}</li>
-              <li>{t('datetime.accessibility_list.point_4')}</li>
-              <li>
-                {t('datetime.accessibility_list.point_5')}
-                <ul>
-                  <li>{t('datetime.accessibility_list.point_5_1')}</li>
-                  <li>{t('datetime.accessibility_list.point_5_2')}</li>
-                  <li>{t('datetime.accessibility_list.point_5_3')}</li>
-                </ul>
-              </li>
-              <li>{t('datetime.accessibility_list.point_6')}</li>
-            </ul>
-          </InfoBox>
-        </Block>
-        <Block>
-          <Heading variant="h2" className="mb-l">
-            {t('datetime.reference_implementation.heading')}
-          </Heading>
-          <Paragraph mb="l">
-            {t('datetime.reference_implementation.paragraph')}
-          </Paragraph>
-          <ExternalLink
-            labelNewWindow={t('common.opens_in_a_new_tab')}
-            href="https://github.com/vrk-kpa/suomifi-design-system/tree/develop/components/Datetime/Datetime.tsx"
-          >
-            {t('datetime.reference_implementation.link_text')}
-          </ExternalLink>
-          <Block my="xxl">
-            <Datetime />
-          </Block>
         </Block>
       </SideNavLayout>
     </>

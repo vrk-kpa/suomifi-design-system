@@ -13,6 +13,10 @@ export const navItems: NavItem[] = [
     path: '/styles/icons',
   },
   {
+    title: translations.styles.typography,
+    path: '/styles/typography',
+  },
+  {
     title: translations.styles.spacing,
     path: '/styles/spacing',
   },

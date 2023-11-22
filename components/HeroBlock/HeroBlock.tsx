@@ -1,4 +1,4 @@
-import { Block, Heading, Link, Text } from 'suomifi-ui-components';
+import { Block, Heading, Text } from 'suomifi-ui-components';
 import { useTranslation } from 'next-export-i18n';
 import styles from './HeroBlock.module.scss';
 

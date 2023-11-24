@@ -122,7 +122,7 @@
   },
   "datetime": {
     "heading": "Päivämäärä ja kellonaika",
-    "ingress": "Ajankohdan eli päivämäärän ja kellonajan yhteinen lisääminen lomakkeissa vaatii erityistä huomiointia saavutettavuuden osalta. Saavutettavuus- ja käytettävyushuomiot on eritelty jäljempänä tällä sivulla.",
+    "ingress": "Ajankohdan eli päivämäärän ja kellonajan yhteinen lisääminen lomakkeissa vaatii erityistä huomiointia saavutettavuuden osalta. Saavutettavuus- ja käytettävyyshuomiot on eritelty jäljempänä tällä sivulla.",
     "accessibility_list": {
       "point_1": "Päivämääräkentän ja kellonaikakentän yhdistelmä tulee asettaa HTML fieldset -elementin sisään ja antaa yhdistelmälle kuvaava legend-tieto (referenssitoteutuksessa Julkaisuajankohta)",
       "point_2": "Työpöytäkoossa kenttien formaattiohjeet annetaan legendin alapuolelle erillisissä ohjetekstikomponenteissa (HintText). Näille elementeille tulee antaa id:t, joihin viitataan vastaavan input-kentän aria-describedby -attribuutissa",
@@ -130,15 +130,20 @@
       "point_4": "Mobiilikoossa input-kentät näytetään allekkain, jolloin käytetään erillisten ohje- ja tilatekstikomponenttien sijaan komponenttien sisäänrakennettuja hintText- ja statusText-toimintoja.",
       "point_5": "Päivämäärän ja kellonajan yhdistelmän sisältävä lomake on suositeltavaa validoida vasta lomakkeen lähettämisen yhteydessä (staattinen validointi).",
       "point_5_1": "Mikäli kentissä on virheitä, siirretään selaimen kohdistus ohjelmallisesti ensimmäiseen virheelliseen kenttään tai erilliseen virhekoosteeseen.",
-      "point_5_2": "Stattista validointia käytettäessä tilatekstien aria-live -toiminnallisuus tulee kytkeä pois päältä.",
+      "point_5_2": "Stattista validointia käytettäessä tilatekstien (StatusText) aria-live -toiminnallisuus tulee kytkeä pois päältä.",
       "point_5_3": "Vaihtoehtoisesti staattisen validoinnin voi suorittaa myös kohdistuksen siirtyessä pois kentästä (onBlur event)",
-      "point_6": "Tutustu tältä sivulta löytyvien referenssitoteutusten lähdekoodeihin, joissa saavutettavuus- ja käytettävyysasiat on demonstroitu."
+      "point_6": "Ajankohtavälin (kaksi kenttäparia) erityishuomiot",
+      "point_6_1": "Aseta sekä alkamis- että päättymisajankohdan input-kentät saman fieldsetin sisään. Käytä fieldsetin legend-tietona kentät määritelmällisesti yhdistävää termiä (referenssitoteutuksessa Tapahtuman ajankohta)",
+      "point_6_2": "Legend-tiedon alla esitetyt formaattiohjeet (HintText) tulee liittää ohjelmallisesti kaikkiin vastaaviin input-kenttiin käyttäen aria-describedby -attribuuttia.",
+      "point_6_3": "Katso kahden ajankohdan referenssitoteutuksesta mallia kenttien nimilapuille (labelText). Kellonaikakenttien nimilaput voivat olla geneerisiä tilan säästämiseksi, mutta niiden tulee viitata ohjelmallisesti vastaavaan päivämääräkenttään (aria-describedby -attribuutti), jotta kenttien konteksti välittyy selkeästi ruudunlukijoille.",
+      "point_6_4": "Kun validoidaan ajankohtien keskinäistä järjestystä (päättymisajankohta ei saa olla ennen alkamisajankohtaa), näytetään kyseinen virhe ainoastaan päättymisajankohdan kentissä.",
+      "point_7": "Tutustu tältä sivulta löytyvien referenssitoteutuksiin, joissa saavutettavuus- ja käytettävyysasiat on demonstroitu."
     },
     "components_text": "Mallissa käytetyt komponentit",
     "reference_implementation": {
       "heading": "Referenssitoteutus",
       "heading_complex": "Kaksi ajankohtaa",
-      "complex_paragraph": "Kun ajankohtia määritetään kaksi ja ne ovat loogisesti toisistaan riippuvaisia (esimerkiksi alkuajankohta ja loppuajankohta), tulee toteutuksesta vielä hiukan monimutkaisempi. Tässä referenssitoteutuksessa on käytetty staattista lomakkeen validointimallia ja virhekoostetta.",
+      "complex_paragraph": "Kun ajankohtia määritetään kaksi ja ne ovat loogisesti toisistaan riippuvaisia (esimerkiksi alkuajankohta ja loppuajankohta), tulee toteutuksesta vielä hiukan monimutkaisempi. Tutustu jäljempänä tällä sivulle esitettyihin saavutettavuus- ja käytettävyyshuomioihin.",
       "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen päivämäärän ja kellonajan sisältävästä suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
       "link_text": "Lähdekoodi GitHubissa",
       "errors": {
@@ -160,7 +165,7 @@
         "nonexistent_ending_date": "Kirjoita päättymispäiväksi olemassa oleva päivämäärä",
         "nonexistent_beginning_time": "Kirjoita alkamiskellonajaksi olemassa oleva kellonaika",
         "nonexistent_ending_time": "Kirjoita päättymiskellonajaksi olemassa oleva kellonaika",
-        "end_before_beginning": "Tapahtuman loppuajankohta tulee olla alkamisajankohdan jälkeen"
+        "end_before_beginning": "Tapahtuman päättymisajankohta tulee olla alkamisajankohdan jälkeen"
       },
       "nonexistent_time": "Kirjoita olemassa oleva kellonaika",
       "publishing_date": "Julkaisuajankohta",

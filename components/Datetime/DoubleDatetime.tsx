@@ -4,8 +4,6 @@ import {
   Button,
   DateInput,
   HintText,
-  InlineAlert,
-  Link,
   StatusText,
   TimeInput,
   autocompleteTimeString,
@@ -195,91 +193,40 @@ export const DoubleDatetime: React.FC = () => {
       }
     }
 
+    let focusSet = false;
     if (beginningDateErrorMessage !== '') {
       setBeginningDateErrorText(beginningDateErrorMessage);
       setInvalidBeginningDateValue(beginningDateValue);
-    }
-    if (endingDateErrorMessage !== '') {
-      setEndingDateErrorText(endingDateErrorMessage);
-      setInvalidEndingDateValue(endingDateValue);
+      beginningDateInputRef.current?.focus();
+      focusSet = true;
     }
     if (beginningTimeErrorMessage !== '') {
       setBeginningTimeErrorText(beginningTimeErrorMessage);
       setInvalidBeginningTimeValue(beginningTimeValue);
+      if (!focusSet) {
+        beginningTimeInputRef.current?.focus();
+        focusSet = true;
+      }
+    }
+    if (endingDateErrorMessage !== '') {
+      setEndingDateErrorText(endingDateErrorMessage);
+      setInvalidEndingDateValue(endingDateValue);
+      if (!focusSet) {
+        endingDateInputRef.current?.focus();
+        focusSet = true;
+      }
     }
     if (endingTimeErrorMessage !== '') {
       setEndingTimeErrorText(endingTimeErrorMessage);
       setInvalidEndingTimeValue(endingTimeValue);
+      if (!focusSet) {
+        endingTimeInputRef.current?.focus();
+      }
     }
   };
 
   return (
     <Block>
-      {(beginningDateErrorText !== '' ||
-        endingDateErrorText !== '' ||
-        beginningTimeErrorText !== '' ||
-        endingTimeErrorText !== '') && (
-        <InlineAlert
-          status="error"
-          labelText={t('datetime.reference_implementation.there_are_errors')}
-          mb="l"
-        >
-          <ul>
-            {beginningDateErrorText !== '' && (
-              <li>
-                <Link
-                  href="#beginning-date"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    beginningDateInputRef.current?.focus();
-                  }}
-                >
-                  {beginningDateErrorText}
-                </Link>
-              </li>
-            )}
-            {beginningTimeErrorText !== '' && (
-              <li>
-                <Link
-                  href="#beginning-time"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    beginningTimeInputRef.current?.focus();
-                  }}
-                >
-                  {beginningTimeErrorText}
-                </Link>
-              </li>
-            )}
-            {endingDateErrorText !== '' && (
-              <li>
-                <Link
-                  href="#ending-date"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    endingDateInputRef.current?.focus();
-                  }}
-                >
-                  {endingDateErrorText}
-                </Link>
-              </li>
-            )}
-            {endingTimeErrorText !== '' && (
-              <li>
-                <Link
-                  href="#ending-time"
-                  onClick={(event) => {
-                    event.preventDefault();
-                    endingTimeInputRef.current?.focus();
-                  }}
-                >
-                  {endingTimeErrorText}
-                </Link>
-              </li>
-            )}
-          </ul>
-        </InlineAlert>
-      )}
       <fieldset style={fieldsetStyles}>
         <legend style={legendStyles}>
           {t('datetime.reference_implementation.event_time')}

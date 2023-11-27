@@ -404,7 +404,7 @@ export const DoubleDatetime: React.FC = () => {
           <>
             <StatusText
               status="error"
-              id="beginning-date-status-text"
+              id="ending-date-status-text"
               mt="xxs"
               ariaLiveMode="off"
             >

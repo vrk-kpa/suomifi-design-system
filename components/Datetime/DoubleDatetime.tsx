@@ -233,10 +233,10 @@ export const DoubleDatetime: React.FC = () => {
         </legend>
         {!mobileWidth && (
           <>
-            <HintText id="date-hint-text">
+            <HintText id="date-hint-text-d">
               {t('datetime.reference_implementation.date_hint_text')}
             </HintText>
-            <HintText id="time-hint-text">
+            <HintText id="time-hint-text-d">
               {t('datetime.reference_implementation.time_hint_text')}
             </HintText>
           </>
@@ -249,8 +249,8 @@ export const DoubleDatetime: React.FC = () => {
             datePickerEnabled
             aria-describedby={
               mobileWidth
-                ? 'date-hint-text'
-                : 'date-hint-text beginning-date-status-text'
+                ? 'date-hint-text-d'
+                : 'date-hint-text-d beginning-date-status-text'
             }
             statusText={mobileWidth ? beginningDateErrorText : undefined}
             statusTextAriaLiveMode="off"
@@ -288,8 +288,8 @@ export const DoubleDatetime: React.FC = () => {
             mt={mobileWidth ? 's' : undefined}
             aria-describedby={
               mobileWidth
-                ? 'beginning-date time-hint-text'
-                : 'beginning-date time-hint-text beginning-time-status-text'
+                ? 'beginning-date time-hint-text-d'
+                : 'beginning-date time-hint-text-d beginning-time-status-text'
             }
             statusText={mobileWidth ? beginningTimeErrorText : undefined}
             statusTextAriaLiveMode="off"
@@ -337,7 +337,9 @@ export const DoubleDatetime: React.FC = () => {
             labelText={t('datetime.reference_implementation.ending_date')}
             datePickerEnabled
             aria-describedby={
-              mobileWidth ? 'date-hint-text' : 'date-hint-text date-status-text'
+              mobileWidth
+                ? 'date-hint-text-d'
+                : 'date-hint-text-d date-status-text'
             }
             statusText={mobileWidth ? endingDateErrorText : undefined}
             statusTextAriaLiveMode="off"
@@ -375,8 +377,8 @@ export const DoubleDatetime: React.FC = () => {
             mt={mobileWidth ? 's' : undefined}
             aria-describedby={
               mobileWidth
-                ? 'ending-date time-hint-text'
-                : 'time-hint-text time-status-text'
+                ? 'ending-date time-hint-text-d'
+                : 'time-hint-text-d time-status-text'
             }
             statusText={mobileWidth ? endingTimeErrorText : undefined}
             statusTextAriaLiveMode="off"

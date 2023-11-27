@@ -147,9 +147,9 @@ export const DoubleDatetime: React.FC = () => {
 
   const validateForm = () => {
     const beginningDateErrorMessage = validateDate(beginningDateValue, 'begin');
-    const endingDateErrorMessage = validateDate(endingDateValue, 'end');
+    let endingDateErrorMessage = validateDate(endingDateValue, 'end');
     const beginningTimeErrorMessage = validateTime(beginningTimeValue, 'begin');
-    const endingTimeErrorMessage = validateTime(endingTimeValue, 'end');
+    let endingTimeErrorMessage = validateTime(endingTimeValue, 'end');
 
     // Check that ending time is not before beginning time
     if (
@@ -180,13 +180,13 @@ export const DoubleDatetime: React.FC = () => {
 
       if (isBefore(parsedEndingDateTime, parsedBeginningDateTime)) {
         if (isBefore(parsedEndingDate, parsedBeginningDate)) {
-          setEndingDateErrorText(
-            t('datetime.reference_implementation.errors.end_before_beginning'),
+          endingDateErrorMessage = t(
+            'datetime.reference_implementation.errors.end_before_beginning',
           );
           setInvalidEndingDateValue(endingDateValue);
         } else {
-          setEndingTimeErrorText(
-            t('datetime.reference_implementation.errors.end_before_beginning'),
+          endingTimeErrorMessage = t(
+            'datetime.reference_implementation.errors.end_before_beginning',
           );
           setInvalidEndingTimeValue(endingTimeValue);
         }

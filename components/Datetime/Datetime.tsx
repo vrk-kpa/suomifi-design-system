@@ -138,7 +138,7 @@ export const Datetime: React.FC = () => {
             labelText={t('datetime.reference_implementation.date_label')}
             datePickerEnabled
             aria-describedby={
-              mobileWidth ? undefined : 'date-hint-text date-status-text'
+              mobileWidth ? undefined : 'date-status-text date-hint-text'
             }
             hintText={
               mobileWidth
@@ -171,7 +171,7 @@ export const Datetime: React.FC = () => {
             ml={mobileWidth ? undefined : 's'}
             mt={mobileWidth ? 's' : undefined}
             aria-describedby={
-              mobileWidth ? undefined : 'time-hint-text time-status-text'
+              mobileWidth ? undefined : 'time-status-text time-hint-text'
             }
             hintText={
               mobileWidth

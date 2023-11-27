@@ -250,7 +250,7 @@ export const DoubleDatetime: React.FC = () => {
             aria-describedby={
               mobileWidth
                 ? 'date-hint-text-d'
-                : 'date-hint-text-d beginning-date-status-text'
+                : 'beginning-date-status-text date-hint-text-d'
             }
             statusText={mobileWidth ? beginningDateErrorText : undefined}
             statusTextAriaLiveMode="off"
@@ -289,7 +289,7 @@ export const DoubleDatetime: React.FC = () => {
             aria-describedby={
               mobileWidth
                 ? 'beginning-date time-hint-text-d'
-                : 'beginning-date time-hint-text-d beginning-time-status-text'
+                : 'beginning-date beginning-time-status-text time-hint-text-d'
             }
             statusText={mobileWidth ? beginningTimeErrorText : undefined}
             statusTextAriaLiveMode="off"
@@ -339,7 +339,7 @@ export const DoubleDatetime: React.FC = () => {
             aria-describedby={
               mobileWidth
                 ? 'date-hint-text-d'
-                : 'date-hint-text-d date-status-text'
+                : 'ending-date-status-text date-hint-text-d'
             }
             statusText={mobileWidth ? endingDateErrorText : undefined}
             statusTextAriaLiveMode="off"
@@ -378,7 +378,7 @@ export const DoubleDatetime: React.FC = () => {
             aria-describedby={
               mobileWidth
                 ? 'ending-date time-hint-text-d'
-                : 'time-hint-text-d time-status-text'
+                : 'ending-date ending-time-status-text time-hint-text-d'
             }
             statusText={mobileWidth ? endingTimeErrorText : undefined}
             statusTextAriaLiveMode="off"
@@ -404,13 +404,17 @@ export const DoubleDatetime: React.FC = () => {
           <>
             <StatusText
               status="error"
-              id="date-status-text"
+              id="beginning-date-status-text"
               mt="xxs"
               ariaLiveMode="off"
             >
               {endingDateErrorText}
             </StatusText>
-            <StatusText status="error" id="time-status-text" ariaLiveMode="off">
+            <StatusText
+              status="error"
+              id="ending-time-status-text"
+              ariaLiveMode="off"
+            >
               {endingTimeErrorText}
             </StatusText>
           </>

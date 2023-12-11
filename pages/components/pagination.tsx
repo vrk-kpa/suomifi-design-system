@@ -146,7 +146,8 @@ const FirstExample = ({}: Partial<PaginationProps> & {}): JSX.Element => {
             labelText: 'Sivun numero',
           }}
           onChange={(page) => {
-            setCurrent(page);
+            const pageAsNumber = Number(page);
+            setCurrent(pageAsNumber);
           }}
           pageIndicatorText={(currentPage, lastPage) => {
             return 'Sivu ' + currentPage + ' / ' + lastPage;
@@ -205,7 +206,8 @@ const BasicExample = ({}: Partial<PaginationProps> & {}): JSX.Element => {
             labelText: 'Sivun numero',
           }}
           onChange={(page) => {
-            setCurrent(page);
+            const pageAsNumber = Number(page);
+            setCurrent(pageAsNumber);
           }}
           pageIndicatorText={(currentPage, lastPage) => {
             return 'Sivu ' + currentPage + ' / ' + lastPage;
@@ -250,7 +252,8 @@ const SuccessExample = ({}: Partial<PaginationProps> & {}): JSX.Element => {
           pageInput={false}
           aria-label="Esimerkki C"
           onChange={(page) => {
-            setCurrent(page);
+            const pageAsNumber = Number(page);
+            setCurrent(pageAsNumber);
           }}
           pageIndicatorText={(currentPage, lastPage) => {
             return 'Sivu ' + currentPage + ' / ' + lastPage;
@@ -291,7 +294,8 @@ const FailingExample = ({}: Partial<PaginationProps> & {}): JSX.Element => {
           labelText: 'Sivun numero',
         }}
         onChange={(page) => {
-          setCurrent(page);
+          const pageAsNumber = Number(page);
+          setCurrent(pageAsNumber);
         }}
         pageIndicatorText={(currentPage, lastPage) => {
           return 'Sivu ' + currentPage + ' / ' + lastPage;

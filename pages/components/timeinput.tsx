@@ -12,26 +12,13 @@ import {
   Text,
   Paragraph,
   ExternalLink,
-  TextInput,
   defaultSuomifiTheme,
-  IconMapLocation,
   Link,
   TimeInput,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
-  const [errorState, setErrorState] = useState(true);
-  const [nameHasNumber, setNameHasNumber] = useState(false);
-  const status = errorState ? 'error' : 'default';
-
-  const validateName = (value: any) => {
-    if (value === undefined || value === '' || /^([^0-9]*)$/.test(value)) {
-      setNameHasNumber(false);
-    } else {
-      setNameHasNumber(true);
-    }
-  };
 
   return (
     <>

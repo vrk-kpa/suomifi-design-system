@@ -70,9 +70,9 @@ const Page: NextPage = () => {
               alignItems: 'flex-start',
             }}
             showCode
-            filterPropsInExample={['marginBottomSpacing']}
+            filterPropsInExample={['mb']}
           >
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               {t('text_page.paragraph_example_text')}
             </Paragraph>
             <Text>Body text</Text>

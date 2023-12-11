@@ -1,5 +1,4 @@
 import { NextPage } from 'next';
-import { useState } from 'react';
 import Head from 'next/head';
 import { useTranslation } from 'next-export-i18n';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';

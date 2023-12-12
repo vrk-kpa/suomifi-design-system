@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import classnames from 'classnames';
 import { NavItem } from '../../../interfaces/interfaces';
 import styles from './MobileNavMenuButton.module.scss';
@@ -19,6 +19,29 @@ const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
   const { ariaLabel, navItems } = props;
   const [menuOpen, setMenuOpen] = React.useState(false);
   const router = useRouter();
+
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const popoverRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const globalClickHandler = (nativeEvent: MouseEvent) => {
+      if (
+        !popoverRef.current?.contains(nativeEvent.target as Node) &&
+        !buttonRef.current?.contains(nativeEvent.target as Node)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('click', globalClickHandler, {
+      capture: true,
+    });
+    return () => {
+      document.removeEventListener('click', globalClickHandler, {
+        capture: true,
+      });
+    };
+  }, []);
 
   // If the current path is only partially the current one. For e.g when at /components/button.
   const isPartiallyActive = (to: string, pathName: string) => {

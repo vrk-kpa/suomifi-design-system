@@ -30,25 +30,18 @@ const Page: NextPage = () => {
           <ExternalLink
             href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Text"
             labelNewWindow={t('common.opens_in_a_new_tab')}
+            variant="accent"
           >
-            {t('common.see_technical_documentation_of_component')}
+            {t('text_page.text_documentation_link_text')}
+          </ExternalLink>
+          <br />
+          <ExternalLink
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Paragraph"
+            labelNewWindow={t('common.opens_in_a_new_tab')}
+          >
+            {t('text_page.paragraph_documentation_link_text')}
           </ExternalLink>
         </Block>
-
-        <Heading variant="h2" className="mb-xl mt-xl">
-          {t('text_page.title')}
-        </Heading>
-
-        <Paragraph className="my-xl">
-          <Text>{t('text_page.text')}</Text>
-        </Paragraph>
-
-        <ExternalLink
-          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwik2qOSkJ3iAhVDmYsKHfIiCX8QFjAAegQICBAC&url=https%3A%2F%2Ffonts.google.com%2Fspecimen%2FSource%2BSans%2BPro&usg=AOvVaw1C5bQ5gIVNkjiNqeXsAcB-"
-          labelNewWindow={t('common.opens_in_a_new_tab')}
-        >
-          {t('text_page.link_text')}
-        </ExternalLink>
 
         <Block variant="section" className="mt-xl">
           <Heading variant="h2" className="mb-xl">
@@ -64,7 +57,11 @@ const Page: NextPage = () => {
           </Paragraph>
 
           <Paragraph className="my-xl">
-            <Text>{t('text_page.body_description')}</Text>
+            <Text>{t('text_page.text_3')}</Text>
+          </Paragraph>
+
+          <Paragraph className="my-xl">
+            <Text>{t('text_page.text_4')}</Text>
           </Paragraph>
 
           <ComponentExample
@@ -72,7 +69,12 @@ const Page: NextPage = () => {
               flexFlow: 'column',
               alignItems: 'flex-start',
             }}
+            showCode
+            filterPropsInExample={['mb']}
           >
+            <Paragraph mb="l">
+              {t('text_page.paragraph_example_text')}
+            </Paragraph>
             <Text>Body text</Text>
             <Text variant="bold">Body Text Bold</Text>
             <Text smallScreen>Body Text Small</Text>
@@ -95,6 +97,7 @@ const Page: NextPage = () => {
               flexFlow: 'column',
               alignItems: 'flex-start',
             }}
+            showCode
           >
             <Text variant="lead">Lead Text</Text>
             <Text variant="lead" smallScreen>

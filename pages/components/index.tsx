@@ -67,6 +67,7 @@ const ComponentsIndexPage: NextPage = () => {
         <ExternalLink
           href="https://vrk-kpa.github.io/suomifi-ui-components/"
           labelNewWindow={t('common.opens_in_a_new_tab')}
+          variant="accent"
         >
           {t('components_main_page.link_text')}
         </ExternalLink>

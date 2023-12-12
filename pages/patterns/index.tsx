@@ -24,12 +24,8 @@ const ComponentsIndexPage: NextPage = () => {
         <Block my="l">
           <Text variant="lead">{t('patterns_main_page.ingress')}</Text>
         </Block>
-        <Paragraph marginBottomSpacing="l">
-          {t('patterns_main_page.paragraph_1')}
-        </Paragraph>
-        <Paragraph marginBottomSpacing="l">
-          {t('patterns_main_page.paragraph_2')}
-        </Paragraph>
+        <Paragraph mb="l">{t('patterns_main_page.paragraph_1')}</Paragraph>
+        <Paragraph mb="l">{t('patterns_main_page.paragraph_2')}</Paragraph>
       </SideNavLayout>
     </>
   );

@@ -1,17 +1,16 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useTranslation } from 'next-export-i18n';
-
 import {
   Block,
   Heading,
-  Paragraph,
-  RouterLink,
-  ExternalLink,
+  Link,
+  Text,
+  suomifiDesignTokens,
 } from 'suomifi-ui-components';
 import HeroBlock from '../components/HeroBlock/HeroBlock';
+import FrontPageCard from '../components/FrontPageCard/FrontPageCard';
 import PlainLayout from '../layouts/PlainLayout/PlainLayout';
-import Link from 'next/link';
 
 const FrontPage: NextPage = () => {
   const { t } = useTranslation();
@@ -24,49 +23,45 @@ const FrontPage: NextPage = () => {
         <HeroBlock />
         <PlainLayout>
           <Block py="xxl">
-            <Block mb="xxl">
-              <Heading variant="h1">{t('front_page.heading')}</Heading>
+            <Heading variant="h2" style={{ textAlign: 'center' }}>
+              {t('front_page.heading')}
+            </Heading>
+            <Block my="m" style={{ textAlign: 'center' }}>
+              <Text variant="lead">{t('front_page.main_text')}</Text>
             </Block>
-            <Block mb="xl">
-              <Heading variant="h2">{t('front_page.sub_heading_1')}</Heading>
-            </Block>
-            <Block>
-              <Paragraph marginBottomSpacing="l">
-                {t('front_page.paragraph_1')}
-              </Paragraph>
-              <Link href="/info" passHref>
-                <RouterLink>{t('front_page.link_1')}</RouterLink>
+            <Block style={{ textAlign: 'center' }}>
+              <Link variant="accent" href="/info">
+                {t('front_page.info_link')}
               </Link>
             </Block>
-            <Block mb="xl" mt="xxl">
-              <Heading variant="h2">{t('front_page.sub_heading_2')}</Heading>
-            </Block>
-            <Block>
-              <Paragraph>{t('front_page.paragraph_2')}</Paragraph>
-            </Block>
-            <Block mt="xl">
-              <Paragraph marginBottomSpacing="l">
-                {t('front_page.paragraph_3')}
-              </Paragraph>
-              <Link href="/components" passHref>
-                <RouterLink>{t('front_page.link_2')}</RouterLink>
-              </Link>
-              <br />
-              <ExternalLink
-                labelNewWindow={t('common.opens_in_a_new_tab')}
-                href="https://vrk-kpa.github.io/suomifi-ui-components"
-              >
-                {t('front_page.link_3')}
-              </ExternalLink>
-            </Block>
-            <Block mt="xxxl">
-              <Paragraph marginBottomSpacing="l">
-                {t('front_page.paragraph_4')}
-              </Paragraph>
-              <Link href="/info" passHref>
-                <RouterLink>{t('front_page.link_4')}</RouterLink>
-              </Link>
-            </Block>
+          </Block>
+          <Block
+            variant="div"
+            className="flex justify-center align-center"
+            mb="xxxxl"
+            style={{ gap: suomifiDesignTokens.spacing.l, flexWrap: 'wrap' }}
+          >
+            <FrontPageCard
+              imgSrc="/ds-styles.svg"
+              bgColor="accentBase"
+              heading={t('main_nav.styles')}
+              linkText={t('front_page.go_to_styles')}
+              linkHref="/styles"
+            />
+            <FrontPageCard
+              imgSrc="/ds-components.svg"
+              bgColor="accentSecondary"
+              heading={t('main_nav.components')}
+              linkText={t('front_page.go_to_components')}
+              linkHref="/components"
+            />
+            <FrontPageCard
+              imgSrc="/ds-patterns.svg"
+              bgColor="accentTertiary"
+              heading={t('main_nav.patterns')}
+              linkText={t('front_page.go_to_patterns')}
+              linkHref="/patterns"
+            />
           </Block>
         </PlainLayout>
       </Block>

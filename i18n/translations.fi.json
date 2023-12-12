@@ -1,29 +1,24 @@
 {
   "common": {
     "accessibility_and_usability": "Saavutettavuus ja käytettävyys",
-    "see_technical_documentation_of_component": "Katso komponentin tekninen dokumentaatio",
+    "see_technical_documentation_of_component": "Komponentin tekninen dokumentaatio ja käyttöesimerkit",
     "opens_in_a_new_tab": "Avautuu uudessa välilehdessä",
     "skip_to_main_content": "Siirry pääsisältöön",
     "skip_to_side_navigation": "Siirry sivunavigaatioon"
   },
   "front_page": {
     "front_page": "Etusivu",
-    "hero_heading": "Suomi.fi Design System – digipalvelujen yhteiset rakennuspalikat",
-    "hero_text": "Suomi.fi Design System on kokoelma Digi- ja väestötietoviraston yhteisiä tyylejä, suunnittelumalleja ja suunnitteluohjeita. Design Systemiin kuuluu lisäksi suunnitteluohjeiden pohjalta toteutettu komponenttikirjasto. Kaikki suunnittelumallit ja komponentit on toteutettu ja testattu saavutettavuusvaatimusten mukaisesti (WCAG 2.1).",
-    "heading": "Mitä Suomi.fi Design System sisältää?",
-    "sub_heading_1": "Design System -sivusto",
-    "paragraph_1": "Tältä sivustolta löydät tiedot kaikista Suomi.fi Design Systemissä julkaistuista komponenteista, ja kunkin komponentin yhteydestä myös esikatselumallit ja käyttöohjeistukset. Ohjeistuksessa nostetaan esille erityisesti saavutettavuuteen ja käytettävyyteen liittyviä asioita. Komponentit ovat vapaasti hyödynnettävissä joko sellaisenaan, tai niitä voi muokata vastaamaan oman palvelun visuaalista ulkoasua. Suomi.fi Design System -kirjastoa kehittää ja ylläpitää Digi- ja väestötietovirasto.",
-    "link_1": "Lue taustatietoja Suomi.fi Design Systemistä",
-    "sub_heading_2": "Käyttöliittymäkomponenttien kirjasto",
-    "paragraph_2": "Suomi.fi Design System -kirjasto perustuu Suomi.fi-palveluiden käyttökokemukseen ja käyttöliittymäkomponentteihin. Käyttöliittymäkomponenttikirjastoa ja suunnittelun pohjana olevaa tyyliopasta kehitetään jatkuvasti osana Suomi.fi-palvelujen kehitystä. Parannuksia ja lisäyksiä tehdään saavutettavuuden, käytettävyyden ja palveluiden tarpeiden mukaisesti.",
-    "paragraph_3": "Käyttöliittymien kaikki elementit on suunniteltu ja kehitetty saavutettavuusvaatimusten mukaan (WCAG 2.1 -kriteeristön tasot A ja AA). Komponentit julkaistaan ReactJS (Javascript) ‑muodossa ja julkaistava kirjasto noudattaa semanttista versiointia.",
-    "link_2": "Tutustu komponentteihin",
-    "link_3": "Komponenttikirjaston tekninen dokumentaatio",
-    "paragraph_4": "Onko sinulla ehdotuksia tai muuta palautetta?",
-    "link_4": "Yhteystiedot"
+    "hero_heading": "Suomi.fi Design System",
+    "hero_subtitle": "Digipalvelujen yhteiset rakennuspalikat",
+    "heading": "Koko kansan Design System",
+    "main_text": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja sekä suunnittelumalleja ja -periaatteita. Kaikki Design Systemin osat on toteutettu ja testattu saavutettavuusvaatimusten (WCAG 2.1 -kriteeristön tasot A ja AA) mukaisesti.",
+    "info_link": "Lue lisää Suomi.fi Design Systemistä",
+    "go_to_styles": "Siirry tyyleihin",
+    "go_to_components": "Siirry komponentteihin",
+    "go_to_patterns": "Siirry suunnittelumalleihin"
   },
   "footer": {
-    "left_text": "Suomi.fi Design Systemin kehittämisestä vastaa Digi- ja väestötietovirasto.",
+    "left_text": "Suomi.fi Design Systemin kehittämisestä vastaa Digi- ja väestötietovirasto",
     "cookies": "Evästekäytännöt",
     "accessibility": "Saavutettavuusseloste"
   },
@@ -70,7 +65,8 @@
   },
   "patterns": {
     "general": "Yleistä suunnittelumalleista",
-    "multi_insert": "Multi-insert"
+    "multi_insert": "Multi-insert",
+    "datetime": "Päivämäärä ja kellonaika"
   },
   "patterns_main_page": {
     "ingress": "Suunnittelumallit eli patternit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
@@ -80,7 +76,7 @@
   "multi-insert": {
     "heading": "Multi-insert",
     "ingress": "Lomakkeissa on toisinaan tarpeen lisätä sama moduuli eli tietokenttä tai tietokenttien yhdistelmä useaan kertaan. Tämän kaltaisen dynaamisen toiminnallisuuden toteuttamisessa on kiinnitettävä erityistä huomiota käytettävyyteen ja saavutettavuuteen.",
-    "and_other_needed_components": "sekä varsinaisista moduulin sisältämistä lomakekomponenteista",
+    "and_other_needed_components": "sekä moduulin sisältämät varsinaiset lomakekomponentit",
     "accessibility_list": {
       "point_1": "Multi-insert-suunnittelumalli vaatii erityistä huomiota fokuksen oikean siirtymisen suhteen. Fokuksen siirtyminen on kuvattu erikseen jäljempänä tällä sivulla.",
       "point_2": "On hyvä tuoda selkeällä tekstillä ilmi, että moduuleita (referenssitoteutuksessa verkkosivuja) voi lisätä useita.",
@@ -88,7 +84,7 @@
       "point_4": "Moduulin poistamisen jälkeen näytetään ponnahdusilmoitus (toast), jolle on asetettu rooliksi alert. Tämän johdosta myös ruudunlukijakäyttäjät saavat tiedon poistamisesta.",
       "point_5": "Mikäli lomaketta tallennettaessa moduuleita on jäänyt kokonaan tyhjäksi, ei niitä huomioida, vaan ne poistetaan tallennetusta versiosta. Jos yksittäisiä pakollisia tietoja on jäänyt puuttumaan moduulin sisällä, ne indikoidaan tavalliseen tapaan komponenttien statustekstien avulla."
     },
-    "components_text": "Malli rakentuu seuraavista komponenteista:",
+    "components_text": "Mallissa käytetyt komponentit",
     "focus": {
       "heading": "Fokuksen siirtäminen",
       "point_1": "Moduulia lisättäessä fokus siirtyy juuri lisätyn moduulin ensimmäiseen tietokenttään.",
@@ -124,11 +120,72 @@
       "add_new_website": "Lisää uusi verkkosivu"
     }
   },
+  "datetime": {
+    "heading": "Päivämäärä ja kellonaika",
+    "ingress": "Ajankohdan eli päivämäärän ja kellonajan yhteinen lisääminen lomakkeissa vaatii erityistä huomiointia saavutettavuuden osalta. Saavutettavuus- ja käytettävyyshuomiot on eritelty jäljempänä tällä sivulla.",
+    "accessibility_list": {
+      "point_1": "Päivämääräkentän ja kellonaikakentän yhdistelmä tulee asettaa HTML fieldset -elementin sisään ja antaa yhdistelmälle kuvaava legend-tieto (referenssitoteutuksessa Julkaisuajankohta)",
+      "point_2": "Työpöytäkoossa kenttien formaattiohjeet annetaan legendin alapuolelle erillisissä ohjetekstikomponenteissa (HintText). Näille elementeille tulee antaa id:t, joihin viitataan vastaavan input-kentän aria-describedby -attribuutissa",
+      "point_3": "Vastaavasti myös kenttien tilat ilmoitetaan erillisillä tilatekstikomponenteilla (StatusText) kenttien alapuolella. Myös näille elementeille tulee antaa id:t, joihin viitataan vastaavan input-kentän aria-describedby -attribuutissa.",
+      "point_4": "Mobiilikoossa input-kentät näytetään allekkain, jolloin käytetään erillisten ohje- ja tilatekstikomponenttien sijaan komponenttien sisäänrakennettuja hintText- ja statusText-toimintoja.",
+      "point_5": "Päivämäärän ja kellonajan yhdistelmän sisältävä lomake on suositeltavaa validoida vasta lomakkeen lähettämisen yhteydessä (staattinen validointi).",
+      "point_5_1": "Mikäli kentissä on virheitä, siirretään selaimen kohdistus ohjelmallisesti ensimmäiseen virheelliseen kenttään tai erilliseen virhekoosteeseen.",
+      "point_5_2": "Stattista validointia käytettäessä tilatekstien (StatusText) aria-live -toiminnallisuus tulee kytkeä pois päältä.",
+      "point_5_3": "Vaihtoehtoisesti staattisen validoinnin voi suorittaa myös kohdistuksen siirtyessä pois kentästä (onBlur event)",
+      "point_6": "Ajankohtavälin (kaksi kenttäparia) erityishuomiot",
+      "point_6_1": "Aseta sekä alkamis- että päättymisajankohdan input-kentät saman fieldsetin sisään. Käytä fieldsetin legend-tietona kentät määritelmällisesti yhdistävää termiä (referenssitoteutuksessa Tapahtuman ajankohta)",
+      "point_6_2": "Legend-tiedon alla esitetyt formaattiohjeet (HintText) tulee liittää ohjelmallisesti kaikkiin vastaaviin input-kenttiin käyttäen aria-describedby -attribuuttia.",
+      "point_6_3": "Katso kahden ajankohdan referenssitoteutuksesta mallia kenttien nimilapuille (labelText). Kellonaikakenttien nimilaput voivat olla geneerisiä tilan säästämiseksi, mutta niiden tulee viitata ohjelmallisesti vastaavaan päivämääräkenttään (aria-describedby -attribuutti), jotta kenttien konteksti välittyy selkeästi ruudunlukijoille.",
+      "point_6_4": "Kun validoidaan ajankohtien keskinäistä järjestystä (päättymisajankohta ei saa olla ennen alkamisajankohtaa), näytetään kyseinen virhe ainoastaan päättymisajankohdan kentissä.",
+      "point_7": "Tutustu tältä sivulta löytyvien referenssitoteutuksiin, joissa saavutettavuus- ja käytettävyysasiat on demonstroitu."
+    },
+    "components_text": "Mallissa käytetyt komponentit",
+    "reference_implementation": {
+      "heading": "Referenssitoteutus",
+      "heading_complex": "Kaksi ajankohtaa",
+      "complex_paragraph": "Kun ajankohtia määritetään kaksi ja ne ovat loogisesti toisistaan riippuvaisia (esimerkiksi alkuajankohta ja loppuajankohta), tulee toteutuksesta vielä hiukan monimutkaisempi. Tutustu jäljempänä tällä sivulle esitettyihin saavutettavuus- ja käytettävyyshuomioihin.",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen päivämäärän ja kellonajan sisältävästä suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
+      "link_text": "Lähdekoodi GitHubissa",
+      "errors": {
+        "date_is_mandatory": "Julkaisuajankohdan päivämäärä on pakollinen tieto",
+        "date_incorrect_format": "Kirjoita päivämäärä oikeassa muodossa",
+        "nonexistent_date": "Kirjoita olemassa oleva päivämäärä",
+        "time_is_mandatory": "Julkaisuajankohdan kellonaika on pakollinen tieto",
+        "time_incorrect_format": "Kirjoita kellonaika oikeassa muodossa",
+        "nonexistent_time": "Kirjoita olemassa oleva kellonaika",
+        "beginning_date_is_mandatory": "Tapahtuman alkamispäivä on pakollinen tieto",
+        "ending_date_is_mandatory": "Tapahtuman päättymispäivä on pakollinen tieto",
+        "beginning_time_is_mandatory": "Tapahtuman alkamiskellonaika on pakollinen tieto",
+        "ending_time_is_mandatory": "Tapahtuman päättymiskellonaika on pakollinen tieto",
+        "beginning_date_incorrect_format": "Kirjoita alkamispäivä oikeassa muodossa",
+        "ending_date_incorrect_format": "Kirjoita päättymispäivä oikeassa muodossa",
+        "beginning_time_incorrect_format": "Kirjoita alkamiskellonaika oikeassa muodossa",
+        "ending_time_incorrect_format": "Kirjoita päättymiskellonaika oikeassa muodossa",
+        "nonexistent_beginning_date": "Kirjoita alkamispäiväksi olemassa oleva päivämäärä",
+        "nonexistent_ending_date": "Kirjoita päättymispäiväksi olemassa oleva päivämäärä",
+        "nonexistent_beginning_time": "Kirjoita alkamiskellonajaksi olemassa oleva kellonaika",
+        "nonexistent_ending_time": "Kirjoita päättymiskellonajaksi olemassa oleva kellonaika",
+        "end_before_beginning": "Tapahtuman päättymisajankohta tulee olla alkamisajankohdan jälkeen"
+      },
+      "nonexistent_time": "Kirjoita olemassa oleva kellonaika",
+      "publishing_date": "Julkaisuajankohta",
+      "date_hint_text": "Kirjoita päivämäärä muodossa p.k.vvvv",
+      "time_hint_text": "Kirjoita kellonaika muodossa t.mm",
+      "date_label": "Päivämäärä",
+      "time_label": "Kellonaika",
+      "save": "Tallenna",
+      "event_time":"Tapahtuman ajankohta",
+      "beginning_date": "Alkamispäivä",
+      "ending_date": "Päättymispäivä",
+      "there_are_errors": "Lomakkeella havaittiin seuraavat ongelmat"
+    }
+  },
   "styles": {
     "styles_usage_info": "Tyylien käyttöohje",
     "colors": "Värit",
     "icons": "Ikonit",
-    "spacing": "Välistys"
+    "spacing": "Välistys",
+    "typography": "Typografia"
   },
   "styles_main_page": {
     "ingress": "Design System tarjoaa Suomi.fi-identiteetin mukaisia tyylimäärittelyjä eli tokeneita. Design Systemiin kuuluvan komponenttikirjaston tyylit pohjautuvat näihin tokeneihin.",
@@ -137,6 +194,20 @@
     "style_usage_paragraph_1": "Tokeneita hyödyntämällä voi oman sivustonsa tyylit pitää linjassa Suomi.fi-teeman kanssa. Tokeneita voi käyttää suoraan omasta npm-moduulistaan kuten seuraavassa koodiesimerkissä.",
     "style_usage_paragraph_2": "Vaihtoehtoisesti tokenit ovat käytettävissä myös komponenttikirjaston teemaobjektin kautta alla olevan esimerkin mukaisesti.",
     "styled_element": "Tyylitelty elementti"
+  },
+  "typography": {
+    "heading": "Typografia",
+    "ingress": "Suomi.fi:n typografiateema sisältää kooltaan ja tyyliltään määritellyt tekstikomponentit ja tekstitokenit.",
+    "font_title": "Kirjasintyyppi (fontti)",
+    "font_text_1": "Suomi.fi-tyyleissä ja -käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on open source -fontti, eli kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Suomi.fi Design System vastaa fontin jakelusta oman palvelimensa kautta.",
+    "font_link_text": "Lataa kirjasin Source Sans Pro omalle laitteellesi (TTF)",
+    "font_text_2": "Kun koodiprojektissa on käytössä Suomi.fi-komponenttikirjasto (suomifi-ui-components), on projektissa syytä olla mukana tarvittavat webfonttimääritteet. Tämä tapahtuu helpoiten lisäämällä seuraava linkki projektin globaaliin CSS:ään.",
+    "body_heading": "Leipäteksti",
+    "body_text": "Käytä leipäteksteissä niille erityisesti suunniteltuja tekstikomponentteja Text ja Paragraph",
+    "body_link_text": "Katso tekstikomponenttien dokumentaatio",
+    "heading_heading": "Otsikot",
+    "heading_text": "Käytä otsikoissa niille erityisesti suunniteltua Heading-komponenttia",
+    "heading_link_text": "Katso otsikkokomponentin dokumentaatio"
   },
   "colors": {
     "heading": "Värit",
@@ -277,9 +348,11 @@
     "service_navigation": "Service navigation (Palvelunavigaatio)",
     "side_navigation": "Side navigation (Sivunavigaatio)",
     "singleselect": "Single Select (Yksittäisvalinta)",
+    "status_text": "Status text (Tilateksti)",
     "text": "Text (Teksti)",
     "textarea": "Textarea (Tekstialue)",
     "text_input": "Text Input (Tekstikenttä)",
+    "time_input": "Time input (Kellonaikakenttä)",
     "toast": "Toast (Ponnahdusilmoitus)",
     "toggle": "Toggle (Valintakytkin)",
     "tooltip": "Tooltip (Lisätieto)",
@@ -922,8 +995,7 @@
         "content": "Valitse, mitkä kieliversiot haluat julkaista. Sisältö julkaistaan heti, ellet ajasta sisällölle julkaisuajankohtaa. Julkaisemasi sisältö näkyy Suomi.fi verkkopalvelussa noin 10-15 minuutin viiveellä. Jos jätät kieliversion luonnostilaan, se näkyy vain palvelutietovarannossa.",
         "group_open_all": "Avaa laajennuspaanelit",
         "group_close_all": "Sulje laajennuspaanelit",
-        "aria_open": "Avaa laajennuspaneeli",
-        "aria_close": "Sulje laajennuspaneeli",
+        "expander_group_aria_label": "Lisätietoja",
         "checkbox_content_edited": "Muokattu",
         "date": "16.4.2021 2.20",
         "checkbox_content_edited_by": "Muokkaaja",
@@ -1281,15 +1353,14 @@
   "text_page": {
     "site_title": "Text (Teksti) | Suomi.fi Design System",
     "heading": "Text (Teksti)",
-
-    "title": "Kirjasintyyppi (Font)",
-    "text": "Suomi.fi-tyyleissä ja -käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on Googlen välittämä open source -fontti, kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Kirjasimen voi ladata omalle työasemalle Google Fontsista.",
-    "link_text": "Lataa kirjasin (Google Fonts) Source Sans Pro",
-    "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwik2qOSkJ3iAhVDmYsKHfIiCX8QFjAAegQICBAC&url=https%3A%2F%2Ffonts.google.com%2Fspecimen%2FSource%2BSans%2BPro&usg=AOvVaw1C5bQ5gIVNkjiNqeXsAcB-",
+    "text_documentation_link_text": "Text-komponentin tekninen dokumentaatio ja käyttöesimerkit",
+    "paragraph_documentation_link_text": "Paragraph-komponentin tekninen dokumentaatio ja käyttöesimerkit",
     "title_body": "Leipäteksti (Body)",
     "text_1": "Suomi.fi-teemassa leipätekstin oletuskoko on 18px sekä mobiili- että desktop-näkymissä. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Suomi.fi-teemassa leipäteksti on oletuksena sävyltään musta (blackBase) ja variaatiota luomassa käytetään tumman harmaata (depthDark1).",
-    "text_2": "Lihavoitua leikkausta käytetään leipätekstissä, kun halutaan korostaa käyttäjälle erityisen huomioitavaa tietoa. Lihavoitua tekstiä tulee käyttää harkiten. Jos lihavointia on käytetty liikaa, on käyttäjän vaikea ymmärtää, mihin hänen tulisi erityisesti kiinnittää huomiota sisällössä. ",
-    "body_description": "Suomi.fi-teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold -fonttia.",
+    "text_2": "Lihavoitua leikkausta käytetään leipätekstissä, kun halutaan korostaa käyttäjälle erityisen huomioitavaa tietoa. Lihavoitua tekstiä tulee käyttää harkiten. Jos lihavointia on käytetty liikaa, on käyttäjän vaikea ymmärtää, mihin hänen tulisi erityisesti kiinnittää huomiota sisällössä.",
+    "text_3": "Suomi.fi-teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold -fonttia.",
+    "text_4": "Tavanomaisissa tekstikappaleissa on suositeltavaa käyttää Paragraph-komponenttia, joka takaa oikean visuaalisen tyylin ja semantiikan.",
+    "paragraph_example_text": "Tekstikappale, joka on luotu käyttämällä semanttista Paragraph-komponenttia",
     "lead_title": "Ingressi (Lead)",
     "lead_description": "Ingressi on sivun alussa esiintyvä tiivistelmä sivun sisällöstä. Ingressiä käytetään vain kerran yhdessä näkymässä. Suomi.fi-teemassa ingressitekstin koko on 22 px ja pienellä näytöllä 20 px."
   },
@@ -1391,6 +1462,42 @@
         "placeholder": "Valitse palvelupaikka",
         "optional_text": "valinnainen"
       }
+    }
+  },
+
+  "time_input_page": {
+    "site_title": "Time Input (Kellonaikakenttä) | Suomi.fi Design System",
+    "heading": "Time Input (Kellonaikakenttä)",
+    "ingress": "Kellonaikakenttä on komponentti, johon käyttäjä täyttää kellonajan. Se muistuttaa tekstikenttäkomponenttia, mutta sisältää tiettyjä kellonajan syöttöön tarkoitettuja erityispiirteitä.",
+    "accessibility_list": {
+      "point_1": "Kellonaikakentän kanssa tulee aina käyttää otsaketta (label).",
+      "point_2": "Käyttäjälle tulee esittää ohje kellonajan muodosta (t.mm). Ohjeen tulee olla aina näkyvissä joko ohjetekstissä tai otsakkeessa. Suositeltu paikka kellonajan muoto-ohjeelle on komponentin ohjeteksti.",
+      "point_3": "Muoto-ohjetta ei tule ilmoittaa ainoastaan kellonaikakentän placeholder-attribuutissa, koska tieto katoaa näkyvistä käyttäjän kirjoittaessa kenttään.",
+      "point_4": "Komponentin kiinteä leveys toimii vihjeenä syötteen pituudesta ja erottaa sen visuaalisesti muista tekstikentistä.",
+      "point_5": "Kellonaikakenttä täydentää tai korjaa käyttäjän syötettä vastaamaan suomalaista kellonaikaformaattia tietyissä tilanteissa. Nämä tilanteet on esitelty jäljempänä tällä sivulla."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Kellonaikakenttä koostuu otsakkeesta (labelText) ja varsinaiseta syötekentästä. Komponentille voidaan lisäksi antaa ohjeteksti (hintText), joka näkyy otsakkeen ja syöttökentän välissä. Kellonajan muoto-ohje on suositeltava antaa ohjetekstinä.",
+      "text_2": "Lähtökohtaisesti kaikki Suomi.fi -lomakekentät ovat pakollisia, ja valinnaiset kentät merkitään valinnaisuustekstillä (optionalText). Valinnaisuusteksti näytetään suluissa otsakkeen lopussa. Kellonaikakentälle voidaan lisäksi antaa tila (status) ja tilateksti (statusText), jotka ilmaisevat hyväksyttyä tai virheellistä tilaa."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Kellonaikakentällä on kiinteä 60 pikselin leveys, joka toimii vihjeenä syötteen pituudesta ja erottaa komponentin visuaalisesti muista lomakekentistä.",
+      "text_2": "Kellonaikakenttää käytetään tyypillisesti yhdessä päivämääräkentän kanssa. Tämä yhdistelmä sisältää tärkeitä huomioitavia käytettävyys- ja saavutettavuusasioita, jotka on esitelty omassa suunnittelumallissaan.",
+      "pattern_link_text": "Päivämäärä ja kellonaika yhdessä"
+    },
+    "autocomplete": {
+      "heading": "Automaattinen syötteen täydentäminen/korjaaminen",
+      "text": "Jotta kellonajan syöttäminen olisi mahdollisimman vaivatonta, sisältää komponentti logiikkaa käyttäjän syötteen automaattiselle täydentämiselle tai korjaamiselle tietyissä tapauksissa. Syötteen automaattinen täydentäminen/korjaaminen tapahtuu selaimen kohdistuksen siirtyessä pois kentästä (onBlur event).",
+      "point_1": "Mikäli syöte on 1-2 merkkiä pitkä ja muodostaa validin kellonajan tuntiosan (0-24), täydennetään kellonaika loppuun. Esim:",
+      "point_2": "Mikäli syöte on 4 merkkiä pitkä ja muodostaa validin kellonajan ilman välimerkkiä, täydennetään välimerkki paikalleen. Esim:",
+      "point_3": "Etunolla poistetaan muutoin validista kellonajasta. Esim:",
+      "point_4": "Erotinmerkkinä toimiva kaksoispiste korjataan pisteeksi muutoin validissa kellonajassa. Piste on oikea kellonajan erotinmerkki suomen kielessä. Esim:"
+    },
+    "example": {
+      "label": "Tapahtuman alkamisaika",
+      "hint_text": "Kirjoita kellonaika muodossa t.mm"
     }
   },
 

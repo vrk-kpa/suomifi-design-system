@@ -16,9 +16,7 @@ const FrontPage: NextPage = () => {
         <Heading variant="h1" className="mb-xl">
           {t('privacy_statement.heading')}
         </Heading>
-        <Paragraph marginBottomSpacing="l">
-          {t('privacy_statement.paragraph_1')}
-        </Paragraph>
+        <Paragraph mb="l">{t('privacy_statement.paragraph_1')}</Paragraph>
         <Paragraph>{t('privacy_statement.paragraph_2')}</Paragraph>
       </InfopageLayout>
     </>

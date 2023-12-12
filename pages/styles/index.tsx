@@ -36,9 +36,7 @@ const StylesIndexPage: NextPage = () => {
         <Block mb="l">
           <Text variant="lead">{t('styles_main_page.ingress')}</Text>
         </Block>
-        <Paragraph marginBottomSpacing="l">
-          {t('styles_main_page.paragraph_1')}
-        </Paragraph>
+        <Paragraph mb="l">{t('styles_main_page.paragraph_1')}</Paragraph>
         <Block mb="l">
           <ExternalLink
             href="https://github.com/vrk-kpa/suomifi-design-tokens"
@@ -51,7 +49,7 @@ const StylesIndexPage: NextPage = () => {
           <Heading variant="h2" className="mb-xl">
             {t('styles_main_page.style_usage')}
           </Heading>
-          <Paragraph marginBottomSpacing="l">
+          <Paragraph mb="l">
             {t('styles_main_page.style_usage_paragraph_1')}
           </Paragraph>
           <ComponentExample codeString={styleExampleFromTokens} showCode>

@@ -1,4 +1,4 @@
-// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600&display=swap');
+@import '/fonts/source-sans-pro.css';
 @import '~suomifi-design-tokens/dist/tokens';
 @import './_utilities';
 @import './_breakpoints';
@@ -23,6 +23,7 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  width: 100%;
 }
 
 @include from-sm {

@@ -30,8 +30,58 @@ const MultiInsertPage: NextPage = () => {
         <Block my="xl">
           <Text variant="lead">{t('multi-insert.ingress')}</Text>
         </Block>
+
+        <Block mb="xxxl">
+          <Heading variant="h2" className="mb-l">
+            {t('multi-insert.reference_implementation.heading')}
+          </Heading>
+          <Paragraph mb="l">
+            {t('multi-insert.reference_implementation.paragraph')}
+          </Paragraph>
+          <ExternalLink
+            labelNewWindow={t('common.opens_in_a_new_tab')}
+            href="https://github.com/vrk-kpa/suomifi-design-system/tree/develop/components/MultiInsert/MultiInsert.tsx"
+          >
+            {t('multi-insert.reference_implementation.link_text')}
+          </ExternalLink>
+          <Block mt="xxl">
+            <MultiInsert />
+          </Block>
+        </Block>
+
+        <Block variant="section" my="xl">
+          <InfoBox>
+            <Heading variant="h3" as="h2">
+              {t('common.accessibility_and_usability')}
+            </Heading>
+            <ul>
+              <li>{t('multi-insert.accessibility_list.point_1')}</li>
+              <li>{t('multi-insert.accessibility_list.point_2')}</li>
+              <li>{t('multi-insert.accessibility_list.point_3')}</li>
+              <li>{t('multi-insert.accessibility_list.point_4')}</li>
+              <li>{t('multi-insert.accessibility_list.point_5')}</li>
+            </ul>
+          </InfoBox>
+        </Block>
+        <Block my="xl">
+          <Heading variant="h2">{t('multi-insert.focus.heading')}</Heading>
+          <Block mt="l">
+            <ul>
+              <li>{t('multi-insert.focus.point_1')}</li>
+              <li>
+                {t('multi-insert.focus.point_2')}
+                <ul>
+                  <li>{t('multi-insert.focus.point_2-1')}</li>
+                  <li>{t('multi-insert.focus.point_2-2')}</li>
+                  <li>{t('multi-insert.focus.point_2-3')}</li>
+                </ul>
+              </li>
+            </ul>
+          </Block>
+        </Block>
+
         <Block mb="l">
-          <Paragraph>{t('multi-insert.components_text')}</Paragraph>
+          <Heading variant="h2">{t('multi-insert.components_text')}</Heading>
           <ul>
             <li>
               <ExternalLink
@@ -75,53 +125,6 @@ const MultiInsertPage: NextPage = () => {
             </li>
             <li>{t('multi-insert.and_other_needed_components')}</li>
           </ul>
-        </Block>
-        <Block variant="section" my="xl">
-          <InfoBox>
-            <Heading variant="h3" as="h2">
-              {t('common.accessibility_and_usability')}
-            </Heading>
-            <ul>
-              <li>{t('multi-insert.accessibility_list.point_1')}</li>
-              <li>{t('multi-insert.accessibility_list.point_2')}</li>
-              <li>{t('multi-insert.accessibility_list.point_3')}</li>
-              <li>{t('multi-insert.accessibility_list.point_4')}</li>
-              <li>{t('multi-insert.accessibility_list.point_5')}</li>
-            </ul>
-          </InfoBox>
-        </Block>
-        <Block my="xl">
-          <Heading variant="h2">{t('multi-insert.focus.heading')}</Heading>
-          <Block mt="l">
-            <ul>
-              <li>{t('multi-insert.focus.point_1')}</li>
-              <li>
-                {t('multi-insert.focus.point_2')}
-                <ul>
-                  <li>{t('multi-insert.focus.point_2-1')}</li>
-                  <li>{t('multi-insert.focus.point_2-2')}</li>
-                  <li>{t('multi-insert.focus.point_2-3')}</li>
-                </ul>
-              </li>
-            </ul>
-          </Block>
-        </Block>
-        <Block>
-          <Heading variant="h2" className="mb-l">
-            {t('multi-insert.reference_implementation.heading')}
-          </Heading>
-          <Paragraph marginBottomSpacing="l">
-            {t('multi-insert.reference_implementation.paragraph')}
-          </Paragraph>
-          <ExternalLink
-            labelNewWindow={t('common.opens_in_a_new_tab')}
-            href="https://github.com/vrk-kpa/suomifi-design-system/tree/develop/components/MultiInsert/MultiInsert.tsx"
-          >
-            {t('multi-insert.reference_implementation.link_text')}
-          </ExternalLink>
-          <Block mt="xxl">
-            <MultiInsert />
-          </Block>
         </Block>
       </SideNavLayout>
     </>

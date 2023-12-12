@@ -22,19 +22,17 @@ const Navbar: React.FunctionComponent<NavbarProps> = (props) => {
 
   return (
     <div className={styles.navbar}>
-      <Block className="container">
-        <Block variant="nav">
-          <ul>
-            {navItems.map((item) => (
-              <li
-                className={isRouteActive(item.path) ? styles.active : ''}
-                key={item.title}
-              >
-                <Link href={item.path}>{item.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </Block>
+      <Block variant="nav">
+        <ul>
+          {navItems.map((item) => (
+            <li
+              className={isRouteActive(item.path) ? styles.active : ''}
+              key={item.title}
+            >
+              <Link href={item.path}>{item.title}</Link>
+            </li>
+          ))}
+        </ul>
       </Block>
     </div>
   );

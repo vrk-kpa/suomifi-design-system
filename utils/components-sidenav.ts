@@ -113,6 +113,10 @@ export const navItems: NavItem[] = [
     path: '/components/textinput',
   },
   {
+    title: translations.components.time_input,
+    path: '/components/timeinput',
+  },
+  {
     title: translations.components.toast,
     path: '/components/toast',
   },

@@ -34,7 +34,7 @@ const StylesIndexPage: NextPage = () => {
           <Heading variant="h2" className="mb-l">
             {t('info_main_page.ux_and_accessibility.heading')}
           </Heading>
-          <Paragraph marginBottomSpacing="l">
+          <Paragraph mb="l">
             {t('info_main_page.ux_and_accessibility.paragraph_1')}
           </Paragraph>
           <Paragraph>
@@ -45,16 +45,14 @@ const StylesIndexPage: NextPage = () => {
           <Heading variant="h2" className="mb-l">
             {t('info_main_page.brand.heading')}
           </Heading>
-          <Paragraph marginBottomSpacing="l">
-            {t('info_main_page.brand.paragraph_1')}
-          </Paragraph>
+          <Paragraph mb="l">{t('info_main_page.brand.paragraph_1')}</Paragraph>
           <Paragraph>{t('info_main_page.brand.paragraph_2')}</Paragraph>
         </Block>
         <Block mb="xl">
           <Heading variant="h2" className="mb-l">
             {t('info_main_page.ask_and_comment.heading')}
           </Heading>
-          <Paragraph marginBottomSpacing="l">
+          <Paragraph mb="l">
             {t('info_main_page.ask_and_comment.paragraph_1')}
           </Paragraph>
           <ExternalLink

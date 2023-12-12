@@ -30,6 +30,7 @@ const Page: NextPage = () => {
           <ExternalLink
             href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Text"
             labelNewWindow={t('common.opens_in_a_new_tab')}
+            variant="accent"
           >
             {t('text_page.text_documentation_link_text')}
           </ExternalLink>
@@ -69,9 +70,9 @@ const Page: NextPage = () => {
               alignItems: 'flex-start',
             }}
             showCode
-            filterPropsInExample={['marginBottomSpacing']}
+            filterPropsInExample={['mb']}
           >
-            <Paragraph marginBottomSpacing="l">
+            <Paragraph mb="l">
               {t('text_page.paragraph_example_text')}
             </Paragraph>
             <Text>Body text</Text>

@@ -34,6 +34,7 @@ const WizardNavigationPage: NextPage = () => {
           <ExternalLink
             href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/WizardNavigation"
             labelNewWindow={t('common.opens_in_a_new_tab')}
+            variant="accent"
           >
             {t('common.see_technical_documentation_of_component')}
           </ExternalLink>

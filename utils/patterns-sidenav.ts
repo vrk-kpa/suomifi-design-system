@@ -12,4 +12,8 @@ export const navItems: NavItem[] = [
     title: translations.patterns.multi_insert,
     path: '/patterns/multi-insert',
   },
+  {
+    title: translations.patterns.datetime,
+    path: '/patterns/datetime',
+  },
 ];

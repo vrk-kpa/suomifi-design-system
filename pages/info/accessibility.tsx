@@ -30,12 +30,8 @@ const StylesIndexPage: NextPage = () => {
         <Block mb="xl">
           <Text variant="lead">{t('accessibility_page.ingress')}</Text>
         </Block>
-        <Paragraph marginBottomSpacing="l">
-          {t('accessibility_page.paragraph_1')}
-        </Paragraph>
-        <Paragraph marginBottomSpacing="l">
-          {t('accessibility_page.paragraph_2')}
-        </Paragraph>
+        <Paragraph mb="l">{t('accessibility_page.paragraph_1')}</Paragraph>
+        <Paragraph mb="l">{t('accessibility_page.paragraph_2')}</Paragraph>
         <Block mb="l">
           <ExternalLink
             href="https://www.finlex.fi/fi/laki/alkup/2019/20190306"
@@ -64,13 +60,13 @@ const StylesIndexPage: NextPage = () => {
           <Heading variant="h2" className="mb-l">
             {t('accessibility_page.multiple_factors.heading')}
           </Heading>
-          <Paragraph marginBottomSpacing="l">
+          <Paragraph mb="l">
             {t('accessibility_page.multiple_factors.paragraph_1')}
           </Paragraph>
-          <Paragraph marginBottomSpacing="l">
+          <Paragraph mb="l">
             {t('accessibility_page.multiple_factors.paragraph_2')}
           </Paragraph>
-          <Paragraph marginBottomSpacing="l">
+          <Paragraph mb="l">
             {t('accessibility_page.multiple_factors.paragraph_3')}
           </Paragraph>
           <Block mb="l">

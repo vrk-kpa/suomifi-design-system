@@ -9,6 +9,10 @@ export const navItems: NavItem[] = [
     path: '/patterns',
   },
   {
+    title: translations.patterns.static_form,
+    path: '/patterns/static-form',
+  },
+  {
     title: translations.patterns.multi_insert,
     path: '/patterns/multi-insert',
   },

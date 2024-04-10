@@ -59,6 +59,7 @@ const StaticFormPage: NextPage = () => {
               <li>{t('static_form.accessibility_list.point_2')}</li>
               <li>{t('static_form.accessibility_list.point_3')}</li>
               <li>{t('static_form.accessibility_list.point_4')}</li>
+              <li>{t('static_form.accessibility_list.point_5')}</li>
             </ul>
           </InfoBox>
         </Block>

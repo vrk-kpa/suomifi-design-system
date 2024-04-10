@@ -13,7 +13,7 @@ import {
   ExternalLink,
   SingleSelect,
   defaultSuomifiTheme,
-  InlineAlert,
+  Notification,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -73,7 +73,9 @@ const Page: NextPage = () => {
           </ExternalLink>
         </Block>
 
-        <InlineAlert>{t('singleselect_page.accessibility')}</InlineAlert>
+        <Notification closeText={t('common.close')} showCloseButton={false}>
+          {t('singleselect_page.accessibility')}
+        </Notification>
 
         <Paragraph className="my-xl">
           <Text variant="lead">{t('singleselect_page.ingress')}</Text>

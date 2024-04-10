@@ -4,7 +4,8 @@
     "see_technical_documentation_of_component": "Komponentin tekninen dokumentaatio ja käyttöesimerkit",
     "opens_in_a_new_tab": "Avautuu uudessa välilehdessä",
     "skip_to_main_content": "Siirry pääsisältöön",
-    "skip_to_side_navigation": "Siirry sivunavigaatioon"
+    "skip_to_side_navigation": "Siirry sivunavigaatioon",
+    "close": "Sulje"
   },
   "front_page": {
     "front_page": "Etusivu",
@@ -81,12 +82,13 @@
       "point_1": "Staattista validointia suositellaan käytettäväksi ensisijaisesti saavutettavuussyistä. On kognitiivisesti selkeää, että lomakkeen virheet ilmoitetaan koostetusti kun lomaketta yritetään lähettää.",
       "point_2": "Kun lomake validoitaessa sisältää virheitä, ErrorSummary-komponentin tulee ilmestyä näkyviin lomakkeen yläpuolelle ja selaimen fokuksen siirtyä virhekoosteen otsikkoon.",
       "point_3": "Virhekooste sisältää listan linkkejä, jotka vastaavat lomakkeella olevaa kenttää. Linkin tekstin tulee olla sama kuin kentän alla näkyvän virheviestin.",
-      "point_4": "Linkkiä klikattaessa selaimen fokus siirtyy haluttuun elementtiin, tyypillisesti virhettä vastaavaan kenttään."
+      "point_4": "Virheviestien tulee olla kielelliseltä muodoltaan sellaisia, että ne ovat ymmärrettäviä sekä virhekoosteen osana että kentän yhteydessä erikseen.",
+      "point_5": "Linkkiä klikattaessa selaimen fokus siirtyy haluttuun elementtiin, tyypillisesti virhettä vastaavaan kenttään."
     },
     "components_text": "Mallissa käytetyt komponentit",
     "reference_implementation": {
       "heading": "Referenssitoteutus",
-      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen lomakkeen staattisesta validoinnista ja ErrorSummary-komponentin käytöstä. Testaa toiminnallisuutta lähettämällä lomake kaikki kentät tyhjänä.",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen lomakkeen staattisesta validoinnista ja ErrorSummary-komponentin käytöstä. Testaa toiminnallisuutta lähettämällä lomake kaikki kentät tyhjänä. Huomaa, että esimerkin kenttävalidoinnit ovat viitteellisiä, ja validointi on syytä tehdä aina projektikohtaisesti.",
       "link_text": "Lähdekoodi GitHubissa",
       "first_name": "Etunimi",
       "last_name": "Sukunimi",
@@ -96,7 +98,7 @@
       "first_name_is_required": "Etunimi on pakollinen tieto",
       "last_name_is_required": "Sukunimi on pakollinen tieto",
       "email_address_is_required": "Sähköpostiosoite on pakollinen tieto",
-      "email_address_is_invalid": "Sähköpostiosoite on epävalidi"
+      "email_address_is_invalid": "Sähköpostiosoite on väärässä muodossa. Kirjoita sähköpostiosoite muodossa etunimi.sukunimi@domain.fi"
     }
   },
   "multi-insert": {

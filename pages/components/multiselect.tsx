@@ -12,7 +12,7 @@ import {
   Paragraph,
   ExternalLink,
   MultiSelect,
-  InlineAlert,
+  Notification,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -109,7 +109,9 @@ const Page: NextPage = () => {
           </ExternalLink>
         </Block>
 
-        <InlineAlert>{t('multiselect_page.note_accessibility')}</InlineAlert>
+        <Notification closeText={t('common.close')} showCloseButton={false}>
+          {t('multiselect_page.note_accessibility')}
+        </Notification>
 
         <Paragraph className="my-xl">
           <Text variant="lead">{t('multiselect_page.ingress')}</Text>

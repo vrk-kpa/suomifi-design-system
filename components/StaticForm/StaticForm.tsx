@@ -98,7 +98,7 @@ export const StaticForm: React.FC = () => {
           headingText={t(
             'static_form.reference_implementation.error_summary_heading',
           )}
-          headingVariant="h4"
+          headingVariant="h3"
           headingRef={errorSummaryHeadingRef}
           items={errorSummaryItems}
           mb="xl"

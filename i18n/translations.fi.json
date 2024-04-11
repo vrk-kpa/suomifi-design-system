@@ -4,7 +4,8 @@
     "see_technical_documentation_of_component": "Komponentin tekninen dokumentaatio ja käyttöesimerkit",
     "opens_in_a_new_tab": "Avautuu uudessa välilehdessä",
     "skip_to_main_content": "Siirry pääsisältöön",
-    "skip_to_side_navigation": "Siirry sivunavigaatioon"
+    "skip_to_side_navigation": "Siirry sivunavigaatioon",
+    "close": "Sulje"
   },
   "front_page": {
     "front_page": "Etusivu",
@@ -65,6 +66,7 @@
   },
   "patterns": {
     "general": "Yleistä suunnittelumalleista",
+    "static_form": "Lomakkeen staattinen validointi",
     "multi_insert": "Multi-insert",
     "datetime": "Päivämäärä ja kellonaika"
   },
@@ -72,6 +74,32 @@
     "ingress": "Suunnittelumallit eli patternit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
     "paragraph_1": "Suunnittelumalleissa on kuvattu, kuinka erillisiä Design Systemin komponentteja käytetään yhdessä luomaan ratkaisuja, jotka on ovat käytettävyydeltään, visuaaliselta ilmeeltään ja saavutettavuudeltaan sujuvia ja parhaiden käytänteiden mukaisia.",
     "paragraph_2": "Jokaisen suunnittelumallin yhteydessä on esitelty referenssitoteutus, jota mukailemalla vastaava toiminnalisuus on helppo toteuttaa omaan palveluun. Referenssitoteutuksen lähdekoodi on myös saatavilla."
+  },
+  "static_form": {
+    "heading": "Lomakkeen staattinen validointi",
+    "ingress": "Lomakkeiden validointiin suositellaan käytettäväksi ns. staattista mallia. Tässä mallissa lomakkeen kentät validoidaan vasta Lähetä-painiketta painettaessa, ja virheiden ilmoittamiseen käytetään erillistä ErrorSummary-komponenttia.",
+    "accessibility_list": {
+      "point_1": "Staattista validointia suositellaan käytettäväksi ensisijaisesti saavutettavuussyistä. On kognitiivisesti selkeää, että lomakkeen virheet ilmoitetaan koostetusti kun lomaketta yritetään lähettää.",
+      "point_2": "Kun lomake validoitaessa sisältää virheitä, ErrorSummary-komponentin tulee ilmestyä näkyviin lomakkeen yläpuolelle ja selaimen fokuksen siirtyä virhekoosteen otsikkoon.",
+      "point_3": "Virhekooste sisältää listan linkkejä, jotka vastaavat lomakkeella olevaa kenttää. Linkin tekstin tulee olla sama kuin kentän alla näkyvän virheviestin.",
+      "point_4": "Virheviestien tulee olla kielelliseltä muodoltaan sellaisia, että ne ovat ymmärrettäviä sekä virhekoosteen osana että kentän yhteydessä erikseen.",
+      "point_5": "Linkkiä klikattaessa selaimen fokus siirtyy haluttuun elementtiin, tyypillisesti virhettä vastaavaan kenttään."
+    },
+    "components_text": "Mallissa käytetyt komponentit",
+    "reference_implementation": {
+      "heading": "Referenssitoteutus",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen lomakkeen staattisesta validoinnista ja ErrorSummary-komponentin käytöstä. Testaa toiminnallisuutta lähettämällä lomake kaikki kentät tyhjänä. Huomaa, että esimerkin kenttävalidoinnit ovat viitteellisiä, ja validointi on syytä tehdä aina projektikohtaisesti.",
+      "link_text": "Lähdekoodi GitHubissa",
+      "first_name": "Etunimi",
+      "last_name": "Sukunimi",
+      "email_address": "Sähköpostiosoite",
+      "submit": "Lähetä",
+      "error_summary_heading": "Lomakkeella havaittiin seuraavat puutteet",
+      "first_name_is_required": "Etunimi on pakollinen tieto",
+      "last_name_is_required": "Sukunimi on pakollinen tieto",
+      "email_address_is_required": "Sähköpostiosoite on pakollinen tieto",
+      "email_address_is_invalid": "Sähköpostiosoite on väärässä muodossa. Kirjoita sähköpostiosoite muodossa etunimi.sukunimi@domain.fi"
+    }
   },
   "multi-insert": {
     "heading": "Multi-insert",
@@ -323,40 +351,41 @@
   },
   "components": {
     "component_usage_info": "Komponenttien käyttöohje",
-    "actionmenu": "Action Menu (Toimintovalikko)",
+    "actionmenu": "ActionMenu (Toimintovalikko)",
     "alert": "Alert (Heräte)",
     "block": "Block (Lohko)",
     "breadcrumb": "Breadcrumb (Murupolku)",
     "button": "Button (Painike)",
     "checkbox": "Checkbox (Valintaruutu)",
-    "date_input": "Date input (Päivämääräkenttä)",
+    "date_input": "DateInput (Päivämääräkenttä)",
     "dropdown": "Dropdown (Pudotusvalikko)",
+    "error_summary": "ErrorSummary (Virhekooste)",
     "expander": "Expander (Laajennuspaneeli)",
     "heading": "Heading (Otsikko)",
     "hint_text": "Hint text (Ohjeteksti)",
     "icon": "Icons (Ikonit)",
     "label": "Label (Otsake)",
-    "language_menu": "Language Menu (Kielivalikko)",
+    "language_menu": "LanguageMenu (Kielivalikko)",
     "link": "Link (Linkki)",
     "loading_spinner": "LoadingSpinner (Latausindikaattori)",
     "modal": "Modal (Dialogi)",
     "multiselect": "MultiSelect (Monivalinta)",
     "notification": "Notification (Ilmoitus)",
     "pagination": "Pagination (Sivutus)",
-    "radio_button": "Radio Button (Valintanappi)",
-    "search_input": "Search Input (Hakukenttä)",
-    "service_navigation": "Service navigation (Palvelunavigaatio)",
-    "side_navigation": "Side navigation (Sivunavigaatio)",
-    "singleselect": "Single Select (Yksittäisvalinta)",
-    "status_text": "Status text (Tilateksti)",
+    "radio_button": "RadioButton (Valintanappi)",
+    "search_input": "SearchInput (Hakukenttä)",
+    "service_navigation": "ServiceNavigation (Palvelunavigaatio)",
+    "side_navigation": "SideNavigation (Sivunavigaatio)",
+    "singleselect": "SingleSelect (Yksittäisvalinta)",
+    "status_text": "StatusText (Tilateksti)",
     "text": "Text (Teksti)",
     "textarea": "Textarea (Tekstialue)",
-    "text_input": "Text Input (Tekstikenttä)",
-    "time_input": "Time input (Kellonaikakenttä)",
+    "text_input": "TextInput (Tekstikenttä)",
+    "time_input": "TimeInput (Kellonaikakenttä)",
     "toast": "Toast (Ponnahdusilmoitus)",
     "toggle": "Toggle (Valintakytkin)",
     "tooltip": "Tooltip (Lisätieto)",
-    "wizard_navigation": "Wizard navigation (Vaihenavigaatio)"
+    "wizard_navigation": "WizardNavigation (Vaihenavigaatio)"
   },
   "components_main_page": {
     "ingress": "Suomi.fi Design System tarjoaa kokoelman saavutettavia, uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja. Komponentit on toteutettu Suomi.fi-identiteetin mukaisina React-komponentteina.",
@@ -710,6 +739,13 @@
         "option2": "Toiminto 2"
       }
     }
+  },
+
+  "error_summary_page": {
+    "site_title": "ErrorSummary (Virhekooste)| Suomi.fi Design System",
+    "heading": "ErrorSummary (Virhekooste)",
+    "ingress": "Virhekoostekomponenttia käytetään lomakkeiden validoinnin yhteydessä ilmoittamaan lomakkeella esiintyvät validointivirheet koostetusti.",
+    "link_text": "Katso komponentin käyttöesimerkki erillisestä suunnittelumallista"
   },
 
   "expander_page": {

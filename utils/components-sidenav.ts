@@ -41,6 +41,10 @@ export const navItems: NavItem[] = [
     path: '/components/dropdown',
   },
   {
+    title: translations.components.error_summary,
+    path: '/components/errorsummary',
+  },
+  {
     title: translations.components.expander,
     path: '/components/expander',
   },

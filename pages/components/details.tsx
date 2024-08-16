@@ -79,6 +79,9 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('details_page.size_and_usage.text_1')}
           </Paragraph>
+          <Paragraph className="my-xl">
+            {t('details_page.size_and_usage.text_2')}
+          </Paragraph>
         </Block>
       </SideNavLayout>
     </>

@@ -1603,8 +1603,8 @@
     "heading": "Details (Lisätieto)",
     "ingress": "Lisätietokomponentilla voidaan esittää ja piilottaa tiettyyn sivun osaan liittyviä lisätietoja, joita kaikki käyttäjät eivät tarvitse. ",
     "accessibility_list": {
-      "point_1": "Käytä lisätietokomponenttia ainoastaan sellaisen informaation esittämiseen ja piilottamiseen, joka ei ole kaikille käyttäjille välttämätöntä.",
-      "point_2": "Anna komponentille kuvaava yhteenvetokuvaus (summaryLabel), josta selviää myös konteksti. Eli esimerkiksi ”Lisätietoa evästekäytännöistä” eikä ainoastaan ”Lisätietoa”",
+      "point_1": "Käytä lisätietokomponenttia esittämään ja piilottamaan ainoastaan sellaista informaatiota, joka ei ole välttämätöntä kaikille käyttäjille",
+      "point_2": "Anna komponentille kuvaava yhteenvetokuvaus (summaryLabel), josta selviää myös konteksti. Esimerkiksi ”Lisätietoa evästekäytännöistä” eikä ainoastaan ”Lisätietoa”",
       "point_3": "Älä käytä useita lisätietokomponentteja peräkkäin tai sisäkkäin"
     },
     "what_does_the_component_contain": {
@@ -1613,7 +1613,8 @@
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",
-      "text_1": "Lisätieto on lähtökohtaisesti suljettu, ja näkyvissä on sille annettu yhteenvetokuvaus (summaryLabel), jota klikkaamalla Lisätieto voidaan avata ja sulkea. Auki ollessaan Lisätieto näyttää sille annetun sisällön. Sisältö voi olla pelkkää tekstiä tai sisältää useita eri käyttöliittymäelementtejä."
+      "text_1": "Lisätieto on lähtökohtaisesti suljettu, ja näkyvissä on sille annettu yhteenvetokuvaus (summaryLabel), jota klikkaamalla Lisätieto voidaan avata ja sulkea. Auki ollessaan Lisätieto näyttää sille annetun sisällön. Sisältö voi olla pelkkää tekstiä tai sisältää useita eri käyttöliittymäelementtejä.",
+      "text_2": "Komponenttia ei ole tarkoitettu ryhmittelemään sivun sisältöä, vaan tarjoamaan mahdollisuus piilottaa ja näyttää yksittäisiin elementteihin tai sivun osiin liittyviä lisätietoja."
     },
     "example": {
       "summary": "Lisätietoa evästekäytännöistä",

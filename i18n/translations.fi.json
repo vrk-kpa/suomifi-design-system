@@ -797,7 +797,7 @@
   "file_input_page": {
     "site_title": "FileInput (Tiedostokenttä)| Suomi.fi Design System",
     "heading": "FileInput (Tiedostokenttä)",
-    "ingress": "Tiedostokenttää käytetään osana lomaketta tiedoston liittämiseen.",
+    "ingress": "Tiedostokenttää käytetään tiedostojen liittämiseksi lomakkeeseen.",
     "accessibility_list": {
       "point_1": "Tiedostokentän kanssa tulee käyttää otsaketta (labelText), joka kuvaa tiedostokentän tarkoituksen. Otsake on osa tiedostokenttäkomponenttia.",
       "point_2": "Komponentin ohjetekstiä (hintText) tulee käyttää antamaan ohjeita sallituista tiedostomuodoista sekä tiedostojen maksimikoosta ja määrästä.",

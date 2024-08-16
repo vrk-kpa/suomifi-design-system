@@ -797,13 +797,14 @@
   "file_input_page": {
     "site_title": "FileInput (Tiedostokenttä)| Suomi.fi Design System",
     "heading": "FileInput (Tiedostokenttä)",
-    "ingress": "Tiedostokenttää käytetään osana lomaketta tiedoston latamiseen.",
+    "ingress": "Tiedostokenttää käytetään osana lomaketta tiedoston liittämiseen.",
     "accessibility_list": {
       "point_1": "Tiedostokentän kanssa tulee käyttää otsaketta (labelText), joka kuvaa tiedostokentän tarkoituksen. Otsake on osa tiedostokenttäkomponenttia.",
-      "point_2": "Komponentin ohjetekstiä (hintText) tulee käyttää antamaan ohjeita tiedostojen maksimikoosta, sallituista tiedostomuodoista ja määrästä.",
+      "point_2": "Komponentin ohjetekstiä (hintText) tulee käyttää antamaan ohjeita sallituista tiedostomuodoista sekä tiedostojen maksimikoosta ja määrästä.",
       "point_3": "Tiedostonvalintapainikkeen tekstin tulee kertoa selkeästi, että painikkeella valitaan tiedosto.",
-      "point_4": "Alueelle, johon tiedosto voidaan raahata tulee antaa selkeä teksti (dragAreaText) josta drag & drop -toiminnallisuus käy ilmi",
-      "point_5": "Tiedoston poistavalle painikkeelle tulee antaa selkeä ja kuvaava teksti (removeFileText)"
+      "point_4": "Alueelle, johon tiedosto voidaan raahata, tulee antaa selkeä teksti (dragAreaText) josta drag & drop -toiminnallisuus käy ilmi",
+      "point_5": "Tiedoston poistavalle painikkeelle tulee antaa selkeä ja kuvaava teksti (removeFileText)",
+      "point_6": "Komponentille tulee myös asettaa lisätyn tiedoston ruudunlukija-aputeksti (addedFileAriaText), joka luetaan ennen lisätyn tiedoston nimeä. Tämä teksti antaa ruudunlukijakäyttäjälle lisäkontekstia siitä, että kyseessä on lisätty tiedosto."
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
@@ -814,7 +815,7 @@
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Tiedostokenttä on suunniteltu käytettäväksi osana lomaketta. Sen maksimileveys normaalissa tilassaan on 600 pikseliä, mutta se voidaan myös asettaa täyttämään koko saatavissa oleva horisontaalinen tila (fullWidth).",
-      "text_2": "Kapeilla ruuduilla komponentille on syytä asettaa smallScreen-attribuutti, joka muuttaa komponentin ulkoasua mobiililaitteille sopivaksi."
+      "text_2": "Komponentti voidaan asettaa käyttämään kapeita ruutukokoja varten suunnitelua ulkoasua (smallScreen), jolloin se on käytettävämpi esimerkiksi mobiililaitteilla."
     },
     "example": {
       "label": "Hakemuksen liite",

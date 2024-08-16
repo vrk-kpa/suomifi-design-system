@@ -69,6 +69,7 @@ const Page: NextPage = () => {
               <li>{t('file_input_page.accessibility_list.point_3')}</li>
               <li>{t('file_input_page.accessibility_list.point_4')}</li>
               <li>{t('file_input_page.accessibility_list.point_5')}</li>
+              <li>{t('file_input_page.accessibility_list.point_6')}</li>
             </ul>
           </InfoBox>
         </Block>

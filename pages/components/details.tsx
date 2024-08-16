@@ -65,6 +65,15 @@ const Page: NextPage = () => {
 
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
+            {t('details_page.what_does_the_component_contain.heading')}
+          </Heading>
+          <Paragraph className="my-xl">
+            {t('details_page.what_does_the_component_contain.text_1')}
+          </Paragraph>
+        </Block>
+
+        <Block variant="section">
+          <Heading variant="h2" className="mb-xl">
             {t('details_page.size_and_usage.heading')}
           </Heading>
           <Paragraph className="my-xl">

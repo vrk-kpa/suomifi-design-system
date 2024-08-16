@@ -1607,12 +1607,16 @@
       "point_2": "Anna komponentille kuvaava yhteenvetokuvaus (summaryLabel), josta selviää myös konteksti. Eli esimerkiksi ”Lisätietoa evästekäytännöistä” eikä ainoastaan ”Lisätietoa”",
       "point_3": "Älä käytä useita lisätietokomponentteja peräkkäin tai sisäkkäin"
     },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Lisätieto koostuu yhteenvetokuvauksesta (summaryLabel) ja varsinaisesta sisällöstä. Yhteenvetokuvaus toimii painikkeena, jota painamalla varsinainen sisältö voidaan näyttää tai piilottaa."
+    },
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Lisätieto on lähtökohtaisesti suljettu, ja näkyvissä on sille annettu yhteenvetokuvaus (summaryLabel), jota klikkaamalla Lisätieto voidaan avata ja sulkea. Auki ollessaan Lisätieto näyttää sille annetun sisällön. Sisältö voi olla pelkkää tekstiä tai sisältää useita eri käyttöliittymäelementtejä."
     },
     "example": {
-      "summary": "Lisää tietoa evästekäytännöistä",
+      "summary": "Lisätietoa evästekäytännöistä",
       "content": "Evästeitä käytetään tarkoituksiin X, Y ja Z"
     }
   },

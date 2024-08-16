@@ -202,7 +202,7 @@
       "date_label": "Päivämäärä",
       "time_label": "Kellonaika",
       "save": "Tallenna",
-      "event_time":"Tapahtuman ajankohta",
+      "event_time": "Tapahtuman ajankohta",
       "beginning_date": "Alkamispäivä",
       "ending_date": "Päättymispäivä",
       "there_are_errors": "Lomakkeella havaittiin seuraavat ongelmat"
@@ -358,6 +358,7 @@
     "button": "Button (Painike)",
     "checkbox": "Checkbox (Valintaruutu)",
     "date_input": "DateInput (Päivämääräkenttä)",
+    "details": "Details (Lisätieto)",
     "dropdown": "Dropdown (Pudotusvalikko)",
     "error_summary": "ErrorSummary (Virhekooste)",
     "expander": "Expander (Laajennuspaneeli)",
@@ -429,8 +430,8 @@
       "text_1": "Valikkopainike.",
       "text_2": "Valikko, joka avautuu valikkopainiketta painamalla. Valikossa on toimintopainikkeita ja mahdollisesti jakoviivoja.",
       "text_3": "Toimintopainikkeet ovat semanttisesti painikkeita ja voivat sisältää tekstin lisäksi ikonin.",
-      "text_4":  "Jakoviiva on visuaalinen elementti, jota ruudunlukija ei huomioi."
-       },
+      "text_4": "Jakoviiva on visuaalinen elementti, jota ruudunlukija ei huomioi."
+    },
 
     "example": {
       "label": "Toiminnot",
@@ -1594,6 +1595,30 @@
       "label_input": "Esimerkkitoiminto, kenttä-variaatio",
       "state_on": " päällä.",
       "state_off": " pois päältä."
+    }
+  },
+
+  "details_page": {
+    "site_title": "Details (Lisätieto) | Suomi.fi Design System",
+    "heading": "Details (Lisätieto)",
+    "ingress": "Lisätietokomponentilla voidaan esittää ja piilottaa tiettyyn sivun osaan liittyviä lisätietoja, joita kaikki käyttäjät eivät tarvitse. ",
+    "accessibility_list": {
+      "point_1": "Käytä lisätietokomponenttia esittämään ja piilottamaan ainoastaan sellaista informaatiota, joka ei ole välttämätöntä kaikille käyttäjille",
+      "point_2": "Anna komponentille kuvaava yhteenvetokuvaus (summaryLabel), josta selviää myös konteksti. Esimerkiksi ”Lisätietoa evästekäytännöistä” eikä ainoastaan ”Lisätietoa”",
+      "point_3": "Älä käytä useita lisätietokomponentteja peräkkäin tai sisäkkäin"
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Lisätieto koostuu yhteenvetokuvauksesta (summaryLabel) ja varsinaisesta sisällöstä. Yhteenvetokuvaus toimii painikkeena, jota painamalla varsinainen sisältö voidaan näyttää tai piilottaa."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Lisätieto on lähtökohtaisesti suljettu, ja näkyvissä on sille annettu yhteenvetokuvaus (summaryLabel), jota klikkaamalla Lisätieto voidaan avata ja sulkea. Auki ollessaan Lisätieto näyttää sille annetun sisällön. Sisältö voi olla pelkkää tekstiä tai sisältää useita eri käyttöliittymäelementtejä.",
+      "text_2": "Komponenttia ei ole tarkoitettu ryhmittelemään sivun sisältöä, vaan tarjoamaan mahdollisuus piilottaa ja näyttää yksittäisiin elementteihin tai sivun osiin liittyviä lisätietoja."
+    },
+    "example": {
+      "summary": "Lisätietoa evästekäytännöistä",
+      "content": "Evästeitä käytetään tarkoituksiin X, Y ja Z"
     }
   },
 

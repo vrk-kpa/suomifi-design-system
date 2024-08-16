@@ -37,6 +37,10 @@ export const navItems: NavItem[] = [
     path: '/components/dateinput',
   },
   {
+    title: translations.components.details,
+    path: '/components/details',
+  },
+  {
     title: translations.components.dropdown,
     path: '/components/dropdown',
   },

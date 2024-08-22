@@ -53,6 +53,10 @@ export const navItems: NavItem[] = [
     path: '/components/expander',
   },
   {
+    title: translations.components.file_input,
+    path: '/components/fileinput',
+  },
+  {
     title: translations.components.heading,
     path: '/components/heading',
   },

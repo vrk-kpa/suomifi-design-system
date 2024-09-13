@@ -38,6 +38,7 @@ const Page: NextPage = () => {
           <ExternalLink
             href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Paragraph"
             labelNewWindow={t('common.opens_in_a_new_tab')}
+            variant="accent"
           >
             {t('text_page.paragraph_documentation_link_text')}
           </ExternalLink>

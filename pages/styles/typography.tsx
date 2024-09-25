@@ -48,12 +48,13 @@ const StylesIndexPage: NextPage = () => {
           </Heading>
 
           <Paragraph className="my-xl">{t('typography.font_text_1')}</Paragraph>
+          <Paragraph className="my-xl">{t('typography.font_text_2')}</Paragraph>
 
           <Link href="/fonts/SourceSansPro_TTF.zip">
             {t('typography.font_link_text')}
           </Link>
 
-          <Paragraph className="my-l">{t('typography.font_text_2')}</Paragraph>
+          <Paragraph className="my-l">{t('typography.font_text_3')}</Paragraph>
 
           <Block>
             <pre style={codeBlockStyles}>

@@ -37,12 +37,24 @@ export const navItems: NavItem[] = [
     path: '/components/dateinput',
   },
   {
+    title: translations.components.details,
+    path: '/components/details',
+  },
+  {
     title: translations.components.dropdown,
     path: '/components/dropdown',
   },
   {
+    title: translations.components.error_summary,
+    path: '/components/errorsummary',
+  },
+  {
     title: translations.components.expander,
     path: '/components/expander',
+  },
+  {
+    title: translations.components.file_input,
+    path: '/components/fileinput',
   },
   {
     title: translations.components.heading,

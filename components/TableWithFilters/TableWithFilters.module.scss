@@ -1,0 +1,26 @@
+@import '~suomifi-design-tokens/dist/tokens';
+
+.table-with-filters {
+  .table-with-filters_toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .table-with-filters_inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: $fi-spacing-s;
+    flex-wrap: wrap;
+    margin: 0 0 $fi-spacing-m 0;
+    padding: 0;
+    border: none;
+
+    .table-with-filters_input {
+      flex: 1;
+      width: auto;
+      min-width: 200px;
+    }
+  }
+}

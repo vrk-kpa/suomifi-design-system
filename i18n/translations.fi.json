@@ -68,12 +68,50 @@
     "general": "Yleistä suunnittelumalleista",
     "static_form": "Lomakkeen staattinen validointi",
     "multi_insert": "Multi-insert",
-    "datetime": "Päivämäärä ja kellonaika"
+    "datetime": "Päivämäärä ja kellonaika",
+    "table_with_filters": "Taulukko suodattimilla"
   },
   "patterns_main_page": {
     "ingress": "Suunnittelumallit eli patternit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
     "paragraph_1": "Suunnittelumalleissa on kuvattu, kuinka erillisiä Design Systemin komponentteja käytetään yhdessä luomaan ratkaisuja, jotka on ovat käytettävyydeltään, visuaaliselta ilmeeltään ja saavutettavuudeltaan sujuvia ja parhaiden käytänteiden mukaisia.",
     "paragraph_2": "Jokaisen suunnittelumallin yhteydessä on esitelty referenssitoteutus, jota mukailemalla vastaava toiminnalisuus on helppo toteuttaa omaan palveluun. Referenssitoteutuksen lähdekoodi on myös saatavilla."
+  },
+  "table_with_filters": {
+    "heading": "Taulukko suodattimilla",
+    "ingress": "Taulukkokomponentin ympärille rakennetuissa suodattimissa tulee ottaa huomioon useita käytettävyys- ja saavutettavuusasioita.",
+    "components_text": "Mallissa käytetyt komponentit",
+    "accessibility_list": {
+      "point_1": "Taulukon otsikko on erillinen Heading-komponentti, joka tulee kytkeä taulukkoon aria-labelledby -attribuutilla.",
+      "point_2": "Taulukon yläpuolella oleva tekstielementti (joka ilmaisee datan määrän, valittujen rivien määrän ja lataustilan) tulee kääriä aria-live regioniin, jotta ruudunlukijakäyttäjät saavat tiedon taulukon datan muutoksista.",
+      "point_3": "Sijoita taulukkoa suodattavat inputit fieldset-elementin sisään ja anna fieldsetille kuvaava legend-tieto (referenssitoteutuksessa \"taulukon suodattimet\"). On hyväksyttävää, että legend on visuaalisesti piilotettu.",
+      "point_4": "Suodattimina toimiville input-kentille tulee antaa yksinkertaiset ja kuvaavat nimilaput (labelText), joista käy ilmi että kentät liittyvät taulukon datan manipulointiin.",
+      "point_5": "Kun taulukon dataa ladataan serveriltä, tulee taulukko asettaa lataustilaan (loading prop) ja näyttää visuaalinen \"Ladataan...\" -teksti taulukon yläpuolella.",
+      "point_6": "Layout shiftin välttämiseksi taulukolle on hyvä antaa loadingRowAmount -prop, joka kertoo kuinka monta skeleton-riviä taulukkoon piirretään lataustilan aikana."
+    },
+    "reference_implementation": {
+      "heading": "Referenssitoteutus",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen taulukon suodattamisesta. Esimerkissä on simuloitu käyttötapausta, jossa taulukon data suodatetaan ja järjestellään selaimen sijaan serverillä.",
+      "link_text": "Lähdekoodi GitHubissa",
+      "table_heading": "Projektin henkilöstö",
+      "next_table_page": "Seuraava taulukon sivu",
+      "previous_table_page": "Edellinen taulukon sivu",
+      "table_pagination": "Taulukon sivutus",
+      "page": "Sivu",
+      "showing_page": "Näytetään sivu",
+      "out_of": "kautta",
+      "people": "henkilöä",
+      "chosen": "valittu",
+      "choose_all": "Valitse kaikki",
+      "remove_selections": "Poista valinnat",
+      "search": "Hae",
+      "show_on_page": "Näytä sivulla",
+      "table_is_sorted_asc": "Taulukko on järjestetty sarakkeen {{column}} mukaan nousevaan järjestykseen",
+      "table_is_sorted_desc": "Taulukko on järjestetty sarakkeen {{column}} mukaan laskevaan järjestykseen",
+      "loading": "Ladataan...",
+      "no_results": "Ei tuloksia",
+      "filter_by_work_hours": "Suodata työtuntien mukaan",
+      "table_filters": "Taulukon suodattimet"
+    }
   },
   "static_form": {
     "heading": "Lomakkeen staattinen validointi",
@@ -381,6 +419,7 @@
     "side_navigation": "SideNavigation (Sivunavigaatio)",
     "singleselect": "SingleSelect (Yksittäisvalinta)",
     "status_text": "StatusText (Tilateksti)",
+    "table": "Table (Taulukko)",
     "text": "Text (Teksti)",
     "textarea": "Textarea (Tekstialue)",
     "text_input": "TextInput (Tekstikenttä)",
@@ -1475,6 +1514,22 @@
         "description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
         "label": "Perustelut"
       }
+    }
+  },
+
+  "table_page": {
+    "site_title": "Table (Taulukko) | Suomi.fi Design System",
+    "heading": "Table (Taulukko)",
+    "ingress": "Taulukkoa käytetään datan esittämiseen silloin kun se on luonteeltaan sarakemaista ja yksinkertaisen listan käyttäminen ei ole mielekästä.",
+    "accessibility_list": {
+      "point_1": "Taulukon tulee sisältää otsikko (caption), joka kertoo taulukon sisällöstä. Otsikko on tärkeä osa taulukkoa, sillä se kertoo käyttäjälle taulukon tarkoituksen."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": ""
+    },
+    "example": {
+      "caption": "Projektin henkilöstö"
     }
   },
 

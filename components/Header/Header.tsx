@@ -13,7 +13,6 @@ import { useRouter } from 'next/router';
 const Header: React.FunctionComponent = () => {
   const { t } = useTranslation();
   const router = useRouter();
-  console.log(router.pathname);
   const navItems: NavItem[] = [
     {
       title: t('main_nav.home'),

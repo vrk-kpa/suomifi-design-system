@@ -31,10 +31,10 @@ const Footer: React.FunctionComponent = () => {
         <Block>
           <Block variant="div" className={styles.links}>
             <Block className={styles.links}>
-              <Link href="/privacy-statement" passHref>
+              <Link href="/privacy-statement" passHref legacyBehavior>
                 <RouterLink>{t('footer.cookies')}</RouterLink>
               </Link>
-              <Link href="/accessibility-statement" passHref>
+              <Link href="/accessibility-statement" passHref legacyBehavior>
                 <RouterLink>{t('footer.accessibility')}</RouterLink>
               </Link>
               <ExternalLink
@@ -42,12 +42,15 @@ const Footer: React.FunctionComponent = () => {
                 labelNewWindow={t('common.opens_in_a_new_tab')}
                 className={styles.githubLink}
               >
-                <span className={'flex align-center'}>
-                  <div className={styles.githubLogo}>
-                    <Image src={gitHubLogo} aria-hidden alt="" />
-                  </div>
+                <div className="flex items-center asd">
+                  <Image
+                    src={gitHubLogo}
+                    aria-hidden
+                    alt="Github logo"
+                    className={styles.githubLogo}
+                  />
                   suomifi-ui-components
-                </span>
+                </div>
               </ExternalLink>
             </Block>
           </Block>

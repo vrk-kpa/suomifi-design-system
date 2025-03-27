@@ -52,7 +52,8 @@
 
   .right {
     flex: 1;
-    margin: $fi-spacing-m $fi-spacing-s;
+    padding: $fi-spacing-m $fi-spacing-s;
+    overflow-x: auto;
   }
 }
 

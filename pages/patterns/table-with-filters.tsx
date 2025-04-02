@@ -63,6 +63,8 @@ const TableWithFiltersPage: NextPage = () => {
               <li>{t('table_with_filters.accessibility_list.point_4')}</li>
               <li>{t('table_with_filters.accessibility_list.point_5')}</li>
               <li>{t('table_with_filters.accessibility_list.point_6')}</li>
+              <li>{t('table_with_filters.accessibility_list.point_7')}</li>
+              <li>{t('table_with_filters.accessibility_list.point_8')}</li>
             </ul>
           </InfoBox>
         </Block>

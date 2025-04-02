@@ -25,7 +25,7 @@ const columns: TableColumn[] = [
   },
 ];
 
-const fullData: TableRow<readonly TableColumn[]>[] = [
+const fullDataBasic: TableRow<readonly TableColumn[]>[] = [
   {
     id: '1',
     firstName: 'John',
@@ -588,10 +588,12 @@ const fullData: TableRow<readonly TableColumn[]>[] = [
   },
 ];
 
-fullData.map((item) => ({
-  ...item,
-  rowSelectionCheckBoxLabel: `Valitse rivi ${item.firstName} ${item.lastName}`,
-}));
+const fullData: TableRow<readonly TableColumn[]>[] = fullDataBasic.map(
+  (item) => ({
+    ...item,
+    rowSelectionCheckboxLabel: `Valitse rivi ${item.firstName} ${item.lastName}`,
+  }),
+);
 
 const showOnPageOptions = [
   { name: '10', key: '10' },

@@ -132,6 +132,8 @@ export const TableWithFilters: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortColumn, sortDirection]);
 
+  console.log(filteredData);
+
   return (
     <Block className={styles['table-with-filters']}>
       <Heading variant="h3" mb="l" id="table-heading">
@@ -190,7 +192,7 @@ export const TableWithFilters: React.FC = () => {
         </Dropdown>
       </fieldset>
       <Block className={styles['table-with-filters_toolbar']} mb="s">
-        <Block aria-live="polite">
+        <Block aria-live="polite" aria-atomic="true">
           {loading ? (
             <Text variant="bold">
               {t('table_with_filters.reference_implementation.loading')}

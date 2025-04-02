@@ -5,6 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    row-gap: $fi-spacing-xs;
   }
 
   .table-with-filters_inputs {

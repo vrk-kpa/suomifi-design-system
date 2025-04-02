@@ -13,6 +13,7 @@ import {
   ExternalLink,
   Table,
   TableColumn,
+  Link,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -96,7 +97,7 @@ const Page: NextPage = () => {
         navIcon="puzzle"
       >
         <Heading variant="h1">{t('table_page.heading')}</Heading>
-        <Block variant="div" mt="m" mb="l">
+        <Block variant="div" mt="m" mb="xxs">
           <ExternalLink
             href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Table"
             labelNewWindow={t('common.opens_in_a_new_tab')}
@@ -104,6 +105,11 @@ const Page: NextPage = () => {
           >
             {t('common.see_technical_documentation_of_component')}
           </ExternalLink>
+        </Block>
+        <Block variant="div" mb="l">
+          <Link href="/patterns/table-with-filters" variant="accent">
+            {t('table_with_filters.heading')}
+          </Link>
         </Block>
 
         <Paragraph className="my-xl">
@@ -126,8 +132,12 @@ const Page: NextPage = () => {
             <ul>
               <li>{t('table_page.accessibility_list.point_1')}</li>
               <li>{t('table_page.accessibility_list.point_2')}</li>
-              <li>{t('table_page.accessibility_list.point_3')}</li>
-              <li>{t('table_page.accessibility_list.point_4')}</li>
+              <li>
+                {t('table_page.accessibility_list.point_3')}{' '}
+                <Link href="/patterns/table-with-filters">
+                  {t('table_with_filters.heading')}
+                </Link>
+              </li>
             </ul>
           </InfoBox>
         </Block>
@@ -142,6 +152,9 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('table_page.what_does_the_component_contain.text_2')}
           </Paragraph>
+          <Paragraph className="my-xl">
+            {t('table_page.what_does_the_component_contain.text_3')}
+          </Paragraph>
         </Block>
 
         <Block variant="section">
@@ -151,6 +164,14 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('table_page.size_and_usage.text_1')}
           </Paragraph>
+          <Paragraph className="mt-xl mb-s">
+            {t('table_page.size_and_usage.text_2')}
+          </Paragraph>
+          <Block variant="div" mb="xl">
+            <Link href="/patterns/table-with-filters" variant="accent">
+              {t('table_with_filters.heading')}
+            </Link>
+          </Block>
         </Block>
       </SideNavLayout>
     </>

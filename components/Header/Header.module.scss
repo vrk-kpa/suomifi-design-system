@@ -1,12 +1,12 @@
-@import '~suomifi-design-tokens/dist/tokens';
-@import '../../styles/breakpoints';
+@use '~suomifi-design-tokens/dist/tokens';
+@use '../../styles/breakpoints';
 
 .header {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
 
-  @include upto-lg {
+  @include breakpoints.upto-lg {
     padding-bottom: 10px;
   }
 
@@ -17,7 +17,7 @@
   .mobileNavContainer {
     display: none;
 
-    @include upto-lg {
+    @include breakpoints.upto-lg {
       display: block;
     }
   }
@@ -25,7 +25,7 @@
   .desktopNavContainer {
     display: none;
 
-    @include from-lg {
+    @include breakpoints.from-lg {
       display: flex;
       justify-content: center;
     }

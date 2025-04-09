@@ -1,4 +1,4 @@
-@import '~suomifi-design-tokens/dist/tokens';
+@use '~suomifi-design-tokens/dist/tokens';
 
 .colorShowcaseContainer {
   padding: 0;
@@ -10,14 +10,14 @@
 }
 
 .colorContainer {
-  margin: $fi-spacing-xs $fi-spacing-xl $fi-spacing-xl 0;
+  margin: tokens.$fi-spacing-xs tokens.$fi-spacing-xl tokens.$fi-spacing-xl 0;
   line-height: 1rem;
 }
 
 .colorBox {
   width: 10rem;
   height: 3rem;
-  margin-bottom: $fi-spacing-s;
+  margin-bottom: tokens.$fi-spacing-s;
 }
 
 .colorText {

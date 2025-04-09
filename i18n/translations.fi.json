@@ -398,6 +398,7 @@
     "breadcrumb": "Breadcrumb (Murupolku)",
     "button": "Button (Painike)",
     "checkbox": "Checkbox (Valintaruutu)",
+    "chip": "Chip (Tunniste)",
     "date_input": "DateInput (Päivämääräkenttä)",
     "details": "Details (Lisätieto)",
     "dropdown": "Dropdown (Pudotusvalikko)",
@@ -691,6 +692,31 @@
         "content": "Valinta"
       }
     }
+  },
+
+  "chip_page": {
+    "site_title": "Chip (Tunniste) | Suomi.fi Design System",
+    "heading": "Chip (Tunniste)",
+    "ingress": "Tunniste on komponentti, joka esittää informaatiota lyhyessä ja visuaalisesti korostetussa muodossa. Tunniste voi olla interaktiivinen painike tai pelkästään informatiivinen esitysmuotoinen komponentti.",
+    "accessibility_list": {
+      "point_1": "Kun tunnistekomponenttia käytetään interaktiivisena painikkeena, on sille annettava saavutettava nimilappu (actionLabel) joka kuvaa interaktion tarkoituksen."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Tunniste koostuu tekstistä, ja sitä ympäröivästä sinisestä korostuksesta. Tunniste voi olla interaktiivinen painike tai pelkästään informatiivinen esitysmuotoinen komponentti (StaticChip).",
+      "text_2": "Kun komponentti on interaktiivinen, siihen kuuluu tyypillisesti myös oikean laidan ikoni, joka merkitsee poistamisen mahdollisuutta."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Tunnistekomponenttia käytetään silloin, kun halutaan esittää lyhyttä informaatiota visuaalisesti korostetussa muodossa.",
+      "text_2": "Interaktiivista tunnistetta käytetään esimerkiksi valintakomponenttien yhteydessä merkitsemään listalta valittuja vaihtoehtoja ja mahdollistamaan valintojen poistaminen. Tällöin tunniste voi olla myös estetyssä tilassa (disabled). Esitysmuotoista tunnistetta (StaticChip) voidaan puolestaan käyttää esimerkiksi tietojen kategorisoimiseen."
+    },
+    "example": {
+      "chip_text": "Suomi (Chip)",
+      "action_label": "Poista valinta Suomi",
+      "static_chip_text": "Suomi (StaticChip)"
+    }
+
   },
 
   "date_input_page": {

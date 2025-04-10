@@ -88,7 +88,7 @@
       "point_5": "Kun taulukon dataa ladataan palvelimelta, tulee taulukko asettaa lataustilaan (loading-prop) ja näyttää visuaalinen \"Ladataan...\" -teksti taulukon yläpuolella.",
       "point_6": "Layout shiftin välttämiseksi taulukolle on hyvä antaa loadingRowAmount-prop, joka kertoo kuinka monta skeleton-riviä taulukkoon piirretään lataustilan aikana.",
       "point_7": "Kun taulukon järjestystä muutetaan, aseta taulukkokomponentin tableSortedAriaLiveText-attribuutin teksti vastaamaan muuttunutta järjestystä. Tällöin tieto välitetään ruudunlukijakäyttäjille.",
-      "point_8": "Mikäli rivien valintamahdollisuus on kytketty päälle, tulee jokaiselle taulukon dataobjektille  asettaa rowSelectionCheckboxLabel-attribuutti, joka kertoo käyttäjälle mitä tietoa rivillä oleva valintaruutu edustaa."
+      "point_8": "Mikäli rivien valintamahdollisuus on kytketty päälle, tulee jokaiselle taulukon dataobjektille asettaa rowSelectionCheckboxLabel-attribuutti, joka kertoo käyttäjälle mitä tietoa rivillä oleva valintaruutu edustaa."
     },
     "reference_implementation": {
       "heading": "Referenssitoteutus",

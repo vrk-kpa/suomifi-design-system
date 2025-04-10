@@ -6,7 +6,7 @@ orbs:
   # The Node.js orb contains a set of prepackaged CircleCI configuration you can utilize
   # Orbs reduce the amount of configuration required for common tasks.
   # See the orb documentation here: https://circleci.com/developer/orbs/orb/circleci/node
-  node: circleci/node@5.1.0
+  node: circleci/node@7.1.0
 
 commands:
   build:
@@ -30,7 +30,6 @@ jobs:
   build-test:
     executor:
       name: node/default
-      tag: 20.0.0
     steps:
       - build
 

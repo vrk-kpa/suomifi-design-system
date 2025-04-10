@@ -30,32 +30,9 @@ jobs:
   build-test:
     executor:
       name: node/default
-      tag: 18.15.0
+      tag: 20.0.0
     steps:
       - build
-
-  deploy-develop:
-    executor:
-      name: node/default
-      tag: 18.15.0
-    steps:
-      - build:
-          base_path: /suomifi-design-system
-      - run:
-          name: Disable jekyll builds
-          command: touch out/.nojekyll
-      - run:
-          name: Install gh-pages and set git user
-          command: |
-            sudo npm install -g gh-pages@5.0.0
-            git config user.email 'ci@example.com'
-            git config user.name 'ci'
-      - add_ssh_keys:
-          fingerprints:
-            - '75:51:12:bc:d4:83:3b:7b:c0:1e:ac:61:14:bc:74:0d'
-      - run:
-          name: Deploy to gh-pages branch
-          command: gh-pages --dotfiles --dist out --message '[skip ci] Auto-generated updates'
 
 workflows:
   # Below is the definition of your workflow.
@@ -68,7 +45,3 @@ workflows:
           filters:
             branches:
               ignore: develop
-      - deploy-develop:
-          filters:
-            branches:
-              only: develop

@@ -121,7 +121,7 @@ export const TableWithFilters: React.FC = () => {
       setDisplayData(filteredData.slice(0, itemsPerPage));
       setCurrentPage(1);
       setLoading(false);
-    }, 3000);
+    }, 1500);
   };
 
   React.useEffect(() => {
@@ -181,7 +181,7 @@ export const TableWithFilters: React.FC = () => {
               setDisplayData(filteredData.slice(0, parseInt(value)));
               setCurrentPage(1);
               setLoading(false);
-            }, 2000);
+            }, 1500);
           }}
         >
           {showOnPageOptions.map((option) => (

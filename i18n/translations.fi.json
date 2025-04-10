@@ -81,14 +81,14 @@
     "ingress": "Taulukkokomponentin ympärille rakennetuissa suodattimissa tulee ottaa huomioon useita käytettävyys- ja saavutettavuusasioita.",
     "components_text": "Mallissa käytetyt komponentit",
     "accessibility_list": {
-      "point_1": "Taulukon otsikko on erillinen Heading-komponentti, joka tulee kytkeä taulukkoon aria-labelledby -attribuutilla.",
+      "point_1": "Taulukon otsikko on erillinen otsikkokomponentti, joka tulee kytkeä taulukkoon aria-labelledby -attribuutilla.",
       "point_2": "Taulukon yläpuolella oleva tekstielementti (joka ilmaisee datan määrän, valittujen rivien määrän ja lataustilan) tulee kääriä aria-live regioniin, jotta ruudunlukijakäyttäjät saavat tiedon taulukon datan muutoksista. Alueelle tulee lisäksi asettaa aria-atomic=\n\"true\" -attribuutti, jotta ruudunlukija lukee koko sisällön muutoksien jälkeen.",
-      "point_3": "Sijoita taulukkoa suodattavat inputit fieldset-elementin sisään ja anna fieldsetille kuvaava legend-tieto (referenssitoteutuksessa \"taulukon suodattimet\"). On hyväksyttävää, että legend on visuaalisesti piilotettu.",
-      "point_4": "Suodattimina toimiville input-kentille tulee antaa yksinkertaiset ja kuvaavat nimilaput (labelText), joista käy ilmi että kentät liittyvät taulukon datan manipulointiin.",
-      "point_5": "Kun taulukon dataa ladataan serveriltä, tulee taulukko asettaa lataustilaan (loading prop) ja näyttää visuaalinen \"Ladataan...\" -teksti taulukon yläpuolella.",
-      "point_6": "Layout shiftin välttämiseksi taulukolle on hyvä antaa loadingRowAmount -prop, joka kertoo kuinka monta skeleton-riviä taulukkoon piirretään lataustilan aikana.",
-      "point_7": "Kun taulukon järjestystä muutetaan, aseta Table-komponentin tableSortedAriaLiveText-attribuutin teksti vastaamaan muuttunutta järjestystä. Tällöin tieto välitetään ruudunlukijakäyttäjille.",
-      "point_8": "Jokaiselle taulukon data-objektille tulee asettaa rowSelectionCheckboxLabel-attribuutti, joka kertoo käyttäjälle mitä tietoa rivillä oleva checkbox edustaa."
+      "point_3": "Sijoita taulukkoa suodattavat kentät fieldset-elementin sisään ja anna fieldsetille kuvaava nimilappu (legend, referenssitoteutuksessa \"taulukon suodattimet\"). On hyväksyttävää, että nimilappu on visuaalisesti piilotettu.",
+      "point_4": "Suodattimina toimiville kentille tulee antaa yksinkertaiset ja kuvaavat nimilaput (labelText), joista käy ilmi, että kentät liittyvät taulukon datan manipulointiin.",
+      "point_5": "Kun taulukon dataa ladataan palvelimelta, tulee taulukko asettaa lataustilaan (loading-prop) ja näyttää visuaalinen \"Ladataan...\" -teksti taulukon yläpuolella.",
+      "point_6": "Layout shiftin välttämiseksi taulukolle on hyvä antaa loadingRowAmount-prop, joka kertoo kuinka monta skeleton-riviä taulukkoon piirretään lataustilan aikana.",
+      "point_7": "Kun taulukon järjestystä muutetaan, aseta taulukkokomponentin tableSortedAriaLiveText-attribuutin teksti vastaamaan muuttunutta järjestystä. Tällöin tieto välitetään ruudunlukijakäyttäjille.",
+      "point_8": "Mikäli rivien valintamahdollisuus on kytketty päälle, tulee jokaiselle taulukon dataobjektille  asettaa rowSelectionCheckboxLabel-attribuutti, joka kertoo käyttäjälle mitä tietoa rivillä oleva valintaruutu edustaa."
     },
     "reference_implementation": {
       "heading": "Referenssitoteutus",
@@ -1530,7 +1530,7 @@
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text_1": "Suomi.fi Design Systemin Table-komponentti mukailee HTML:n natiivia taulukkoelementtiä. Taulukko koostuu sarakkeet määrittävästä otsikkorivistä ja varsinaisista datariveistä. Otsikkorivi on visuaalisesti erottuva. Datarivit sisältävät taulukon datan.",
+      "text_1": "Suomi.fi Design Systemin taulukkokomponentti mukailee HTML:n natiivia taulukkoelementtiä. Taulukko koostuu sarakkeet määrittävästä otsikkorivistä ja varsinaisista datariveistä. Otsikkorivi on visuaalisesti erottuva. Datarivit sisältävät taulukon datan.",
       "text_2": "Taulukon data on mahdollista järjestää eri sarakkeiden mukaan nousevaan ja laskevaan järjestykseen. Kun sarake on merkitty järjestyskelpoiseksi (sortable) sen nimen vieressä on järjestämistä kuvaava ikoni.",
       "text_3": "Taulukon rivejä on mahdollista merkitä valituksi käyttäen enableRowSelection-attribuuttia. Tällöin rivin vasemmassa laidassa on valintaruutu, jota klikkaamalla rivi valitaan. Valitun rivin tausta on korostettu."
     },

@@ -132,8 +132,6 @@ export const TableWithFilters: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sortColumn, sortDirection]);
 
-  console.log(filteredData);
-
   return (
     <Block className={styles['table-with-filters']}>
       <Heading variant="h3" mb="l" id="table-heading">

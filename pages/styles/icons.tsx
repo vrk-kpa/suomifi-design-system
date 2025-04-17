@@ -27,7 +27,7 @@ const IconsPage: NextPage = () => {
           <Text variant="lead">{t('icons.ingress')}</Text>
         </Block>
         <Block mb="l">
-          <Link href="/components/icon" passHref>
+          <Link href="/components/icon" passHref legacyBehavior>
             <RouterLink>{t('icons.icon_component_link_text')}</RouterLink>
           </Link>
         </Block>

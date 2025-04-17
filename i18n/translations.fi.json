@@ -68,12 +68,52 @@
     "general": "Yleistä suunnittelumalleista",
     "static_form": "Lomakkeen staattinen validointi",
     "multi_insert": "Multi-insert",
-    "datetime": "Päivämäärä ja kellonaika"
+    "datetime": "Päivämäärä ja kellonaika",
+    "table_with_filters": "Taulukko suodattimilla"
   },
   "patterns_main_page": {
     "ingress": "Suunnittelumallit eli patternit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
     "paragraph_1": "Suunnittelumalleissa on kuvattu, kuinka erillisiä Design Systemin komponentteja käytetään yhdessä luomaan ratkaisuja, jotka on ovat käytettävyydeltään, visuaaliselta ilmeeltään ja saavutettavuudeltaan sujuvia ja parhaiden käytänteiden mukaisia.",
     "paragraph_2": "Jokaisen suunnittelumallin yhteydessä on esitelty referenssitoteutus, jota mukailemalla vastaava toiminnalisuus on helppo toteuttaa omaan palveluun. Referenssitoteutuksen lähdekoodi on myös saatavilla."
+  },
+  "table_with_filters": {
+    "heading": "Taulukko suodattimilla",
+    "ingress": "Taulukkokomponentin ympärille rakennetuissa suodattimissa tulee ottaa huomioon useita käytettävyys- ja saavutettavuusasioita.",
+    "components_text": "Mallissa käytetyt komponentit",
+    "accessibility_list": {
+      "point_1": "Taulukon otsikko on erillinen otsikkokomponentti, joka tulee kytkeä taulukkoon aria-labelledby -attribuutilla.",
+      "point_2": "Taulukon yläpuolella oleva tekstielementti (joka ilmaisee datan määrän, valittujen rivien määrän ja lataustilan) tulee kääriä aria-live regioniin, jotta ruudunlukijakäyttäjät saavat tiedon taulukon datan muutoksista. Alueelle tulee lisäksi asettaa aria-atomic=\n\"true\" -attribuutti, jotta ruudunlukija lukee koko sisällön muutoksien jälkeen.",
+      "point_3": "Sijoita taulukkoa suodattavat kentät fieldset-elementin sisään ja anna fieldsetille kuvaava nimilappu (legend, referenssitoteutuksessa \"taulukon suodattimet\"). On hyväksyttävää, että nimilappu on visuaalisesti piilotettu.",
+      "point_4": "Suodattimina toimiville kentille tulee antaa yksinkertaiset ja kuvaavat nimilaput (labelText), joista käy ilmi, että kentät liittyvät taulukon datan manipulointiin.",
+      "point_5": "Kun taulukon dataa ladataan palvelimelta, tulee taulukko asettaa lataustilaan (loading-prop) ja näyttää visuaalinen \"Ladataan...\" -teksti taulukon yläpuolella.",
+      "point_6": "Layout shiftin välttämiseksi taulukolle on hyvä antaa loadingRowAmount-prop, joka kertoo kuinka monta skeleton-riviä taulukkoon piirretään lataustilan aikana.",
+      "point_7": "Kun taulukon järjestystä muutetaan, aseta taulukkokomponentin tableSortedAriaLiveText-attribuutin teksti vastaamaan muuttunutta järjestystä. Tällöin tieto välitetään ruudunlukijakäyttäjille.",
+      "point_8": "Mikäli rivien valintamahdollisuus on kytketty päälle, tulee jokaiselle taulukon dataobjektille asettaa rowSelectionCheckboxLabel-attribuutti, joka kertoo käyttäjälle mitä tietoa rivillä oleva valintaruutu edustaa."
+    },
+    "reference_implementation": {
+      "heading": "Referenssitoteutus",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen taulukon suodattamisesta. Esimerkissä on simuloitu käyttötapausta, jossa taulukon data suodatetaan ja järjestellään selaimen sijaan serverillä.",
+      "link_text": "Lähdekoodi GitHubissa",
+      "table_heading": "Projektin henkilöstö",
+      "next_table_page": "Seuraava taulukon sivu",
+      "previous_table_page": "Edellinen taulukon sivu",
+      "table_pagination": "Taulukon sivutus",
+      "page": "Sivu",
+      "showing_page": "Näytetään sivu",
+      "out_of": "kautta",
+      "people": "henkilöä",
+      "chosen": "valittu",
+      "choose_all": "Valitse kaikki",
+      "remove_selections": "Poista valinnat",
+      "search": "Hae",
+      "show_on_page": "Näytä sivulla",
+      "table_is_sorted_asc": "Taulukko on järjestetty sarakkeen {{column}} mukaan nousevaan järjestykseen",
+      "table_is_sorted_desc": "Taulukko on järjestetty sarakkeen {{column}} mukaan laskevaan järjestykseen",
+      "loading": "Ladataan...",
+      "no_results": "Ei tuloksia",
+      "filter_by_work_hours": "Suodata työtuntien mukaan",
+      "table_filters": "Taulukon suodattimet"
+    }
   },
   "static_form": {
     "heading": "Lomakkeen staattinen validointi",
@@ -228,8 +268,8 @@
     "ingress": "Suomi.fi:n typografiateema sisältää kooltaan ja tyyliltään määritellyt tekstikomponentit ja tekstitokenit.",
     "font_title": "Kirjasintyyppi (fontti)",
     "font_text_1": "Suomi.fi-tyyleissä ja -käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on open source -fontti, eli kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Suomi.fi Design System vastaa fontin jakelusta oman palvelimensa kautta.",
-    "font_text_2": "Source Sans Pro -kirjasinta käyttävien verkkopalveluiden ei ole tarpeen esittää OFL-lisenssiä palvelussaan erikseen. Tämä perustuu siihen, että OFL-lisensoituja kirjasimia saa käyttää vapaasti \"osana ohjelmistoa\". Lisenssitekstitiedosto on kuitenkin mukana alla olevassa TTF-paketissa sekä mainintana valmiissa CSS-tiedostossa, joka sisältää webfonttimääritteet (linkki alla).",
-    "font_link_text": "Lataa kirjasin Source Sans Pro omalle laitteellesi (TTF)",
+    "font_text_2": "Source Sans Pro -kirjasinta käyttävien verkkopalveluiden ei ole tarpeen esittää OFL-lisenssiä palvelussaan erikseen. Tämä perustuu siihen, että OFL-lisensoituja kirjasimia saa käyttää vapaasti \"osana ohjelmistoa\". Lisenssitekstitiedosto on kuitenkin mukana alla olevassa zip-paketissa sekä mainintana valmiissa CSS-tiedostossa, joka sisältää webfonttimääritteet (linkki alla).",
+    "font_link_text": "Lataa kirjasin Source Sans Pro omalle laitteellesi (TTF & WOFF2)",
     "font_text_3": "Kun koodiprojektissa on käytössä Suomi.fi-komponenttikirjasto (suomifi-ui-components), on projektissa syytä olla mukana tarvittavat webfonttimääritteet. Tämä tapahtuu helpoiten lisäämällä seuraava linkki projektin globaaliin CSS:ään.",
     "body_heading": "Leipäteksti",
     "body_text": "Käytä leipäteksteissä niille erityisesti suunniteltuja tekstikomponentteja Text ja Paragraph",
@@ -381,6 +421,7 @@
     "side_navigation": "SideNavigation (Sivunavigaatio)",
     "singleselect": "SingleSelect (Yksittäisvalinta)",
     "status_text": "StatusText (Tilateksti)",
+    "table": "Table (Taulukko)",
     "text": "Text (Teksti)",
     "textarea": "Textarea (Tekstialue)",
     "text_input": "TextInput (Tekstikenttä)",
@@ -1475,6 +1516,31 @@
         "description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
         "label": "Perustelut"
       }
+    }
+  },
+
+  "table_page": {
+    "site_title": "Table (Taulukko) | Suomi.fi Design System",
+    "heading": "Table (Taulukko)",
+    "ingress": "Taulukkoa käytetään datan esittämiseen silloin kun se on luonteeltaan sarakemaista ja yksinkertaisen listan käyttäminen ei ole mielekästä.",
+    "accessibility_list": {
+      "point_1": "Taulukon tulee sisältää otsikko (caption), joka kertoo taulukon sisällöstä. Otsikko voi myös olla taulukon ulkopuolinen erillinen elementti, jolloin se tulee yhdistää taulukoon aria-labelledby -attribuutilla.",
+      "point_2": "Kapeammille ruuduille siirryttäessä taulukko muuttuu sivuttaissuunnassa vieritettäväksi. Vieritysmahdollisuuden havaitsemisen helpottamiseksi taulukon reunoilla on visuaalinen varjoefekti.",
+      "point_3": "Taulukkokomponentin monimutkaisempi käyttö on esitetty erikseen omassa suunnittelumallissaan. Katso "
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Suomi.fi Design Systemin taulukkokomponentti mukailee HTML:n natiivia taulukkoelementtiä. Taulukko koostuu sarakkeet määrittävästä otsikkorivistä ja varsinaisista datariveistä. Otsikkorivi on visuaalisesti erottuva. Datarivit sisältävät taulukon datan.",
+      "text_2": "Taulukon data on mahdollista järjestää eri sarakkeiden mukaan nousevaan ja laskevaan järjestykseen. Kun sarake on merkitty järjestyskelpoiseksi (sortable) sen nimen vieressä on järjestämistä kuvaava ikoni.",
+      "text_3": "Taulukon rivejä on mahdollista merkitä valituksi käyttäen enableRowSelection-attribuuttia. Tällöin rivin vasemmassa laidassa on valintaruutu, jota klikkaamalla rivi valitaan. Valitun rivin tausta on korostettu."
+    },
+    "example": {
+      "caption": "Projektin henkilöstö"
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Taulukko on hyvä valinta silloin, kun datan esittäminen sarakemaisessa muodossa on mielekästä ja datan määrä on riittävän suuri. Taulukon käyttöä suunnitellessa on hyvä miettiä, olisiko yksinkertainen lista parempi vaihtoehto.",
+      "text_2": "Taulukkokomponenttia käytetään usein monimutkaisemmassa kontekstissa, jossa dataa on tarpeen järjestellä, suodattaa ja sivuttaa. Taulukon käyttö tällaisessa tilanteessa on esitetty erikseen omassa suunnittelumallissaan."
     }
   },
 

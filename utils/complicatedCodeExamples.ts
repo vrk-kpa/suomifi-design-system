@@ -81,7 +81,7 @@ export const Example = () => <Button>Example</Button>;
 export const advancedExample = `
 import React from 'react';
 import { Button } from 'suomifi-ui-components';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 /**
 .fi-button.button--custom {

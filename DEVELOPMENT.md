@@ -10,12 +10,12 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser
 
-
 ## Linting
 
 Staged files are linted with `lint-staged` when committing
 
 Lint files:
+
 ```bash
 npm run lint
 ```
@@ -23,18 +23,16 @@ npm run lint
 ## Testing build
 
 Build and export:
+
 ```bash
 npm run build
 ```
 
 Serve folder out:
+
 ```bash
 npx serve out
 ```
-
-## Deployment
-
-Branch `develop` is deployed automatically to `github-pages` with CircleCI config
 
 ## Development
 

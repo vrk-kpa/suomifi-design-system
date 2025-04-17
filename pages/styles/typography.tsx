@@ -50,7 +50,7 @@ const StylesIndexPage: NextPage = () => {
           <Paragraph className="my-xl">{t('typography.font_text_1')}</Paragraph>
           <Paragraph className="my-xl">{t('typography.font_text_2')}</Paragraph>
 
-          <Link href="/fonts/SourceSansPro_TTF.zip">
+          <Link href="/fonts/SourceSansPro.zip">
             {t('typography.font_link_text')}
           </Link>
 

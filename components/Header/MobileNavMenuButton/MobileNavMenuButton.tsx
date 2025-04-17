@@ -86,7 +86,7 @@ const MobileNavMenuButton: React.FunctionComponent<MobileNavMenuButtonProps> = (
                     router.pathname === item.path ? 'page' : undefined
                   }
                 >
-                  <Link href={item.path}>
+                  <Link href={item.path} legacyBehavior>
                     <a
                       className="absoluteFocus"
                       href={item.path}

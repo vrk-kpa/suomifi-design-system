@@ -1,5 +1,5 @@
 import { suomifiDesignTokens, ValueUnit } from 'suomifi-design-tokens';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import { Text } from 'suomifi-ui-components';
 
 interface SpacingShowcaseProps {
@@ -39,7 +39,7 @@ const Container = styled(({ ...passProps }) => <div {...passProps} />)(
 `,
 );
 
-const Square = styled((props) => (
+const Square = styled((props: any) => (
   <div {...props}>
     <div className="box" />
   </div>
@@ -59,7 +59,7 @@ const Square = styled((props) => (
   `,
 );
 
-const Bar = styled((props) => (
+const Bar = styled((props: any) => (
   <div {...props}>
     <div className="row" />
     <div className="col" />
@@ -88,7 +88,12 @@ const Bar = styled((props) => (
   `,
 );
 
-const Name = styled(({ name, value, ...passProps }) => (
+interface NameProps {
+  name: string;
+  value: string;
+}
+
+const Name = styled(({ name, value, ...passProps }: NameProps) => (
   <div {...passProps}>
     <Text variant="lead">{name}</Text>
     <Text>{value}</Text>

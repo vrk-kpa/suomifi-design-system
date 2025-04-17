@@ -113,6 +113,10 @@ export const navItems: NavItem[] = [
     path: '/components/singleselect',
   },
   {
+    title: translations.components.table,
+    path: '/components/table',
+  },
+  {
     title: translations.components.text,
     path: '/components/text',
   },

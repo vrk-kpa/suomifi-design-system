@@ -33,6 +33,10 @@ export const navItems: NavItem[] = [
     path: '/components/checkbox',
   },
   {
+    title: translations.components.chip,
+    path: '/components/chip',
+  },
+  {
     title: translations.components.date_input,
     path: '/components/dateinput',
   },

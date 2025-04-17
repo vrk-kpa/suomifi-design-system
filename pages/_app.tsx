@@ -17,7 +17,7 @@ function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
   return (
     <Block className="app">
       <Head>
-        <link rel="icon" href="favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <SkipLink href="#main">{t('common.skip_to_main_content')}</SkipLink>
       {(path.startsWith('/components') ||

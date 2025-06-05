@@ -109,10 +109,6 @@ const Page: NextPage = () => {
           </ExternalLink>
         </Block>
 
-        <Notification closeText={t('common.close')} showCloseButton={false}>
-          {t('multiselect_page.note_accessibility')}
-        </Notification>
-
         <Paragraph className="my-xl">
           <Text variant="lead">{t('multiselect_page.ingress')}</Text>
         </Paragraph>

@@ -408,6 +408,7 @@
     "heading": "Heading (Otsikko)",
     "hint_text": "Hint text (Ohjeteksti)",
     "icon": "Icons (Ikonit)",
+    "inline_alert": "InlineAlert (Sisältöheräte)",
     "label": "Label (Otsake)",
     "language_menu": "LanguageMenu (Kielivalikko)",
     "link": "Link (Linkki)",
@@ -498,32 +499,20 @@
   "alert_page": {
     "site_title": "Alert (Heräte) | Suomi.fi Design System",
     "heading": "Alert (Heräte)",
-    "ingress": "Heräte-komponentin avulla voidaan antaa käyttäjälle tietoa palvelun tilasta. Tällaista tietoa voi olla esimerkiksi häiriötilanteet tai ongelmat sivuston tai sen osan toiminnassa sekä tiedot tulevista käyttökatkoista.",
+    "ingress": "Herätekomponentin avulla voidaan antaa käyttäjälle tietoa verkkosivuston tilasta. Tällaista tietoa voi olla esimerkiksi häiriötilanteet tai ongelmat sivuston tai sen osan toiminnassa sekä tiedot tulevista käyttökatkoista.",
     "accessibility_list": {
-      "point_1": "Käytä komponentista aina asiaankuuluvaa varianttia (Alert tai InlineAlert). Ks. 'Koko ja käyttö'.",
-      "point_2": "Alert komponentti on myös semanttisesti alert, joka tarkoittaa, että sen sisällön muuttuessa komponentin sisältö luetaan välittömästi ruudunlukijakäyttäjille.",
-      "point_3": "Sisältöherätteessä ruudunlukijakäyttäytyminen on säädettävissä, mutta sitä ei tule kytkeä kokonaan pois päältä.",
-      "point_4": "Mikäli sisältöheräte liittyy selkeästi tiettyyn interaktiiviseen elementtiin sivulla, informoi yhteys myös ruudunlukijakäyttäjille käyttäen esimerkiksi 'aria-describedby' attribuuttia"
-    },
-    "what_does_the_component_contain": {
-      "heading": "Mistä komponentti koostuu",
-      "text": "Heräte on jaettu kahteen eri komponenttiin (Alert ja InlineAlert). Komponentti koostuu herätteen tyyppiä kuvaavasta ikonista, sisältöalueesta sekä Alert komponentin tapauksessa 'sulje' -painikkeesta. Komponentin taustaväri sekä InlineAlert tapauksessa vasemman reunuksen väri muuttuu käytettävän herätetyypin mukaan."
+      "point_1": "Käytä komponentista aina asiaankuuluvaa varianttia. Ks. 'Koko ja käyttö'.",
+      "point_2": "Alert-komponentti on myös semanttisesti alert, joka tarkoittaa, että sen sisältö luetaan välittömästi ruudunlukijakäyttäjille sivulatauksen yhteydessä."
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",
-      "text_1": "Käyttötapa vaihtelee käytettävän komponentin mukaan. Alert komponenttia käytetään sivun pääsisällön ylälaidassa otsikon yläpuolella ilmaisemaan sivua tai sivustoa koskevia virhe- ja häiriötiedotteita. Alert komponenttia käytetään koko sisältöalueen levyisenä. Tulevia käyttökatkoja ilmaisemaan käytetään neutraalia varianttia, ja akuutteja häiriötilanteita varten 'error' varianttia.",
-      "text_2": "InlineAlert komponenttia puolestaan käytetään sivun sisällön seassa toimintokohtaisiin ilmoituksiin ilmaisemaan esimerkiksi virhettä lomakkeen toiminnassa tai tärkeää lisäohjetta lomakkeen täyttämiseen liittyen."
+      "text_1": "Alert komponenttia käytetään sivun pääsisällön ylälaidassa otsikon yläpuolella ilmaisemaan sivua tai sivustoa koskevia virhe- ja häiriötiedotteita. Alert-komponenttia käytetään koko sisältöalueen levyisenä.",
+      "text_2": "Toissijaista informaatiota ilmaisemaan käytetään neutraalia varianttia, tulevista käyttökatkoista kertomaan käytetään varoitusvarianttia, ja akuuteissa häiriötilanteissa sopivin on virhevariantti."
     },
-
     "example": {
-      "alert_info_paragraph": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
-      "inline_alert_heading": "Sisältöheräte (Inline Alert)",
-      "inline_paragraph": "Sisältöherätettä käytetään sivun sisällön seassa ilmaisemaan huomioita, varoituksia tai virhetilanteita.",
-      "inline_alert_info_heading": "Vahvista valtuus omalta osaltasi",
-      "inline_alert_info_paragraph": "Vahvistamisen jälkeen muut vahvistajat näkevät Omat vahvistettavat -sivulla valtuuden, joka heidän tulee vahvistaa. Valtuus on voimassa vasta, kun kaikki ovat sen vahvistaneet.",
-      "inline_alert_warning_paragraph": "Tekstissä on virheitä",
-      "inline_alert_error_heading": "Allekirjoittaminen ei ole mahdollista",
-      "inline_alert_error_paragraph": "Hakemusta ei voi allekirjoittaa henkilö, jonka ulkomaalainen henkilöasiakirja ei ole voimassa, koska hän ei voi todistaa henkilöllisyyttään.",
+      "alert_info_paragraph": "Käytät parhaillaan palvelun beta-versiota, jossa saattaa ilmetä puutteita.",
+      "alert_warning_paragraph": "Palvelussa on käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
+      "alert_error_paragraph": "Palvelussa on havaittu häiriöitä, jotka voivat vaikuttaa sen toimintaan. Ongelmaa korjataan parhaillaan.",
       "close_button": "Sulje"
     }
   },
@@ -972,6 +961,28 @@
     }
   },
 
+  "inlinealert_page": {
+    "site_title": "InlineAlert (Sisältöheräte) | Suomi.fi Design System",
+    "heading": "InlineAlert (Sisältöheräte)",
+    "ingress": "Sisältöheräte on dynaamisesti verkkosivulle ilmaantuva komponentti, joka tuo esiin jonkin tärkeän viestin huomioita herättävällä tavalla.",
+    "accessibility_list": {
+      "point_1": "Koska sisältöherätettä käytetään dynaamisesti, tulee tämä huomioida saavutettavuuden näkökulmasta. Sisältöheräte on aina sijoitettava sellaisen elementin sisään, joka sisältää aria-live -alueen (esim. aria-live=\"polite\"). Kyseisen elementin tulee esiintyä HTML dokumentissa ennen kuin sisältöheräte renderöidään sen sisään.",
+      "point_2": "Mikäli sisältöheräte liittyy selkeästi tiettyyn interaktiiviseen elementtiin sivulla, informoi yhteys myös ruudunlukijakäyttäjille käyttäen esimerkiksi 'aria-describedby' attribuuttia",
+      "point_3": "Käytä komponentista aina asiaankuuluvaa varianttia. Ks. 'Koko ja käyttö'."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Sisältöherätettä käytetään kiinnittämään käyttäjän huomio tiettyyn verkkosivun toimintoon tai interaktioon. Se on suunniteltu ilmaantumaan dynaamisesti sisällön sekaan sopivalla hetkellä (ks. 'Saavutettavuus ja käytettävyys').",
+      "text_2": "Sisältöheräte on yleensä leveydeltään saman kokoinen kuin se sisältä, johon se liittyy.",
+      "text_3": "Mikäli ilmoitus ei ilmaannu sivustolle dynaamisesti, vaan se on osa sivun staattista sisältöä, tulee käyttää Notification (Ilmoitus) -komponenttia."
+    },
+    "example": {
+      "info_text": "Varmista että nimesi on kirjoitettu tismalleen samalla tavalla kuin henkilöllisyystodistuksessasi.",
+      "warning_text": "Tekstissä on kielioppivirheitä. Tarkista kirjoitusasu.",
+      "error_text": "Pakollisia tietoja puuttuu. Ole hyvä ja täytä kaikki pakolliset kentät."
+    }
+  },
+
   "language_menu_page": {
     "site_title": "Language Menu (Kielivalikko) | Suomi.fi Design System",
     "heading": "Language Menu (Kielivalikko)",
@@ -1173,7 +1184,6 @@
     "site_title": "MultiSelect (Monivalinta) | Suomi.fi Design System",
     "heading": "MultiSelect (Monivalinta)",
     "ingress": "Monivalinta-komponentin avulla käyttäjä voi valita yhden tai useamman vaihtoehdon listalta.",
-    "note_accessibility": "Monivalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijalla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromiumpohjaisilla selaimilla, kuten Chromella tai Edgellä.",
 
     "accessibility_list": {
       "point_1": "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
@@ -1219,10 +1229,10 @@
   "notification_page": {
     "site_title": "Notification (Ilmoitus) | Suomi.fi Design System",
     "heading": "Notification (Ilmoitus)",
-    "ingress": "Ilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää olennaista palvelun osaan ja käyttäjän toimintaan liittyvää palautetta ja tietoa. ",
+    "ingress": "Ilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää olennaista palvelun osaan ja käyttäjän toimintaan liittyvää palautetta ja tietoa. Sitä ei tule käyttää dynaamisesti sivulle ilmestyvänä ilmoituksena.",
     "accessibility_list": {
-      "point_1": "Mikäli ilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region, jonka sisään ilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ilmoituksesta.",
-      "point_2": "Ilmoituksen otsikkotaso on määriteltävissä käyttötapauksen mukaan. Käytä ilmoituksessa otsikkotasoa, joka ei riko näkymän otsikkojärjestystä.",
+      "point_1": "Ilmoituksen otsikkotaso on määriteltävissä käyttötapauksen mukaan. Käytä ilmoituksessa otsikkotasoa, joka ei riko näkymän otsikkojärjestystä.",
+      "point_2": "Ilmoituskomponentti on semanttisesti section-elementti, jolla on attribuutti role='region'. Tämä mahdollistaa komponentin saavutettavan erottuvuuden sivun muusta sisällöstä.",
       "point_3": "Sivulla voi olla yhtä aikaa useita ilmoituksia näkyvissä."
     },
     "what_does_the_component_contain": {
@@ -1231,7 +1241,8 @@
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",
-      "text_1": "Ilmoituksia voidaan käyttää joko näkymän pääsisällön alussa tai relevantissa paikassa sisällön seassa, ja siitä on olemassa kaksi eri varianttia. Huomioilmoitus kertoo, että palvelussa on jotain huomioitavaa. Huomioilmoituksen tunnisteväri on sininen ja sitä käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Virheilmoitus viestii käyttäjälle merkittävästä virhetilanteesta tai poikkeuksesta tietyssä näkymässä. Virheilmoituksen tunnisteväri on punainen. Kapeilla näytöillä, kuten mobiilissa käytetään lisäksi pienille ruuduille tarkoitettuja tyylejä."
+      "text_1": "Ilmoituksia voidaan käyttää joko näkymän pääsisällön alussa tai relevantissa paikassa sisällön seassa, ja siitä on olemassa kaksi eri varianttia. Huomioilmoitus kertoo, että palvelussa on jotain huomioitavaa. Huomioilmoituksen tunnisteväri on sininen ja sitä käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Virheilmoitus viestii käyttäjälle merkittävästä virhetilanteesta tai poikkeuksesta tietyssä näkymässä. Virheilmoituksen tunnisteväri on punainen. Kapeilla näytöillä, kuten mobiilissa käytetään lisäksi pienille ruuduille tarkoitettuja tyylejä.",
+      "text_2": "Ilmoituskomponenttia ei tule käyttää dynaamisesti sivulle ilmestyvänä ilmoituksena, vaan se on osa sivun staattista sisältöä. Dynaamisesti sivulle ilmestyvänä ilmoituksena käytetään InlineAlert (Sisältöheräte) -komponenttia."
     },
 
     "example": {
@@ -1461,7 +1472,6 @@
     "site_title": "Single Select (Yksittäisvalinta) | Suomi.fi Design System",
     "heading": "Single Select (Yksittäisvalinta)",
     "ingress": "Yksittäisvalinta-komponentin avulla käyttäjä voi valita yhden vaihtoehdon listalta.",
-    "accessibility": "Yksittäisvalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijalla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromium-pohjaisilla selaimilla, kuten Chromella tai Edgellä.",
 
     "accessibility_list": {
       "point_1": "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",

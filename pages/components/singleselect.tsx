@@ -73,10 +73,6 @@ const Page: NextPage = () => {
           </ExternalLink>
         </Block>
 
-        <Notification closeText={t('common.close')} showCloseButton={false}>
-          {t('singleselect_page.accessibility')}
-        </Notification>
-
         <Paragraph className="my-xl">
           <Text variant="lead">{t('singleselect_page.ingress')}</Text>
         </Paragraph>

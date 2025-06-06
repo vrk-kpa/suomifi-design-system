@@ -5,7 +5,8 @@
     "opens_in_a_new_tab": "Avautuu uudessa välilehdessä",
     "skip_to_main_content": "Siirry pääsisältöön",
     "skip_to_side_navigation": "Siirry sivunavigaatioon",
-    "close": "Sulje"
+    "close": "Sulje",
+    "notification_components": "Erilaisten ilmoituskomponenttien erot ja käyttötarkoitukset"
   },
   "front_page": {
     "front_page": "Etusivu",
@@ -69,7 +70,8 @@
     "static_form": "Lomakkeen staattinen validointi",
     "multi_insert": "Multi-insert",
     "datetime": "Päivämäärä ja kellonaika",
-    "table_with_filters": "Taulukko suodattimilla"
+    "table_with_filters": "Taulukko suodattimilla",
+    "notification_components": "Ilmoitukset ja ilmoituskomponentit"
   },
   "patterns_main_page": {
     "ingress": "Suunnittelumallit eli patternit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
@@ -246,6 +248,37 @@
       "beginning_date": "Alkamispäivä",
       "ending_date": "Päättymispäivä",
       "there_are_errors": "Lomakkeella havaittiin seuraavat ongelmat"
+    }
+  },
+  "notification-components": {
+    "heading": "Ilmoitukset ja ilmoituskomponentit",
+    "ingress": "Suomi.fi Design System sisältää neljä eri komponenttia, joilla voidaan esittää käyttäjälle erilaisia ilmoituksia: Alert, InlineAlert, Notification ja Toast. Tällä sivulla kuvataan näiden komponenttien erot ja käyttötarkoitukset.",
+    "components_text": "Mallissa käytetyt komponentit",
+    "table": {
+      "heading": "Komponenttien vertailu",
+      "notification_target": "Milloin käytetään",
+      "appears_dynamically": "Ilmestyy sivulle dynaamisesti",
+      "location": "Sijainti sivulla",
+      "alert": {
+        "target": "Ilmoitus koskee staattisesti koko sivua tai sivustoa",
+        "appears": "Ei",
+        "location": "Sivun yläreuna"
+      },
+      "inline_alert": {
+        "target": "Ilmoitus näytetään käyttäjän suorittaman interaktion jälkeen, ja se koskee sivun tiettyä osaa (esim. lomake)",
+        "appears": "Kyllä",
+        "location": "Ilmoituksen kohteen yläpuolella"
+      },
+      "notification": {
+        "target": "Ilmoitus koskee sivun tiettyä osaa, eikä sen näyttämiseen vaadita ensin käyttäjän interaktiota",
+        "appears": "Ei",
+        "location": "Ilmoituksen kohteen yläpuolella"
+      },
+      "toast": {
+        "target": "Ilmoitus on toissijainen ja se näytetään hetkellisesti käyttäjän suorittaman interaktion jälkeen",
+        "appears": "Kyllä",
+        "location": "Kelluu sivun oikeassa yläkulmassa"
+      }
     }
   },
   "styles": {
@@ -502,11 +535,11 @@
     "ingress": "Herätekomponentin avulla voidaan antaa käyttäjälle tietoa verkkosivuston tilasta. Tällaista tietoa voi olla esimerkiksi häiriötilanteet tai ongelmat sivuston tai sen osan toiminnassa sekä tiedot tulevista käyttökatkoista.",
     "accessibility_list": {
       "point_1": "Käytä komponentista aina asiaankuuluvaa varianttia. Ks. 'Koko ja käyttö'.",
-      "point_2": "Alert-komponentti on myös semanttisesti alert, joka tarkoittaa, että sen sisältö luetaan välittömästi ruudunlukijakäyttäjille sivulatauksen yhteydessä."
+      "point_2": "Herätekomponentti on myös semanttisesti alert, mikä tarkoittaa, että useimmat ruudunlukijat lukevat sen sisällön sivulatauksen yhteydessä."
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",
-      "text_1": "Alert komponenttia käytetään sivun pääsisällön ylälaidassa otsikon yläpuolella ilmaisemaan sivua tai sivustoa koskevia virhe- ja häiriötiedotteita. Alert-komponenttia käytetään koko sisältöalueen levyisenä.",
+      "text_1": "Herätekomponenttia käytetään sivun pääsisällön ylälaidassa otsikon yläpuolella ilmaisemaan sivua tai sivustoa koskevia virhe- ja häiriötiedotteita. Herätekomponenttia käytetään koko sisältöalueen levyisenä.",
       "text_2": "Toissijaista informaatiota ilmaisemaan käytetään neutraalia varianttia, tulevista käyttökatkoista kertomaan käytetään varoitusvarianttia, ja akuuteissa häiriötilanteissa sopivin on virhevariantti."
     },
     "example": {
@@ -964,16 +997,16 @@
   "inlinealert_page": {
     "site_title": "InlineAlert (Sisältöheräte) | Suomi.fi Design System",
     "heading": "InlineAlert (Sisältöheräte)",
-    "ingress": "Sisältöheräte on dynaamisesti verkkosivulle ilmaantuva komponentti, joka tuo esiin jonkin tärkeän viestin huomioita herättävällä tavalla.",
+    "ingress": "Sisältöheräte on dynaamisesti verkkosivulle ilmaantuva komponentti, joka tuo esiin jonkin tärkeän viestin huomiota herättävällä tavalla.",
     "accessibility_list": {
-      "point_1": "Koska sisältöherätettä käytetään dynaamisesti, tulee tämä huomioida saavutettavuuden näkökulmasta. Sisältöheräte on aina sijoitettava sellaisen elementin sisään, joka sisältää aria-live -alueen (esim. aria-live=\"polite\"). Kyseisen elementin tulee esiintyä HTML dokumentissa ennen kuin sisältöheräte renderöidään sen sisään.",
+      "point_1": "Koska sisältöherätettä käytetään dynaamisesti, tulee tämä huomioida saavutettavuuden näkökulmasta. Sisältöheräte on aina sijoitettava sellaisen elementin sisään, joka sisältää aria-live -attribuutin (esim. aria-live=\"polite\"). Kyseisen elementin tulee esiintyä HTML dokumentissa ennen kuin sisältöheräte renderöidään sen sisään.",
       "point_2": "Mikäli sisältöheräte liittyy selkeästi tiettyyn interaktiiviseen elementtiin sivulla, informoi yhteys myös ruudunlukijakäyttäjille käyttäen esimerkiksi 'aria-describedby' attribuuttia",
       "point_3": "Käytä komponentista aina asiaankuuluvaa varianttia. Ks. 'Koko ja käyttö'."
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Sisältöherätettä käytetään kiinnittämään käyttäjän huomio tiettyyn verkkosivun toimintoon tai interaktioon. Se on suunniteltu ilmaantumaan dynaamisesti sisällön sekaan sopivalla hetkellä (ks. 'Saavutettavuus ja käytettävyys').",
-      "text_2": "Sisältöheräte on yleensä leveydeltään saman kokoinen kuin se sisältä, johon se liittyy.",
+      "text_2": "Sisältöheräte on yleensä leveydeltään saman kokoinen kuin sisältö, johon se liittyy.",
       "text_3": "Mikäli ilmoitus ei ilmaannu sivustolle dynaamisesti, vaan se on osa sivun staattista sisältöä, tulee käyttää Notification (Ilmoitus) -komponenttia."
     },
     "example": {
@@ -1242,7 +1275,7 @@
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Ilmoituksia voidaan käyttää joko näkymän pääsisällön alussa tai relevantissa paikassa sisällön seassa, ja siitä on olemassa kaksi eri varianttia. Huomioilmoitus kertoo, että palvelussa on jotain huomioitavaa. Huomioilmoituksen tunnisteväri on sininen ja sitä käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Virheilmoitus viestii käyttäjälle merkittävästä virhetilanteesta tai poikkeuksesta tietyssä näkymässä. Virheilmoituksen tunnisteväri on punainen. Kapeilla näytöillä, kuten mobiilissa käytetään lisäksi pienille ruuduille tarkoitettuja tyylejä.",
-      "text_2": "Ilmoituskomponenttia ei tule käyttää dynaamisesti sivulle ilmestyvänä ilmoituksena, vaan se on osa sivun staattista sisältöä. Dynaamisesti sivulle ilmestyvänä ilmoituksena käytetään InlineAlert (Sisältöheräte) -komponenttia."
+      "text_2": "Ilmoituskomponenttia ei tule käyttää dynaamisesti käyttäjän interaktion jälkeen sivulle ilmestyvänä ilmoituksena, vaan se on osa sivun ensimmäisen latauksen sisältöä. Dynaamisesti ilmestyvänä ilmoituksena käytetään InlineAlert (Sisältöheräte) -komponenttia."
     },
 
     "example": {
@@ -1680,7 +1713,7 @@
     "heading": "Toast (Ponnahdusilmoitus)",
     "ingress": "Ponnahdusilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää käyttäjän toimintaan liittyvää palautetta. Käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Ponnahdusilmoitus kertoo, että käyttäjän suorittama toimenpide onnistui.",
     "accessibility_list": {
-      "point_1": "Mikäli ponnahdusilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region (kts. linkki sivun alalaidassa), jonka sisään ponnahdusilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ponnahdusilmoituksesta.",
+      "point_1": "Koska ponnahdusilmoitukset ilmestyvät sivulle dynaamisesti, niitä varten tulee luoda aria-live -region (kts. linkki sivun alalaidassa), jonka sisään ponnahdusilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ponnahdusilmoituksesta.",
       "point_2": "Ponnahdusilmoituksen otsikkotaso on määriteltävissä tarvittaessa, ja komponenttia voidaan käyttää myös ilman otsikkoa.",
       "point_3": "Sivulla voi olla yhtä aikaa useita ponnahdusilmoituksia näkyvissä."
     },

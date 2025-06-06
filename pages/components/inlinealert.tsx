@@ -12,6 +12,7 @@ import {
   Text,
   Paragraph,
   ExternalLink,
+  Link,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
@@ -36,6 +37,11 @@ const Page: NextPage = () => {
           >
             {t('common.see_technical_documentation_of_component')}
           </ExternalLink>
+        </Block>
+        <Block variant="div">
+          <Link href="/patterns/notification-components" variant="accent">
+            {t('common.notification_components')}
+          </Link>
         </Block>
         <Paragraph className="my-xl">
           <Text variant="lead">{t('inlinealert_page.ingress')}</Text>

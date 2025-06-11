@@ -182,28 +182,28 @@ export const MultiInsert: React.FC = () => {
 
   return (
     <>
-      <div className={styles['toast-container']}>
+      <div
+        className={styles['toast-container']}
+        aria-live="polite"
+        aria-atomic="true"
+      >
         {toasts.map((toast) =>
           // Removed websites are preferably announced with their title
           // If module had any text in the "Website name" field, toast.text value is present
           toast.text ? (
-            <Block mb="s" role="alert" key={toast.id}>
-              <Toast>
-                {t(
-                  'multi-insert.reference_implementation.named_website_removed',
-                  { website_name: toast.text },
-                )}
-              </Toast>
-            </Block>
+            <Toast key={toast.id} mb="s">
+              {t(
+                'multi-insert.reference_implementation.named_website_removed',
+                { website_name: toast.text },
+              )}
+            </Toast>
           ) : (
             // Websites without a title are announced more generally
-            <Block mb="s" role="alert" key={toast.id}>
-              <Toast>
-                {t(
-                  'multi-insert.reference_implementation.nameless_website_removed',
-                )}
-              </Toast>
-            </Block>
+            <Toast key={toast.id} mb="s">
+              {t(
+                'multi-insert.reference_implementation.nameless_website_removed',
+              )}
+            </Toast>
           ),
         )}
       </div>

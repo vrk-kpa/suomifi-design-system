@@ -88,6 +88,14 @@ const Page: NextPage = () => {
             {t('inlinealert_page.size_and_usage.text_3')}
           </Paragraph>
         </Block>
+        <Block variant="div" mt="m" mb="l">
+          <ExternalLink
+            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
+            labelNewWindow={t('common.opens_in_a_new_tab')}
+          >
+            {t('toast_page.link_text')}
+          </ExternalLink>
+        </Block>
       </SideNavLayout>
     </>
   );

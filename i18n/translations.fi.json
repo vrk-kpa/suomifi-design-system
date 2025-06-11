@@ -148,10 +148,10 @@
     "ingress": "Lomakkeissa on toisinaan tarpeen lisätä sama moduuli eli tietokenttä tai tietokenttien yhdistelmä useaan kertaan. Tämän kaltaisen dynaamisen toiminnallisuuden toteuttamisessa on kiinnitettävä erityistä huomiota käytettävyyteen ja saavutettavuuteen.",
     "and_other_needed_components": "sekä moduulin sisältämät varsinaiset lomakekomponentit",
     "accessibility_list": {
-      "point_1": "Multi-insert-suunnittelumalli vaatii erityistä huomiota fokuksen oikean siirtymisen suhteen. Fokuksen siirtyminen on kuvattu erikseen jäljempänä tällä sivulla.",
+      "point_1": "Multi-insert -suunnittelumalli vaatii erityistä huomiota fokuksen oikean siirtymisen suhteen. Fokuksen siirtyminen on kuvattu erikseen jäljempänä tällä sivulla.",
       "point_2": "On hyvä tuoda selkeällä tekstillä ilmi, että moduuleita (referenssitoteutuksessa verkkosivuja) voi lisätä useita.",
       "point_3": "Jokaisen moduulin yhteydessä olevaan poista-painikkeeseen tulee liittää ruudunlukijaa varten uniikki tieto siitä tiedosta, jota ollaan poistamassa. Referenssitoteutuksessa on esitetty, miten painikkeen aria-label muuttuu dynaamisesti moduulin tärkeimmän tietokentän arvon mukaan.",
-      "point_4": "Moduulin poistamisen jälkeen näytetään ponnahdusilmoitus (toast), jolle on asetettu rooliksi alert. Tämän johdosta myös ruudunlukijakäyttäjät saavat tiedon poistamisesta.",
+      "point_4": "Moduulin poistamisen jälkeen näytetään ponnahdusilmoitus (Toast), jotka renderöidään HTML-dokumentissa valmiiksi esiintyvän aria-live -regionin sisään. Tämän johdosta myös ruudunlukijakäyttäjät saavat tiedon moduulin poistamisesta.",
       "point_5": "Mikäli lomaketta tallennettaessa moduuleita on jäänyt kokonaan tyhjäksi, ei niitä huomioida, vaan ne poistetaan tallennetusta versiosta. Jos yksittäisiä pakollisia tietoja on jäänyt puuttumaan moduulin sisällä, ne indikoidaan tavalliseen tapaan komponenttien statustekstien avulla."
     },
     "components_text": "Mallissa käytetyt komponentit",
@@ -165,7 +165,7 @@
     },
     "reference_implementation": {
       "heading": "Referenssitoteutus",
-      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen multi-insert-suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen multi-insert -suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
       "link_text": "Lähdekoodi GitHubissa",
       "add_at_least_one_website": "Lisää vähintään yksi verkkosivu",
       "named_website_removed": "Verkkosivu {{website_name}} poistettiin",
@@ -999,7 +999,7 @@
     "heading": "InlineAlert (Sisältöheräte)",
     "ingress": "Sisältöheräte on dynaamisesti verkkosivulle ilmaantuva komponentti, joka tuo esiin jonkin tärkeän viestin huomiota herättävällä tavalla.",
     "accessibility_list": {
-      "point_1": "Koska sisältöherätettä käytetään dynaamisesti, tulee tämä huomioida saavutettavuuden näkökulmasta. Sisältöheräte on aina sijoitettava sellaisen elementin sisään, joka sisältää aria-live -attribuutin (esim. aria-live=\"polite\"). Kyseisen elementin tulee esiintyä HTML dokumentissa ennen kuin sisältöheräte renderöidään sen sisään.",
+      "point_1": "Koska sisältöherätettä käytetään dynaamisesti, tulee tämä huomioida saavutettavuuden näkökulmasta. Sisältöheräte on aina sijoitettava sellaisen elementin sisään, joka sisältää aria-live -attribuutin (esim. aria-live=\"polite\"). Kyseisen elementin tulee esiintyä HTML dokumentissa ennen kuin sisältöheräte renderöidään sen sisään. Lisätietoa live-regioneista löytyy tämän sivun lopussa olevasta linkistä.",
       "point_2": "Mikäli sisältöheräte liittyy selkeästi tiettyyn interaktiiviseen elementtiin sivulla, informoi yhteys myös ruudunlukijakäyttäjille käyttäen esimerkiksi 'aria-describedby' attribuuttia",
       "point_3": "Käytä komponentista aina asiaankuuluvaa varianttia. Ks. 'Koko ja käyttö'."
     },
@@ -1007,7 +1007,7 @@
       "heading": "Koko ja käyttö",
       "text_1": "Sisältöherätettä käytetään kiinnittämään käyttäjän huomio tiettyyn verkkosivun toimintoon tai interaktioon. Se on suunniteltu ilmaantumaan dynaamisesti sisällön sekaan sopivalla hetkellä (ks. 'Saavutettavuus ja käytettävyys').",
       "text_2": "Sisältöheräte on yleensä leveydeltään saman kokoinen kuin sisältö, johon se liittyy.",
-      "text_3": "Mikäli ilmoitus ei ilmaannu sivustolle dynaamisesti, vaan se on osa sivun staattista sisältöä, tulee käyttää Notification (Ilmoitus) -komponenttia."
+      "text_3": "Mikäli ilmoituksen ei ole tarkoitus ilmaantua sivustolle dynaamisesti, vaan se on osa sivun staattista sisältöä, tulee käyttää Notification (Ilmoitus) -komponenttia."
     },
     "example": {
       "info_text": "Varmista että nimesi on kirjoitettu tismalleen samalla tavalla kuin henkilöllisyystodistuksessasi.",
@@ -1713,7 +1713,7 @@
     "heading": "Toast (Ponnahdusilmoitus)",
     "ingress": "Ponnahdusilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää käyttäjän toimintaan liittyvää palautetta. Käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Ponnahdusilmoitus kertoo, että käyttäjän suorittama toimenpide onnistui.",
     "accessibility_list": {
-      "point_1": "Koska ponnahdusilmoitukset ilmestyvät sivulle dynaamisesti, niitä varten tulee luoda aria-live -region (kts. linkki sivun alalaidassa), jonka sisään ponnahdusilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ponnahdusilmoituksesta.",
+      "point_1": "Koska ponnahdusilmoitukset ilmestyvät sivulle dynaamisesti, niitä varten tulee luoda aria-live -region (kts. linkki sivun alalaidassa), jonka sisään ponnahdusilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ponnahdusilmoituksesta. Lisätietoa live-regioneista löytyy tämän sivun alalaidassa olevasta linkistä.",
       "point_2": "Ponnahdusilmoituksen otsikkotaso on määriteltävissä tarvittaessa, ja komponenttia voidaan käyttää myös ilman otsikkoa.",
       "point_3": "Sivulla voi olla yhtä aikaa useita ponnahdusilmoituksia näkyvissä."
     },
@@ -1727,7 +1727,7 @@
       "text_2": "Työpöytänäkymässä, kun sivu on vieritetty ylös, ponnahdusilmoitus tulee olla sivun ylälaitaan kiinnittyneenä. Kun käyttäjä vierittää sivua alaspäin niin, että sivu ylälaita peittyy, tulee ponnahdusilmoitus liukua näkyviin oikeaan ylälaitaan. Ponnahdusilmoitus siis kelluu mukana, kun sivua vieritetään alaspäin."
     },
 
-    "link_text": "Lisätietoa live regioneista",
+    "link_text": "Lisätietoa live-regioneista",
     "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions",
     "example": {
       "content": "Tallentaminen onnistui"

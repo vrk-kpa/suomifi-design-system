@@ -12,7 +12,7 @@ import {
 } from 'suomifi-ui-components';
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/patterns-sidenav';
-import InfoBox from '../../components/InfoBox/InfoBox';
+import AriaLiveExample from '../../components/AriaLiveExample/AriaLiveExample';
 
 const TableWithFiltersPage: NextPage = () => {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ const TableWithFiltersPage: NextPage = () => {
     <>
       <Head>
         <title>
-          {`${t('notification-components.heading')} | Suomi.fi Design System`}
+          {`${t('notification_components.heading')} | Suomi.fi Design System`}
         </title>
       </Head>
       <SideNavLayout
@@ -29,14 +29,18 @@ const TableWithFiltersPage: NextPage = () => {
         navHeaderText={t('main_nav.patterns')}
         navIcon="puzzle"
       >
-        <Heading variant="h1">{t('notification-components.heading')}</Heading>
+        <Heading variant="h1">{t('notification_components.heading')}</Heading>
         <Block my="xl">
-          <Text variant="lead">{t('notification-components.ingress')}</Text>
+          <Text variant="lead">{t('notification_components.ingress')}</Text>
         </Block>
 
-        <Block mb="xxxl">
+        <Block mb="xxl">
+          <Heading variant="h2" id="table-heading">
+            {t('notification_components.table.heading')}
+          </Heading>
           <Table
-            caption={t('notification-components.table.heading')}
+            mt="l"
+            aria-labelledby="table-heading"
             columns={[
               {
                 labelText: '',
@@ -44,19 +48,19 @@ const TableWithFiltersPage: NextPage = () => {
               },
               {
                 labelText: t(
-                  'notification-components.table.notification_target',
+                  'notification_components.table.notification_target',
                 ),
                 key: 'notificationTarget',
                 className: 'testing-class',
               },
               {
                 labelText: t(
-                  'notification-components.table.appears_dynamically',
+                  'notification_components.table.appears_dynamically',
                 ),
                 key: 'appearsDynamically',
               },
               {
-                labelText: t('notification-components.table.location'),
+                labelText: t('notification_components.table.location'),
                 key: 'location',
               },
             ]}
@@ -67,12 +71,12 @@ const TableWithFiltersPage: NextPage = () => {
                   <Link href="/components/alert">{t('components.alert')}</Link>
                 ),
                 notificationTarget: t(
-                  'notification-components.table.alert.target',
+                  'notification_components.table.alert.target',
                 ),
                 appearsDynamically: t(
-                  'notification-components.table.alert.appears',
+                  'notification_components.table.alert.appears',
                 ),
-                location: t('notification-components.table.alert.location'),
+                location: t('notification_components.table.alert.location'),
               },
               {
                 id: '2',
@@ -82,13 +86,13 @@ const TableWithFiltersPage: NextPage = () => {
                   </Link>
                 ),
                 notificationTarget: t(
-                  'notification-components.table.inline_alert.target',
+                  'notification_components.table.inline_alert.target',
                 ),
                 appearsDynamically: t(
-                  'notification-components.table.inline_alert.appears',
+                  'notification_components.table.inline_alert.appears',
                 ),
                 location: t(
-                  'notification-components.table.inline_alert.location',
+                  'notification_components.table.inline_alert.location',
                 ),
               },
               {
@@ -99,13 +103,13 @@ const TableWithFiltersPage: NextPage = () => {
                   </Link>
                 ),
                 notificationTarget: t(
-                  'notification-components.table.notification.target',
+                  'notification_components.table.notification.target',
                 ),
                 appearsDynamically: t(
-                  'notification-components.table.notification.appears',
+                  'notification_components.table.notification.appears',
                 ),
                 location: t(
-                  'notification-components.table.notification.location',
+                  'notification_components.table.notification.location',
                 ),
               },
               {
@@ -114,19 +118,38 @@ const TableWithFiltersPage: NextPage = () => {
                   <Link href="/components/toast">{t('components.toast')}</Link>
                 ),
                 notificationTarget: t(
-                  'notification-components.table.toast.target',
+                  'notification_components.table.toast.target',
                 ),
                 appearsDynamically: t(
-                  'notification-components.table.toast.appears',
+                  'notification_components.table.toast.appears',
                 ),
-                location: t('notification-components.table.toast.location'),
+                location: t('notification_components.table.toast.location'),
               },
             ]}
             className="notification-components-table"
           />
         </Block>
 
-        <Block variant="section" my="xl"></Block>
+        <Block variant="section" mb="xl">
+          <Heading variant="h2" mb="l">
+            {t('notification_components.arialive.heading')}
+          </Heading>
+          <Paragraph mb="l">
+            {t('notification_components.arialive.text_1')}
+          </Paragraph>
+          <Paragraph mb="l">
+            {t('notification_components.arialive.text_2')}
+          </Paragraph>
+          <ExternalLink
+            labelNewWindow={t('common.opens_in_a_new_tab')}
+            href="https://github.com/vrk-kpa/suomifi-design-system/tree/develop/components/AriaLiveExample/AriaLiveExample.tsx"
+          >
+            {t('notification_components.reference_implementation.link_text')}
+          </ExternalLink>
+        </Block>
+        <Block mb="xxxl" variant="section">
+          <AriaLiveExample />
+        </Block>
       </SideNavLayout>
     </>
   );

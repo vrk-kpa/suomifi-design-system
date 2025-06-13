@@ -250,14 +250,14 @@
       "there_are_errors": "Lomakkeella havaittiin seuraavat ongelmat"
     }
   },
-  "notification-components": {
+  "notification_components": {
     "heading": "Ilmoitukset ja ilmoituskomponentit",
     "ingress": "Suomi.fi Design System sisältää neljä eri komponenttia, joilla voidaan esittää käyttäjälle erilaisia ilmoituksia: Alert, InlineAlert, Notification ja Toast. Tällä sivulla kuvataan näiden komponenttien erot ja käyttötarkoitukset.",
     "components_text": "Mallissa käytetyt komponentit",
     "table": {
       "heading": "Komponenttien vertailu",
       "notification_target": "Milloin käytetään",
-      "appears_dynamically": "Ilmestyy sivulle dynaamisesti",
+      "appears_dynamically": "Ilmestyy dynaamisesti",
       "location": "Sijainti sivulla",
       "alert": {
         "target": "Ilmoitus koskee staattisesti koko sivua tai sivustoa",
@@ -270,15 +270,27 @@
         "location": "Ilmoituksen kohteen yläpuolella"
       },
       "notification": {
-        "target": "Ilmoitus koskee sivun tiettyä osaa, eikä sen näyttämiseen vaadita ensin käyttäjän interaktiota",
+        "target": "Ilmoitus koskee sivua tai sivun tiettyä osaa, eikä sen näyttämiseen vaadita ensin käyttäjän interaktiota",
         "appears": "Ei",
-        "location": "Ilmoituksen kohteen yläpuolella"
+        "location": "Ilmoituksen kohteen yläpuolella tai sivun alussa"
       },
       "toast": {
         "target": "Ilmoitus on toissijainen ja se näytetään hetkellisesti käyttäjän suorittaman interaktion jälkeen",
         "appears": "Kyllä",
         "location": "Kelluu sivun oikeassa yläkulmassa"
       }
+    },
+    "arialive": {
+      "heading": "Dynaamiset ilmoitukset",
+      "text_1": "Kun ilmoitus lisätään sivulle dynaamisesti käyttäjän interaktion seurauksena (InlineAlert tai Toast), tulee huolehtia siitä, että myös ruudunlukijakäyttäjät saavat tiedon ilmoituksesta. Paras keino tähän on asettaa ilmoitukset sellaisen HTML-elementin sisään, jolla on aria-live -attribuutti.",
+      "text_2": "Huomioi, että aria-live -attribuutin sisältävän elementin tulee esiintyä HTML-dokumentissa ennen kuin ilmoitus renderöidään sen sisään, jotta ruudunlukijat rekisteröivät sisällön muutoksen. Alla on esitetty yksinkertainen esimerkki aria-live -regionista ja sisältöherätekomponentin käytöstä."
+    },
+    "reference_implementation": {
+      "link_text": "Lähdekoodi GitHubissa",
+      "dummy_text": "Jokin sivuston osa, esimerkiksi lomake, jossa käyttäjä suorittaa interaktioita ja saa siitä mahdollisia ilmoituksia.",
+      "button_text": "Näytä ilmoitus",
+      "alert_text": "Pakollisia tietoja puuttuu. Ole hyvä ja täytä kaikki pakolliset kentät.",
+      "arialive_area_text": "Div-elementti, joka sisältää aria-live -attribuutin ja jonka sisään ilmoitukset asetetaan."
     }
   },
   "styles": {

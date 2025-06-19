@@ -6,10 +6,11 @@
     "skip_to_main_content": "Siirry pääsisältöön",
     "skip_to_side_navigation": "Siirry sivunavigaatioon",
     "close": "Sulje",
-    "notification_components": "Erilaisten ilmoituskomponenttien erot ja käyttötarkoitukset"
+    "notification_components": "Erilaisten ilmoituskomponenttien erot ja käyttötarkoitukset",
+    "title_suffix": "| Suomi.fi Design System"
   },
   "front_page": {
-    "front_page": "Etusivu",
+    "front_page": "Etusivu | Suomi.fi Design System",
     "hero_heading": "Suomi.fi Design System",
     "hero_subtitle": "Digipalvelujen yhteiset rakennuspalikat",
     "heading": "Koko kansan Design System",
@@ -32,7 +33,7 @@
     "info": "Taustatietoa"
   },
   "privacy_statement": {
-    "heading": "Evästekäytännöt",
+    "heading": "Evästekäytännöt | Suomi.fi Design System",
     "paragraph_1": "Designsystem.suomi.fi -sivusto tallentaa käyttäjän vierailusta käyttäjän selaimen muistiin tietoja, joita se vaatii toimiakseen. Näitä tietoja ovat esimerkiksi käyttäjän sijainti sivustolla sekä kielivalinta.",
     "paragraph_2": "Näitä tietoja ei lähetetä eteenpäin, eikä käsitellä tai talleteta siten, että yksittäinen käyttäjä olisi tunnistettavissa. Voit estää tietojen tallentamisen selaimesi evästeasetuksista tai asentamalla tähän tarkoitetun lisäosan selaimeesi. Evästeitä saatetaan käyttää välttämättömänä osana sähköisen palvelun tarjoamista. Tällaisten evästeiden estäminen saattaa estää samalla myös sähköisen palvelun käytön."
   },
@@ -79,6 +80,7 @@
     "paragraph_2": "Jokaisen suunnittelumallin yhteydessä on esitelty referenssitoteutus, jota mukailemalla vastaava toiminnalisuus on helppo toteuttaa omaan palveluun. Referenssitoteutuksen lähdekoodi on myös saatavilla."
   },
   "table_with_filters": {
+    "site_title": "Taulukko suodattimilla | Suomi.fi Design System",
     "heading": "Taulukko suodattimilla",
     "ingress": "Taulukkokomponentin ympärille rakennetuissa suodattimissa tulee ottaa huomioon useita käytettävyys- ja saavutettavuusasioita.",
     "components_text": "Mallissa käytetyt komponentit",
@@ -118,6 +120,7 @@
     }
   },
   "static_form": {
+    "site_title": "Lomakkeen staattinen validointi | Suomi.fi Design System",
     "heading": "Lomakkeen staattinen validointi",
     "ingress": "Lomakkeiden validointiin suositellaan käytettäväksi ns. staattista mallia. Tässä mallissa lomakkeen kentät validoidaan vasta Lähetä-painiketta painettaessa, ja virheiden ilmoittamiseen käytetään erillistä ErrorSummary-komponenttia.",
     "accessibility_list": {
@@ -144,6 +147,7 @@
     }
   },
   "multi-insert": {
+    "site_title": "Multi-insert | Suomi.fi Design System",
     "heading": "Multi-insert",
     "ingress": "Lomakkeissa on toisinaan tarpeen lisätä sama moduuli eli tietokenttä tai tietokenttien yhdistelmä useaan kertaan. Tämän kaltaisen dynaamisen toiminnallisuuden toteuttamisessa on kiinnitettävä erityistä huomiota käytettävyyteen ja saavutettavuuteen.",
     "and_other_needed_components": "sekä moduulin sisältämät varsinaiset lomakekomponentit",
@@ -251,6 +255,7 @@
     }
   },
   "notification_components": {
+    "site_title": "Ilmoitukset ja ilmoituskomponentit | Suomi.fi Design System",
     "heading": "Ilmoitukset ja ilmoituskomponentit",
     "ingress": "Suomi.fi Design System sisältää neljä eri komponenttia, joilla voidaan esittää käyttäjälle erilaisia ilmoituksia: Alert, InlineAlert, Notification ja Toast. Tällä sivulla kuvataan näiden komponenttien erot ja käyttötarkoitukset.",
     "components_text": "Mallissa käytetyt komponentit",

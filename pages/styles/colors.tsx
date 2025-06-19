@@ -88,7 +88,7 @@ const ColorsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('styles.colors')} | Suomi.fi Design System</title>
+        <title>{`${t('styles.colors')} ${t('common.title_suffix')}`}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

@@ -19,7 +19,7 @@ const MultiInsertPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('multi-insert.heading')} | Suomi.fi Design System</title>
+        <title>{t('multi-insert.site_title')}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

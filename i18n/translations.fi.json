@@ -195,6 +195,7 @@
     }
   },
   "datetime": {
+    "site_title": "Päivämäärä ja kellonaika | Suomi.fi Design System",
     "heading": "Päivämäärä ja kellonaika",
     "ingress": "Ajankohdan eli päivämäärän ja kellonajan yhteinen lisääminen lomakkeissa vaatii erityistä huomiointia saavutettavuuden osalta. Saavutettavuus- ja käytettävyyshuomiot on eritelty jäljempänä tällä sivulla.",
     "accessibility_list": {

@@ -13,7 +13,6 @@ import {
   ExternalLink,
   SingleSelect,
   defaultSuomifiTheme,
-  Notification,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {

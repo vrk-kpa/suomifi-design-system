@@ -1,4 +1,4 @@
-import { Block, Button, InlineAlert, Text } from 'suomifi-ui-components';
+import { Block, Button, InlineAlert } from 'suomifi-ui-components';
 import styles from './AriaLiveExample.module.scss';
 import { useTranslation } from 'next-export-i18n';
 import { useState } from 'react';

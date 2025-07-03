@@ -12,7 +12,6 @@ import {
   Paragraph,
   ExternalLink,
   MultiSelect,
-  Notification,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {

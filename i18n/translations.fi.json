@@ -812,7 +812,7 @@
   "dropdown_page": {
     "site_title": "Dropdown (Pudotusvalikko) | Suomi.fi Design System",
     "heading": "Dropdown (Pudotusvalikko)",
-    "ingress": "Pudotusvalikko kokoaa sisältölistan monesta valittavasta vaihtoehdosta joista käyttäjä voi valita yhden. Pudotusvalikosta voidaan myös aktivoida toimintoja.",
+    "ingress": "Pudotusvalikko kokoaa sisältölistan monesta valittavasta vaihtoehdosta joista käyttäjä voi valita yhden.",
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Pudotusvalikko säästää tilaa käyttöliittymässä sekä vähentää valinta- ja tekstinsyöttövirheitä tarjoamalla käyttäjälle listan valmiiksi valituista vaihtoehdoista. Pudotusvalikkon avulla käyttäjä valitsee listasta yhden vaihtoehdon. Pudotusvalikolle voidaan antaa oletusarvo tai näyttää oletuksena haluttu täyteteksti (visual placeholder) valikkopainikkeessa. Täyteteksti katoaa käyttäjän tehtyä valinnan."

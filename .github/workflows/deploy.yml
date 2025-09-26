@@ -24,7 +24,6 @@ jobs:
       - name: Build and export Next.js
         run: |
           npm run build
-          npm run export
         env:
           NEXT_PUBLIC_ENV_VAR: ${{ secrets.NEXT_PUBLIC_ENV_VAR }} # optional, for env vars
 

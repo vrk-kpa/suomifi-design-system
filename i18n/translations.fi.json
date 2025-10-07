@@ -697,7 +697,7 @@
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla notifikaatioteksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Notifikaatiotekstin lisäksi tilaa viestitään käyttäjälle myös värien sekä valintaruudun reunuksen paksuuden avulla. "
+      "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla tilateksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Tilatekstin lisäksi tilaa viestitään käyttäjälle myös värien sekä valintaruudun reunuksen paksuuden avulla. "
     },
     "example": {
       "default": {
@@ -720,11 +720,11 @@
         "content_label_visit": "Henkilökohtaisella vierailulla"
       },
       "hintstate": {
-        "title": "Ohje- ja notifikaatiotekstit",
-        "description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit, jotka näytetään komponentin alla. Komponentin ja notifikaatiotekstin ulkonäkö muuttuu komponentin tilan (status) mukana.",
+        "title": "Ohje- ja tilatekstit",
+        "description": "Komponentille voidaan antaa ohje- ja tilatekstit, jotka näytetään komponentin alla. Komponentin ja tilatekstin ulkonäkö muuttuu komponentin tilan (status) mukana.",
         "content": "Valinta",
         "hint_text": "Ohjeteksti valinnan tueksi",
-        "status_text": "Notifikaatioteksti"
+        "status_text": "Tilateksti"
       },
       "disabled": {
         "title": "Estetty valintaruutu (Disabled Checkbox)",
@@ -1590,15 +1590,15 @@
         "placeholder": "Kirjoita perustelut"
       },
       "error": {
-        "title": "Ohje- ja notifikaatiotekstit",
-        "description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja notifikaatioteksti syötekentän alapuolella.",
+        "title": "Ohje- ja tilatekstit",
+        "description": "Komponentille voidaan antaa ohje- ja tilatekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja tilateksti syötekentän alapuolella.",
         "label": "Perustelut",
         "hint_text": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
         "placeholder": "Kirjoita perustelut",
         "status_text": "Perustelut on pakollinen tieto"
       },
       "disabled": {
-        "title": "Estetty Tekstialue (Disabled Textarea)",
+        "title": "Estetty tekstialue (Disabled Textarea)",
         "description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
         "label": "Perustelut"
       }
@@ -1635,14 +1635,14 @@
     "heading": "Text Input (Tekstikenttä)",
     "ingress": "Tekstikenttä on komponentti, johon käyttäjä täyttää komponentin otsikossa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsikossa annettuun kysymykseen. Käyttäjälle voidaan antaa tarpeen mukaan ohjeistusta, mutta yksinkertaisissa käyttötapauksissa ohjeistusta ei tarvita. Tekstikenttää käytetään, kun kenttään täytettävä tieto on lyhyt. Jos täytettävä tieto on pitkä ja vaatii monta riviä, käytetään tekstialue-komponenttia.",
     "accessibility_list": {
-      "point_1": "Tekstikentän kanssa tulee aina käyttää otsaketta (label). Suomifi UI kirjaston komponenttiin otsake kuuluu pakollisena osana.",
-      "point_2": "Success- ja error-kenttiin on varattu tekstialue kentän alle viestiä varten. Teksti kertoo käyttäjälle mikä on kenttään täytetyn sisällön tila. Tekstimuotoisen viestin lisäksi tila sisältää värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.",
+      "point_1": "Tekstikentän kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
+      "point_2": "Kentän alapuolella on mahdollista näyttää tilateksti. Teksti kertoo käyttäjälle kenttään täytetyn sisällön tilan, esim. validointivirhe. Tekstimuotoisen viestin lisäksi tila sisältää värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.",
       "point_3": "Tekstikentän leveys toimii visuaalisena rajoitteena käyttäjälle ja antaa vihjeen siihen syötettävästä informaation määrästä.",
-      "point_4": "Tekstikenttä komponenttia käytetään silloin kuin käyttäjän tulee täyttää vain yhden rivin informaatiota, kuten esimerkiksi nimensä. Monta riviä (multiline) vaativille vastauksille käytä Tekstialue (Textarea) komponenttia."
+      "point_4": "Tekstikenttää käytetään silloin kuin käyttäjän tulee täyttää vain yhden rivin informaatiota, kuten esimerkiksi nimensä. Monta riviä (multiline) vaativille vastauksille käytetään Tekstialue (Textarea) komponenttia."
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text_1": "Tekstikenttä koostuu otsakkeesta ja kentästä, jossa on käyttäjää ohjeistava kenttäteksti. Suomi.fi -palvelussa käytetään yleensä puhuttelumuodossa olevaa ohjeistavaa kenttätekstiä. Lisäksi kenttä voi sisältää ohjetekstin, joka sijoittuu otsakkeen ja kentän väliin, mutta on teknisesti osa otsikkoa. Näin ruudunlukija lukee ohjetekstin otsakkeen jälkeen. Kenttään on liitettävissä notifikaatiotieto mahdollisesta virheestä tai onnistumisesta. Notifikaatiotieto näytetään kentän alapuolella. Tekstimuotoisen notifikaation lisäksi kentän reunus on notifikaation aikana värikoodattu virheen tai onnistumisen merkiksi. Kentälle voidaan asettaa myös ikoni, joka esitetään kentän oikeassa laidassa. Ikonia voidaan hyödyntää kentän käyttötarkoituksen viestimiseen.",
+      "text_1": "Tekstikenttä koostuu otsakkeesta ja varsinaisesta kentästä. Lisäksi kentän yhteydessä voi olla ohjeteksti (hintText), joka sijoittuu otsakkeen ja kentän väliin. Ohjeteksti on yhdistetty kenttään aria-describedby-attribuutilla, minkä avulla ruudunlukijat voivat lukea ohjetekstin. Syötekenttään on lisäksi liitettävissä tilatieto esimerkiksi validointivirheestä. Tilatietoon kuuluu tilateksti, joka näytetään kentän alapuolella. Tilatekstin lisäksi tilatietoon kuuluu värikoodattu kentän reunus. Kentälle voidaan asettaa myös ikoni, joka esitetään kentän oikeassa laidassa. Ikonia voidaan hyödyntää kentän käyttötarkoituksen viestimiseen.",
       "text_2": "Lähtökohtaisesti kaikki lomakekentät ovat pakollisia, ja valinnaiset kentät merkitään valinnaisuustekstillä (optionalText). Valinnaisuusteksti näytetään suluissa otsakkeen lopussa."
     },
     "size_and_usage": {
@@ -1652,7 +1652,7 @@
 
     "example": {
       "regular": {
-        "label": "Normaali tekstikenttä"
+        "label": "Sukunimi"
       },
       "hint_text": {
         "title": "Tekstikenttä ohjetekstillä",
@@ -1662,18 +1662,18 @@
         "error_text": "Sukunimi ei voi sisältää numeroita"
       },
       "success": {
-        "title": "Tekstikenttä hyväksytty (Success Text Input)",
+        "title": "Tekstikenttä hyväksytty",
         "label": "Hyväksytty tekstikenttä"
       },
       "error": {
-        "title": "Tekstikenttä virheellinen (Error Text Input)",
-        "label": "Virheellinen tekstikenttä",
-        "status_text": "Virhe: kenttä ei voi olla tyhjä"
+        "title": "Virheellinen tekstikenttä",
+        "label": "Nimi",
+        "status_text": "Nimi on pakollinen tieto"
       },
       "disabled": {
-        "title": "Tekstikenttä estetty (Disabled Text Input)",
-        "description": "Disabloitu tekstikenttä estää kentän täyttämisen, kunnes käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
-        "label": "Estetty tekstikenttä"
+        "title": "Estetty tekstikenttä (Disabled Text Input)",
+        "description": "Estetty tekstikenttä estää kentän täyttämisen, kunnes käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
+        "label": "Nimi"
       },
       "icon": {
         "title": "Tekstikenttä ikonilla",

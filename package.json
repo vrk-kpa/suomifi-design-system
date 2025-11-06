@@ -30,12 +30,12 @@
     "react-dom": "^19.1.0",
     "react-element-to-jsx-string": "^17.0.0",
     "react-is": "^19.1.0",
-    "react-syntax-highlighter": "^15.5.0",
+    "react-syntax-highlighter": "^16.1.0",
     "sass": "^1.52.2",
     "styled-components": "^6.1.13",
     "suomifi-design-tokens": "6.0.0",
-    "suomifi-icons": "^7.5.0",
-    "suomifi-ui-components": "^16.0.1"
+    "suomifi-icons": "^7.7.0",
+    "suomifi-ui-components": "17.0.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.19",

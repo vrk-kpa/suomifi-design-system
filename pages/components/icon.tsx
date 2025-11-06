@@ -38,7 +38,7 @@ const Page: NextPage = () => {
         <Heading variant="h1">{t('icon_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Introduction/Icons"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Foundations/Icons"
             labelNewWindow={t('common.opens_in_a_new_tab')}
             variant="accent"
           >

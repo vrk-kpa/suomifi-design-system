@@ -12,7 +12,7 @@
     "hero_heading": "Suomi.fi Design System",
     "hero_subtitle": "Digipalvelujen yhteiset rakennuspalikat",
     "heading": "Koko kansan Design System",
-    "main_text": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja sekä suunnittelumalleja ja -periaatteita. Kaikki Design Systemin osat on toteutettu ja testattu saavutettavuusvaatimusten (WCAG 2.1 -kriteeristön tasot A ja AA) mukaisesti.",
+    "main_text": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja sekä suunnittelumalleja ja -periaatteita. Kaikki Design Systemin osat on toteutettu ja testattu saavutettavuusvaatimusten (WCAG 2.2 -kriteeristön tasot A ja AA) mukaisesti.",
     "info_link": "Lue lisää Suomi.fi Design Systemistä",
     "go_to_styles": "Siirry tyyleihin",
     "go_to_components": "Siirry komponentteihin",
@@ -41,7 +41,7 @@
     "paragraph_2": "Tästä verkkopalvelusta vastaa Digi- ja väestötietovirasto. Haluamme, että mahdollisimman moni käyttäjä pystyy käyttämään digitaalisia palvelujamme. Otamme saavutettavuuden huomioon digitaalisten palvelujen kehityksessä. Palvelujen saavutettavuutta arvioidaan säännöllisesti osana suunnittelu- ja kehitystyötä.",
     "how_accessible_are_pages": {
       "heading": "Miten saavutettavia sivut ovat?",
-      "paragraph": "Tämä sivusto täyttää lain vaatimat A- ja AA-tason saavutettavuuskriteerit (WCAG-kriteeristö 2.1)."
+      "paragraph": "Tämä sivusto täyttää lain vaatimat A- ja AA-tason saavutettavuuskriteerit (WCAG-kriteeristö 2.2)."
     },
     "notice_problems": {
       "heading": "Huomasitko puutteita saavutettavuudessa?",
@@ -285,9 +285,9 @@
       "point_1": "Kun käytät komponenttien tarjoamaa valmista Suomi.fi-väriteemaa käyttöohjeistuksien mukaisesti, täyttyvät saavutettavuuskriteeristön (WCAG) kontrastivaatimukset ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
       "point_2": "Jos haluat muokata värejä sopimaan erilaiseen visuaaliseen ilmeeseen, muista varmistaa, että valitsemasi väriyhdistelmien kontrastit täyttävät saavutettavuuskriteeristön (WCAG) asettamat vaatimukset.",
       "point_3": "Huomioi, että saavutettavuuskriteeristön (WCAG) kontrastivaatimukset eivät koske komponentteja, joiden käyttö on estetty. On kuitenkin tärkeää varmistaa, että estetty sävy eroaa kontrastiltaan tarpeeksi aktiivisen tilan väristä.",
-      "point_4": "Tutustu näihin kohtiin tarkemmin saavutettavuuskriteeristön ohjeistuksessa: WCAG 2.1., onnistumiskriteeri 1.4.3 Kontrasti (minimi)."
+      "point_4": "Tutustu näihin kohtiin tarkemmin saavutettavuuskriteeristön ohjeistuksessa: WCAG 2.2., onnistumiskriteeri 1.4.3 Kontrasti (minimi)."
     },
-    "contrast_link": "WCAG 2.1 kontrastivaatimukset",
+    "contrast_link": "WCAG 2.2 kontrastivaatimukset",
     "brand": {
       "heading": "Brändiväri",
       "paragraph": "Brändiväriä (brandBase) käytetään Suomi.fi-palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa."
@@ -357,7 +357,7 @@
     "ux_and_accessibility": {
       "heading": "Käyttäjäkokemus ja saavutettavuus",
       "paragraph_1": "Yhdenmukaisten käyttöliittymäkomponenttien avulla eri palvelut näyttäytyvät käyttäjille yhtenäisinä ja käyttäjäkokemus säilyy eheänä. Käyttämällä samanlaisia elementtejä johdonmukaisesti, tuotamme palvelun käyttäjälle intuitiivisen ja ymmärrettävän käyttökokemuksen. Yhdenmukaisesti toimivat palvelut ovat käyttäjien etu.",
-      "paragraph_2": "Saavutettavuudesta huolehtiminen on erittäin keskeinen osa Suomi.fi Design System -kirjastoa. Kaikissa ratkaisuissa huomioidaan jo suunnitteluvaiheessa saavutettavuuskriteerit (WCAG 2.1). Apuvälinekäytön lisäksi suunnittelussa huomioidaan myös kognitiivinen saavutettavuus. Kaikki komponentit myös testataan saavutettavuusvaatimusten mukaisesti ennen niiden julkaisua."
+      "paragraph_2": "Saavutettavuudesta huolehtiminen on erittäin keskeinen osa Suomi.fi Design System -kirjastoa. Kaikissa ratkaisuissa huomioidaan jo suunnitteluvaiheessa saavutettavuuskriteerit (WCAG 2.2). Apuvälinekäytön lisäksi suunnittelussa huomioidaan myös kognitiivinen saavutettavuus. Kaikki komponentit myös testataan saavutettavuusvaatimusten mukaisesti ennen niiden julkaisua."
     },
     "brand": {
       "heading": "Suomi.fi-brändi",
@@ -374,10 +374,10 @@
   "accessibility_page": {
     "ingress": "Saavutettavuudella tarkoitetaan, että digitaaliset palvelut, verkkosivustot ja mobiilisovellukset sekä niiden sisällöt ovat sellaisia, että kuka tahansa voisi niitä käyttää ja ymmärtää, mitä niissä sanotaan. Verkkopalvelujen saavutettavuus koskee EU:n saavutettavuusdirektiivin ja sitä toteuttavan lain (Laki digitaalisten palvelujen tarjoamisesta) myötä koko julkista sektoria sekä osaa järjestöistä ja yrityksistä.",
     "paragraph_1": "Suomi.fi Design System -kirjaston avulla Digi- ja väestötietovirasto haluaa tukea ja edistää saavutettavien verkkopalvelujen rakentamista. Design Systemin -kirjastoon toteutettujen käyttöliittymäkomponenttien saavutettavuus varmistetaan sekä suunnittelu- että toteutusvaiheessa saavutettavuusasiantuntijan kanssa. Kaikki komponentit myös testataan ennen niiden julkaisua.",
-    "paragraph_2": "Laki digitaalisten palvelujen tarjoamisesta astui voimaan 1.4.2019. Saavutettavuusvaatimusten pohjana toimii World Wide Web Consortiumin laatima verkkosisältöjen saavutettavuusohjeistus WCAG 2.1 (tasot A ja AA).",
+    "paragraph_2": "Laki digitaalisten palvelujen tarjoamisesta astui voimaan 1.4.2019. Saavutettavuusvaatimusten pohjana toimii World Wide Web Consortiumin laatima verkkosisältöjen saavutettavuusohjeistus WCAG 2.2 (tasot A ja AA).",
     "link_1": "Laki digitaalisten palvelujen tarjoamisesta",
     "link_2": "EU:n saavutettavuusdirektiivi",
-    "link_3": "WCAG 2.1 -ohjeistus",
+    "link_3": "WCAG 2.2 -ohjeistus",
     "multiple_factors": {
       "heading": "Saavutettavuus koostuu useista tekijöistä",
       "paragraph_1": "Saavutettavuusdirektiivi ja lainsäädäntö sisältävät ennen kaikkea määräyksiä teknisistä vaatimuksista, joilla parannetaan saavutettavuutta. Yhtä tärkeitä osatekijöitä hyvän saavutettavuuden toteuttamiseksi ovat visuaalisen ilmeen saavutettavuus, rakenteen saavutettavuus sekä sisältöjen ymmärrettävyys ja selkeys.",
@@ -716,7 +716,6 @@
       "action_label": "Poista valinta Suomi",
       "static_chip_text": "Suomi (StaticChip)"
     }
-
   },
 
   "date_input_page": {
@@ -907,10 +906,10 @@
       "point_1": "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
       "point_2": "Otsikointihierarkian tulee olla yhtenäinen (h1, h2, h3, h4, h5), eikä välistä saa puuttua otsikkotasoja. Oikea otsikkotasojen hierarkia tukee rakenteen hahmottamista.",
       "point_3": "Otsikkotasojen puuttuminen välistä tai otsikkotasojen epäjärjestys vaikeuttaa sisällön hahmottamista ruudunlukijaa käytettäessä. Ruudunlukija tulkitsee vain heading-merkityt komponentit otsikoiksi.",
-      "point_4": "Huomioi tekstiä koskevat saavutettavuusohjeistukset (WCAG 2.1): 1.4.3 Kontrasti (minimi), 1.4.4 Tekstin koon muuttaminen, 1.4.12 Tekstin välistys."
+      "point_4": "Huomioi tekstiä koskevat saavutettavuusohjeistukset (WCAG 2.2): 1.4.3 Kontrasti (minimi), 1.4.4 Tekstin koon muuttaminen, 1.4.12 Tekstin välistys."
     },
 
-    "link_1": "Verkkosisällön saavutettavuusohjeet (WCAG) 2.1",
+    "link_1": "Verkkosisällön saavutettavuusohjeet (WCAG) 2.2",
     "link_2": "Lisätietoa typografiamäärittelyistä Tyylit-osiosta",
 
     "example": {
@@ -1706,11 +1705,11 @@
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Valintakytkin piilottaa, vaihtaa, muuttaa sisällön tai näkymän valinnan mukaisesti. Toiminto tapahtuu välittömästi eikä vaadi käyttäjältä muuta erillistä vahvistusta. Valintakytkimessä on aina yksi oletustila valmiiksi valittuna. Valintakytkintä tulisi käyttää ainoastaan sellaisissa tilanteissa, joissa käyttäjän täytyy valita kahdesta vastakkaisesta tilasta, esimerkiksi asettaa jokin toiminto päälle tai pois päältä.",
-      "text_2": "Valintakytkimen vaiheiden vastakohtaiset värit tulisi tukea komponentin käytettävyyttä ja auttaa käyttäjää hahmottamaan, missä tilassa kytkin on (päällä/pois päältä). Jos muokkaat väriä, muista huomioida saavutettavuusvaatimukset (WCGA 2.1) ja eri tilojen riittävä eroavuus toisistaan."
+      "text_2": "Valintakytkimen vaiheiden vastakohtaiset värit tulisi tukea komponentin käytettävyyttä ja auttaa käyttäjää hahmottamaan, missä tilassa kytkin on (päällä/pois päältä). Jos muokkaat väriä, muista huomioida saavutettavuusvaatimukset (WCGA 2.2) ja eri tilojen riittävä eroavuus toisistaan."
     },
 
-    "link1_text": "WCAG 2.1 - 1.4.1 Värien käyttö",
-    "link2_text": "WCAG 2.1 - 1.4.3 Kontrasti (minimi)",
+    "link1_text": "WCAG 2.2 - 1.4.1 Värien käyttö",
+    "link2_text": "WCAG 2.2 - 1.4.3 Kontrasti (minimi)",
 
     "variations": {
       "heading": "Variaatiot",

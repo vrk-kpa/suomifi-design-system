@@ -58,7 +58,7 @@ const Page: NextPage = () => {
 
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://www.w3.org/Translations/WCAG21-fi/"
+            href="https://www.w3.org/TR/WCAG22/"
             labelNewWindow={t('common.opens_in_a_new_tab')}
           >
             {t('heading_page.link_1')}

@@ -96,6 +96,12 @@ kbd.keyboard-button {
   width: 200px;
 }
 
+.notification-components-table {
+  .fi-table_table {
+    white-space: normal;
+  }
+}
+
 .table-pattern-dropdown {
   .fi-dropdown_button {
     min-width: auto !important;

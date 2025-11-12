@@ -28,7 +28,7 @@ const StylesIndexPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('styles.typography')} | Suomi.fi Design System</title>
+        <title>{`${t('styles.typography')} ${t('common.title_suffix')}`}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

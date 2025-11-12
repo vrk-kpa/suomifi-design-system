@@ -17,7 +17,7 @@ const StylesIndexPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('main_nav.info')} | Suomi.fi Design System</title>
+        <title>{`${t('main_nav.info')} ${t('common.title_suffix')}`}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

@@ -13,7 +13,7 @@ const IconsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('styles.icons')} | Suomi.fi Design System</title>
+        <title>{`${t('styles.icons')} ${t('common.title_suffix')}`}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

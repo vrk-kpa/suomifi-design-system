@@ -19,7 +19,7 @@ const StaticFormPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('static_form.heading')} | Suomi.fi Design System</title>
+        <title>{t('static_form.site_title')}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

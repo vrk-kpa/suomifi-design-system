@@ -1,0 +1,20 @@
+@use '~suomifi-design-tokens/dist/tokens';
+
+.dummy {
+  border: 1px solid tokens.$fi-color-depth-light1;
+  height: 100px;
+  background: tokens.$fi-color-depth-light3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.alertContainer {
+  border: 1px dashed tokens.$fi-color-depth-light1;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

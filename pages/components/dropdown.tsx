@@ -20,7 +20,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('dropdown_page.heading')} | Suomi.fi Design System</title>
+        <title>{t('dropdown_page.site_title')}</title>
       </Head>
 
       <SideNavLayout

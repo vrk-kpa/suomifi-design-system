@@ -6,7 +6,7 @@ import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
 import {
-  Alert,
+  InlineAlert,
   Block,
   Heading,
   Text,
@@ -20,7 +20,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('alert_page.site_title')}</title>
+        <title>{t('inlinealert_page.site_title')}</title>
       </Head>
 
       <SideNavLayout
@@ -28,10 +28,10 @@ const Page: NextPage = () => {
         navHeaderText={t('main_nav.components')}
         navIcon="puzzle"
       >
-        <Heading variant="h1">{t('alert_page.heading')}</Heading>
+        <Heading variant="h1">{t('inlinealert_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Alert"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/InlineAlert"
             labelNewWindow={t('common.opens_in_a_new_tab')}
             variant="accent"
           >
@@ -44,7 +44,7 @@ const Page: NextPage = () => {
           </Link>
         </Block>
         <Paragraph className="my-xl">
-          <Text variant="lead">{t('alert_page.ingress')}</Text>
+          <Text variant="lead">{t('inlinealert_page.ingress')}</Text>
         </Paragraph>
 
         <Block variant="section">
@@ -52,23 +52,13 @@ const Page: NextPage = () => {
             filterPropsInExample={['className', 'mt']}
             style={{ display: 'block' }}
           >
-            <Alert closeText={t('alert_page.example.close_button')}>
-              {t('alert_page.example.alert_info_paragraph')}
-            </Alert>
-            <Alert
-              closeText={t('alert_page.example.close_button')}
-              status="warning"
-              mt="l"
-            >
-              {t('alert_page.example.alert_warning_paragraph')}
-            </Alert>
-            <Alert
-              closeText={t('alert_page.example.close_button')}
-              status="error"
-              mt="l"
-            >
-              {t('alert_page.example.alert_error_paragraph')}
-            </Alert>
+            <InlineAlert>{t('inlinealert_page.example.info_text')}</InlineAlert>
+            <InlineAlert status="warning" mt="l">
+              {t('inlinealert_page.example.warning_text')}
+            </InlineAlert>
+            <InlineAlert status="error" mt="l">
+              {t('inlinealert_page.example.error_text')}
+            </InlineAlert>
           </ComponentExample>
         </Block>
 
@@ -78,21 +68,33 @@ const Page: NextPage = () => {
               {t('common.accessibility_and_usability')}
             </Heading>
             <ul>
-              <li>{t('alert_page.accessibility_list.point_1')}</li>
-              <li>{t('alert_page.accessibility_list.point_2')}</li>
+              <li>{t('inlinealert_page.accessibility_list.point_1')}</li>
+              <li>{t('inlinealert_page.accessibility_list.point_2')}</li>
+              <li>{t('inlinealert_page.accessibility_list.point_3')}</li>
             </ul>
           </InfoBox>
         </Block>
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('alert_page.size_and_usage.heading')}
+            {t('inlinealert_page.size_and_usage.heading')}
           </Heading>
           <Paragraph className="my-xl">
-            {t('alert_page.size_and_usage.text_1')}
+            {t('inlinealert_page.size_and_usage.text_1')}
           </Paragraph>
           <Paragraph className="my-xl">
-            {t('alert_page.size_and_usage.text_2')}
+            {t('inlinealert_page.size_and_usage.text_2')}
           </Paragraph>
+          <Paragraph className="my-xl">
+            {t('inlinealert_page.size_and_usage.text_3')}
+          </Paragraph>
+        </Block>
+        <Block variant="div" mt="m" mb="l">
+          <ExternalLink
+            href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
+            labelNewWindow={t('common.opens_in_a_new_tab')}
+          >
+            {t('toast_page.link_text')}
+          </ExternalLink>
         </Block>
       </SideNavLayout>
     </>

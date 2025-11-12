@@ -19,9 +19,7 @@ const TableWithFiltersPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>
-          {`${t('table_with_filters.heading')} | Suomi.fi Design System`}
-        </title>
+        <title>{t('table_with_filters.site_title')}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

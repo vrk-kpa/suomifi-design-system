@@ -69,6 +69,10 @@ export const navItems: NavItem[] = [
     path: '/components/icon',
   },
   {
+    title: translations.components.inline_alert,
+    path: '/components/inlinealert',
+  },
+  {
     title: translations.components.language_menu,
     path: '/components/languagemenu',
   },

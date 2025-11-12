@@ -20,7 +20,7 @@ const MultiInsertPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('datetime.heading')} | Suomi.fi Design System</title>
+        <title>{t('datetime.site_title')}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

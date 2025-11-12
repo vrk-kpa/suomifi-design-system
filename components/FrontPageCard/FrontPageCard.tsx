@@ -6,6 +6,7 @@ import {
   suomifiDesignTokens,
 } from 'suomifi-ui-components';
 import styles from './FrontPageCard.module.scss';
+import Image from 'next/image';
 
 interface FrontPageCardProps {
   imgSrc: string;
@@ -28,7 +29,7 @@ const FrontPageCard: React.FunctionComponent<FrontPageCardProps> = ({
         className={styles.upper}
         style={{ backgroundColor: suomifiDesignTokens.colors[bgColor] }}
       >
-        <img src={imgSrc} alt="" />
+        <Image src={imgSrc} alt={heading} width={250} height={125} />
       </Block>
       <Block className={styles.lower}>
         <Heading variant="h3">{heading}</Heading>

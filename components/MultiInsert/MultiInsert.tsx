@@ -46,6 +46,8 @@ export const MultiInsert: React.FC = () => {
   const addNewButtonRef = useRef<HTMLButtonElement>(null);
   const prevWebsites = usePrevious(websites);
 
+  const mouseOverToastRef = useRef<boolean>(false);
+
   // When a new MultiInsert item is added, this hook is used to set focus to it
   useEffect(() => {
     if (
@@ -147,10 +149,34 @@ export const MultiInsert: React.FC = () => {
 
   const flashToast = (toastName: string | undefined, id: number) => {
     setToasts((current) => [...current, { text: toastName, id: id }]);
+    const startTime = Date.now();
+    const handleMouseEnter = () => {
+      mouseOverToastRef.current = true;
+    };
+    const handleMouseLeave = () => {
+      mouseOverToastRef.current = false;
+      if (Date.now() - startTime >= 5000) {
+        setToasts((current) => {
+          return current.filter((t) => t.id !== id);
+        });
+      }
+    };
+
+    // Wait for the toast element to appear in the DOM before adding event listeners
+    const interval = setInterval(() => {
+      const toastElement = document.getElementById(`toast-${id}`);
+      if (toastElement) {
+        toastElement.addEventListener('mouseenter', handleMouseEnter);
+        toastElement.addEventListener('mouseleave', handleMouseLeave);
+        clearInterval(interval);
+      }
+    }, 50);
     setTimeout(() => {
-      setToasts((current) => {
-        return current.filter((t) => t.id !== id);
-      });
+      if (!mouseOverToastRef.current) {
+        setToasts((current) => {
+          return current.filter((t) => t.id !== id);
+        });
+      }
     }, 5000);
   };
 
@@ -182,28 +208,28 @@ export const MultiInsert: React.FC = () => {
 
   return (
     <>
-      <div className={styles['toast-container']}>
+      <div
+        className={styles['toast-container']}
+        aria-live="polite"
+        aria-atomic="true"
+      >
         {toasts.map((toast) =>
           // Removed websites are preferably announced with their title
           // If module had any text in the "Website name" field, toast.text value is present
           toast.text ? (
-            <Block mb="s" role="alert" key={toast.id}>
-              <Toast>
-                {t(
-                  'multi-insert.reference_implementation.named_website_removed',
-                  { website_name: toast.text },
-                )}
-              </Toast>
-            </Block>
+            <Toast id={`toast-${toast.id}`} key={toast.id} mb="s">
+              {t(
+                'multi-insert.reference_implementation.named_website_removed',
+                { website_name: toast.text },
+              )}
+            </Toast>
           ) : (
             // Websites without a title are announced more generally
-            <Block mb="s" role="alert" key={toast.id}>
-              <Toast>
-                {t(
-                  'multi-insert.reference_implementation.nameless_website_removed',
-                )}
-              </Toast>
-            </Block>
+            <Toast id={`toast-${toast.id}`} key={toast.id} mb="s">
+              {t(
+                'multi-insert.reference_implementation.nameless_website_removed',
+              )}
+            </Toast>
           ),
         )}
       </div>

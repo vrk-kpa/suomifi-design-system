@@ -3,7 +3,7 @@ name: Build and Deploy Next.js to S3
 on:
   push:
     branches:
-      - test/github-actions
+      - master
 
 jobs:
   build-and-deploy:

@@ -116,7 +116,7 @@ const ColorsPage: NextPage = () => {
           <Block mt="l">
             <ExternalLink
               labelNewWindow={t('common.opens_in_a_new_tab')}
-              href="https://www.w3.org/TR/WCAG21/#contrast-minimum"
+              href="https://www.w3.org/TR/WCAG22/#contrast-minimum"
             >
               {t('colors.contrast_link')}
             </ExternalLink>

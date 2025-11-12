@@ -17,6 +17,7 @@ import {
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Head>
@@ -93,6 +94,10 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('search_input_page.size_and_usage.text_3')}
           </Paragraph>
+
+          <Paragraph className="my-xl">
+            {t('search_input_page.size_and_usage.text_4')}
+          </Paragraph>
         </Block>
 
         <Block variant="section">
@@ -101,6 +106,9 @@ const Page: NextPage = () => {
           </Heading>
           <Paragraph className="my-xl">
             {t('search_input_page.in_ui.text_1')}
+          </Paragraph>
+          <Paragraph className="my-xl">
+            {t('search_input_page.in_ui.text_2')}
           </Paragraph>
         </Block>
       </SideNavLayout>

@@ -812,7 +812,7 @@
   "dropdown_page": {
     "site_title": "Dropdown (Pudotusvalikko) | Suomi.fi Design System",
     "heading": "Dropdown (Pudotusvalikko)",
-    "ingress": "Pudotusvalikko kokoaa sisältölistan monesta valittavasta vaihtoehdosta joista käyttäjä voi valita yhden. Pudotusvalikosta voidaan myös aktivoida toimintoja.",
+    "ingress": "Pudotusvalikko kokoaa sisältölistan monesta valittavasta vaihtoehdosta joista käyttäjä voi valita yhden.",
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Pudotusvalikko säästää tilaa käyttöliittymässä sekä vähentää valinta- ja tekstinsyöttövirheitä tarjoamalla käyttäjälle listan valmiiksi valituista vaihtoehdoista. Pudotusvalikkon avulla käyttäjä valitsee listasta yhden vaihtoehdon. Pudotusvalikolle voidaan antaa oletusarvo tai näyttää oletuksena haluttu täyteteksti (visual placeholder) valikkopainikkeessa. Täyteteksti katoaa käyttäjän tehtyä valinnan."
@@ -1409,7 +1409,7 @@
       "point_1": "Suurennuslasi-ikoni on yleisesti tunnettu tunniste hakutoiminnolle, ja siksi sitä ei ole välttämätöntä yhdistää visuaalisesti sanaan 'haku'. Ruudunlukijalle kerrotaan kuitenkin toiminnon nimi komponenttiin saavuttaessa.",
       "point_2": "Hakukenttää kannattaa käyttää, sillä useimmat käyttäjät hyötyvät siitä, että he voivat etsiä sisältöä sivustolta tai sovelluksesta.",
       "point_3": "Jos toteutuksen kokonaisuus on pieni ja yksinkertainen (single page ratkaisu), hakukenttää ei kuitenkaan tarvitse välttämättä käyttää.",
-      "point_4": "Anna hakukentälle aina otsaketieto. Otsaketieto voidaan piilottaa visuaalisesti, mutta ruudunlukijakäyttäjälle otsake on tärkeä tieto hänen saapuessaan komponenttiin."
+      "point_4": "Anna hakukentälle aina otsaketieto. Otsaketieto voidaan piilottaa visuaalisesti, mutta ruudunlukijakäyttäjälle otsake on tärkeä tieto hänen saapuessaan komponenttiin. Otsaketiedosta tulee selvitä haun konteksti, kuten \"Hae sivustolta\" tai \"Hae toimipakkoja\"."
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
@@ -1418,13 +1418,15 @@
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Kirjoitettu hakuteksti on mahdollista poistaa kokonaan käyttämällä poistopainiketta. Hakupainikkeen painaminen tai hakusanan valitseminen näppäimistön enter-painikkeella vie käyttäjän hakusivulle, jossa näytetään hakutulokset. Mahdollinen uusi haku voidaan tehdä hakusivulla.",
-      "text_2": "Hakukentän tulee olla leveydeltään minimissään 320 px. Hakukentän tekstialueen suositusleveys on minimissään 230 px, joka toteutuu komponentin 320 px kokonaisleveydellä. Tähän kokoon mahtuu hyvin yleisimpiin hakutilanteisiin riittävät hakuehdot. Kapeimmilla mobiilinäytöillä leveyttä rajoittavat sivumarginaalit, jolloin komponentin minimileveys on 290px.",
-      "text_3": "Pienikokoisilla näytöillä hakukomponentin tulee aueta koko header-palkin päälle peittäen alleen muun headersisällön. Hakukomponentin tulee tällöin olla pienennettävissä erillisestä \"Sulje\" -painikkeesta. Mobiililaitteilla hakupalkki pysyy näkyvissä, vaikka käyttäjä klikkaa/täppää sisältöalueelle."
+      "text_2": "Hakukentän tulee olla leveydeltään minimissään 290 px. Hakukentän tekstialueen suositusleveys on minimissään 230 px, joka toteutuu komponentin 290 px kokonaisleveydellä. Tähän kokoon mahtuu hyvin yleisimpiin hakutilanteisiin riittävät hakuehdot. Kapeimmilla mobiilinäytöillä leveyttä rajoittavat sivumarginaalit, jolloin komponentin minimileveys on 290px.",
+      "text_3": "Pienikokoisilla näytöillä hakukomponentin tulee aueta koko header-palkin päälle peittäen alleen muun headersisällön. Hakukomponentin tulee tällöin olla pienennettävissä erillisestä \"Sulje\" -painikkeesta. Mobiililaitteilla hakupalkki pysyy näkyvissä, vaikka käyttäjä klikkaa/täppää sisältöalueelle.",
+      "text_4": "Komponentille voidaan antaa myös lista hakuehdotuksista, jotka näytetään valikossa hakukentän alapuolella. Hakuehdotukset auttavat käyttäjää löytämään sopivan hakusanan tai sisällön."
     },
 
     "in_ui": {
       "heading": "Komponentti käyttöliittymässä",
-      "text_1": "Suomi.fi:n sivustohakukomponentti sijaitsee ylätunnisteessa kaikkialla verkkopalvelussa. On suositeltavaa asettaa hakukenttä sivuston yläreunaan tai osaksi ylätunnistetta. Useimmiten hakukenttä sijaitsee ylätunnisteen oikean laidan puolella."
+      "text_1": "Suomi.fi:n sivustohakukomponentti sijaitsee ylätunnisteessa kaikkialla verkkopalvelussa. On suositeltavaa asettaa hakukenttä osaksi ylätunnistetta. Hakukenttä voi sijaita lisäksi myös muualla käyttöliittymässä, mikäli käyttäjän on tarpeellista hakea sisältöä vain tietyssä kontekstissa (esim. dokumenttien haku).",
+      "text_2": "Sivulla näkyvien tietojen, kuten listojen ja taulukoiden suodatukseen käytetään lähtökohtaisesti tekstikenttää. Poikkeuksena tilanteet, joissa tietoja haetaan ja suodatetaan samalla toiminnolla."
     },
 
     "example": {

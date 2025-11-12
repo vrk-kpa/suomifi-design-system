@@ -697,7 +697,7 @@
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla tilateksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Tilatekstin lisäksi tilaa viestitään käyttäjälle myös värien sekä valintaruudun reunuksen paksuuden avulla. "
+      "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla tilateksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Tilatekstin lisäksi tilaa viestitään käyttäjälle myös sen etupuolella olevan ikonin, värien sekä valintaruudun reunuksen paksuuden avulla. "
     },
     "example": {
       "default": {
@@ -1636,13 +1636,13 @@
     "ingress": "Tekstikenttä on komponentti, johon käyttäjä täyttää komponentin otsikossa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsikossa annettuun kysymykseen. Käyttäjälle voidaan antaa tarpeen mukaan ohjeistusta, mutta yksinkertaisissa käyttötapauksissa ohjeistusta ei tarvita. Tekstikenttää käytetään, kun kenttään täytettävä tieto on lyhyt. Jos täytettävä tieto on pitkä ja vaatii monta riviä, käytetään tekstialue-komponenttia.",
     "accessibility_list": {
       "point_1": "Tekstikentän kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
-      "point_2": "Kentän alapuolella on mahdollista näyttää tilateksti. Teksti kertoo käyttäjälle kenttään täytetyn sisällön tilan, esim. validointivirhe. Tekstimuotoisen viestin lisäksi tila sisältää värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.",
+      "point_2": "Kentän alapuolella on mahdollista näyttää tilateksti. Teksti kertoo käyttäjälle kenttään täytetyn sisällön tilan, esimerkiksi validointivirheen. Tekstimuotoisen viestin lisäksi tila sisältää ikonin, värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.",
       "point_3": "Tekstikentän leveys toimii visuaalisena rajoitteena käyttäjälle ja antaa vihjeen siihen syötettävästä informaation määrästä.",
       "point_4": "Tekstikenttää käytetään silloin kuin käyttäjän tulee täyttää vain yhden rivin informaatiota, kuten esimerkiksi nimensä. Monta riviä (multiline) vaativille vastauksille käytetään Tekstialue (Textarea) komponenttia."
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text_1": "Tekstikenttä koostuu otsakkeesta ja varsinaisesta kentästä. Lisäksi kentän yhteydessä voi olla ohjeteksti (hintText), joka sijoittuu otsakkeen ja kentän väliin. Ohjeteksti on yhdistetty kenttään aria-describedby-attribuutilla, minkä avulla ruudunlukijat voivat lukea ohjetekstin. Syötekenttään on lisäksi liitettävissä tilatieto esimerkiksi validointivirheestä. Tilatietoon kuuluu tilateksti, joka näytetään kentän alapuolella. Tilatekstin lisäksi tilatietoon kuuluu värikoodattu kentän reunus. Kentälle voidaan asettaa myös ikoni, joka esitetään kentän oikeassa laidassa. Ikonia voidaan hyödyntää kentän käyttötarkoituksen viestimiseen.",
+      "text_1": "Tekstikenttä koostuu otsakkeesta ja varsinaisesta kentästä. Lisäksi kentän yhteydessä voi olla ohjeteksti (hintText), joka sijoittuu otsakkeen ja kentän väliin. Ohjeteksti on yhdistetty kenttään aria-describedby-attribuutilla, minkä avulla ruudunlukijat voivat lukea ohjetekstin. Syötekenttään on lisäksi liitettävissä tilatieto esimerkiksi validointivirheestä. Tilatietoon kuuluu tilateksti, joka näytetään kentän alapuolella. Tilatekstin lisäksi tilatietoon kuuluu ikoni ja värikoodattu kentän reunus. Kentälle voidaan asettaa myös ikoni, joka esitetään kentän oikeassa laidassa. Ikonia voidaan hyödyntää kentän käyttötarkoituksen viestimiseen.",
       "text_2": "Lähtökohtaisesti kaikki lomakekentät ovat pakollisia, ja valinnaiset kentät merkitään valinnaisuustekstillä (optionalText). Valinnaisuusteksti näytetään suluissa otsakkeen lopussa."
     },
     "size_and_usage": {

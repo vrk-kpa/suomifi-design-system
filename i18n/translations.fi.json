@@ -506,8 +506,8 @@
   },
 
   "actionmenu_page": {
-    "site_title": "Action Menu (Toimintovalikko) | Suomi.fi Design System",
-    "heading": "Action Menu (Toimintovalikko)",
+    "site_title": "ActionMenu (Toimintovalikko) | Suomi.fi Design System",
+    "heading": "ActionMenu (Toimintovalikko)",
     "ingress": "Toimintovalikkoa käytetään toimintojen käynnistämiseen silloin, kun toimintojen määrä on niin suuri, että tavalliset painikkeet veisivät liian paljon tilaa käyttöliittymässä.",
     "size_and_usage": {
       "heading": "Koko ja käyttö",
@@ -697,7 +697,7 @@
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla notifikaatioteksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Notifikaatiotekstin lisäksi tilaa viestitään käyttäjälle myös värien sekä valintaruudun reunuksen paksuuden avulla. "
+      "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla tilateksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Tilatekstin lisäksi tilaa viestitään käyttäjälle myös sen etupuolella olevan ikonin, värien sekä valintaruudun reunuksen paksuuden avulla. "
     },
     "example": {
       "default": {
@@ -720,11 +720,11 @@
         "content_label_visit": "Henkilökohtaisella vierailulla"
       },
       "hintstate": {
-        "title": "Ohje- ja notifikaatiotekstit",
-        "description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit, jotka näytetään komponentin alla. Komponentin ja notifikaatiotekstin ulkonäkö muuttuu komponentin tilan (status) mukana.",
+        "title": "Ohje- ja tilatekstit",
+        "description": "Komponentille voidaan antaa ohje- ja tilatekstit, jotka näytetään komponentin alla. Komponentin ja tilatekstin ulkonäkö muuttuu komponentin tilan (status) mukana.",
         "content": "Valinta",
         "hint_text": "Ohjeteksti valinnan tueksi",
-        "status_text": "Notifikaatioteksti"
+        "status_text": "Tilateksti"
       },
       "disabled": {
         "title": "Estetty valintaruutu (Disabled Checkbox)",
@@ -759,8 +759,8 @@
   },
 
   "date_input_page": {
-    "site_title": "Date input (Päivämääräkenttä) | Suomi.fi Design System",
-    "heading": "Date input (Päivämääräkenttä)",
+    "site_title": "DateInput (Päivämääräkenttä) | Suomi.fi Design System",
+    "heading": "DateInput (Päivämääräkenttä)",
     "ingress": "Päivämääräkenttä on komponentti, johon käyttäjä voi syöttää päivämäärätiedon valitsemalla sen kalenterista tai kirjoittamalla päivämäärän syöttökenttään. Päivämääräkenttä ohjaa käyttäjää syöttämään päivämäärän oikeassa muodossa muoto-ohjeen ja kalenterin avulla.",
     "accessibility_list": {
       "point_1": "Päivämääräkentän kanssa tulee käyttää otsaketta (label), joka kuvaa päivämääräkentän tarkoituksen. Otsake on osa päivämääräkomponenttia.",
@@ -840,7 +840,7 @@
       "option3": "6 kk",
       "option4": "Vuosi",
       "example1": {
-        "title": "Toimintovalikko (Action Menu)",
+        "title": "Toimintovalikko (ActionMenu)",
         "description": "Pudotusvalikkoa voidaan käyttää myös toimintojen aktivoimiseen, jolloin komponenttia kutsutaan toimintovalikoksi. Tällöin annettu täyteteksti on aina näkyvissä eivätkä tehdyt valinnat muuta komponentin tilaa.",
         "label": "Valitse toiminto",
         "placeholder": "Toimintovalikko",
@@ -1034,8 +1034,8 @@
   },
 
   "language_menu_page": {
-    "site_title": "Language Menu (Kielivalikko) | Suomi.fi Design System",
-    "heading": "Language Menu (Kielivalikko)",
+    "site_title": "LanguageMenu (Kielivalikko) | Suomi.fi Design System",
+    "heading": "LanguageMenu (Kielivalikko)",
     "ingress": "Kielivalikkoa käytetään, kun palvelua voidaan käyttää useilla kielillä, eli sillä on useita kieliversioita. Kielen vaihtaminen vaihtaa käyttöliittymässä käytetyn kielen.",
     "accessibility_list": {
       "point_1": "Suomi.fi kielivalintakomponentissa otsake (label) on rakennettu komponenttiin, mutta teksti on visuaalisesti piilotettu näkyvistä tyylisyistä. Otsakkeen (label) käyttäminen pudotusvalikon yhteydessä on muuten aina suositeltavaa.",
@@ -1349,8 +1349,8 @@
     }
   },
   "radiobutton_page": {
-    "site_title": "Radio Button (Valintanappi) | Suomi.fi Design System",
-    "heading": "Radio Button (Valintanappi)",
+    "site_title": "RadioButton (Valintanappi) | Suomi.fi Design System",
+    "heading": "RadioButton (Valintanappi)",
     "ingress": "Valintanappi on lomakekomponentti, jolla voi valita yhden vaihtoehdon useammasta valintanapista koostuvasta valintanappiryhmästä. Käyttäjä voi valita kerrallaan vain yhden vaihtoehdon. Kun käyttäjä tekee uuden valinnan, aiemmin tehty valinta poistuu ja korvautuu uudella valinnalla.",
     "accessibility_list": {
       "point_1": "Pyri kuvaaviin, lyhyisiin ja ytimekkäisiin otsakkeisiin (label).",
@@ -1381,12 +1381,12 @@
       },
 
       "large": {
-        "title": "Valintanapin mobiiliversio (Large Radio Button)",
+        "title": "Valintanapin mobiiliversio (Large RadioButton)",
         "group_hint": "Valittua toimitustapaa ei voi muuttaa lomakkeen lähetyksen jälkeen",
         "description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintanapin mobiiliversiota."
       },
       "hint": {
-        "title": "Valintanappi ohjetekstillä (Radio Button + Hint Text)",
+        "title": "Valintanappi ohjetekstillä (RadioButton + Hint Text)",
         "description": "Komponentille voidaan antaa ohjeteksti, joka näytetään komponentin alla.",
         "content": "Sähköisesti",
         "hint_text": "Saan päätökset Suomi.fi viesteihin",
@@ -1395,15 +1395,15 @@
       },
 
       "disabled": {
-        "title": "Estetty valintanappi (Disabled Radio Button)",
+        "title": "Estetty valintanappi (Disabled RadioButton)",
         "description": "Estetty valintanappi ei ole käyttäjän valittavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen."
       }
     }
   },
 
   "search_input_page": {
-    "site_title": "Search Input (Hakukenttä) | Suomi.fi Design System",
-    "heading": "Search Input (Hakukenttä)",
+    "site_title": "SearchInput (Hakukenttä) | Suomi.fi Design System",
+    "heading": "SearchInput (Hakukenttä)",
     "ingress": "Hakukentän avulla käyttäjä voi etsiä tarvitsemaansa sisältöä sivustolta tai sovelluksesta hakusanoja käyttäen. Hakukenttä on käyttäjän tukena, mikäli hän ei löydä etsimäänsä sisältöä navigoimalla.",
     "accessibility_list": {
       "point_1": "Suurennuslasi-ikoni on yleisesti tunnettu tunniste hakutoiminnolle, ja siksi sitä ei ole välttämätöntä yhdistää visuaalisesti sanaan 'haku'. Ruudunlukijalle kerrotaan kuitenkin toiminnon nimi komponenttiin saavuttaessa.",
@@ -1437,8 +1437,8 @@
   },
 
   "service_navigation_page": {
-    "site_title": "Service navigation (Palvelunavigaatio) | Suomi.fi Design System",
-    "heading": "Service navigation (Palvelunavigaatio)",
+    "site_title": "ServiceNavigation (Palvelunavigaatio) | Suomi.fi Design System",
+    "heading": "ServiceNavigation (Palvelunavigaatio)",
     "ingress": "Palvelunavigaatiota käytetään jonkin sivusto-osion eri alasivujen tai alanäkymien välillä liikkumiseen.",
     "accessibility_list": {
       "point_1": "Navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä. Kapean ruudun varianttia käytettäessä navigaation avaavan/sulkevan painikkeen tekstin tulee niin ikään olla kuvaava ja ytimekäs.",
@@ -1476,8 +1476,8 @@
   },
 
   "side_navigation_page": {
-    "site_title": "Side navigation(Sivunavigaatio) | Suomi.fi Design System",
-    "heading": "Side navigation(Sivunavigaatio)",
+    "site_title": "SideNavigation (Sivunavigaatio) | Suomi.fi Design System",
+    "heading": "SideNavigation (Sivunavigaatio)",
     "ingress": "Sivunavigaatiota käytetään sisältösivujen välillä navigointiin erityisesti silloin kun sivut on ryhmitelty useaan eri alakategoriaan.",
     "accessibility_list": {
       "point_1": "Komponentin otsikon ja navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä.",
@@ -1519,8 +1519,8 @@
   },
 
   "singleselect_page": {
-    "site_title": "Single Select (Yksittäisvalinta) | Suomi.fi Design System",
-    "heading": "Single Select (Yksittäisvalinta)",
+    "site_title": "SingleSelect (Yksittäisvalinta) | Suomi.fi Design System",
+    "heading": "SingleSelect (Yksittäisvalinta)",
     "ingress": "Yksittäisvalinta-komponentin avulla käyttäjä voi valita yhden vaihtoehdon listalta.",
 
     "accessibility_list": {
@@ -1590,15 +1590,15 @@
         "placeholder": "Kirjoita perustelut"
       },
       "error": {
-        "title": "Ohje- ja notifikaatiotekstit",
-        "description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja notifikaatioteksti syötekentän alapuolella.",
+        "title": "Ohje- ja tilatekstit",
+        "description": "Komponentille voidaan antaa ohje- ja tilatekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja tilateksti syötekentän alapuolella.",
         "label": "Perustelut",
         "hint_text": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
         "placeholder": "Kirjoita perustelut",
         "status_text": "Perustelut on pakollinen tieto"
       },
       "disabled": {
-        "title": "Estetty Tekstialue (Disabled Textarea)",
+        "title": "Estetty tekstialue (Disabled Textarea)",
         "description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
         "label": "Perustelut"
       }
@@ -1631,18 +1631,18 @@
   },
 
   "text_input_page": {
-    "site_title": "Text Input (Tekstikenttä) | Suomi.fi Design System",
-    "heading": "Text Input (Tekstikenttä)",
+    "site_title": "TextInput (Tekstikenttä) | Suomi.fi Design System",
+    "heading": "TextInput (Tekstikenttä)",
     "ingress": "Tekstikenttä on komponentti, johon käyttäjä täyttää komponentin otsikossa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsikossa annettuun kysymykseen. Käyttäjälle voidaan antaa tarpeen mukaan ohjeistusta, mutta yksinkertaisissa käyttötapauksissa ohjeistusta ei tarvita. Tekstikenttää käytetään, kun kenttään täytettävä tieto on lyhyt. Jos täytettävä tieto on pitkä ja vaatii monta riviä, käytetään tekstialue-komponenttia.",
     "accessibility_list": {
-      "point_1": "Tekstikentän kanssa tulee aina käyttää otsaketta (label). Suomifi UI kirjaston komponenttiin otsake kuuluu pakollisena osana.",
-      "point_2": "Success- ja error-kenttiin on varattu tekstialue kentän alle viestiä varten. Teksti kertoo käyttäjälle mikä on kenttään täytetyn sisällön tila. Tekstimuotoisen viestin lisäksi tila sisältää värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.",
+      "point_1": "Tekstikentän kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
+      "point_2": "Kentän alapuolella on mahdollista näyttää tilateksti. Teksti kertoo käyttäjälle kenttään täytetyn sisällön tilan, esimerkiksi validointivirheen. Tekstimuotoisen viestin lisäksi tila sisältää ikonin, värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.",
       "point_3": "Tekstikentän leveys toimii visuaalisena rajoitteena käyttäjälle ja antaa vihjeen siihen syötettävästä informaation määrästä.",
-      "point_4": "Tekstikenttä komponenttia käytetään silloin kuin käyttäjän tulee täyttää vain yhden rivin informaatiota, kuten esimerkiksi nimensä. Monta riviä (multiline) vaativille vastauksille käytä Tekstialue (Textarea) komponenttia."
+      "point_4": "Tekstikenttää käytetään silloin kuin käyttäjän tulee täyttää vain yhden rivin informaatiota, kuten esimerkiksi nimensä. Monta riviä (multiline) vaativille vastauksille käytetään Tekstialue (Textarea) komponenttia."
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text_1": "Tekstikenttä koostuu otsakkeesta ja kentästä, jossa on käyttäjää ohjeistava kenttäteksti. Suomi.fi -palvelussa käytetään yleensä puhuttelumuodossa olevaa ohjeistavaa kenttätekstiä. Lisäksi kenttä voi sisältää ohjetekstin, joka sijoittuu otsakkeen ja kentän väliin, mutta on teknisesti osa otsikkoa. Näin ruudunlukija lukee ohjetekstin otsakkeen jälkeen. Kenttään on liitettävissä notifikaatiotieto mahdollisesta virheestä tai onnistumisesta. Notifikaatiotieto näytetään kentän alapuolella. Tekstimuotoisen notifikaation lisäksi kentän reunus on notifikaation aikana värikoodattu virheen tai onnistumisen merkiksi. Kentälle voidaan asettaa myös ikoni, joka esitetään kentän oikeassa laidassa. Ikonia voidaan hyödyntää kentän käyttötarkoituksen viestimiseen.",
+      "text_1": "Tekstikenttä koostuu otsakkeesta ja varsinaisesta kentästä. Lisäksi kentän yhteydessä voi olla ohjeteksti (hintText), joka sijoittuu otsakkeen ja kentän väliin. Ohjeteksti on yhdistetty kenttään aria-describedby-attribuutilla, minkä avulla ruudunlukijat voivat lukea ohjetekstin. Syötekenttään on lisäksi liitettävissä tilatieto esimerkiksi validointivirheestä. Tilatietoon kuuluu tilateksti, joka näytetään kentän alapuolella. Tilatekstin lisäksi tilatietoon kuuluu ikoni ja värikoodattu kentän reunus. Kentälle voidaan asettaa myös ikoni, joka esitetään kentän oikeassa laidassa. Ikonia voidaan hyödyntää kentän käyttötarkoituksen viestimiseen.",
       "text_2": "Lähtökohtaisesti kaikki lomakekentät ovat pakollisia, ja valinnaiset kentät merkitään valinnaisuustekstillä (optionalText). Valinnaisuusteksti näytetään suluissa otsakkeen lopussa."
     },
     "size_and_usage": {
@@ -1652,7 +1652,7 @@
 
     "example": {
       "regular": {
-        "label": "Normaali tekstikenttä"
+        "label": "Sukunimi"
       },
       "hint_text": {
         "title": "Tekstikenttä ohjetekstillä",
@@ -1662,18 +1662,18 @@
         "error_text": "Sukunimi ei voi sisältää numeroita"
       },
       "success": {
-        "title": "Tekstikenttä hyväksytty (Success Text Input)",
+        "title": "Tekstikenttä hyväksytty",
         "label": "Hyväksytty tekstikenttä"
       },
       "error": {
-        "title": "Tekstikenttä virheellinen (Error Text Input)",
-        "label": "Virheellinen tekstikenttä",
-        "status_text": "Virhe: kenttä ei voi olla tyhjä"
+        "title": "Virheellinen tekstikenttä",
+        "label": "Nimi",
+        "status_text": "Nimi on pakollinen tieto"
       },
       "disabled": {
-        "title": "Tekstikenttä estetty (Disabled Text Input)",
-        "description": "Disabloitu tekstikenttä estää kentän täyttämisen, kunnes käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
-        "label": "Estetty tekstikenttä"
+        "title": "Estetty tekstikenttä (Disabled Text Input)",
+        "description": "Estetty tekstikenttä estää kentän täyttämisen, kunnes käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
+        "label": "Nimi"
       },
       "icon": {
         "title": "Tekstikenttä ikonilla",
@@ -1690,8 +1690,8 @@
   },
 
   "time_input_page": {
-    "site_title": "Time Input (Kellonaikakenttä) | Suomi.fi Design System",
-    "heading": "Time Input (Kellonaikakenttä)",
+    "site_title": "TimeInput (Kellonaikakenttä) | Suomi.fi Design System",
+    "heading": "TimeInput (Kellonaikakenttä)",
     "ingress": "Kellonaikakenttä on komponentti, johon käyttäjä täyttää kellonajan. Se muistuttaa tekstikenttäkomponenttia, mutta sisältää tiettyjä kellonajan syöttöön tarkoitettuja erityispiirteitä.",
     "accessibility_list": {
       "point_1": "Kellonaikakentän kanssa tulee aina käyttää otsaketta (label).",
@@ -1839,8 +1839,8 @@
   },
 
   "wizard_navigation_page": {
-    "site_title": "Wizard navigation (Vaihenavigaatio) | Suomi.fi Design System",
-    "heading": "Wizard navigation (Vaihenavigaatio)",
+    "site_title": "WizardNavigation (Vaihenavigaatio) | Suomi.fi Design System",
+    "heading": "WizardNavigation (Vaihenavigaatio)",
     "ingress": "Vaihenavigaatiota käytetään vaiheistetun lomakkeen tai muun vastaavan käyttöliittymän eri vaiheiden esittämiseen ja niiden välillä siirtymiseen.",
     "accessibility_list": {
       "point_1": "Komponentin otsikon ja navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä.",

@@ -20,7 +20,7 @@ const Page: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('dropdown_page.heading')} | Suomi.fi Design System</title>
+        <title>{t('dropdown_page.site_title')}</title>
       </Head>
 
       <SideNavLayout
@@ -97,33 +97,6 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('dropdown_page.size_and_usage.text_1')}
           </Paragraph>
-        </Block>
-
-        <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('dropdown_page.example.example1.title')}
-          </Heading>
-          <Paragraph className="my-xl">
-            {t('dropdown_page.example.example1.description')}
-          </Paragraph>
-
-          <ComponentExample>
-            <Dropdown
-              visualPlaceholder={t(
-                'dropdown_page.example.example1.placeholder',
-              )}
-              alwaysShowVisualPlaceholder
-              labelText={t('dropdown_page.example.example1.label')}
-              onChange={(action) => console.log(action, 'selected')}
-            >
-              <DropdownItem value="Toiminto1">
-                {t('dropdown_page.example.example1.option1')}
-              </DropdownItem>
-              <DropdownItem value="Toiminto2">
-                {t('dropdown_page.example.example1.option2')}
-              </DropdownItem>
-            </Dropdown>
-          </ComponentExample>
         </Block>
       </SideNavLayout>
     </>

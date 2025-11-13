@@ -1,17 +1,17 @@
-@import '~suomifi-design-tokens/dist/tokens';
-@import '../../styles/breakpoints';
+@use '~suomifi-design-tokens/dist/tokens';
+@use '../../styles/breakpoints';
 
 .footer {
-  padding: $fi-spacing-xxl 0;
-  border-top: 2px solid $fi-color-brand-base;
+  padding: tokens.$fi-spacing-xxl 0;
+  border-top: 2px solid tokens.$fi-color-brand-base;
 
   .top {
     display: flex;
     align-items: center;
-    gap: $fi-spacing-m;
-    padding-bottom: $fi-spacing-m;
+    gap: tokens.$fi-spacing-m;
+    padding-bottom: tokens.$fi-spacing-m;
 
-    @include upto-md {
+    @include breakpoints.upto-md {
       flex-direction: column;
       align-items: flex-start;
     }
@@ -29,24 +29,24 @@
   .text {
     width: 40%;
 
-    @include upto-md {
+    @include breakpoints.upto-md {
       width: 100%;
     }
 
-    @include from-md {
-      border-left: 1px solid $fi-color-depth-base;
-      padding-left: $fi-spacing-m;
+    @include breakpoints.from-md {
+      border-left: 1px solid tokens.$fi-color-depth-base;
+      padding-left: tokens.$fi-spacing-m;
     }
   }
 
   .links {
     flex: 1;
     display: flex;
-    gap: $fi-spacing-l;
+    gap: tokens.$fi-spacing-l;
     align-items: flex-start;
     flex-wrap: wrap;
 
-    @include upto-md {
+    @include breakpoints.upto-md {
       justify-content: flex-start;
     }
   }
@@ -58,7 +58,7 @@
     .githubLogo {
       width: 1.3rem;
       height: 1.3rem;
-      margin-right: $fi-spacing-inset-m;
+      margin-right: tokens.$fi-spacing-inset-m;
     }
   }
 }

@@ -1,7 +1,7 @@
+@use './_breakpoints' as breakpoints;
+@use '~suomifi-design-tokens/dist/tokens' as tokens;
+@use './_utilities' as utilities;
 @import '/fonts/source-sans-pro.css';
-@import '~suomifi-design-tokens/dist/tokens';
-@import './_utilities';
-@import './_breakpoints';
 
 :root {
   /* CSS properties */
@@ -26,25 +26,25 @@ body {
   width: 100%;
 }
 
-@include from-sm {
+@include breakpoints.from-sm {
   .fi-block.container {
     width: 540px;
   }
 }
 
-@include from-md {
+@include breakpoints.from-md {
   .fi-block.container {
     width: 720px;
   }
 }
 
-@include from-lg {
+@include breakpoints.from-lg {
   .fi-block.container {
     width: 960px;
   }
 }
 
-@include from-xl {
+@include breakpoints.from-xl {
   .fi-block.container {
     width: 1140px;
     padding: 0;
@@ -52,7 +52,7 @@ body {
 }
 
 #content {
-  background: $fi-color-depth-light3;
+  background: tokens.$fi-color-depth-light3;
   display: flex;
   flex: 1;
 }
@@ -63,7 +63,7 @@ body {
     position: relative;
 
     &::after {
-      @include fi-focus-absolute-focus;
+      @include tokens.fi-focus-absolute-focus;
     }
   }
 }
@@ -81,13 +81,41 @@ body {
 }
 
 kbd.keyboard-button {
-  @include fi-text-body-text-small;
+  @include tokens.fi-text-body-text-small;
 
-  background-color: $fi-color-depth-light3;
-  border-radius: $fi-radius-basic;
-  border: 1px solid $fi-color-depth-light1;
-  box-shadow: $fi-shadow-panel-shadow;
+  background-color: tokens.$fi-color-depth-light3;
+  border-radius: tokens.$fi-radius-basic;
+  border: 1px solid tokens.$fi-color-depth-light1;
+  box-shadow: tokens.$fi-shadow-panel-shadow;
   display: inline-block;
   line-height: 1;
   padding: 2px 4px;
+}
+
+.testing-class {
+  width: 200px;
+}
+
+.notification-components-table {
+  .fi-table_table {
+    white-space: normal;
+  }
+}
+
+.table-pattern-dropdown {
+  .fi-dropdown_button {
+    min-width: auto !important;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
 }

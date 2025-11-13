@@ -6,21 +6,23 @@ import { navItems } from '../../utils/components-sidenav';
 import InfoBox from '../../components/InfoBox/InfoBox';
 import ComponentExample from '../../components/ComponentExample/ComponentExample';
 import {
-  Alert,
   Block,
   Heading,
   Text,
   Paragraph,
   ExternalLink,
-  Link,
+  defaultSuomifiTheme,
+  Chip,
+  StaticChip,
 } from 'suomifi-ui-components';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
+
   return (
     <>
       <Head>
-        <title>{t('alert_page.site_title')}</title>
+        <title>{t('chip_page.site_title')}</title>
       </Head>
 
       <SideNavLayout
@@ -28,49 +30,35 @@ const Page: NextPage = () => {
         navHeaderText={t('main_nav.components')}
         navIcon="puzzle"
       >
-        <Heading variant="h1">{t('alert_page.heading')}</Heading>
+        <Heading variant="h1">{t('chip_page.heading')}</Heading>
         <Block variant="div" mt="m">
           <ExternalLink
-            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Alert"
+            href="https://vrk-kpa.github.io/suomifi-ui-components/#/Components/Chip"
             labelNewWindow={t('common.opens_in_a_new_tab')}
             variant="accent"
           >
             {t('common.see_technical_documentation_of_component')}
           </ExternalLink>
         </Block>
-        <Block variant="div">
-          <Link href="/patterns/notification-components" variant="accent">
-            {t('common.notification_components')}
-          </Link>
-        </Block>
         <Paragraph className="my-xl">
-          <Text variant="lead">{t('alert_page.ingress')}</Text>
+          <Text variant="lead">{t('chip_page.ingress')}</Text>
         </Paragraph>
 
-        <Block variant="section">
-          <ComponentExample
-            filterPropsInExample={['className', 'mt']}
-            style={{ display: 'block' }}
-          >
-            <Alert closeText={t('alert_page.example.close_button')}>
-              {t('alert_page.example.alert_info_paragraph')}
-            </Alert>
-            <Alert
-              closeText={t('alert_page.example.close_button')}
-              status="warning"
-              mt="l"
-            >
-              {t('alert_page.example.alert_warning_paragraph')}
-            </Alert>
-            <Alert
-              closeText={t('alert_page.example.close_button')}
-              status="error"
-              mt="l"
-            >
-              {t('alert_page.example.alert_error_paragraph')}
-            </Alert>
-          </ComponentExample>
-        </Block>
+        <ComponentExample
+          style={{
+            marginBottom: defaultSuomifiTheme.spacing.s,
+            flexDirection: 'column',
+          }}
+        >
+          <Block>
+            <Chip removable actionLabel={t('chip_page.example.action_label')}>
+              {t('chip_page.example.chip_text')}
+            </Chip>
+          </Block>
+          <Block>
+            <StaticChip>{t('chip_page.example.static_chip_text')}</StaticChip>
+          </Block>
+        </ComponentExample>
 
         <Block variant="section" className="my-xl">
           <InfoBox>
@@ -78,20 +66,32 @@ const Page: NextPage = () => {
               {t('common.accessibility_and_usability')}
             </Heading>
             <ul>
-              <li>{t('alert_page.accessibility_list.point_1')}</li>
-              <li>{t('alert_page.accessibility_list.point_2')}</li>
+              <li>{t('chip_page.accessibility_list.point_1')}</li>
             </ul>
           </InfoBox>
         </Block>
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('alert_page.size_and_usage.heading')}
+            {t('chip_page.what_does_the_component_contain.heading')}
           </Heading>
           <Paragraph className="my-xl">
-            {t('alert_page.size_and_usage.text_1')}
+            {t('chip_page.what_does_the_component_contain.text_1')}
+          </Paragraph>
+
+          <Paragraph className="my-xl">
+            {t('chip_page.what_does_the_component_contain.text_2')}
+          </Paragraph>
+        </Block>
+
+        <Block variant="section">
+          <Heading variant="h2" className="mb-xl">
+            {t('chip_page.size_and_usage.heading')}
+          </Heading>
+          <Paragraph className="my-xl">
+            {t('chip_page.size_and_usage.text_1')}
           </Paragraph>
           <Paragraph className="my-xl">
-            {t('alert_page.size_and_usage.text_2')}
+            {t('chip_page.size_and_usage.text_2')}
           </Paragraph>
         </Block>
       </SideNavLayout>

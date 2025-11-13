@@ -10,9 +10,7 @@ const FrontPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>
-          {t('accessibility_statement.heading')} | Suomi.fi Design System
-        </title>
+        <title>{t('accessibility_statement.heading')}</title>
       </Head>
       <InfopageLayout>
         <Heading variant="h1" className="mb-l">

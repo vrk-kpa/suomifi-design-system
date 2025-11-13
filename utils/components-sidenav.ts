@@ -33,6 +33,10 @@ export const navItems: NavItem[] = [
     path: '/components/checkbox',
   },
   {
+    title: translations.components.chip,
+    path: '/components/chip',
+  },
+  {
     title: translations.components.date_input,
     path: '/components/dateinput',
   },
@@ -63,6 +67,10 @@ export const navItems: NavItem[] = [
   {
     title: translations.components.icon,
     path: '/components/icon',
+  },
+  {
+    title: translations.components.inline_alert,
+    path: '/components/inlinealert',
   },
   {
     title: translations.components.language_menu,
@@ -111,6 +119,10 @@ export const navItems: NavItem[] = [
   {
     title: translations.components.singleselect,
     path: '/components/singleselect',
+  },
+  {
+    title: translations.components.table,
+    path: '/components/table',
   },
   {
     title: translations.components.text,

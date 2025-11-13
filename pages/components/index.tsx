@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { useTranslation } from 'next-export-i18n';
 import Head from 'next/head';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 import {
   Block,
   Button,
@@ -45,7 +45,9 @@ const ComponentsIndexPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('main_nav.components')} | Suomi.fi Design System</title>
+        <title>{`${t('main_nav.components')} ${t(
+          'common.title_suffix',
+        )}`}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

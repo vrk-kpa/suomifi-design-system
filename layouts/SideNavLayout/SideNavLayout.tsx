@@ -63,7 +63,7 @@ const SideNavLayout: React.FunctionComponent<SideNavLayoutProps> = ({
                 selected={router.pathname === ni.path}
                 key={ni.title}
               >
-                <Link href={ni.path} passHref>
+                <Link href={ni.path} passHref legacyBehavior>
                   <RouterLink
                     aria-current={
                       router.pathname === ni.path ? 'page' : undefined
@@ -88,7 +88,7 @@ const SideNavLayout: React.FunctionComponent<SideNavLayoutProps> = ({
                   selected={router.pathname === ni.path}
                   key={ni.title}
                 >
-                  <Link href={ni.path} passHref>
+                  <Link href={ni.path} passHref legacyBehavior>
                     <RouterLink
                       aria-current={
                         router.pathname === ni.path ? 'page' : undefined

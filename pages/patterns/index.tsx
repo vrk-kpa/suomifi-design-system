@@ -11,7 +11,7 @@ const ComponentsIndexPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('main_nav.patterns')} | Suomi.fi Design System</title>
+        <title>{`${t('main_nav.patterns')} ${t('common.title_suffix')}`}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

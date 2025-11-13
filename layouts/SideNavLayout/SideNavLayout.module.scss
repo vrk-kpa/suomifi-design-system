@@ -1,58 +1,59 @@
-@import '~suomifi-design-tokens/dist/tokens';
-@import '../../styles/breakpoints';
+@use '~suomifi-design-tokens/dist/tokens';
+@use '../../styles/breakpoints';
 
 .smallScreenNavContainer {
-  @include from-lg {
+  background: tokens.$fi-color-white-base;
+  border: 1px solid tokens.$fi-color-depth-light1;
+  margin-top: tokens.$fi-spacing-m;
+
+  @include breakpoints.from-lg {
     display: none;
   }
 
-  background: $fi-color-white-base;
-  border: 1px solid $fi-color-depth-light1;
-  margin-top: $fi-spacing-m;
-
   .navHeadertext {
     font-weight: bold;
-    margin-left: $fi-spacing-xs;
+    margin-left: tokens.$fi-spacing-xs;
   }
 }
 
 .SideNavLayout {
-  background: $fi-color-white-base;
-  margin: $fi-spacing-xl 0 $fi-spacing-xxxl 0;
-  border: 1px solid $fi-color-depth-light1;
+  background: tokens.$fi-color-white-base;
+  margin: tokens.$fi-spacing-xl 0 tokens.$fi-spacing-xxxl 0;
+  border: 1px solid tokens.$fi-color-depth-light1;
   display: flex;
 
-  @include upto-md {
-    margin-left: -$fi-spacing-xs;
-    margin-right: -$fi-spacing-xs;
+  @include breakpoints.upto-md {
+    margin-left: -(tokens.$fi-spacing-xs);
+    margin-right: -(tokens.$fi-spacing-xs);
   }
 
-  @include upto-lg {
+  @include breakpoints.upto-lg {
     flex-direction: column;
   }
 
   .left {
-    @include upto-lg {
+    min-width: 370px;
+
+    @include breakpoints.upto-lg {
       display: none;
     }
-
-    min-width: 370px;
 
     .navHeader {
       display: flex;
       align-items: center;
-      padding: $fi-spacing-xs;
+      padding: tokens.$fi-spacing-xs;
 
       .navHeadertext {
         font-weight: bold;
-        margin-left: $fi-spacing-xs;
+        margin-left: tokens.$fi-spacing-xs;
       }
     }
   }
 
   .right {
     flex: 1;
-    margin: $fi-spacing-m $fi-spacing-s;
+    padding: tokens.$fi-spacing-m tokens.$fi-spacing-s;
+    overflow-x: auto;
   }
 }
 

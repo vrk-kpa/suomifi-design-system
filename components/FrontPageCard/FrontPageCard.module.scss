@@ -1,10 +1,10 @@
-@import '~suomifi-design-tokens/dist/tokens';
-@import '../../styles/breakpoints';
+@use '~suomifi-design-tokens/dist/tokens';
+@use '../../styles/breakpoints';
 
 .frontPageCard {
   width: 350px;
 
-  @include upto-lg {
+  @include breakpoints.upto-lg {
     width: 100%;
   }
 
@@ -13,16 +13,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-left-radius: $fi-radius-basic;
-    border-top-right-radius: $fi-radius-basic;
-    padding: $fi-spacing-xl;
+    border-top-left-radius: tokens.$fi-radius-basic;
+    border-top-right-radius: tokens.$fi-radius-basic;
+    padding: tokens.$fi-spacing-xl;
+    position: relative;
   }
 
   .lower {
-    background-color: $fi-color-white-base;
-    box-shadow: $fi-shadow-panel-shadow;
-    padding: $fi-spacing-xs $fi-spacing-s $fi-spacing-m $fi-spacing-s;
-    border-bottom-left-radius: $fi-radius-basic;
-    border-bottom-right-radius: $fi-radius-basic;
+    background-color: tokens.$fi-color-white-base;
+    box-shadow: tokens.$fi-shadow-panel-shadow;
+    padding: tokens.$fi-spacing-xs tokens.$fi-spacing-s tokens.$fi-spacing-m
+      tokens.$fi-spacing-s;
+    border-bottom-left-radius: tokens.$fi-radius-basic;
+    border-bottom-right-radius: tokens.$fi-radius-basic;
   }
 }

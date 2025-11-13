@@ -1,5 +1,5 @@
-@import '~suomifi-design-tokens/dist/tokens';
-@import '../../styles/breakpoints';
+@use '~suomifi-design-tokens/dist/tokens';
+@use '../../styles/breakpoints';
 
 .heroBlock {
   display: flex;
@@ -14,29 +14,29 @@
     background-position: center;
     background-color: #002a60;
 
-    @include upto-xl {
+    @include breakpoints.upto-xl {
       background-size: cover;
     }
 
     .heroBlockLine {
       height: 4px;
       width: 115px;
-      background: $fi-color-white-base;
-      margin-bottom: $fi-spacing-xl;
+      background: tokens.$fi-color-white-base;
+      margin-bottom: tokens.$fi-spacing-xl;
       margin-top: 105px;
     }
 
     h1 {
-      color: $fi-color-white-base;
+      color: tokens.$fi-color-white-base;
       font-size: 55px;
       font-weight: 600;
-      margin-bottom: $fi-spacing-m;
+      margin-bottom: tokens.$fi-spacing-m;
     }
 
     .heroBlockSubtitle {
       font-size: 26px;
       font-weight: 600;
-      color: $fi-color-white-base;
+      color: tokens.$fi-color-white-base;
     }
   }
 }

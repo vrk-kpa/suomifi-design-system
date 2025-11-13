@@ -20,4 +20,12 @@ export const navItems: NavItem[] = [
     title: translations.patterns.datetime,
     path: '/patterns/datetime',
   },
+  {
+    title: translations.patterns.table_with_filters,
+    path: '/patterns/table-with-filters',
+  },
+  {
+    title: translations.patterns.notification_components,
+    path: '/patterns/notification-components',
+  },
 ];

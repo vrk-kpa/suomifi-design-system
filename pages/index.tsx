@@ -17,7 +17,7 @@ const FrontPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('front_page.front_page')} | Suomi.fi Design System</title>
+        <title>{t('front_page.front_page')}</title>
       </Head>
       <Block variant="div" className="w-100">
         <HeroBlock />

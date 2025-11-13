@@ -40,18 +40,33 @@ const Page: NextPage = () => {
             {t('common.see_technical_documentation_of_component')}
           </ExternalLink>
         </Block>
+        <Block variant="div">
+          <Link href="/patterns/notification-components" variant="accent">
+            {t('common.notification_components')}
+          </Link>
+        </Block>
         <Paragraph className="my-xl">
           <Text variant="lead">{t('notification_page.ingress')}</Text>
         </Paragraph>
 
         <Block variant="section">
           <ComponentExample
-            style={{ marginBottom: defaultSuomifiTheme.spacing.s }}
+            style={{
+              marginBottom: defaultSuomifiTheme.spacing.s,
+              display: 'block',
+            }}
           >
+            <Notification
+              closeText={t('notification_page.example.info.close_button')}
+              headingText={t('notification_page.example.info.heading')}
+            >
+              {t('notification_page.example.info.paragraph')}
+            </Notification>
             <Notification
               status="error"
               closeText={t('notification_page.example.error.close_button')}
               headingText={t('notification_page.example.error.heading')}
+              mt="l"
             >
               {t('notification_page.example.error.paragraph')}
             </Notification>
@@ -86,11 +101,14 @@ const Page: NextPage = () => {
           <Paragraph className="my-xl">
             {t('notification_page.size_and_usage.text_1')}
           </Paragraph>
+          <Paragraph className="my-xl">
+            {t('notification_page.size_and_usage.text_2')}
+          </Paragraph>
         </Block>
 
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">
-            {t('notification_page.example.info.heading')}
+            {t('notification_page.example.info.section_heading')}
           </Heading>
           <Paragraph className="my-xl">
             {t('notification_page.example.info.description')}

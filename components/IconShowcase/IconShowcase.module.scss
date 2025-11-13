@@ -1,4 +1,4 @@
-@import '~suomifi-design-tokens/dist/tokens';
+@use '~suomifi-design-tokens/dist/tokens';
 
 .iconsContainer {
   padding: 0;
@@ -11,7 +11,7 @@
 }
 
 .iconItem {
-  margin: $fi-spacing-xl $fi-spacing-xxxl $fi-spacing-xs 0;
+  margin: tokens.$fi-spacing-xl tokens.$fi-spacing-xxxl tokens.$fi-spacing-xs 0;
   line-height: 1rem;
   display: flex;
   flex-direction: column;

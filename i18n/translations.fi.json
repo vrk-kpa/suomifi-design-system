@@ -5,14 +5,16 @@
     "opens_in_a_new_tab": "Avautuu uudessa välilehdessä",
     "skip_to_main_content": "Siirry pääsisältöön",
     "skip_to_side_navigation": "Siirry sivunavigaatioon",
-    "close": "Sulje"
+    "close": "Sulje",
+    "notification_components": "Erilaisten ilmoituskomponenttien erot ja käyttötarkoitukset",
+    "title_suffix": "| Suomi.fi Design System"
   },
   "front_page": {
-    "front_page": "Etusivu",
+    "front_page": "Etusivu | Suomi.fi Design System",
     "hero_heading": "Suomi.fi Design System",
     "hero_subtitle": "Digipalvelujen yhteiset rakennuspalikat",
     "heading": "Koko kansan Design System",
-    "main_text": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja sekä suunnittelumalleja ja -periaatteita. Kaikki Design Systemin osat on toteutettu ja testattu saavutettavuusvaatimusten (WCAG 2.1 -kriteeristön tasot A ja AA) mukaisesti.",
+    "main_text": "Suomi.fi Design System tarjoaa kokoelman uudelleenkäytettäviä ja dokumentoituja käyttöliittymäkomponentteja sekä suunnittelumalleja ja -periaatteita. Kaikki Design Systemin osat on toteutettu ja testattu saavutettavuusvaatimusten (WCAG 2.2 -kriteeristön tasot A ja AA) mukaisesti.",
     "info_link": "Lue lisää Suomi.fi Design Systemistä",
     "go_to_styles": "Siirry tyyleihin",
     "go_to_components": "Siirry komponentteihin",
@@ -31,7 +33,7 @@
     "info": "Taustatietoa"
   },
   "privacy_statement": {
-    "heading": "Evästekäytännöt",
+    "heading": "Evästekäytännöt | Suomi.fi Design System",
     "paragraph_1": "Designsystem.suomi.fi -sivusto tallentaa käyttäjän vierailusta käyttäjän selaimen muistiin tietoja, joita se vaatii toimiakseen. Näitä tietoja ovat esimerkiksi käyttäjän sijainti sivustolla sekä kielivalinta.",
     "paragraph_2": "Näitä tietoja ei lähetetä eteenpäin, eikä käsitellä tai talleteta siten, että yksittäinen käyttäjä olisi tunnistettavissa. Voit estää tietojen tallentamisen selaimesi evästeasetuksista tai asentamalla tähän tarkoitetun lisäosan selaimeesi. Evästeitä saatetaan käyttää välttämättömänä osana sähköisen palvelun tarjoamista. Tällaisten evästeiden estäminen saattaa estää samalla myös sähköisen palvelun käytön."
   },
@@ -41,7 +43,7 @@
     "paragraph_2": "Tästä verkkopalvelusta vastaa Digi- ja väestötietovirasto. Haluamme, että mahdollisimman moni käyttäjä pystyy käyttämään digitaalisia palvelujamme. Otamme saavutettavuuden huomioon digitaalisten palvelujen kehityksessä. Palvelujen saavutettavuutta arvioidaan säännöllisesti osana suunnittelu- ja kehitystyötä.",
     "how_accessible_are_pages": {
       "heading": "Miten saavutettavia sivut ovat?",
-      "paragraph": "Tämä sivusto täyttää lain vaatimat A- ja AA-tason saavutettavuuskriteerit (WCAG-kriteeristö 2.1)."
+      "paragraph": "Tämä sivusto täyttää lain vaatimat A- ja AA-tason saavutettavuuskriteerit (WCAG-kriteeristö 2.2)."
     },
     "notice_problems": {
       "heading": "Huomasitko puutteita saavutettavuudessa?",
@@ -68,14 +70,57 @@
     "general": "Yleistä suunnittelumalleista",
     "static_form": "Lomakkeen staattinen validointi",
     "multi_insert": "Multi-insert",
-    "datetime": "Päivämäärä ja kellonaika"
+    "datetime": "Päivämäärä ja kellonaika",
+    "table_with_filters": "Taulukko suodattimilla",
+    "notification_components": "Ilmoitukset ja ilmoituskomponentit"
   },
   "patterns_main_page": {
     "ingress": "Suunnittelumallit eli patternit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
     "paragraph_1": "Suunnittelumalleissa on kuvattu, kuinka erillisiä Design Systemin komponentteja käytetään yhdessä luomaan ratkaisuja, jotka on ovat käytettävyydeltään, visuaaliselta ilmeeltään ja saavutettavuudeltaan sujuvia ja parhaiden käytänteiden mukaisia.",
     "paragraph_2": "Jokaisen suunnittelumallin yhteydessä on esitelty referenssitoteutus, jota mukailemalla vastaava toiminnalisuus on helppo toteuttaa omaan palveluun. Referenssitoteutuksen lähdekoodi on myös saatavilla."
   },
+  "table_with_filters": {
+    "site_title": "Taulukko suodattimilla | Suomi.fi Design System",
+    "heading": "Taulukko suodattimilla",
+    "ingress": "Taulukkokomponentin ympärille rakennetuissa suodattimissa tulee ottaa huomioon useita käytettävyys- ja saavutettavuusasioita.",
+    "components_text": "Mallissa käytetyt komponentit",
+    "accessibility_list": {
+      "point_1": "Taulukon otsikko on erillinen otsikkokomponentti, joka tulee kytkeä taulukkoon aria-labelledby -attribuutilla.",
+      "point_2": "Taulukon yläpuolella oleva tekstielementti (joka ilmaisee datan määrän, valittujen rivien määrän ja lataustilan) tulee kääriä aria-live regioniin, jotta ruudunlukijakäyttäjät saavat tiedon taulukon datan muutoksista. Alueelle tulee lisäksi asettaa aria-atomic=\n\"true\" -attribuutti, jotta ruudunlukija lukee koko sisällön muutoksien jälkeen.",
+      "point_3": "Sijoita taulukkoa suodattavat kentät fieldset-elementin sisään ja anna fieldsetille kuvaava nimilappu (legend, referenssitoteutuksessa \"taulukon suodattimet\"). On hyväksyttävää, että nimilappu on visuaalisesti piilotettu.",
+      "point_4": "Suodattimina toimiville kentille tulee antaa yksinkertaiset ja kuvaavat nimilaput (labelText), joista käy ilmi, että kentät liittyvät taulukon datan manipulointiin.",
+      "point_5": "Kun taulukon dataa ladataan palvelimelta, tulee taulukko asettaa lataustilaan (loading-prop) ja näyttää visuaalinen \"Ladataan...\" -teksti taulukon yläpuolella.",
+      "point_6": "Layout shiftin välttämiseksi taulukolle on hyvä antaa loadingRowAmount-prop, joka kertoo kuinka monta skeleton-riviä taulukkoon piirretään lataustilan aikana.",
+      "point_7": "Kun taulukon järjestystä muutetaan, aseta taulukkokomponentin tableSortedAriaLiveText-attribuutin teksti vastaamaan muuttunutta järjestystä. Tällöin tieto välitetään ruudunlukijakäyttäjille.",
+      "point_8": "Mikäli rivien valintamahdollisuus on kytketty päälle, tulee jokaiselle taulukon dataobjektille asettaa rowSelectionCheckboxLabel-attribuutti, joka kertoo käyttäjälle mitä tietoa rivillä oleva valintaruutu edustaa."
+    },
+    "reference_implementation": {
+      "heading": "Referenssitoteutus",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen taulukon suodattamisesta. Esimerkissä on simuloitu käyttötapausta, jossa taulukon data suodatetaan ja järjestellään selaimen sijaan serverillä.",
+      "link_text": "Lähdekoodi GitHubissa",
+      "table_heading": "Projektin henkilöstö",
+      "next_table_page": "Seuraava taulukon sivu",
+      "previous_table_page": "Edellinen taulukon sivu",
+      "table_pagination": "Taulukon sivutus",
+      "page": "Sivu",
+      "showing_page": "Näytetään sivu",
+      "out_of": "kautta",
+      "people": "henkilöä",
+      "chosen": "valittu",
+      "choose_all": "Valitse kaikki",
+      "remove_selections": "Poista valinnat",
+      "search": "Hae",
+      "show_on_page": "Näytä sivulla",
+      "table_is_sorted_asc": "Taulukko on järjestetty sarakkeen {{column}} mukaan nousevaan järjestykseen",
+      "table_is_sorted_desc": "Taulukko on järjestetty sarakkeen {{column}} mukaan laskevaan järjestykseen",
+      "loading": "Ladataan...",
+      "no_results": "Ei tuloksia",
+      "filter_by_work_hours": "Suodata työtuntien mukaan",
+      "table_filters": "Taulukon suodattimet"
+    }
+  },
   "static_form": {
+    "site_title": "Lomakkeen staattinen validointi | Suomi.fi Design System",
     "heading": "Lomakkeen staattinen validointi",
     "ingress": "Lomakkeiden validointiin suositellaan käytettäväksi ns. staattista mallia. Tässä mallissa lomakkeen kentät validoidaan vasta Lähetä-painiketta painettaessa, ja virheiden ilmoittamiseen käytetään erillistä ErrorSummary-komponenttia.",
     "accessibility_list": {
@@ -102,14 +147,15 @@
     }
   },
   "multi-insert": {
+    "site_title": "Multi-insert | Suomi.fi Design System",
     "heading": "Multi-insert",
     "ingress": "Lomakkeissa on toisinaan tarpeen lisätä sama moduuli eli tietokenttä tai tietokenttien yhdistelmä useaan kertaan. Tämän kaltaisen dynaamisen toiminnallisuuden toteuttamisessa on kiinnitettävä erityistä huomiota käytettävyyteen ja saavutettavuuteen.",
     "and_other_needed_components": "sekä moduulin sisältämät varsinaiset lomakekomponentit",
     "accessibility_list": {
-      "point_1": "Multi-insert-suunnittelumalli vaatii erityistä huomiota fokuksen oikean siirtymisen suhteen. Fokuksen siirtyminen on kuvattu erikseen jäljempänä tällä sivulla.",
+      "point_1": "Multi-insert -suunnittelumalli vaatii erityistä huomiota fokuksen oikean siirtymisen suhteen. Fokuksen siirtyminen on kuvattu erikseen jäljempänä tällä sivulla.",
       "point_2": "On hyvä tuoda selkeällä tekstillä ilmi, että moduuleita (referenssitoteutuksessa verkkosivuja) voi lisätä useita.",
       "point_3": "Jokaisen moduulin yhteydessä olevaan poista-painikkeeseen tulee liittää ruudunlukijaa varten uniikki tieto siitä tiedosta, jota ollaan poistamassa. Referenssitoteutuksessa on esitetty, miten painikkeen aria-label muuttuu dynaamisesti moduulin tärkeimmän tietokentän arvon mukaan.",
-      "point_4": "Moduulin poistamisen jälkeen näytetään ponnahdusilmoitus (toast), jolle on asetettu rooliksi alert. Tämän johdosta myös ruudunlukijakäyttäjät saavat tiedon poistamisesta.",
+      "point_4": "Moduulin poistamisen jälkeen näytetään ponnahdusilmoitus (Toast), jotka renderöidään HTML-dokumentissa valmiiksi esiintyvän aria-live -regionin sisään. Tämän johdosta myös ruudunlukijakäyttäjät saavat tiedon moduulin poistamisesta.",
       "point_5": "Mikäli lomaketta tallennettaessa moduuleita on jäänyt kokonaan tyhjäksi, ei niitä huomioida, vaan ne poistetaan tallennetusta versiosta. Jos yksittäisiä pakollisia tietoja on jäänyt puuttumaan moduulin sisällä, ne indikoidaan tavalliseen tapaan komponenttien statustekstien avulla."
     },
     "components_text": "Mallissa käytetyt komponentit",
@@ -123,7 +169,7 @@
     },
     "reference_implementation": {
       "heading": "Referenssitoteutus",
-      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen multi-insert-suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen multi-insert -suunnittelumallista. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
       "link_text": "Lähdekoodi GitHubissa",
       "add_at_least_one_website": "Lisää vähintään yksi verkkosivu",
       "named_website_removed": "Verkkosivu {{website_name}} poistettiin",
@@ -149,6 +195,7 @@
     }
   },
   "datetime": {
+    "site_title": "Päivämäärä ja kellonaika | Suomi.fi Design System",
     "heading": "Päivämäärä ja kellonaika",
     "ingress": "Ajankohdan eli päivämäärän ja kellonajan yhteinen lisääminen lomakkeissa vaatii erityistä huomiointia saavutettavuuden osalta. Saavutettavuus- ja käytettävyyshuomiot on eritelty jäljempänä tällä sivulla.",
     "accessibility_list": {
@@ -208,6 +255,50 @@
       "there_are_errors": "Lomakkeella havaittiin seuraavat ongelmat"
     }
   },
+  "notification_components": {
+    "site_title": "Ilmoitukset ja ilmoituskomponentit | Suomi.fi Design System",
+    "heading": "Ilmoitukset ja ilmoituskomponentit",
+    "ingress": "Suomi.fi Design System sisältää neljä eri komponenttia, joilla voidaan esittää käyttäjälle erilaisia ilmoituksia: Alert, InlineAlert, Notification ja Toast. Tällä sivulla kuvataan näiden komponenttien erot ja käyttötarkoitukset.",
+    "components_text": "Mallissa käytetyt komponentit",
+    "table": {
+      "heading": "Komponenttien vertailu",
+      "notification_target": "Milloin käytetään",
+      "appears_dynamically": "Ilmestyy dynaamisesti",
+      "location": "Sijainti sivulla",
+      "alert": {
+        "target": "Ilmoitus koskee staattisesti koko sivua tai sivustoa",
+        "appears": "Ei",
+        "location": "Sivun yläreuna"
+      },
+      "inline_alert": {
+        "target": "Ilmoitus näytetään käyttäjän suorittaman interaktion jälkeen, ja se koskee sivun tiettyä osaa (esim. lomake)",
+        "appears": "Kyllä",
+        "location": "Ilmoituksen kohteen yläpuolella"
+      },
+      "notification": {
+        "target": "Ilmoitus koskee sivua tai sivun tiettyä osaa, eikä sen näyttämiseen vaadita ensin käyttäjän interaktiota",
+        "appears": "Ei",
+        "location": "Ilmoituksen kohteen yläpuolella tai sivun alussa"
+      },
+      "toast": {
+        "target": "Ilmoitus on toissijainen ja se näytetään hetkellisesti käyttäjän suorittaman interaktion jälkeen",
+        "appears": "Kyllä",
+        "location": "Kelluu sivun oikeassa yläkulmassa"
+      }
+    },
+    "arialive": {
+      "heading": "Dynaamiset ilmoitukset",
+      "text_1": "Kun ilmoitus lisätään sivulle dynaamisesti käyttäjän interaktion seurauksena (InlineAlert tai Toast), tulee huolehtia siitä, että myös ruudunlukijakäyttäjät saavat tiedon ilmoituksesta. Paras keino tähän on asettaa ilmoitukset sellaisen HTML-elementin sisään, jolla on aria-live -attribuutti.",
+      "text_2": "Huomioi, että aria-live -attribuutin sisältävän elementin tulee esiintyä HTML-dokumentissa ennen kuin ilmoitus renderöidään sen sisään, jotta ruudunlukijat rekisteröivät sisällön muutoksen. Alla on esitetty yksinkertainen esimerkki aria-live -regionista ja sisältöherätekomponentin käytöstä."
+    },
+    "reference_implementation": {
+      "link_text": "Lähdekoodi GitHubissa",
+      "dummy_text": "Jokin sivuston osa, esimerkiksi lomake, jossa käyttäjä suorittaa interaktioita ja saa siitä mahdollisia ilmoituksia.",
+      "button_text": "Näytä ilmoitus",
+      "alert_text": "Pakollisia tietoja puuttuu. Ole hyvä ja täytä kaikki pakolliset kentät.",
+      "arialive_area_text": "Div-elementti, joka sisältää aria-live -attribuutin ja jonka sisään ilmoitukset asetetaan."
+    }
+  },
   "styles": {
     "styles_usage_info": "Tyylien käyttöohje",
     "colors": "Värit",
@@ -228,8 +319,8 @@
     "ingress": "Suomi.fi:n typografiateema sisältää kooltaan ja tyyliltään määritellyt tekstikomponentit ja tekstitokenit.",
     "font_title": "Kirjasintyyppi (fontti)",
     "font_text_1": "Suomi.fi-tyyleissä ja -käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on open source -fontti, eli kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Suomi.fi Design System vastaa fontin jakelusta oman palvelimensa kautta.",
-    "font_text_2": "Source Sans Pro -kirjasinta käyttävien verkkopalveluiden ei ole tarpeen esittää OFL-lisenssiä palvelussaan erikseen. Tämä perustuu siihen, että OFL-lisensoituja kirjasimia saa käyttää vapaasti \"osana ohjelmistoa\". Lisenssitekstitiedosto on kuitenkin mukana alla olevassa TTF-paketissa sekä mainintana valmiissa CSS-tiedostossa, joka sisältää webfonttimääritteet (linkki alla).",
-    "font_link_text": "Lataa kirjasin Source Sans Pro omalle laitteellesi (TTF)",
+    "font_text_2": "Source Sans Pro -kirjasinta käyttävien verkkopalveluiden ei ole tarpeen esittää OFL-lisenssiä palvelussaan erikseen. Tämä perustuu siihen, että OFL-lisensoituja kirjasimia saa käyttää vapaasti \"osana ohjelmistoa\". Lisenssitekstitiedosto on kuitenkin mukana alla olevassa zip-paketissa sekä mainintana valmiissa CSS-tiedostossa, joka sisältää webfonttimääritteet (linkki alla).",
+    "font_link_text": "Lataa kirjasin Source Sans Pro omalle laitteellesi (TTF & WOFF2)",
     "font_text_3": "Kun koodiprojektissa on käytössä Suomi.fi-komponenttikirjasto (suomifi-ui-components), on projektissa syytä olla mukana tarvittavat webfonttimääritteet. Tämä tapahtuu helpoiten lisäämällä seuraava linkki projektin globaaliin CSS:ään.",
     "body_heading": "Leipäteksti",
     "body_text": "Käytä leipäteksteissä niille erityisesti suunniteltuja tekstikomponentteja Text ja Paragraph",
@@ -245,9 +336,9 @@
       "point_1": "Kun käytät komponenttien tarjoamaa valmista Suomi.fi-väriteemaa käyttöohjeistuksien mukaisesti, täyttyvät saavutettavuuskriteeristön (WCAG) kontrastivaatimukset ja väriyhdistelmät ovat saavutettavuudeltaan riittäviä.",
       "point_2": "Jos haluat muokata värejä sopimaan erilaiseen visuaaliseen ilmeeseen, muista varmistaa, että valitsemasi väriyhdistelmien kontrastit täyttävät saavutettavuuskriteeristön (WCAG) asettamat vaatimukset.",
       "point_3": "Huomioi, että saavutettavuuskriteeristön (WCAG) kontrastivaatimukset eivät koske komponentteja, joiden käyttö on estetty. On kuitenkin tärkeää varmistaa, että estetty sävy eroaa kontrastiltaan tarpeeksi aktiivisen tilan väristä.",
-      "point_4": "Tutustu näihin kohtiin tarkemmin saavutettavuuskriteeristön ohjeistuksessa: WCAG 2.1., onnistumiskriteeri 1.4.3 Kontrasti (minimi)."
+      "point_4": "Tutustu näihin kohtiin tarkemmin saavutettavuuskriteeristön ohjeistuksessa: WCAG 2.2., onnistumiskriteeri 1.4.3 Kontrasti (minimi)."
     },
-    "contrast_link": "WCAG 2.1 kontrastivaatimukset",
+    "contrast_link": "WCAG 2.2 kontrastivaatimukset",
     "brand": {
       "heading": "Brändiväri",
       "paragraph": "Brändiväriä (brandBase) käytetään Suomi.fi-palveluiden logossa, alatunnisteessa sekä palveluiden yläreunan värillisessä palkissa."
@@ -317,7 +408,7 @@
     "ux_and_accessibility": {
       "heading": "Käyttäjäkokemus ja saavutettavuus",
       "paragraph_1": "Yhdenmukaisten käyttöliittymäkomponenttien avulla eri palvelut näyttäytyvät käyttäjille yhtenäisinä ja käyttäjäkokemus säilyy eheänä. Käyttämällä samanlaisia elementtejä johdonmukaisesti, tuotamme palvelun käyttäjälle intuitiivisen ja ymmärrettävän käyttökokemuksen. Yhdenmukaisesti toimivat palvelut ovat käyttäjien etu.",
-      "paragraph_2": "Saavutettavuudesta huolehtiminen on erittäin keskeinen osa Suomi.fi Design System -kirjastoa. Kaikissa ratkaisuissa huomioidaan jo suunnitteluvaiheessa saavutettavuuskriteerit (WCAG 2.1). Apuvälinekäytön lisäksi suunnittelussa huomioidaan myös kognitiivinen saavutettavuus. Kaikki komponentit myös testataan saavutettavuusvaatimusten mukaisesti ennen niiden julkaisua."
+      "paragraph_2": "Saavutettavuudesta huolehtiminen on erittäin keskeinen osa Suomi.fi Design System -kirjastoa. Kaikissa ratkaisuissa huomioidaan jo suunnitteluvaiheessa saavutettavuuskriteerit (WCAG 2.2). Apuvälinekäytön lisäksi suunnittelussa huomioidaan myös kognitiivinen saavutettavuus. Kaikki komponentit myös testataan saavutettavuusvaatimusten mukaisesti ennen niiden julkaisua."
     },
     "brand": {
       "heading": "Suomi.fi-brändi",
@@ -334,10 +425,10 @@
   "accessibility_page": {
     "ingress": "Saavutettavuudella tarkoitetaan, että digitaaliset palvelut, verkkosivustot ja mobiilisovellukset sekä niiden sisällöt ovat sellaisia, että kuka tahansa voisi niitä käyttää ja ymmärtää, mitä niissä sanotaan. Verkkopalvelujen saavutettavuus koskee EU:n saavutettavuusdirektiivin ja sitä toteuttavan lain (Laki digitaalisten palvelujen tarjoamisesta) myötä koko julkista sektoria sekä osaa järjestöistä ja yrityksistä.",
     "paragraph_1": "Suomi.fi Design System -kirjaston avulla Digi- ja väestötietovirasto haluaa tukea ja edistää saavutettavien verkkopalvelujen rakentamista. Design Systemin -kirjastoon toteutettujen käyttöliittymäkomponenttien saavutettavuus varmistetaan sekä suunnittelu- että toteutusvaiheessa saavutettavuusasiantuntijan kanssa. Kaikki komponentit myös testataan ennen niiden julkaisua.",
-    "paragraph_2": "Laki digitaalisten palvelujen tarjoamisesta astui voimaan 1.4.2019. Saavutettavuusvaatimusten pohjana toimii World Wide Web Consortiumin laatima verkkosisältöjen saavutettavuusohjeistus WCAG 2.1 (tasot A ja AA).",
+    "paragraph_2": "Laki digitaalisten palvelujen tarjoamisesta astui voimaan 1.4.2019. Saavutettavuusvaatimusten pohjana toimii World Wide Web Consortiumin laatima verkkosisältöjen saavutettavuusohjeistus WCAG 2.2 (tasot A ja AA).",
     "link_1": "Laki digitaalisten palvelujen tarjoamisesta",
     "link_2": "EU:n saavutettavuusdirektiivi",
-    "link_3": "WCAG 2.1 -ohjeistus",
+    "link_3": "WCAG 2.2 -ohjeistus",
     "multiple_factors": {
       "heading": "Saavutettavuus koostuu useista tekijöistä",
       "paragraph_1": "Saavutettavuusdirektiivi ja lainsäädäntö sisältävät ennen kaikkea määräyksiä teknisistä vaatimuksista, joilla parannetaan saavutettavuutta. Yhtä tärkeitä osatekijöitä hyvän saavutettavuuden toteuttamiseksi ovat visuaalisen ilmeen saavutettavuus, rakenteen saavutettavuus sekä sisältöjen ymmärrettävyys ja selkeys.",
@@ -358,6 +449,7 @@
     "breadcrumb": "Breadcrumb (Murupolku)",
     "button": "Button (Painike)",
     "checkbox": "Checkbox (Valintaruutu)",
+    "chip": "Chip (Tunniste)",
     "date_input": "DateInput (Päivämääräkenttä)",
     "details": "Details (Lisätieto)",
     "dropdown": "Dropdown (Pudotusvalikko)",
@@ -367,6 +459,7 @@
     "heading": "Heading (Otsikko)",
     "hint_text": "Hint text (Ohjeteksti)",
     "icon": "Icons (Ikonit)",
+    "inline_alert": "InlineAlert (Sisältöheräte)",
     "label": "Label (Otsake)",
     "language_menu": "LanguageMenu (Kielivalikko)",
     "link": "Link (Linkki)",
@@ -381,6 +474,7 @@
     "side_navigation": "SideNavigation (Sivunavigaatio)",
     "singleselect": "SingleSelect (Yksittäisvalinta)",
     "status_text": "StatusText (Tilateksti)",
+    "table": "Table (Taulukko)",
     "text": "Text (Teksti)",
     "textarea": "Textarea (Tekstialue)",
     "text_input": "TextInput (Tekstikenttä)",
@@ -412,8 +506,8 @@
   },
 
   "actionmenu_page": {
-    "site_title": "Action Menu (Toimintovalikko) | Suomi.fi Design System",
-    "heading": "Action Menu (Toimintovalikko)",
+    "site_title": "ActionMenu (Toimintovalikko) | Suomi.fi Design System",
+    "heading": "ActionMenu (Toimintovalikko)",
     "ingress": "Toimintovalikkoa käytetään toimintojen käynnistämiseen silloin, kun toimintojen määrä on niin suuri, että tavalliset painikkeet veisivät liian paljon tilaa käyttöliittymässä.",
     "size_and_usage": {
       "heading": "Koko ja käyttö",
@@ -456,32 +550,20 @@
   "alert_page": {
     "site_title": "Alert (Heräte) | Suomi.fi Design System",
     "heading": "Alert (Heräte)",
-    "ingress": "Heräte-komponentin avulla voidaan antaa käyttäjälle tietoa palvelun tilasta. Tällaista tietoa voi olla esimerkiksi häiriötilanteet tai ongelmat sivuston tai sen osan toiminnassa sekä tiedot tulevista käyttökatkoista.",
+    "ingress": "Herätekomponentin avulla voidaan antaa käyttäjälle tietoa verkkosivuston tilasta. Tällaista tietoa voi olla esimerkiksi häiriötilanteet tai ongelmat sivuston tai sen osan toiminnassa sekä tiedot tulevista käyttökatkoista.",
     "accessibility_list": {
-      "point_1": "Käytä komponentista aina asiaankuuluvaa varianttia (Alert tai InlineAlert). Ks. 'Koko ja käyttö'.",
-      "point_2": "Alert komponentti on myös semanttisesti alert, joka tarkoittaa, että sen sisällön muuttuessa komponentin sisältö luetaan välittömästi ruudunlukijakäyttäjille.",
-      "point_3": "Sisältöherätteessä ruudunlukijakäyttäytyminen on säädettävissä, mutta sitä ei tule kytkeä kokonaan pois päältä.",
-      "point_4": "Mikäli sisältöheräte liittyy selkeästi tiettyyn interaktiiviseen elementtiin sivulla, informoi yhteys myös ruudunlukijakäyttäjille käyttäen esimerkiksi 'aria-describedby' attribuuttia"
-    },
-    "what_does_the_component_contain": {
-      "heading": "Mistä komponentti koostuu",
-      "text": "Heräte on jaettu kahteen eri komponenttiin (Alert ja InlineAlert). Komponentti koostuu herätteen tyyppiä kuvaavasta ikonista, sisältöalueesta sekä Alert komponentin tapauksessa 'sulje' -painikkeesta. Komponentin taustaväri sekä InlineAlert tapauksessa vasemman reunuksen väri muuttuu käytettävän herätetyypin mukaan."
+      "point_1": "Käytä komponentista aina asiaankuuluvaa varianttia. Ks. 'Koko ja käyttö'.",
+      "point_2": "Herätekomponentti on myös semanttisesti alert, mikä tarkoittaa, että useimmat ruudunlukijat lukevat sen sisällön sivulatauksen yhteydessä."
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",
-      "text_1": "Käyttötapa vaihtelee käytettävän komponentin mukaan. Alert komponenttia käytetään sivun pääsisällön ylälaidassa otsikon yläpuolella ilmaisemaan sivua tai sivustoa koskevia virhe- ja häiriötiedotteita. Alert komponenttia käytetään koko sisältöalueen levyisenä. Tulevia käyttökatkoja ilmaisemaan käytetään neutraalia varianttia, ja akuutteja häiriötilanteita varten 'error' varianttia.",
-      "text_2": "InlineAlert komponenttia puolestaan käytetään sivun sisällön seassa toimintokohtaisiin ilmoituksiin ilmaisemaan esimerkiksi virhettä lomakkeen toiminnassa tai tärkeää lisäohjetta lomakkeen täyttämiseen liittyen."
+      "text_1": "Herätekomponenttia käytetään sivun pääsisällön ylälaidassa otsikon yläpuolella ilmaisemaan sivua tai sivustoa koskevia virhe- ja häiriötiedotteita. Herätekomponenttia käytetään koko sisältöalueen levyisenä.",
+      "text_2": "Toissijaista informaatiota ilmaisemaan käytetään neutraalia varianttia, tulevista käyttökatkoista kertomaan käytetään varoitusvarianttia, ja akuuteissa häiriötilanteissa sopivin on virhevariantti."
     },
-
     "example": {
-      "alert_info_paragraph": "Palvelussa käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
-      "inline_alert_heading": "Sisältöheräte (Inline Alert)",
-      "inline_paragraph": "Sisältöherätettä käytetään sivun sisällön seassa ilmaisemaan huomioita, varoituksia tai virhetilanteita.",
-      "inline_alert_info_heading": "Vahvista valtuus omalta osaltasi",
-      "inline_alert_info_paragraph": "Vahvistamisen jälkeen muut vahvistajat näkevät Omat vahvistettavat -sivulla valtuuden, joka heidän tulee vahvistaa. Valtuus on voimassa vasta, kun kaikki ovat sen vahvistaneet.",
-      "inline_alert_warning_paragraph": "Tekstissä on virheitä",
-      "inline_alert_error_heading": "Allekirjoittaminen ei ole mahdollista",
-      "inline_alert_error_paragraph": "Hakemusta ei voi allekirjoittaa henkilö, jonka ulkomaalainen henkilöasiakirja ei ole voimassa, koska hän ei voi todistaa henkilöllisyyttään.",
+      "alert_info_paragraph": "Käytät parhaillaan palvelun beta-versiota, jossa saattaa ilmetä puutteita.",
+      "alert_warning_paragraph": "Palvelussa on käyttökatko ensi tiistaina 3:00 - 5:00 aamuyöllä",
+      "alert_error_paragraph": "Palvelussa on havaittu häiriöitä, jotka voivat vaikuttaa sen toimintaan. Ongelmaa korjataan parhaillaan.",
       "close_button": "Sulje"
     }
   },
@@ -615,7 +697,7 @@
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla notifikaatioteksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Notifikaatiotekstin lisäksi tilaa viestitään käyttäjälle myös värien sekä valintaruudun reunuksen paksuuden avulla. "
+      "text": "Valintaruutu koostuu neliönmuotoisesta ruudusta ja sen oikealla puolella olevasta label-tekstistä. Valintaruudun alla voidaan näyttää valintaruutuun liittyvä ohjeteksti. Lisäksi on mahdollista näyttää ohjetekstin alla tilateksti, jolla voidaan viestiä käyttäjälle komponentin tilasta, esimerkiksi virheellisestä valinnasta. Tilatekstin lisäksi tilaa viestitään käyttäjälle myös sen etupuolella olevan ikonin, värien sekä valintaruudun reunuksen paksuuden avulla. "
     },
     "example": {
       "default": {
@@ -638,11 +720,11 @@
         "content_label_visit": "Henkilökohtaisella vierailulla"
       },
       "hintstate": {
-        "title": "Ohje- ja notifikaatiotekstit",
-        "description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit, jotka näytetään komponentin alla. Komponentin ja notifikaatiotekstin ulkonäkö muuttuu komponentin tilan (status) mukana.",
+        "title": "Ohje- ja tilatekstit",
+        "description": "Komponentille voidaan antaa ohje- ja tilatekstit, jotka näytetään komponentin alla. Komponentin ja tilatekstin ulkonäkö muuttuu komponentin tilan (status) mukana.",
         "content": "Valinta",
         "hint_text": "Ohjeteksti valinnan tueksi",
-        "status_text": "Notifikaatioteksti"
+        "status_text": "Tilateksti"
       },
       "disabled": {
         "title": "Estetty valintaruutu (Disabled Checkbox)",
@@ -652,9 +734,33 @@
     }
   },
 
+  "chip_page": {
+    "site_title": "Chip (Tunniste) | Suomi.fi Design System",
+    "heading": "Chip (Tunniste)",
+    "ingress": "Tunniste on komponentti, joka esittää informaatiota lyhyessä ja visuaalisesti korostetussa muodossa. Tunniste voi olla interaktiivinen painike tai pelkästään informatiivinen esitysmuotoinen komponentti.",
+    "accessibility_list": {
+      "point_1": "Kun tunnistekomponenttia käytetään interaktiivisena painikkeena, on sille annettava saavutettava nimilappu (actionLabel) joka kuvaa interaktion tarkoituksen."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Tunniste koostuu tekstistä, ja sitä ympäröivästä sinisestä korostuksesta. Tunniste voi olla interaktiivinen painike tai pelkästään informatiivinen esitysmuotoinen komponentti (StaticChip).",
+      "text_2": "Kun komponentti on interaktiivinen, siihen kuuluu tyypillisesti myös oikean laidan ikoni, joka merkitsee poistamisen mahdollisuutta."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Tunnistekomponenttia käytetään silloin, kun halutaan esittää lyhyttä informaatiota visuaalisesti korostetussa muodossa.",
+      "text_2": "Interaktiivista tunnistetta käytetään esimerkiksi valintakomponenttien yhteydessä merkitsemään listalta valittuja vaihtoehtoja ja mahdollistamaan valintojen poistaminen. Tällöin tunniste voi olla myös estetyssä tilassa (disabled). Esitysmuotoista tunnistetta (StaticChip) voidaan puolestaan käyttää esimerkiksi tietojen kategorisoimiseen."
+    },
+    "example": {
+      "chip_text": "Suomi (Chip)",
+      "action_label": "Poista valinta Suomi",
+      "static_chip_text": "Suomi (StaticChip)"
+    }
+  },
+
   "date_input_page": {
-    "site_title": "Date input (Päivämääräkenttä) | Suomi.fi Design System",
-    "heading": "Date input (Päivämääräkenttä)",
+    "site_title": "DateInput (Päivämääräkenttä) | Suomi.fi Design System",
+    "heading": "DateInput (Päivämääräkenttä)",
     "ingress": "Päivämääräkenttä on komponentti, johon käyttäjä voi syöttää päivämäärätiedon valitsemalla sen kalenterista tai kirjoittamalla päivämäärän syöttökenttään. Päivämääräkenttä ohjaa käyttäjää syöttämään päivämäärän oikeassa muodossa muoto-ohjeen ja kalenterin avulla.",
     "accessibility_list": {
       "point_1": "Päivämääräkentän kanssa tulee käyttää otsaketta (label), joka kuvaa päivämääräkentän tarkoituksen. Otsake on osa päivämääräkomponenttia.",
@@ -706,7 +812,7 @@
   "dropdown_page": {
     "site_title": "Dropdown (Pudotusvalikko) | Suomi.fi Design System",
     "heading": "Dropdown (Pudotusvalikko)",
-    "ingress": "Pudotusvalikko kokoaa sisältölistan monesta valittavasta vaihtoehdosta joista käyttäjä voi valita yhden. Pudotusvalikosta voidaan myös aktivoida toimintoja.",
+    "ingress": "Pudotusvalikko kokoaa sisältölistan monesta valittavasta vaihtoehdosta joista käyttäjä voi valita yhden.",
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Pudotusvalikko säästää tilaa käyttöliittymässä sekä vähentää valinta- ja tekstinsyöttövirheitä tarjoamalla käyttäjälle listan valmiiksi valituista vaihtoehdoista. Pudotusvalikkon avulla käyttäjä valitsee listasta yhden vaihtoehdon. Pudotusvalikolle voidaan antaa oletusarvo tai näyttää oletuksena haluttu täyteteksti (visual placeholder) valikkopainikkeessa. Täyteteksti katoaa käyttäjän tehtyä valinnan."
@@ -734,7 +840,7 @@
       "option3": "6 kk",
       "option4": "Vuosi",
       "example1": {
-        "title": "Toimintovalikko (Action Menu)",
+        "title": "Toimintovalikko (ActionMenu)",
         "description": "Pudotusvalikkoa voidaan käyttää myös toimintojen aktivoimiseen, jolloin komponenttia kutsutaan toimintovalikoksi. Tällöin annettu täyteteksti on aina näkyvissä eivätkä tehdyt valinnat muuta komponentin tilaa.",
         "label": "Valitse toiminto",
         "placeholder": "Toimintovalikko",
@@ -840,10 +946,10 @@
       "point_1": "Kuten näkevä käyttäjä, ruudunlukijakäyttäjäkin muodostaa kokonaiskäsityksen sisällöstä otsikoiden perusteella.",
       "point_2": "Otsikointihierarkian tulee olla yhtenäinen (h1, h2, h3, h4, h5), eikä välistä saa puuttua otsikkotasoja. Oikea otsikkotasojen hierarkia tukee rakenteen hahmottamista.",
       "point_3": "Otsikkotasojen puuttuminen välistä tai otsikkotasojen epäjärjestys vaikeuttaa sisällön hahmottamista ruudunlukijaa käytettäessä. Ruudunlukija tulkitsee vain heading-merkityt komponentit otsikoiksi.",
-      "point_4": "Huomioi tekstiä koskevat saavutettavuusohjeistukset (WCAG 2.1): 1.4.3 Kontrasti (minimi), 1.4.4 Tekstin koon muuttaminen, 1.4.12 Tekstin välistys."
+      "point_4": "Huomioi tekstiä koskevat saavutettavuusohjeistukset (WCAG 2.2): 1.4.3 Kontrasti (minimi), 1.4.4 Tekstin koon muuttaminen, 1.4.12 Tekstin välistys."
     },
 
-    "link_1": "Verkkosisällön saavutettavuusohjeet (WCAG) 2.1",
+    "link_1": "Verkkosisällön saavutettavuusohjeet (WCAG) 2.2",
     "link_2": "Lisätietoa typografiamäärittelyistä Tyylit-osiosta",
 
     "example": {
@@ -905,9 +1011,31 @@
     }
   },
 
+  "inlinealert_page": {
+    "site_title": "InlineAlert (Sisältöheräte) | Suomi.fi Design System",
+    "heading": "InlineAlert (Sisältöheräte)",
+    "ingress": "Sisältöheräte on dynaamisesti verkkosivulle ilmaantuva komponentti, joka tuo esiin jonkin tärkeän viestin huomiota herättävällä tavalla.",
+    "accessibility_list": {
+      "point_1": "Koska sisältöherätettä käytetään dynaamisesti, tulee tämä huomioida saavutettavuuden näkökulmasta. Sisältöheräte on aina sijoitettava sellaisen elementin sisään, joka sisältää aria-live -attribuutin (esim. aria-live=\"polite\"). Kyseisen elementin tulee esiintyä HTML dokumentissa ennen kuin sisältöheräte renderöidään sen sisään. Lisätietoa live-regioneista löytyy tämän sivun lopussa olevasta linkistä.",
+      "point_2": "Mikäli sisältöheräte liittyy selkeästi tiettyyn interaktiiviseen elementtiin sivulla, informoi yhteys myös ruudunlukijakäyttäjille käyttäen esimerkiksi 'aria-describedby' attribuuttia",
+      "point_3": "Käytä komponentista aina asiaankuuluvaa varianttia. Ks. 'Koko ja käyttö'."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Sisältöherätettä käytetään kiinnittämään käyttäjän huomio tiettyyn verkkosivun toimintoon tai interaktioon. Se on suunniteltu ilmaantumaan dynaamisesti sisällön sekaan sopivalla hetkellä (ks. 'Saavutettavuus ja käytettävyys').",
+      "text_2": "Sisältöheräte on yleensä leveydeltään saman kokoinen kuin sisältö, johon se liittyy.",
+      "text_3": "Mikäli ilmoituksen ei ole tarkoitus ilmaantua sivustolle dynaamisesti, vaan se on osa sivun staattista sisältöä, tulee käyttää Notification (Ilmoitus) -komponenttia."
+    },
+    "example": {
+      "info_text": "Varmista että nimesi on kirjoitettu tismalleen samalla tavalla kuin henkilöllisyystodistuksessasi.",
+      "warning_text": "Tekstissä on kielioppivirheitä. Tarkista kirjoitusasu.",
+      "error_text": "Pakollisia tietoja puuttuu. Ole hyvä ja täytä kaikki pakolliset kentät."
+    }
+  },
+
   "language_menu_page": {
-    "site_title": "Language Menu (Kielivalikko) | Suomi.fi Design System",
-    "heading": "Language Menu (Kielivalikko)",
+    "site_title": "LanguageMenu (Kielivalikko) | Suomi.fi Design System",
+    "heading": "LanguageMenu (Kielivalikko)",
     "ingress": "Kielivalikkoa käytetään, kun palvelua voidaan käyttää useilla kielillä, eli sillä on useita kieliversioita. Kielen vaihtaminen vaihtaa käyttöliittymässä käytetyn kielen.",
     "accessibility_list": {
       "point_1": "Suomi.fi kielivalintakomponentissa otsake (label) on rakennettu komponenttiin, mutta teksti on visuaalisesti piilotettu näkyvistä tyylisyistä. Otsakkeen (label) käyttäminen pudotusvalikon yhteydessä on muuten aina suositeltavaa.",
@@ -1106,7 +1234,6 @@
     "site_title": "MultiSelect (Monivalinta) | Suomi.fi Design System",
     "heading": "MultiSelect (Monivalinta)",
     "ingress": "Monivalinta-komponentin avulla käyttäjä voi valita yhden tai useamman vaihtoehdon listalta.",
-    "note_accessibility": "Monivalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijalla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromiumpohjaisilla selaimilla, kuten Chromella tai Edgellä.",
 
     "accessibility_list": {
       "point_1": "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
@@ -1152,10 +1279,10 @@
   "notification_page": {
     "site_title": "Notification (Ilmoitus) | Suomi.fi Design System",
     "heading": "Notification (Ilmoitus)",
-    "ingress": "Ilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää olennaista palvelun osaan ja käyttäjän toimintaan liittyvää palautetta ja tietoa. ",
+    "ingress": "Ilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää olennaista palvelun osaan ja käyttäjän toimintaan liittyvää palautetta ja tietoa. Sitä ei tule käyttää dynaamisesti sivulle ilmestyvänä ilmoituksena.",
     "accessibility_list": {
-      "point_1": "Mikäli ilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region, jonka sisään ilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ilmoituksesta.",
-      "point_2": "Ilmoituksen otsikkotaso on määriteltävissä käyttötapauksen mukaan. Käytä ilmoituksessa otsikkotasoa, joka ei riko näkymän otsikkojärjestystä.",
+      "point_1": "Ilmoituksen otsikkotaso on määriteltävissä käyttötapauksen mukaan. Käytä ilmoituksessa otsikkotasoa, joka ei riko näkymän otsikkojärjestystä.",
+      "point_2": "Ilmoituskomponentti on semanttisesti section-elementti, jolla on attribuutti role='region'. Tämä mahdollistaa komponentin saavutettavan erottuvuuden sivun muusta sisällöstä.",
       "point_3": "Sivulla voi olla yhtä aikaa useita ilmoituksia näkyvissä."
     },
     "what_does_the_component_contain": {
@@ -1164,7 +1291,8 @@
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",
-      "text_1": "Ilmoituksia voidaan käyttää joko näkymän pääsisällön alussa tai relevantissa paikassa sisällön seassa, ja siitä on olemassa kaksi eri varianttia. Huomioilmoitus kertoo, että palvelussa on jotain huomioitavaa. Huomioilmoituksen tunnisteväri on sininen ja sitä käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Virheilmoitus viestii käyttäjälle merkittävästä virhetilanteesta tai poikkeuksesta tietyssä näkymässä. Virheilmoituksen tunnisteväri on punainen. Kapeilla näytöillä, kuten mobiilissa käytetään lisäksi pienille ruuduille tarkoitettuja tyylejä."
+      "text_1": "Ilmoituksia voidaan käyttää joko näkymän pääsisällön alussa tai relevantissa paikassa sisällön seassa, ja siitä on olemassa kaksi eri varianttia. Huomioilmoitus kertoo, että palvelussa on jotain huomioitavaa. Huomioilmoituksen tunnisteväri on sininen ja sitä käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Virheilmoitus viestii käyttäjälle merkittävästä virhetilanteesta tai poikkeuksesta tietyssä näkymässä. Virheilmoituksen tunnisteväri on punainen. Kapeilla näytöillä, kuten mobiilissa käytetään lisäksi pienille ruuduille tarkoitettuja tyylejä.",
+      "text_2": "Ilmoituskomponenttia ei tule käyttää dynaamisesti käyttäjän interaktion jälkeen sivulle ilmestyvänä ilmoituksena, vaan se on osa sivun ensimmäisen latauksen sisältöä. Dynaamisesti ilmestyvänä ilmoituksena käytetään InlineAlert (Sisältöheräte) -komponenttia."
     },
 
     "example": {
@@ -1221,8 +1349,8 @@
     }
   },
   "radiobutton_page": {
-    "site_title": "Radio Button (Valintanappi) | Suomi.fi Design System",
-    "heading": "Radio Button (Valintanappi)",
+    "site_title": "RadioButton (Valintanappi) | Suomi.fi Design System",
+    "heading": "RadioButton (Valintanappi)",
     "ingress": "Valintanappi on lomakekomponentti, jolla voi valita yhden vaihtoehdon useammasta valintanapista koostuvasta valintanappiryhmästä. Käyttäjä voi valita kerrallaan vain yhden vaihtoehdon. Kun käyttäjä tekee uuden valinnan, aiemmin tehty valinta poistuu ja korvautuu uudella valinnalla.",
     "accessibility_list": {
       "point_1": "Pyri kuvaaviin, lyhyisiin ja ytimekkäisiin otsakkeisiin (label).",
@@ -1253,12 +1381,12 @@
       },
 
       "large": {
-        "title": "Valintanapin mobiiliversio (Large Radio Button)",
+        "title": "Valintanapin mobiiliversio (Large RadioButton)",
         "group_hint": "Valittua toimitustapaa ei voi muuttaa lomakkeen lähetyksen jälkeen",
         "description": "Mobiililaitteilla ja pienillä näytöillä käytetään valintanapin mobiiliversiota."
       },
       "hint": {
-        "title": "Valintanappi ohjetekstillä (Radio Button + Hint Text)",
+        "title": "Valintanappi ohjetekstillä (RadioButton + Hint Text)",
         "description": "Komponentille voidaan antaa ohjeteksti, joka näytetään komponentin alla.",
         "content": "Sähköisesti",
         "hint_text": "Saan päätökset Suomi.fi viesteihin",
@@ -1267,21 +1395,21 @@
       },
 
       "disabled": {
-        "title": "Estetty valintanappi (Disabled Radio Button)",
+        "title": "Estetty valintanappi (Disabled RadioButton)",
         "description": "Estetty valintanappi ei ole käyttäjän valittavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen."
       }
     }
   },
 
   "search_input_page": {
-    "site_title": "Search Input (Hakukenttä) | Suomi.fi Design System",
-    "heading": "Search Input (Hakukenttä)",
+    "site_title": "SearchInput (Hakukenttä) | Suomi.fi Design System",
+    "heading": "SearchInput (Hakukenttä)",
     "ingress": "Hakukentän avulla käyttäjä voi etsiä tarvitsemaansa sisältöä sivustolta tai sovelluksesta hakusanoja käyttäen. Hakukenttä on käyttäjän tukena, mikäli hän ei löydä etsimäänsä sisältöä navigoimalla.",
     "accessibility_list": {
       "point_1": "Suurennuslasi-ikoni on yleisesti tunnettu tunniste hakutoiminnolle, ja siksi sitä ei ole välttämätöntä yhdistää visuaalisesti sanaan 'haku'. Ruudunlukijalle kerrotaan kuitenkin toiminnon nimi komponenttiin saavuttaessa.",
       "point_2": "Hakukenttää kannattaa käyttää, sillä useimmat käyttäjät hyötyvät siitä, että he voivat etsiä sisältöä sivustolta tai sovelluksesta.",
       "point_3": "Jos toteutuksen kokonaisuus on pieni ja yksinkertainen (single page ratkaisu), hakukenttää ei kuitenkaan tarvitse välttämättä käyttää.",
-      "point_4": "Anna hakukentälle aina otsaketieto. Otsaketieto voidaan piilottaa visuaalisesti, mutta ruudunlukijakäyttäjälle otsake on tärkeä tieto hänen saapuessaan komponenttiin."
+      "point_4": "Anna hakukentälle aina otsaketieto. Otsaketieto voidaan piilottaa visuaalisesti, mutta ruudunlukijakäyttäjälle otsake on tärkeä tieto hänen saapuessaan komponenttiin. Otsaketiedosta tulee selvitä haun konteksti, kuten \"Hae sivustolta\" tai \"Hae toimipakkoja\"."
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
@@ -1290,13 +1418,15 @@
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Kirjoitettu hakuteksti on mahdollista poistaa kokonaan käyttämällä poistopainiketta. Hakupainikkeen painaminen tai hakusanan valitseminen näppäimistön enter-painikkeella vie käyttäjän hakusivulle, jossa näytetään hakutulokset. Mahdollinen uusi haku voidaan tehdä hakusivulla.",
-      "text_2": "Hakukentän tulee olla leveydeltään minimissään 320 px. Hakukentän tekstialueen suositusleveys on minimissään 230 px, joka toteutuu komponentin 320 px kokonaisleveydellä. Tähän kokoon mahtuu hyvin yleisimpiin hakutilanteisiin riittävät hakuehdot. Kapeimmilla mobiilinäytöillä leveyttä rajoittavat sivumarginaalit, jolloin komponentin minimileveys on 290px.",
-      "text_3": "Pienikokoisilla näytöillä hakukomponentin tulee aueta koko header-palkin päälle peittäen alleen muun headersisällön. Hakukomponentin tulee tällöin olla pienennettävissä erillisestä \"Sulje\" -painikkeesta. Mobiililaitteilla hakupalkki pysyy näkyvissä, vaikka käyttäjä klikkaa/täppää sisältöalueelle."
+      "text_2": "Hakukentän tulee olla leveydeltään minimissään 290 px. Hakukentän tekstialueen suositusleveys on minimissään 230 px, joka toteutuu komponentin 290 px kokonaisleveydellä. Tähän kokoon mahtuu hyvin yleisimpiin hakutilanteisiin riittävät hakuehdot. Kapeimmilla mobiilinäytöillä leveyttä rajoittavat sivumarginaalit, jolloin komponentin minimileveys on 290px.",
+      "text_3": "Pienikokoisilla näytöillä hakukomponentin tulee aueta koko header-palkin päälle peittäen alleen muun headersisällön. Hakukomponentin tulee tällöin olla pienennettävissä erillisestä \"Sulje\" -painikkeesta. Mobiililaitteilla hakupalkki pysyy näkyvissä, vaikka käyttäjä klikkaa/täppää sisältöalueelle.",
+      "text_4": "Komponentille voidaan antaa myös lista hakuehdotuksista, jotka näytetään valikossa hakukentän alapuolella. Hakuehdotukset auttavat käyttäjää löytämään sopivan hakusanan tai sisällön."
     },
 
     "in_ui": {
       "heading": "Komponentti käyttöliittymässä",
-      "text_1": "Suomi.fi:n sivustohakukomponentti sijaitsee ylätunnisteessa kaikkialla verkkopalvelussa. On suositeltavaa asettaa hakukenttä sivuston yläreunaan tai osaksi ylätunnistetta. Useimmiten hakukenttä sijaitsee ylätunnisteen oikean laidan puolella."
+      "text_1": "Suomi.fi:n sivustohakukomponentti sijaitsee ylätunnisteessa kaikkialla verkkopalvelussa. On suositeltavaa asettaa hakukenttä osaksi ylätunnistetta. Hakukenttä voi sijaita lisäksi myös muualla käyttöliittymässä, mikäli käyttäjän on tarpeellista hakea sisältöä vain tietyssä kontekstissa (esim. dokumenttien haku).",
+      "text_2": "Sivulla näkyvien tietojen, kuten listojen ja taulukoiden suodatukseen käytetään lähtökohtaisesti tekstikenttää. Poikkeuksena tilanteet, joissa tietoja haetaan ja suodatetaan samalla toiminnolla."
     },
 
     "example": {
@@ -1309,8 +1439,8 @@
   },
 
   "service_navigation_page": {
-    "site_title": "Service navigation (Palvelunavigaatio) | Suomi.fi Design System",
-    "heading": "Service navigation (Palvelunavigaatio)",
+    "site_title": "ServiceNavigation (Palvelunavigaatio) | Suomi.fi Design System",
+    "heading": "ServiceNavigation (Palvelunavigaatio)",
     "ingress": "Palvelunavigaatiota käytetään jonkin sivusto-osion eri alasivujen tai alanäkymien välillä liikkumiseen.",
     "accessibility_list": {
       "point_1": "Navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä. Kapean ruudun varianttia käytettäessä navigaation avaavan/sulkevan painikkeen tekstin tulee niin ikään olla kuvaava ja ytimekäs.",
@@ -1348,8 +1478,8 @@
   },
 
   "side_navigation_page": {
-    "site_title": "Side navigation(Sivunavigaatio) | Suomi.fi Design System",
-    "heading": "Side navigation(Sivunavigaatio)",
+    "site_title": "SideNavigation (Sivunavigaatio) | Suomi.fi Design System",
+    "heading": "SideNavigation (Sivunavigaatio)",
     "ingress": "Sivunavigaatiota käytetään sisältösivujen välillä navigointiin erityisesti silloin kun sivut on ryhmitelty useaan eri alakategoriaan.",
     "accessibility_list": {
       "point_1": "Komponentin otsikon ja navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä.",
@@ -1391,10 +1521,9 @@
   },
 
   "singleselect_page": {
-    "site_title": "Single Select (Yksittäisvalinta) | Suomi.fi Design System",
-    "heading": "Single Select (Yksittäisvalinta)",
+    "site_title": "SingleSelect (Yksittäisvalinta) | Suomi.fi Design System",
+    "heading": "SingleSelect (Yksittäisvalinta)",
     "ingress": "Yksittäisvalinta-komponentin avulla käyttäjä voi valita yhden vaihtoehdon listalta.",
-    "accessibility": "Yksittäisvalinta ei toimi tällä hetkellä saavutettavasti VoiceOver ruudunlukijalla mikäli käytössä on MacOS ja Safari. Ongelma ei ilmene Chromium-pohjaisilla selaimilla, kuten Chromella tai Edgellä.",
 
     "accessibility_list": {
       "point_1": "Listalla olevien vaihtoehtojen tekstien tulee olla uniikkeja.",
@@ -1463,34 +1592,59 @@
         "placeholder": "Kirjoita perustelut"
       },
       "error": {
-        "title": "Ohje- ja notifikaatiotekstit",
-        "description": "Komponentille voidaan antaa ohje- ja notifikaatiotekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja notifikaatioteksti syötekentän alapuolella.",
+        "title": "Ohje- ja tilatekstit",
+        "description": "Komponentille voidaan antaa ohje- ja tilatekstit. Ohjeteksti näytetään otsikon ja syötekentän välissä, ja tilateksti syötekentän alapuolella.",
         "label": "Perustelut",
         "hint_text": "Perustele, miksi toimenpide tehdään ja millä tavalla toimenpide on päämiehen edun mukainen.",
         "placeholder": "Kirjoita perustelut",
         "status_text": "Perustelut on pakollinen tieto"
       },
       "disabled": {
-        "title": "Estetty Tekstialue (Disabled Textarea)",
+        "title": "Estetty tekstialue (Disabled Textarea)",
         "description": "Estetty tekstialue ei ole muokattavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
         "label": "Perustelut"
       }
     }
   },
 
-  "text_input_page": {
-    "site_title": "Text Input (Tekstikenttä) | Suomi.fi Design System",
-    "heading": "Text Input (Tekstikenttä)",
-    "ingress": "Tekstikenttä on komponentti, johon käyttäjä täyttää komponentin otsikossa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsikossa annettuun kysymykseen. Käyttäjälle voidaan antaa tarpeen mukaan ohjeistusta, mutta yksinkertaisissa käyttötapauksissa ohjeistusta ei tarvita. Tekstikenttää käytetään, kun kenttään täytettävä tieto on lyhyt. Jos täytettävä tieto on pitkä ja vaatii monta riviä, käytetään tekstialue-komponenttia.",
+  "table_page": {
+    "site_title": "Table (Taulukko) | Suomi.fi Design System",
+    "heading": "Table (Taulukko)",
+    "ingress": "Taulukkoa käytetään datan esittämiseen silloin kun se on luonteeltaan sarakemaista ja yksinkertaisen listan käyttäminen ei ole mielekästä.",
     "accessibility_list": {
-      "point_1": "Tekstikentän kanssa tulee aina käyttää otsaketta (label). Suomifi UI kirjaston komponenttiin otsake kuuluu pakollisena osana.",
-      "point_2": "Success- ja error-kenttiin on varattu tekstialue kentän alle viestiä varten. Teksti kertoo käyttäjälle mikä on kenttään täytetyn sisällön tila. Tekstimuotoisen viestin lisäksi tila sisältää värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.",
-      "point_3": "Tekstikentän leveys toimii visuaalisena rajoitteena käyttäjälle ja antaa vihjeen siihen syötettävästä informaation määrästä.",
-      "point_4": "Tekstikenttä komponenttia käytetään silloin kuin käyttäjän tulee täyttää vain yhden rivin informaatiota, kuten esimerkiksi nimensä. Monta riviä (multiline) vaativille vastauksille käytä Tekstialue (Textarea) komponenttia."
+      "point_1": "Taulukon tulee sisältää otsikko (caption), joka kertoo taulukon sisällöstä. Otsikko voi myös olla taulukon ulkopuolinen erillinen elementti, jolloin se tulee yhdistää taulukoon aria-labelledby -attribuutilla.",
+      "point_2": "Kapeammille ruuduille siirryttäessä taulukko muuttuu sivuttaissuunnassa vieritettäväksi. Vieritysmahdollisuuden havaitsemisen helpottamiseksi taulukon reunoilla on visuaalinen varjoefekti.",
+      "point_3": "Taulukkokomponentin monimutkaisempi käyttö on esitetty erikseen omassa suunnittelumallissaan. Katso "
     },
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
-      "text_1": "Tekstikenttä koostuu otsakkeesta ja kentästä, jossa on käyttäjää ohjeistava kenttäteksti. Suomi.fi -palvelussa käytetään yleensä puhuttelumuodossa olevaa ohjeistavaa kenttätekstiä. Lisäksi kenttä voi sisältää ohjetekstin, joka sijoittuu otsakkeen ja kentän väliin, mutta on teknisesti osa otsikkoa. Näin ruudunlukija lukee ohjetekstin otsakkeen jälkeen. Kenttään on liitettävissä notifikaatiotieto mahdollisesta virheestä tai onnistumisesta. Notifikaatiotieto näytetään kentän alapuolella. Tekstimuotoisen notifikaation lisäksi kentän reunus on notifikaation aikana värikoodattu virheen tai onnistumisen merkiksi. Kentälle voidaan asettaa myös ikoni, joka esitetään kentän oikeassa laidassa. Ikonia voidaan hyödyntää kentän käyttötarkoituksen viestimiseen.",
+      "text_1": "Suomi.fi Design Systemin taulukkokomponentti mukailee HTML:n natiivia taulukkoelementtiä. Taulukko koostuu sarakkeet määrittävästä otsikkorivistä ja varsinaisista datariveistä. Otsikkorivi on visuaalisesti erottuva. Datarivit sisältävät taulukon datan.",
+      "text_2": "Taulukon data on mahdollista järjestää eri sarakkeiden mukaan nousevaan ja laskevaan järjestykseen. Kun sarake on merkitty järjestyskelpoiseksi (sortable) sen nimen vieressä on järjestämistä kuvaava ikoni.",
+      "text_3": "Taulukon rivejä on mahdollista merkitä valituksi käyttäen enableRowSelection-attribuuttia. Tällöin rivin vasemmassa laidassa on valintaruutu, jota klikkaamalla rivi valitaan. Valitun rivin tausta on korostettu."
+    },
+    "example": {
+      "caption": "Projektin henkilöstö"
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Taulukko on hyvä valinta silloin, kun datan esittäminen sarakemaisessa muodossa on mielekästä ja datan määrä on riittävän suuri. Taulukon käyttöä suunnitellessa on hyvä miettiä, olisiko yksinkertainen lista parempi vaihtoehto.",
+      "text_2": "Taulukkokomponenttia käytetään usein monimutkaisemmassa kontekstissa, jossa dataa on tarpeen järjestellä, suodattaa ja sivuttaa. Taulukon käyttö tällaisessa tilanteessa on esitetty erikseen omassa suunnittelumallissaan."
+    }
+  },
+
+  "text_input_page": {
+    "site_title": "TextInput (Tekstikenttä) | Suomi.fi Design System",
+    "heading": "TextInput (Tekstikenttä)",
+    "ingress": "Tekstikenttä on komponentti, johon käyttäjä täyttää komponentin otsikossa pyydetyn tiedon tai kirjoittaa omin sanoin vastauksensa otsikossa annettuun kysymykseen. Käyttäjälle voidaan antaa tarpeen mukaan ohjeistusta, mutta yksinkertaisissa käyttötapauksissa ohjeistusta ei tarvita. Tekstikenttää käytetään, kun kenttään täytettävä tieto on lyhyt. Jos täytettävä tieto on pitkä ja vaatii monta riviä, käytetään tekstialue-komponenttia.",
+    "accessibility_list": {
+      "point_1": "Tekstikentän kanssa tulee aina käyttää otsaketta (label). Suomi.fi Design Systemin komponenttiin otsake kuuluu pakollisena osana.",
+      "point_2": "Kentän alapuolella on mahdollista näyttää tilateksti. Teksti kertoo käyttäjälle kenttään täytetyn sisällön tilan, esimerkiksi validointivirheen. Tekstimuotoisen viestin lisäksi tila sisältää ikonin, värikoodin ja tekstikentän leveämmän reunuksen, joka korostuu normaalisti näkeville henkilöille.",
+      "point_3": "Tekstikentän leveys toimii visuaalisena rajoitteena käyttäjälle ja antaa vihjeen siihen syötettävästä informaation määrästä.",
+      "point_4": "Tekstikenttää käytetään silloin kuin käyttäjän tulee täyttää vain yhden rivin informaatiota, kuten esimerkiksi nimensä. Monta riviä (multiline) vaativille vastauksille käytetään Tekstialue (Textarea) komponenttia."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Tekstikenttä koostuu otsakkeesta ja varsinaisesta kentästä. Lisäksi kentän yhteydessä voi olla ohjeteksti (hintText), joka sijoittuu otsakkeen ja kentän väliin. Ohjeteksti on yhdistetty kenttään aria-describedby-attribuutilla, minkä avulla ruudunlukijat voivat lukea ohjetekstin. Syötekenttään on lisäksi liitettävissä tilatieto esimerkiksi validointivirheestä. Tilatietoon kuuluu tilateksti, joka näytetään kentän alapuolella. Tilatekstin lisäksi tilatietoon kuuluu ikoni ja värikoodattu kentän reunus. Kentälle voidaan asettaa myös ikoni, joka esitetään kentän oikeassa laidassa. Ikonia voidaan hyödyntää kentän käyttötarkoituksen viestimiseen.",
       "text_2": "Lähtökohtaisesti kaikki lomakekentät ovat pakollisia, ja valinnaiset kentät merkitään valinnaisuustekstillä (optionalText). Valinnaisuusteksti näytetään suluissa otsakkeen lopussa."
     },
     "size_and_usage": {
@@ -1500,7 +1654,7 @@
 
     "example": {
       "regular": {
-        "label": "Normaali tekstikenttä"
+        "label": "Sukunimi"
       },
       "hint_text": {
         "title": "Tekstikenttä ohjetekstillä",
@@ -1510,18 +1664,18 @@
         "error_text": "Sukunimi ei voi sisältää numeroita"
       },
       "success": {
-        "title": "Tekstikenttä hyväksytty (Success Text Input)",
+        "title": "Tekstikenttä hyväksytty",
         "label": "Hyväksytty tekstikenttä"
       },
       "error": {
-        "title": "Tekstikenttä virheellinen (Error Text Input)",
-        "label": "Virheellinen tekstikenttä",
-        "status_text": "Virhe: kenttä ei voi olla tyhjä"
+        "title": "Virheellinen tekstikenttä",
+        "label": "Nimi",
+        "status_text": "Nimi on pakollinen tieto"
       },
       "disabled": {
-        "title": "Tekstikenttä estetty (Disabled Text Input)",
-        "description": "Disabloitu tekstikenttä estää kentän täyttämisen, kunnes käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
-        "label": "Estetty tekstikenttä"
+        "title": "Estetty tekstikenttä (Disabled Text Input)",
+        "description": "Estetty tekstikenttä estää kentän täyttämisen, kunnes käyttäjä suorittaa toisen vaadittavan toimenpiteen.",
+        "label": "Nimi"
       },
       "icon": {
         "title": "Tekstikenttä ikonilla",
@@ -1538,8 +1692,8 @@
   },
 
   "time_input_page": {
-    "site_title": "Time Input (Kellonaikakenttä) | Suomi.fi Design System",
-    "heading": "Time Input (Kellonaikakenttä)",
+    "site_title": "TimeInput (Kellonaikakenttä) | Suomi.fi Design System",
+    "heading": "TimeInput (Kellonaikakenttä)",
     "ingress": "Kellonaikakenttä on komponentti, johon käyttäjä täyttää kellonajan. Se muistuttaa tekstikenttäkomponenttia, mutta sisältää tiettyjä kellonajan syöttöön tarkoitettuja erityispiirteitä.",
     "accessibility_list": {
       "point_1": "Kellonaikakentän kanssa tulee aina käyttää otsaketta (label).",
@@ -1578,7 +1732,7 @@
     "heading": "Toast (Ponnahdusilmoitus)",
     "ingress": "Ponnahdusilmoitus on komponentti, jonka avulla käyttäjälle voidaan välittää käyttäjän toimintaan liittyvää palautetta. Käytetään tilanteissa, jotka eivät vaadi käyttäjältä varsinaista reagointia. Ponnahdusilmoitus kertoo, että käyttäjän suorittama toimenpide onnistui.",
     "accessibility_list": {
-      "point_1": "Mikäli ponnahdusilmoituksia on tarkoitus lisätä sivulle dynaamisesti, niitä varten kannattaa luoda ruudunlukijakäyttäjiä varten live region (kts. linkki sivun alalaidassa), jonka sisään ponnahdusilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ponnahdusilmoituksesta.",
+      "point_1": "Koska ponnahdusilmoitukset ilmestyvät sivulle dynaamisesti, niitä varten tulee luoda aria-live -region (kts. linkki sivun alalaidassa), jonka sisään ponnahdusilmoitukset lisätään. Tällöin myös ruudunlukijakäyttäjät saavat tiedon sivulle lisätystä ponnahdusilmoituksesta. Lisätietoa live-regioneista löytyy tämän sivun alalaidassa olevasta linkistä.",
       "point_2": "Ponnahdusilmoituksen otsikkotaso on määriteltävissä tarvittaessa, ja komponenttia voidaan käyttää myös ilman otsikkoa.",
       "point_3": "Sivulla voi olla yhtä aikaa useita ponnahdusilmoituksia näkyvissä."
     },
@@ -1592,7 +1746,7 @@
       "text_2": "Työpöytänäkymässä, kun sivu on vieritetty ylös, ponnahdusilmoitus tulee olla sivun ylälaitaan kiinnittyneenä. Kun käyttäjä vierittää sivua alaspäin niin, että sivu ylälaita peittyy, tulee ponnahdusilmoitus liukua näkyviin oikeaan ylälaitaan. Ponnahdusilmoitus siis kelluu mukana, kun sivua vieritetään alaspäin."
     },
 
-    "link_text": "Lisätietoa live regioneista",
+    "link_text": "Lisätietoa live-regioneista",
     "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions",
     "example": {
       "content": "Tallentaminen onnistui"
@@ -1614,11 +1768,11 @@
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Valintakytkin piilottaa, vaihtaa, muuttaa sisällön tai näkymän valinnan mukaisesti. Toiminto tapahtuu välittömästi eikä vaadi käyttäjältä muuta erillistä vahvistusta. Valintakytkimessä on aina yksi oletustila valmiiksi valittuna. Valintakytkintä tulisi käyttää ainoastaan sellaisissa tilanteissa, joissa käyttäjän täytyy valita kahdesta vastakkaisesta tilasta, esimerkiksi asettaa jokin toiminto päälle tai pois päältä.",
-      "text_2": "Valintakytkimen vaiheiden vastakohtaiset värit tulisi tukea komponentin käytettävyyttä ja auttaa käyttäjää hahmottamaan, missä tilassa kytkin on (päällä/pois päältä). Jos muokkaat väriä, muista huomioida saavutettavuusvaatimukset (WCGA 2.1) ja eri tilojen riittävä eroavuus toisistaan."
+      "text_2": "Valintakytkimen vaiheiden vastakohtaiset värit tulisi tukea komponentin käytettävyyttä ja auttaa käyttäjää hahmottamaan, missä tilassa kytkin on (päällä/pois päältä). Jos muokkaat väriä, muista huomioida saavutettavuusvaatimukset (WCGA 2.2) ja eri tilojen riittävä eroavuus toisistaan."
     },
 
-    "link1_text": "WCAG 2.1 - 1.4.1 Värien käyttö",
-    "link2_text": "WCAG 2.1 - 1.4.3 Kontrasti (minimi)",
+    "link1_text": "WCAG 2.2 - 1.4.1 Värien käyttö",
+    "link2_text": "WCAG 2.2 - 1.4.3 Kontrasti (minimi)",
 
     "variations": {
       "heading": "Variaatiot",
@@ -1687,8 +1841,8 @@
   },
 
   "wizard_navigation_page": {
-    "site_title": "Wizard navigation (Vaihenavigaatio) | Suomi.fi Design System",
-    "heading": "Wizard navigation (Vaihenavigaatio)",
+    "site_title": "WizardNavigation (Vaihenavigaatio) | Suomi.fi Design System",
+    "heading": "WizardNavigation (Vaihenavigaatio)",
     "ingress": "Vaihenavigaatiota käytetään vaiheistetun lomakkeen tai muun vastaavan käyttöliittymän eri vaiheiden esittämiseen ja niiden välillä siirtymiseen.",
     "accessibility_list": {
       "point_1": "Komponentin otsikon ja navigaatioelementtien tekstisisältöjen tulee olla kuvaavia, ja ne on hyvä pyrkiä pitämään mahdollisimman lyhyinä.",

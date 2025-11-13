@@ -14,7 +14,7 @@ const StylesIndexPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{t('styles.spacing')} | Suomi.fi Design System</title>
+        <title>{`${t('styles.spacing')} ${t('common.title_suffix')}`}</title>
       </Head>
       <SideNavLayout
         navItems={navItems}

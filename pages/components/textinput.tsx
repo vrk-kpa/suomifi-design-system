@@ -148,19 +148,6 @@ const Page: NextPage = () => {
         </ComponentExample>
 
         <Block variant="section">
-          <Heading variant="h2" className="mb-xl">
-            {t('text_input_page.example.success.title')}
-          </Heading>
-
-          <ComponentExample>
-            <TextInput
-              labelText={t('text_input_page.example.success.label')}
-              status="success"
-            />
-          </ComponentExample>
-        </Block>
-
-        <Block variant="section">
           <Heading variant="h2" className="my-xl">
             {t('text_input_page.example.error.title')}
           </Heading>

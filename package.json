@@ -24,7 +24,7 @@
     "@types/styled-components": "^5.1.25",
     "@types/warning": "^3.0.0",
     "classnames": "^2.3.1",
-    "next": "^15.1.7",
+    "next": "^15.5.7",
     "next-export-i18n": "^2.0.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
@@ -34,8 +34,8 @@
     "sass": "^1.52.2",
     "styled-components": "^6.1.13",
     "suomifi-design-tokens": "6.0.0",
-    "suomifi-icons": "^7.7.0",
-    "suomifi-ui-components": "17.0.0"
+    "suomifi-icons": "7.8.0",
+    "suomifi-ui-components": "17.0.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.19",

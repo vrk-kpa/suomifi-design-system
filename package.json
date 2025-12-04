@@ -34,8 +34,8 @@
     "sass": "^1.52.2",
     "styled-components": "^6.1.13",
     "suomifi-design-tokens": "6.0.0",
-    "suomifi-icons": "^7.7.0",
-    "suomifi-ui-components": "17.0.0"
+    "suomifi-icons": "7.8.0",
+    "suomifi-ui-components": "17.0.1"
   },
   "devDependencies": {
     "@types/node": "^17.0.19",

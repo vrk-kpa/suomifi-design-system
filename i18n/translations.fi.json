@@ -318,10 +318,14 @@
     "heading": "Typografia",
     "ingress": "Suomi.fi:n typografiateema sisältää kooltaan ja tyyliltään määritellyt tekstikomponentit ja tekstitokenit.",
     "font_title": "Kirjasintyyppi (fontti)",
-    "font_text_1": "Suomi.fi-tyyleissä ja -käyttöliittymäkomponenteissa käytetty kirjasin Source Sans Pro on open source -fontti, eli kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Suomi.fi Design System vastaa fontin jakelusta oman palvelimensa kautta.",
-    "font_text_2": "Source Sans Pro -kirjasinta käyttävien verkkopalveluiden ei ole tarpeen esittää OFL-lisenssiä palvelussaan erikseen. Tämä perustuu siihen, että OFL-lisensoituja kirjasimia saa käyttää vapaasti \"osana ohjelmistoa\". Lisenssitekstitiedosto on kuitenkin mukana alla olevassa zip-paketissa sekä mainintana valmiissa CSS-tiedostossa, joka sisältää webfonttimääritteet (linkki alla).",
-    "font_link_text": "Lataa kirjasin Source Sans Pro omalle laitteellesi (TTF & WOFF2)",
+    "font_text_1": "Suomi.fi-tyyleissä ja -käyttöliittymäkomponenteissa käytetty kirjasin Source Sans 3 on open source -fontti, eli kaikki sen leikkaukset ovat ilmaisia ja vapaasti käytettävissäsi (Open Font License). Suomi.fi Design System vastaa fontin jakelusta oman palvelimensa kautta.",
+    "font_text_2": "Source Sans 3 -kirjasinta käyttävien verkkopalveluiden ei ole tarpeen esittää OFL-lisenssiä palvelussaan erikseen. Tämä perustuu siihen, että OFL-lisensoituja kirjasimia saa käyttää vapaasti \"osana ohjelmistoa\". Lisenssitekstitiedosto on kuitenkin mukana alla olevassa zip-paketissa sekä mainintana valmiissa CSS-tiedostossa, joka sisältää webfonttimääritteet (linkki alla).",
+    "font_link_text": "Lataa kirjasin Source Sans 3 omalle laitteellesi (TTF & WOFF2)",
     "font_text_3": "Kun koodiprojektissa on käytössä Suomi.fi-komponenttikirjasto (suomifi-ui-components), on projektissa syytä olla mukana tarvittavat webfonttimääritteet. Tämä tapahtuu helpoiten lisäämällä seuraava linkki projektin globaaliin CSS:ään.",
+    "font_text_4_heading": "Vanhat kirjastoversiot",
+    "font_text_4": "Suomifi-ui-components kirjaston versiot 17 ja sitä vanhemmat käyttävät kirjasimena Source Sans Pro:ta. Suosittelemme käyttämään kirjastosta viimeisintä versiota, mutta mikäli se ei ole mahdollista, käytä 17 ja sitä vanhemmissa versioissa kirjasimena Source Sans Pro:ta.",
+    "font_text_5": "Tai lisää seuraava linkki projektin globaaliin CSS:ään:",
+    "font_link_text_2": "Lataa kirjasin Source Sans Pro omalle laitteellesi",
     "body_heading": "Leipäteksti",
     "body_text": "Käytä leipäteksteissä niille erityisesti suunniteltuja tekstikomponentteja Text ja Paragraph",
     "body_link_text": "Katso tekstikomponenttien dokumentaatio",
@@ -463,6 +467,7 @@
     "label": "Label (Otsake)",
     "language_menu": "LanguageMenu (Kielivalikko)",
     "link": "Link (Linkki)",
+    "link_list": "LinkList (Linkkilista)",
     "loading_spinner": "LoadingSpinner (Latausindikaattori)",
     "modal": "Modal (Dialogi)",
     "multiselect": "MultiSelect (Monivalinta)",
@@ -1108,6 +1113,33 @@
     }
   },
 
+  "link_list_page": {
+    "site_title": "LinkList (Linkkilista) | Suomi.fi Design System",
+    "heading": "LinkList (Linkkilista)",
+    "ingress": "Linkkilistakomponenttia käytetään linkkien esittämiseen listamuodossa. Se soveltuu käytettäväksi esimerkiksi linkkikokoelmiin, jossa linkit esitetään kategorioittain.",
+    "accessibility_list": {
+      "point_1": "Listan yhteydessä tulee käyttää listan sisältöä kuvaavaa otsikkoa, joka liitetään ariaLabelledBy-määreellä listaan. Tämä varmistaa, että ruudunlukija pystyy tunnistamaan listan tarkoituksen.",
+      "point_2": "Jokaisen linkin tulee olla kuvaava ja sen tarkoituksen ymmärrettävissä pelkästä linkin nimestä. Vältä yleisluontoisia linkkitekstejä kuten \"Lue lisää\" tai \"Klikkaa tästä\".",
+      "point_3": "Käytä ExternalLink-komponenttia ulkoisiin linkkeihin, jotka avautuvat uuteen välilehteen. Tällöin ruudunlukijakäyttäjä saa tiedon välilehden avautumisesta labelNewWindow-propsin kautta."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Linkkilista koostuu listasta (HTML ul-elementti) sekä listan jäsenistä (li-elementti). Listan jäsenet voivat sisältää Link-, ExternalLink- tai RouterLink-komponentteja."
+    },
+    "size_and_usage": {
+      "heading": "Komponentin koko ja käyttö",
+      "text_1": "LinkList-komponentissa on kaksi visuaalista variaatiota: normaali ja mobiilioptioitu (smallScreen). Smallscreen variantti pienentää fontin ja ikonien kokoa, joka säästää tilaa pienillä ruuduilla."
+    },
+    "example": {
+      "default": {
+        "list_heading": "Palvelut",
+        "link_1": "Henkilöasiakkaat",
+        "link_2": "Yritysasiakkaat",
+        "link_3": "Yhteisöt ja organisaatiot"
+      }
+    }
+  },
+
   "loading_spinner_page": {
     "site_title": "LoadingSpinner (Latausindikaattori) | Suomi.fi Design System",
     "heading": "LoadingSpinner (Latausindikaattori)",
@@ -1559,7 +1591,7 @@
     "title_body": "Leipäteksti (Body)",
     "text_1": "Suomi.fi-teemassa leipätekstin oletuskoko on 18px sekä mobiili- että desktop-näkymissä. Kun halutaan erottaa rakenteellisesti visuaalisin keinoin tietty tekstikappale tms., voidaan käyttää pienempää 16px fonttia. Suomi.fi-teemassa leipäteksti on oletuksena sävyltään musta (blackBase) ja variaatiota luomassa käytetään tumman harmaata (depthDark1).",
     "text_2": "Lihavoitua leikkausta käytetään leipätekstissä, kun halutaan korostaa käyttäjälle erityisen huomioitavaa tietoa. Lihavoitua tekstiä tulee käyttää harkiten. Jos lihavointia on käytetty liikaa, on käyttäjän vaikea ymmärtää, mihin hänen tulisi erityisesti kiinnittää huomiota sisällössä.",
-    "text_3": "Suomi.fi-teeman leipäteksteissä käytetään Source Sans Pro Regular sekä Source Sans Pro Semibold -fonttia.",
+    "text_3": "Suomi.fi-teeman leipäteksteissä käytetään Source Sans 3 Regular sekä Source Sans 3 Semibold -fonttia.",
     "text_4": "Tavanomaisissa tekstikappaleissa on suositeltavaa käyttää Paragraph-komponenttia, joka takaa oikean visuaalisen tyylin ja semantiikan.",
     "paragraph_example_text": "Tekstikappale, joka on luotu käyttämällä semanttista Paragraph-komponenttia",
     "lead_title": "Ingressi (Lead)",

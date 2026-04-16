@@ -1,7 +1,7 @@
 @use './_breakpoints' as breakpoints;
 @use '~suomifi-design-tokens/dist/tokens' as tokens;
 @use './_utilities' as utilities;
-@import '/fonts/source-sans-pro.css';
+@import 'https://designsystem.suomi.fi/fonts/source-sans-3.css';
 
 :root {
   /* CSS properties */

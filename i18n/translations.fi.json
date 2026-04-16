@@ -463,6 +463,7 @@
     "label": "Label (Otsake)",
     "language_menu": "LanguageMenu (Kielivalikko)",
     "link": "Link (Linkki)",
+    "link_list": "LinkList (Linkkilista)",
     "loading_spinner": "LoadingSpinner (Latausindikaattori)",
     "modal": "Modal (Dialogi)",
     "multiselect": "MultiSelect (Monivalinta)",
@@ -1104,6 +1105,33 @@
         "description": "Ulkoiset linkit ovat linkkejä, jotka ohjaavat käyttäjän pois sivustolta. Ulkoiset linkit avataan uuteen välilehteen/ikkunaan. Linkeissä käytetään aina ulkoisen linkin symboloivaa ikonia sekä ruudunlukijakäyttäjille myös sanallista tietoa \"Avautuu uuteen ikkunaan\". ",
         "link_text": "Ulkoinen linkki",
         "label": "Avautuu uuteen ikkunaan"
+      }
+    }
+  },
+
+  "link_list_page": {
+    "site_title": "LinkList (Linkkilista) | Suomi.fi Design System",
+    "heading": "LinkList (Linkkilista)",
+    "ingress": "Linkkilistakomponenttia käytetään linkkien esittämiseen listamuodossa. Se soveltuu käytettäväksi esimerkiksi linkkikokoelmiin, jossa linkit esitetään kategorioittain.",
+    "accessibility_list": {
+      "point_1": "Listan yhteydessä tulee käyttää listan sisältöä kuvaavaa otsikkoa, joka liitetään ariaLabelledBy-määreellä listaan. Tämä varmistaa, että ruudunlukija pystyy tunnistamaan listan tarkoituksen.",
+      "point_2": "Jokaisen linkin tulee olla kuvaava ja sen tarkoituksen ymmärrettävissä pelkästä linkin nimestä. Vältä yleisluontoisia linkkitekstejä kuten \"Lue lisää\" tai \"Klikkaa tästä\".",
+      "point_3": "Käytä ExternalLink-komponenttia ulkoisiin linkkeihin, jotka avautuvat uuteen välilehteen. Tällöin ruudunlukijakäyttäjä saa tiedon välilehden avautumisesta labelNewWindow-propsin kautta."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Linkkilista koostuu listasta (HTML ul-elementti) sekä listan jäsenistä (li-elementti). Listan jäsenet voivat sisältää Link-, ExternalLink- tai RouterLink-komponentteja."
+    },
+    "size_and_usage": {
+      "heading": "Komponentin koko ja käyttö",
+      "text_1": "LinkList-komponentissa on kaksi visuaalista variaatiota: normaali ja mobiilioptioitu (smallScreen). Smallscreen variantti pienentää fontin ja ikonien kokoa, joka säästää tilaa pienillä ruuduilla."
+    },
+    "example": {
+      "default": {
+        "list_heading": "Palvelut",
+        "link_1": "Henkilöasiakkaat",
+        "link_2": "Yritysasiakkaat",
+        "link_3": "Yhteisöt ja organisaatiot"
       }
     }
   },

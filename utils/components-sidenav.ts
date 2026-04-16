@@ -81,6 +81,10 @@ export const navItems: NavItem[] = [
     path: '/components/link',
   },
   {
+    title: translations.components.link_list,
+    path: '/components/linklist',
+  },
+  {
     title: translations.components.loading_spinner,
     path: '/components/loadingspinner',
   },

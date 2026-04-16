@@ -2,9 +2,11 @@ import { NextPage } from 'next';
 import { useTranslation } from 'next-export-i18n';
 import Head from 'next/head';
 import { Heading, Block, Text, Paragraph, Link } from 'suomifi-ui-components';
+
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/styles-sidenav';
 import { CSSProperties } from 'react';
+import InfoBox from '../../components/InfoBox/InfoBox';
 
 const codeBlockStyles: CSSProperties = {
   fontFamily: 'Consolas, "Liberation Mono", Menlo, monospace',
@@ -50,19 +52,41 @@ const StylesIndexPage: NextPage = () => {
           <Paragraph className="my-xl">{t('typography.font_text_1')}</Paragraph>
           <Paragraph className="my-xl">{t('typography.font_text_2')}</Paragraph>
 
-          <Link href="/fonts/SourceSansPro.zip">
+          <Link href="/fonts/SourceSans3.zip">
             {t('typography.font_link_text')}
           </Link>
 
           <Paragraph className="my-l">{t('typography.font_text_3')}</Paragraph>
 
-          <Block>
+          <Block mb="l">
             <pre style={codeBlockStyles}>
               {
-                "@import url('https://designsystem.suomi.fi/fonts/source-sans-pro.css');"
+                "@import url('https://designsystem.suomi.fi/fonts/source-sans-3.css');"
               }
             </pre>
           </Block>
+          <InfoBox>
+            <Heading variant="h3">
+              {t('typography.font_text_4_heading')}
+            </Heading>
+            <Paragraph className="my-l">
+              {t('typography.font_text_4')}
+            </Paragraph>
+            <Link href="/fonts/SourceSansPro.zip">
+              {t('typography.font_link_text_2')}
+            </Link>
+            <Paragraph className="my-l">
+              {t('typography.font_text_5')}
+            </Paragraph>
+
+            <Block>
+              <pre style={codeBlockStyles}>
+                {
+                  "@import url('https://designsystem.suomi.fi/fonts/source-sans-pro.css');"
+                }
+              </pre>
+            </Block>
+          </InfoBox>
         </Block>
 
         <Block variant="section">

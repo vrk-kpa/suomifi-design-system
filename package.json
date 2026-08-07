@@ -5,7 +5,8 @@
   "version": "2.0.0",
   "license": "MIT",
   "scripts": {
-    "prepare": "husky install",
+    "check:npm-version": "node scripts/check-npm-version.js",
+    "prepare": "npm run check:npm-version && husky install",
     "pre-commit": "lint-staged",
     "dev": "next dev",
     "build": "next build",

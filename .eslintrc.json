@@ -6,6 +6,9 @@
     "plugin:prettier/recommended"
   ],
   "plugins": ["@typescript-eslint", "prettier"],
+  "ignorePatterns": [
+    "scripts/*.js"
+  ],
   "rules": {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unnecessary-type-constraint": "off",

@@ -474,6 +474,7 @@
     "notification": "Notification (Ilmoitus)",
     "pagination": "Pagination (Sivutus)",
     "radio_button": "RadioButton (Valintanappi)",
+    "reorderable_list": "ReorderableList (Järjestettävä lista)",
     "search_input": "SearchInput (Hakukenttä)",
     "service_navigation": "ServiceNavigation (Palvelunavigaatio)",
     "side_navigation": "SideNavigation (Sivunavigaatio)",
@@ -1430,6 +1431,43 @@
         "title": "Estetty valintanappi (Disabled RadioButton)",
         "description": "Estetty valintanappi ei ole käyttäjän valittavissa. Estetty -tila voidaan poistaa esimerkiksi, kun käyttäjä suorittaa toisen vaadittavan toimenpiteen."
       }
+    }
+  },
+
+  "reorderable_list_page": {
+    "site_title": "ReorderableList (Järjestettävä lista) | Suomi.fi Design System",
+    "heading": "ReorderableList (Järjestettävä lista)",
+    "ingress": "Järjestettävä lista on komponentti, jonka avulla käyttäjä voi järjestää listan elementtejä haluamaansa järjestykseen. Järjestettävää listaa käytetään tilanteissa, joissa on tarve määritellä kohteiden tärkeysjärjestys tai järjestys näkymässä.",
+    "accessibility_list": {
+      "point_1": "Järjestettävän listan elementtien tulee olla selkeästi tunnistettavissa ja yksiselitteisiä. Kullakin elementillä tulee olla selkeä otsikko tai muu tunnistetieto.",
+      "point_2": "Mikäli listan elementissä on paljon sisältöä, voidaan järjestelymoodissa näyttää vaihtoehtoinen, lyhyempi sisältö hahmottamisen ja liikuttelun helpottamiseksi. Tästäkin sisällöstä elementtien täytyy olla helposti tunnistettavissa.",
+      "point_3": "Listakomponentille täytyy antaa selkeät ruudunlukijaviestit eri toimenpiteille ja ominaisuuksille. Tähän käytetään 'announcements' proppia."
+    },
+    "what_does_the_component_contain": {
+      "heading": "Mistä komponentti koostuu",
+      "text_1": "Järjestettävä lista koostuu painikkeesta, jolla voidaan asettaa lista uudelleenjärjestelytilaan, sekä listalla olevista elementeistä, joita voidaan siirtää ylös- tai alaspäin listan ollessa uudelleenjärjestelytilassa.",
+      "text_2": "Listan elementit sisältävät niille asetetun sisällön lisäksi myös nuolipainikkeet, joista käyttäjä voi siirtää elementtiä ylös- tai alaspäin listalla. Listan alkiot voidaan järjestää myös raahaamalla niitä hiirellä tai kosketusnäytöllä.",
+      "text_3": "Vaihtoehtoisesti voidaan asettaa näkyviksi myös \"siirrä listan alkuun\" ja \"siirrä listan loppuun\" -painikkeet, jolloin käyttäjä voi siirtää elementin listan alkuun tai loppuun yhdellä painalluksella."
+    },
+    "size_and_usage": {
+      "heading": "Koko ja käyttö",
+      "text_1": "Järjestettävää listaa voidaan käyttää käyttöliittymässä tilanteissa, joissa käyttäjälle halutaan antaa mahdollisuus määritellä listan elementtien järjestys. Se sijaitsee sivun pääsisällön joukossa.",
+      "text_2": "Mobiilinäkymissä käytetään pienille ruutuukooille tehtyä varianttia (smallScreen). Tällöin järjestelypainikkeet sijoitetaan listan alkioiden ylälaitaan, jotta ne eivät vie tilaa listan varsinaiselta sisällöltä.",
+      "text_3": "Mikäli listan elementeillä on paljon sisältöä, niille voidaan antaa järjestelymoodissa näytettävä vaihtoehtoinen, lyhyempi sisältö. Tällöin liikuttelu ja listan järjestyksen hahmottaminen helpottuu."
+    },
+    "example_1": {
+      "example_heading": "Henkilöt joita asia koskee",
+      "instruction_heading": "Järjestyksen muuttaminen",
+      "instruction": "Voit muuttaa järjestystä raahaamalla listan elementtejä tai käyttämällä nuolipainikkeita.",
+      "list_member_1_heading": "Matti Meikäläinen",
+      "list_member_1_content": "Matin tiedot",
+      "list_member_2_heading": "Maija Meikäläinen",
+      "list_member_2_content": "Maijan tiedot",
+      "list_member_3_heading": "Eero Esimerkki",
+      "list_member_3_content": "Eeron tiedot",
+      "save_button": "Tallenna järjestys",
+      "cancel_button": "Peruuta",
+      "edit_button": "Muokkaa järjestystä"
     }
   },
 

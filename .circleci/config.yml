@@ -1,0 +1,68 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@7.2.1
+
+executors:
+  # Node 22 is LTS until April 2027. Check hub.docker.com/r/cimg/node/tags
+  # for the newest patch tag before pinning.
+  node-lts:
+    docker:
+      - image: cimg/node:22.22
+    # The node orb's default executor uses `large`; keeping it preserves
+    # current build times. `medium` halves the credit spend if the build fits.
+    resource_class: large
+
+commands:
+  build:
+    parameters:
+      base_path:
+        type: string
+        default: ''
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run:
+          name: Build app
+          command: BASE_PATH=<<parameters.base_path>> npm run build
+
+jobs:
+  build-test:
+    executor: node-lts
+    steps:
+      - build
+
+  deploy-develop:
+    executor: node-lts
+    steps:
+      - build:
+          base_path: /suomifi-design-system
+      - run:
+          name: Disable Jekyll builds
+          command: touch out/.nojekyll
+      - run:
+          name: Set git user
+          command: |
+            git config user.email 'ci@example.com'
+            git config user.name 'ci'
+      - add_ssh_keys:
+          fingerprints:
+            - '75:51:12:bc:d4:83:3b:7b:c0:1e:ac:61:14:bc:74:0d'
+      - run:
+          name: Deploy to gh-pages branch
+          command: >
+            npx --yes gh-pages@6.3.0 --dotfiles --dist out
+            --message '[skip ci] Auto-generated updates'
+
+workflows:
+  build-deploy:
+    jobs:
+      - build-test:
+          filters:
+            branches:
+              ignore: develop
+      - deploy-develop:
+          filters:
+            branches:
+              only: develop

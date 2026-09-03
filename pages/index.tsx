@@ -11,6 +11,9 @@ import {
 import HeroBlock from '../components/HeroBlock/HeroBlock';
 import FrontPageCard from '../components/FrontPageCard/FrontPageCard';
 import PlainLayout from '../layouts/PlainLayout/PlainLayout';
+import dsPatterns from '/public/dsPatterns.svg';
+import dsComponents from '/public/dsComponents.svg';
+import dsStyles from '/public/dsStyles.svg';
 
 const FrontPage: NextPage = () => {
   const { t } = useTranslation();
@@ -42,21 +45,21 @@ const FrontPage: NextPage = () => {
             style={{ gap: suomifiDesignTokens.spacing.l, flexWrap: 'wrap' }}
           >
             <FrontPageCard
-              imgSrc="/ds-styles.svg"
+              imgSrc={dsStyles}
               bgColor="accentBase"
               heading={t('main_nav.styles')}
               linkText={t('front_page.go_to_styles')}
               linkHref="/styles"
             />
             <FrontPageCard
-              imgSrc="/ds-components.svg"
+              imgSrc={dsComponents}
               bgColor="accentSecondary"
               heading={t('main_nav.components')}
               linkText={t('front_page.go_to_components')}
               linkHref="/components"
             />
             <FrontPageCard
-              imgSrc="/ds-patterns.svg"
+              imgSrc={dsPatterns}
               bgColor="accentTertiary"
               heading={t('main_nav.patterns')}
               linkText={t('front_page.go_to_patterns')}

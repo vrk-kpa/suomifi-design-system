@@ -13,6 +13,7 @@ import {
 import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/patterns-sidenav';
 import AriaLiveExample from '../../components/AriaLiveExample/AriaLiveExample';
+import { withBasePath } from '../../utils/basePath';
 
 const TableWithFiltersPage: NextPage = () => {
   const { t } = useTranslation();
@@ -66,7 +67,9 @@ const TableWithFiltersPage: NextPage = () => {
               {
                 id: '1',
                 component: (
-                  <Link href="/components/alert">{t('components.alert')}</Link>
+                  <Link href={withBasePath('/components/alert')}>
+                    {t('components.alert')}
+                  </Link>
                 ),
                 notificationTarget: t(
                   'notification_components.table.alert.target',
@@ -79,7 +82,7 @@ const TableWithFiltersPage: NextPage = () => {
               {
                 id: '2',
                 component: (
-                  <Link href="/components/inlinealert">
+                  <Link href={withBasePath('/components/inlinealert')}>
                     {t('components.inline_alert')}
                   </Link>
                 ),
@@ -96,7 +99,7 @@ const TableWithFiltersPage: NextPage = () => {
               {
                 id: '3',
                 component: (
-                  <Link href="/components/notification">
+                  <Link href={withBasePath('/components/notification')}>
                     {t('components.notification')}
                   </Link>
                 ),
@@ -113,7 +116,9 @@ const TableWithFiltersPage: NextPage = () => {
               {
                 id: '4',
                 component: (
-                  <Link href="/components/toast">{t('components.toast')}</Link>
+                  <Link href={withBasePath('/components/toast')}>
+                    {t('components.toast')}
+                  </Link>
                 ),
                 notificationTarget: t(
                   'notification_components.table.toast.target',

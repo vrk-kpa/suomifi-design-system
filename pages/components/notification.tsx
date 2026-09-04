@@ -15,6 +15,7 @@ import {
   Notification,
   defaultSuomifiTheme,
 } from 'suomifi-ui-components';
+import { withBasePath } from '../../utils/basePath';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
@@ -41,7 +42,10 @@ const Page: NextPage = () => {
           </ExternalLink>
         </Block>
         <Block variant="div">
-          <Link href="/patterns/notification-components" variant="accent">
+          <Link
+            href={withBasePath('/patterns/notification-components')}
+            variant="accent"
+          >
             {t('common.notification_components')}
           </Link>
         </Block>
@@ -121,7 +125,7 @@ const Page: NextPage = () => {
               closeText={t('notification_page.example.info.close_button')}
               headingText={t('notification_page.example.info.heading')}
               actionElements={
-                <Link href="#">
+                <Link href={withBasePath('#')}>
                   {t('notification_page.example.info.action_link')}
                 </Link>
               }

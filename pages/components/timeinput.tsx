@@ -15,6 +15,7 @@ import {
   Link,
   TimeInput,
 } from 'suomifi-ui-components';
+import { withBasePath } from '../../utils/basePath';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
@@ -91,7 +92,7 @@ const Page: NextPage = () => {
             {t('time_input_page.size_and_usage.text_2')}
           </Paragraph>
           <Block variant="div" mt="m">
-            <Link href="/patterns/datetime" variant="accent">
+            <Link href={withBasePath('/patterns/datetime')} variant="accent">
               {t('time_input_page.size_and_usage.pattern_link_text')}
             </Link>
           </Block>

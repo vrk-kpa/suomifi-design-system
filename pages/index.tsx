@@ -14,6 +14,7 @@ import PlainLayout from '../layouts/PlainLayout/PlainLayout';
 import dsPatterns from '/public/dsPatterns.svg';
 import dsComponents from '/public/dsComponents.svg';
 import dsStyles from '/public/dsStyles.svg';
+import { withBasePath } from '../utils/basePath';
 
 const FrontPage: NextPage = () => {
   const { t } = useTranslation();
@@ -33,7 +34,7 @@ const FrontPage: NextPage = () => {
               <Text variant="lead">{t('front_page.main_text')}</Text>
             </Block>
             <Block style={{ textAlign: 'center' }}>
-              <Link variant="accent" href="/info">
+              <Link href={withBasePath('/info')}>
                 {t('front_page.info_link')}
               </Link>
             </Block>

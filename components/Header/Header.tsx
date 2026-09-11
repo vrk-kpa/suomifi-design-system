@@ -9,7 +9,6 @@ import { useTranslation } from 'next-export-i18n';
 import designSystemLogo from '/public/designSystemLogo.svg';
 import { suomifiDesignTokens } from 'suomifi-design-tokens';
 import { useRouter } from 'next/router';
-import { withBasePath } from '../../utils/basePath';
 
 const Header: React.FunctionComponent = () => {
   const { t } = useTranslation();
@@ -48,7 +47,7 @@ const Header: React.FunctionComponent = () => {
     >
       <Block className="container">
         <Block variant="header" className={styles.header}>
-          <Link href={withBasePath('/')}>
+          <Link href="/">
             <div className={styles.logo}>
               <Image src={designSystemLogo} alt="Suomi.fi Design System" />
             </div>

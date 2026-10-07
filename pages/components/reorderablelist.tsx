@@ -74,13 +74,8 @@ const Page: NextPage = () => {
             announcements={{
               editModeActivated: () => 'Edit mode activated',
               editModeCancelled: () => 'Edit mode cancelled',
-              movedUp: (label, pos, total) =>
-                `${label} moved to position ${pos} of ${total}`,
-              movedDown: (label, pos, total) =>
-                `${label} moved to position ${pos} of ${total}`,
               movedToPosition: (label, pos, total) =>
                 `${label} moved to position ${pos} of ${total}`,
-              itemsSwapped: (a, b) => `${a} and ${b} have swapped positions`,
               orderReverted: () => 'Order reverted to original',
             }}
             onReorder={() => {

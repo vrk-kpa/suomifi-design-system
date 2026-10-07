@@ -181,6 +181,9 @@ const Page: NextPage = () => {
           <Paragraph my="xl">
             {t('reorderable_list_page.what_does_the_component_contain.text_3')}
           </Paragraph>
+          <Paragraph my="xl">
+            {t('reorderable_list_page.what_does_the_component_contain.text_4')}
+          </Paragraph>
         </Block>
         <Block variant="section">
           <Heading variant="h2" className="mb-xl">

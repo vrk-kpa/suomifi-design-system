@@ -1446,13 +1446,14 @@
     "what_does_the_component_contain": {
       "heading": "Mistä komponentti koostuu",
       "text_1": "Järjestettävä lista koostuu painikkeesta, jolla voidaan asettaa lista uudelleenjärjestelytilaan, sekä listalla olevista elementeistä, joita voidaan siirtää ylös- tai alaspäin listan ollessa uudelleenjärjestelytilassa.",
-      "text_2": "Listan elementit sisältävät niille asetetun sisällön lisäksi myös nuolipainikkeet, joista käyttäjä voi siirtää elementtiä ylös- tai alaspäin listalla. Listan alkiot voidaan järjestää myös raahaamalla niitä hiirellä tai kosketusnäytöllä.",
-      "text_3": "Vaihtoehtoisesti voidaan asettaa näkyviksi myös \"siirrä listan alkuun\" ja \"siirrä listan loppuun\" -painikkeet, jolloin käyttäjä voi siirtää elementin listan alkuun tai loppuun yhdellä painalluksella."
+      "text_2": "Listan ollessa uudelleenjärjestelytilassa näkyvissä ovat painikkeet järjestyksen tallentamiselle, sekä uudelleenjärjestyksen peruuttamiselle. Käyttäjän peruuttaessa toiminnon listan elementit palautuvat alkuperäiseen järjestykseen.",
+      "text_3": "Listan elementit sisältävät niille asetetun sisällön lisäksi myös nuolipainikkeet, joista käyttäjä voi siirtää elementtiä ylös- tai alaspäin listalla. Listan alkiot voidaan järjestää myös raahaamalla niitä hiirellä tai kosketusnäytöllä.",
+      "text_4": "Vaihtoehtoisesti voidaan asettaa näkyviksi myös \"siirrä listan alkuun\" ja \"siirrä listan loppuun\" -painikkeet, jolloin käyttäjä voi siirtää elementin listan alkuun tai loppuun yhdellä painalluksella."
     },
     "size_and_usage": {
       "heading": "Koko ja käyttö",
       "text_1": "Järjestettävää listaa voidaan käyttää käyttöliittymässä tilanteissa, joissa käyttäjälle halutaan antaa mahdollisuus määritellä listan elementtien järjestys. Se sijaitsee sivun pääsisällön joukossa.",
-      "text_2": "Mobiilinäkymissä käytetään pienille ruutuukooille tehtyä varianttia (smallScreen). Tällöin järjestelypainikkeet sijoitetaan listan alkioiden ylälaitaan, jotta ne eivät vie tilaa listan varsinaiselta sisällöltä.",
+      "text_2": "Mobiilinäkymissä käytetään pienille ruutuukooille tehtyä varianttia (smallScreen). Tällöin järjestelypainikkeet sijoitetaan listan alkioiden ylälaitaan, jotta ne eivät vie tilaa listan varsinaiselta sisällöltä. Painikkeiden sijainnin voi vaihtaa myös käyttämällä \"moveButtonsPlacement\" proppia.",
       "text_3": "Mikäli listan elementeillä on paljon sisältöä, niille voidaan antaa järjestelymoodissa näytettävä vaihtoehtoinen, lyhyempi sisältö. Tällöin liikuttelu ja listan järjestyksen hahmottaminen helpottuu."
     },
     "example_1": {

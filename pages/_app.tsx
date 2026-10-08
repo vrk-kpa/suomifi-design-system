@@ -6,7 +6,6 @@ import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
 import { Block, SkipLink } from 'suomifi-ui-components';
 import Head from 'next/head';
-import favicon from '/public/favicon.svg';
 
 import { useTranslation } from 'next-export-i18n';
 import { useRouter } from 'next/router';
@@ -18,7 +17,7 @@ function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
   return (
     <Block className="app">
       <Head>
-        <link rel="icon" href={favicon} />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <SkipLink href="#main">{t('common.skip_to_main_content')}</SkipLink>
       {(path.startsWith('/components') ||

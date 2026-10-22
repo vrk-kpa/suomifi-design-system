@@ -14,6 +14,7 @@ import {
   ExternalLink,
   Link,
 } from 'suomifi-ui-components';
+import { withBasePath } from '../../utils/basePath';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
@@ -75,7 +76,9 @@ const Page: NextPage = () => {
         </Block>
 
         <Block variant="div" mt="m">
-          <Link href="/styles/typography">{t('heading_page.link_2')}</Link>
+          <Link href={withBasePath('/styles/typography')}>
+            {t('heading_page.link_2')}
+          </Link>
         </Block>
 
         <Block variant="section">

@@ -7,6 +7,7 @@ import SideNavLayout from '../../layouts/SideNavLayout/SideNavLayout';
 import { navItems } from '../../utils/styles-sidenav';
 import { CSSProperties } from 'react';
 import InfoBox from '../../components/InfoBox/InfoBox';
+import { withBasePath } from '../../utils/basePath';
 
 const codeBlockStyles: CSSProperties = {
   fontFamily: 'Consolas, "Liberation Mono", Menlo, monospace',
@@ -52,7 +53,7 @@ const StylesIndexPage: NextPage = () => {
           <Paragraph className="my-xl">{t('typography.font_text_1')}</Paragraph>
           <Paragraph className="my-xl">{t('typography.font_text_2')}</Paragraph>
 
-          <Link href="/fonts/SourceSans3.zip">
+          <Link href={withBasePath('/fonts/SourceSans3.zip')}>
             {t('typography.font_link_text')}
           </Link>
 
@@ -72,7 +73,7 @@ const StylesIndexPage: NextPage = () => {
             <Paragraph className="my-l">
               {t('typography.font_text_4')}
             </Paragraph>
-            <Link href="/fonts/SourceSansPro.zip">
+            <Link href={withBasePath('/fonts/SourceSansPro.zip')}>
               {t('typography.font_link_text_2')}
             </Link>
             <Paragraph className="my-l">
@@ -98,7 +99,9 @@ const StylesIndexPage: NextPage = () => {
             {t('typography.body_text')}
           </Paragraph>
 
-          <Link href="/components/text">{t('typography.body_link_text')}</Link>
+          <Link href={withBasePath('/components/text')}>
+            {t('typography.body_link_text')}
+          </Link>
         </Block>
 
         <Block variant="section">
@@ -110,7 +113,7 @@ const StylesIndexPage: NextPage = () => {
             {t('typography.heading_text')}
           </Paragraph>
 
-          <Link href="/components/heading">
+          <Link href={withBasePath('/components/heading')}>
             {t('typography.heading_link_text')}
           </Link>
         </Block>

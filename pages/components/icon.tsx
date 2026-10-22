@@ -21,6 +21,7 @@ import {
   IconInfo,
   IconSignLanguageContent,
 } from 'suomifi-ui-components';
+import { withBasePath } from '../../utils/basePath';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
@@ -49,7 +50,7 @@ const Page: NextPage = () => {
           <Text variant="lead">{t('icon_page.ingress')}</Text>
         </Paragraph>
 
-        <Link href="../../styles/icons">
+        <Link href={withBasePath('/styles/icons')}>
           {t('icon_page.all_icons_page_link_title')}
         </Link>
 

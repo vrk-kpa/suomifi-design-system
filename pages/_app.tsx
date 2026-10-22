@@ -17,12 +17,13 @@ function SuomifiDesignSystemSiteApp({ Component, pageProps }: AppProps) {
   return (
     <Block className="app">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <SkipLink href="#main">{t('common.skip_to_main_content')}</SkipLink>
       {(path.startsWith('/components') ||
         path.startsWith('/styles') ||
-        path.startsWith('/info')) && (
+        path.startsWith('/info') ||
+        path.startsWith('/patterns')) && (
         <SkipLink href="#sidenav">
           {t('common.skip_to_side_navigation')}
         </SkipLink>

@@ -109,6 +109,10 @@ export const navItems: NavItem[] = [
     path: '/components/radiobutton',
   },
   {
+    title: translations.components.reorderable_list,
+    path: '/components/reorderablelist',
+  },
+  {
     title: translations.components.search_input,
     path: '/components/searchinput',
   },

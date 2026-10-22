@@ -15,6 +15,7 @@ import {
   TableColumn,
   Link,
 } from 'suomifi-ui-components';
+import { withBasePath } from '../../utils/basePath';
 
 const Page: NextPage = () => {
   const { t } = useTranslation();
@@ -107,7 +108,10 @@ const Page: NextPage = () => {
           </ExternalLink>
         </Block>
         <Block variant="div" mb="l">
-          <Link href="/patterns/table-with-filters" variant="accent">
+          <Link
+            href={withBasePath('/patterns/table-with-filters')}
+            variant="accent"
+          >
             {t('table_with_filters.heading')}
           </Link>
         </Block>
@@ -134,7 +138,7 @@ const Page: NextPage = () => {
               <li>{t('table_page.accessibility_list.point_2')}</li>
               <li>
                 {t('table_page.accessibility_list.point_3')}{' '}
-                <Link href="/patterns/table-with-filters">
+                <Link href={withBasePath('/patterns/table-with-filters')}>
                   {t('table_with_filters.heading')}
                 </Link>
               </li>
@@ -168,7 +172,10 @@ const Page: NextPage = () => {
             {t('table_page.size_and_usage.text_2')}
           </Paragraph>
           <Block variant="div" mb="xl">
-            <Link href="/patterns/table-with-filters" variant="accent">
+            <Link
+              href={withBasePath('/patterns/table-with-filters')}
+              variant="accent"
+            >
               {t('table_with_filters.heading')}
             </Link>
           </Block>

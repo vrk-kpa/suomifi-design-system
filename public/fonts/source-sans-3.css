@@ -1,19 +1,20 @@
-/**
- * Source Sans 3 - Latin, Latin Extended, Cyrillic, Cyrillic Extended, Greek,
- * Greek Extended, Vietnamese
- * Font variants match Source Sans Pro naming (designsystem.suomi.fi)
- * Weights: 300, 400, 600 (Light, Regular, Semibold)
- *
- * Subsets with unicode-range for optimal loading - browsers fetch only the
- * font files needed for characters on the page:
- * - latin: Basic Latin + Western European characters (A-Z, a-z, digits, punctuation, ä ö å é ñ ç ...)
- * - latin-ext: Extended Latin characters (Czech, Polish, Romanian, Croatian, Hungarian, Vietnamese, etc.)
- * - cyrillic: Core Cyrillic characters (Russian, Ukrainian, Belarusian, Bulgarian, Macedonian, Serbian)
- * - cyrillic-ext: Extended Cyrillic characters and historic letters
- * - greek: Modern Greek plus Coptic characters
- * - greek-ext: Greek Extended (Polytonic and historical Greek diacritics)
- * - vietnamese: Additional characters needed for Vietnamese (ă â ê ô ơ ư and tone-mark combinations)
- */
+/*
+* Font Copyright 2010-2024 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source',
+* licenced under the SIL Open Font License, Version 1.1. http://scripts.sil.org/OFL
+*
+* Font variants match Source Sans Pro naming (designsystem.suomi.fi)
+* Weights: 300, 400, 600 (Light, Regular, Semibold)
+*
+* Subsets with unicode-range for optimal loading - browsers fetch only the
+* font files needed for characters on the page:
+* - latin: Basic Latin + Western European characters
+* - latin-ext: Extended Latin characters
+* - cyrillic: Core Cyrillic characters
+* - cyrillic-ext: Extended Cyrillic characters and historic letters
+* - greek: Modern Greek plus Coptic characters
+* - greek-ext: Greek Extended
+* - vietnamese: Additional characters needed for Vietnamese
+*/
 
 /* 300 Light */
 @font-face {

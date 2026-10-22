@@ -7,6 +7,7 @@ import {
 } from 'suomifi-ui-components';
 import styles from './FrontPageCard.module.scss';
 import Image from 'next/image';
+import { withBasePath } from '../../utils/basePath';
 
 interface FrontPageCardProps {
   imgSrc: string;
@@ -34,7 +35,7 @@ const FrontPageCard: React.FunctionComponent<FrontPageCardProps> = ({
       <Block className={styles.lower}>
         <Heading variant="h3">{heading}</Heading>
         <Block mt="s">
-          <Link variant="accent" href={linkHref}>
+          <Link variant="accent" href={withBasePath(linkHref)}>
             {linkText}
           </Link>
         </Block>

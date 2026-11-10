@@ -28,4 +28,8 @@ export const navItems: NavItem[] = [
     title: translations.patterns.notification_components,
     path: '/patterns/notification-components',
   },
+  {
+    title: translations.patterns.toast,
+    path: '/patterns/toast',
+  },
 ];

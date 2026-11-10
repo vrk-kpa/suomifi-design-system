@@ -72,7 +72,8 @@
     "multi_insert": "Multi-insert",
     "datetime": "Päivämäärä ja kellonaika",
     "table_with_filters": "Taulukko suodattimilla",
-    "notification_components": "Ilmoitukset ja ilmoituskomponentit"
+    "notification_components": "Ilmoitukset ja ilmoituskomponentit",
+    "toast": "Ponnahdusilmoitukset"
   },
   "patterns_main_page": {
     "ingress": "Suunnittelumallit eli patternit ovat kokoelma käyttölittyymäsuunnittelun periaatteeita ja ratkaisuja. Ne koostuvat ohjeistuksista ja esimerkeistä käyttöliittymien tai niiden osasten rakentamisen tueksi.",
@@ -297,6 +298,25 @@
       "button_text": "Näytä ilmoitus",
       "alert_text": "Pakollisia tietoja puuttuu. Ole hyvä ja täytä kaikki pakolliset kentät.",
       "arialive_area_text": "Div-elementti, joka sisältää aria-live -attribuutin ja jonka sisään ilmoitukset asetetaan."
+    }
+  },
+  "toast": {
+    "heading": "Ponnahdusilmoitukset",
+    "ingress": "Ponnahdusilmoitukset ovat toissijaisia ilmoituksia, jotka näytetään hetkellisesti käyttäjän suorittaman interaktion jälkeen ilmaisemaan toiminnon onnistumista.",
+    "placement": {
+      "heading": "Sijoittelu ja välistykset",
+      "text_1": "Ponnahdusilmoitukset sijoitetaan pääsisältöalueen oikeaan yläkulmaan siten, että ilmoituksen oikea laita asemoituu sisältöalueen oikeaan laitaan. Ilmoitukset kelluvat muiden sivun elementtien päällä. Ponnahdusilmoitukset eivät saa peittää tärkeitä elementtejä, painikkeita tai navigointielementtejä. Mobiilikoossa ponnahdusilmoitukset sijoitetaan sisältöalueen yläreunaan koko sisältöalueen levyisinä, kuitenkin niin, etteivät ne peittä navigointia tai muita tärkeitä elementtejä.",
+      "text_2": "Headerin ollessa näkyvissä ilmoitus sijoitetaan 20px headerin alapuolelle. Headerin ollessa piilotettuna ilmoitus sijoitetaan 10px pääsisältöalueen yläreunan alapuolelle.",
+      "text_3": "Ponnahdusilmoitus tulee piilottaa automaattisesti 10 sekunnin kuluttua, ellei fokus ole ilmoituselementissä, tai käyttäjän kursori ole sen päällä. Käyttäjä voi sulkea ilmoituksen myös itse, jos ilmoituksen sulkupainike on asetettu näkyväksi.",
+      "text_4": "Ponnahdusilmoituksen näyttämisessä ja piilottamisessa tulee käyttää oheisen mallin mukaista CSS-animaatioita."
+    },
+    "components_text": "Mallissa käytetyt komponentit",
+    "reference_implementation": {
+      "heading": "Referenssitoteutus",
+      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen ponnahdusilmoituksesta. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
+      "link_text": "Lähdekoodi GitHubissa",
+      "show_toast_button_text": "Näytä ilmoitus",
+      "toast_text": "Toiminto onnistui."
     }
   },
   "styles": {

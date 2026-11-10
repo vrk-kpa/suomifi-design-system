@@ -8,7 +8,6 @@ import {
   useToast,
   TOAST_CLOSING_CLASS_NAME,
 } from 'suomifi-ui-components';
-// import { useToast, TOAST_CLOSING_CLASS_NAME } from './useToast';
 import { useTranslation } from 'next-export-i18n';
 
 // Adjust positioning so that the toast's right edge aligns with the right side of main content area
@@ -26,11 +25,13 @@ const toastExitTransition = keyframes`
 `;
 
 const AnimatedToast = styled(Toast)`
-  animation: ${toastEntryTransition} 0.6s
+  animation: ${toastEntryTransition}
+    ${defaultSuomifiTheme.transitions.toastTime}
     ${defaultSuomifiTheme.transitions.toastTimingFunction} both;
 
   &.${TOAST_CLOSING_CLASS_NAME} {
-    animation: ${toastExitTransition} 0.6s
+    animation: ${toastExitTransition}
+      ${defaultSuomifiTheme.transitions.toastTime}
       ${defaultSuomifiTheme.transitions.toastTimingFunction} both;
     pointer-events: none;
   }

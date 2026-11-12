@@ -301,6 +301,7 @@
     }
   },
   "toast": {
+    "site_title": "Ponnahdusilmoitukset | Suomi.fi Design System",
     "heading": "Ponnahdusilmoitukset",
     "ingress": "Ponnahdusilmoitukset ovat toissijaisia ilmoituksia, jotka näytetään hetkellisesti käyttäjän suorittaman interaktion jälkeen ilmaisemaan toiminnon onnistumista.",
     "placement": {
@@ -313,9 +314,10 @@
     "components_text": "Mallissa käytetyt komponentit",
     "reference_implementation": {
       "heading": "Referenssitoteutus",
-      "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen ponnahdusilmoituksesta. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
+      "paragraph": "Alla on käytettäväksi ja saavutettavaksi suunniteltu interaktiivinen referenssitoteutus ponnahdusilmoituksesta. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
       "link_text": "Lähdekoodi GitHubissa",
       "show_toast_button_text": "Näytä ilmoitus",
+      "close_button_text": "Sulje ilmoitus",
       "toast_text": "Toiminto onnistui."
     }
   },

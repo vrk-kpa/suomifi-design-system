@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { CSSProperties, useEffect, useRef, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import {
   Block,
@@ -7,31 +7,41 @@ import {
   defaultSuomifiTheme,
   useToast,
   TOAST_CLOSING_CLASS_NAME,
+  Paragraph,
 } from 'suomifi-ui-components';
 import { useTranslation } from 'next-export-i18n';
 
-// Adjust positioning so that the toast's right edge aligns with the right side of main content area
-const toastEntryTransition = keyframes`
-  from { translate: calc(100% + 3rem); }
-  to { translate: 0; }
+const toastIn = keyframes`
+  from { translate: calc(100% + var(--toast-offset)) 0; }
 `;
-/* 
-Make sure to move the toast far enough to prevent the 
-slight "bounce" in animation to become visible when the toast is closed 
-*/
-const toastExitTransition = keyframes`
-  from { translate: 0 0; }
-  to { translate: calc(100% + 3rem); }
+
+const toastOut = keyframes`
+  to { translate: calc(100% + var(--toast-offset)) 0; }
+`;
+
+const ToastContainer = styled(Block)`
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000; // whatever suits your case
+  display: flex;
+  justify-content: flex-end;
+  pointer-events: none;
 `;
 
 const AnimatedToast = styled(Toast)`
-  animation: ${toastEntryTransition}
-    ${defaultSuomifiTheme.transitions.toastTime}
+  pointer-events: auto;
+  width: 100%;
+
+  @media (min-width: 601px) {
+    width: fit-content;
+  }
+
+  animation: ${toastIn} ${defaultSuomifiTheme.transitions.toastTime}
     ${defaultSuomifiTheme.transitions.toastTimingFunction} both;
 
   &.${TOAST_CLOSING_CLASS_NAME} {
-    animation: ${toastExitTransition}
-      ${defaultSuomifiTheme.transitions.toastTime}
+    animation: ${toastOut} ${defaultSuomifiTheme.transitions.toastTime}
       ${defaultSuomifiTheme.transitions.toastTimingFunction} both;
     pointer-events: none;
   }
@@ -48,15 +58,47 @@ const ToastExample = () => {
   const { t } = useTranslation();
   const triggerRef = useRef<HTMLButtonElement>(null);
   const toast = useToast({ returnFocusRef: triggerRef });
+  const [top, setTop] = useState(10);
+  const [right, setRight] = useState(10);
+
+  useEffect(() => {
+    if (!toast.isVisible) return;
+    const updateTop = () => {
+      const header = document.querySelector('header')?.getBoundingClientRect();
+      setTop(Math.max(header?.bottom ?? 0, 0) + 10);
+    };
+    window.addEventListener('scroll', updateTop, { passive: true });
+    return () => window.removeEventListener('scroll', updateTop);
+  }, [toast.isVisible]);
+
+  const showToast = () => {
+    // Below the header if it's in view, otherwise 10px from the top,
+    // aligned with the right edge of the main content area
+    const header = document.querySelector('header')?.getBoundingClientRect();
+    const main = document.querySelector('main')?.getBoundingClientRect();
+    setRight(
+      main ? document.documentElement.clientWidth - main.right + 10 : 10,
+    );
+    setTop(Math.max(header?.bottom ?? 0, 0) + 10);
+
+    toast.open();
+  };
 
   return (
     <>
-      <Block
+      <Paragraph mb="s">Avaa ponnahdusilmoitus painikkeesta</Paragraph>
+      <Button ref={triggerRef} onClick={showToast}>
+        {t('toast.reference_implementation.show_toast_button_text')}
+      </Button>
+      <ToastContainer
         aria-live="polite"
-        style={{
-          overflowX: 'clip',
-          padding: '0 30px',
-        }}
+        style={
+          {
+            top: top,
+            paddingInline: right,
+            '--toast-offset': `${right}px`,
+          } as CSSProperties
+        }
       >
         {toast.isVisible && (
           <AnimatedToast
@@ -64,15 +106,11 @@ const ToastExample = () => {
             showCloseButton
             closeText={t('toast.reference_implementation.close_button_text')}
             onCloseButtonClick={toast.close}
-            my="l"
           >
             {t('toast.reference_implementation.toast_text')}
           </AnimatedToast>
         )}
-      </Block>
-      <Button ref={triggerRef} onClick={toast.open}>
-        {t('toast.reference_implementation.show_toast_button_text')}
-      </Button>
+      </ToastContainer>
     </>
   );
 };

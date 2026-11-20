@@ -72,8 +72,8 @@ const ToastExample = () => {
   }, [toast.isVisible]);
 
   const showToast = () => {
-    // Below the header if it's in view, otherwise 10px from the top,
-    // aligned with the right edge of the main content area
+    // 10px below the header if it's in view, otherwise 10px from the top of the main content area,
+    // aligned with the right edge of the main content area with 10px margin
     const header = document.querySelector('header')?.getBoundingClientRect();
     const main = document.querySelector('main')?.getBoundingClientRect();
     setRight(

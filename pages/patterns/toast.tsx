@@ -30,7 +30,7 @@ const ToastPage: NextPage = () => {
           <Text variant="lead">{t('toast.ingress')}</Text>
         </Block>
 
-        <Block mb="xxxl">
+        <Block mb="xxl">
           <Heading variant="h2" className="mb-l">
             {t('toast.reference_implementation.heading')}
           </Heading>

@@ -33,8 +33,9 @@ const AnimatedToast = styled(Toast)`
   pointer-events: auto;
   width: 100%;
 
-  @media (min-width: 601px) {
+  @media (min-width: ${defaultSuomifiTheme.breakpoints.s}) {
     width: fit-content;
+    min-width: 350px;
   }
 
   animation: ${toastIn} ${defaultSuomifiTheme.transitions.toastTime}
@@ -76,17 +77,23 @@ const ToastExample = () => {
     // aligned with the right edge of the main content area with 10px margin
     const header = document.querySelector('header')?.getBoundingClientRect();
     const main = document.querySelector('main')?.getBoundingClientRect();
+    const isMobile = window.matchMedia(
+      `(max-width: ${defaultSuomifiTheme.breakpoints.s})`,
+    ).matches;
     setRight(
-      main ? document.documentElement.clientWidth - main.right + 10 : 10,
+      isMobile || !main
+        ? 10
+        : document.documentElement.clientWidth - main.right + 10,
     );
     setTop(Math.max(header?.bottom ?? 0, 0) + 10);
-
     toast.open();
   };
 
   return (
     <>
-      <Paragraph mb="s">Avaa ponnahdusilmoitus painikkeesta</Paragraph>
+      <Paragraph mb="s">
+        {t('toast.reference_implementation.instructions')}
+      </Paragraph>
       <Button ref={triggerRef} onClick={showToast}>
         {t('toast.reference_implementation.show_toast_button_text')}
       </Button>
@@ -104,6 +111,7 @@ const ToastExample = () => {
           <AnimatedToast
             {...toast.toastProps}
             showCloseButton
+            key={toast.openId}
             closeText={t('toast.reference_implementation.close_button_text')}
             onCloseButtonClick={toast.close}
           >

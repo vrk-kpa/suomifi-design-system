@@ -316,6 +316,7 @@
       "heading": "Referenssitoteutus",
       "paragraph": "Alta löydät käytettävyydeltään ja saavutettavuudeltaan hiotun interaktiivisen referenssitoteutuksen ponnahdusilmoituksesta. Toteutuksen lähdekoodiin voi tutustua oheisesta linkistä.",
       "link_text": "Lähdekoodi GitHubissa",
+      "instructions": "Avaa ponnahdusilmoitus painikkeesta",
       "show_toast_button_text": "Näytä ilmoitus",
       "close_button_text": "Sulje ilmoitus",
       "toast_text": "Toiminto onnistui."

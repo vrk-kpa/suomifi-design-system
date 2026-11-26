@@ -8,6 +8,7 @@ import {
   useToast,
   TOAST_CLOSING_CLASS_NAME,
   Paragraph,
+  VisuallyHidden,
 } from 'suomifi-ui-components';
 import { useTranslation } from 'next-export-i18n';
 
@@ -55,12 +56,21 @@ const AnimatedToast = styled(Toast)`
   }
 `;
 
+/**
+ * Time the announcer stays changed before the new message is set.
+ * Needed to make screen readers read the toast when the toast content
+ * is the same as in the previous shown toast.
+ */
+const ANNOUNCEMENT_DELAY = 200;
+
 const ToastExample = () => {
   const { t } = useTranslation();
   const triggerRef = useRef<HTMLButtonElement>(null);
+  const contentRef = useRef<HTMLSpanElement>(null);
   const toast = useToast({ returnFocusRef: triggerRef });
   const [top, setTop] = useState(10);
   const [right, setRight] = useState(10);
+  const [announcement, setAnnouncement] = useState('');
 
   useEffect(() => {
     if (!toast.isVisible) return;
@@ -72,8 +82,24 @@ const ToastExample = () => {
     return () => window.removeEventListener('scroll', updateTop);
   }, [toast.isVisible]);
 
+  /**
+   * Briefly changing the announcer first makes screen readers
+   * (notably VoiceOver) announce the message even when it's identical
+   * to the previous one.
+   */
+  useEffect(() => {
+    if (!toast.openId) return;
+    const text = contentRef.current?.textContent ?? '';
+    setAnnouncement('.'); // Needs to be something other than an empty string
+    const timer = window.setTimeout(
+      () => setAnnouncement(text),
+      ANNOUNCEMENT_DELAY,
+    );
+    return () => window.clearTimeout(timer);
+  }, [toast.openId]);
+
   const showToast = () => {
-    // 10px below the header if it's in view, otherwise 10px from the top of the main content area,
+    // 10px below the header if it's in view, otherwise 10px from the top of the viewport,
     // aligned with the right edge of the main content area with 10px margin
     const header = document.querySelector('header')?.getBoundingClientRect();
     const main = document.querySelector('main')?.getBoundingClientRect();
@@ -97,8 +123,9 @@ const ToastExample = () => {
       <Button ref={triggerRef} onClick={showToast}>
         {t('toast.reference_implementation.show_toast_button_text')}
       </Button>
+      {/* Always mounted for aria-live to work correctly */}
+      <VisuallyHidden aria-live="polite">{announcement}</VisuallyHidden>
       <ToastContainer
-        aria-live="polite"
         style={
           {
             top: top,
@@ -115,7 +142,10 @@ const ToastExample = () => {
             closeText={t('toast.reference_implementation.close_button_text')}
             onCloseButtonClick={toast.close}
           >
-            {t('toast.reference_implementation.toast_text')}
+            {/* Any content works here; its text is copied to the announcer */}
+            <span ref={contentRef}>
+              {t('toast.reference_implementation.toast_text')}
+            </span>
           </AnimatedToast>
         )}
       </ToastContainer>
